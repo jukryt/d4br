@@ -1,13 +1,15 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.1
+// @version      0.2
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=d4builds.gg
 // @homepageURL  https://github.com/jukryt/d4br
-// @supportURL     https://github.com/jukryt/d4br/issues
+// @updateURL    https://raw.githubusercontent.com/jukryt/d4br/main/d4br.js
+// @downloadURL  https://raw.githubusercontent.com/jukryt/d4br/main/d4br.js
+// @supportURL   https://github.com/jukryt/d4br/issues
 // @grant        GM_getValue
 // @grant        GM_setValue
 // ==/UserScript==
