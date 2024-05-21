@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.2
+// @version      0.3
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -422,18 +422,32 @@ class D4BuildProcessor {
     mutationObserverCallback(processor, mutationList, observer) {
         for (const mutation of mutationList) {
             if (mutation.type === "childList") {
+
+                // Сработает при открытии билда на вкладке Gear & Skills
                 if (mutation.target.className === "builder__gear__info") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.className === "builder__gear__name") {
                             //console.log(mutation);
-                            processor.gearNameProcess(newNode);
+                            processor.gearNameProcess(newNode, false);
                         }
                     }
                 }
+                // Сработает при переходе с какой либо вкладки на Gear & Skills
+                else if (mutation.target.className === "builder__content") {
+                    for (const newNode of mutation.addedNodes) {
+                        if (newNode.className === "builder__gear") {
+                            const gearNameNodes = newNode.querySelectorAll("div.builder__gear__name");
+                            for (const gearNameNode of gearNameNodes) {
+                                processor.gearNameProcess(gearNameNode, true);
+                            }
+                        }
+                    }
+                }
+                // Сработает для тултипов глифов
                 else if (mutation.target.id.startsWith("tippy-")) {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.className === "paragon__tile__tooltip") {
-                            var tooltipTitle = newNode.querySelector("div.paragon__tile__tooltip__title");
+                            const tooltipTitle = newNode.querySelector("div.paragon__tile__tooltip__title");
                             processor.glyfNameProcess(tooltipTitle);
                         }
                     }
@@ -442,7 +456,7 @@ class D4BuildProcessor {
         }
     }
 
-    gearNameProcess(node) {
+    gearNameProcess(node, addOldValue) {
         const oldValue = node.innerText;
 
         const newValue = this.aspectNameMap.get(oldValue);
@@ -450,7 +464,13 @@ class D4BuildProcessor {
             return;
         }
 
-        node.innerHTML = node.innerHTML.replace(oldValue, this.buildValue("builder__gear__name__rus", newValue));
+        let htmlValue = this.buildHtmlValue("builder__gear__name__rus", newValue);
+
+        if (addOldValue) {
+            htmlValue += oldValue;
+        }
+
+        node.innerHTML = node.innerHTML.replace(oldValue, htmlValue);
     }
 
     glyfNameProcess(node) {
@@ -466,10 +486,12 @@ class D4BuildProcessor {
             return;
         }
 
-        node.innerHTML = node.innerHTML.replace(oldValue, this.buildValue("paragon__glyf__name__rus", newValue));
+        const htmlValue = this.buildHtmlValue("paragon__glyf__name__rus", newValue);
+
+        node.innerHTML = node.innerHTML.replace(oldValue, htmlValue);
     }
 
-    buildValue(className, value) {
+    buildHtmlValue(className, value) {
         return `<div class="${className}" style="color:gray; font-size:15px;">${value}</div>`;
     }
 }
