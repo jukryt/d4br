@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.3
+// @version      0.4
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -458,6 +458,9 @@ class D4BuildProcessor {
 
     gearNameProcess(node, addOldValue) {
         const oldValue = node.innerText;
+        if (!oldValue) {
+            return;
+        }
 
         const newValue = this.aspectNameMap.get(oldValue);
         if (!newValue) {
@@ -465,7 +468,6 @@ class D4BuildProcessor {
         }
 
         let htmlValue = this.buildHtmlValue("builder__gear__name__rus", newValue);
-
         if (addOldValue) {
             htmlValue += oldValue;
         }
@@ -475,6 +477,9 @@ class D4BuildProcessor {
 
     glyfNameProcess(node) {
         const oldValue = node.innerText;
+        if (!oldValue) {
+            return;
+        }
 
         const glyfMatch = oldValue.match(/([a-zA-Z]+) \(Lvl \d+\)/);
         if (!glyfMatch) {
@@ -487,7 +492,6 @@ class D4BuildProcessor {
         }
 
         const htmlValue = this.buildHtmlValue("paragon__glyf__name__rus", newValue);
-
         node.innerHTML = node.innerHTML.replace(oldValue, htmlValue);
     }
 
