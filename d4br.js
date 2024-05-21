@@ -447,8 +447,10 @@ class D4BuildProcessor {
                 else if (mutation.target.id.startsWith("tippy-")) {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.className === "paragon__tile__tooltip") {
-                            const tooltipTitle = newNode.querySelector("div.paragon__tile__tooltip__title");
-                            processor.glyphNameProcess(tooltipTitle);
+                            const tooltipTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
+                            if (tooltipTitleNode) {
+                                processor.glyphNameProcess(tooltipTitleNode);
+                            }
                         }
                     }
                 }
