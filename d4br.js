@@ -281,7 +281,7 @@ class D4BuildProcessor {
             ]);
 
         // https://www.wowhead.com/diablo-4/paragon-glyphs
-        this.glyfNameMap = new Map(
+        this.glyphNameMap = new Map(
             [
 ["Deadraiser", "Воскрешатель"],
 ["Corporeal", "Телесность"],
@@ -448,7 +448,7 @@ class D4BuildProcessor {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.className === "paragon__tile__tooltip") {
                             const tooltipTitle = newNode.querySelector("div.paragon__tile__tooltip__title");
-                            processor.glyfNameProcess(tooltipTitle);
+                            processor.glyphNameProcess(tooltipTitle);
                         }
                     }
                 }
@@ -475,23 +475,23 @@ class D4BuildProcessor {
         node.innerHTML = node.innerHTML.replace(oldValue, htmlValue);
     }
 
-    glyfNameProcess(node) {
+    glyphNameProcess(node) {
         const oldValue = node.innerText;
         if (!oldValue) {
             return;
         }
 
-        const glyfMatch = oldValue.match(/([a-zA-Z]+) \(Lvl \d+\)/);
-        if (!glyfMatch) {
+        const glyphMatch = oldValue.match(/([a-zA-Z ]+) \(Lvl \d+\)/);
+        if (!glyphMatch) {
             return;
         }
 
-        const newValue = this.glyfNameMap.get(glyfMatch[1]);
+        const newValue = this.glyphNameMap.get(glyphMatch[1]);
         if (!newValue) {
             return;
         }
 
-        const htmlValue = this.buildHtmlValue("paragon__glyf__name__rus", newValue);
+        const htmlValue = this.buildHtmlValue("paragon__glyph__name__rus", newValue);
         node.innerHTML = node.innerHTML.replace(oldValue, htmlValue);
     }
 
