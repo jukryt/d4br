@@ -86,6 +86,10 @@ class D4BuildsProcessor {
     }
 
     nodeProcess(node, className, map, addOldValue) {
+        if (!node.childNodes) {
+            return;
+        }
+        
         const oldValue = node.childNodes[0].data;
         if (!oldValue) {
             return;
