@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.6
+// @version      0.6.1
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -801,7 +801,7 @@ class D4BuildProcessor {
 
         let htmlValue = this.buildHtmlValue(className, newValue);
         if (addOldValue) {
-            htmlValue += oldValue;
+            htmlValue += node.innerHTML;
         }
 
         node.innerHTML = htmlValue;
