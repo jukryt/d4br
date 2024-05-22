@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.4.2
+// @version      0.5
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -422,7 +422,6 @@ class D4BuildProcessor {
     mutationObserverCallback(processor, mutationList, observer) {
         for (const mutation of mutationList) {
             if (mutation.type === "childList") {
-
                 // Сработает при открытии билда на вкладке Gear & Skills
                 if (mutation.target.className === "builder__gear__info") {
                     for (const newNode of mutation.addedNodes) {
@@ -443,10 +442,16 @@ class D4BuildProcessor {
                         }
                     }
                 }
-                // Сработает для тултипов глифов
+                // Сработает для тултипов
                 else if (mutation.target.id.startsWith("tippy-")) {
                     for (const newNode of mutation.addedNodes) {
-                        if (newNode.className === "paragon__tile__tooltip") {
+                        if (newNode.className === "codex__tooltip") {
+                            const gearNameNode = newNode.querySelector("div.codex__tooltip__name");
+                            if (gearNameNode) {
+                                processor.gearNameProcess(gearNameNode, false);
+                            }
+                        }
+                        else if (newNode.className === "paragon__tile__tooltip") {
                             const tooltipTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
                             if (tooltipTitleNode) {
                                 processor.glyphNameProcess(tooltipTitleNode);
@@ -459,7 +464,7 @@ class D4BuildProcessor {
     }
 
     gearNameProcess(node, addOldValue) {
-        const oldValue = node.innerText;
+        const oldValue = node.childNodes[0].data;
         if (!oldValue) {
             return;
         }
@@ -474,27 +479,22 @@ class D4BuildProcessor {
             htmlValue += oldValue;
         }
 
-        node.innerHTML = node.innerHTML.replace(oldValue, htmlValue);
+        node.innerHTML = htmlValue;
     }
 
     glyphNameProcess(node) {
-        const oldValue = node.innerText;
+        const oldValue = node.childNodes[0].data;
         if (!oldValue) {
             return;
         }
 
-        const glyphMatch = oldValue.match(/([a-zA-Z ]+) \(Lvl \d+\)/);
-        if (!glyphMatch) {
-            return;
-        }
-
-        const newValue = this.glyphNameMap.get(glyphMatch[1]);
+        const newValue = this.glyphNameMap.get(oldValue);
         if (!newValue) {
             return;
         }
 
         const htmlValue = this.buildHtmlValue("paragon__glyph__name__rus", newValue);
-        node.innerHTML = node.innerHTML.replace(oldValue, htmlValue);
+        node.innerHTML = htmlValue;
     }
 
     buildHtmlValue(className, value) {
