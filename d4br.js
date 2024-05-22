@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.7.1
+// @version      0.7.2
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -89,7 +89,7 @@ class D4BuildsProcessor {
         if (!node.childNodes) {
             return;
         }
-        
+
         const oldValue = node.childNodes[0].data;
         if (!oldValue) {
             return;
@@ -195,39 +195,30 @@ class D4MaxrollProcessor {
 (function() {
     'use strict';
 
-    const host = window.location.host;
-    switch (host) {
-        case "d4builds.gg" : {
-            RunD4BuildsObserver();
-            break;
-        }
-        case "maxroll.gg" : {
-            RunD4MaxrollObserver();
-            break;
-        }
-    }
-})();
-
-function RunD4BuildsObserver() {
     var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
 
-    const processor = new D4BuildsProcessor();
-    const observer = new MutationObserver((mutations, observer) => { processor.mutationObserverCallback(processor, mutations); });
+    const processor = CreateProcessor();
+    const observer = new MutationObserver((mutations, observer) => {
+        processor.mutationObserverCallback(processor, mutations);
+    });
     observer.observe(document, { subtree: true, childList: true });
-}
 
-function RunD4MaxrollObserver() {
-    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
-
-    const processor = new D4MaxrollProcessor();
-    const observer = new MutationObserver((mutations, observer) => { });
-    observer.observe(document, { subtree: true, childList: true });
     setInterval(() => {
         const mutations = observer.takeRecords();
         if (mutations.length > 0) {
             processor.mutationObserverCallback(processor, mutations);
         }
-    }, 500);
+    }, 1000);
+})();
+
+function CreateProcessor() {
+    const host = window.location.host;
+    switch (host) {
+        case "d4builds.gg" :
+            return new D4BuildsProcessor();
+        case "maxroll.gg" :
+            return new D4MaxrollProcessor();
+    }
 }
 
 function D4Data() {
