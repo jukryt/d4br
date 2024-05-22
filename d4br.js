@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.6.1
+// @version      0.7.0
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
+// @match        https://maxroll.gg/d4/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=d4builds.gg
 // @homepageURL  https://github.com/jukryt/d4br
 // @updateURL    https://raw.githubusercontent.com/jukryt/d4br/main/d4br.js
@@ -14,11 +15,223 @@
 // @grant        GM_setValue
 // ==/UserScript==
 
-class D4BuildProcessor {
+class D4BuildsProcessor {
     constructor() {
-        // https://www.wowhead.com/diablo-4/aspects
-        this.aspectNameMap = new Map(
-            [
+        this.d4Data = new D4Data();
+    }
+
+    mutationObserverCallback(processor, mutations) {
+        for (const mutation of mutations) {
+            if (mutation.type === "childList") {
+                // gear on load to Gear & Skills
+                if (mutation.target.className === "builder__gear__info") {
+                    for (const newNode of mutation.addedNodes) {
+                        if (newNode.className === "builder__gear__name") {
+                            //console.log(mutation);
+                            processor.gearNameProcess(newNode, false);
+                        }
+                    }
+                }
+                // gear on move to Gear & Skills
+                else if (mutation.target.className === "builder__content") {
+                    for (const newNode of mutation.addedNodes) {
+                        if (newNode.className === "builder__gear") {
+                            const gearNameNodes = newNode.querySelectorAll("div.builder__gear__name");
+                            for (const gearNameNode of gearNameNodes) {
+                                processor.gearNameProcess(gearNameNode, true);
+                            }
+                        }
+                    }
+                }
+                // toolltip
+                else if (mutation.target.id.startsWith("tippy-")) {
+                    for (const newNode of mutation.addedNodes) {
+                        // gear
+                        if (newNode.className === "codex__tooltip") {
+                            const gearNameNode = newNode.querySelector("div.codex__tooltip__name");
+                            if (gearNameNode) {
+                                processor.gearNameProcess(gearNameNode, false);
+                            }
+                        }
+                        // glyph
+                        else if (newNode.className === "paragon__tile__tooltip") {
+                            const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
+                            if (paragonTitleNode) {
+                                processor.glyphNameProcess(paragonTitleNode);
+                            }
+                        }
+                        // skill
+                        else if (newNode.className === "skill__tooltip") {
+                            const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
+                            if (skillNameNode) {
+                                processor.skillNameProcess(skillNameNode);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    gearNameProcess(node, addOldValue) {
+        this.nodeProcess(node, "gear__name__rus", this.d4Data.aspectNameMap, addOldValue);
+    }
+
+    glyphNameProcess(node) {
+        this.nodeProcess(node, "glyph__name__rus", this.d4Data.glyphNameMap, false);
+    }
+
+    skillNameProcess(node) {
+        this.nodeProcess(node, "skill__name__rus", this.d4Data.skillsNameMap, false);
+    }
+
+    nodeProcess(node, className, map, addOldValue) {
+        const oldValue = node.childNodes[0].data;
+        if (!oldValue) {
+            return;
+        }
+
+        const newValue = map.get(oldValue);
+        if (!newValue) {
+            return;
+        }
+
+        let htmlValue = this.buildHtmlValue(className, newValue);
+        if (addOldValue) {
+            htmlValue += node.innerHTML;
+        }
+
+        node.innerHTML = htmlValue;
+    }
+
+    buildHtmlValue(className, value) {
+        return `<div class="${className}" style="color:gray; font-size:15px;">${value}</div>`;
+    }
+}
+
+class D4MaxrollProcessor {
+    constructor() {
+        this.d4Data = new D4Data();
+    }
+
+    mutationObserverCallback(processor, mutations) {
+        for (const mutation of mutations) {
+            if (mutation.type === "childList") {
+                if (mutation.target.id === "d4tools-tooltip-root") {
+                    for (const newNode of mutation.addedNodes) {
+                        if (newNode.className === "d4tools-tooltip") {
+                            // gear
+                            if (newNode.querySelector("div.d4t-tip-legendary")) {
+                                const legendaryTitleNode = newNode.querySelector("div.d4t-title");
+                                if (legendaryTitleNode) {
+                                    processor.gearNameProcess(legendaryTitleNode, false);
+                                }
+                            }
+                            // glyph
+                            else if (newNode.querySelector("div.d4t-glyph-active")) {
+                                const glyphTitleNode = newNode.querySelector("div:nth-child(2 of .d4t-title)");
+                                if (glyphTitleNode) {
+                                    processor.glyphNameProcess(glyphTitleNode, false);
+                                }
+                            }
+                            // skill
+                            else if (newNode.querySelector("div.d4t-tip-skill")) {
+                                const skillTitleNode = newNode.querySelector("div.d4t-title");
+                                if (skillTitleNode) {
+                                    processor.skillNameProcess(skillTitleNode, false);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    gearNameProcess(node) {
+        this.nodeProcess(node, "gear__name__rus", this.d4Data.aspectNameMap, true);
+    }
+
+    glyphNameProcess(node) {
+        this.nodeProcess(node, "glyph__name__rus", this.d4Data.glyphNameMap, true);
+    }
+
+    skillNameProcess(node) {
+        this.nodeProcess(node, "skill__name__rus", this.d4Data.skillsNameMap, true);
+    }
+
+    nodeProcess(node, className, map, addOldValue) {
+        if (!node.childNodes) {
+            return;
+        }
+
+        const oldValue = node.childNodes[0].data;
+        if (!oldValue) {
+            return;
+        }
+
+        const newValue = map.get(oldValue);
+        if (!newValue) {
+            return;
+        }
+
+        let htmlValue = this.buildHtmlValue(className, newValue);
+        if (addOldValue) {
+            htmlValue += node.innerHTML;
+        }
+
+        node.innerHTML = htmlValue;
+    }
+
+    buildHtmlValue(className, value) {
+        return `<div class="${className}" style="color:gray; font-size:15px;">${value}</div>`;
+    }
+}
+
+(function() {
+    'use strict';
+
+    const host = window.location.host;
+    switch (host) {
+        case "d4builds.gg" : {
+            RunD4BuildsObserver();
+            break;
+        }
+        case "maxroll.gg" : {
+            RunD4MaxrollObserver();
+            break;
+        }
+    }
+})();
+
+function RunD4BuildsObserver() {
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+
+    const processor = new D4BuildsProcessor();
+    const observer = new MutationObserver((mutations, observer) => { processor.mutationObserverCallback(processor, mutations); });
+    observer.observe(document, { subtree: true, childList: true });
+}
+
+function RunD4MaxrollObserver() {
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+
+    const processor = new D4MaxrollProcessor();
+    const observer = new MutationObserver((mutations, observer) => { });
+    observer.observe(document, { subtree: true, childList: true });
+    setInterval(() => {
+        const mutations = observer.takeRecords();
+        if (mutations.length > 0) {
+            processor.mutationObserverCallback(processor, mutations);
+        }
+    }, 500);
+}
+
+function D4Data() {
+    return new class D4Data {
+        constructor() {
+            // https://www.wowhead.com/diablo-4/aspects
+            this.aspectNameMap = new Map(
+                [
 ["Aspect of Occult Dominion", "Аспект оккультной власти"],
 ["Juggernaut's Aspect", "Аспект – мощный"],
 ["Aspect of Hardened Bones", "Аспект затвердевших костей"],
@@ -278,11 +491,11 @@ class D4BuildProcessor {
 ["Earthguard Aspect", "Аспект – защищенный землей"],
 ["Aspect of Cyclonic Force", "Аспект силы циклона"],
 ["Balanced Aspect", "Аспект – сбалансированный"],
-            ]);
+                ]);
 
-        // https://www.wowhead.com/diablo-4/paragon-glyphs
-        this.glyphNameMap = new Map(
-            [
+            // https://www.wowhead.com/diablo-4/paragon-glyphs
+            this.glyphNameMap = new Map(
+                [
 ["Deadraiser", "Воскрешатель"],
 ["Corporeal", "Телесность"],
 ["Exploit", "Уловка"],
@@ -416,11 +629,11 @@ class D4BuildProcessor {
 ["Ruin", "Крах"],
 ["Ruin", "Крах"],
 ["Subdue", "Усмирение"],
-            ]);
+                ]);
 
-        // https://www.wowhead.com/diablo-4/skills
-        this.skillsNameMap = new Map(
-            [
+            // https://www.wowhead.com/diablo-4/skills
+            this.skillsNameMap = new Map(
+                [
 ["Decrepify", "Немощь"],
 ["Raise Skeleton", "Призыв скелета"],
 ["Shadowblight", "Чума тьмы"],
@@ -720,105 +933,7 @@ class D4BuildProcessor {
 ["Mending", "Исправление"],
 ["Reactive Defense", "Защитный импульс"],
 ["Conduction", "Проводимость"],
-            ]);
-    }
-
-    mutationObserverCallback(processor, mutationList, observer) {
-        for (const mutation of mutationList) {
-            if (mutation.type === "childList") {
-                // Сработает при открытии билда на вкладке Gear & Skills
-                if (mutation.target.className === "builder__gear__info") {
-                    for (const newNode of mutation.addedNodes) {
-                        if (newNode.className === "builder__gear__name") {
-                            //console.log(mutation);
-                            processor.gearNameProcess(newNode, false);
-                        }
-                    }
-                }
-                // Сработает при переходе с какой либо вкладки на Gear & Skills
-                else if (mutation.target.className === "builder__content") {
-                    for (const newNode of mutation.addedNodes) {
-                        if (newNode.className === "builder__gear") {
-                            const gearNameNodes = newNode.querySelectorAll("div.builder__gear__name");
-                            for (const gearNameNode of gearNameNodes) {
-                                processor.gearNameProcess(gearNameNode, true);
-                            }
-                        }
-                    }
-                }
-                // Сработает для тултипов
-                else if (mutation.target.id.startsWith("tippy-")) {
-                    for (const newNode of mutation.addedNodes) {
-                        // Аспекты
-                        if (newNode.className === "codex__tooltip") {
-                            const gearNameNode = newNode.querySelector("div.codex__tooltip__name");
-                            if (gearNameNode) {
-                                processor.gearNameProcess(gearNameNode, false);
-                            }
-                        }
-                        // Глифы
-                        else if (newNode.className === "paragon__tile__tooltip") {
-                            const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
-                            if (paragonTitleNode) {
-                                processor.glyphNameProcess(paragonTitleNode);
-                            }
-                        }
-                        // Скилы
-                        else if (newNode.className === "skill__tooltip") {
-                            const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
-                            if (skillNameNode) {
-                                processor.skillNameProcess(skillNameNode);
-                            }
-                        }
-                    }
-                }
-            }
+                ]);
         }
-    }
-
-    gearNameProcess(node, addOldValue) {
-        this.nodeProcess(node, "gear__name__rus", this.aspectNameMap, addOldValue);
-    }
-
-    glyphNameProcess(node) {
-        this.nodeProcess(node, "glyph__name__rus", this.glyphNameMap, false);
-    }
-
-    skillNameProcess(node) {
-        this.nodeProcess(node, "skill__name__rus", this.skillsNameMap, false);
-    }
-
-    nodeProcess(node, className, map, addOldValue) {
-        const oldValue = node.childNodes[0].data;
-        if (!oldValue) {
-            return;
-        }
-
-        const newValue = map.get(oldValue);
-        if (!newValue) {
-            return;
-        }
-
-        let htmlValue = this.buildHtmlValue(className, newValue);
-        if (addOldValue) {
-            htmlValue += node.innerHTML;
-        }
-
-        node.innerHTML = htmlValue;
-    }
-
-    buildHtmlValue(className, value) {
-        return `<div class="${className}" style="color:gray; font-size:15px;">${value}</div>`;
     }
 }
-
-(function() {
-    'use strict';
-
-    const processor = new D4BuildProcessor();
-    const observer = new MutationObserver(function (mutationList, observer) { processor.mutationObserverCallback(processor, mutationList, observer); });
-
-    const builderContent = document.querySelector("body");
-    const callbackConfig = { subtree: true, childList: true };
-    observer.observe(builderContent, callbackConfig);
-})();
