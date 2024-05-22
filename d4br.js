@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.5
+// @version      0.6
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -417,6 +417,310 @@ class D4BuildProcessor {
 ["Ruin", "Крах"],
 ["Subdue", "Усмирение"],
             ]);
+
+        // https://www.wowhead.com/diablo-4/skills
+        this.skillsNameMap = new Map(
+            [
+["Decrepify", "Немощь"],
+["Raise Skeleton", "Призыв скелета"],
+["Shadowblight", "Чума тьмы"],
+["Hellbent Commander", "Одержимый командир"],
+["Corpse Explosion", "Взрыв трупа"],
+["Digitigrade Gait", "Прыть пальцеходящих"],
+["Bash", "Сокрушающий удар"],
+["Golem", "Голем"],
+["Frozen Orb", "Морозная сфера"],
+["Corpse Tendrils", "Трупные щупальца"],
+["Heartseeker", "Пронзатель сердец"],
+["Concussion", "Контузия"],
+["Blight", "Тлен"],
+["Imposing Presence", "Довлеющее присутствие"],
+["Double Swing", "Двойной удар"],
+["Frost Nova", "Кольцо льда"],
+["Teleport", "Телепортация"],
+["Army of the Dead", "Армия мертвецов"],
+["Unconstrained", "Неудержимая сила"],
+["Incinerate", "Испепеление"],
+["Shatter", "Раскалывание"],
+["Esu's Ferocity", "Свирепость Эсу"],
+["Blood Mist", "Кровавый туман"],
+["Kalan's Edict", "Эдикт Калана"],
+["Charge", "Натиск"],
+["Rallying Cry", "Воодушевляющий клич"],
+["Dark Shroud", "Теневая завеса"],
+["Pit Fighter", "Боец арены"],
+["Ice Blades", "Ледяные клинки"],
+["Wrath of the Berserker", "Гнев берсерка"],
+["Iron Maiden", "Железная дева"],
+["Lunging Strike", "Выпад"],
+["Blood Surge", "Волнение крови"],
+["Spark", "Искра"],
+["Bone Storm", "Буря костей"],
+["Rapid Ossification", "Быстрое окостенение"],
+["Amplify Damage", "Усиление урона"],
+["Frigid Finesse", "Ледяная точность"],
+["Challenging Shout", "Подстрекающий крик"],
+["Reap", "Жатва"],
+["Hemorrhage", "Кровоизлияние"],
+["Death's Embrace", "Объятия смерти"],
+["Barrage", "Шквальный огонь"],
+["Precision", "Точность"],
+["Fire Bolt", "Стрела огня"],
+["Ice Armor", "Ледяной доспех"],
+["Fireball", "Огненный шар"],
+["Fueled by Death", "Смерть придает силы"],
+["Skeletal Mage Mastery", "Мастер скелетов-магов"],
+["Bone Splinters", "Костяные осколки"],
+["Golem Mastery", "Мастер големов"],
+["Aggressive Resistance", "Яростное сопротивление"],
+["Hewed Flesh", "Обрезки плоти"],
+["Decompose", "Распад"],
+["Deep Freeze", "Глубокая заморозка"],
+["Crippling Darkness", "Жестокая тьма"],
+["Hydra", "Гидра"],
+["Flame Shield", "Пламенный щит"],
+["Envenom", "Наполнение ядом"],
+["War Cry", "Воинственный клич"],
+["Unstable Currents", "Бурный поток"],
+["Bestial Rampage", "Звериное буйство"],
+["Outburst", "Вспышка гнева"],
+["Victimize", "Жестокая расправа"],
+["Lightning Spear", "Электрическое копье"],
+["Overflowing Energy", "Неудержимая энергия"],
+["Ursine Strength", "Медвежья сила"],
+["Gloom", "Сумрак"],
+["Devouring Blaze", "Всепоглощающее пламя"],
+["Vyr's Mastery", "Мастерство Выра"],
+["Forceful Arrow", "Стрела силы"],
+["Chain Lightning", "Цепная молния"],
+["Whirlwind", "Вихрь"],
+["Rapid Fire", "Скоростная стрельба"],
+["Rathma's Vigor", "Бодрость Ратмы"],
+["Trample", "Тяжелый шаг"],
+["Warmth", "Тепло"],
+["Martial Vigor", "Боевой азарт"],
+["Skeletal Warrior Mastery", "Мастер скелетов-воинов"],
+["Wolves", "Волки"],
+["Shadow Imbuement", "Насыщение тенью"],
+["Concealment", "Маскировка"],
+["Upheaval", "Выброс земли"],
+["Weapon Mastery", "Мастер оружия"],
+["Frenzy", "Бешенство"],
+["Counteroffensive", "Контрнаступление"],
+["Death's Approach", "Приближение смерти"],
+["Blood Howl", "Кровавый вой"],
+["Unliving Energy", "Неживая энергия"],
+["Tough as Nails", "Шипастый щит"],
+["Shadow Step", "Шаг сквозь тень"],
+["Walking Arsenal", "Живой арсенал"],
+["Ball Lightning", "Шаровая молния"],
+["Inspiring Leader", "Пример для подражания"],
+["Pulverize", "Сокрушение"],
+["Imperfectly Balanced", "Хрупкий баланс"],
+["Avalanche", "Лавина"],
+["Fiery Surge", "Вспышка огня"],
+["Frigid Breeze", "Леденящий ветер"],
+["Poison Creeper", "Ядовитая лоза"],
+["Conjuration Mastery", "Мастер колдовства"],
+["Exploit", "Уловка"],
+["Firewall", "Стена огня"],
+["Sever", "Отсечение"],
+["Leap", "Прыжок"],
+["Storm Strike", "Удар бури"],
+["Wind Shear", "Ветрорез"],
+["Arc Lash", "Грозовая плеть"],
+["Grim Harvest", "Мрачный урожай"],
+["Puncture", "Колющий удар"],
+["Spiked Armor", "Шипастый доспех"],
+["Petrify", "Окаменение"],
+["Dash", "Рывок"],
+["Glass Cannon", "Хрупкий разрушитель"],
+["Debilitating Roar", "Изнуряющий рев"],
+["Flay", "Свежевание"],
+["Ice Shards", "Осколки льда"],
+["Bone Spear", "Костяное копье"],
+["Rend", "Рваные раны"],
+["Cold Front", "Холодный фронт"],
+["Raid Leader", "Лидер рейда"],
+["Poison Imbuement", "Насыщение ядом"],
+["Evulsion", "Искоренение"],
+["Lightning Storm", "Грозовой шторм"],
+["Invigorating Conduit", "Бодрящий проводник"],
+["Necrotic Carapace", "Некротический панцирь"],
+["Elemental Dominance", "Власть над стихиями"],
+["Rabies", "Звериное бешенство"],
+["Bone Spirit", "Костяной дух"],
+["Rupture", "Разрыв"],
+["Tornado", "Смерч"],
+["Permafrost", "Вечная мерзлота"],
+["Steel Grasp", "Железная хватка"],
+["Iron Skin", "Железная кожа"],
+["Pressure Point", "Уязвимая точка"],
+["Flurry", "Шквал"],
+["Frost Bolt", "Ледяная стрела"],
+["Ravens", "Вороны"],
+["Ground Stomp", "Топот"],
+["Abundance", "Изобилие"],
+["Ossified Essence", "Окостеневшая эссенция"],
+["Bone Prison", "Костяная тюрьма"],
+["Shred", "Разрывание"],
+["Wallop", "Разгром"],
+["Momentum", "Импульс"],
+["Hurricane", "Ураган"],
+["Blizzard", "Снежная буря"],
+["Rain of Arrows", "Град стрел"],
+["Inner Flames", "Внутреннее пламя"],
+["Penetrating Shot", "Пробивающий выстрел"],
+["Twisting Blades", "Вонзающиеся клинки"],
+["Heavy Handed", "Тяжелая рука"],
+["No Mercy", "Никакой пощады"],
+["Concussive", "Фугасный снаряд"],
+["Maul", "Трепка"],
+["Earthen Bulwark", "Земляной бастион"],
+["Smoke Grenade", "Ослепляющий дым"],
+["Reaper's Pursuit", "Преследующий жнец"],
+["Adrenaline Rush", "Выброс адреналина"],
+["Hammer of the Ancients", "Молот Древних"],
+["Coalesced Blood", "Сгусток крови"],
+["Hoarfrost", "Изморозь"],
+["Charged Bolts", "Электрические разряды"],
+["Compound Fracture", "Сложный перелом"],
+["Innervation", "Прилив энергии"],
+["Booming Voice", "Громогласность"],
+["Death's Defense", "Защита смерти"],
+["Claw", "Удар когтями"],
+["Brute Force", "Грубая сила"],
+["Stutter Step", "Перебежка"],
+["Cut to the Bone", "Порез до кости"],
+["Battle Fervor", "Боевое рвение"],
+["Gruesome Mending", "Зловещее исцеление"],
+["Nature's Fury", "Гнев природы"],
+["Sturdy", "Прочность"],
+["Meteor", "Метеорит"],
+["Guttural Yell", "Утробный рев"],
+["Invigorating Strike", "Живительный удар"],
+["Trick Attacks", "Коварные удары"],
+["Malice", "Злоба"],
+["Invigorating Fury", "Бодрящая ярость"],
+["Terror", "Устрашение"],
+["Quickshift", "Быстрое преображение"],
+["Call of the Ancients", "Зов Древних"],
+["Shadow Crash", "Теневое сокрушение"],
+["Shadow Clone", "Темное отражение"],
+["Blood Lance", "Окровавленное копье"],
+["Caltrops", "Шипы"],
+["Death Blow", "Смертельный удар"],
+["Close Quarters Combat", "Ближний бой"],
+["Earth Spike", "Шип земли"],
+["Bonded in Essence", "Связанные одной эссенцией"],
+["Wild Impulses", "Дикие инстинкты"],
+["Protection", "Защита"],
+["Unbridled Rage", "Необузданная свирепость"],
+["Defensive Stance", "Защитная позиция"],
+["Slaying Strike", "Разящий удар"],
+["Nature's Resolve", "Стойкость природы"],
+["Mana Shield", "Щит маны"],
+["Alchemical Advantage", "Польза алхимии"],
+["Deadly Venom", "Смертельный яд"],
+["Cold Imbuement", "Насыщение холодом"],
+["Elemental Attunement", "Единство со стихиями"],
+["Heightened Senses", "Обостренные чувства"],
+["Death Trap", "Смертоносная ловушка"],
+["Lacerate", "Раздирание"],
+["Iron Maelstrom", "Круговорот стали"],
+["Defiance", "Непокорность"],
+["Precision Imbuement", "Прицельное насыщение"],
+["Cataclysm", "Катаклизм"],
+["Clarity", "Ясность"],
+["Nature's Reach", "Власть природы"],
+["Combustion", "Возгорание"],
+["Chilling Weight", "Обременяющий холод"],
+["Blood Wave", "Кровавая волна"],
+["Siphoning Strikes", "Вытягивающие удары"],
+["Devastation", "Опустошение"],
+["Call of the Wild", "Зов дикой природы"],
+["Soulfire", "Ожог души"],
+["Thick Skin", "Плотная кожа"],
+["Endless Pyre", "Нескончаемое сожжение"],
+["Heart of the Wild", "Сердце дикой природы"],
+["Landslide", "Оползень"],
+["Precision Magic", "Точная магия"],
+["Expose Vulnerability", "Найти слабости"],
+["Prolific Fury", "Живительная ярость"],
+["Impetus", "Сила движения"],
+["Resonance", "Резонанс"],
+["Align the Elements", "Баланс стихий"],
+["Coursing Currents", "Текучие потоки"],
+["Static Discharge", "Статический разряд"],
+["Inferno", "Инферно"],
+["Tides of Blood", "Волны крови"],
+["Duelist", "Дуэлянт"],
+["Earthen Might", "Мощь земли"],
+["Kick", "Удар ногой"],
+["Tempered Fury", "Усмиренная ярость"],
+["Blade Shift", "Блуждающий клинок"],
+["Poison Trap", "Ловушка с ядом"],
+["Debilitating Toxins", "Изнуряющие яды"],
+["Drain Vitality", "Иссушение жизненной силы"],
+["Icy Touch", "Ледяное прикосновение"],
+["Haste", "Спешка"],
+["Electrocution", "Электрошок"],
+["Predatory Instinct", "Инстинкт хищника"],
+["Vigilance", "Бдительность"],
+["Boulder", "Глыба"],
+["Grizzly Rage", "Ярость гризли"],
+["Shocking Impact", "Импульс шока"],
+["Stand Alone", "Одиночка"],
+["Mending Obscurity", "Целительная пелена"],
+["Exposure", "Вредное воздействие"],
+["Crushing Earth", "Сокрушающая земля"],
+["Provocation", "Провокация"],
+["Defensive Posture", "Защитная стойка"],
+["Icy Veil", "Ледяная завеса"],
+["Toxic Claws", "Ядовитые когти"],
+["Perfect Storm", "Буря в разгаре"],
+["Serration", "Зазубрины"],
+["Potent Warding", "Надежные обереги"],
+["Agile", "Изворотливость"],
+["Natural Disaster", "Природная катастрофа"],
+["Memento Mori", "Помни о смерти"],
+["Lupine Ferocity", "Волчья свирепость"],
+["Crippling Flames", "Увечащее пламя"],
+["Circle of Life", "Круг жизни"],
+["Electric Shock", "Электрошок"],
+["Aftermath", "Итог"],
+["Endless Fury", "Бесконечная ярость"],
+["Cyclone Armor", "Ураганный доспех"],
+["Ancestral Fortitude", "Стойкость предков"],
+["Second Wind", "Второе дыхание"],
+["Elemental Exposure", "Сила стихий"],
+["Consuming Shadows", "Поглощающие теней"],
+["Gushing Wounds", "Кровоточащие раны"],
+["Swiftness", "Быстрота"],
+["Iron Fur", "Железный мех"],
+["Furious Impulse", "Яростный порыв"],
+["Alchemist's Fortune", "Удача алхимика"],
+["Trap Mastery", "Мастер ловушек"],
+["Bad Omen", "Дурное знамение"],
+["Neurotoxin", "Нейротоксин"],
+["Rapid Gambits", "Быстрые хитрости"],
+["Rugged", "Двужильность"],
+["Stone Guard", "Каменный страж"],
+["Safeguard", "Защитные меры"],
+["Convulsions", "Конвульсии"],
+["Unrestrained", "Необузданная сила"],
+["Thick Hide", "Плотная шкура"],
+["Charged Atmosphere", "Атмосферное напряжение"],
+["Natural Fortitude", "Природная выносливость"],
+["Hamstring", "Подрезание сухожилий"],
+["Quick Impulses", "Стремительные инстинкты"],
+["Endless Tempest", "Нескончаемый ураган"],
+["Transfusion", "Переливание"],
+["Snap Freeze", "Мгновенная заморозка"],
+["Mending", "Исправление"],
+["Reactive Defense", "Защитный импульс"],
+["Conduction", "Проводимость"],
+            ]);
     }
 
     mutationObserverCallback(processor, mutationList, observer) {
@@ -445,16 +749,25 @@ class D4BuildProcessor {
                 // Сработает для тултипов
                 else if (mutation.target.id.startsWith("tippy-")) {
                     for (const newNode of mutation.addedNodes) {
+                        // Аспекты
                         if (newNode.className === "codex__tooltip") {
                             const gearNameNode = newNode.querySelector("div.codex__tooltip__name");
                             if (gearNameNode) {
                                 processor.gearNameProcess(gearNameNode, false);
                             }
                         }
+                        // Глифы
                         else if (newNode.className === "paragon__tile__tooltip") {
-                            const tooltipTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
-                            if (tooltipTitleNode) {
-                                processor.glyphNameProcess(tooltipTitleNode);
+                            const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
+                            if (paragonTitleNode) {
+                                processor.glyphNameProcess(paragonTitleNode);
+                            }
+                        }
+                        // Скилы
+                        else if (newNode.className === "skill__tooltip") {
+                            const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
+                            if (skillNameNode) {
+                                processor.skillNameProcess(skillNameNode);
                             }
                         }
                     }
@@ -464,36 +777,33 @@ class D4BuildProcessor {
     }
 
     gearNameProcess(node, addOldValue) {
+        this.nodeProcess(node, "gear__name__rus", this.aspectNameMap, addOldValue);
+    }
+
+    glyphNameProcess(node) {
+        this.nodeProcess(node, "glyph__name__rus", this.glyphNameMap, false);
+    }
+
+    skillNameProcess(node) {
+        this.nodeProcess(node, "skill__name__rus", this.skillsNameMap, false);
+    }
+
+    nodeProcess(node, className, map, addOldValue) {
         const oldValue = node.childNodes[0].data;
         if (!oldValue) {
             return;
         }
 
-        const newValue = this.aspectNameMap.get(oldValue);
+        const newValue = map.get(oldValue);
         if (!newValue) {
             return;
         }
 
-        let htmlValue = this.buildHtmlValue("builder__gear__name__rus", newValue);
+        let htmlValue = this.buildHtmlValue(className, newValue);
         if (addOldValue) {
             htmlValue += oldValue;
         }
 
-        node.innerHTML = htmlValue;
-    }
-
-    glyphNameProcess(node) {
-        const oldValue = node.childNodes[0].data;
-        if (!oldValue) {
-            return;
-        }
-
-        const newValue = this.glyphNameMap.get(oldValue);
-        if (!newValue) {
-            return;
-        }
-
-        const htmlValue = this.buildHtmlValue("paragon__glyph__name__rus", newValue);
         node.innerHTML = htmlValue;
     }
 
