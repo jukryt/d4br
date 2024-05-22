@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.7.0
+// @version      0.7.1
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -188,7 +188,7 @@ class D4MaxrollProcessor {
     }
 
     buildHtmlValue(className, value) {
-        return `<div class="${className}" style="color:gray; font-size:15px;">${value}</div>`;
+        return `<div class="${className}" style="color:darkgray; font-size:15px;">${value}</div>`;
     }
 }
 
