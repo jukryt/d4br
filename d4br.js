@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.7.2
+// @version      0.7.4
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -96,6 +96,10 @@ class D4BuildsProcessor {
         }
 
         const newValue = map.get(oldValue);
+        this.setNewValue(node, className, newValue, addOldValue);
+    }
+
+    setNewValue(node, className, newValue, addOldValue) {
         if (!newValue) {
             return;
         }
@@ -126,9 +130,10 @@ class D4MaxrollProcessor {
                         if (newNode.className === "d4tools-tooltip") {
                             // gear
                             if (newNode.querySelector("div.d4t-tip-legendary")) {
-                                const legendaryTitleNode = newNode.querySelector("div.d4t-title");
-                                if (legendaryTitleNode) {
-                                    processor.gearNameProcess(legendaryTitleNode, false);
+                                const titleNode = newNode.querySelector("div.d4t-title");
+                                const subTitleNode = newNode.querySelector("div.d4t-sub-title");
+                                if (titleNode && subTitleNode) {
+                                    processor.gearNameProcess(titleNode, subTitleNode, false);
                                 }
                             }
                             // glyph
@@ -152,8 +157,39 @@ class D4MaxrollProcessor {
         }
     }
 
-    gearNameProcess(node) {
-        this.nodeProcess(node, "gear__name__rus", this.d4Data.aspectNameMap, true);
+    gearNameProcess(titleNode, subTitleNode) {
+        const className = "gear__name__rus";
+        const subTitleValue = subTitleNode.innerText;
+        // aspect node
+        if (subTitleValue === "Legendary Aspect") {
+            this.nodeProcess(titleNode, className, this.d4Data.aspectNameMap, true);
+        }
+        // item node
+        else {
+            const oldTitleValue = titleNode.innerText;
+            const results = [...this.d4Data.aspectNameMap].filter((p) => {
+                const key = p[0];
+                const value = p[1];
+                const aspectIndex = key.indexOf("Aspect");
+                if (aspectIndex === 0) {
+                    const aspectName = key.substring(6);
+                    if (oldTitleValue.endsWith(aspectName)) {
+                        return value;
+                    }
+                }
+                else {
+                    const aspectName = key.substring(0, aspectIndex);
+                    if (oldTitleValue.startsWith(aspectName)) {
+                        return value;
+                    }
+                }
+            });
+
+            if (results.length === 1) {
+                const newTitleValue = results[0][1];
+                this.setNewValue(titleNode, className, newTitleValue, true);
+            }
+        }
     }
 
     glyphNameProcess(node) {
@@ -165,16 +201,11 @@ class D4MaxrollProcessor {
     }
 
     nodeProcess(node, className, map, addOldValue) {
-        if (!node.childNodes) {
-            return;
-        }
+        const newValue = map.get(node.innerText);
+        this.setNewValue(node, className, newValue, addOldValue);
+    }
 
-        const oldValue = node.childNodes[0].data;
-        if (!oldValue) {
-            return;
-        }
-
-        const newValue = map.get(oldValue);
+    setNewValue(node, className, newValue, addOldValue) {
         if (!newValue) {
             return;
         }
