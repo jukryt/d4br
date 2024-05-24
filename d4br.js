@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.7.4
+// @version      0.8.0
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -53,11 +53,21 @@ class D4BuildsProcessor {
                                 processor.gearNameProcess(gearNameNode, false);
                             }
                         }
-                        // glyph
+                        // paragon
                         else if (newNode.className === "paragon__tile__tooltip") {
-                            const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
-                            if (paragonTitleNode) {
-                                processor.glyphNameProcess(paragonTitleNode);
+                            // glyph
+                            if (newNode.querySelector("div.paragon__tile__tooltip__rarity.rare")) {
+                                const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
+                                if (paragonTitleNode) {
+                                    processor.glyphNameProcess(paragonTitleNode);
+                                }
+                            }
+                            // leg node
+                            if (newNode.querySelector("div.paragon__tile__tooltip__rarity.legendary")) {
+                                const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
+                                if (paragonTitleNode) {
+                                    processor.legNodeNameProcess(paragonTitleNode);
+                                }
                             }
                         }
                         // skill
@@ -74,15 +84,19 @@ class D4BuildsProcessor {
     }
 
     gearNameProcess(node, addOldValue) {
-        this.nodeProcess(node, "gear__name__rus", this.d4Data.aspectNameMap, addOldValue);
+        this.nodeProcess(node, "gear_name_rus", this.d4Data.aspectNameMap, addOldValue);
     }
 
     glyphNameProcess(node) {
-        this.nodeProcess(node, "glyph__name__rus", this.d4Data.glyphNameMap, false);
+        this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, false);
+    }
+
+    legNodeNameProcess(node) {
+        this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, false);
     }
 
     skillNameProcess(node) {
-        this.nodeProcess(node, "skill__name__rus", this.d4Data.skillsNameMap, false);
+        this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, false);
     }
 
     nodeProcess(node, className, map, addOldValue) {
@@ -128,19 +142,26 @@ class D4MaxrollProcessor {
                 if (mutation.target.id === "d4tools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.className === "d4tools-tooltip") {
+                            // glyph
+                            if (newNode.querySelector("div.d4t-glyph-active")) {
+                                const glyphTitleNode = newNode.querySelector("div:nth-child(2 of .d4t-title)");
+                                if (glyphTitleNode) {
+                                    processor.glyphNameProcess(glyphTitleNode, false);
+                                }
+                            }
+                            // leg node
+                            else if (newNode.querySelector("div.d4t-tip-skill.d4t-tip-legendary")) {
+                                const legNodeTitleNode = newNode.querySelector("div.d4t-title");
+                                if (legNodeTitleNode) {
+                                    processor.legNodeNameProcess(legNodeTitleNode, false);
+                                }
+                            }
                             // gear
-                            if (newNode.querySelector("div.d4t-tip-legendary")) {
+                            else if (newNode.querySelector("div.d4t-tip-legendary")) {
                                 const titleNode = newNode.querySelector("div.d4t-title");
                                 const subTitleNode = newNode.querySelector("div.d4t-sub-title");
                                 if (titleNode && subTitleNode) {
                                     processor.gearNameProcess(titleNode, subTitleNode, false);
-                                }
-                            }
-                            // glyph
-                            else if (newNode.querySelector("div.d4t-glyph-active")) {
-                                const glyphTitleNode = newNode.querySelector("div:nth-child(2 of .d4t-title)");
-                                if (glyphTitleNode) {
-                                    processor.glyphNameProcess(glyphTitleNode, false);
                                 }
                             }
                             // skill
@@ -158,7 +179,7 @@ class D4MaxrollProcessor {
     }
 
     gearNameProcess(titleNode, subTitleNode) {
-        const className = "gear__name__rus";
+        const className = "gear_name_rus";
         const subTitleValue = subTitleNode.innerText;
         // aspect node
         if (subTitleValue === "Legendary Aspect") {
@@ -171,12 +192,14 @@ class D4MaxrollProcessor {
                 const key = p[0];
                 const value = p[1];
                 const aspectIndex = key.indexOf("Aspect");
+                // [Aspect of ...] => [Item_Name of Aspect_Name]
                 if (aspectIndex === 0) {
                     const aspectName = key.substring(6);
                     if (oldTitleValue.endsWith(aspectName)) {
                         return value;
                     }
                 }
+                // [... Aspect] => [Aspect_Name Item_Name]
                 else {
                     const aspectName = key.substring(0, aspectIndex);
                     if (oldTitleValue.startsWith(aspectName)) {
@@ -193,11 +216,15 @@ class D4MaxrollProcessor {
     }
 
     glyphNameProcess(node) {
-        this.nodeProcess(node, "glyph__name__rus", this.d4Data.glyphNameMap, true);
+        this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, true);
+    }
+
+    legNodeNameProcess(node) {
+        this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, true);
     }
 
     skillNameProcess(node) {
-        this.nodeProcess(node, "skill__name__rus", this.d4Data.skillsNameMap, true);
+        this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, true);
     }
 
     nodeProcess(node, className, map, addOldValue) {
@@ -655,6 +682,52 @@ function D4Data() {
 ["Ruin", "Крах"],
 ["Ruin", "Крах"],
 ["Subdue", "Усмирение"],
+                ]);
+
+            // https://www.wowhead.com/diablo-4/paragon-nodes/quality:4
+            this.legNodeMap = new Map(
+                [
+["Cult Leader", "Глава культа"],
+["Flesh-eater", "Пожирание плоти"],
+["Thunderstruck", "Громовой молот"],
+["Frigid Fate", "Смерть во льдах"],
+["Hulking Monstrosity", "Исполинское чудовище"],
+["Lust for Carnage", "Жажда насилия"],
+["Enchantment Master", "Мастер чар"],
+["Wither", "Иссушение"],
+["Inner Beast", "Внутренний зверь"],
+["Icefall", "Ледопад"],
+["Blood Rage", "Кровавая ярость"],
+["Warbringer", "Разжигатель войны"],
+["Cunning Stratagem", "Хитрый маневр"],
+["Burning Instinct", "Пылающий инстинкт"],
+["Scent of Death", "Запах смерти"],
+["Cheap Shot", "Грязный прием"],
+["Bone Graft", "Пересаженная кость"],
+["Heightened Malice", "Необычайная злоба"],
+["Carnage", "Расправа"],
+["Tricks of the Trade", "Профессиональные приемы"],
+["Constricting Tendrils", "Щупальца-душители"],
+["Eldritch Bounty", "Потусторонний дар"],
+["Ceaseless Conduit", "Бесконечный проводник"],
+["Searing Heat", "Опаляющий жар"],
+["No Witnesses", "Никаких свидетелей"],
+["Decimator", "Дециматор"],
+["Bloodbath", "Кровавая баня"],
+["Ancestral Guidance", "Наставление предков"],
+["Exploit Weakness", "Игра на слабостях"],
+["Earthen Devastation", "Земляное уничтожение"],
+["Deadly Ambush", "Смертельная засада"],
+["Static Surge", "Всплеск энергии"],
+["Blood Begets Blood", "Кровь рождает кровь"],
+["Hemorrhage", "Кровоизлияние"],
+["Elemental Summoner", "Призыватель стихий"],
+["Leyrana's Instinct", "Инстинкт Лейраны"],
+["Flawless Technique", "Безупречная техника"],
+["Bone Breaker", "Костолом"],
+["Weapons Master", "Мастерское владение оружием"],
+["Survival Instincts", "Инстинкты выживания"],
+["Natural Leader", "Прирожденный лидер"],
                 ]);
 
             // https://www.wowhead.com/diablo-4/skills
