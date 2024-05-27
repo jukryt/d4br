@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.8.0
+// @version      0.8.1
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -44,17 +44,16 @@ class D4BuildsProcessor {
                     }
                 }
                 // toolltip
-                else if (mutation.target.id.startsWith("tippy-")) {
+                else if (mutation.target.localName === "body") {
                     for (const newNode of mutation.addedNodes) {
-                        // gear
-                        if (newNode.className === "codex__tooltip") {
-                            const gearNameNode = newNode.querySelector("div.codex__tooltip__name");
-                            if (gearNameNode) {
-                                processor.gearNameProcess(gearNameNode, false);
+                        if (newNode.id.startsWith("tippy-")) {
+                            // gear
+                            if (newNode.querySelector("div.codex__tooltip")) {
+                                const gearNameNode = newNode.querySelector("div.codex__tooltip__name");
+                                if (gearNameNode) {
+                                    processor.gearNameProcess(gearNameNode, false);
+                                }
                             }
-                        }
-                        // paragon
-                        else if (newNode.className === "paragon__tile__tooltip") {
                             // glyph
                             if (newNode.querySelector("div.paragon__tile__tooltip__rarity.rare")) {
                                 const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
@@ -69,12 +68,12 @@ class D4BuildsProcessor {
                                     processor.legNodeNameProcess(paragonTitleNode);
                                 }
                             }
-                        }
-                        // skill
-                        else if (newNode.className === "skill__tooltip") {
-                            const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
-                            if (skillNameNode) {
-                                processor.skillNameProcess(skillNameNode);
+                            // skill
+                            else if (newNode.querySelector("div.skill__tooltip")) {
+                                const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
+                                if (skillNameNode) {
+                                    processor.skillNameProcess(skillNameNode);
+                                }
                             }
                         }
                     }
@@ -142,9 +141,16 @@ class D4MaxrollProcessor {
                 if (mutation.target.id === "d4tools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.className === "d4tools-tooltip") {
-                            // glyph
+                            // glyph node
                             if (newNode.querySelector("div.d4t-glyph-active")) {
                                 const glyphTitleNode = newNode.querySelector("div:nth-child(2 of .d4t-title)");
+                                if (glyphTitleNode) {
+                                    processor.glyphNameProcess(glyphTitleNode, false);
+                                }
+                            }
+                            // glyph in title
+                            if (newNode.querySelector("div.d4t-glyph-empty")) {
+                                const glyphTitleNode = newNode.querySelector("div.d4t-title");
                                 if (glyphTitleNode) {
                                     processor.glyphNameProcess(glyphTitleNode, false);
                                 }
@@ -196,14 +202,14 @@ class D4MaxrollProcessor {
                 if (aspectIndex === 0) {
                     const aspectName = key.substring(6);
                     if (oldTitleValue.endsWith(aspectName)) {
-                        return value;
+                        return true;
                     }
                 }
                 // [... Aspect] => [Aspect_Name Item_Name]
                 else {
                     const aspectName = key.substring(0, aspectIndex);
                     if (oldTitleValue.startsWith(aspectName)) {
-                        return value;
+                        return true;
                     }
                 }
             });
