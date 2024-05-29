@@ -6,6 +6,7 @@
 // @author       jukryt
 // @match        https://d4builds.gg/*
 // @match        https://maxroll.gg/d4/*
+// @match        https://mobalytics.gg/diablo-4/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=d4builds.gg
 // @homepageURL  https://github.com/jukryt/d4br
 // @updateURL    https://raw.githubusercontent.com/jukryt/d4br/main/d4br.js
@@ -54,25 +55,25 @@ class D4BuildsProcessor {
                                     processor.gearNameProcess(gearNameNode, false);
                                 }
                             }
+                            // skill
+                            else if (newNode.querySelector("div.skill__tooltip")) {
+                                const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
+                                if (skillNameNode) {
+                                    processor.skillNameProcess(skillNameNode);
+                                }
+                            }
                             // glyph
-                            if (newNode.querySelector("div.paragon__tile__tooltip__rarity.rare")) {
+                            else if (newNode.querySelector("div.paragon__tile__tooltip__rarity.rare")) {
                                 const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
                                 if (paragonTitleNode) {
                                     processor.glyphNameProcess(paragonTitleNode);
                                 }
                             }
                             // leg node
-                            if (newNode.querySelector("div.paragon__tile__tooltip__rarity.legendary")) {
+                            else if (newNode.querySelector("div.paragon__tile__tooltip__rarity.legendary")) {
                                 const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
                                 if (paragonTitleNode) {
                                     processor.legNodeNameProcess(paragonTitleNode);
-                                }
-                            }
-                            // skill
-                            else if (newNode.querySelector("div.skill__tooltip")) {
-                                const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
-                                if (skillNameNode) {
-                                    processor.skillNameProcess(skillNameNode);
                                 }
                             }
                         }
@@ -86,16 +87,16 @@ class D4BuildsProcessor {
         this.nodeProcess(node, "gear_name_rus", this.d4Data.aspectNameMap, addOldValue);
     }
 
+    skillNameProcess(node) {
+        this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, false);
+    }
+
     glyphNameProcess(node) {
         this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, false);
     }
 
     legNodeNameProcess(node) {
         this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, false);
-    }
-
-    skillNameProcess(node) {
-        this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, false);
     }
 
     nodeProcess(node, className, map, addOldValue) {
@@ -141,40 +142,40 @@ class D4MaxrollProcessor {
                 if (mutation.target.id === "d4tools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.className === "d4tools-tooltip") {
-                            // glyph node
-                            if (newNode.querySelector("div.d4t-glyph-active")) {
-                                const glyphTitleNode = newNode.querySelector("div:nth-child(2 of .d4t-title)");
-                                if (glyphTitleNode) {
-                                    processor.glyphNameProcess(glyphTitleNode, false);
-                                }
-                            }
-                            // glyph in title
-                            if (newNode.querySelector("div.d4t-glyph-empty")) {
-                                const glyphTitleNode = newNode.querySelector("div.d4t-title");
-                                if (glyphTitleNode) {
-                                    processor.glyphNameProcess(glyphTitleNode, false);
-                                }
-                            }
-                            // leg node
-                            else if (newNode.querySelector("div.d4t-tip-skill.d4t-tip-legendary")) {
-                                const legNodeTitleNode = newNode.querySelector("div.d4t-title");
-                                if (legNodeTitleNode) {
-                                    processor.legNodeNameProcess(legNodeTitleNode, false);
-                                }
-                            }
                             // gear
-                            else if (newNode.querySelector("div.d4t-tip-legendary")) {
+                            if (newNode.querySelector("div.d4t-tip-legendary")) {
                                 const titleNode = newNode.querySelector("div.d4t-title");
                                 const subTitleNode = newNode.querySelector("div.d4t-sub-title");
                                 if (titleNode && subTitleNode) {
-                                    processor.gearNameProcess(titleNode, subTitleNode, false);
+                                    processor.gearNameProcess(titleNode, subTitleNode);
                                 }
                             }
                             // skill
                             else if (newNode.querySelector("div.d4t-tip-skill")) {
                                 const skillTitleNode = newNode.querySelector("div.d4t-title");
                                 if (skillTitleNode) {
-                                    processor.skillNameProcess(skillTitleNode, false);
+                                    processor.skillNameProcess(skillTitleNode);
+                                }
+                            }
+                            // glyph node
+                            else if (newNode.querySelector("div.d4t-glyph-active")) {
+                                const glyphTitleNode = newNode.querySelector("div:nth-child(2 of .d4t-title)");
+                                if (glyphTitleNode) {
+                                    processor.glyphNameProcess(glyphTitleNode);
+                                }
+                            }
+                            // glyph in title
+                            else if (newNode.querySelector("div.d4t-glyph-empty")) {
+                                const glyphTitleNode = newNode.querySelector("div.d4t-title");
+                                if (glyphTitleNode) {
+                                    processor.glyphNameProcess(glyphTitleNode);
+                                }
+                            }
+                            // leg node
+                            else if (newNode.querySelector("div.d4t-tip-skill.d4t-tip-legendary")) {
+                                const legNodeTitleNode = newNode.querySelector("div.d4t-title");
+                                if (legNodeTitleNode) {
+                                    processor.legNodeNameProcess(legNodeTitleNode);
                                 }
                             }
                         }
@@ -221,6 +222,10 @@ class D4MaxrollProcessor {
         }
     }
 
+    skillNameProcess(node) {
+        this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, true);
+    }
+
     glyphNameProcess(node) {
         this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, true);
     }
@@ -229,8 +234,103 @@ class D4MaxrollProcessor {
         this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, true);
     }
 
+    nodeProcess(node, className, map, addOldValue) {
+        const newValue = map.get(node.innerText);
+        this.setNewValue(node, className, newValue, addOldValue);
+    }
+
+    setNewValue(node, className, newValue, addOldValue) {
+        if (!newValue) {
+            return;
+        }
+
+        let htmlValue = this.buildHtmlValue(className, newValue);
+        if (addOldValue) {
+            htmlValue += node.innerHTML;
+        }
+
+        node.innerHTML = htmlValue;
+    }
+
+    buildHtmlValue(className, value) {
+        return `<div class="${className}" style="color:darkgray; font-size:15px;">${value}</div>`;
+    }
+}
+
+class D4MobalyticsProcessor {
+    constructor() {
+        this.d4Data = new D4Data();
+    }
+
+    mutationObserverCallback(processor, mutations) {
+        for (const mutation of mutations) {
+            if (mutation.type === "childList" && mutation.addedNodes.length > 0) {
+                if (mutation.target.id.startsWith("tippy-")) {
+                    const tippyNode = mutation.target;
+                    // gear
+                    if (tippyNode.querySelector("div.m-1tii5t")) {
+                        const gearNameNode = tippyNode.querySelector("p.m-foqf9j");
+                        if (gearNameNode) {
+                            processor.gearNameProcess(gearNameNode);
+                        }
+                    }
+                    // skill
+                    else if (tippyNode.querySelector("div.m-1saunj6")) {
+                        const skillNameNode = tippyNode.querySelector("p.m-foqf9j");
+                        if (skillNameNode) {
+                            processor.skillNameProcess(skillNameNode);
+                        }
+                    }
+                    // glyph
+                    else if (tippyNode.querySelector("div.m-yak0pv")) {
+                        const glyphNameNode = tippyNode.querySelector("p.m-pv4zw0");
+                        if (glyphNameNode) {
+                            processor.glyphNameProcess(glyphNameNode);
+                        }
+                    }
+                }
+                else if (mutation.target.className === "m-187xuox") {
+                    const typeNode = mutation.target.querySelector("div.m-1rhbarm");
+                    if (typeNode) {
+                        // leg node
+                        if (typeNode.innerText === "Legendary Node") {
+                            const legNodeNameNode = mutation.target.querySelector("p.m-1vrrnd3");
+                            if (legNodeNameNode) {
+                                processor.legNodeNameProcess(legNodeNameNode);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    gearNameProcess(node) {
+        this.nodeProcess(node, "gear_name_rus", this.d4Data.aspectNameMap, true);
+    }
+
     skillNameProcess(node) {
         this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, true);
+    }
+
+    glyphNameProcess(node) {
+        const oldValue = node.innerText;
+        if (!oldValue) {
+            return;
+        }
+
+        const glyphMatch = oldValue.match(/([a-zA-Z ]+) \(Lvl \d+\)/);
+        if (!glyphMatch) {
+            return;
+        }
+
+        const glyphName = glyphMatch[1];
+        const newValue = this.d4Data.glyphNameMap.get(glyphName);
+        this.setNewValue(node, "glyph_name_rus", newValue, true);
+    }
+
+    legNodeNameProcess(node) {
+        this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, true);
     }
 
     nodeProcess(node, className, map, addOldValue) {
@@ -282,6 +382,8 @@ function CreateProcessor() {
             return new D4BuildsProcessor();
         case "maxroll.gg" :
             return new D4MaxrollProcessor();
+        case "mobalytics.gg" :
+            return new D4MobalyticsProcessor();
     }
 }
 
