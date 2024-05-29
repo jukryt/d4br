@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.9.0
+// @version      0.9.1
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -142,19 +142,19 @@ class D4MaxrollProcessor {
                 if (mutation.target.id === "d4tools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.className === "d4tools-tooltip") {
+                            // leg node
+                            if (newNode.querySelector("div.d4t-tip-skill.d4t-tip-legendary")) {
+                                const legNodeTitleNode = newNode.querySelector("div.d4t-title");
+                                if (legNodeTitleNode) {
+                                    processor.legNodeNameProcess(legNodeTitleNode);
+                                }
+                            }
                             // gear
-                            if (newNode.querySelector("div.d4t-tip-legendary")) {
+                            else if (newNode.querySelector("div.d4t-tip-legendary")) {
                                 const titleNode = newNode.querySelector("div.d4t-title");
                                 const subTitleNode = newNode.querySelector("div.d4t-sub-title");
                                 if (titleNode && subTitleNode) {
                                     processor.gearNameProcess(titleNode, subTitleNode);
-                                }
-                            }
-                            // skill
-                            else if (newNode.querySelector("div.d4t-tip-skill")) {
-                                const skillTitleNode = newNode.querySelector("div.d4t-title");
-                                if (skillTitleNode) {
-                                    processor.skillNameProcess(skillTitleNode);
                                 }
                             }
                             // glyph node
@@ -171,11 +171,11 @@ class D4MaxrollProcessor {
                                     processor.glyphNameProcess(glyphTitleNode);
                                 }
                             }
-                            // leg node
-                            else if (newNode.querySelector("div.d4t-tip-skill.d4t-tip-legendary")) {
-                                const legNodeTitleNode = newNode.querySelector("div.d4t-title");
-                                if (legNodeTitleNode) {
-                                    processor.legNodeNameProcess(legNodeTitleNode);
+                            // skill
+                            else if (newNode.querySelector("div.d4t-tip-skill")) {
+                                const skillTitleNode = newNode.querySelector("div.d4t-title");
+                                if (skillTitleNode) {
+                                    processor.skillNameProcess(skillTitleNode);
                                 }
                             }
                         }
