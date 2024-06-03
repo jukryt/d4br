@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.9.1
+// @version      0.10.0
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -48,11 +48,18 @@ class D4BuildsProcessor {
                 else if (mutation.target.localName === "body") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.id.startsWith("tippy-")) {
-                            // gear
+                            // aspect
                             if (newNode.querySelector("div.codex__tooltip")) {
                                 const gearNameNode = newNode.querySelector("div.codex__tooltip__name");
                                 if (gearNameNode) {
-                                    processor.gearNameProcess(gearNameNode, false);
+                                    processor.aspectNameProcess(gearNameNode, false);
+                                }
+                            }
+                            // unq item
+                            else if (newNode.querySelector("div.unique__tooltip")) {
+                                const unqItemNameNode = newNode.querySelector("h2.unique__tooltip__name");
+                                if (unqItemNameNode) {
+                                    processor.unqItemNameProcess(unqItemNameNode, false);
                                 }
                             }
                             // skill
@@ -84,38 +91,47 @@ class D4BuildsProcessor {
     }
 
     gearNameProcess(node, addOldValue) {
-        this.nodeProcess(node, "gear_name_rus", this.d4Data.aspectNameMap, addOldValue);
+        return this.aspectNameProcess(node, addOldValue) ||
+            this.unqItemNameProcess(node, addOldValue);
+    }
+
+    aspectNameProcess(node, addOldValue) {
+        return this.nodeProcess(node, "aspect_name_rus", this.d4Data.aspectNameMap, addOldValue);
+    }
+
+    unqItemNameProcess(node, addOldValue) {
+        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, addOldValue);
     }
 
     skillNameProcess(node) {
-        this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, false);
+        return this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, false);
     }
 
     glyphNameProcess(node) {
-        this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, false);
+        return this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, false);
     }
 
     legNodeNameProcess(node) {
-        this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, false);
+        return this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, false);
     }
 
     nodeProcess(node, className, map, addOldValue) {
         if (!node.childNodes) {
-            return;
+            return false;
         }
 
         const oldValue = node.childNodes[0].data;
         if (!oldValue) {
-            return;
+            return false;
         }
 
         const newValue = map.get(oldValue);
-        this.setNewValue(node, className, newValue, addOldValue);
+        return this.setNewValue(node, className, newValue, addOldValue);
     }
 
     setNewValue(node, className, newValue, addOldValue) {
         if (!newValue) {
-            return;
+            return false;
         }
 
         let htmlValue = this.buildHtmlValue(className, newValue);
@@ -124,6 +140,7 @@ class D4BuildsProcessor {
         }
 
         node.innerHTML = htmlValue;
+        return true;
     }
 
     buildHtmlValue(className, value) {
@@ -149,12 +166,19 @@ class D4MaxrollProcessor {
                                     processor.legNodeNameProcess(legNodeTitleNode);
                                 }
                             }
-                            // gear
+                            // aspect
                             else if (newNode.querySelector("div.d4t-tip-legendary")) {
                                 const titleNode = newNode.querySelector("div.d4t-title");
                                 const subTitleNode = newNode.querySelector("div.d4t-sub-title");
                                 if (titleNode && subTitleNode) {
-                                    processor.gearNameProcess(titleNode, subTitleNode);
+                                    processor.aspectNameProcess(titleNode, subTitleNode);
+                                }
+                            }
+                            // unq item
+                            else if (newNode.querySelector("div.d4t-tip-unique")) {
+                                const titleNode = newNode.querySelector("div.d4t-title");
+                                if (titleNode) {
+                                    processor.unqItemNameProcess(titleNode);
                                 }
                             }
                             // glyph node
@@ -185,63 +209,76 @@ class D4MaxrollProcessor {
         }
     }
 
-    gearNameProcess(titleNode, subTitleNode) {
-        const className = "gear_name_rus";
+    aspectNameProcess(titleNode, subTitleNode) {
+        const className = "aspect_name_rus";
+        const aspectNameMap = this.d4Data.aspectNameMap;
         const subTitleValue = subTitleNode.innerText;
         // aspect node
         if (subTitleValue === "Legendary Aspect") {
-            this.nodeProcess(titleNode, className, this.d4Data.aspectNameMap, true);
+            return this.nodeProcess(titleNode, className, aspectNameMap, true);
         }
         // item node
         else {
             const oldTitleValue = titleNode.innerText;
-            const results = [...this.d4Data.aspectNameMap].filter((p) => {
-                const key = p[0];
-                const value = p[1];
-                const aspectIndex = key.indexOf("Aspect");
-                // [Aspect of ...] => [Item_Name of Aspect_Name]
-                if (aspectIndex === 0) {
-                    const aspectName = key.substring(6);
-                    if (oldTitleValue.endsWith(aspectName)) {
-                        return true;
-                    }
-                }
-                // [... Aspect] => [Aspect_Name Item_Name]
-                else {
-                    const aspectName = key.substring(0, aspectIndex);
-                    if (oldTitleValue.startsWith(aspectName)) {
-                        return true;
-                    }
-                }
-            });
+            const self = this;
 
-            if (results.length === 1) {
-                const newTitleValue = results[0][1];
-                this.setNewValue(titleNode, className, newTitleValue, true);
+            const results = [...aspectNameMap].filter((row) => { return self.aspectNameFilter(row, oldTitleValue); });
+            if (results.length != 1) {
+                return false;
             }
+
+            const newTitleValue = results[0][1];
+            return this.setNewValue(titleNode, className, newTitleValue, true);
         }
     }
 
+    aspectNameFilter(mapRow, oldTitleValue) {
+        const key = mapRow[0];
+        const value = mapRow[1];
+
+        const aspectIndex = key.indexOf("Aspect");
+        // [Aspect of ...] => [Item_Name of Aspect_Name]
+        if (aspectIndex === 0) {
+            const aspectName = key.substring(6);
+            if (oldTitleValue.endsWith(aspectName)) {
+                return true;
+            }
+        }
+        // [... Aspect] => [Aspect_Name Item_Name]
+        else {
+            const aspectName = key.substring(0, aspectIndex);
+            if (oldTitleValue.startsWith(aspectName)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    unqItemNameProcess(node) {
+        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true);
+    }
+
     skillNameProcess(node) {
-        this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, true);
+        return this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, true);
     }
 
     glyphNameProcess(node) {
-        this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, true);
+        return this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, true);
     }
 
     legNodeNameProcess(node) {
-        this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, true);
+        return this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, true);
     }
 
     nodeProcess(node, className, map, addOldValue) {
         const newValue = map.get(node.innerText);
-        this.setNewValue(node, className, newValue, addOldValue);
+        return this.setNewValue(node, className, newValue, addOldValue);
     }
 
     setNewValue(node, className, newValue, addOldValue) {
         if (!newValue) {
-            return;
+            return false;
         }
 
         let htmlValue = this.buildHtmlValue(className, newValue);
@@ -250,6 +287,7 @@ class D4MaxrollProcessor {
         }
 
         node.innerHTML = htmlValue;
+        return true;
     }
 
     buildHtmlValue(className, value) {
@@ -267,11 +305,18 @@ class D4MobalyticsProcessor {
             if (mutation.type === "childList" && mutation.addedNodes.length > 0) {
                 if (mutation.target.id.startsWith("tippy-")) {
                     const tippyNode = mutation.target;
-                    // gear
+                    // aspect
                     if (tippyNode.querySelector("div.m-1tii5t")) {
-                        const gearNameNode = tippyNode.querySelector("p.m-foqf9j");
-                        if (gearNameNode) {
-                            processor.gearNameProcess(gearNameNode);
+                        const aspectNameNode = tippyNode.querySelector("p.m-foqf9j");
+                        if (aspectNameNode) {
+                            processor.aspectNameProcess(aspectNameNode);
+                        }
+                    }
+                    // unq item
+                    else if (tippyNode.querySelector("div.m-mqkczm")) {
+                        const unqItemNameNode = tippyNode.querySelector("h4.m-yb0jxq");
+                        if (unqItemNameNode) {
+                            processor.unqItemNameProcess(unqItemNameNode);
                         }
                     }
                     // skill
@@ -305,42 +350,46 @@ class D4MobalyticsProcessor {
         }
     }
 
-    gearNameProcess(node) {
-        this.nodeProcess(node, "gear_name_rus", this.d4Data.aspectNameMap, true);
+    aspectNameProcess(node) {
+        return this.nodeProcess(node, "aspect_name_rus", this.d4Data.aspectNameMap, true);
+    }
+
+    unqItemNameProcess(node) {
+        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true);
     }
 
     skillNameProcess(node) {
-        this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, true);
+        return this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, true);
     }
 
     glyphNameProcess(node) {
         const oldValue = node.innerText;
         if (!oldValue) {
-            return;
+            return false;
         }
 
         const glyphMatch = oldValue.match(/([a-zA-Z ]+) \(Lvl \d+\)/);
         if (!glyphMatch) {
-            return;
+            return false;
         }
 
         const glyphName = glyphMatch[1];
         const newValue = this.d4Data.glyphNameMap.get(glyphName);
-        this.setNewValue(node, "glyph_name_rus", newValue, true);
+        return this.setNewValue(node, "glyph_name_rus", newValue, true);
     }
 
     legNodeNameProcess(node) {
-        this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, true);
+        return this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, true);
     }
 
     nodeProcess(node, className, map, addOldValue) {
         const newValue = map.get(node.innerText);
-        this.setNewValue(node, className, newValue, addOldValue);
+        return this.setNewValue(node, className, newValue, addOldValue);
     }
 
     setNewValue(node, className, newValue, addOldValue) {
         if (!newValue) {
-            return;
+            return false;
         }
 
         let htmlValue = this.buildHtmlValue(className, newValue);
@@ -349,6 +398,7 @@ class D4MobalyticsProcessor {
         }
 
         node.innerHTML = htmlValue;
+        return true;
     }
 
     buildHtmlValue(className, value) {
@@ -652,6 +702,152 @@ function D4Data() {
 ["Earthguard Aspect", "Аспект – защищенный землей"],
 ["Aspect of Cyclonic Force", "Аспект силы циклона"],
 ["Balanced Aspect", "Аспект – сбалансированный"],
+                ]);
+
+            // https://www.wowhead.com/diablo-4/items/quality:6
+            this.unqItemMap = new Map(
+                [
+["Tibault's Will", "Воля Тибо"],
+["Paingorger's Gauntlets", "Рукавицы упоения болью"],
+["Harlequin Crest", "Шутовской гребень"],
+["Ring of Starless Skies", "Кольцо беззвездных небес"],
+["Tyrael's Might", "Мощь Тираэля"],
+["Fractured Winterglass", "Расколотый хрусталь зимы"],
+["Yen's Blessing", "Благословение Йен"],
+["Godslayer Crown", "Корона богоубийцы"],
+["Resplendent Spark", "Ослепительная искра"],
+["The Grandfather", "Предок"],
+["Scoundrel's Kiss", "Поцелуй негодяя"],
+["Tempest Roar", "Рев бури"],
+["Doombringer", "Вестник рока"],
+["Ramaladni's Magnum Opus", "Шедевр Рамаладни"],
+["Ring of the Sacrilegious Soul", "Кольцо богохульного духа"],
+["Melted Heart of Selig", "Расплавленное сердце Селига"],
+["Temerity", "Дерзание"],
+["Razorplate", "Бритвенная броня"],
+["Wildheart Hunger", "Голод дикого сердца"],
+["Tuskhelm of Joritz the Mighty", "Клыкастый шлем Йорица Могучего"],
+["Ring of Mendeln", "Кольцо Мендельна"],
+["Andariel's Visage", "Лик Андариэль"],
+["Black River", "Черная река"],
+["Tal Rasha's Iridescent Loop", "Переливчатое кольцо Тал Раши"],
+["Esu's Heirloom", "Фамильное наследие Эсу"],
+["Blood Moon Breeches", "Брюки кровавой луны"],
+["X'Fal's Corroded Signet", "Ржавая печатка З'фала"],
+["Flameweaver", "Ткач пламени"],
+["Hunter's Zenith", "Охотничий зенит"],
+["Banished Lord's Talisman", "Талисман лорда-изгнанника"],
+["Flickerstep", "Искроступы"],
+["Raiment of the Infinite", "Облачение бесконечности"],
+["Ebonpiercer", "Черношип"],
+["Arreat's Bearing", "Завет Арреат"],
+["Rage of Harrogath", "Ярость Харрогата"],
+["Twin Strikes", "Два удара"],
+["Ahavarion, Spear of Lycander", "Аварион, копье Ликандер"],
+["[WIP] Eye of the Depths", "[WIP] Eye of the Depths"],
+["Azurewrath", "Лазурная ярость"],
+["Yen's Blessing", "Благословение Йен"],
+["Ancients' Oath", "Клятва Древних"],
+["Cruor's Embrace", "Объятия Круора"],
+["Soulbrand", "Клеймитель душ"],
+["Storm's Companion", "Спутник бури"],
+["Mad Wolf's Glee", "Ликование безумного волка"],
+["Lidless Wall", "Недремлющий защитник"],
+["Flamescar", "Обожженный шрам"],
+["Howl from Below", "Вой из глубин"],
+["Earthbreaker", "Землекрушитель"],
+["Bloodless Scream", "Бескровный крик"],
+["Dolmen Stone", "Камень дольмена"],
+["Starfall Coronet", "Диадема упавшей звезды"],
+["Vasily's Prayer", "Молитва Василия"],
+["Greatstaff of the Crone", "Великий посох старой ведуньи"],
+["Hellhammer", "Адский молот"],
+["Tassets of the Dawning Sky", "Набедренные щитки рассвета"],
+["Deathless Visage", "Лик бессмертия"],
+["Unsung Ascetic's Wraps", "Повязки невоспетого аскета"],
+["Highest Honors of the Iron Wolves", "Высшая награда Стальных Волков"],
+["Deathspeaker's Pendant", "Подвеска Вестника Смерти"],
+["Fists of Fate", "Кулаки судьбы"],
+["Blue Rose", "Синяя роза"],
+["Saboteur's Signet", "Печатка диверсанта"],
+["Penitent Greaves", "Наголенники покаяния"],
+["Word of Hakan", "Слово Хакана"],
+["Airidah's Inexorable Will", "Непоколебимая воля Айриды"],
+["Insatiable Fury", "Ненасытная ярость"],
+["Skyhunter", "Небесный охотник"],
+["Mother's Embrace", "Объятия Матери"],
+["Esadora's Overflowing Cameo", "Переполненная камея Эсадоры"],
+["The Oculus", "Око"],
+["Ring of the Ravenous", "Кольцо ненасытных"],
+["Greaves of the Empty Tomb", "Наголенники пустой гробницы"],
+["Condemnation", "Осуждение"],
+["Frostburn", "Обжигающий холод"],
+["Blood Artisan's Cuirass", "Кираса кровавого мастера"],
+["Gohr's Devastating Grips", "Захваты Гора-разорителя"],
+["Staff of Lam Esen", "Посох Лам Эсена"],
+["Overkill", "Беспредельная мощь"],
+["Fields of Crimson", "Багряные поля"],
+["Iceheart Brais", "Нагрудник ледяного сердца"],
+["Beastfall Boots", "Сапоги павшего зверя"],
+["Ring of Red Furor", "Кольцо алой ярости"],
+["Staff of Endless Rage", "Посох бесконечного неистовства"],
+["Mutilator Plate", "Латы изувера"],
+["Gloves of the Illuminator", "Перчатки проповедника"],
+["Asheara's Khanjar", "Ханджар Аширы"],
+["Scoundrel's Leathers", "Кожаные обмотки негодяя"],
+["Writhing Band of Trickery", "Верткий перстень ловкача"],
+["Battle Trance", "Упоение боем"],
+["Cowl of the Nameless", "Клобук Безымянного"],
+["Grasp of Shadow", "Хватка тени"],
+["The Butcher's Cleaver", "Тесак Мясника"],
+["Windforce", "Сила ветра"],
+["Waxing Gibbous", "Растущая луна"],
+["Fleshrender", "Плотерез"],
+["Traces of the Maiden", "Следы Девы"],
+["Iron Wolves' Final Harvest", "Последний урожай Стальных Волков"],
+["100,000 Steps", "100 000 шагов"],
+["Eyes in the Dark", "Глаза в темноте"],
+["Eaglehorn", "Орлиный рог"],
+["Highest Honors of the Iron Wolves", "Высшая награда Стальных Волков"],
+["Iron Wolves' Final Harvest", "Последний урожай Стальных Волков"],
+["Destroyer's Equipment Cache", "Сундук снаряжения разрушителя"],
+["[PH]Godslayer Crown", "[PH]Godslayer Crown"],
+["Traces of the Maiden", "Следы Девы"],
+["Slayer's Equipment Cache", "Сундук снаряжения убийцы"],
+["Iron Wolves' Heroic Spoils", "Героические трофеи Стальных Волков"],
+["Cages of Hubris", "Клетки гордыни"],
+["Iron Wolves' Heroic Spoils", "Героические трофеи Стальных Волков"],
+["Glimmering Herb Supply", "Мерцающий запас трав"],
+["Pact Amulet", "Контрактный амулет"],
+["Glimmering Herb Supply", "Мерцающий запас трав"],
+["[PH] Unique 99 Gloves", "[PH] Unique 99 Gloves"],
+["Boost Dagger", "Усиленный кинжал"],
+["Champion's Equipment Cache", "Сундук снаряжения чемпиона"],
+["Chapter 1 Reward Cache", "Сундук с наградами 1-й главы"],
+["Boost Scythe", "Усиленная коса"],
+["-", "-"],
+["Chapter 2 Reward Cache", "Сундук с наградами 2-й главы"],
+["[PH]", "[PH]"],
+["Eternal Journey Chapter 2 Cache", "Сундук за 2 главу Вечного пути"],
+["Boost Staff", "Усиленный посох"],
+["[PH] Unique Barb Gloves 99", "[PH] Unique Barb Gloves 99"],
+["Eternal Journey Chapter 4 Cache", "Сундук за 4 главу Вечного пути"],
+["Cages of Hubris", "Клетки гордыни"],
+["Eternal Journey Chapter 9 Cache", "Сундук за 9 главу Вечного пути"],
+["Tuning Stone: Genesis", "Камень отладки: генезис"],
+["Something Super Cool", "Something Super Cool"],
+["Boost Helm", "Усиленный шлем"],
+["Rusty Heirloom Dagger", "Ржавый наследный кинжал"],
+["Eternal Journey Chapter 3 Cache", "Сундук за 3 главу Вечного пути"],
+["[PH] Barb uniq 99 pants", "[PH] Barb uniq 99 pants"],
+["Eternal Journey Chapter 5 Cache", "Сундук за 5 главу Вечного пути"],
+["Eternal Journey Chapter 7 Cache", "Сундук за 7 главу Вечного пути"],
+["Boost Pants", "Усиленные штаны"],
+["Icy Rib", "Ледяное ребро"],
+["Bloodforged Sigil", "Кровокованная печать"],
+["Eternal Journey Chapter 6 Cache", "Сундук за 6 главу Вечного пути"],
+["Tuning Stone: Evernight", "Камень отладки: вечная ночь"],
+["Eternal Journey Chapter 8 Cache", "Сундук за 8 главу Вечного пути"],
                 ]);
 
             // https://www.wowhead.com/diablo-4/paragon-glyphs
