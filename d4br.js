@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.10.0
+// @version      0.10.1
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -24,28 +24,7 @@ class D4BuildsProcessor {
     mutationObserverCallback(processor, mutations) {
         for (const mutation of mutations) {
             if (mutation.type === "childList") {
-                // gear on load to Gear & Skills
-                if (mutation.target.className === "builder__gear__info") {
-                    for (const newNode of mutation.addedNodes) {
-                        if (newNode.className === "builder__gear__name") {
-                            //console.log(mutation);
-                            processor.gearNameProcess(newNode, false);
-                        }
-                    }
-                }
-                // gear on move to Gear & Skills
-                else if (mutation.target.className === "builder__content") {
-                    for (const newNode of mutation.addedNodes) {
-                        if (newNode.className === "builder__gear") {
-                            const gearNameNodes = newNode.querySelectorAll("div.builder__gear__name");
-                            for (const gearNameNode of gearNameNodes) {
-                                processor.gearNameProcess(gearNameNode, true);
-                            }
-                        }
-                    }
-                }
-                // toolltip
-                else if (mutation.target.localName === "body") {
+                if (mutation.target.localName === "body") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.id.startsWith("tippy-")) {
                             // aspect
@@ -88,11 +67,6 @@ class D4BuildsProcessor {
                 }
             }
         }
-    }
-
-    gearNameProcess(node, addOldValue) {
-        return this.aspectNameProcess(node, addOldValue) ||
-            this.unqItemNameProcess(node, addOldValue);
     }
 
     aspectNameProcess(node, addOldValue) {
