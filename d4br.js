@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.10.2
+// @version      0.10.3
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -74,7 +74,8 @@ class D4BuildsProcessor {
     }
 
     unqItemNameProcess(node, addOldValue) {
-        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, addOldValue);
+        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, addOldValue) ||
+               this.nodeProcess(node, "mif_name_rus", this.d4Data.mifItemMap, addOldValue);
     }
 
     skillNameProcess(node) {
@@ -230,7 +231,8 @@ class D4MaxrollProcessor {
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true);
+        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true) ||
+               this.nodeProcess(node, "mif_name_rus", this.d4Data.mifItemMap, true);
     }
 
     skillNameProcess(node) {
@@ -329,7 +331,8 @@ class D4MobalyticsProcessor {
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true);
+        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true) ||
+               this.nodeProcess(node, "mif_name_rus", this.d4Data.mifItemMap, true);
     }
 
     skillNameProcess(node) {
@@ -887,6 +890,21 @@ function D4Data() {
 ["[PH] Unique Barb Gloves 99", "[PH] Unique Barb Gloves 99"],
 ["[PH]", "[PH]"],
 ["Mjölnic Ryng", "Кольцо Мьельнир"],
+                ]);
+
+            // https://www.wowhead.com/diablo-4/items/quality:8
+            this.mifItemMap = new Map(
+                [
+["Harlequin Crest", "Шутовской гребень"],
+["Ring of Starless Skies", "Кольцо беззвездных небес"],
+["Tyrael's Might", "Мощь Тираэля"],
+["Andariel's Visage", "Лик Андариэль"],
+["The Grandfather", "Предок"],
+["Doombringer", "Вестник рока"],
+["Resplendent Spark", "Ослепительная искра"],
+["Melted Heart of Selig", "Расплавленное сердце Селига"],
+["Ahavarion, Spear of Lycander", "Аварион, копье Ликандер"],
+["Greater Triune Arms Cache", "Сундук Трех с мощным оружием"],
                 ]);
 
             // https://www.wowhead.com/diablo-4/paragon-glyphs
