@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.10.3
+// @version      0.11.3
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -23,7 +23,29 @@ class D4BuildsProcessor {
 
     mutationObserverCallback(processor, mutations) {
         for (const mutation of mutations) {
-            if (mutation.type === "childList") {
+            if (mutation.type === "attributes") {
+                // fix popup negative top bug
+                if (mutation.attributeName === "style" &&
+                    mutation.target.id.startsWith("tippy-")) {
+                    const tippy = mutation.target;
+                    const transformValue = tippy.style.getPropertyValue("transform");
+                    if (transformValue) {
+                        const transformMatch = transformValue.match(/translate\((-?\d+(\.\d+)?)px, (-?\d+(\.\d+)?)px\)/);
+                        if (transformMatch) {
+                            const clientRect = tippy.getBoundingClientRect();
+                            const elementTop = clientRect.top;
+                            if (elementTop < 0) {
+                                let transformLeft = +transformMatch[1];
+                                let transformTop = +transformMatch[3];
+
+                                transformTop = -elementTop + transformTop;
+                                const newTransformValue = `translate(${transformLeft}px, ${transformTop}px)`;
+                                tippy.style.setProperty("transform", newTransformValue);
+                            }
+                        }
+                    }
+                }
+            } else if (mutation.type === "childList") {
                 if (mutation.target.localName === "body") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.id.startsWith("tippy-")) {
@@ -392,7 +414,7 @@ class D4MobalyticsProcessor {
     const observer = new MutationObserver((mutations, observer) => {
         processor.mutationObserverCallback(processor, mutations);
     });
-    observer.observe(document, { subtree: true, childList: true });
+    observer.observe(document, { subtree: true, childList: true, attributes: true });
 
     setInterval(() => {
         const mutations = observer.takeRecords();
