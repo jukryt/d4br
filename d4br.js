@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.11.3
+// @version      0.11.4
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -30,16 +30,17 @@ class D4BuildsProcessor {
                     const tippy = mutation.target;
                     const transformValue = tippy.style.getPropertyValue("transform");
                     if (transformValue) {
-                        const transformMatch = transformValue.match(/translate\((-?\d+(\.\d+)?)px, (-?\d+(\.\d+)?)px\)/);
+                        const transformMatch = transformValue.match(/translate3d\((-?\d+(\.\d+)?)px, (-?\d+(\.\d+)?)px, (-?\d+(\.\d+)?)px\)/);
                         if (transformMatch) {
                             const clientRect = tippy.getBoundingClientRect();
                             const elementTop = clientRect.top;
                             if (elementTop < 0) {
-                                let transformLeft = +transformMatch[1];
-                                let transformTop = +transformMatch[3];
+                                let transformX = +transformMatch[1];
+                                let transformY = +transformMatch[3];
+                                let transformZ = +transformMatch[5];
 
-                                transformTop = -elementTop + transformTop;
-                                const newTransformValue = `translate(${transformLeft}px, ${transformTop}px)`;
+                                transformY = -elementTop + transformY;
+                                const newTransformValue = `translate3d(${transformX}px, ${transformY}px, ${transformZ}px)`;
                                 tippy.style.setProperty("transform", newTransformValue);
                             }
                         }
