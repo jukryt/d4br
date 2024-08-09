@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.11.4
+// @version      0.11.5
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -24,27 +24,10 @@ class D4BuildsProcessor {
     mutationObserverCallback(processor, mutations) {
         for (const mutation of mutations) {
             if (mutation.type === "attributes") {
-                // fix popup negative top bug
                 if (mutation.attributeName === "style" &&
                     mutation.target.id.startsWith("tippy-")) {
                     const tippy = mutation.target;
-                    const transformValue = tippy.style.getPropertyValue("transform");
-                    if (transformValue) {
-                        const transformMatch = transformValue.match(/translate3d\((-?\d+(\.\d+)?)px, (-?\d+(\.\d+)?)px, (-?\d+(\.\d+)?)px\)/);
-                        if (transformMatch) {
-                            const clientRect = tippy.getBoundingClientRect();
-                            const elementTop = clientRect.top;
-                            if (elementTop < 0) {
-                                let transformX = +transformMatch[1];
-                                let transformY = +transformMatch[3];
-                                let transformZ = +transformMatch[5];
-
-                                transformY = -elementTop + transformY;
-                                const newTransformValue = `translate3d(${transformX}px, ${transformY}px, ${transformZ}px)`;
-                                tippy.style.setProperty("transform", newTransformValue);
-                            }
-                        }
-                    }
+                    processor.fixPopupStyleBug(tippy);
                 }
             } else if (mutation.type === "childList") {
                 if (mutation.target.localName === "body") {
@@ -90,6 +73,66 @@ class D4BuildsProcessor {
                 }
             }
         }
+    }
+
+    fixPopupStyleBug(node) {
+        return this.transformTranslateProcess(node) ||
+               this.transformTranslate3dProcess(node)
+    }
+
+    transformTranslateProcess(node) {
+        const transformValue = node.style.getPropertyValue("transform");
+        if (!transformValue) {
+            return false
+        }
+
+        const transformMatch = transformValue.match(/translate\((-?\d+(\.\d+)?)px, (-?\d+(\.\d+)?)px\)/);
+        if (!transformMatch) {
+            return false;
+        }
+
+        const clientRect = node.getBoundingClientRect();
+        const elementTop = clientRect.top;
+        if (elementTop >= 0) {
+            return true;
+        }
+
+        let transformX = +transformMatch[1];
+        let transformY = +transformMatch[3];
+
+        transformY = -elementTop + transformY;
+        const newTransformValue = `translate(${transformX}px, ${transformY}px)`;
+        node.style.setProperty("transform", newTransformValue);
+
+        return true;
+    }
+
+    transformTranslate3dProcess(node) {
+        const transformValue = node.style.getPropertyValue("transform");
+        if (!transformValue) {
+            return false
+        }
+
+        const transformMatch = transformValue.match(/translate3d\((-?\d+(\.\d+)?)px, (-?\d+(\.\d+)?)px, (-?\d+(\.\d+)?)px\)/);
+        if (!transformMatch) {
+            return false;
+        }
+
+        const clientRect = node.getBoundingClientRect();
+        const elementTop = clientRect.top;
+        if (elementTop >= 0) {
+            return true;
+        }
+
+        let transformX = +transformMatch[1];
+        let transformY = +transformMatch[3];
+        let transformZ = +transformMatch[5];
+
+        transformY = -elementTop + transformY;
+        const newTransformValue = `translate3d(${transformX}px, ${transformY}px, ${transformZ}px)`;
+        node.style.setProperty("transform", newTransformValue);
+
+        return true;
     }
 
     aspectNameProcess(node, addOldValue) {
