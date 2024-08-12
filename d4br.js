@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.11.5
+// @version      0.11.6
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -141,7 +141,7 @@ class D4BuildsProcessor {
 
     unqItemNameProcess(node, addOldValue) {
         return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, addOldValue) ||
-               this.nodeProcess(node, "mif_name_rus", this.d4Data.mifItemMap, addOldValue);
+               this.nodeProcess(node, "myth_name_rus", this.d4Data.mythItemMap, addOldValue);
     }
 
     skillNameProcess(node) {
@@ -222,6 +222,13 @@ class D4MaxrollProcessor {
                                     processor.unqItemNameProcess(titleNode);
                                 }
                             }
+                            // mythic item
+                            else if (newNode.querySelector("div.d4t-tip-mythic")) {
+                                const titleNode = newNode.querySelector("div.d4t-title");
+                                if (titleNode) {
+                                    processor.mythItemNameProcess(titleNode);
+                                }
+                            }
                             // glyph node
                             else if (newNode.querySelector("div.d4t-glyph-active")) {
                                 const glyphTitleNode = newNode.querySelector("div:nth-child(2 of .d4t-title)");
@@ -297,8 +304,11 @@ class D4MaxrollProcessor {
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true) ||
-               this.nodeProcess(node, "mif_name_rus", this.d4Data.mifItemMap, true);
+        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true);
+    }
+
+    mythItemNameProcess(node) {
+        return this.nodeProcess(node, "myth_name_rus", this.d4Data.mythItemMap, true);
     }
 
     skillNameProcess(node) {
@@ -375,16 +385,11 @@ class D4MobalyticsProcessor {
                             processor.glyphNameProcess(glyphNameNode);
                         }
                     }
-                }
-                else if (mutation.target.className === "m-187xuox") {
-                    const typeNode = mutation.target.querySelector("div.m-1rhbarm");
-                    if (typeNode) {
-                        // leg node
-                        if (typeNode.innerText === "Legendary Node") {
-                            const legNodeNameNode = mutation.target.querySelector("p.m-1vrrnd3");
-                            if (legNodeNameNode) {
-                                processor.legNodeNameProcess(legNodeNameNode);
-                            }
+                    // leg node
+                    else if (tippyNode.querySelector("div.m-1fwtoiz")) {
+                        const legNameNode = tippyNode.querySelector("p.m-1vrrnd3");
+                        if (legNameNode) {
+                            processor.legNodeNameProcess(legNameNode);
                         }
                     }
                 }
@@ -398,7 +403,7 @@ class D4MobalyticsProcessor {
 
     unqItemNameProcess(node) {
         return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true) ||
-               this.nodeProcess(node, "mif_name_rus", this.d4Data.mifItemMap, true);
+               this.nodeProcess(node, "myth_name_rus", this.d4Data.mythItemMap, true);
     }
 
     skillNameProcess(node) {
@@ -959,7 +964,7 @@ function D4Data() {
                 ]);
 
             // https://www.wowhead.com/diablo-4/items/quality:8
-            this.mifItemMap = new Map(
+            this.mythItemMap = new Map(
                 [
 ["Harlequin Crest", "Шутовской гребень"],
 ["Ring of Starless Skies", "Кольцо беззвездных небес"],
