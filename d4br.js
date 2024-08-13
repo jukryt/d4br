@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.11.7
+// @version      0.11.8
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -33,18 +33,25 @@ class D4BuildsProcessor {
                 if (mutation.target.localName === "body") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.id.startsWith("tippy-")) {
-                            // aspect
+                            // aspect and temper
                             if (newNode.querySelector("div.codex__tooltip")) {
                                 const gearNameNode = newNode.querySelector("div.codex__tooltip__name");
                                 if (gearNameNode) {
-                                    processor.aspectNameProcess(gearNameNode, false);
+                                    processor.aspectNameProcess(gearNameNode);
+                                }
+                                const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
+                                if (tempersNode) {
+                                    const temperNameNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
+                                    for (const temperNameNode of temperNameNodes) {
+                                        processor.temperNameProcess(temperNameNode);
+                                    }
                                 }
                             }
                             // unq item
                             else if (newNode.querySelector("div.unique__tooltip")) {
                                 const unqItemNameNode = newNode.querySelector("h2.unique__tooltip__name");
                                 if (unqItemNameNode) {
-                                    processor.unqItemNameProcess(unqItemNameNode, false);
+                                    processor.unqItemNameProcess(unqItemNameNode);
                                 }
                             }
                             // skill
@@ -135,13 +142,29 @@ class D4BuildsProcessor {
         return true;
     }
 
-    aspectNameProcess(node, addOldValue) {
-        return this.nodeProcess(node, "d4br_aspect_name", this.d4Data.aspectNameMap, addOldValue);
+    aspectNameProcess(node) {
+        return this.nodeProcess(node, "d4br_aspect_name", this.d4Data.aspectNameMap, false);
     }
 
-    unqItemNameProcess(node, addOldValue) {
-        return this.nodeProcess(node, "d4br_unq_name", this.d4Data.unqItemMap, addOldValue) ||
-               this.nodeProcess(node, "d4br_myth_name", this.d4Data.mythItemMap, addOldValue);
+    temperNameProcess(node) {
+        const oldValue = node.innerText;
+        if (!oldValue) {
+            return false;
+        }
+
+        const temperMatch = oldValue.match(/.+\((.+) - (.+)\)/);
+        if (!temperMatch) {
+            return false;
+        }
+
+        const temperName = temperMatch[1];
+        const newValue = this.d4Data.temperNameMap.get(temperName);
+        return this.setNewValue(node, "d4br_temper_name", newValue, false);
+    }
+
+    unqItemNameProcess(node) {
+        return this.nodeProcess(node, "d4br_unq_name", this.d4Data.unqItemMap, false) ||
+               this.nodeProcess(node, "d4br_myth_name", this.d4Data.mythItemMap, false);
     }
 
     skillNameProcess(node) {
@@ -357,11 +380,15 @@ class D4MobalyticsProcessor {
             if (mutation.type === "childList" && mutation.addedNodes.length > 0) {
                 if (mutation.target.id.startsWith("tippy-")) {
                     const tippyNode = mutation.target;
-                    // aspect
+                    // aspect and temper
                     if (tippyNode.querySelector("div.m-1tii5t")) {
                         const aspectNameNode = tippyNode.querySelector("p.m-foqf9j");
                         if (aspectNameNode) {
                             processor.aspectNameProcess(aspectNameNode);
+                        }
+                        const temperNameNodes = tippyNode.querySelectorAll("span.m-1yjh4k8");
+                        for (const temperNameNode of temperNameNodes) {
+                            processor.temperNameProcess(temperNameNode);
                         }
                     }
                     // unq item
@@ -399,6 +426,10 @@ class D4MobalyticsProcessor {
 
     aspectNameProcess(node) {
         return this.nodeProcess(node, "d4br_aspect_name", this.d4Data.aspectNameMap, true);
+    }
+
+    temperNameProcess(node) {
+        return this.nodeProcess(node, "d4br_temper_name", this.d4Data.temperNameMap, true);
     }
 
     unqItemNameProcess(node) {
@@ -992,6 +1023,381 @@ function D4Data() {
 ["Melted Heart of Selig", "Расплавленное сердце Селига"],
 ["Ahavarion, Spear of Lycander", "Аварион, копье Ликандер"],
 ["Greater Triune Arms Cache", "Сундук Трех с мощным оружием"],
+                ]);
+
+            // https://www.wowhead.com/diablo-4/items/temper-manual
+            this.temperNameMap = new Map(
+                [
+["Elemental Surge", "Волна стихий"],
+["Worldly Finesse", "Искусность путешественника"],
+["Barbarian Protection (Legacy)", "Защита варвара (наследие)"],
+["Conjuration Augments", "Усиления колдовства"],
+["Imbuement Abundance", "Изобильное насыщение"],
+["Furious Augments", "Свирепые усиления"],
+["Subterfuge Expertise", "Мастерство: уловки"],
+["Barbarian Protection (Legacy)", "Защита варвара (наследие)"],
+["Worldly Endurance", "Выносливость путешественника"],
+["Furious Augments", "Свирепые усиления"],
+["Worldly Finesse", "Искусность путешественника"],
+["Conjuration Fortune", "Удача колдовства"],
+["Berserking Finesse", "Искусный берсерк"],
+["Natural Finesse", "Естественная искусность"],
+["Daze Control", "Контроль головокружения"],
+["Subterfuge Expertise", "Мастерство: уловки"],
+["Elemental Surge", "Волна стихий"],
+["Imbuement Abundance", "Изобильное насыщение"],
+["Alchemist Control", "Контроль алхимика"],
+["Conjuration Fortune", "Удача колдовства"],
+["Rogue Persistence", "Настойчивость разбойника"],
+["Sandstorm Augments", "Усиления песчаной бури"],
+["Shock Augments — Surge", "Усиления шока – Стремительный скачок"],
+["Pyromancy Finesse", "Искусность пиромантии"],
+["Manual: Wasteland Augments", "Руководство: усиления Пустошей"],
+["Manual: Worldly Stability", "Руководство: стабильность путешественника"],
+["Marksman Finesse", "Искусный стрелок"],
+["Subterfuge Efficiency", "Эффективные уловки"],
+["Conjuration Augments", "Усиления колдовства"],
+["Agility Efficiency", "Эффективная ловкость"],
+["Bleed Augments", "Усиления кровотечения"],
+["Worldly Fortune", "Богатство путешественника"],
+["Worldly Fortune", "Богатство путешественника"],
+["Pyromancy Finesse", "Искусность пиромантии"],
+["Basic Augments — Rogue", "Базовые усиления: разбойник"],
+["Core Augments — Rogue", "Основные усиления: разбойник"],
+["Brawling Efficiency", "Эффективный бой без правил"],
+["Elemental Surge", "Волна стихий"],
+["Rogue Persistence", "Настойчивость разбойника"],
+["Earth Augments", "Усиления земли"],
+["Berserking Augments", "Усиления берсерка"],
+["Slayer's Finesse", "Искусность убийцы"],
+["Weapon Attunement — Necromancer", "Узы оружия некроманта"],
+["Profane Innovation", "Развитие нечестивости"],
+["Barbarian Control", "Контроль варвара"],
+["Wasteland Augments", "Усиления Пустошей"],
+["Subterfuge Expertise", "Мастерство: уловки"],
+["Slayer's Finesse", "Искусность убийцы"],
+["Slayer's Finesse", "Искусность убийцы"],
+["Weapon Attunement — Barbarian", "Узы оружия варвара"],
+["Profane Innovation", "Развитие нечестивости"],
+["Natural Schemes", "Естественная тактика"],
+["Sandstorm Augments", "Усиления песчаной бури"],
+["Druid Invigoration", "Вдохновение друида"],
+["Demolition Finesse", "Искусное разрушение"],
+["Sorcerer Control", "Контроль волшебника"],
+["Rogue Recovery", "Восстановление разбойника"],
+["Arsenal Finesse", "Арсенал искусности"],
+["Agility Efficiency", "Эффективная ловкость"],
+["Cutthroat Finesse", "Искусный головорез"],
+["Sorcerer Stability", "Стабильность волшебника"],
+["Barbarian Innovation", "Варварское изобретение"],
+["Shock Finesse", "Искусность шока"],
+["Bone Augments", "Усиления костей"],
+["Conjuration Efficiency", "Эффективность колдовства"],
+["Ultimate Efficiency — Barbarian", "Эффективность мощных умений: варвар"],
+["Summoning Finesse", "Искусный призыв"],
+["Barbarian Motion", "Координация варвара"],
+["Earth Finesse", "Искусность земли"],
+["Demolition Finesse", "Искусное разрушение"],
+["Shock Finesse", "Искусность шока"],
+["Alchemist Control", "Контроль алхимика"],
+["Shock Augments — Surge", "Усиления шока – Стремительный скачок"],
+["Druid Motion", "Координация друида"],
+["Specialist Evolution", "Прогресс специализации"],
+["Blood Augments", "Усиления крови"],
+["Necromancer Efficiency", "Эффективность некроманта"],
+["Summoning Finesse", "Искусный призыв"],
+["Conjuration Efficiency", "Эффективность колдовства"],
+["Thorn Body", "Шипованное тело"],
+["Druid Invigoration", "Вдохновение друида"],
+["Ultimate Efficiency —  Druid", "Эффективность мощных умений: друид"],
+["Ultimate Efficiency —  Sorcerer", "Эффективность мощных умений: волшебник"],
+["Weapon Attunement — Necromancer", "Узы оружия некроманта"],
+["Sorcerer Stability", "Стабильность волшебника"],
+["Trickster Finesse", "Искусный обманщик"],
+["Companion Finesse", "Искусность спутников"],
+["Conjuration Finesse", "Искусность колдовства"],
+["Necromancer Invigoration", "Вдохновение некроманта"],
+["Rogue Persistence", "Настойчивость разбойника"],
+["Subterfuge Efficiency", "Эффективные уловки"],
+["Frost Augments", "Усиления мороза"],
+["Necromancer Motion", "Координация некроманта"],
+["Rogue Innovation", "Развитие разбойника"],
+["Cutthroat Finesse", "Искусный головорез"],
+["Summoning Augments", "Усиления призыва"],
+["Shadow Augments — Execution", "Усиления темной магии: казнь"],
+["Necromancer Wall", "Стена некроманта"],
+["Blood Augments", "Усиления крови"],
+["Earth Finesse", "Искусность земли"],
+["Elemental Control", "Контроль над стихиями"],
+["Conjuration Fortune", "Удача колдовства"],
+["Pyromancy Endurance", "Выносливость пиромантии"],
+["Storm Finesse", "Искусность бури"],
+["Earth Finesse", "Искусность земли"],
+["Nature Magic Innovation", "Развитие сил природы"],
+["Furious Augments", "Свирепые усиления"],
+["Worldly Finesse", "Искусность путешественника"],
+["Shadow Finesse", "Искусность темной магии"],
+["Ultimate Efficiency —  Sorcerer", "Эффективность мощных умений: волшебник"],
+["Bone Augments", "Усиления костей"],
+["Rogue Invigoration", "Вдохновение разбойника"],
+["Natural Motion", "Естественная координация"],
+["Weapon Attunement — Barbarian", "Узы оружия варвара"],
+["Nature Magic Wall", "Стена сил природы"],
+["Necromancer Motion", "Координация некроманта"],
+["Worldly Endurance", "Выносливость путешественника"],
+["Companion Innovation", "Развитие спутников"],
+["Shapeshifting Finesse", "Искусность оборотня"],
+["Companion Efficiency", "Эффективность спутников"],
+["Necromancer Invigoration", "Вдохновение некроманта"],
+["Ultimate Efficiency — Barbarian", "Эффективность мощных умений: варвар"],
+["Rogue Invigoration", "Вдохновение разбойника"],
+["Pyromancy Augments", "Усиления пиромантии"],
+["Subterfuge Efficiency", "Эффективные уловки"],
+["Rogue Cloaking", "Скрытность разбойника"],
+["Weapon Mastery Efficiency", "Эффективный мастер оружия"],
+["Worldly Stability", "Стабильность путешественника"],
+["Shock Augments —  Discharge", "Усиления шока – Статический разряд"],
+["Shock Augments —  Discharge", "Усиления шока – Статический разряд"],
+["Sorcerer Control", "Контроль волшебника"],
+["Profane Finesse", "Искусность нечестивости"],
+["Rogue Cloaking", "Скрытность разбойника"],
+["Frost Augments", "Усиления мороза"],
+["Conjuration Augments", "Усиления колдовства"],
+["Trap Augments", "Усиления ловушек"],
+["Basic Augments — Rogue", "Базовые усиления: разбойник"],
+["Thorn Army", "Армия шипов"],
+["Werewolf Augments", "Усиления волка"],
+["Weapon Mastery Efficiency", "Эффективный мастер оружия"],
+["Frost Cage", "Морозная клетка"],
+["Bone Finesse", "Искусность костей"],
+["Bone Finesse", "Искусность костей"],
+["Summoning Augments", "Усиления призыва"],
+["Shapeshifting Finesse", "Искусность оборотня"],
+["Shadow Finesse", "Искусность темной магии"],
+["Barbarian Strategy", "Стратегия варвара"],
+["Barbarian Innovation", "Варварское изобретение"],
+["Weapon Mastery Efficiency", "Эффективный мастер оружия"],
+["Frost Finesse", "Искусность мороза"],
+["Necromancer Wall", "Стена некроманта"],
+["Thorn Army", "Армия шипов"],
+["Blood Endurance", "Выносливость крови"],
+["Pyromancy Endurance", "Выносливость пиромантии"],
+["Natural Finesse", "Естественная искусность"],
+["Earth Augments", "Усиления земли"],
+["Worldly Fortune", "Богатство путешественника"],
+["Specialist Evolution", "Прогресс специализации"],
+["Storm Augments", "Усиления бури"],
+["Thorn Body", "Шипованное тело"],
+["Pyromancy Finesse", "Искусность пиромантии"],
+["Ultimate Efficiency —  Druid", "Эффективность мощных умений: друид"],
+["Barbarian Strategy", "Стратегия варвара"],
+["Werewolf Augments", "Усиления волка"],
+["Frost Cage", "Морозная клетка"],
+["Elemental Control", "Контроль над стихиями"],
+["Blood Finesse", "Искусность крови"],
+["Sorcerer Motion", "Координация волшебника"],
+["Necromancer Efficiency", "Эффективность некроманта"],
+["Scoundrel Finesse", "Искусный плут"],
+["Natural Resistance", "Естественное сопротивление"],
+["Necromancer Invigoration", "Вдохновение некроманта"],
+["Trap Augments", "Усиления ловушек"],
+["Companion Finesse", "Искусность спутников"],
+["Sorcerer Motion", "Координация волшебника"],
+["Cutthroat Finesse", "Искусный головорез"],
+["Barbarian Motion", "Координация варвара"],
+["Sorcerer Motion", "Координация волшебника"],
+["Thorn Army", "Армия шипов"],
+["Natural Resistance", "Естественное сопротивление"],
+["Wasteland Augments", "Усиления Пустошей"],
+["Frost Augments", "Усиления мороза"],
+["Bleed Augments", "Усиления кровотечения"],
+["Trap Augments", "Усиления ловушек"],
+["Profane Cage", "Нечестивая клетка"],
+["Pyromancy Augments", "Усиления пиромантии"],
+["Natural Resistance", "Естественное сопротивление"],
+["Storm Augments", "Усиления бури"],
+["Nature Magic Innovation", "Развитие сил природы"],
+["Bleed Augments", "Усиления кровотечения"],
+["Weapon Attunement — Necromancer", "Узы оружия некроманта"],
+["Profane Cage", "Нечестивая клетка"],
+["Rogue Innovation", "Развитие разбойника"],
+["Werebear Augments", "Усиления медведя"],
+["Druid Motion", "Координация друида"],
+["Frost Cage", "Морозная клетка"],
+["Rogue Recovery", "Восстановление разбойника"],
+["Profane Finesse", "Искусность нечестивости"],
+["Bone Augments", "Усиления костей"],
+["Summoning Finesse", "Искусный призыв"],
+["Pyromancy Endurance", "Выносливость пиромантии"],
+["Berserking Finesse", "Искусный берсерк"],
+["Profane Cage", "Нечестивая клетка"],
+["Werewolf Augments", "Усиления волка"],
+["Arsenal Finesse", "Арсенал искусности"],
+["Shadow Finesse", "Искусность темной магии"],
+["Storm Finesse", "Искусность бури"],
+["Nature Magic Wall", "Стена сил природы"],
+["Shadow Augments — Decay", "Усиления темной магии: разложение"],
+["Blood Endurance", "Выносливость крови"],
+["Brawling Efficiency", "Эффективный бой без правил"],
+["Companion Innovation", "Развитие спутников"],
+["Berserking Augments", "Усиления берсерка"],
+["Natural Finesse", "Естественная искусность"],
+["Druid Motion", "Координация друида"],
+["Shapeshifting Endurance", "Выносливость оборотня"],
+["Shapeshifting Finesse", "Искусность оборотня"],
+["Frost Finesse", "Искусность мороза"],
+["Arsenal Finesse", "Арсенал искусности"],
+["Conjuration Finesse", "Искусность колдовства"],
+["Marksman Finesse", "Искусный стрелок"],
+["Companion Efficiency", "Эффективность спутников"],
+["Agility Efficiency", "Эффективная ловкость"],
+["Blood Augments", "Усиления крови"],
+["Scoundrel Finesse", "Искусный плут"],
+["Companion Innovation", "Развитие спутников"],
+["Barbarian Strategy", "Стратегия варвара"],
+["Profane Innovation", "Развитие нечестивости"],
+["Pyromancy Augments", "Усиления пиромантии"],
+["Daze Control", "Контроль головокружения"],
+["Daze Control", "Контроль головокружения"],
+["Necromancer Wall", "Стена некроманта"],
+["Demolition Finesse", "Искусное разрушение"],
+["Blood Endurance", "Выносливость крови"],
+["Worldly Stability", "Стабильность путешественника"],
+["Nature Magic Wall", "Стена сил природы"],
+["Trickster Finesse", "Искусный обманщик"],
+["Weapon Attunement — Barbarian", "Узы оружия варвара"],
+["Necromancer Efficiency", "Эффективность некроманта"],
+["Shadow Augments — Decay", "Усиления темной магии: разложение"],
+["Sorcerer Control", "Контроль волшебника"],
+["Rogue Motion", "Координация разбойника"],
+["Sandstorm Augments", "Усиления песчаной бури"],
+["Werebear Augments", "Усиления медведя"],
+["Nature Magic Innovation", "Развитие сил природы"],
+["Natural Schemes", "Естественная тактика"],
+["Basic Augments — Rogue", "Базовые усиления: разбойник"],
+["Shock Augments — Surge", "Усиления шока – Стремительный скачок"],
+["Natural Schemes", "Естественная тактика"],
+["Brawling Efficiency", "Эффективный бой без правил"],
+["Wrath Efficiency", "Эффективный гнев"],
+["Storm Augments", "Усиления бури"],
+["Shadow Augments — Decay", "Усиления темной магии: разложение"],
+["Bone Finesse", "Искусность костей"],
+["Marksman Finesse", "Искусный стрелок"],
+["Frost Finesse", "Искусность мороза"],
+["Wrath Efficiency", "Эффективный гнев"],
+["Natural Motion", "Естественная координация"],
+["Shock Finesse", "Искусность шока"],
+["Worldly Endurance", "Выносливость путешественника"],
+["Barbarian Recovery", "Излечение варвара"],
+["Wrath Efficiency", "Эффективный гнев"],
+["Barbarian Control", "Контроль варвара"],
+["Core Augments — Rogue", "Основные усиления: разбойник"],
+["Core Augments — Rogue", "Основные усиления: разбойник"],
+["Shapeshifting Endurance", "Выносливость оборотня"],
+["Ultimate Efficiency — Barbarian", "Эффективность мощных умений: варвар"],
+["Conjuration Finesse", "Искусность колдовства"],
+["Berserking Finesse", "Искусный берсерк"],
+["Shadow Augments — Execution", "Усиления темной магии: казнь"],
+["Rogue Motion", "Координация разбойника"],
+["Shock Augments —  Discharge", "Усиления шока – Статический разряд"],
+["Barbarian Recovery", "Излечение варвара"],
+["Profane Finesse", "Искусность нечестивости"],
+["Companion Efficiency", "Эффективность спутников"],
+["Companion Finesse", "Искусность спутников"],
+["Blood Finesse", "Искусность крови"],
+["Ultimate Efficiency —  Druid", "Эффективность мощных умений: друид"],
+["Storm Finesse", "Искусность бури"],
+["Earth Augments", "Усиления земли"],
+["Blood Finesse", "Искусность крови"],
+["Scoundrel Finesse", "Искусный плут"],
+["Natural Motion", "Естественная координация"],
+["Specialist Evolution", "Прогресс специализации"],
+["Conjuration Efficiency", "Эффективность колдовства"],
+["Ultimate Efficiency —  Sorcerer", "Эффективность мощных умений: волшебник"],
+["Werebear Augments", "Усиления медведя"],
+["Berserking Augments", "Усиления берсерка"],
+["Rogue Motion", "Координация разбойника"],
+["Trickster Finesse", "Искусный обманщик"],
+["Shadow Augments — Execution", "Усиления темной магии: казнь"],
+["Rogue Invigoration", "Вдохновение разбойника"],
+["Necromancer Motion", "Координация некроманта"],
+["Summoning Augments", "Усиления призыва"],
+["Rogue Innovation", "Развитие разбойника"],
+["Shapeshifting Endurance", "Выносливость оборотня"],
+["Rogue Cloaking", "Скрытность разбойника"],
+["Barbarian Innovation", "Варварское изобретение"],
+["Barbarian Motion", "Координация варвара"],
+["Barbarian Control", "Контроль варвара"],
+// mobalytics
+["Wordly Endurance", "Выносливость путешественника"],
+
+["Shock Augments - Surge", "Усиления шока – Стремительный скачок"],
+["Basic Augments - Rogue", "Базовые усиления: разбойник"],
+["Core Augments - Rogue", "Основные усиления: разбойник"],
+["Weapon Attunement - Necromancer", "Узы оружия некроманта"],
+["Weapon Attunement - Barbarian", "Узы оружия варвара"],
+["Ultimate Efficiency - Barbarian", "Эффективность мощных умений: варвар"],
+["Shock Augments - Surge", "Усиления шока – Стремительный скачок"],
+["Ultimate Efficiency - Druid", "Эффективность мощных умений: друид"],
+["Ultimate Efficiency - Sorcerer", "Эффективность мощных умений: волшебник"],
+["Weapon Attunement - Necromancer", "Узы оружия некроманта"],
+["Shadow Augments - Execution", "Усиления темной магии: казнь"],
+["Ultimate Efficiency - Sorcerer", "Эффективность мощных умений: волшебник"],
+["Weapon Attunement - Barbarian", "Узы оружия варвара"],
+["Ultimate Efficiency - Barbarian", "Эффективность мощных умений: варвар"],
+["Shock Augments - Discharge", "Усиления шока – Статический разряд"],
+["Shock Augments - Discharge", "Усиления шока – Статический разряд"],
+["Basic Augments - Rogue", "Базовые усиления: разбойник"],
+["Ultimate Efficiency - Druid", "Эффективность мощных умений: друид"],
+["Weapon Attunement - Necromancer", "Узы оружия некроманта"],
+["Shadow Augments - Decay", "Усиления темной магии: разложение"],
+["Weapon Attunement - Barbarian", "Узы оружия варвара"],
+["Shadow Augments - Decay", "Усиления темной магии: разложение"],
+["Basic Augments - Rogue", "Базовые усиления: разбойник"],
+["Shock Augments - Surge", "Усиления шока – Стремительный скачок"],
+["Shadow Augments - Decay", "Усиления темной магии: разложение"],
+["Core Augments - Rogue", "Основные усиления: разбойник"],
+["Core Augments - Rogue", "Основные усиления: разбойник"],
+["Ultimate Efficiency - Barbarian", "Эффективность мощных умений: варвар"],
+["Shadow Augments - Execution", "Усиления темной магии: казнь"],
+["Shock Augments - Discharge", "Усиления шока – Статический разряд"],
+["Ultimate Efficiency - Druid", "Эффективность мощных умений: друид"],
+["Ultimate Efficiency - Sorcerer", "Эффективность мощных умений: волшебник"],
+["Shadow Augments - Execution", "Усиления темной магии: казнь"],
+// d4builds
+["Shock Augments-Surge", "Усиления шока – Стремительный скачок"],
+["Basic Augments-Rogue", "Базовые усиления: разбойник"],
+["Core Augments-Rogue", "Основные усиления: разбойник"],
+["Weapon Attunement-Necromancer", "Узы оружия некроманта"],
+["Weapon Attunement-Barbarian", "Узы оружия варвара"],
+["Ultimate Efficiency-Barbarian", "Эффективность мощных умений: варвар"],
+["Shock Augments-Surge", "Усиления шока – Стремительный скачок"],
+["Ultimate Efficiency-Druid", "Эффективность мощных умений: друид"],
+["Ultimate Efficiency-Sorcerer", "Эффективность мощных умений: волшебник"],
+["Weapon Attunement-Necromancer", "Узы оружия некроманта"],
+["Shadow Augments-Execution", "Усиления темной магии: казнь"],
+["Ultimate Efficiency-Sorcerer", "Эффективность мощных умений: волшебник"],
+["Weapon Attunement-Barbarian", "Узы оружия варвара"],
+["Ultimate Efficiency-Barbarian", "Эффективность мощных умений: варвар"],
+["Shock Augments-Discharge", "Усиления шока – Статический разряд"],
+["Shock Augments-Discharge", "Усиления шока – Статический разряд"],
+["Basic Augments-Rogue", "Базовые усиления: разбойник"],
+["Ultimate Efficiency-Druid", "Эффективность мощных умений: друид"],
+["Weapon Attunement-Necromancer", "Узы оружия некроманта"],
+["Shadow Augments-Decay", "Усиления темной магии: разложение"],
+["Weapon Attunement-Barbarian", "Узы оружия варвара"],
+["Shadow Augments-Decay", "Усиления темной магии: разложение"],
+["Basic Augments-Rogue", "Базовые усиления: разбойник"],
+["Shock Augments-Surge", "Усиления шока – Стремительный скачок"],
+["Shadow Augments-Decay", "Усиления темной магии: разложение"],
+["Core Augments-Rogue", "Основные усиления: разбойник"],
+["Core Augments-Rogue", "Основные усиления: разбойник"],
+["Ultimate Efficiency-Barbarian", "Эффективность мощных умений: варвар"],
+["Shadow Augments-Execution", "Усиления темной магии: казнь"],
+["Shock Augments-Discharge", "Усиления шока – Статический разряд"],
+["Ultimate Efficiency-Druid", "Эффективность мощных умений: друид"],
+["Ultimate Efficiency-Sorcerer", "Эффективность мощных умений: волшебник"],
+["Shadow Augments-Execution", "Усиления темной магии: казнь"],
                 ]);
 
             // https://www.wowhead.com/diablo-4/paragon-glyphs
