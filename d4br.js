@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.11.6
+// @version      0.11.7
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -136,24 +136,24 @@ class D4BuildsProcessor {
     }
 
     aspectNameProcess(node, addOldValue) {
-        return this.nodeProcess(node, "aspect_name_rus", this.d4Data.aspectNameMap, addOldValue);
+        return this.nodeProcess(node, "d4br_aspect_name", this.d4Data.aspectNameMap, addOldValue);
     }
 
     unqItemNameProcess(node, addOldValue) {
-        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, addOldValue) ||
-               this.nodeProcess(node, "myth_name_rus", this.d4Data.mythItemMap, addOldValue);
+        return this.nodeProcess(node, "d4br_unq_name", this.d4Data.unqItemMap, addOldValue) ||
+               this.nodeProcess(node, "d4br_myth_name", this.d4Data.mythItemMap, addOldValue);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, false);
+        return this.nodeProcess(node, "d4br_skill_name", this.d4Data.skillsNameMap, false);
     }
 
     glyphNameProcess(node) {
-        return this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, false);
+        return this.nodeProcess(node, "d4br_glyph_name", this.d4Data.glyphNameMap, false);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, false);
+        return this.nodeProcess(node, "d4br_leg_node_name", this.d4Data.legNodeMap, false);
     }
 
     nodeProcess(node, className, map, addOldValue) {
@@ -185,7 +185,7 @@ class D4BuildsProcessor {
     }
 
     buildHtmlValue(className, value) {
-        return `<div class="${className}" style="color:gray; font-size:15px;">${value}</div>`;
+        return `<div class="d4br_show ${className}" style="color:gray; font-size:15px;">${value}</div>`;
     }
 }
 
@@ -258,7 +258,7 @@ class D4MaxrollProcessor {
     }
 
     aspectNameProcess(titleNode, subTitleNode) {
-        const className = "aspect_name_rus";
+        const className = "d4br_aspect_name";
         const aspectNameMap = this.d4Data.aspectNameMap;
         const subTitleValue = subTitleNode.innerText;
         // aspect node
@@ -304,23 +304,23 @@ class D4MaxrollProcessor {
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true);
+        return this.nodeProcess(node, "d4br_unq_name", this.d4Data.unqItemMap, true);
     }
 
     mythItemNameProcess(node) {
-        return this.nodeProcess(node, "myth_name_rus", this.d4Data.mythItemMap, true);
+        return this.nodeProcess(node, "d4br_myth_name", this.d4Data.mythItemMap, true);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, true);
+        return this.nodeProcess(node, "d4br_skill_name", this.d4Data.skillsNameMap, true);
     }
 
     glyphNameProcess(node) {
-        return this.nodeProcess(node, "glyph_name_rus", this.d4Data.glyphNameMap, true);
+        return this.nodeProcess(node, "d4br_glyph_name", this.d4Data.glyphNameMap, true);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, true);
+        return this.nodeProcess(node, "d4br_leg_node_name", this.d4Data.legNodeMap, true);
     }
 
     nodeProcess(node, className, map, addOldValue) {
@@ -343,7 +343,7 @@ class D4MaxrollProcessor {
     }
 
     buildHtmlValue(className, value) {
-        return `<div class="${className}" style="color:darkgray; font-size:15px;">${value}</div>`;
+        return `<div class="d4br_show ${className}" style="color:darkgray; font-size:15px;">${value}</div>`;
     }
 }
 
@@ -398,16 +398,16 @@ class D4MobalyticsProcessor {
     }
 
     aspectNameProcess(node) {
-        return this.nodeProcess(node, "aspect_name_rus", this.d4Data.aspectNameMap, true);
+        return this.nodeProcess(node, "d4br_aspect_name", this.d4Data.aspectNameMap, true);
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "unq_name_rus", this.d4Data.unqItemMap, true) ||
-               this.nodeProcess(node, "myth_name_rus", this.d4Data.mythItemMap, true);
+        return this.nodeProcess(node, "d4br_unq_name", this.d4Data.unqItemMap, true) ||
+               this.nodeProcess(node, "d4br_myth_name", this.d4Data.mythItemMap, true);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "skill_name_rus", this.d4Data.skillsNameMap, true);
+        return this.nodeProcess(node, "d4br_skill_name", this.d4Data.skillsNameMap, true);
     }
 
     glyphNameProcess(node) {
@@ -423,11 +423,11 @@ class D4MobalyticsProcessor {
 
         const glyphName = glyphMatch[1];
         const newValue = this.d4Data.glyphNameMap.get(glyphName);
-        return this.setNewValue(node, "glyph_name_rus", newValue, true);
+        return this.setNewValue(node, "d4br_glyph_name", newValue, true);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "leg_node_name_rus", this.d4Data.legNodeMap, true);
+        return this.nodeProcess(node, "d4br_leg_node_name", this.d4Data.legNodeMap, true);
     }
 
     nodeProcess(node, className, map, addOldValue) {
@@ -450,12 +450,15 @@ class D4MobalyticsProcessor {
     }
 
     buildHtmlValue(className, value) {
-        return `<div class="${className}" style="color:darkgray; font-size:15px;">${value}</div>`;
+        return `<div class="d4br_show ${className}" style="color:darkgray; font-size:15px;">${value}</div>`;
     }
 }
 
 (function() {
     'use strict';
+
+    AddStyle("@keyframes d4br_show_anim { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }");
+    AddStyle(".d4br_show { animation: .7s d4br_show_anim ease; }");
 
     var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
 
@@ -483,6 +486,19 @@ function CreateProcessor() {
         case "mobalytics.gg" :
             return new D4MobalyticsProcessor();
     }
+}
+
+function AddStyle(css) {
+    const name = "D4BuildsRus";
+    const style = document.getElementById(name) || (function() {
+        const style = document.createElement('style');
+        style.type = 'text/css';
+        style.id = name;
+        document.head.appendChild(style);
+        return style;
+    })();
+    const sheet = style.sheet;
+    sheet.insertRule(css, (sheet.rules || sheet.cssRules || []).length);
 }
 
 function D4Data() {
