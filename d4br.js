@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.13.0
+// @version      0.13.1
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -13,14 +13,14 @@
 // @downloadURL  https://raw.githubusercontent.com/jukryt/d4br/main/d4br.js
 // @supportURL   https://github.com/jukryt/d4br/issues
 // @grant        GM_getResourceText
-// @resource     aspect https://raw.githubusercontent.com/jukryt/d4br/c5ca33021779199d7ec1d13aee5826f3266128af/aspect.json
-// @resource     glyph https://raw.githubusercontent.com/jukryt/d4br/c5ca33021779199d7ec1d13aee5826f3266128af/glyph.json
-// @resource     legNode https://raw.githubusercontent.com/jukryt/d4br/c5ca33021779199d7ec1d13aee5826f3266128af/legNode.json
-// @resource     mythItem https://raw.githubusercontent.com/jukryt/d4br/c5ca33021779199d7ec1d13aee5826f3266128af/mythItem.json
-// @resource     skill https://raw.githubusercontent.com/jukryt/d4br/c5ca33021779199d7ec1d13aee5826f3266128af/skill.json
-// @resource     temper https://raw.githubusercontent.com/jukryt/d4br/c5ca33021779199d7ec1d13aee5826f3266128af/temper.json
-// @resource     unqItem https://raw.githubusercontent.com/jukryt/d4br/c5ca33021779199d7ec1d13aee5826f3266128af/unqItem.json
-// @resource     rune https://github.com/jukryt/d4br/raw/59df4ea460cd3c6765a05aeb80c539bb74770e11/rune.json
+// @resource     aspect   https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/aspect.json
+// @resource     glyph    https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/glyph.json
+// @resource     legNode  https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/legNode.json
+// @resource     mythItem https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/mythItem.json
+// @resource     skill    https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/skill.json
+// @resource     temper   https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/temper.json
+// @resource     unqItem  https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/unqItem.json
+// @resource     rune     https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/rune.json
 // ==/UserScript==
 
 function D4Data() {
