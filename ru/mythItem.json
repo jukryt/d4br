@@ -1,22 +1,27 @@
 {
     "url":"https://www.wowhead.com/diablo-4/items/quality:8",
     "data":[
-["Tyrael's Might", "Мощь Тираэля"],
-["Andariel's Visage", "Лик Андариэль"],
 ["Ring of Starless Skies", "Кольцо беззвездных небес"],
-["Harlequin Crest", "Шутовской гребень"],
-["Doombringer", "Вестник рока"],
-["The Grandfather", "Предок"],
+["Tyrael's Might", "Мощь Тираэля"],
 ["Heir of Perdition", "Наследник погибели"],
+["Harlequin Crest", "Шутовской гребень"],
+["The Grandfather", "Предок"],
+["Doombringer", "Вестник рока"],
 ["Shroud of False Death", "Покров притворной смерти"],
+["Andariel's Visage", "Лик Андариэль"],
 ["Resplendent Spark", "Ослепительная искра"],
 ["Melted Heart of Selig", "Расплавленное сердце Селига"],
-["Nesekem, the Herald", "Глашатай Несекем"],
+["Nesekem the Herald", "Глашатай Несекем"],
+["Ahavarion Spear of Lycander", "Аварион копье Ликандер"],
 ["Shattered Vow", "Нарушенная клятва"],
-["Ahavarion, Spear of Lycander", "Аварион, копье Ликандер"],
-["Greater Triune Arms Cache", "Сундук Трех с мощным оружием"],
 ["Mythic Unique Cache", "Сундук с эпохальным уникальным снаряжением"],
+["Destroyer's Cache", "Сундук разрушителя"],
+["Resplendent Coven Crate", "Великолепный ящик ковена"],
 ["PTR Cache - Mythic Uniques", "Тайник PTR – Эпохальные уникальные предметы"],
-["Destroyer's Cache", "Сундук разрушителя"]
+["Mythic Treasure Bag", "Эпохальный мешок с сокровищами"],
+["Greater Triune Arms Cache", "Сундук Трех с мощным оружием"],
+["Destroyer's Cache", "Сундук разрушителя"],
+["Resplendent Coven Crate", "Великолепный ящик ковена"],
+["Greater Gift from the Ancestors", "Большой дар предков"]
 ]
 }
