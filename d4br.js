@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.13.1
+// @version      0.13.2
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -261,9 +261,9 @@ class D4MaxrollProcessor {
     mutationObserverCallback(processor, mutations) {
         for (const mutation of mutations) {
             if (mutation.type === "childList") {
-                if (mutation.target.id === "d4tools-tooltip-root") {
+                if (mutation.target.id === "uitools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
-                        if (newNode.className === "d4tools-tooltip") {
+                        if (newNode.className === "uitools-tooltip-frame ui-tooltip-active") {
                             // legendary: aspect, leg node, glyph, rune
                             if (newNode.querySelector("div.d4t-tip-legendary")) {
                                 const titleNodes = newNode.querySelectorAll("div.d4t-title");
