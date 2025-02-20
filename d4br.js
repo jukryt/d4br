@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.13.2
+// @version      0.14.0
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -13,41 +13,75 @@
 // @downloadURL  https://raw.githubusercontent.com/jukryt/d4br/main/d4br.js
 // @supportURL   https://github.com/jukryt/d4br/issues
 // @grant        GM_getResourceText
-// @resource     aspect   https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/aspect.json
-// @resource     glyph    https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/glyph.json
-// @resource     legNode  https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/legNode.json
-// @resource     mythItem https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/mythItem.json
-// @resource     skill    https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/skill.json
-// @resource     temper   https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/temper.json
-// @resource     unqItem  https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/unqItem.json
-// @resource     rune     https://raw.githubusercontent.com/jukryt/d4br/7e8768c8d56c0971a94d0a88c112484e1b8fcfe1/ru/rune.json
+
+// @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/aspect.json
+// @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/glyph.json
+// @resource     unq_item_en  https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/unq_item.json
+// @resource     leg_node_en  https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/leg_node.json
+// @resource     rune_en      https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/rune.json
+// @resource     skill_en     https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/skill.json
+// @resource     temper_en    https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/temper.json
+
+// @resource     aspect_ru    https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/aspect.json
+// @resource     glyph_ru     https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/glyph.json
+// @resource     unq_item_ru  https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/unq_item.json
+// @resource     leg_node_ru  https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/leg_node.json
+// @resource     rune_ru      https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/rune.json
+// @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/skill.json
+// @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/temper.json
+
 // ==/UserScript==
 
 function D4Data() {
     return new class D4Data {
-        constructor() {
-            this.aspectMap = this.getMap("aspect");
-            this.unqItemMap = this.getMap("unqItem");
-            this.mythItemMap = this.getMap("mythItem");
-            this.temperMap = this.getMap("temper");
-            this.glyphMap = this.getMap("glyph");
-            this.legNodeMap = this.getMap("legNode");
-            this.skillMap = this.getMap("skill");
-            this.runeMap = this.getMap("rune");
+        createEnglish() {
+            return new D4Data.English();
         }
 
-        getMap(resourceName) {
-            let text = GM_getResourceText(resourceName);
-            let json = JSON.parse(text);
-            let map = new Map(json.data);
-            return map;
+        createRussian() {
+            return new D4Data.Russian();
+        }
+
+        static English = class English {
+            constructor() {
+                this.aspects = D4Data.getResource("aspect_en").items;
+                this.glyphs = D4Data.getResource("glyph_en").items;
+                this.unqItems = D4Data.getResource("unq_item_en").items;
+                this.legNodes = D4Data.getResource("leg_node_en").items;
+                this.runes = D4Data.getResource("rune_en").items;
+                this.skills = D4Data.getResource("skill_en").items;
+                this.tempers = D4Data.getResource("temper_en").items;
+            }
+        }
+
+        static Russian = class Russian {
+            constructor() {
+                this.aspects = D4Data.getResource("aspect_ru").items;
+                this.glyphs = D4Data.getResource("glyph_ru").items;
+                this.unqItems = D4Data.getResource("unq_item_ru").items;
+                this.legNodes = D4Data.getResource("leg_node_ru").items;
+                this.runes = D4Data.getResource("rune_ru").items;
+                this.skills = D4Data.getResource("skill_ru").items;
+                this.tempers = D4Data.getResource("temper_ru").items;
+            }
+        }
+
+        static getResource(resourceName) {
+            const text = GM_getResourceText(resourceName);
+            if (!text) {
+                return null;
+            }
+
+            return JSON.parse(text);
         }
     }
 }
 
 class D4BuildsProcessor {
     constructor() {
-        this.d4Data = new D4Data();
+        const d4Data = new D4Data();
+        this.en = d4Data.createEnglish();
+        this.ru = d4Data.createRussian();
     }
 
     mutationObserverCallback(processor, mutations) {
@@ -179,7 +213,7 @@ class D4BuildsProcessor {
     }
 
     aspectNameProcess(node) {
-        return this.nodeProcess(node, "d4br_aspect_name", this.d4Data.aspectMap, false);
+        return this.nodeProcess(node, "d4br_aspect_name", this.en.aspects, this.ru.aspects, false);
     }
 
     temperNameProcess(node) {
@@ -194,33 +228,40 @@ class D4BuildsProcessor {
         }
 
         const temperName = temperMatch[1];
-        const newValue = this.d4Data.temperMap.get(temperName);
+        const enItem = this.en.tempers.find(i => i.name === temperName);
+        if (!enItem) {
+            return false;
+        }
 
-        return this.setNewValue(node, "d4br_temper_name", newValue, false);
+        const ruItem = this.ru.tempers.find(i => i.id === enItem.id);
+        if (!ruItem) {
+            return false;
+        }
+
+        return this.setNewValue(node, "d4br_temper_name", ruItem.name, false);
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_unq_name", this.d4Data.unqItemMap, false) ||
-               this.nodeProcess(node, "d4br_myth_name", this.d4Data.mythItemMap, false);
+        return this.nodeProcess(node, "d4br_unq_name", this.en.unqItems, this.ru.unqItems, false);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", this.d4Data.skillMap, false);
+        return this.nodeProcess(node, "d4br_skill_name", this.en.skills, this.ru.skills, false);
     }
 
     glyphNameProcess(node) {
-        return this.nodeProcess(node, "d4br_glyph_name", this.d4Data.glyphMap, false);
+        return this.nodeProcess(node, "d4br_glyph_name", this.en.glyphs, this.ru.glyphs, false);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_leg_node_name", this.d4Data.legNodeMap, false);
+        return this.nodeProcess(node, "d4br_leg_node_name", this.en.legNodes, this.ru.legNodes, false);
     }
 
     gemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_rune_name", this.d4Data.runeMap, false);
+        return this.nodeProcess(node, "d4br_rune_name", this.en.runes, this.ru.runes, false);
     }
 
-    nodeProcess(node, className, map, addOldValue) {
+    nodeProcess(node, className, oldItems, newItems, addOldValue) {
         if (!node.childNodes) {
             return false;
         }
@@ -230,8 +271,17 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const newValue = map.get(oldValue);
-        return this.setNewValue(node, className, newValue, addOldValue);
+        const oldItem = oldItems.find(i => i.name === oldValue);
+        if (!oldItem) {
+            return false;
+        }
+
+        const newItem = newItems.find(i => i.id === oldItem.id);
+        if (!newItem) {
+            return false;
+        }
+
+        return this.setNewValue(node, className, newItem.name, addOldValue);
     }
 
     setNewValue(node, className, newValue, addOldValue) {
@@ -255,7 +305,9 @@ class D4BuildsProcessor {
 
 class D4MaxrollProcessor {
     constructor() {
-        this.d4Data = new D4Data();
+        const d4Data = new D4Data();
+        this.en = d4Data.createEnglish();
+        this.ru = d4Data.createRussian();
     }
 
     mutationObserverCallback(processor, mutations) {
@@ -307,7 +359,7 @@ class D4MaxrollProcessor {
                             else if (newNode.querySelector("div.d4t-tip-mythic")) {
                                 const titleNode = newNode.querySelector("div.d4t-title");
                                 if (titleNode) {
-                                    processor.mythItemNameProcess(titleNode);
+                                    processor.unqItemNameProcess(titleNode);
                                 }
                             }
                             // skill
@@ -330,42 +382,40 @@ class D4MaxrollProcessor {
         }
 
         const className = "d4br_aspect_name";
-        const aspectMap = this.d4Data.aspectMap;
         const subTitleValue = subTitleNode.innerText;
         // aspect node
         if (subTitleValue === "Legendary Aspect") {
-            return this.nodeProcess(titleNode, className, aspectMap, true);
+            return this.nodeProcess(titleNode, className, this.en.aspects, this.ru.aspects, true);
         }
         // item node
         else {
             const oldTitleValue = titleNode.innerText;
             const self = this;
 
-            const results = [...aspectMap].filter((row) => { return self.aspectNameFilter(row, oldTitleValue); });
-            if (results.length != 1) {
+            const enItems = this.en.aspects.filter((i) => { return self.aspectNameFilter(i, oldTitleValue); });
+            if (enItems.length != 1) {
                 return false;
             }
 
-            const newTitleValue = results[0][1];
-            return this.setNewValue(titleNode, className, newTitleValue, true);
+            const enItem = enItems[0];
+            const ruItem = this.ru.aspects.find(i => i.id === enItem.id);
+
+            return this.setNewValue(titleNode, className, ruItem.name, true);
         }
     }
 
-    aspectNameFilter(mapRow, oldTitleValue) {
-        const key = mapRow[0];
-        const value = mapRow[1];
-
-        const aspectIndex = key.indexOf("Aspect");
+    aspectNameFilter(item, oldTitleValue) {
+        const aspectIndex = item.name.indexOf("Aspect");
         // [Aspect of ...] => [Item_Name of Aspect_Name]
         if (aspectIndex === 0) {
-            const aspectName = key.substring(6);
+            const aspectName = item.name.substring(6);
             if (oldTitleValue.endsWith(aspectName)) {
                 return true;
             }
         }
         // [... Aspect] => [Aspect_Name Item_Name]
         else {
-            const aspectName = key.substring(0, aspectIndex);
+            const aspectName = item.name.substring(0, aspectIndex);
             if (oldTitleValue.startsWith(aspectName)) {
                 return true;
             }
@@ -376,37 +426,46 @@ class D4MaxrollProcessor {
 
     unqItemNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_unq_name", this.d4Data.unqItemMap, true);
-    }
-
-    mythItemNameProcess(node) {
-        if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_myth_name", this.d4Data.mythItemMap, true);
+        return this.nodeProcess(node, "d4br_unq_name", this.en.unqItems, this.ru.unqItems, true);
     }
 
     skillNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_skill_name", this.d4Data.skillMap, true);
+        return this.nodeProcess(node, "d4br_skill_name", this.en.skills, this.ru.skills, true);
     }
 
     legNodeNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_leg_node_name", this.d4Data.legNodeMap, true);
+        return this.nodeProcess(node, "d4br_leg_node_name", this.en.legNodes, this.ru.legNodes, true);
     }
 
     glyphNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_glyph_name", this.d4Data.glyphMap, true);
+        return this.nodeProcess(node, "d4br_glyph_name", this.en.glyphs, this.ru.glyphs, true);
     }
 
     runeNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_rune_name", this.d4Data.runeMap, true);
+        return this.nodeProcess(node, "d4br_rune_name", this.en.runes, this.ru.runes, true);
     }
 
-    nodeProcess(node, className, map, addOldValue) {
-        const newValue = map.get(node.innerText);
-        return this.setNewValue(node, className, newValue, addOldValue);
+    nodeProcess(node, className, oldItems, newItems, addOldValue) {
+        const oldValue = node.innerText;
+        if (!oldValue) {
+            return false;
+        }
+
+        const oldItem = oldItems.find(i => i.name === oldValue);
+        if (!oldItem) {
+            return false;
+        }
+
+        const newItem = newItems.find(i => i.id === oldItem.id);
+        if (!newItem) {
+            return false;
+        }
+
+        return this.setNewValue(node, className, newItem.name, addOldValue);
     }
 
     setNewValue(node, className, newValue, addOldValue) {
@@ -430,7 +489,9 @@ class D4MaxrollProcessor {
 
 class D4MobalyticsProcessor {
     constructor() {
-        this.d4Data = new D4Data();
+        const d4Data = new D4Data();
+        this.en = d4Data.createEnglish();
+        this.ru = d4Data.createRussian();
     }
 
     mutationObserverCallback(processor, mutations) {
@@ -490,7 +551,7 @@ class D4MobalyticsProcessor {
     }
 
     aspectNameProcess(node) {
-        return this.nodeProcess(node, "d4br_aspect_name", this.d4Data.aspectMap, true);
+        return this.nodeProcess(node, "d4br_aspect_name", this.en.aspects, this.ru.aspects, true);
     }
 
     temperNameProcess(node) {
@@ -499,26 +560,34 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        let newValue = this.d4Data.temperMap.get(oldValue);
+        let enItem = this.en.tempers.find(i => i.name === oldValue);
 
-        if (!newValue) {
+        if (!enItem) {
             const temperNameMatch = oldValue.match(/(.+) - (.+)/);
             if (temperNameMatch) {
-                const newTemperName = `${temperNameMatch[1]}-${temperNameMatch[2]}`;
-                newValue = this.d4Data.temperMap.get(newTemperName);
+                const temperName = `${temperNameMatch[1]}-${temperNameMatch[2]}`;
+                enItem = this.en.tempers.find(i => i.name === temperName);
             }
         }
 
-        return this.setNewValue(node, "d4br_temper_name", newValue, true);
+        if (!enItem) {
+            return false;
+        }
+
+        const ruItem = this.ru.tempers.find(i => i.id === enItem.id);
+        if (!ruItem) {
+            return false;
+        }
+
+        return this.setNewValue(node, "d4br_temper_name", ruItem.name, true);
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_unq_name", this.d4Data.unqItemMap, true) ||
-               this.nodeProcess(node, "d4br_myth_name", this.d4Data.mythItemMap, true);
+        return this.nodeProcess(node, "d4br_unq_name", this.en.unqItems, this.ru.unqItems, true);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", this.d4Data.skillMap, true);
+        return this.nodeProcess(node, "d4br_skill_name", this.en.skills, this.ru.skills, true);
     }
 
     glyphNameProcess(node) {
@@ -533,21 +602,44 @@ class D4MobalyticsProcessor {
         }
 
         const glyphName = glyphMatch[1];
-        const newValue = this.d4Data.glyphMap.get(glyphName);
-        return this.setNewValue(node, "d4br_glyph_name", newValue, true);
+        const enItem = this.en.glyphs.find(i => i.name === glyphName);
+        if (!enItem) {
+            return false;
+        }
+
+        const ruItem = this.ru.glyphs.find(i => i.id === enItem.id);
+        if (!ruItem) {
+            return false;
+        }
+
+        return this.setNewValue(node, "d4br_glyph_name", ruItem.name, true);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_leg_node_name", this.d4Data.legNodeMap, true);
+        return this.nodeProcess(node, "d4br_leg_node_name", this.en.legNodes, this.ru.legNodes, true);
     }
 
     runeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_rune_name", this.d4Data.runeMap, true);
+        return this.nodeProcess(node, "d4br_rune_name", this.en.runes, this.ru.runes, true);
     }
 
-    nodeProcess(node, className, map, addOldValue) {
-        const newValue = map.get(node.innerText);
-        return this.setNewValue(node, className, newValue, addOldValue);
+    nodeProcess(node, className, oldItems, newItems, addOldValue) {
+        const oldValue = node.innerText;
+        if (!oldValue) {
+            return false;
+        }
+
+        const oldItem = oldItems.find(i => i.name === oldValue);
+        if (!oldItem) {
+            return false;
+        }
+
+        const newItem = newItems.find(i => i.id === oldItem.id);
+        if (!newItem) {
+            return false;
+        }
+
+        return this.setNewValue(node, className, newItem.name, addOldValue);
     }
 
     setNewValue(node, className, newValue, addOldValue) {
