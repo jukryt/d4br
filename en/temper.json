@@ -1,0 +1,1831 @@
+{
+    "url":"https://www.wowhead.com/diablo-4/items/temper-manual",
+    "source":"g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
+    "items":
+[
+    {
+        "id": 2058710,
+        "name": "Spiritborn Resolve"
+    },
+    {
+        "id": 1924940,
+        "name": "Brawling Efficiency"
+    },
+    {
+        "id": 1868588,
+        "name": "Blood Finesse"
+    },
+    {
+        "id": 1862428,
+        "name": "Worldly Endurance"
+    },
+    {
+        "id": 1873395,
+        "name": "Cutthroat Finesse"
+    },
+    {
+        "id": 1862424,
+        "name": "Worldly Fortune"
+    },
+    {
+        "id": 2087588,
+        "name": "Agile Augments"
+    },
+    {
+        "id": 1924938,
+        "name": "Brawling Efficiency"
+    },
+    {
+        "id": 2166241,
+        "name": "Dreadful Augments"
+    },
+    {
+        "id": 2166243,
+        "name": "Dreadful Augments"
+    },
+    {
+        "id": 1880200,
+        "name": "Wasteland Augments"
+    },
+    {
+        "id": 1927846,
+        "name": "Daze Control"
+    },
+    {
+        "id": 1928679,
+        "name": "Elemental Surge — Day"
+    },
+    {
+        "id": 2007850,
+        "name": "Subterfuge Expertise"
+    },
+    {
+        "id": 2101067,
+        "name": "Pyromancy Augments —  Fiery"
+    },
+    {
+        "id": 2169791,
+        "name": "Ultimate Efficiency — Rogue"
+    },
+    {
+        "id": 1862442,
+        "name": "Natural Motion"
+    },
+    {
+        "id": 2058707,
+        "name": "Spiritborn Resolve"
+    },
+    {
+        "id": 2180752,
+        "name": "Werewolf Finesse"
+    },
+    {
+        "id": 1862232,
+        "name": "Berserking Finesse"
+    },
+    {
+        "id": 1880220,
+        "name": "Minion Augments"
+    },
+    {
+        "id": 1927870,
+        "name": "Blood Finesse"
+    },
+    {
+        "id": 2166157,
+        "name": "Vehement Augments"
+    },
+    {
+        "id": 1926288,
+        "name": "Thorn Army"
+    },
+    {
+        "id": 2016788,
+        "name": "Ultimate Efficiency —  Druid"
+    },
+    {
+        "id": 2166155,
+        "name": "Vehement Augments"
+    },
+    {
+        "id": 1927910,
+        "name": "Cutthroat Finesse"
+    },
+    {
+        "id": 1862450,
+        "name": "Natural Finesse"
+    },
+    {
+        "id": 1927409,
+        "name": "Pyromancy Finesse"
+    },
+    {
+        "id": 1927415,
+        "name": "Pyromancy Augments"
+    },
+    {
+        "id": 1928175,
+        "name": "Cutthroat Finesse"
+    },
+    {
+        "id": 1989572,
+        "name": "Conjuration Fortune"
+    },
+    {
+        "id": 2016323,
+        "name": "Shock Augments —  Discharge"
+    },
+    {
+        "id": 1861360,
+        "name": "Ultimate Efficiency — Barbarian"
+    },
+    {
+        "id": 1868198,
+        "name": "Necromancer Efficiency"
+    },
+    {
+        "id": 1873385,
+        "name": "Alchemist Control"
+    },
+    {
+        "id": 1885045,
+        "name": "Werewolf Augments"
+    },
+    {
+        "id": 1928151,
+        "name": "Necromancer Invigoration"
+    },
+    {
+        "id": 2053018,
+        "name": "Slayer's Finesse"
+    },
+    {
+        "id": 1927868,
+        "name": "Minion Finesse"
+    },
+    {
+        "id": 2058857,
+        "name": "Centipede Innovation"
+    },
+    {
+        "id": 1928224,
+        "name": "Ultimate Efficiency —  Sorcerer"
+    },
+    {
+        "id": 2166159,
+        "name": "Vehement Augments"
+    },
+    {
+        "id": 1873425,
+        "name": "Imbuement Abundance"
+    },
+    {
+        "id": 2040710,
+        "name": "Worldly Finesse"
+    },
+    {
+        "id": 2085452,
+        "name": "Decay Innovation"
+    },
+    {
+        "id": 1861381,
+        "name": "Brawling Efficiency"
+    },
+    {
+        "id": 1924895,
+        "name": "Natural Resistance"
+    },
+    {
+        "id": 1927920,
+        "name": "Agility Efficiency"
+    },
+    {
+        "id": 1928163,
+        "name": "Bone Augments"
+    },
+    {
+        "id": 2007684,
+        "name": "Necromancer Wall"
+    },
+    {
+        "id": 2172863,
+        "name": "Prismatic Augments"
+    },
+    {
+        "id": 1885047,
+        "name": "Companion Efficiency"
+    },
+    {
+        "id": 1885053,
+        "name": "Storm Finesse"
+    },
+    {
+        "id": 2058703,
+        "name": "Spiritborn Resolve"
+    },
+    {
+        "id": 2058759,
+        "name": "Jaguar Finesse"
+    },
+    {
+        "id": 2089976,
+        "name": "Sharpened Finesse"
+    },
+    {
+        "id": 2085676,
+        "name": "Bleed Innovation"
+    },
+    {
+        "id": 2087584,
+        "name": "Agile Augments"
+    },
+    {
+        "id": 2169778,
+        "name": "Ultimate Efficiency — Rogue"
+    },
+    {
+        "id": 2180748,
+        "name": "Werewolf Finesse"
+    },
+    {
+        "id": 1861353,
+        "name": "Barbarian Motion"
+    },
+    {
+        "id": 1924933,
+        "name": "Ultimate Efficiency — Barbarian"
+    },
+    {
+        "id": 1928157,
+        "name": "Thorn Army"
+    },
+    {
+        "id": 2016679,
+        "name": "Ultimate Efficiency —  Druid"
+    },
+    {
+        "id": 2018132,
+        "name": "Rogue Innovation"
+    },
+    {
+        "id": 2058855,
+        "name": "Centipede Innovation"
+    },
+    {
+        "id": 2108327,
+        "name": "Elemental Surge — Night"
+    },
+    {
+        "id": 1861375,
+        "name": "Weapon Mastery Efficiency"
+    },
+    {
+        "id": 1924881,
+        "name": "Worldly Stability"
+    },
+    {
+        "id": 1925846,
+        "name": "Shadow Augments — Execution"
+    },
+    {
+        "id": 1998716,
+        "name": "Conjuration Augments"
+    },
+    {
+        "id": 2058798,
+        "name": "Eagle Efficiency"
+    },
+    {
+        "id": 2058887,
+        "name": "Eagle Augments"
+    },
+    {
+        "id": 2112099,
+        "name": "Cutthroat Augments"
+    },
+    {
+        "id": 1868565,
+        "name": "Blood Endurance"
+    },
+    {
+        "id": 1880229,
+        "name": "Shadow Augments — Decay"
+    },
+    {
+        "id": 1924903,
+        "name": "Wasteland Augments"
+    },
+    {
+        "id": 1926183,
+        "name": "Weapon Attunement — Necromancer"
+    },
+    {
+        "id": 1926491,
+        "name": "Specialist Evolution"
+    },
+    {
+        "id": 1927892,
+        "name": "Bone Augments"
+    },
+    {
+        "id": 1927924,
+        "name": "Subterfuge Efficiency"
+    },
+    {
+        "id": 2058736,
+        "name": "Eagle Finesse"
+    },
+    {
+        "id": 2058875,
+        "name": "Jaguar Innovation"
+    },
+    {
+        "id": 2086175,
+        "name": "Lightning Augments"
+    },
+    {
+        "id": 2086826,
+        "name": "Weapon Augments"
+    },
+    {
+        "id": 2166239,
+        "name": "Dreadful Augments"
+    },
+    {
+        "id": 1880193,
+        "name": "Furious Augments"
+    },
+    {
+        "id": 1927453,
+        "name": "Shock Finesse"
+    },
+    {
+        "id": 1927455,
+        "name": "Sorcerer Stability"
+    },
+    {
+        "id": 1927564,
+        "name": "Earth Finesse"
+    },
+    {
+        "id": 1927886,
+        "name": "Thorn Army"
+    },
+    {
+        "id": 1928113,
+        "name": "Shapeshifting Finesse"
+    },
+    {
+        "id": 2058765,
+        "name": "Jaguar Finesse"
+    },
+    {
+        "id": 2058883,
+        "name": "Eagle Augments"
+    },
+    {
+        "id": 2058904,
+        "name": "Jaguar Augments"
+    },
+    {
+        "id": 1862234,
+        "name": "Demolition Finesse"
+    },
+    {
+        "id": 1868590,
+        "name": "Bone Finesse"
+    },
+    {
+        "id": 1873434,
+        "name": "Scoundrel Finesse"
+    },
+    {
+        "id": 1881993,
+        "name": "Rogue Invigoration"
+    },
+    {
+        "id": 1924901,
+        "name": "Wasteland Augments"
+    },
+    {
+        "id": 1924958,
+        "name": "Barbarian Protection (Legacy)"
+    },
+    {
+        "id": 1927429,
+        "name": "Sorcerer Control"
+    },
+    {
+        "id": 1927894,
+        "name": "Shadow Augments — Execution"
+    },
+    {
+        "id": 1928141,
+        "name": "Blood Finesse"
+    },
+    {
+        "id": 1928218,
+        "name": "Pyromancy Finesse"
+    },
+    {
+        "id": 1997922,
+        "name": "Rogue Persistence"
+    },
+    {
+        "id": 2100497,
+        "name": "Plains Augments"
+    },
+    {
+        "id": 2124999,
+        "name": "Sorcerer Innovation - Fiery"
+    },
+    {
+        "id": 2172861,
+        "name": "Prismatic Augments"
+    },
+    {
+        "id": 1868196,
+        "name": "Profane Innovation"
+    },
+    {
+        "id": 1873393,
+        "name": "Agility Efficiency"
+    },
+    {
+        "id": 1880225,
+        "name": "Blood Augments"
+    },
+    {
+        "id": 1924887,
+        "name": "Natural Motion"
+    },
+    {
+        "id": 1924899,
+        "name": "Wasteland Innovation"
+    },
+    {
+        "id": 1927461,
+        "name": "Frost Augments"
+    },
+    {
+        "id": 1927880,
+        "name": "Necromancer Invigoration"
+    },
+    {
+        "id": 1927890,
+        "name": "Blood Augments"
+    },
+    {
+        "id": 1928185,
+        "name": "Agility Efficiency"
+    },
+    {
+        "id": 1997918,
+        "name": "Rogue Persistence"
+    },
+    {
+        "id": 2058832,
+        "name": "Gorilla Efficiency"
+    },
+    {
+        "id": 2087580,
+        "name": "Assassin Augments"
+    },
+    {
+        "id": 2089978,
+        "name": "Sharpened Finesse"
+    },
+    {
+        "id": 1862212,
+        "name": "Barbarian Protection (Legacy)"
+    },
+    {
+        "id": 1862434,
+        "name": "Worldly Stability"
+    },
+    {
+        "id": 1873421,
+        "name": "Rogue Motion"
+    },
+    {
+        "id": 1873430,
+        "name": "Marksman Finesse"
+    },
+    {
+        "id": 1927451,
+        "name": "Frost Finesse"
+    },
+    {
+        "id": 1927912,
+        "name": "Marksman Finesse"
+    },
+    {
+        "id": 1927936,
+        "name": "Trap Augments"
+    },
+    {
+        "id": 1928149,
+        "name": "Necromancer Efficiency"
+    },
+    {
+        "id": 1928171,
+        "name": "Rogue Recovery"
+    },
+    {
+        "id": 1928206,
+        "name": "Trap Augments"
+    },
+    {
+        "id": 1928216,
+        "name": "Conjuration Finesse"
+    },
+    {
+        "id": 2018127,
+        "name": "Rogue Innovation"
+    },
+    {
+        "id": 2058863,
+        "name": "Eagle Innovation"
+    },
+    {
+        "id": 2058879,
+        "name": "Centipede Augments"
+    },
+    {
+        "id": 2087586,
+        "name": "Agile Augments"
+    },
+    {
+        "id": 2108317,
+        "name": "Elemental Surge — Night"
+    },
+    {
+        "id": 1861345,
+        "name": "Bleed Augments"
+    },
+    {
+        "id": 1862208,
+        "name": "Barbarian Recovery"
+    },
+    {
+        "id": 1862444,
+        "name": "Natural Schemes"
+    },
+    {
+        "id": 1868200,
+        "name": "Minion Finesse"
+    },
+    {
+        "id": 1885041,
+        "name": "Companion Innovation"
+    },
+    {
+        "id": 1924871,
+        "name": "Natural Schemes"
+    },
+    {
+        "id": 1924885,
+        "name": "Natural Finesse"
+    },
+    {
+        "id": 1926187,
+        "name": "Necromancer Invigoration"
+    },
+    {
+        "id": 1927463,
+        "name": "Shock Augments — Surge"
+    },
+    {
+        "id": 1927579,
+        "name": "Wrath Efficiency"
+    },
+    {
+        "id": 1928115,
+        "name": "Storm Finesse"
+    },
+    {
+        "id": 2017354,
+        "name": "Barbarian Innovation"
+    },
+    {
+        "id": 2017356,
+        "name": "Barbarian Innovation"
+    },
+    {
+        "id": 2058820,
+        "name": "Fitness Efficiency"
+    },
+    {
+        "id": 2100471,
+        "name": "Soil Augments"
+    },
+    {
+        "id": 1868569,
+        "name": "Profane Cage"
+    },
+    {
+        "id": 1880204,
+        "name": "Thorn Body"
+    },
+    {
+        "id": 1885043,
+        "name": "Storm Augments"
+    },
+    {
+        "id": 1924907,
+        "name": "Bleed Augments"
+    },
+    {
+        "id": 1924909,
+        "name": "Furious Augments"
+    },
+    {
+        "id": 1924911,
+        "name": "Furious Augments"
+    },
+    {
+        "id": 1924944,
+        "name": "Demolition Finesse"
+    },
+    {
+        "id": 1927431,
+        "name": "Ultimate Efficiency —  Sorcerer"
+    },
+    {
+        "id": 1927490,
+        "name": "Conjuration Finesse"
+    },
+    {
+        "id": 1927541,
+        "name": "Nature Magic Wall"
+    },
+    {
+        "id": 1928103,
+        "name": "Nature Magic Wall"
+    },
+    {
+        "id": 1928139,
+        "name": "Minion Finesse"
+    },
+    {
+        "id": 1928177,
+        "name": "Marksman Finesse"
+    },
+    {
+        "id": 1928187,
+        "name": "Imbuement Abundance"
+    },
+    {
+        "id": 1928195,
+        "name": "Daze Control"
+    },
+    {
+        "id": 1928222,
+        "name": "Conjuration Efficiency"
+    },
+    {
+        "id": 2007848,
+        "name": "Subterfuge Expertise"
+    },
+    {
+        "id": 2053015,
+        "name": "Slayer's Finesse"
+    },
+    {
+        "id": 2058861,
+        "name": "Eagle Innovation"
+    },
+    {
+        "id": 2058896,
+        "name": "Gorilla Augments"
+    },
+    {
+        "id": 2085464,
+        "name": "Execution Innovation"
+    },
+    {
+        "id": 2085466,
+        "name": "Execution Innovation"
+    },
+    {
+        "id": 2086144,
+        "name": "Brute Innovation"
+    },
+    {
+        "id": 2086146,
+        "name": "Brute Innovation"
+    },
+    {
+        "id": 1862230,
+        "name": "Arsenal Finesse"
+    },
+    {
+        "id": 1873391,
+        "name": "Marksman Augments — Basic"
+    },
+    {
+        "id": 1873423,
+        "name": "Trap Augments"
+    },
+    {
+        "id": 1873428,
+        "name": "Subterfuge Efficiency"
+    },
+    {
+        "id": 1873432,
+        "name": "Skillful Finesse"
+    },
+    {
+        "id": 1885017,
+        "name": "Nature Magic Wall"
+    },
+    {
+        "id": 1885021,
+        "name": "Wrath Efficiency"
+    },
+    {
+        "id": 1885023,
+        "name": "Companion Augments"
+    },
+    {
+        "id": 1885051,
+        "name": "Earth Finesse"
+    },
+    {
+        "id": 1885055,
+        "name": "Shapeshifting Finesse"
+    },
+    {
+        "id": 1924568,
+        "name": "Weapon Attunement — Barbarian"
+    },
+    {
+        "id": 1924877,
+        "name": "Worldly Fortune"
+    },
+    {
+        "id": 1924889,
+        "name": "Natural Motion"
+    },
+    {
+        "id": 1924893,
+        "name": "Worldly Endurance"
+    },
+    {
+        "id": 1924905,
+        "name": "Bleed Augments"
+    },
+    {
+        "id": 1924913,
+        "name": "Berserking Innovation"
+    },
+    {
+        "id": 1924915,
+        "name": "Berserking Innovation"
+    },
+    {
+        "id": 1924917,
+        "name": "Thorn Body"
+    },
+    {
+        "id": 1924925,
+        "name": "Weapon Attunement — Barbarian"
+    },
+    {
+        "id": 1924927,
+        "name": "Weapon Attunement — Barbarian"
+    },
+    {
+        "id": 1924948,
+        "name": "Berserking Finesse"
+    },
+    {
+        "id": 1924966,
+        "name": "Barbarian Strategy"
+    },
+    {
+        "id": 1926142,
+        "name": "Necromancer Motion"
+    },
+    {
+        "id": 1927398,
+        "name": "Druid Motion"
+    },
+    {
+        "id": 1927449,
+        "name": "Frost Cage"
+    },
+    {
+        "id": 1927543,
+        "name": "Shapeshifting Endurance"
+    },
+    {
+        "id": 1927545,
+        "name": "Druid Motion"
+    },
+    {
+        "id": 1927856,
+        "name": "Storm Augments"
+    },
+    {
+        "id": 1927862,
+        "name": "Profane Cage"
+    },
+    {
+        "id": 1927902,
+        "name": "Rogue Motion"
+    },
+    {
+        "id": 1927930,
+        "name": "Daze Control"
+    },
+    {
+        "id": 1927934,
+        "name": "Marksman Augments — Core"
+    },
+    {
+        "id": 1927950,
+        "name": "Shock Finesse"
+    },
+    {
+        "id": 1927952,
+        "name": "Conjuration Efficiency"
+    },
+    {
+        "id": 1927962,
+        "name": "Pyromancy Augments"
+    },
+    {
+        "id": 1927964,
+        "name": "Shock Augments — Surge"
+    },
+    {
+        "id": 1928119,
+        "name": "Companion Efficiency"
+    },
+    {
+        "id": 1928121,
+        "name": "Druid Invigoration"
+    },
+    {
+        "id": 1928123,
+        "name": "Companion Innovation"
+    },
+    {
+        "id": 1928135,
+        "name": "Profane Cage"
+    },
+    {
+        "id": 1928137,
+        "name": "Necromancer Motion"
+    },
+    {
+        "id": 1928145,
+        "name": "Shadow Finesse"
+    },
+    {
+        "id": 1928161,
+        "name": "Blood Augments"
+    },
+    {
+        "id": 1928169,
+        "name": "Rogue Cloaking"
+    },
+    {
+        "id": 1928179,
+        "name": "Specialist Evolution"
+    },
+    {
+        "id": 1928197,
+        "name": "Marksman Augments — Basic"
+    },
+    {
+        "id": 1928208,
+        "name": "Frost Cage"
+    },
+    {
+        "id": 1928214,
+        "name": "Frost Finesse"
+    },
+    {
+        "id": 1928220,
+        "name": "Shock Finesse"
+    },
+    {
+        "id": 1928226,
+        "name": "Sorcerer Stability"
+    },
+    {
+        "id": 1928230,
+        "name": "Frost Augments"
+    },
+    {
+        "id": 1928234,
+        "name": "Shock Augments — Surge"
+    },
+    {
+        "id": 1928677,
+        "name": "Elemental Surge — Day"
+    },
+    {
+        "id": 1989570,
+        "name": "Conjuration Fortune"
+    },
+    {
+        "id": 2016321,
+        "name": "Shock Augments —  Discharge"
+    },
+    {
+        "id": 2016325,
+        "name": "Shock Augments —  Discharge"
+    },
+    {
+        "id": 2016786,
+        "name": "Ultimate Efficiency —  Druid"
+    },
+    {
+        "id": 2017352,
+        "name": "Barbarian Innovation"
+    },
+    {
+        "id": 2017902,
+        "name": "Nature Magic Innovation"
+    },
+    {
+        "id": 2040708,
+        "name": "Worldly Finesse"
+    },
+    {
+        "id": 2057917,
+        "name": "Spiritborn Endurance"
+    },
+    {
+        "id": 2058699,
+        "name": "Spiritborn Recovery"
+    },
+    {
+        "id": 2058730,
+        "name": "Centipede Finesse"
+    },
+    {
+        "id": 2058749,
+        "name": "Gorilla Finesse"
+    },
+    {
+        "id": 2058752,
+        "name": "Gorilla Finesse"
+    },
+    {
+        "id": 2058783,
+        "name": "Centipede Efficiency"
+    },
+    {
+        "id": 2058846,
+        "name": "Jaguar Efficiency"
+    },
+    {
+        "id": 2058848,
+        "name": "Jaguar Efficiency"
+    },
+    {
+        "id": 2058867,
+        "name": "Gorilla Innovation"
+    },
+    {
+        "id": 2058871,
+        "name": "Jaguar Innovation"
+    },
+    {
+        "id": 2058881,
+        "name": "Centipede Augments"
+    },
+    {
+        "id": 2058889,
+        "name": "Gorilla Augments"
+    },
+    {
+        "id": 2058900,
+        "name": "Jaguar Augments"
+    },
+    {
+        "id": 2085450,
+        "name": "Decay Innovation"
+    },
+    {
+        "id": 2085462,
+        "name": "Execution Innovation"
+    },
+    {
+        "id": 2085672,
+        "name": "Bleed Innovation"
+    },
+    {
+        "id": 2085674,
+        "name": "Bleed Innovation"
+    },
+    {
+        "id": 2086076,
+        "name": "Barbarian Breach"
+    },
+    {
+        "id": 2086168,
+        "name": "Lightning Augments"
+    },
+    {
+        "id": 2086726,
+        "name": "Brawling Augments"
+    },
+    {
+        "id": 2100481,
+        "name": "Sky Augments"
+    },
+    {
+        "id": 2100500,
+        "name": "Plains Augments"
+    },
+    {
+        "id": 2101072,
+        "name": "Frost Augments —  Frozen"
+    },
+    {
+        "id": 2101074,
+        "name": "Frost Augments —  Frozen"
+    },
+    {
+        "id": 2108324,
+        "name": "Elemental Surge — Night"
+    },
+    {
+        "id": 2112095,
+        "name": "Cutthroat Augments"
+    },
+    {
+        "id": 2180750,
+        "name": "Werewolf Finesse"
+    },
+    {
+        "id": 1861207,
+        "name": "Barbarian Control"
+    },
+    {
+        "id": 1861324,
+        "name": "Barbarian Strategy"
+    },
+    {
+        "id": 1861356,
+        "name": "Berserking Innovation"
+    },
+    {
+        "id": 1868592,
+        "name": "Shadow Finesse"
+    },
+    {
+        "id": 1873413,
+        "name": "Rogue Cloaking"
+    },
+    {
+        "id": 1873418,
+        "name": "Rogue Recovery"
+    },
+    {
+        "id": 1880202,
+        "name": "Wasteland Innovation"
+    },
+    {
+        "id": 1880227,
+        "name": "Bone Augments"
+    },
+    {
+        "id": 1880235,
+        "name": "Marksman Augments — Core"
+    },
+    {
+        "id": 1885019,
+        "name": "Earth Augments"
+    },
+    {
+        "id": 1885027,
+        "name": "Shapeshifting Endurance"
+    },
+    {
+        "id": 1885049,
+        "name": "Druid Invigoration"
+    },
+    {
+        "id": 1906199,
+        "name": "Natural Resistance"
+    },
+    {
+        "id": 1906201,
+        "name": "Natural Resistance"
+    },
+    {
+        "id": 1924873,
+        "name": "Natural Schemes"
+    },
+    {
+        "id": 1924875,
+        "name": "Worldly Fortune"
+    },
+    {
+        "id": 1924879,
+        "name": "Worldly Stability"
+    },
+    {
+        "id": 1924883,
+        "name": "Natural Finesse"
+    },
+    {
+        "id": 1924891,
+        "name": "Worldly Endurance"
+    },
+    {
+        "id": 1924897,
+        "name": "Wasteland Innovation"
+    },
+    {
+        "id": 1924921,
+        "name": "Barbarian Control"
+    },
+    {
+        "id": 1924923,
+        "name": "Barbarian Control"
+    },
+    {
+        "id": 1924929,
+        "name": "Weapon Mastery Efficiency"
+    },
+    {
+        "id": 1924931,
+        "name": "Weapon Mastery Efficiency"
+    },
+    {
+        "id": 1924935,
+        "name": "Ultimate Efficiency — Barbarian"
+    },
+    {
+        "id": 1924942,
+        "name": "Demolition Finesse"
+    },
+    {
+        "id": 1924946,
+        "name": "Berserking Finesse"
+    },
+    {
+        "id": 1924950,
+        "name": "Arsenal Finesse"
+    },
+    {
+        "id": 1924952,
+        "name": "Arsenal Finesse"
+    },
+    {
+        "id": 1924954,
+        "name": "Barbarian Motion"
+    },
+    {
+        "id": 1924956,
+        "name": "Barbarian Motion"
+    },
+    {
+        "id": 1924962,
+        "name": "Barbarian Recovery"
+    },
+    {
+        "id": 1924968,
+        "name": "Barbarian Strategy"
+    },
+    {
+        "id": 1926048,
+        "name": "Profane Finesse"
+    },
+    {
+        "id": 1926624,
+        "name": "Werebear Augments"
+    },
+    {
+        "id": 1927405,
+        "name": "Pyromancy Endurance"
+    },
+    {
+        "id": 1927423,
+        "name": "Sorcerer Motion"
+    },
+    {
+        "id": 1927494,
+        "name": "Conjuration Efficiency"
+    },
+    {
+        "id": 1927547,
+        "name": "Companion Augments"
+    },
+    {
+        "id": 1927571,
+        "name": "Shapeshifting Finesse"
+    },
+    {
+        "id": 1927575,
+        "name": "Storm Finesse"
+    },
+    {
+        "id": 1927581,
+        "name": "Companion Efficiency"
+    },
+    {
+        "id": 1927674,
+        "name": "Companion Innovation"
+    },
+    {
+        "id": 1927676,
+        "name": "Werebear Augments"
+    },
+    {
+        "id": 1927853,
+        "name": "Earth Augments"
+    },
+    {
+        "id": 1927858,
+        "name": "Werewolf Augments"
+    },
+    {
+        "id": 1927860,
+        "name": "Blood Endurance"
+    },
+    {
+        "id": 1927864,
+        "name": "Necromancer Motion"
+    },
+    {
+        "id": 1927872,
+        "name": "Bone Finesse"
+    },
+    {
+        "id": 1927874,
+        "name": "Shadow Finesse"
+    },
+    {
+        "id": 1927876,
+        "name": "Profane Finesse"
+    },
+    {
+        "id": 1927878,
+        "name": "Necromancer Efficiency"
+    },
+    {
+        "id": 1927882,
+        "name": "Weapon Attunement — Necromancer"
+    },
+    {
+        "id": 1927884,
+        "name": "Profane Innovation"
+    },
+    {
+        "id": 1927888,
+        "name": "Minion Augments"
+    },
+    {
+        "id": 1927896,
+        "name": "Shadow Augments — Decay"
+    },
+    {
+        "id": 1927898,
+        "name": "Rogue Cloaking"
+    },
+    {
+        "id": 1927914,
+        "name": "Specialist Evolution"
+    },
+    {
+        "id": 1927916,
+        "name": "Skillful Finesse"
+    },
+    {
+        "id": 1927918,
+        "name": "Scoundrel Finesse"
+    },
+    {
+        "id": 1927926,
+        "name": "Rogue Invigoration"
+    },
+    {
+        "id": 1927932,
+        "name": "Marksman Augments — Basic"
+    },
+    {
+        "id": 1927938,
+        "name": "Frost Cage"
+    },
+    {
+        "id": 1927940,
+        "name": "Pyromancy Endurance"
+    },
+    {
+        "id": 1927942,
+        "name": "Sorcerer Motion"
+    },
+    {
+        "id": 1927944,
+        "name": "Frost Finesse"
+    },
+    {
+        "id": 1927946,
+        "name": "Conjuration Finesse"
+    },
+    {
+        "id": 1927948,
+        "name": "Pyromancy Finesse"
+    },
+    {
+        "id": 1927954,
+        "name": "Ultimate Efficiency —  Sorcerer"
+    },
+    {
+        "id": 1927958,
+        "name": "Sorcerer Control"
+    },
+    {
+        "id": 1927960,
+        "name": "Frost Augments"
+    },
+    {
+        "id": 1928105,
+        "name": "Shapeshifting Endurance"
+    },
+    {
+        "id": 1928107,
+        "name": "Druid Motion"
+    },
+    {
+        "id": 1928109,
+        "name": "Companion Augments"
+    },
+    {
+        "id": 1928111,
+        "name": "Earth Finesse"
+    },
+    {
+        "id": 1928117,
+        "name": "Wrath Efficiency"
+    },
+    {
+        "id": 1928125,
+        "name": "Werebear Augments"
+    },
+    {
+        "id": 1928127,
+        "name": "Earth Augments"
+    },
+    {
+        "id": 1928129,
+        "name": "Storm Augments"
+    },
+    {
+        "id": 1928131,
+        "name": "Werewolf Augments"
+    },
+    {
+        "id": 1928133,
+        "name": "Blood Endurance"
+    },
+    {
+        "id": 1928143,
+        "name": "Bone Finesse"
+    },
+    {
+        "id": 1928147,
+        "name": "Profane Finesse"
+    },
+    {
+        "id": 1928153,
+        "name": "Weapon Attunement — Necromancer"
+    },
+    {
+        "id": 1928155,
+        "name": "Profane Innovation"
+    },
+    {
+        "id": 1928159,
+        "name": "Minion Augments"
+    },
+    {
+        "id": 1928165,
+        "name": "Shadow Augments — Execution"
+    },
+    {
+        "id": 1928167,
+        "name": "Shadow Augments — Decay"
+    },
+    {
+        "id": 1928173,
+        "name": "Rogue Motion"
+    },
+    {
+        "id": 1928181,
+        "name": "Skillful Finesse"
+    },
+    {
+        "id": 1928183,
+        "name": "Scoundrel Finesse"
+    },
+    {
+        "id": 1928189,
+        "name": "Subterfuge Efficiency"
+    },
+    {
+        "id": 1928191,
+        "name": "Rogue Invigoration"
+    },
+    {
+        "id": 1928193,
+        "name": "Alchemist Control"
+    },
+    {
+        "id": 1928199,
+        "name": "Marksman Augments — Core"
+    },
+    {
+        "id": 1928210,
+        "name": "Pyromancy Endurance"
+    },
+    {
+        "id": 1928212,
+        "name": "Sorcerer Motion"
+    },
+    {
+        "id": 1928228,
+        "name": "Sorcerer Control"
+    },
+    {
+        "id": 1928232,
+        "name": "Pyromancy Augments"
+    },
+    {
+        "id": 1928669,
+        "name": "Elemental Surge — Day"
+    },
+    {
+        "id": 1989553,
+        "name": "Elemental Control"
+    },
+    {
+        "id": 1989556,
+        "name": "Elemental Control"
+    },
+    {
+        "id": 1989568,
+        "name": "Conjuration Fortune"
+    },
+    {
+        "id": 1997920,
+        "name": "Rogue Persistence"
+    },
+    {
+        "id": 1998714,
+        "name": "Conjuration Augments"
+    },
+    {
+        "id": 2006406,
+        "name": "Conjuration Augments"
+    },
+    {
+        "id": 2007697,
+        "name": "Necromancer Wall"
+    },
+    {
+        "id": 2007699,
+        "name": "Necromancer Wall"
+    },
+    {
+        "id": 2007838,
+        "name": "Subterfuge Expertise"
+    },
+    {
+        "id": 2017900,
+        "name": "Nature Magic Innovation"
+    },
+    {
+        "id": 2017904,
+        "name": "Nature Magic Innovation"
+    },
+    {
+        "id": 2018130,
+        "name": "Rogue Innovation"
+    },
+    {
+        "id": 2040706,
+        "name": "Worldly Finesse"
+    },
+    {
+        "id": 2053013,
+        "name": "Slayer's Finesse"
+    },
+    {
+        "id": 2057913,
+        "name": "Spiritborn Endurance"
+    },
+    {
+        "id": 2057915,
+        "name": "Spiritborn Endurance"
+    },
+    {
+        "id": 2058680,
+        "name": "Spiritborn Guard"
+    },
+    {
+        "id": 2058685,
+        "name": "Spiritborn Guard"
+    },
+    {
+        "id": 2058689,
+        "name": "Spiritborn Guard"
+    },
+    {
+        "id": 2058693,
+        "name": "Spiritborn Recovery"
+    },
+    {
+        "id": 2058696,
+        "name": "Spiritborn Recovery"
+    },
+    {
+        "id": 2058715,
+        "name": "Spiritborn Motion"
+    },
+    {
+        "id": 2058718,
+        "name": "Spiritborn Motion"
+    },
+    {
+        "id": 2058721,
+        "name": "Spiritborn Motion"
+    },
+    {
+        "id": 2058724,
+        "name": "Centipede Finesse"
+    },
+    {
+        "id": 2058727,
+        "name": "Centipede Finesse"
+    },
+    {
+        "id": 2058733,
+        "name": "Eagle Finesse"
+    },
+    {
+        "id": 2058740,
+        "name": "Eagle Finesse"
+    },
+    {
+        "id": 2058755,
+        "name": "Gorilla Finesse"
+    },
+    {
+        "id": 2058762,
+        "name": "Jaguar Finesse"
+    },
+    {
+        "id": 2058780,
+        "name": "Centipede Efficiency"
+    },
+    {
+        "id": 2058786,
+        "name": "Centipede Efficiency"
+    },
+    {
+        "id": 2058792,
+        "name": "Eagle Efficiency"
+    },
+    {
+        "id": 2058795,
+        "name": "Eagle Efficiency"
+    },
+    {
+        "id": 2058814,
+        "name": "Fitness Efficiency"
+    },
+    {
+        "id": 2058818,
+        "name": "Fitness Efficiency"
+    },
+    {
+        "id": 2058825,
+        "name": "Gorilla Efficiency"
+    },
+    {
+        "id": 2058829,
+        "name": "Gorilla Efficiency"
+    },
+    {
+        "id": 2058850,
+        "name": "Jaguar Efficiency"
+    },
+    {
+        "id": 2058852,
+        "name": "Centipede Innovation"
+    },
+    {
+        "id": 2058859,
+        "name": "Eagle Innovation"
+    },
+    {
+        "id": 2058865,
+        "name": "Gorilla Innovation"
+    },
+    {
+        "id": 2058869,
+        "name": "Gorilla Innovation"
+    },
+    {
+        "id": 2058873,
+        "name": "Jaguar Innovation"
+    },
+    {
+        "id": 2058877,
+        "name": "Centipede Augments"
+    },
+    {
+        "id": 2058885,
+        "name": "Eagle Augments"
+    },
+    {
+        "id": 2058898,
+        "name": "Gorilla Augments"
+    },
+    {
+        "id": 2058902,
+        "name": "Jaguar Augments"
+    },
+    {
+        "id": 2085372,
+        "name": "Bone Innovation"
+    },
+    {
+        "id": 2085375,
+        "name": "Bone Innovation"
+    },
+    {
+        "id": 2085377,
+        "name": "Bone Innovation"
+    },
+    {
+        "id": 2085430,
+        "name": "Blood Innovation"
+    },
+    {
+        "id": 2085432,
+        "name": "Blood Innovation"
+    },
+    {
+        "id": 2085436,
+        "name": "Blood Innovation"
+    },
+    {
+        "id": 2085447,
+        "name": "Decay Innovation"
+    },
+    {
+        "id": 2086080,
+        "name": "Barbarian Breach"
+    },
+    {
+        "id": 2086084,
+        "name": "Barbarian Breach"
+    },
+    {
+        "id": 2086142,
+        "name": "Brute Innovation"
+    },
+    {
+        "id": 2086172,
+        "name": "Lightning Augments"
+    },
+    {
+        "id": 2086440,
+        "name": "Core Augments — Barbarian"
+    },
+    {
+        "id": 2086442,
+        "name": "Core Augments — Barbarian"
+    },
+    {
+        "id": 2086444,
+        "name": "Core Augments — Barbarian"
+    },
+    {
+        "id": 2086722,
+        "name": "Brawling Augments"
+    },
+    {
+        "id": 2086724,
+        "name": "Brawling Augments"
+    },
+    {
+        "id": 2086822,
+        "name": "Weapon Augments"
+    },
+    {
+        "id": 2086824,
+        "name": "Weapon Augments"
+    },
+    {
+        "id": 2087578,
+        "name": "Assassin Augments"
+    },
+    {
+        "id": 2087582,
+        "name": "Assassin Augments"
+    },
+    {
+        "id": 2087591,
+        "name": "Trap Expertise"
+    },
+    {
+        "id": 2087593,
+        "name": "Trap Expertise"
+    },
+    {
+        "id": 2087595,
+        "name": "Trap Expertise"
+    },
+    {
+        "id": 2089971,
+        "name": "Sharpened Finesse"
+    },
+    {
+        "id": 2100467,
+        "name": "Soil Augments"
+    },
+    {
+        "id": 2100469,
+        "name": "Soil Augments"
+    },
+    {
+        "id": 2100474,
+        "name": "Sky Augments"
+    },
+    {
+        "id": 2100476,
+        "name": "Sky Augments"
+    },
+    {
+        "id": 2100483,
+        "name": "Forest Augments"
+    },
+    {
+        "id": 2100490,
+        "name": "Forest Augments"
+    },
+    {
+        "id": 2100494,
+        "name": "Forest Augments"
+    },
+    {
+        "id": 2100502,
+        "name": "Plains Augments"
+    },
+    {
+        "id": 2101063,
+        "name": "Pyromancy Augments —  Fiery"
+    },
+    {
+        "id": 2101065,
+        "name": "Pyromancy Augments —  Fiery"
+    },
+    {
+        "id": 2101070,
+        "name": "Frost Augments —  Frozen"
+    },
+    {
+        "id": 2101077,
+        "name": "Sorcerer Innovation"
+    },
+    {
+        "id": 2101079,
+        "name": "Sorcerer Innovation"
+    },
+    {
+        "id": 2101081,
+        "name": "Sorcerer Innovation"
+    },
+    {
+        "id": 2112097,
+        "name": "Cutthroat Augments"
+    },
+    {
+        "id": 2125001,
+        "name": "Sorcerer Innovation - Fiery"
+    },
+    {
+        "id": 2125003,
+        "name": "Sorcerer Innovation - Fiery"
+    },
+    {
+        "id": 2169785,
+        "name": "Ultimate Efficiency — Rogue"
+    },
+    {
+        "id": 2172859,
+        "name": "Prismatic Augments"
+    }
+]
+}

@@ -1,0 +1,1907 @@
+{
+    "url":"https://www.wowhead.com/diablo-4/skills",
+    "source":"g_listviews.skills.data.map(i=>({id: i.id, name: i.name}))",
+    "items":
+[
+    {
+        "id": 1003731,
+        "name": "Primordial Binding"
+    },
+    {
+        "id": 2075737,
+        "name": "Heavy Hitter"
+    },
+    {
+        "id": 495578,
+        "name": "Coalesced Blood"
+    },
+    {
+        "id": 603603,
+        "name": "Heavy Handed"
+    },
+    {
+        "id": 588208,
+        "name": "Tides of Blood"
+    },
+    {
+        "id": 2092223,
+        "name": "Titan's Fall"
+    },
+    {
+        "id": 658216,
+        "name": "Blood Wave"
+    },
+    {
+        "id": 915150,
+        "name": "Decrepify"
+    },
+    {
+        "id": 394251,
+        "name": "Lacerate"
+    },
+    {
+        "id": 216535,
+        "name": "Pit Fighter"
+    },
+    {
+        "id": 1059157,
+        "name": "Raise Skeleton"
+    },
+    {
+        "id": 184600,
+        "name": "War Cry"
+    },
+    {
+        "id": 1304803,
+        "name": "Envenom"
+    },
+    {
+        "id": 1003208,
+        "name": "Counteroffensive "
+    },
+    {
+        "id": 211871,
+        "name": "Wrath of the Berserker"
+    },
+    {
+        "id": 1627075,
+        "name": "Familiar"
+    },
+    {
+        "id": 391678,
+        "name": "Frigid Finesse"
+    },
+    {
+        "id": 1644584,
+        "name": "Soulrift"
+    },
+    {
+        "id": 1007840,
+        "name": "Gloom"
+    },
+    {
+        "id": 288106,
+        "name": "Teleport"
+    },
+    {
+        "id": 1003188,
+        "name": "Aggressive Resistance"
+    },
+    {
+        "id": 291492,
+        "name": "Ice Blades"
+    },
+    {
+        "id": 171610,
+        "name": "Inner Flames"
+    },
+    {
+        "id": 290969,
+        "name": "Quickshift"
+    },
+    {
+        "id": 334224,
+        "name": "Permafrost"
+    },
+    {
+        "id": 290475,
+        "name": "Digitigrade Gait"
+    },
+    {
+        "id": 266570,
+        "name": "Cataclysm"
+    },
+    {
+        "id": 432897,
+        "name": "Corpse Explosion"
+    },
+    {
+        "id": 915152,
+        "name": "Iron Maiden"
+    },
+    {
+        "id": 1008680,
+        "name": "Innervation"
+    },
+    {
+        "id": 213673,
+        "name": "Hammer of the Ancients"
+    },
+    {
+        "id": 481785,
+        "name": "Sever"
+    },
+    {
+        "id": 186358,
+        "name": "Ground Stomp"
+    },
+    {
+        "id": 786381,
+        "name": "Dark Shroud"
+    },
+    {
+        "id": 495562,
+        "name": "Hellbent Commander"
+    },
+    {
+        "id": 481293,
+        "name": "Blight"
+    },
+    {
+        "id": 1008674,
+        "name": "Trick Attacks"
+    },
+    {
+        "id": 291046,
+        "name": "Endless Tempest"
+    },
+    {
+        "id": 777505,
+        "name": "Unstable Elixirs"
+    },
+    {
+        "id": 512222,
+        "name": "Iron Skin"
+    },
+    {
+        "id": 165023,
+        "name": "Fireball"
+    },
+    {
+        "id": 309802,
+        "name": "Call of the Ancients"
+    },
+    {
+        "id": 400232,
+        "name": "Rain of Arrows"
+    },
+    {
+        "id": 1519048,
+        "name": "Quill Volley"
+    },
+    {
+        "id": 517417,
+        "name": "Unstable Currents"
+    },
+    {
+        "id": 495575,
+        "name": "Amplify Damage"
+    },
+    {
+        "id": 1007849,
+        "name": "Death's Embrace"
+    },
+    {
+        "id": 1007850,
+        "name": "Spiked Armor"
+    },
+    {
+        "id": 1690398,
+        "name": "Dance of Knives"
+    },
+    {
+        "id": 1871807,
+        "name": "Razor Wings"
+    },
+    {
+        "id": 1000347,
+        "name": "Wild Impulses"
+    },
+    {
+        "id": 291045,
+        "name": "Resonance"
+    },
+    {
+        "id": 375484,
+        "name": "Challenging Shout"
+    },
+    {
+        "id": 292737,
+        "name": "Incinerate"
+    },
+    {
+        "id": 592163,
+        "name": "Blood Surge"
+    },
+    {
+        "id": 156233,
+        "name": "Potent Warding"
+    },
+    {
+        "id": 210919,
+        "name": "Frenzy"
+    },
+    {
+        "id": 218754,
+        "name": "Prolific Fury"
+    },
+    {
+        "id": 1648380,
+        "name": "Potent"
+    },
+    {
+        "id": 212867,
+        "name": "Duelist"
+    },
+    {
+        "id": 495579,
+        "name": "Fueled by Death"
+    },
+    {
+        "id": 272138,
+        "name": "Pulverize"
+    },
+    {
+        "id": 358339,
+        "name": "Flurry"
+    },
+    {
+        "id": 291048,
+        "name": "Defiance"
+    },
+    {
+        "id": 463175,
+        "name": "Decompose"
+    },
+    {
+        "id": 463349,
+        "name": "Corpse Tendrils"
+    },
+    {
+        "id": 1648352,
+        "name": "Mirage"
+    },
+    {
+        "id": 1871764,
+        "name": "Armored Hide"
+    },
+    {
+        "id": 1862773,
+        "name": "Ravager"
+    },
+    {
+        "id": 1871819,
+        "name": "Counterattack"
+    },
+    {
+        "id": 156224,
+        "name": "Glass Cannon"
+    },
+    {
+        "id": 333421,
+        "name": "Earthen Bulwark"
+    },
+    {
+        "id": 211938,
+        "name": "Rallying Cry"
+    },
+    {
+        "id": 363402,
+        "name": "Heartseeker"
+    },
+    {
+        "id": 514030,
+        "name": "Ball Lightning"
+    },
+    {
+        "id": 292757,
+        "name": "Chain Lightning"
+    },
+    {
+        "id": 213949,
+        "name": "Slaying Strike"
+    },
+    {
+        "id": 258990,
+        "name": "Hurricane"
+    },
+    {
+        "id": 1871801,
+        "name": "Scourge"
+    },
+    {
+        "id": 350820,
+        "name": "Natural Disaster"
+    },
+    {
+        "id": 1003209,
+        "name": "Defensive Stance"
+    },
+    {
+        "id": 1648372,
+        "name": "Unrestrained Power"
+    },
+    {
+        "id": 297039,
+        "name": "Ice Armor"
+    },
+    {
+        "id": 294198,
+        "name": "Inferno"
+    },
+    {
+        "id": 196545,
+        "name": "Leap"
+    },
+    {
+        "id": 216638,
+        "name": "Walking Arsenal"
+    },
+    {
+        "id": 1008677,
+        "name": "Second Wind"
+    },
+    {
+        "id": 495561,
+        "name": "Evulsion"
+    },
+    {
+        "id": 1489641,
+        "name": "Vortex"
+    },
+    {
+        "id": 156227,
+        "name": "Shocking Impact"
+    },
+    {
+        "id": 495568,
+        "name": "Reaper's Pursuit"
+    },
+    {
+        "id": 503368,
+        "name": "Drain Vitality"
+    },
+    {
+        "id": 146743,
+        "name": "Hydra"
+    },
+    {
+        "id": 440463,
+        "name": "Golem"
+    },
+    {
+        "id": 432896,
+        "name": "Reap"
+    },
+    {
+        "id": 215027,
+        "name": "Rupture"
+    },
+    {
+        "id": 497193,
+        "name": "Army of the Dead"
+    },
+    {
+        "id": 289513,
+        "name": "Heightened Senses"
+    },
+    {
+        "id": 495564,
+        "name": "Imperfectly Balanced"
+    },
+    {
+        "id": 1648378,
+        "name": "Resilient"
+    },
+    {
+        "id": 566517,
+        "name": "Blood Howl"
+    },
+    {
+        "id": 794965,
+        "name": "Concealment"
+    },
+    {
+        "id": 111422,
+        "name": "Firewall"
+    },
+    {
+        "id": 351722,
+        "name": "Petrify"
+    },
+    {
+        "id": 1000312,
+        "name": "Nature's Reach"
+    },
+    {
+        "id": 786834,
+        "name": "Victimize"
+    },
+    {
+        "id": 291215,
+        "name": "Frost Nova"
+    },
+    {
+        "id": 206504,
+        "name": "Lunging Strike"
+    },
+    {
+        "id": 391663,
+        "name": "Weapon Mastery"
+    },
+    {
+        "id": 495574,
+        "name": "Terror"
+    },
+    {
+        "id": 206435,
+        "name": "Whirlwind"
+    },
+    {
+        "id": 166341,
+        "name": "Devouring Blaze"
+    },
+    {
+        "id": 292074,
+        "name": "Lightning Spear"
+    },
+    {
+        "id": 336238,
+        "name": "Debilitating Roar"
+    },
+    {
+        "id": 1817045,
+        "name": "Rock Splitter"
+    },
+    {
+        "id": 1003232,
+        "name": "Raid Leader"
+    },
+    {
+        "id": 216608,
+        "name": "No Mercy"
+    },
+    {
+        "id": 356162,
+        "name": "Smoke Grenade"
+    },
+    {
+        "id": 380288,
+        "name": "Shadow Imbuement"
+    },
+    {
+        "id": 172459,
+        "name": "Elemental Dominance"
+    },
+    {
+        "id": 495570,
+        "name": "Rathma's Vigor"
+    },
+    {
+        "id": 355606,
+        "name": "Shadow Step"
+    },
+    {
+        "id": 493422,
+        "name": "Blood Mist"
+    },
+    {
+        "id": 391629,
+        "name": "Stutter Step"
+    },
+    {
+        "id": 499281,
+        "name": "Bone Storm"
+    },
+    {
+        "id": 391666,
+        "name": "Impetus"
+    },
+    {
+        "id": 291827,
+        "name": "Deep Freeze"
+    },
+    {
+        "id": 423126,
+        "name": "Bestial Rampage"
+    },
+    {
+        "id": 1648354,
+        "name": "Velocity"
+    },
+    {
+        "id": 1871823,
+        "name": "Payback"
+    },
+    {
+        "id": 213153,
+        "name": "Cut to the Bone"
+    },
+    {
+        "id": 1648370,
+        "name": "Ravenous"
+    },
+    {
+        "id": 200765,
+        "name": "Bash"
+    },
+    {
+        "id": 156232,
+        "name": "Shatter"
+    },
+    {
+        "id": 153249,
+        "name": "Fire Bolt"
+    },
+    {
+        "id": 265663,
+        "name": "Wolves"
+    },
+    {
+        "id": 143483,
+        "name": "Spark"
+    },
+    {
+        "id": 1834471,
+        "name": "Withering Fist"
+    },
+    {
+        "id": 215519,
+        "name": "Brute Force"
+    },
+    {
+        "id": 1007843,
+        "name": "Grim Harvest"
+    },
+    {
+        "id": 1256958,
+        "name": "Shred"
+    },
+    {
+        "id": 1529357,
+        "name": "Exhaustion"
+    },
+    {
+        "id": 416057,
+        "name": "Invigorating Strike"
+    },
+    {
+        "id": 1871809,
+        "name": "Touch of Death"
+    },
+    {
+        "id": 943745,
+        "name": "Skeletal Mage Mastery"
+    },
+    {
+        "id": 323105,
+        "name": "Death Blow"
+    },
+    {
+        "id": 357628,
+        "name": "Shadow Clone"
+    },
+    {
+        "id": 168572,
+        "name": "Endless Pyre"
+    },
+    {
+        "id": 167341,
+        "name": "Flame Shield"
+    },
+    {
+        "id": 777009,
+        "name": "Aftermath"
+    },
+    {
+        "id": 495581,
+        "name": "Shadowblight"
+    },
+    {
+        "id": 389667,
+        "name": "Caltrops"
+    },
+    {
+        "id": 2016157,
+        "name": "Enlightenment"
+    },
+    {
+        "id": 391669,
+        "name": "Close Quarters Combat"
+    },
+    {
+        "id": 943744,
+        "name": "Skeletal Warrior Mastery"
+    },
+    {
+        "id": 493453,
+        "name": "Bone Prison"
+    },
+    {
+        "id": 1000309,
+        "name": "Clarity"
+    },
+    {
+        "id": 1098169,
+        "name": "Precision"
+    },
+    {
+        "id": 1663206,
+        "name": "The Hunter"
+    },
+    {
+        "id": 172497,
+        "name": "Warmth"
+    },
+    {
+        "id": 291078,
+        "name": "Earthen Might"
+    },
+    {
+        "id": 1730684,
+        "name": "Vigorous"
+    },
+    {
+        "id": 281516,
+        "name": "Ravens"
+    },
+    {
+        "id": 439762,
+        "name": "Barrage"
+    },
+    {
+        "id": 398258,
+        "name": "Twisting Blades"
+    },
+    {
+        "id": 414638,
+        "name": "Precision Imbuement"
+    },
+    {
+        "id": 469641,
+        "name": "Bone Spirit"
+    },
+    {
+        "id": 333197,
+        "name": "Esu's Ferocity"
+    },
+    {
+        "id": 334791,
+        "name": "Overflowing Energy"
+    },
+    {
+        "id": 1834476,
+        "name": "Thunderspike"
+    },
+    {
+        "id": 346247,
+        "name": "Call of the Wild"
+    },
+    {
+        "id": 1008676,
+        "name": "Rapid Gambits"
+    },
+    {
+        "id": 356587,
+        "name": "Wind Shear"
+    },
+    {
+        "id": 156234,
+        "name": "Vyr's Mastery"
+    },
+    {
+        "id": 289512,
+        "name": "Nature's Resolve"
+    },
+    {
+        "id": 291085,
+        "name": "Lupine Ferocity"
+    },
+    {
+        "id": 214786,
+        "name": "Rend"
+    },
+    {
+        "id": 421161,
+        "name": "Death Trap"
+    },
+    {
+        "id": 202484,
+        "name": "Upheaval"
+    },
+    {
+        "id": 1663210,
+        "name": "The Devourer"
+    },
+    {
+        "id": 1003733,
+        "name": "Fiery Surge"
+    },
+    {
+        "id": 217121,
+        "name": "Invigorating Fury"
+    },
+    {
+        "id": 1003739,
+        "name": "Conduction"
+    },
+    {
+        "id": 588207,
+        "name": "Rapid Ossification"
+    },
+    {
+        "id": 548399,
+        "name": "Lightning Storm"
+    },
+    {
+        "id": 964631,
+        "name": "Steel Grasp"
+    },
+    {
+        "id": 1648364,
+        "name": "Auspicious"
+    },
+    {
+        "id": 359246,
+        "name": "Cold Imbuement"
+    },
+    {
+        "id": 1871821,
+        "name": "Soar"
+    },
+    {
+        "id": 290798,
+        "name": "Crushing Earth"
+    },
+    {
+        "id": 495565,
+        "name": "Compound Fracture"
+    },
+    {
+        "id": 1003729,
+        "name": "Hoarfrost"
+    },
+    {
+        "id": 171937,
+        "name": "Charged Bolts"
+    },
+    {
+        "id": 238345,
+        "name": "Boulder"
+    },
+    {
+        "id": 358761,
+        "name": "Dash"
+    },
+    {
+        "id": 1871813,
+        "name": "Toxic Skin"
+    },
+    {
+        "id": 216644,
+        "name": "Unbridled Rage"
+    },
+    {
+        "id": 1003207,
+        "name": "Concussion"
+    },
+    {
+        "id": 2075148,
+        "name": "Finality"
+    },
+    {
+        "id": 293195,
+        "name": "Ice Shards"
+    },
+    {
+        "id": 267021,
+        "name": "Grizzly Rage"
+    },
+    {
+        "id": 484661,
+        "name": "Hemorrhage"
+    },
+    {
+        "id": 290971,
+        "name": "Toxic Claws"
+    },
+    {
+        "id": 1003229,
+        "name": "Imposing Presence "
+    },
+    {
+        "id": 2075735,
+        "name": "Belligerence "
+    },
+    {
+        "id": 1007847,
+        "name": "Necrotic Carapace"
+    },
+    {
+        "id": 1648393,
+        "name": "Supremacy"
+    },
+    {
+        "id": 297902,
+        "name": "Arc Lash"
+    },
+    {
+        "id": 358508,
+        "name": "Poison Imbuement"
+    },
+    {
+        "id": 2093633,
+        "name": "Elemental Synergies"
+    },
+    {
+        "id": 1008672,
+        "name": "Shadow Crash"
+    },
+    {
+        "id": 1993937,
+        "name": "Affliction"
+    },
+    {
+        "id": 1871825,
+        "name": "Concussive Stomp"
+    },
+    {
+        "id": 1003737,
+        "name": "Crippling Flames"
+    },
+    {
+        "id": 292836,
+        "name": "Cold Front"
+    },
+    {
+        "id": 364877,
+        "name": "Puncture"
+    },
+    {
+        "id": 1648389,
+        "name": "Spiritual Attunement"
+    },
+    {
+        "id": 416337,
+        "name": "Rabies"
+    },
+    {
+        "id": 432879,
+        "name": "Bone Spear"
+    },
+    {
+        "id": 748825,
+        "name": "Nature's Fury"
+    },
+    {
+        "id": 1003230,
+        "name": "Outburst"
+    },
+    {
+        "id": 199516,
+        "name": "Kick"
+    },
+    {
+        "id": 1834473,
+        "name": "Thrash"
+    },
+    {
+        "id": 214021,
+        "name": "Tough as Nails"
+    },
+    {
+        "id": 391681,
+        "name": "Momentum"
+    },
+    {
+        "id": 280119,
+        "name": "Cyclone Armor"
+    },
+    {
+        "id": 1871761,
+        "name": "Rushing Claw"
+    },
+    {
+        "id": 2091156,
+        "name": "Warpath"
+    },
+    {
+        "id": 495563,
+        "name": "Hewed Flesh"
+    },
+    {
+        "id": 309070,
+        "name": "Maul"
+    },
+    {
+        "id": 314601,
+        "name": "Poison Creeper"
+    },
+    {
+        "id": 210431,
+        "name": "Flay"
+    },
+    {
+        "id": 1640931,
+        "name": "Rake"
+    },
+    {
+        "id": 156225,
+        "name": "Devastation"
+    },
+    {
+        "id": 391676,
+        "name": "Exploit"
+    },
+    {
+        "id": 943748,
+        "name": "Golem Mastery"
+    },
+    {
+        "id": 217175,
+        "name": "Iron Maelstrom"
+    },
+    {
+        "id": 215518,
+        "name": "Booming Voice"
+    },
+    {
+        "id": 1003233,
+        "name": "Wallop"
+    },
+    {
+        "id": 391671,
+        "name": "Agile"
+    },
+    {
+        "id": 510270,
+        "name": "Siphoning Strikes"
+    },
+    {
+        "id": 495571,
+        "name": "Kalan's Edict"
+    },
+    {
+        "id": 1648360,
+        "name": "Apex"
+    },
+    {
+        "id": 1648368,
+        "name": "Nourishment"
+    },
+    {
+        "id": 399111,
+        "name": "Blade Shift"
+    },
+    {
+        "id": 495576,
+        "name": "Inspiring Leader"
+    },
+    {
+        "id": 258243,
+        "name": "Trample"
+    },
+    {
+        "id": 1663208,
+        "name": "The Protector"
+    },
+    {
+        "id": 495560,
+        "name": "Bonded in Essence"
+    },
+    {
+        "id": 309320,
+        "name": "Storm Strike"
+    },
+    {
+        "id": 288287,
+        "name": "Abundance"
+    },
+    {
+        "id": 1000310,
+        "name": "Defensive Posture"
+    },
+    {
+        "id": 213966,
+        "name": "Unconstrained"
+    },
+    {
+        "id": 2140400,
+        "name": "Deadeye"
+    },
+    {
+        "id": 156229,
+        "name": "Convulsions"
+    },
+    {
+        "id": 1003231,
+        "name": "Pressure Point"
+    },
+    {
+        "id": 1648356,
+        "name": "Fueled"
+    },
+    {
+        "id": 1648374,
+        "name": "Swift"
+    },
+    {
+        "id": 204662,
+        "name": "Charge"
+    },
+    {
+        "id": 355926,
+        "name": "Rapid Fire"
+    },
+    {
+        "id": 291084,
+        "name": "Ursine Strength"
+    },
+    {
+        "id": 290954,
+        "name": "Natural Fortitude"
+    },
+    {
+        "id": 313893,
+        "name": "Landslide"
+    },
+    {
+        "id": 1611316,
+        "name": "Mighty Throw"
+    },
+    {
+        "id": 416272,
+        "name": "Forceful Arrow"
+    },
+    {
+        "id": 2093637,
+        "name": "Energy Focus"
+    },
+    {
+        "id": 2091166,
+        "name": "Backlash"
+    },
+    {
+        "id": 213961,
+        "name": "Gushing Wounds"
+    },
+    {
+        "id": 1920204,
+        "name": "Vital Strikes"
+    },
+    {
+        "id": 1648342,
+        "name": "Patient Guard"
+    },
+    {
+        "id": 1648362,
+        "name": "Follow Through"
+    },
+    {
+        "id": 1391558,
+        "name": "Valiance"
+    },
+    {
+        "id": 1473878,
+        "name": "Stone Burst"
+    },
+    {
+        "id": 416528,
+        "name": "Poison Trap"
+    },
+    {
+        "id": 1519050,
+        "name": "Crushing Hand"
+    },
+    {
+        "id": 156211,
+        "name": "Elemental Attunement"
+    },
+    {
+        "id": 1003734,
+        "name": "Frigid Breeze"
+    },
+    {
+        "id": 214020,
+        "name": "Martial Vigor"
+    },
+    {
+        "id": 391679,
+        "name": "Malice"
+    },
+    {
+        "id": 1007844,
+        "name": "Death's Approach"
+    },
+    {
+        "id": 287256,
+        "name": "Frost Bolt"
+    },
+    {
+        "id": 439581,
+        "name": "Claw"
+    },
+    {
+        "id": 500962,
+        "name": "Bone Splinters"
+    },
+    {
+        "id": 1003738,
+        "name": "Invigorating Conduit"
+    },
+    {
+        "id": 1008671,
+        "name": "Trap Mastery"
+    },
+    {
+        "id": 495577,
+        "name": "Ossified Essence"
+    },
+    {
+        "id": 495569,
+        "name": "Gruesome Mending"
+    },
+    {
+        "id": 1648358,
+        "name": "Furnace"
+    },
+    {
+        "id": 1648350,
+        "name": "Brilliance"
+    },
+    {
+        "id": 1663204,
+        "name": "The Seeker"
+    },
+    {
+        "id": 291047,
+        "name": "Electric Shock"
+    },
+    {
+        "id": 290951,
+        "name": "Predatory Instinct"
+    },
+    {
+        "id": 208000,
+        "name": "Double Swing"
+    },
+    {
+        "id": 2091164,
+        "name": "Feral Aptitude "
+    },
+    {
+        "id": 212731,
+        "name": "Endless Fury"
+    },
+    {
+        "id": 1648376,
+        "name": "Oppressive"
+    },
+    {
+        "id": 291403,
+        "name": "Blizzard"
+    },
+    {
+        "id": 213021,
+        "name": "Hamstring"
+    },
+    {
+        "id": 1479154,
+        "name": "Massacre"
+    },
+    {
+        "id": 1836008,
+        "name": "Stinger"
+    },
+    {
+        "id": 216222,
+        "name": "Guttural Yell"
+    },
+    {
+        "id": 1008679,
+        "name": "Adrenaline Rush"
+    },
+    {
+        "id": 501629,
+        "name": "Blood Lance"
+    },
+    {
+        "id": 334217,
+        "name": "Icy Touch"
+    },
+    {
+        "id": 172509,
+        "name": "Snap Freeze"
+    },
+    {
+        "id": 291079,
+        "name": "Perfect Storm"
+    },
+    {
+        "id": 2075107,
+        "name": "Evasive"
+    },
+    {
+        "id": 495573,
+        "name": "Crippling Darkness"
+    },
+    {
+        "id": 2074903,
+        "name": "Necrotic Fortitude"
+    },
+    {
+        "id": 1920209,
+        "name": "Prodigy's Tempo"
+    },
+    {
+        "id": 1920211,
+        "name": "Noxious Resonance"
+    },
+    {
+        "id": 1684569,
+        "name": "Seeker"
+    },
+    {
+        "id": 1389926,
+        "name": "Bastion"
+    },
+    {
+        "id": 1065693,
+        "name": "Charged Atmosphere"
+    },
+    {
+        "id": 495572,
+        "name": "Stand Alone"
+    },
+    {
+        "id": 1730680,
+        "name": "Endurance"
+    },
+    {
+        "id": 296998,
+        "name": "Meteor"
+    },
+    {
+        "id": 291347,
+        "name": "Frozen Orb"
+    },
+    {
+        "id": 334380,
+        "name": "Avalanche"
+    },
+    {
+        "id": 156217,
+        "name": "Soulfire"
+    },
+    {
+        "id": 391667,
+        "name": "Alchemical Advantage"
+    },
+    {
+        "id": 377137,
+        "name": "Penetrating Shot"
+    },
+    {
+        "id": 1003736,
+        "name": "Protection"
+    },
+    {
+        "id": 1000301,
+        "name": "Stone Guard"
+    },
+    {
+        "id": 1003210,
+        "name": "Tempered Fury"
+    },
+    {
+        "id": 391662,
+        "name": "Mending Obscurity"
+    },
+    {
+        "id": 1453992,
+        "name": "Alchemical Admixture"
+    },
+    {
+        "id": 1007842,
+        "name": "Unliving Energy"
+    },
+    {
+        "id": 1580738,
+        "name": "Cover Fire"
+    },
+    {
+        "id": 391677,
+        "name": "Consuming Shadows"
+    },
+    {
+        "id": 2092251,
+        "name": "Balestra"
+    },
+    {
+        "id": 1456571,
+        "name": "Raheir's Guard"
+    },
+    {
+        "id": 1730682,
+        "name": "Dominant"
+    },
+    {
+        "id": 1648348,
+        "name": "Bastion"
+    },
+    {
+        "id": 543387,
+        "name": "Earth Spike"
+    },
+    {
+        "id": 1450903,
+        "name": "Crater"
+    },
+    {
+        "id": 1003732,
+        "name": "Precision Magic"
+    },
+    {
+        "id": 213811,
+        "name": "Battle Fervor"
+    },
+    {
+        "id": 391673,
+        "name": "Sturdy"
+    },
+    {
+        "id": 391675,
+        "name": "Deadly Venom"
+    },
+    {
+        "id": 1648395,
+        "name": "Intricacy"
+    },
+    {
+        "id": 1000349,
+        "name": "Mending"
+    },
+    {
+        "id": 1000350,
+        "name": "Provocation"
+    },
+    {
+        "id": 169887,
+        "name": "Coursing Currents"
+    },
+    {
+        "id": 156235,
+        "name": "Static Discharge"
+    },
+    {
+        "id": 1007846,
+        "name": "Memento Mori"
+    },
+    {
+        "id": 1458350,
+        "name": "Raheir's Aegis"
+    },
+    {
+        "id": 1648346,
+        "name": "Perseverance"
+    },
+    {
+        "id": 156220,
+        "name": "Combustion"
+    },
+    {
+        "id": 212832,
+        "name": "Expose Vulnerability"
+    },
+    {
+        "id": 216116,
+        "name": "Thick Skin"
+    },
+    {
+        "id": 495580,
+        "name": "Transfusion"
+    },
+    {
+        "id": 1525668,
+        "name": "Flame Surge"
+    },
+    {
+        "id": 1955450,
+        "name": "Adaptive Stances"
+    },
+    {
+        "id": 1648391,
+        "name": "Resolution"
+    },
+    {
+        "id": 304065,
+        "name": "Tornado"
+    },
+    {
+        "id": 2075705,
+        "name": "Catastrophe"
+    },
+    {
+        "id": 216365,
+        "name": "Furious Impulse"
+    },
+    {
+        "id": 391674,
+        "name": "Alchemist's Fortune"
+    },
+    {
+        "id": 1578255,
+        "name": "Ready At Hand"
+    },
+    {
+        "id": 1555493,
+        "name": "Blasphemous Fate"
+    },
+    {
+        "id": 1439338,
+        "name": "Bloodthirst"
+    },
+    {
+        "id": 1000308,
+        "name": "Safeguard"
+    },
+    {
+        "id": 1000311,
+        "name": "Heart of the Wild"
+    },
+    {
+        "id": 1066757,
+        "name": "Bad Omen"
+    },
+    {
+        "id": 391664,
+        "name": "Rugged"
+    },
+    {
+        "id": 2092249,
+        "name": "Target Practice"
+    },
+    {
+        "id": 1529374,
+        "name": "Shared Pain"
+    },
+    {
+        "id": 1529508,
+        "name": "Raging Violence"
+    },
+    {
+        "id": 1003735,
+        "name": "Mana Shield"
+    },
+    {
+        "id": 334677,
+        "name": "Electrocution"
+    },
+    {
+        "id": 1000352,
+        "name": "Vigilance"
+    },
+    {
+        "id": 290911,
+        "name": "Ancestral Fortitude"
+    },
+    {
+        "id": 1984422,
+        "name": "One With Nature"
+    },
+    {
+        "id": 391680,
+        "name": "Exposure"
+    },
+    {
+        "id": 1730677,
+        "name": "Acceleration"
+    },
+    {
+        "id": 2110174,
+        "name": "Balanced Exertion"
+    },
+    {
+        "id": 290420,
+        "name": "Iron Fur"
+    },
+    {
+        "id": 212712,
+        "name": "Swiftness"
+    },
+    {
+        "id": 423721,
+        "name": "Reactive Defense"
+    },
+    {
+        "id": 1008675,
+        "name": "Debilitating Toxins"
+    },
+    {
+        "id": 1458593,
+        "name": "Vanguard"
+    },
+    {
+        "id": 1484934,
+        "name": "Iron Grip"
+    },
+    {
+        "id": 1648366,
+        "name": "Antivenom"
+    },
+    {
+        "id": 1294159,
+        "name": "Provoke"
+    },
+    {
+        "id": 1522203,
+        "name": "Field of Languish"
+    },
+    {
+        "id": 156208,
+        "name": "Align the Elements"
+    },
+    {
+        "id": 2075710,
+        "name": "Humanity"
+    },
+    {
+        "id": 1907017,
+        "name": "Barbed Carapace"
+    },
+    {
+        "id": 1458607,
+        "name": "Mocking Lure"
+    },
+    {
+        "id": 1648344,
+        "name": "Diminishment"
+    },
+    {
+        "id": 1619677,
+        "name": "Ancient Harpoons"
+    },
+    {
+        "id": 1494843,
+        "name": "Storm of Fire"
+    },
+    {
+        "id": 1859218,
+        "name": ""
+    },
+    {
+        "id": 1858262,
+        "name": ""
+    },
+    {
+        "id": 156230,
+        "name": "Icy Veil"
+    },
+    {
+        "id": 2093635,
+        "name": "Evocation"
+    },
+    {
+        "id": 290910,
+        "name": "Elemental Exposure"
+    },
+    {
+        "id": 213077,
+        "name": "Quick Impulses"
+    },
+    {
+        "id": 2091159,
+        "name": "Irrepressible "
+    },
+    {
+        "id": 1008678,
+        "name": "Haste"
+    },
+    {
+        "id": 1008673,
+        "name": "Chilling Weight"
+    },
+    {
+        "id": 1459276,
+        "name": "Inspiration"
+    },
+    {
+        "id": 1482187,
+        "name": "Hysteria"
+    },
+    {
+        "id": 1529518,
+        "name": "Burning Chaos"
+    },
+    {
+        "id": 1578277,
+        "name": "Thrillseeker"
+    },
+    {
+        "id": 1578263,
+        "name": "Mastermind"
+    },
+    {
+        "id": 1205333,
+        "name": "Attack"
+    },
+    {
+        "id": 1401573,
+        "name": "Shield Charge"
+    },
+    {
+        "id": 1404603,
+        "name": "Ground Slam"
+    },
+    {
+        "id": 1475286,
+        "name": "Shockwave"
+    },
+    {
+        "id": 1525670,
+        "name": "Wave of Flame"
+    },
+    {
+        "id": 1000313,
+        "name": "Thick Hide"
+    },
+    {
+        "id": 1000315,
+        "name": "Unrestrained"
+    },
+    {
+        "id": 289518,
+        "name": "Circle of Life"
+    },
+    {
+        "id": 503508,
+        "name": "Serration"
+    },
+    {
+        "id": 1007841,
+        "name": "Death's Defense"
+    },
+    {
+        "id": 2092225,
+        "name": "Precision Decay"
+    },
+    {
+        "id": 1458775,
+        "name": "Iron Wolf's Call"
+    },
+    {
+        "id": 1458750,
+        "name": "Sundering Shield"
+    },
+    {
+        "id": 1460071,
+        "name": "Consecrated Shield"
+    },
+    {
+        "id": 1459513,
+        "name": "Iron Wolf's Virtue"
+    },
+    {
+        "id": 1484926,
+        "name": "Crushing Force"
+    },
+    {
+        "id": 1484932,
+        "name": "Dismembering"
+    },
+    {
+        "id": 1483451,
+        "name": "Taste of Flesh"
+    },
+    {
+        "id": 1482903,
+        "name": "Bloodlust"
+    },
+    {
+        "id": 1482560,
+        "name": "Recklessness"
+    },
+    {
+        "id": 1529359,
+        "name": "Paranoia"
+    },
+    {
+        "id": 1529372,
+        "name": "Condemned"
+    },
+    {
+        "id": 1529512,
+        "name": "Ember's Gift"
+    },
+    {
+        "id": 1529514,
+        "name": "Raging Havoc"
+    },
+    {
+        "id": 1578275,
+        "name": "Bargaining Chips"
+    },
+    {
+        "id": 1578273,
+        "name": "Ambusher"
+    },
+    {
+        "id": 1578267,
+        "name": "Share a Drink"
+    },
+    {
+        "id": 1578265,
+        "name": "Scorched Earth"
+    },
+    {
+        "id": 1578259,
+        "name": "Opening Fire"
+    },
+    {
+        "id": 1648387,
+        "name": "Initiative"
+    },
+    {
+        "id": 2110217,
+        "name": "Focal Point"
+    },
+    {
+        "id": 1204385,
+        "name": "Attack"
+    },
+    {
+        "id": 1196884,
+        "name": "Attack"
+    },
+    {
+        "id": 1201846,
+        "name": "Attack"
+    },
+    {
+        "id": 1475284,
+        "name": "Cleave"
+    },
+    {
+        "id": 1475288,
+        "name": "Earth Breaker"
+    },
+    {
+        "id": 1521907,
+        "name": "Haunt"
+    },
+    {
+        "id": 1580735,
+        "name": "Wire Trap"
+    },
+    {
+        "id": 1580746,
+        "name": "Molotov"
+    },
+    {
+        "id": 1580744,
+        "name": "Trip Mines"
+    },
+    {
+        "id": 1580751,
+        "name": "Explosive Charge"
+    },
+    {
+        "id": 2093631,
+        "name": "Dampen Layer"
+    },
+    {
+        "id": 346283,
+        "name": "Neurotoxin"
+    },
+    {
+        "id": 2075140,
+        "name": "Unto Dawn"
+    },
+    {
+        "id": 1458685,
+        "name": "Iron Wolf's Ward"
+    },
+    {
+        "id": 1460102,
+        "name": "Iron Wolf's Arrival"
+    },
+    {
+        "id": 1459061,
+        "name": "Draw Fire"
+    },
+    {
+        "id": 1484928,
+        "name": "Reprisal"
+    },
+    {
+        "id": 1484930,
+        "name": "Rampage"
+    },
+    {
+        "id": 1484938,
+        "name": "Annihilator"
+    },
+    {
+        "id": 1483521,
+        "name": "No Escape"
+    },
+    {
+        "id": 1482901,
+        "name": "Intimidated"
+    },
+    {
+        "id": 1529334,
+        "name": "Terrify"
+    },
+    {
+        "id": 1529376,
+        "name": "Amplified Suffering"
+    },
+    {
+        "id": 1529505,
+        "name": "Covered in Ash"
+    },
+    {
+        "id": 1529510,
+        "name": "Eradication"
+    },
+    {
+        "id": 1578271,
+        "name": "Incendiary Bolt"
+    },
+    {
+        "id": 1578261,
+        "name": "Loaded Munitions"
+    },
+    {
+        "id": 1578257,
+        "name": "Pin Cushion"
+    },
+    {
+        "id": 1578225,
+        "name": "Piercing Arrows"
+    },
+    {
+        "id": 1722900,
+        "name": "Sustenance"
+    },
+    {
+        "id": 2110231,
+        "name": "Vehemence"
+    },
+    {
+        "id": 1201192,
+        "name": "Attack"
+    },
+    {
+        "id": 1619032,
+        "name": "Attack"
+    },
+    {
+        "id": 1452355,
+        "name": "Shield Throw"
+    },
+    {
+        "id": 1408295,
+        "name": "Whirlwind"
+    },
+    {
+        "id": 1493968,
+        "name": "Chain of Souls"
+    },
+    {
+        "id": 1580748,
+        "name": "Snipe"
+    }
+]
+}

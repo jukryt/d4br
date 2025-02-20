@@ -1,184 +1,184 @@
 {
-    "url1":"https://www.wowhead.com/diablo-4/ru/items/type:446841",
-    "url2":"https://www.wowhead.com/diablo-4/ru/items/type:446842",
+    "url1":"https://www.wowhead.com/diablo-4/items/type:446841",
+    "url2":"https://www.wowhead.com/diablo-4/items/type:446842",
     "source":"g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
     "items":
 [
     {
         "id": 2165977,
-        "name": "Игни"
+        "name": "Igni"
     },
     {
         "id": 1999352,
-        "name": "Бак"
+        "name": "Bac"
     },
     {
         "id": 2040700,
-        "name": "Ксол"
+        "name": "Xol"
     },
     {
         "id": 2060482,
-        "name": "Лит"
+        "name": "Lith"
     },
     {
         "id": 1968107,
-        "name": "Там"
+        "name": "Tam"
     },
     {
         "id": 2004498,
-        "name": "Юл"
+        "name": "Yul"
     },
     {
         "id": 1968550,
-        "name": "Цан"
+        "name": "Zan"
     },
     {
         "id": 2060618,
-        "name": "Цир"
+        "name": "Cir"
     },
     {
         "id": 2155997,
-        "name": "Нагу"
+        "name": "Nagu"
     },
     {
         "id": 2004454,
-        "name": "Пок"
+        "name": "Poc"
     },
     {
         "id": 2063887,
-        "name": "Мони"
+        "name": "Moni"
     },
     {
         "id": 1969054,
-        "name": "Якс"
+        "name": "Yax"
     },
     {
         "id": 2006748,
-        "name": "Фео"
+        "name": "Feo"
     },
     {
         "id": 1968097,
-        "name": "Цем"
+        "name": "Cem"
     },
     {
         "id": 2020681,
-        "name": "Ур"
+        "name": "Ur"
     },
     {
         "id": 2080568,
-        "name": "Аху"
+        "name": "Ahu"
     },
     {
         "id": 2063988,
-        "name": "Нео"
+        "name": "Neo"
     },
     {
         "id": 2089875,
-        "name": "Нок"
+        "name": "Noc"
     },
     {
         "id": 2081285,
-        "name": "Каа"
+        "name": "Kaa"
     },
     {
         "id": 2046440,
-        "name": "Хак"
+        "name": "Hak"
     },
     {
         "id": 2085644,
-        "name": "Пак"
+        "name": "Pac"
     },
     {
         "id": 2021604,
-        "name": "Сип"
+        "name": "Cip"
     },
     {
         "id": 2040857,
-        "name": "Тза"
+        "name": "Tza"
     },
     {
         "id": 2050494,
-        "name": "ТЕСТ руна 0,1 Гц"
+        "name": "TEST 0.1 Hz rune"
     },
     {
         "id": 2041397,
-        "name": "ТЕСТ руна 1 Гц"
+        "name": "TEST 1 Hz rune"
     },
     {
         "id": 1969851,
-        "name": "Ом"
+        "name": "Ohm"
     },
     {
         "id": 2047114,
-        "name": "Зан"
+        "name": "Xan"
     },
     {
         "id": 2059627,
-        "name": "Куакс"
+        "name": "Qax"
     },
     {
         "id": 2004863,
-        "name": "Ват"
+        "name": "Wat"
     },
     {
         "id": 2024157,
-        "name": "Векс"
+        "name": "Vex"
     },
     {
         "id": 2060652,
-        "name": "Эом"
+        "name": "Eom"
     },
     {
         "id": 1983345,
-        "name": "Тек"
+        "name": "Tec"
     },
     {
         "id": 2039543,
-        "name": "Джа"
+        "name": "Jah"
     },
     {
         "id": 2021641,
-        "name": "Зал"
+        "name": "Xal"
     },
     {
         "id": 2004805,
-        "name": "Кве"
+        "name": "Que"
     },
     {
         "id": 1969099,
-        "name": "Гар"
+        "name": "Gar"
     },
     {
         "id": 1968672,
-        "name": "Зек"
+        "name": "Zec"
     },
     {
         "id": 2039679,
-        "name": "Край"
+        "name": "Kry"
     },
     {
         "id": 1969846,
-        "name": "Тул"
+        "name": "Thul"
     },
     {
         "id": 1968586,
-        "name": "Лум"
+        "name": "Lum"
     },
     {
         "id": 2004876,
-        "name": "Тон"
+        "name": "Ton"
     },
     {
         "id": 2090794,
-        "name": "Йом"
+        "name": "Yom"
     },
     {
         "id": 2004724,
-        "name": "Мет"
+        "name": "Met"
     },
     {
         "id": 2166985,
-        "name": "Чак"
+        "name": "Chac"
     },
     {
         "id": 2021777,
@@ -186,71 +186,71 @@
     },
     {
         "id": 2093514,
-        "name": "Тзик"
+        "name": "Tzic"
     },
     {
         "id": 2090245,
-        "name": "Лак"
+        "name": "Lac"
     },
     {
         "id": 2039603,
-        "name": "Нер"
+        "name": "Ner"
     },
     {
         "id": 2004782,
-        "name": "Тун"
+        "name": "Tun"
     },
     {
         "id": 2096425,
-        "name": "Эхе"
+        "name": "Ehe"
     },
     {
         "id": 2006151,
-        "name": "Оно"
+        "name": "Ono"
     },
     {
         "id": 2040871,
-        "name": "Тал"
+        "name": "Tal"
     },
     {
         "id": 2057116,
-        "name": "Це"
+        "name": "Ceh"
     },
     {
         "id": 2057889,
-        "name": "Икск"
+        "name": "Ixk"
     },
     {
         "id": 2089935,
-        "name": "Мот"
+        "name": "Mot"
     },
     {
         "id": 2043182,
-        "name": "Куа"
+        "name": "Qua"
     },
     {
         "id": 2088917,
-        "name": "Теб"
+        "name": "Teb"
     },
     {
         "id": 2088738,
-        "name": "Чай"
+        "name": "Cha"
     },
     {
         "id": 2040966,
-        "name": "Ура"
+        "name": "Ura"
     },
     {
         "id": 2073683,
-        "name": "Нам"
+        "name": "Nam"
     },
     {
         "id": 2073773,
-        "name": "Икст"
+        "name": "Ixt"
     },
     {
         "id": 2089449,
-        "name": "Золотая Мэй"
+        "name": "May"
     }
 ]
 }

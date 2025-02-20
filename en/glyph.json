@@ -1,475 +1,475 @@
 {
-    "url":"https://www.wowhead.com/diablo-4/ru/paragon-glyphs",
+    "url":"https://www.wowhead.com/diablo-4/paragon-glyphs",
     "source":"g_listviews['paragon-glyphs'].data.map(i=>({id: i.id, name: i.name}))",
     "items":
 [
     {
         "id": 1071719,
-        "name": "Вкушение"
+        "name": "Imbiber"
     },
     {
         "id": 2073373,
-        "name": "Противник"
+        "name": "Challenger"
     },
     {
         "id": 1622788,
-        "name": "Рокот"
+        "name": "Rumble"
     },
     {
         "id": 1029482,
-        "name": "Хитрость"
+        "name": "Devious"
     },
     {
         "id": 1027096,
-        "name": "Бесстрашие"
+        "name": "Undaunted"
     },
     {
         "id": 1031006,
-        "name": "Усиление"
+        "name": "Amplify"
     },
     {
         "id": 1028226,
-        "name": "Клыки и когти"
+        "name": "Fang and Claw"
     },
     {
         "id": 1031004,
-        "name": "Воскрешатель"
+        "name": "Deadraiser"
     },
     {
         "id": 1028233,
-        "name": "Хранитель"
+        "name": "Keeper"
     },
     {
         "id": 1029487,
-        "name": "Благоразумие"
+        "name": "Canny"
     },
     {
         "id": 1031001,
-        "name": "Телесность"
+        "name": "Corporeal"
     },
     {
         "id": 1031058,
-        "name": "Бездна"
+        "name": "Abyssal"
     },
     {
         "id": 1028234,
-        "name": "Сверкание"
+        "name": "Fulminate"
     },
     {
         "id": 1031010,
-        "name": "Эссенция"
+        "name": "Essence"
     },
     {
         "id": 1027091,
-        "name": "Гнев"
+        "name": "Wrath"
     },
     {
         "id": 1027088,
-        "name": "Праведный гнев"
+        "name": "Ire"
     },
     {
         "id": 2072751,
-        "name": "Уничтожитель"
+        "name": "Eliminator"
     },
     {
         "id": 1029476,
-        "name": "Универсальность"
+        "name": "Versatility"
     },
     {
         "id": 1028237,
-        "name": "Дух"
+        "name": "Spirit"
     },
     {
         "id": 1023199,
-        "name": "Уловка"
+        "name": "Exploit"
     },
     {
         "id": 2070631,
-        "name": "Гордыня"
+        "name": "Hubris"
     },
     {
         "id": 1031000,
-        "name": "Жертвоприношение"
+        "name": "Sacrificial"
     },
     {
         "id": 1023185,
-        "name": "Воля"
+        "name": "Unleash"
     },
     {
         "id": 1631011,
-        "name": "Осквернение"
+        "name": "Desecration"
     },
     {
         "id": 1023197,
-        "name": "Защита границ"
+        "name": "Territorial"
     },
     {
         "id": 1027095,
-        "name": "Мщение"
+        "name": "Revenge"
     },
     {
         "id": 1023186,
-        "name": "Стихии"
+        "name": "Elementalist"
     },
     {
         "id": 1027089,
-        "name": "Судья"
+        "name": "Marshal"
     },
     {
         "id": 2073378,
-        "name": "Охотник за головами"
+        "name": "Headhunter"
     },
     {
         "id": 1029486,
-        "name": "Бой"
+        "name": "Combat"
     },
     {
         "id": 1023193,
-        "name": "Тактик"
+        "name": "Tactician"
     },
     {
         "id": 2067375,
-        "name": "Коготь"
+        "name": "Talon"
     },
     {
         "id": 1331811,
-        "name": "Подчинение"
+        "name": "Dominate"
     },
     {
         "id": 1023184,
-        "name": "Чары"
+        "name": "Enchanter"
     },
     {
         "id": 1027083,
-        "name": "Мощь"
+        "name": "Might"
     },
     {
         "id": 1029491,
-        "name": "Контроль"
+        "name": "Control"
     },
     {
         "id": 1031012,
-        "name": "Могильщик"
+        "name": "Gravekeeper"
     },
     {
         "id": 1629205,
-        "name": "Эксгумация"
+        "name": "Exhumation"
     },
     {
         "id": 1627925,
-        "name": "Удар током"
+        "name": "Electrocution"
     },
     {
         "id": 1027075,
-        "name": "Амбидекстр"
+        "name": "Ambidextrous"
     },
     {
         "id": 1029481,
-        "name": "Текучесть"
+        "name": "Fluidity"
     },
     {
         "id": 1028236,
-        "name": "Превосходство"
+        "name": "Outmatch"
     },
     {
         "id": 2117207,
-        "name": "Охотник за головами"
+        "name": "Headhunter"
     },
     {
         "id": 1027093,
-        "name": "Мастер оружия"
+        "name": "Weapon Master"
     },
     {
         "id": 1023202,
-        "name": "Разрушение"
+        "name": "Destruction"
     },
     {
         "id": 1027087,
-        "name": "Палач"
+        "name": "Executioner"
     },
     {
         "id": 2069252,
-        "name": "Колосс"
+        "name": "Colossal"
     },
     {
         "id": 1029494,
-        "name": "Гордыня"
+        "name": "Pride"
     },
     {
         "id": 1621704,
-        "name": "Ураган"
+        "name": "Twister"
     },
     {
         "id": 2066786,
-        "name": "Зазубренный гребень"
+        "name": "Jagged Plume"
     },
     {
         "id": 2063983,
-        "name": "Живучесть"
+        "name": "Fitness"
     },
     {
         "id": 2069914,
-        "name": "Ритуал"
+        "name": "Ritual"
     },
     {
         "id": 2077106,
-        "name": "Дух"
+        "name": "Spirit"
     },
     {
         "id": 1023190,
-        "name": "Факел"
+        "name": "Torch"
     },
     {
         "id": 1031008,
-        "name": "Плеть"
+        "name": "Scourge"
     },
     {
         "id": 2077016,
-        "name": "Сверкание"
+        "name": "Fulminate"
     },
     {
         "id": 1027097,
-        "name": "Подчинение"
+        "name": "Dominate"
     },
     {
         "id": 1028227,
-        "name": "Земля и небо"
+        "name": "Earth and Sky"
     },
     {
         "id": 1029497,
-        "name": "Бич"
+        "name": "Bane"
     },
     {
         "id": 2064639,
-        "name": "Дрессировщик"
+        "name": "Menagerist"
     },
     {
         "id": 1031005,
-        "name": "Маг"
+        "name": "Mage"
     },
     {
         "id": 1031007,
-        "name": "Голем"
+        "name": "Golem"
     },
     {
         "id": 1029490,
-        "name": "Уловка"
+        "name": "Exploit"
     },
     {
         "id": 1023200,
-        "name": "Зима"
+        "name": "Winter"
     },
     {
         "id": 1028238,
-        "name": "Оборотень"
+        "name": "Shapeshifter"
     },
     {
         "id": 1068821,
-        "name": "Бесстрашие"
+        "name": "Undaunted"
     },
     {
         "id": 1023188,
-        "name": "Чаротворец"
+        "name": "Conjurer"
     },
     {
         "id": 1023195,
-        "name": "Бастион"
+        "name": "Reinforced"
     },
     {
         "id": 1023198,
-        "name": "Питающее пламя"
+        "name": "Flamefeeder"
     },
     {
         "id": 1023203,
-        "name": "Контроль"
+        "name": "Control"
     },
     {
         "id": 1029479,
-        "name": "Обломок"
+        "name": "Chip"
     },
     {
         "id": 1331846,
-        "name": "Мщение"
+        "name": "Revenge"
     },
     {
         "id": 1023191,
-        "name": "Пироманьяк"
+        "name": "Pyromaniac"
     },
     {
         "id": 1027099,
-        "name": "Потасовка"
+        "name": "Brawl"
     },
     {
         "id": 1028228,
-        "name": "Дикая природа"
+        "name": "Wilds"
     },
     {
         "id": 2067631,
-        "name": "Дикий огонь"
+        "name": "Wildfire"
     },
     {
         "id": 1023192,
-        "name": "Обморожение"
+        "name": "Frostbite"
     },
     {
         "id": 1027086,
-        "name": "Крушитель"
+        "name": "Crusher"
     },
     {
         "id": 1028219,
-        "name": "Самообладание"
+        "name": "Poise"
     },
     {
         "id": 1296014,
-        "name": "Уловка"
+        "name": "Exploit"
     },
     {
         "id": 1029480,
-        "name": "Питающий лед"
+        "name": "Frostfeeder"
     },
     {
         "id": 1023201,
-        "name": "Электрошок"
+        "name": "Electrocute"
     },
     {
         "id": 1068833,
-        "name": "Подчинение"
+        "name": "Dominate"
     },
     {
         "id": 1622887,
-        "name": "Взрывчатка"
+        "name": "Explosive"
     },
     {
         "id": 1029478,
-        "name": "Странник"
+        "name": "Ranger"
     },
     {
         "id": 2067561,
-        "name": "Рефлекс"
+        "name": "Innate"
     },
     {
         "id": 2120405,
-        "name": "Мщение"
+        "name": "Revenge"
     },
     {
         "id": 1028235,
-        "name": "Следопыт"
+        "name": "Tracker"
     },
     {
         "id": 1031003,
-        "name": "Контроль"
+        "name": "Control"
     },
     {
         "id": 1023187,
-        "name": "Мастер"
+        "name": "Adept"
     },
     {
         "id": 1023196,
-        "name": "Оберег"
+        "name": "Warding"
     },
     {
         "id": 1029489,
-        "name": "Капкан"
+        "name": "Snare"
     },
     {
         "id": 1031002,
-        "name": "Кровопийца"
+        "name": "Blood-drinker"
     },
     {
         "id": 1217015,
-        "name": "Снижение"
+        "name": "Diminish"
     },
     {
         "id": 2072563,
-        "name": "Гной"
+        "name": "Fester"
     },
     {
         "id": 2077200,
-        "name": "Превосходство"
+        "name": "Outmatch"
     },
     {
         "id": 1027098,
-        "name": "Потрошение"
+        "name": "Disembowel"
     },
     {
         "id": 1028230,
-        "name": "Облик волка"
+        "name": "Werewolf"
     },
     {
         "id": 1029477,
-        "name": "Сближение"
+        "name": "Closer"
     },
     {
         "id": 1029488,
-        "name": "Эффективность"
+        "name": "Efficacy"
     },
     {
         "id": 1029493,
-        "name": "Почва"
+        "name": "Turf"
     },
     {
         "id": 1294418,
-        "name": "Тьма"
+        "name": "Darkness"
     },
     {
         "id": 1623724,
-        "name": "Сталагмит"
+        "name": "Stalagmite"
     },
     {
         "id": 1624740,
-        "name": "Движение земли"
+        "name": "Tectonic"
     },
     {
         "id": 2067363,
-        "name": "Тренировка"
+        "name": "Hone"
     },
     {
         "id": 2070496,
-        "name": "Потребление"
+        "name": "Consumption"
     },
     {
         "id": 1023189,
-        "name": "Заряд"
+        "name": "Charged"
     },
     {
         "id": 1027085,
-        "name": "Возмущение"
+        "name": "Seething"
     },
     {
         "id": 1027090,
-        "name": "Питающая кровь"
+        "name": "Bloodfeeder"
     },
     {
         "id": 1028231,
-        "name": "Человек"
+        "name": "Human"
     },
     {
         "id": 1623747,
-        "name": "Воззвание"
+        "name": "Invocation"
     },
     {
         "id": 1023194,
-        "name": "Обжора"
+        "name": "Guzzler"
     },
     {
         "id": 1028229,
-        "name": "Облик медведя"
+        "name": "Werebear"
     },
     {
         "id": 1029495,
-        "name": "Засада"
+        "name": "Ambush"
     },
     {
         "id": 1031011,
-        "name": "Воин"
+        "name": "Warrior"
     },
     {
         "id": 1027094,
-        "name": "Смертельное натяжение"
+        "name": "Mortal Draw"
     },
     {
         "id": 1029496,
-        "name": "Следопыт"
+        "name": "Tracker"
     },
     {
         "id": 732443,
@@ -477,23 +477,23 @@
     },
     {
         "id": 1028232,
-        "name": "Бич"
+        "name": "Bane"
     },
     {
         "id": 1027084,
-        "name": "Тесак"
+        "name": "Cleaver"
     },
     {
         "id": 1029485,
-        "name": "Насыщение"
+        "name": "Infusion"
     },
     {
         "id": 1068816,
-        "name": "Защитник"
+        "name": "Protector"
     },
     {
         "id": 1622957,
-        "name": "Ночной охотник"
+        "name": "Nightstalker"
     }
 ]
 }
