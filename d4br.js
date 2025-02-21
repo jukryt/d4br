@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.14.0
+// @version      0.15.0
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -14,74 +14,80 @@
 // @supportURL   https://github.com/jukryt/d4br/issues
 // @grant        GM_getResourceText
 
-// @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/aspect.json
-// @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/glyph.json
-// @resource     unq_item_en  https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/unq_item.json
-// @resource     leg_node_en  https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/leg_node.json
-// @resource     rune_en      https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/rune.json
-// @resource     skill_en     https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/skill.json
-// @resource     temper_en    https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/en/temper.json
+// @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/aspect.json
+// @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/glyph.json
+// @resource     unq_item_en  https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/unq_item.json
+// @resource     leg_node_en  https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/leg_node.json
+// @resource     rune_en      https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/rune.json
+// @resource     skill_en     https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/skill.json
+// @resource     temper_en    https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/temper.json
 
-// @resource     aspect_ru    https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/aspect.json
-// @resource     glyph_ru     https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/glyph.json
-// @resource     unq_item_ru  https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/unq_item.json
-// @resource     leg_node_ru  https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/leg_node.json
-// @resource     rune_ru      https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/rune.json
-// @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/skill.json
-// @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/584d232f12982dc3040a58aaa2b1cd3bdddd9a04/ru/temper.json
+// @resource     aspect_ru    https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/aspect.json
+// @resource     glyph_ru     https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/glyph.json
+// @resource     unq_item_ru  https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/unq_item.json
+// @resource     leg_node_ru  https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/leg_node.json
+// @resource     rune_ru      https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/rune.json
+// @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/skill.json
+// @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/temper.json
 
 // ==/UserScript==
 
-function D4Data() {
-    return new class D4Data {
-        createEnglish() {
-            return new D4Data.English();
+class ExternalResource {
+    static getJsonResource(name) {
+        const text = GM_getResourceText(name);
+        if (!text) {
+            return null;
         }
+        return JSON.parse(text);
+    }
+}
 
-        createRussian() {
-            return new D4Data.Russian();
-        }
+class Language {
+    static aspects = "aspects";
+    static glyphs = "glyphs";
+    static unqItems = "unqItems";
+    static legNodes = "legNodes";
+    static runes = "runes";
+    static skills = "skills";
+    static tempers = "tempers";
 
-        static English = class English {
-            constructor() {
-                this.aspects = D4Data.getResource("aspect_en").items;
-                this.glyphs = D4Data.getResource("glyph_en").items;
-                this.unqItems = D4Data.getResource("unq_item_en").items;
-                this.legNodes = D4Data.getResource("leg_node_en").items;
-                this.runes = D4Data.getResource("rune_en").items;
-                this.skills = D4Data.getResource("skill_en").items;
-                this.tempers = D4Data.getResource("temper_en").items;
-            }
-        }
+    getResource(name) {
+        return this[name];
+    }
+}
 
-        static Russian = class Russian {
-            constructor() {
-                this.aspects = D4Data.getResource("aspect_ru").items;
-                this.glyphs = D4Data.getResource("glyph_ru").items;
-                this.unqItems = D4Data.getResource("unq_item_ru").items;
-                this.legNodes = D4Data.getResource("leg_node_ru").items;
-                this.runes = D4Data.getResource("rune_ru").items;
-                this.skills = D4Data.getResource("skill_ru").items;
-                this.tempers = D4Data.getResource("temper_ru").items;
-            }
-        }
+class EnglishLanguage extends Language {
+    constructor() {
+        super();
 
-        static getResource(resourceName) {
-            const text = GM_getResourceText(resourceName);
-            if (!text) {
-                return null;
-            }
+        this.aspects = ExternalResource.getJsonResource("aspect_en").items;
+        this.glyphs = ExternalResource.getJsonResource("glyph_en").items;
+        this.unqItems = ExternalResource.getJsonResource("unq_item_en").items;
+        this.legNodes = ExternalResource.getJsonResource("leg_node_en").items;
+        this.runes = ExternalResource.getJsonResource("rune_en").items;
+        this.skills = ExternalResource.getJsonResource("skill_en").items;
+        this.tempers = ExternalResource.getJsonResource("temper_en").items;
+    }
+}
 
-            return JSON.parse(text);
-        }
+class RussianLanguage extends Language {
+    constructor() {
+        super();
+
+        this.aspects = ExternalResource.getJsonResource("aspect_ru").items;
+        this.glyphs = ExternalResource.getJsonResource("glyph_ru").items;
+        this.unqItems = ExternalResource.getJsonResource("unq_item_ru").items;
+        this.legNodes = ExternalResource.getJsonResource("leg_node_ru").items;
+        this.runes = ExternalResource.getJsonResource("rune_ru").items;
+        this.skills = ExternalResource.getJsonResource("skill_ru").items;
+        this.tempers = ExternalResource.getJsonResource("temper_ru").items;
     }
 }
 
 class D4BuildsProcessor {
     constructor() {
-        const d4Data = new D4Data();
-        this.en = d4Data.createEnglish();
-        this.ru = d4Data.createRussian();
+        this.sourceLanguage = new EnglishLanguage();
+        this.targetLanguage = new RussianLanguage();
     }
 
     mutationObserverCallback(processor, mutations) {
@@ -213,84 +219,85 @@ class D4BuildsProcessor {
     }
 
     aspectNameProcess(node) {
-        return this.nodeProcess(node, "d4br_aspect_name", this.en.aspects, this.ru.aspects, false);
+        return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, false);
     }
 
     temperNameProcess(node) {
-        const oldValue = node.innerText;
-        if (!oldValue) {
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
             return false;
         }
 
-        const temperMatch = oldValue.match(/.+\((.+) - (.+)\)/);
+        const temperMatch = sourceValue.match(/.+\((.+) - (.+)\)/);
         if (!temperMatch) {
             return false;
         }
 
         const temperName = temperMatch[1];
-        const enItem = this.en.tempers.find(i => i.name === temperName);
-        if (!enItem) {
+
+        const sourceItem = this.sourceLanguage.tempers.find(i => i.name === temperName);
+        if (!sourceItem) {
             return false;
         }
 
-        const ruItem = this.ru.tempers.find(i => i.id === enItem.id);
-        if (!ruItem) {
+        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
             return false;
         }
 
-        return this.setNewValue(node, "d4br_temper_name", ruItem.name, false);
+        return this.setTargetValue(node, "d4br_temper_name", targetItem.name, false);
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_unq_name", this.en.unqItems, this.ru.unqItems, false);
+        return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems, false);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", this.en.skills, this.ru.skills, false);
+        return this.nodeProcess(node, "d4br_skill_name", Language.skills, false);
     }
 
     glyphNameProcess(node) {
-        return this.nodeProcess(node, "d4br_glyph_name", this.en.glyphs, this.ru.glyphs, false);
+        return this.nodeProcess(node, "d4br_glyph_name", Language.glyphs, false);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_leg_node_name", this.en.legNodes, this.ru.legNodes, false);
+        return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes, false);
     }
 
     gemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_rune_name", this.en.runes, this.ru.runes, false);
+        return this.nodeProcess(node, "d4br_rune_name", Language.runes, false);
     }
 
-    nodeProcess(node, className, oldItems, newItems, addOldValue) {
+    nodeProcess(node, className, resourceName, addSourceValue) {
         if (!node.childNodes) {
             return false;
         }
 
-        const oldValue = node.childNodes[0].data;
-        if (!oldValue) {
+        const sourceValue = node.childNodes[0].data;
+        if (!sourceValue) {
             return false;
         }
 
-        const oldItem = oldItems.find(i => i.name === oldValue);
-        if (!oldItem) {
+        const sourceItem = this.sourceLanguage.getResource(resourceName).find(i => i.name === sourceValue);
+        if (!sourceItem) {
             return false;
         }
 
-        const newItem = newItems.find(i => i.id === oldItem.id);
-        if (!newItem) {
+        const targetItem = this.targetLanguage.getResource(resourceName).find(i => i.id === sourceItem.id);
+        if (!targetItem) {
             return false;
         }
 
-        return this.setNewValue(node, className, newItem.name, addOldValue);
+        return this.setTargetValue(node, className, targetItem.name, addSourceValue);
     }
 
-    setNewValue(node, className, newValue, addOldValue) {
-        if (!newValue) {
+    setTargetValue(node, className, targetValue, addSourceValue) {
+        if (!targetValue) {
             return false;
         }
 
-        let htmlValue = this.buildHtmlValue(className, newValue);
-        if (addOldValue) {
+        let htmlValue = this.buildHtmlValue(className, targetValue);
+        if (addSourceValue) {
             htmlValue += node.innerHTML;
         }
 
@@ -305,9 +312,8 @@ class D4BuildsProcessor {
 
 class D4MaxrollProcessor {
     constructor() {
-        const d4Data = new D4Data();
-        this.en = d4Data.createEnglish();
-        this.ru = d4Data.createRussian();
+        this.sourceLanguage = new EnglishLanguage();
+        this.targetLanguage = new RussianLanguage();
     }
 
     mutationObserverCallback(processor, mutations) {
@@ -385,38 +391,40 @@ class D4MaxrollProcessor {
         const subTitleValue = subTitleNode.innerText;
         // aspect node
         if (subTitleValue === "Legendary Aspect") {
-            return this.nodeProcess(titleNode, className, this.en.aspects, this.ru.aspects, true);
+            return this.nodeProcess(titleNode, className, Language.aspects, true);
         }
         // item node
         else {
-            const oldTitleValue = titleNode.innerText;
+            const titleValue = titleNode.innerText;
             const self = this;
 
-            const enItems = this.en.aspects.filter((i) => { return self.aspectNameFilter(i, oldTitleValue); });
-            if (enItems.length != 1) {
+            const sourceItem = this.sourceLanguage.aspects.find(i => { return self.aspectNameFilter(i, titleValue); });
+            if (!sourceItem) {
                 return false;
             }
 
-            const enItem = enItems[0];
-            const ruItem = this.ru.aspects.find(i => i.id === enItem.id);
+            const targetItem = this.targetLanguage.aspects.find(i => i.id === sourceItem.id);
+            if (!targetItem) {
+                return false;
+            }
 
-            return this.setNewValue(titleNode, className, ruItem.name, true);
+            return this.setTargetValue(titleNode, className, targetItem.name, true);
         }
     }
 
-    aspectNameFilter(item, oldTitleValue) {
-        const aspectIndex = item.name.indexOf("Aspect");
+    aspectNameFilter(sourceItem, titleValue) {
+        const aspectIndex = sourceItem.name.indexOf("Aspect");
         // [Aspect of ...] => [Item_Name of Aspect_Name]
         if (aspectIndex === 0) {
-            const aspectName = item.name.substring(6);
-            if (oldTitleValue.endsWith(aspectName)) {
+            const aspectName = sourceItem.name.substring(6);
+            if (titleValue.endsWith(aspectName)) {
                 return true;
             }
         }
         // [... Aspect] => [Aspect_Name Item_Name]
         else {
-            const aspectName = item.name.substring(0, aspectIndex);
-            if (oldTitleValue.startsWith(aspectName)) {
+            const aspectName = sourceItem.name.substring(0, aspectIndex);
+            if (titleValue.startsWith(aspectName)) {
                 return true;
             }
         }
@@ -426,55 +434,55 @@ class D4MaxrollProcessor {
 
     unqItemNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_unq_name", this.en.unqItems, this.ru.unqItems, true);
+        return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems, true);
     }
 
     skillNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_skill_name", this.en.skills, this.ru.skills, true);
+        return this.nodeProcess(node, "d4br_skill_name", Language.skills, true);
     }
 
     legNodeNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_leg_node_name", this.en.legNodes, this.ru.legNodes, true);
+        return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes, true);
     }
 
     glyphNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_glyph_name", this.en.glyphs, this.ru.glyphs, true);
+        return this.nodeProcess(node, "d4br_glyph_name", Language.glyphs, true);
     }
 
     runeNameProcess(node) {
         if (!node) { return false; }
-        return this.nodeProcess(node, "d4br_rune_name", this.en.runes, this.ru.runes, true);
+        return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
     }
 
-    nodeProcess(node, className, oldItems, newItems, addOldValue) {
-        const oldValue = node.innerText;
-        if (!oldValue) {
+    nodeProcess(node, className, resourceName, addSourceValue) {
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
             return false;
         }
 
-        const oldItem = oldItems.find(i => i.name === oldValue);
-        if (!oldItem) {
+        const sourceItem = this.sourceLanguage.getResource(resourceName).find(i => i.name === sourceValue);
+        if (!sourceItem) {
             return false;
         }
 
-        const newItem = newItems.find(i => i.id === oldItem.id);
-        if (!newItem) {
+        const targetItem = this.targetLanguage.getResource(resourceName).find(i => i.id === sourceItem.id);
+        if (!targetItem) {
             return false;
         }
 
-        return this.setNewValue(node, className, newItem.name, addOldValue);
+        return this.setTargetValue(node, className, targetItem.name, addSourceValue);
     }
 
-    setNewValue(node, className, newValue, addOldValue) {
-        if (!newValue) {
+    setTargetValue(node, className, targetValue, addSourceValue) {
+        if (!targetValue) {
             return false;
         }
 
-        let htmlValue = this.buildHtmlValue(className, newValue);
-        if (addOldValue) {
+        let htmlValue = this.buildHtmlValue(className, targetValue);
+        if (addSourceValue) {
             htmlValue += node.innerHTML;
         }
 
@@ -489,9 +497,8 @@ class D4MaxrollProcessor {
 
 class D4MobalyticsProcessor {
     constructor() {
-        const d4Data = new D4Data();
-        this.en = d4Data.createEnglish();
-        this.ru = d4Data.createRussian();
+        this.sourceLanguage = new EnglishLanguage();
+        this.targetLanguage = new RussianLanguage();
     }
 
     mutationObserverCallback(processor, mutations) {
@@ -551,104 +558,104 @@ class D4MobalyticsProcessor {
     }
 
     aspectNameProcess(node) {
-        return this.nodeProcess(node, "d4br_aspect_name", this.en.aspects, this.ru.aspects, true);
+        return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, true);
     }
 
     temperNameProcess(node) {
-        const oldValue = node.innerText;
-        if (!oldValue) {
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
             return false;
         }
 
-        let enItem = this.en.tempers.find(i => i.name === oldValue);
+        let sourceItem = this.sourceLanguage.tempers.find(i => i.name === sourceValue);
 
-        if (!enItem) {
-            const temperNameMatch = oldValue.match(/(.+) - (.+)/);
+        if (!sourceItem) {
+            const temperNameMatch = sourceValue.match(/(.+) - (.+)/);
             if (temperNameMatch) {
                 const temperName = `${temperNameMatch[1]}-${temperNameMatch[2]}`;
-                enItem = this.en.tempers.find(i => i.name === temperName);
+                sourceItem = this.sourceLanguage.tempers.find(i => i.name === temperName);
             }
         }
 
-        if (!enItem) {
+        if (!sourceItem) {
             return false;
         }
 
-        const ruItem = this.ru.tempers.find(i => i.id === enItem.id);
-        if (!ruItem) {
+        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
             return false;
         }
 
-        return this.setNewValue(node, "d4br_temper_name", ruItem.name, true);
+        return this.setTargetValue(node, "d4br_temper_name", targetItem.name, true);
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_unq_name", this.en.unqItems, this.ru.unqItems, true);
+        return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems, true);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", this.en.skills, this.ru.skills, true);
+        return this.nodeProcess(node, "d4br_skill_name", Language.skills, true);
     }
 
     glyphNameProcess(node) {
-        const oldValue = node.innerText;
-        if (!oldValue) {
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
             return false;
         }
 
-        const glyphMatch = oldValue.match(/([a-zA-Z ]+) \(Lvl \d+\)/);
+        const glyphMatch = sourceValue.match(/([a-zA-Z ]+) \(Lvl \d+\)/);
         if (!glyphMatch) {
             return false;
         }
 
         const glyphName = glyphMatch[1];
-        const enItem = this.en.glyphs.find(i => i.name === glyphName);
-        if (!enItem) {
+        const sourceItem = this.sourceLanguage.glyphs.find(i => i.name === glyphName);
+        if (!sourceItem) {
             return false;
         }
 
-        const ruItem = this.ru.glyphs.find(i => i.id === enItem.id);
-        if (!ruItem) {
+        const targetItem = this.targetLanguage.glyphs.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
             return false;
         }
 
-        return this.setNewValue(node, "d4br_glyph_name", ruItem.name, true);
+        return this.setTargetValue(node, "d4br_glyph_name", targetItem.name, true);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_leg_node_name", this.en.legNodes, this.ru.legNodes, true);
+        return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes, true);
     }
 
     runeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_rune_name", this.en.runes, this.ru.runes, true);
+        return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
     }
 
-    nodeProcess(node, className, oldItems, newItems, addOldValue) {
-        const oldValue = node.innerText;
-        if (!oldValue) {
+    nodeProcess(node, className, resourceName, addSourceValue) {
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
             return false;
         }
 
-        const oldItem = oldItems.find(i => i.name === oldValue);
-        if (!oldItem) {
+        const sourceItem = this.sourceLanguage.getResource(resourceName).find(i => i.name === sourceValue);
+        if (!sourceItem) {
             return false;
         }
 
-        const newItem = newItems.find(i => i.id === oldItem.id);
-        if (!newItem) {
+        const targetItem = this.targetLanguage.getResource(resourceName).find(i => i.id === sourceItem.id);
+        if (!targetItem) {
             return false;
         }
 
-        return this.setNewValue(node, className, newItem.name, addOldValue);
+        return this.setTargetValue(node, className, targetItem.name, addSourceValue);
     }
 
-    setNewValue(node, className, newValue, addOldValue) {
-        if (!newValue) {
+    setTargetValue(node, className, targetValue, addSourceValue) {
+        if (!targetValue) {
             return false;
         }
 
-        let htmlValue = this.buildHtmlValue(className, newValue);
-        if (addOldValue) {
+        let htmlValue = this.buildHtmlValue(className, targetValue);
+        if (addSourceValue) {
             htmlValue += node.innerHTML;
         }
 
