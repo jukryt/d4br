@@ -1,6 +1,6 @@
 {
     "url":"https://www.wowhead.com/diablo-4/items/quality:8:6",
-    "source":"g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
+    "source":"g_listviews.items.data.sort(i=>i.id).map(i=>({id: i.id, name: i.name}))",
     "items":
 [
     {
@@ -8,16 +8,20 @@
         "name": "Kessime's Legacy"
     },
     {
-        "id": 2081131,
-        "name": "Mantle of Mountain's Fury"
-    },
-    {
         "id": 2059799,
         "name": "Heir of Perdition"
     },
     {
+        "id": 2081131,
+        "name": "Mantle of Mountain's Fury"
+    },
+    {
         "id": 1306338,
         "name": "Ring of Starless Skies"
+    },
+    {
+        "id": 1788901,
+        "name": "Ugly Bastard Helm"
     },
     {
         "id": 2059803,
@@ -28,28 +32,28 @@
         "name": "Harlequin Crest"
     },
     {
-        "id": 1788901,
-        "name": "Ugly Bastard Helm"
+        "id": 2016139,
+        "name": "Mjölnic Ryng"
     },
     {
         "id": 291669,
         "name": "Flickerstep"
     },
     {
-        "id": 2016139,
-        "name": "Mjolnic Ryng"
-    },
-    {
-        "id": 1901484,
-        "name": "Tyrael's Might"
+        "id": 223271,
+        "name": "The Grandfather"
     },
     {
         "id": 2093166,
         "name": "Rod of Kepeleke"
     },
     {
-        "id": 223271,
-        "name": "The Grandfather"
+        "id": 1901484,
+        "name": "Tyrael's Might"
+    },
+    {
+        "id": 221017,
+        "name": "Doombringer"
     },
     {
         "id": 1304490,
@@ -60,6 +64,10 @@
         "name": "Arreat's Bearing"
     },
     {
+        "id": 1306326,
+        "name": "Temerity"
+    },
+    {
         "id": 186283,
         "name": "Fists of Fate"
     },
@@ -68,228 +76,144 @@
         "name": "Rakanoth's Wake"
     },
     {
-        "id": 221017,
-        "name": "Doombringer"
-    },
-    {
-        "id": 1306326,
-        "name": "Temerity"
-    },
-    {
         "id": 1944491,
         "name": "Shard of Verathiel"
-    },
-    {
-        "id": 241930,
-        "name": "Andariel's Visage"
-    },
-    {
-        "id": 1275935,
-        "name": "Melted Heart of Selig"
-    },
-    {
-        "id": 1704785,
-        "name": "Beastfall Boots"
-    },
-    {
-        "id": 1706651,
-        "name": "Airidah's Inexorable Will"
-    },
-    {
-        "id": 1306259,
-        "name": "Word of Hakan"
-    },
-    {
-        "id": 1217040,
-        "name": "Blood Moon Breeches"
     },
     {
         "id": 1559419,
         "name": "Tibault's Will"
     },
     {
-        "id": 1561308,
-        "name": "Banished Lord's Talisman"
+        "id": 1217040,
+        "name": "Blood Moon Breeches"
     },
     {
-        "id": 494989,
-        "name": "Cowl of the Nameless"
-    },
-    {
-        "id": 1865358,
-        "name": "Resplendent Spark"
-    },
-    {
-        "id": 203309,
-        "name": "Gloves of the Illuminator"
-    },
-    {
-        "id": 1555195,
-        "name": "Godslayer Crown"
-    },
-    {
-        "id": 1225568,
-        "name": "Tal Rasha's Iridescent Loop"
+        "id": 241930,
+        "name": "Andariel's Visage"
     },
     {
         "id": 1222627,
         "name": "Ring of Mendeln"
     },
     {
-        "id": 1966461,
-        "name": "Ring of the Midnight Sun"
+        "id": 1704785,
+        "name": "Beastfall Boots"
+    },
+    {
+        "id": 1561308,
+        "name": "Banished Lord's Talisman"
+    },
+    {
+        "id": 1706651,
+        "name": "Airidah's Inexorable Will"
+    },
+    {
+        "id": 1275935,
+        "name": "Melted Heart of Selig"
+    },
+    {
+        "id": 1865358,
+        "name": "Resplendent Spark"
+    },
+    {
+        "id": 1225568,
+        "name": "Tal Rasha's Iridescent Loop"
+    },
+    {
+        "id": 1306259,
+        "name": "Word of Hakan"
+    },
+    {
+        "id": 2224834,
+        "name": "Fedric's Gift"
+    },
+    {
+        "id": 494989,
+        "name": "Cowl of the Nameless"
     },
     {
         "id": 2134748,
         "name": "Okun's Catalyst"
     },
     {
-        "id": 1477080,
-        "name": "Tassets of the Dawning Sky"
-    },
-    {
-        "id": 357812,
-        "name": "Mad Wolf's Glee"
+        "id": 1555195,
+        "name": "Godslayer Crown"
     },
     {
         "id": 359743,
         "name": "Skyhunter"
     },
     {
-        "id": 2059813,
-        "name": "Shattered Vow"
-    },
-    {
-        "id": 2123318,
-        "name": "Indira's Memory"
+        "id": 1966461,
+        "name": "Ring of the Midnight Sun"
     },
     {
         "id": 1905888,
         "name": "Yen's Blessing"
     },
     {
-        "id": 418017,
-        "name": "Raiment of the Infinite"
+        "id": 357812,
+        "name": "Mad Wolf's Glee"
     },
     {
-        "id": 1902155,
-        "name": "Cruor's Embrace"
+        "id": 1477080,
+        "name": "Tassets of the Dawning Sky"
     },
     {
         "id": 359165,
         "name": "Ahavarion, Spear of Lycander"
     },
     {
+        "id": 2059813,
+        "name": "Shattered Vow"
+    },
+    {
+        "id": 203309,
+        "name": "Gloves of the Illuminator"
+    },
+    {
+        "id": 2123318,
+        "name": "Indira's Memory"
+    },
+    {
+        "id": 418017,
+        "name": "Raiment of the Infinite"
+    },
+    {
         "id": 1987546,
         "name": "Harmony of Ebewaka"
     },
     {
-        "id": 1063172,
-        "name": "Staff of Endless Rage"
-    },
-    {
-        "id": 1612292,
-        "name": "Scoundrel's Leathers"
+        "id": 1902155,
+        "name": "Cruor's Embrace"
     },
     {
         "id": 359352,
         "name": "Azurewrath"
     },
     {
-        "id": 2024115,
-        "name": "Sunstained War-Crozier"
-    },
-    {
-        "id": 2081135,
-        "name": "Malefic Crescent"
-    },
-    {
-        "id": 470539,
-        "name": "Eyes in the Dark"
-    },
-    {
-        "id": 1713218,
-        "name": "Starfall Coronet"
-    },
-    {
-        "id": 880590,
-        "name": "Storm's Companion"
-    },
-    {
-        "id": 1944530,
-        "name": "The Third Blade"
+        "id": 1612292,
+        "name": "Scoundrel's Leathers"
     },
     {
         "id": 1982241,
         "name": "Nesekem, the Herald"
     },
     {
-        "id": 1706660,
-        "name": "Ring of the Sacrilegious Soul"
-    },
-    {
         "id": 1306251,
         "name": "Grasp of Shadow"
-    },
-    {
-        "id": 1944475,
-        "name": "Crown of Lucion"
-    },
-    {
-        "id": 2081141,
-        "name": "Strike of Stormhorn"
-    },
-    {
-        "id": 1895711,
-        "name": "Flameweaver"
-    },
-    {
-        "id": 356745,
-        "name": "Ancients' Oath"
-    },
-    {
-        "id": 1439542,
-        "name": "Lidless Wall"
-    },
-    {
-        "id": 254721,
-        "name": "Frostburn"
-    },
-    {
-        "id": 208264,
-        "name": "Penitent Greaves"
-    },
-    {
-        "id": 2125049,
-        "name": "Tribute of Ascendance (United)"
-    },
-    {
-        "id": 1215065,
-        "name": "Razorplate"
-    },
-    {
-        "id": 1934445,
-        "name": "Axial Conduit"
-    },
-    {
-        "id": 2128605,
-        "name": "Piranhado"
     },
     {
         "id": 1862757,
         "name": "Fractured Winterglass"
     },
     {
-        "id": 1934441,
-        "name": "Path of Trag'Oul"
+        "id": 1713218,
+        "name": "Starfall Coronet"
     },
     {
-        "id": 2081162,
-        "name": "Assassin's Stride"
-    },
-    {
-        "id": 469648,
-        "name": "Asheara's Khanjar"
+        "id": 1063172,
+        "name": "Staff of Endless Rage"
     },
     {
         "id": 873651,
@@ -300,388 +224,428 @@
         "name": "Ramaladni's Magnum Opus"
     },
     {
-        "id": 1944508,
-        "name": "Locran's Talisman"
+        "id": 1944530,
+        "name": "The Third Blade"
     },
     {
-        "id": 1222182,
-        "name": "Overkill"
+        "id": 1895711,
+        "name": "Flameweaver"
+    },
+    {
+        "id": 1944475,
+        "name": "Crown of Lucion"
+    },
+    {
+        "id": 2024115,
+        "name": "Sunstained War-Crozier"
+    },
+    {
+        "id": 470539,
+        "name": "Eyes in the Dark"
+    },
+    {
+        "id": 880590,
+        "name": "Storm's Companion"
+    },
+    {
+        "id": 2081141,
+        "name": "Strike of Stormhorn"
+    },
+    {
+        "id": 2081135,
+        "name": "Malefic Crescent"
     },
     {
         "id": 1234671,
         "name": "Deathless Visage"
     },
     {
-        "id": 1559921,
-        "name": "X'Fal's Corroded Signet"
-    },
-    {
-        "id": 1944555,
-        "name": "The Umbracrux"
-    },
-    {
-        "id": 1987312,
-        "name": "Sepazontec"
-    },
-    {
-        "id": 223287,
-        "name": "The Butcher's Cleaver"
-    },
-    {
-        "id": 2090362,
-        "name": "Tribute of Ascendance (Resolute)"
-    },
-    {
-        "id": 1215134,
-        "name": "Mother's Embrace"
-    },
-    {
-        "id": 1560871,
-        "name": "Soulbrand"
-    },
-    {
-        "id": 1990382,
-        "name": "Loyalty's Mantle"
-    },
-    {
-        "id": 1306236,
-        "name": "Black River"
-    },
-    {
-        "id": 1902469,
-        "name": "Ebonpiercer"
-    },
-    {
-        "id": 1220208,
-        "name": "Bloodless Scream"
-    },
-    {
-        "id": 1225300,
-        "name": "Esadora's Overflowing Cameo"
-    },
-    {
-        "id": 1304378,
-        "name": "Rage of Harrogath"
-    },
-    {
-        "id": 989678,
-        "name": "Hunter's Zenith"
-    },
-    {
-        "id": 1944574,
-        "name": "The Mortacrux"
-    },
-    {
-        "id": 397700,
-        "name": "Fleshrender"
-    },
-    {
-        "id": 2053186,
-        "name": "The Unmaker"
-    },
-    {
-        "id": 300735,
-        "name": "Gohr's Devastating Grips"
-    },
-    {
-        "id": 1902139,
-        "name": "Wildheart Hunger"
-    },
-    {
-        "id": 1610441,
-        "name": "Dolmen Stone"
-    },
-    {
-        "id": 1230485,
-        "name": "Deathspeaker's Pendant"
-    },
-    {
-        "id": 1214792,
-        "name": "Flamescar"
-    },
-    {
-        "id": 1227278,
-        "name": "Howl from Below"
-    },
-    {
-        "id": 1944513,
-        "name": "Vox Omnium"
-    },
-    {
-        "id": 1758459,
-        "name": "Pitfighter's Gull"
-    },
-    {
-        "id": 1439530,
-        "name": "The Oculus"
-    },
-    {
-        "id": 1559325,
-        "name": "Paingorger's Gauntlets"
-    },
-    {
-        "id": 1858740,
-        "name": "Yen's Blessing"
-    },
-    {
-        "id": 2132211,
-        "name": "Doom Orb"
-    },
-    {
-        "id": 1306219,
-        "name": "Waxing Gibbous"
-    },
-    {
-        "id": 1881284,
-        "name": "Earthbreaker"
-    },
-    {
-        "id": 1211654,
-        "name": "Blue Rose"
-    },
-    {
-        "id": 1306230,
-        "name": "Blood Artisan's Cuirass"
-    },
-    {
-        "id": 1934408,
-        "name": "Unbroken Chain"
-    },
-    {
-        "id": 1934437,
-        "name": "Shroud of Khanduras"
-    },
-    {
-        "id": 1489566,
-        "name": "Tuskhelm of Joritz the Mighty"
-    },
-    {
-        "id": 1706658,
-        "name": "Writhing Band of Trickery"
-    },
-    {
-        "id": 1901746,
-        "name": "Twin Strikes"
-    },
-    {
-        "id": 1306302,
-        "name": "Esu's Heirloom"
+        "id": 1439542,
+        "name": "Lidless Wall"
     },
     {
         "id": 1306214,
         "name": "Vasily's Prayer"
     },
     {
-        "id": 1968318,
-        "name": "Scorn of the Earth"
+        "id": 1944555,
+        "name": "The Umbracrux"
     },
     {
-        "id": 1944544,
-        "name": "The Basilisk"
+        "id": 1559325,
+        "name": "Paingorger's Gauntlets"
     },
     {
-        "id": 2118062,
-        "name": "Mythic Unique Cache"
+        "id": 1220208,
+        "name": "Bloodless Scream"
     },
     {
-        "id": 1903128,
-        "name": "Saboteur's Signet"
+        "id": 2081162,
+        "name": "Assassin's Stride"
     },
     {
-        "id": 2043695,
-        "name": "Shard of Verathiel / The Third Blade"
+        "id": 208264,
+        "name": "Penitent Greaves"
     },
     {
-        "id": 2049847,
-        "name": "Sidhe Bindings"
+        "id": 1560871,
+        "name": "Soulbrand"
+    },
+    {
+        "id": 2090362,
+        "name": "Tribute of Ascendance (Resolute)"
+    },
+    {
+        "id": 989678,
+        "name": "Hunter's Zenith"
+    },
+    {
+        "id": 1934441,
+        "name": "Path of Trag'Oul"
+    },
+    {
+        "id": 1902469,
+        "name": "Ebonpiercer"
+    },
+    {
+        "id": 356745,
+        "name": "Ancients' Oath"
+    },
+    {
+        "id": 1559921,
+        "name": "X'Fal's Corroded Signet"
+    },
+    {
+        "id": 1706660,
+        "name": "Ring of the Sacrilegious Soul"
+    },
+    {
+        "id": 469648,
+        "name": "Asheara's Khanjar"
+    },
+    {
+        "id": 1215065,
+        "name": "Razorplate"
+    },
+    {
+        "id": 1222182,
+        "name": "Overkill"
+    },
+    {
+        "id": 1304378,
+        "name": "Rage of Harrogath"
+    },
+    {
+        "id": 223287,
+        "name": "The Butcher's Cleaver"
+    },
+    {
+        "id": 254721,
+        "name": "Frostburn"
+    },
+    {
+        "id": 1934445,
+        "name": "Axial Conduit"
+    },
+    {
+        "id": 1944508,
+        "name": "Locran's Talisman"
+    },
+    {
+        "id": 1214792,
+        "name": "Flamescar"
+    },
+    {
+        "id": 1306302,
+        "name": "Esu's Heirloom"
+    },
+    {
+        "id": 1944574,
+        "name": "The Mortacrux"
+    },
+    {
+        "id": 1990382,
+        "name": "Loyalty's Mantle"
+    },
+    {
+        "id": 2125049,
+        "name": "Tribute of Ascendance (United)"
     },
     {
         "id": 344413,
         "name": "Hellhammer"
     },
     {
-        "id": 1966414,
-        "name": "Band of First Breath"
+        "id": 1215134,
+        "name": "Mother's Embrace"
     },
     {
-        "id": 1712702,
-        "name": "Ring of the Ravenous"
+        "id": 1306219,
+        "name": "Waxing Gibbous"
     },
     {
-        "id": 451091,
-        "name": "Condemnation"
+        "id": 1306236,
+        "name": "Black River"
     },
     {
-        "id": 2043555,
-        "name": "Stone of Vehemen"
-    },
-    {
-        "id": 291609,
-        "name": "Fields of Crimson"
-    },
-    {
-        "id": 1966407,
-        "name": "Wound Drinker"
-    },
-    {
-        "id": 354700,
-        "name": "Greatstaff of the Crone"
-    },
-    {
-        "id": 1220258,
-        "name": "Greaves of the Empty Tomb"
-    },
-    {
-        "id": 1306274,
-        "name": "Iceheart Brais"
+        "id": 1902139,
+        "name": "Wildheart Hunger"
     },
     {
         "id": 1902313,
         "name": "Scoundrel's Kiss"
     },
     {
-        "id": 1944386,
-        "name": "Endurant Faith"
+        "id": 1881284,
+        "name": "Earthbreaker"
     },
     {
-        "id": 2224834,
-        "name": "Fedric's Gift"
+        "id": 1610441,
+        "name": "Dolmen Stone"
     },
     {
-        "id": 1969787,
-        "name": "Jacinth Shell"
+        "id": 1758459,
+        "name": "Pitfighter's Gull"
     },
     {
-        "id": 2012497,
-        "name": "Wushe Nak Pa"
+        "id": 1987312,
+        "name": "Sepazontec"
     },
     {
-        "id": 224074,
-        "name": "Windforce"
+        "id": 354700,
+        "name": "Greatstaff of the Crone"
     },
     {
-        "id": 1306311,
-        "name": "Staff of Lam Esen"
+        "id": 1966407,
+        "name": "Wound Drinker"
     },
     {
-        "id": 1433955,
-        "name": "Unsung Ascetic's Wraps"
+        "id": 1439530,
+        "name": "The Oculus"
     },
     {
-        "id": 1968430,
-        "name": "Craze of the Dead God"
+        "id": 300735,
+        "name": "Gohr's Devastating Grips"
+    },
+    {
+        "id": 1966414,
+        "name": "Band of First Breath"
+    },
+    {
+        "id": 2128605,
+        "name": "Piranhado"
+    },
+    {
+        "id": 1230485,
+        "name": "Deathspeaker's Pendant"
+    },
+    {
+        "id": 397700,
+        "name": "Fleshrender"
+    },
+    {
+        "id": 1934408,
+        "name": "Unbroken Chain"
+    },
+    {
+        "id": 451091,
+        "name": "Condemnation"
+    },
+    {
+        "id": 1225300,
+        "name": "Esadora's Overflowing Cameo"
+    },
+    {
+        "id": 1934437,
+        "name": "Shroud of Khanduras"
+    },
+    {
+        "id": 1903128,
+        "name": "Saboteur's Signet"
+    },
+    {
+        "id": 1944544,
+        "name": "The Basilisk"
+    },
+    {
+        "id": 1211654,
+        "name": "Blue Rose"
+    },
+    {
+        "id": 2053186,
+        "name": "The Unmaker"
+    },
+    {
+        "id": 291609,
+        "name": "Fields of Crimson"
     },
     {
         "id": 1224619,
         "name": "Mutilator Plate"
     },
     {
-        "id": 1966411,
-        "name": "Ring of Writhing Moon"
+        "id": 2049847,
+        "name": "Sidhe Bindings"
     },
     {
-        "id": 1210594,
-        "name": "100,000 Steps"
+        "id": 1944386,
+        "name": "Endurant Faith"
     },
     {
-        "id": 1439538,
-        "name": "Eaglehorn"
+        "id": 1944513,
+        "name": "Vox Omnium"
     },
     {
-        "id": 1966457,
-        "name": "Peacemonger's Signet"
+        "id": 2043695,
+        "name": "Shard of Verathiel / The Third Blade"
+    },
+    {
+        "id": 2118062,
+        "name": "Mythic Unique Cache"
+    },
+    {
+        "id": 1227278,
+        "name": "Howl from Below"
     },
     {
         "id": 1706602,
         "name": "Ring of Red Furor"
     },
     {
-        "id": 2166772,
-        "name": "Unique Coven Crate"
+        "id": 1969787,
+        "name": "Jacinth Shell"
+    },
+    {
+        "id": 1489566,
+        "name": "Tuskhelm of Joritz the Mighty"
+    },
+    {
+        "id": 2043555,
+        "name": "Stone of Vehemen"
+    },
+    {
+        "id": 1901746,
+        "name": "Twin Strikes"
+    },
+    {
+        "id": 1306274,
+        "name": "Iceheart Brais"
+    },
+    {
+        "id": 1220258,
+        "name": "Greaves of the Empty Tomb"
+    },
+    {
+        "id": 1433955,
+        "name": "Unsung Ascetic's Wraps"
+    },
+    {
+        "id": 1439538,
+        "name": "Eaglehorn"
+    },
+    {
+        "id": 2012497,
+        "name": "Wushe Nak Pa"
+    },
+    {
+        "id": 1968430,
+        "name": "Craze of the Dead God"
+    },
+    {
+        "id": 224074,
+        "name": "Windforce"
+    },
+    {
+        "id": 1210594,
+        "name": "100,000 Steps"
+    },
+    {
+        "id": 1968318,
+        "name": "Scorn of the Earth"
+    },
+    {
+        "id": 2132211,
+        "name": "Doom Orb"
+    },
+    {
+        "id": 1858740,
+        "name": "Yen's Blessing"
     },
     {
         "id": 1304469,
         "name": "Battle Trance"
     },
     {
-        "id": 2108306,
-        "name": "PTR Cache - Mythic Uniques"
+        "id": 1306230,
+        "name": "Blood Artisan's Cuirass"
     },
     {
-        "id": 2196161,
-        "name": "Greater Gift from the Ancestors"
+        "id": 1712702,
+        "name": "Ring of the Ravenous"
     },
     {
-        "id": 1913276,
-        "name": "Traces of the Maiden"
+        "id": 1706658,
+        "name": "Writhing Band of Trickery"
     },
     {
-        "id": 2020163,
-        "name": "Protection of the Prime"
+        "id": 1306311,
+        "name": "Staff of Lam Esen"
+    },
+    {
+        "id": 1966411,
+        "name": "Ring of Writhing Moon"
+    },
+    {
+        "id": 1934420,
+        "name": "Björnfang's Tusks (Not used, we reuse for future!)"
     },
     {
         "id": 2152974,
         "name": "Resplendent Coven Crate"
     },
     {
-        "id": 2164894,
-        "name": "Greater Gift from the Ancestors"
+        "id": 1966459,
+        "name": "Ring of the Midday Hunt"
     },
     {
-        "id": 1934420,
-        "name": "Bjornfang's Tusks (Not used, we reuse for future!)"
+        "id": 2166772,
+        "name": "Unique Coven Crate"
     },
     {
-        "id": 2123445,
-        "name": "[PH] Helm Unique Druid 98"
+        "id": 2108306,
+        "name": "PTR Cache - Mythic Uniques"
     },
     {
         "id": 2164973,
         "name": "Unique Coven Crate"
     },
     {
-        "id": 1966459,
-        "name": "Ring of the Midday Hunt"
+        "id": 2196161,
+        "name": "Greater Gift from the Ancestors"
     },
     {
-        "id": 2043706,
-        "name": "Vox Omnium / The Basilisk"
+        "id": 2020163,
+        "name": "Protection of the Prime"
     },
     {
-        "id": 2132230,
-        "name": "Vengeful Spirit"
+        "id": 2044980,
+        "name": "Bucrani's Visage"
     },
     {
-        "id": 2120656,
-        "name": "Guise of War"
-    },
-    {
-        "id": 2179153,
-        "name": "Fedric's Masterpiece"
+        "id": 2123445,
+        "name": "[PH] Helm Unique Druid 98"
     },
     {
         "id": 1456910,
         "name": "Pact Amulet"
     },
     {
-        "id": 1894225,
-        "name": "Highest Honors of the Iron Wolves"
-    },
-    {
-        "id": 2120654,
-        "name": "Fists of War"
-    },
-    {
-        "id": 2043693,
-        "name": "The Mortacrux / The Umbracrux"
+        "id": 1966457,
+        "name": "Peacemonger's Signet"
     },
     {
         "id": 2044978,
         "name": "Bucrani's Grip"
-    },
-    {
-        "id": 2166775,
-        "name": "Resplendent Coven Crate"
     },
     {
         "id": 1894213,
@@ -692,20 +656,20 @@
         "name": "Boost Pants"
     },
     {
-        "id": 2166765,
+        "id": 2179153,
+        "name": "Fedric's Masterpiece"
+    },
+    {
+        "id": 1913276,
+        "name": "Traces of the Maiden"
+    },
+    {
+        "id": 2152972,
         "name": "Unique Coven Crate"
     },
     {
-        "id": 2088142,
-        "name": "Champion's Equipment Cache"
-    },
-    {
-        "id": 2132228,
-        "name": "The Cycle"
-    },
-    {
-        "id": 2125641,
-        "name": "Destroyer's Cache"
+        "id": 2166775,
+        "name": "Resplendent Coven Crate"
     },
     {
         "id": 1895838,
@@ -724,20 +688,32 @@
         "name": "PTR Cache - Class Uniques"
     },
     {
-        "id": 2152972,
-        "name": "Unique Coven Crate"
+        "id": 2173056,
+        "name": "Mythic Treasure Bag"
     },
     {
         "id": 1859723,
         "name": "Iron Horn"
     },
     {
+        "id": 2043693,
+        "name": "The Mortacrux / The Umbracrux"
+    },
+    {
         "id": 2088144,
         "name": "Destroyer's Cache"
     },
     {
-        "id": 2173056,
-        "name": "Mythic Treasure Bag"
+        "id": 2120656,
+        "name": "Guise of War"
+    },
+    {
+        "id": 2166765,
+        "name": "Unique Coven Crate"
+    },
+    {
+        "id": 2173075,
+        "name": "Treasure Bag of Ascendance"
     },
     {
         "id": 946988,
@@ -752,44 +728,52 @@
         "name": "[PH] The Chandler"
     },
     {
+        "id": 498460,
+        "name": "Boost Helm"
+    },
+    {
         "id": 1723635,
         "name": "Tuning Stone: Genesis"
     },
     {
-        "id": 2173075,
-        "name": "Treasure Bag of Ascendance"
-    },
-    {
-        "id": 2044982,
-        "name": "Bucrani's Resolve"
+        "id": 1894225,
+        "name": "Highest Honors of the Iron Wolves"
     },
     {
         "id": 2059805,
         "name": "PH Barb Boots"
     },
     {
+        "id": 2125641,
+        "name": "Destroyer's Cache"
+    },
+    {
+        "id": 2132230,
+        "name": "Vengeful Spirit"
+    },
+    {
+        "id": 1638633,
+        "name": "[PH] Thorn Pulse"
+    },
+    {
+        "id": 2044982,
+        "name": "Bucrani's Resolve"
+    },
+    {
         "id": 2120722,
         "name": "[PH]"
     },
     {
-        "id": 498460,
-        "name": "Boost Helm"
-    },
-    {
-        "id": 946976,
-        "name": "Eternal Journey Chapter 3 Cache"
+        "id": 2132228,
+        "name": "The Cycle"
     },
     {
         "id": 1870166,
         "name": "Skatsimi Tome"
     },
     {
-        "id": 1905791,
-        "name": "[PH]Godslayer Crown"
-    },
-    {
-        "id": 2044980,
-        "name": "Bucrani's Visage"
+        "id": 2043706,
+        "name": "Vox Omnium / The Basilisk"
     },
     {
         "id": 1821197,
@@ -800,12 +784,20 @@
         "name": "[PH] Chest Key"
     },
     {
+        "id": 1905791,
+        "name": "[PH]Godslayer Crown"
+    },
+    {
         "id": 1913227,
         "name": "Traces of the Maiden"
     },
     {
         "id": 1963764,
         "name": "Destroyer's Equipment Cache"
+    },
+    {
+        "id": 2088142,
+        "name": "Champion's Equipment Cache"
     },
     {
         "id": 2120724,
@@ -816,8 +808,20 @@
         "name": "[PH]"
     },
     {
+        "id": 2164894,
+        "name": "Greater Gift from the Ancestors"
+    },
+    {
         "id": 2174880,
         "name": "Greater Midwinter Purse "
+    },
+    {
+        "id": 946976,
+        "name": "Eternal Journey Chapter 3 Cache"
+    },
+    {
+        "id": 1028192,
+        "name": "Chapter 1 Reward Cache"
     },
     {
         "id": 1636423,
@@ -830,10 +834,6 @@
     {
         "id": 1895831,
         "name": "Iron Wolves' Final Harvest"
-    },
-    {
-        "id": 1961692,
-        "name": "Greater Triune Arms Cache"
     },
     {
         "id": 2044974,
@@ -860,12 +860,8 @@
         "name": "Harriers of War"
     },
     {
-        "id": 2120652,
-        "name": "Heart of War"
-    },
-    {
-        "id": 2120658,
-        "name": "Strides of War"
+        "id": 2120654,
+        "name": "Fists of War"
     },
     {
         "id": 2122767,
@@ -880,16 +876,12 @@
         "name": "Something Super Cool"
     },
     {
-        "id": 1028192,
-        "name": "Chapter 1 Reward Cache"
-    },
-    {
-        "id": 1638633,
-        "name": "[PH] Thorn Pulse"
-    },
-    {
         "id": 1717304,
         "name": "Bloodforged Sigil"
+    },
+    {
+        "id": 1719158,
+        "name": "[WIP] Eye of the Depths"
     },
     {
         "id": 1827378,
@@ -897,10 +889,6 @@
     },
     {
         "id": 1895545,
-        "name": "Iron Wolves' Heroic Spoils"
-    },
-    {
-        "id": 1895652,
         "name": "Iron Wolves' Heroic Spoils"
     },
     {
@@ -932,16 +920,16 @@
         "name": "New Item [PH]"
     },
     {
+        "id": 2081122,
+        "name": "[PH] Season 8 Barb Gloves"
+    },
+    {
         "id": 2103028,
         "name": "Severed Hand of the Zakarum"
     },
     {
         "id": 2122775,
         "name": "[PH] The Chandler"
-    },
-    {
-        "id": 2123442,
-        "name": "[PH] Gloves Unique Druid 98"
     },
     {
         "id": 2123447,
@@ -1000,10 +988,6 @@
         "name": "Boost Staff"
     },
     {
-        "id": 1719158,
-        "name": "[WIP] Eye of the Depths"
-    },
-    {
         "id": 1723622,
         "name": "Tuning Stone: Evernight"
     },
@@ -1026,6 +1010,10 @@
     {
         "id": 1873020,
         "name": "[PH] BSK Upgrade"
+    },
+    {
+        "id": 1895652,
+        "name": "Iron Wolves' Heroic Spoils"
     },
     {
         "id": 1895747,
@@ -1080,6 +1068,10 @@
         "name": "Triune Strongbox of Endurant Faith"
     },
     {
+        "id": 1961692,
+        "name": "Greater Triune Arms Cache"
+    },
+    {
         "id": 1963748,
         "name": "Slayer's Equipment Cache"
     },
@@ -1096,10 +1088,6 @@
         "name": "Bucrani's Will"
     },
     {
-        "id": 2081122,
-        "name": "[PH] Season 8 Barb Gloves"
-    },
-    {
         "id": 2081129,
         "name": "[PH] Season 8 Druid Helm"
     },
@@ -1114,6 +1102,14 @@
     {
         "id": 2088150,
         "name": "Destroyer's Equipment Cache"
+    },
+    {
+        "id": 2120652,
+        "name": "Heart of War"
+    },
+    {
+        "id": 2120658,
+        "name": "Strides of War"
     },
     {
         "id": 2120727,
@@ -1134,6 +1130,10 @@
     {
         "id": 2123439,
         "name": "[PH] Chest Unique Druid 98"
+    },
+    {
+        "id": 2123442,
+        "name": "[PH] Gloves Unique Druid 98"
     },
     {
         "id": 2123449,

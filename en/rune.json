@@ -1,7 +1,7 @@
 {
     "url1":"https://www.wowhead.com/diablo-4/items/type:446841",
     "url2":"https://www.wowhead.com/diablo-4/items/type:446842",
-    "source":"g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
+    "source":"g_listviews.items.data.sort(i=>i.id).map(i=>({id: i.id, name: i.name}))",
     "items":
 [
     {
@@ -13,12 +13,12 @@
         "name": "Bac"
     },
     {
-        "id": 2040700,
-        "name": "Xol"
-    },
-    {
         "id": 2060482,
         "name": "Lith"
+    },
+    {
+        "id": 2040700,
+        "name": "Xol"
     },
     {
         "id": 1968107,
@@ -57,28 +57,28 @@
         "name": "Feo"
     },
     {
+        "id": 2089875,
+        "name": "Noc"
+    },
+    {
         "id": 1968097,
         "name": "Cem"
-    },
-    {
-        "id": 2020681,
-        "name": "Ur"
-    },
-    {
-        "id": 2080568,
-        "name": "Ahu"
     },
     {
         "id": 2063988,
         "name": "Neo"
     },
     {
-        "id": 2089875,
-        "name": "Noc"
+        "id": 2020681,
+        "name": "Ur"
     },
     {
         "id": 2081285,
         "name": "Kaa"
+    },
+    {
+        "id": 2080568,
+        "name": "Ahu"
     },
     {
         "id": 2046440,
@@ -117,28 +117,28 @@
         "name": "Qax"
     },
     {
-        "id": 2004863,
-        "name": "Wat"
+        "id": 2060652,
+        "name": "Eom"
     },
     {
         "id": 2024157,
         "name": "Vex"
     },
     {
-        "id": 2060652,
-        "name": "Eom"
+        "id": 2004863,
+        "name": "Wat"
     },
     {
         "id": 1983345,
         "name": "Tec"
     },
     {
-        "id": 2039543,
-        "name": "Jah"
-    },
-    {
         "id": 2021641,
         "name": "Xal"
+    },
+    {
+        "id": 2039543,
+        "name": "Jah"
     },
     {
         "id": 2004805,
@@ -157,64 +157,48 @@
         "name": "Kry"
     },
     {
-        "id": 1969846,
-        "name": "Thul"
-    },
-    {
-        "id": 1968586,
-        "name": "Lum"
+        "id": 2004724,
+        "name": "Met"
     },
     {
         "id": 2004876,
         "name": "Ton"
     },
     {
-        "id": 2090794,
-        "name": "Yom"
+        "id": 2090245,
+        "name": "Lac"
     },
     {
-        "id": 2004724,
-        "name": "Met"
+        "id": 2090794,
+        "name": "Yom"
     },
     {
         "id": 2166985,
         "name": "Chac"
     },
     {
+        "id": 1969846,
+        "name": "Thul"
+    },
+    {
         "id": 2021777,
         "name": "Thar"
     },
     {
-        "id": 2093514,
-        "name": "Tzic"
-    },
-    {
-        "id": 2090245,
-        "name": "Lac"
+        "id": 1968586,
+        "name": "Lum"
     },
     {
         "id": 2039603,
         "name": "Ner"
     },
     {
-        "id": 2004782,
-        "name": "Tun"
-    },
-    {
         "id": 2096425,
         "name": "Ehe"
     },
     {
-        "id": 2006151,
-        "name": "Ono"
-    },
-    {
         "id": 2040871,
         "name": "Tal"
-    },
-    {
-        "id": 2057116,
-        "name": "Ceh"
     },
     {
         "id": 2057889,
@@ -225,20 +209,36 @@
         "name": "Mot"
     },
     {
+        "id": 2093514,
+        "name": "Tzic"
+    },
+    {
         "id": 2043182,
         "name": "Qua"
+    },
+    {
+        "id": 2004782,
+        "name": "Tun"
+    },
+    {
+        "id": 2057116,
+        "name": "Ceh"
+    },
+    {
+        "id": 2006151,
+        "name": "Ono"
     },
     {
         "id": 2088917,
         "name": "Teb"
     },
     {
-        "id": 2088738,
-        "name": "Cha"
-    },
-    {
         "id": 2040966,
         "name": "Ura"
+    },
+    {
+        "id": 2088738,
+        "name": "Cha"
     },
     {
         "id": 2073683,

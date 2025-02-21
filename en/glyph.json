@@ -1,51 +1,79 @@
 {
     "url":"https://www.wowhead.com/diablo-4/paragon-glyphs",
-    "source":"g_listviews['paragon-glyphs'].data.map(i=>({id: i.id, name: i.name}))",
+    "source":"g_listviews['paragon-glyphs'].data.sort(i=>i.id).map(i=>({id: i.id, name: i.name}))",
     "items":
 [
     {
-        "id": 1071719,
-        "name": "Imbiber"
-    },
-    {
-        "id": 2073373,
-        "name": "Challenger"
-    },
-    {
-        "id": 1622788,
-        "name": "Rumble"
-    },
-    {
-        "id": 1029482,
-        "name": "Devious"
+        "id": 1029487,
+        "name": "Canny"
     },
     {
         "id": 1027096,
         "name": "Undaunted"
     },
     {
-        "id": 1031006,
-        "name": "Amplify"
+        "id": 2073373,
+        "name": "Challenger"
+    },
+    {
+        "id": 1029482,
+        "name": "Devious"
+    },
+    {
+        "id": 1071719,
+        "name": "Imbiber"
+    },
+    {
+        "id": 1622788,
+        "name": "Rumble"
+    },
+    {
+        "id": 2072751,
+        "name": "Eliminator"
+    },
+    {
+        "id": 1027091,
+        "name": "Wrath"
     },
     {
         "id": 1028226,
         "name": "Fang and Claw"
     },
     {
+        "id": 1031001,
+        "name": "Corporeal"
+    },
+    {
+        "id": 2070631,
+        "name": "Hubris"
+    },
+    {
+        "id": 1023185,
+        "name": "Unleash"
+    },
+    {
         "id": 1031004,
         "name": "Deadraiser"
+    },
+    {
+        "id": 1027088,
+        "name": "Ire"
+    },
+    {
+        "id": 1029476,
+        "name": "Versatility"
+    },
+    {
+        "id": 2073378,
+        "name": "Headhunter"
     },
     {
         "id": 1028233,
         "name": "Keeper"
     },
     {
-        "id": 1029487,
-        "name": "Canny"
-    },
-    {
-        "id": 1031001,
-        "name": "Corporeal"
+        "id": 1031006,
+        "name": "Amplify"
     },
     {
         "id": 1031058,
@@ -60,212 +88,192 @@
         "name": "Essence"
     },
     {
-        "id": 1027091,
-        "name": "Wrath"
-    },
-    {
-        "id": 1027088,
-        "name": "Ire"
-    },
-    {
-        "id": 2072751,
-        "name": "Eliminator"
-    },
-    {
-        "id": 1029476,
-        "name": "Versatility"
-    },
-    {
         "id": 1028237,
         "name": "Spirit"
-    },
-    {
-        "id": 1023199,
-        "name": "Exploit"
-    },
-    {
-        "id": 2070631,
-        "name": "Hubris"
     },
     {
         "id": 1031000,
         "name": "Sacrificial"
     },
     {
-        "id": 1023185,
-        "name": "Unleash"
-    },
-    {
-        "id": 1631011,
-        "name": "Desecration"
-    },
-    {
-        "id": 1023197,
-        "name": "Territorial"
-    },
-    {
-        "id": 1027095,
-        "name": "Revenge"
+        "id": 1023199,
+        "name": "Exploit"
     },
     {
         "id": 1023186,
         "name": "Elementalist"
     },
     {
-        "id": 1027089,
-        "name": "Marshal"
-    },
-    {
-        "id": 2073378,
-        "name": "Headhunter"
-    },
-    {
-        "id": 1029486,
-        "name": "Combat"
-    },
-    {
-        "id": 1023193,
-        "name": "Tactician"
-    },
-    {
-        "id": 2067375,
-        "name": "Talon"
-    },
-    {
-        "id": 1331811,
-        "name": "Dominate"
-    },
-    {
-        "id": 1023184,
-        "name": "Enchanter"
-    },
-    {
-        "id": 1027083,
-        "name": "Might"
+        "id": 1027095,
+        "name": "Revenge"
     },
     {
         "id": 1029491,
         "name": "Control"
     },
     {
-        "id": 1031012,
-        "name": "Gravekeeper"
+        "id": 1627925,
+        "name": "Electrocution"
     },
     {
         "id": 1629205,
         "name": "Exhumation"
     },
     {
-        "id": 1627925,
-        "name": "Electrocution"
+        "id": 1023202,
+        "name": "Destruction"
     },
     {
-        "id": 1027075,
-        "name": "Ambidextrous"
+        "id": 1023193,
+        "name": "Tactician"
+    },
+    {
+        "id": 1029486,
+        "name": "Combat"
+    },
+    {
+        "id": 2067375,
+        "name": "Talon"
+    },
+    {
+        "id": 1027089,
+        "name": "Marshal"
+    },
+    {
+        "id": 1331811,
+        "name": "Dominate"
     },
     {
         "id": 1029481,
         "name": "Fluidity"
     },
     {
-        "id": 1028236,
-        "name": "Outmatch"
+        "id": 1631011,
+        "name": "Desecration"
     },
     {
-        "id": 2117207,
-        "name": "Headhunter"
-    },
-    {
-        "id": 1027093,
-        "name": "Weapon Master"
-    },
-    {
-        "id": 1023202,
-        "name": "Destruction"
-    },
-    {
-        "id": 1027087,
-        "name": "Executioner"
-    },
-    {
-        "id": 2069252,
-        "name": "Colossal"
+        "id": 1031012,
+        "name": "Gravekeeper"
     },
     {
         "id": 1029494,
         "name": "Pride"
     },
     {
-        "id": 1621704,
-        "name": "Twister"
-    },
-    {
-        "id": 2066786,
-        "name": "Jagged Plume"
-    },
-    {
-        "id": 2063983,
-        "name": "Fitness"
-    },
-    {
-        "id": 2069914,
-        "name": "Ritual"
-    },
-    {
-        "id": 2077106,
-        "name": "Spirit"
+        "id": 1023184,
+        "name": "Enchanter"
     },
     {
         "id": 1023190,
         "name": "Torch"
     },
     {
-        "id": 1031008,
-        "name": "Scourge"
-    },
-    {
-        "id": 2077016,
-        "name": "Fulminate"
+        "id": 1027083,
+        "name": "Might"
     },
     {
         "id": 1027097,
         "name": "Dominate"
     },
     {
-        "id": 1028227,
-        "name": "Earth and Sky"
+        "id": 1027087,
+        "name": "Executioner"
+    },
+    {
+        "id": 1031008,
+        "name": "Scourge"
+    },
+    {
+        "id": 2066786,
+        "name": "Jagged Plume"
+    },
+    {
+        "id": 1027075,
+        "name": "Ambidextrous"
+    },
+    {
+        "id": 1023197,
+        "name": "Territorial"
+    },
+    {
+        "id": 2117207,
+        "name": "Headhunter"
     },
     {
         "id": 1029497,
         "name": "Bane"
     },
     {
-        "id": 2064639,
-        "name": "Menagerist"
+        "id": 1031007,
+        "name": "Golem"
+    },
+    {
+        "id": 1331846,
+        "name": "Revenge"
     },
     {
         "id": 1031005,
         "name": "Mage"
     },
     {
-        "id": 1031007,
-        "name": "Golem"
+        "id": 1023200,
+        "name": "Winter"
+    },
+    {
+        "id": 1031003,
+        "name": "Control"
+    },
+    {
+        "id": 2077106,
+        "name": "Spirit"
     },
     {
         "id": 1029490,
         "name": "Exploit"
     },
     {
-        "id": 1023200,
-        "name": "Winter"
+        "id": 1023191,
+        "name": "Pyromaniac"
     },
     {
-        "id": 1028238,
-        "name": "Shapeshifter"
+        "id": 1023203,
+        "name": "Control"
     },
     {
-        "id": 1068821,
-        "name": "Undaunted"
+        "id": 1028228,
+        "name": "Wilds"
+    },
+    {
+        "id": 1028236,
+        "name": "Outmatch"
+    },
+    {
+        "id": 1023198,
+        "name": "Flamefeeder"
+    },
+    {
+        "id": 1027093,
+        "name": "Weapon Master"
+    },
+    {
+        "id": 1296014,
+        "name": "Exploit"
+    },
+    {
+        "id": 1621704,
+        "name": "Twister"
+    },
+    {
+        "id": 1622887,
+        "name": "Explosive"
+    },
+    {
+        "id": 2064639,
+        "name": "Menagerist"
+    },
+    {
+        "id": 2067631,
+        "name": "Wildfire"
     },
     {
         "id": 1023188,
@@ -276,42 +284,6 @@
         "name": "Reinforced"
     },
     {
-        "id": 1023198,
-        "name": "Flamefeeder"
-    },
-    {
-        "id": 1023203,
-        "name": "Control"
-    },
-    {
-        "id": 1029479,
-        "name": "Chip"
-    },
-    {
-        "id": 1331846,
-        "name": "Revenge"
-    },
-    {
-        "id": 1023191,
-        "name": "Pyromaniac"
-    },
-    {
-        "id": 1027099,
-        "name": "Brawl"
-    },
-    {
-        "id": 1028228,
-        "name": "Wilds"
-    },
-    {
-        "id": 2067631,
-        "name": "Wildfire"
-    },
-    {
-        "id": 1023192,
-        "name": "Frostbite"
-    },
-    {
         "id": 1027086,
         "name": "Crusher"
     },
@@ -320,12 +292,8 @@
         "name": "Poise"
     },
     {
-        "id": 1296014,
-        "name": "Exploit"
-    },
-    {
-        "id": 1029480,
-        "name": "Frostfeeder"
+        "id": 1029479,
+        "name": "Chip"
     },
     {
         "id": 1023201,
@@ -336,44 +304,68 @@
         "name": "Dominate"
     },
     {
-        "id": 1622887,
-        "name": "Explosive"
+        "id": 1023187,
+        "name": "Adept"
     },
     {
-        "id": 1029478,
-        "name": "Ranger"
-    },
-    {
-        "id": 2067561,
-        "name": "Innate"
-    },
-    {
-        "id": 2120405,
-        "name": "Revenge"
+        "id": 1028227,
+        "name": "Earth and Sky"
     },
     {
         "id": 1028235,
         "name": "Tracker"
     },
     {
-        "id": 1031003,
-        "name": "Control"
+        "id": 1029478,
+        "name": "Ranger"
     },
     {
-        "id": 1023187,
-        "name": "Adept"
+        "id": 1031011,
+        "name": "Warrior"
+    },
+    {
+        "id": 2063983,
+        "name": "Fitness"
+    },
+    {
+        "id": 2067561,
+        "name": "Innate"
+    },
+    {
+        "id": 2069252,
+        "name": "Colossal"
+    },
+    {
+        "id": 2069914,
+        "name": "Ritual"
+    },
+    {
+        "id": 2120405,
+        "name": "Revenge"
     },
     {
         "id": 1023196,
         "name": "Warding"
     },
     {
-        "id": 1029489,
-        "name": "Snare"
+        "id": 2077016,
+        "name": "Fulminate"
     },
     {
-        "id": 1031002,
-        "name": "Blood-drinker"
+        "id": 1023192,
+        "name": "Frostbite"
+    },
+    {
+        "id": 1029477,
+        "name": "Closer"
+    },
+    {
+        "id": 1029488,
+        "name": "Efficacy"
+    },
+    {
+        "id": 1623747,
+        "name": "Invocation"
     },
     {
         "id": 1217015,
@@ -388,24 +380,24 @@
         "name": "Outmatch"
     },
     {
-        "id": 1027098,
-        "name": "Disembowel"
-    },
-    {
         "id": 1028230,
         "name": "Werewolf"
     },
     {
-        "id": 1029477,
-        "name": "Closer"
+        "id": 1028238,
+        "name": "Shapeshifter"
     },
     {
-        "id": 1029488,
-        "name": "Efficacy"
+        "id": 1029489,
+        "name": "Snare"
     },
     {
         "id": 1029493,
         "name": "Turf"
+    },
+    {
+        "id": 1068821,
+        "name": "Undaunted"
     },
     {
         "id": 1294418,
@@ -416,16 +408,8 @@
         "name": "Stalagmite"
     },
     {
-        "id": 1624740,
-        "name": "Tectonic"
-    },
-    {
         "id": 2067363,
         "name": "Hone"
-    },
-    {
-        "id": 2070496,
-        "name": "Consumption"
     },
     {
         "id": 1023189,
@@ -444,28 +428,36 @@
         "name": "Human"
     },
     {
-        "id": 1623747,
-        "name": "Invocation"
-    },
-    {
-        "id": 1023194,
-        "name": "Guzzler"
-    },
-    {
-        "id": 1028229,
-        "name": "Werebear"
+        "id": 1029480,
+        "name": "Frostfeeder"
     },
     {
         "id": 1029495,
         "name": "Ambush"
     },
     {
-        "id": 1031011,
-        "name": "Warrior"
+        "id": 1023194,
+        "name": "Guzzler"
+    },
+    {
+        "id": 1027099,
+        "name": "Brawl"
+    },
+    {
+        "id": 1028229,
+        "name": "Werebear"
+    },
+    {
+        "id": 1031002,
+        "name": "Blood-drinker"
     },
     {
         "id": 1027094,
         "name": "Mortal Draw"
+    },
+    {
+        "id": 1027098,
+        "name": "Disembowel"
     },
     {
         "id": 1029496,
@@ -476,16 +468,24 @@
         "name": ""
     },
     {
+        "id": 1624740,
+        "name": "Tectonic"
+    },
+    {
         "id": 1028232,
         "name": "Bane"
     },
     {
-        "id": 1027084,
-        "name": "Cleaver"
-    },
-    {
         "id": 1029485,
         "name": "Infusion"
+    },
+    {
+        "id": 2070496,
+        "name": "Consumption"
+    },
+    {
+        "id": 1027084,
+        "name": "Cleaver"
     },
     {
         "id": 1068816,

@@ -1,6 +1,6 @@
 {
     "url":"https://www.wowhead.com/diablo-4/paragon-nodes/quality:4",
-    "source":"g_listviews['paragon-nodes'].data.map(i=>({id: i.id, name: i.name}))",
+    "source":"g_listviews['paragon-nodes'].data.sort(i=>i.id).map(i=>({id: i.id, name: i.name}))",
     "items":
 [
     {
@@ -8,20 +8,24 @@
         "name": "Flesh-eater"
     },
     {
-        "id": 2058789,
-        "name": "Convergence"
+        "id": 681471,
+        "name": "Blood Begets Blood"
     },
     {
         "id": 909282,
         "name": "Ancestral Guidance"
     },
     {
+        "id": 672795,
+        "name": "Searing Heat"
+    },
+    {
         "id": 671210,
         "name": "Blood Rage"
     },
     {
-        "id": 679683,
-        "name": "Eldritch Bounty"
+        "id": 672898,
+        "name": "Frigid Fate"
     },
     {
         "id": 679689,
@@ -32,24 +36,12 @@
         "name": "No Witnesses"
     },
     {
-        "id": 681471,
-        "name": "Blood Begets Blood"
-    },
-    {
         "id": 671213,
         "name": "Force of Nature"
     },
     {
-        "id": 676788,
-        "name": "Lust for Carnage"
-    },
-    {
-        "id": 672795,
-        "name": "Searing Heat"
-    },
-    {
-        "id": 672898,
-        "name": "Frigid Fate"
+        "id": 679687,
+        "name": "Tricks of the Trade"
     },
     {
         "id": 674891,
@@ -60,44 +52,36 @@
         "name": "Exploit Weakness"
     },
     {
-        "id": 2060357,
-        "name": "Sapping"
+        "id": 676410,
+        "name": "Thunderstruck"
+    },
+    {
+        "id": 681470,
+        "name": "Bloodbath"
+    },
+    {
+        "id": 2058789,
+        "name": "Convergence"
     },
     {
         "id": 2026208,
         "name": "Bitter Medicine"
     },
     {
-        "id": 2025928,
-        "name": "Viscous Shield"
-    },
-    {
-        "id": 2026647,
-        "name": "Drive"
+        "id": 681476,
+        "name": "Wither"
     },
     {
         "id": 909281,
         "name": "Constricting Tendrils"
     },
     {
-        "id": 672773,
-        "name": "Burning Instinct"
+        "id": 676788,
+        "name": "Lust for Carnage"
     },
     {
-        "id": 945466,
-        "name": "Weapons Master"
-    },
-    {
-        "id": 676410,
-        "name": "Thunderstruck"
-    },
-    {
-        "id": 679687,
-        "name": "Tricks of the Trade"
-    },
-    {
-        "id": 681476,
-        "name": "Wither"
+        "id": 679683,
+        "name": "Eldritch Bounty"
     },
     {
         "id": 673102,
@@ -108,52 +92,52 @@
         "name": "Frailty"
     },
     {
+        "id": 681467,
+        "name": "Scent of Death"
+    },
+    {
+        "id": 2060357,
+        "name": "Sapping"
+    },
+    {
+        "id": 672901,
+        "name": "Icefall"
+    },
+    {
         "id": 672943,
         "name": "Static Surge"
     },
     {
-        "id": 681470,
-        "name": "Bloodbath"
+        "id": 672773,
+        "name": "Burning Instinct"
     },
     {
         "id": 2066155,
         "name": "Danse Macabre"
     },
     {
-        "id": 679690,
-        "name": "Deadly Ambush"
-    },
-    {
-        "id": 673125,
-        "name": "Elemental Summoner"
-    },
-    {
-        "id": 676805,
-        "name": "Heightened Malice"
-    },
-    {
-        "id": 674910,
-        "name": "Bone Breaker"
+        "id": 2092084,
+        "name": "Fundamental Release"
     },
     {
         "id": 671203,
         "name": "Warbringer"
     },
     {
+        "id": 945466,
+        "name": "Weapons Master"
+    },
+    {
+        "id": 673447,
+        "name": "Enchantment Master"
+    },
+    {
         "id": 2021651,
         "name": "In-Fighter"
     },
     {
-        "id": 671205,
-        "name": "Carnage"
-    },
-    {
-        "id": 671212,
-        "name": "Hemorrhage"
-    },
-    {
-        "id": 679691,
-        "name": "Leyrana's Instinct"
+        "id": 674910,
+        "name": "Bone Breaker"
     },
     {
         "id": 676479,
@@ -164,40 +148,56 @@
         "name": "Flawless Technique"
     },
     {
-        "id": 673447,
-        "name": "Enchantment Master"
+        "id": 671212,
+        "name": "Hemorrhage"
     },
     {
-        "id": 2092084,
-        "name": "Fundamental Release"
+        "id": 2025928,
+        "name": "Viscous Shield"
+    },
+    {
+        "id": 671205,
+        "name": "Carnage"
     },
     {
         "id": 681465,
         "name": "Hulking Monstrosity"
     },
     {
-        "id": 681461,
-        "name": "Cult Leader"
+        "id": 679691,
+        "name": "Leyrana's Instinct"
     },
     {
-        "id": 679695,
-        "name": "Cunning Stratagem"
-    },
-    {
-        "id": 681467,
-        "name": "Scent of Death"
+        "id": 679690,
+        "name": "Deadly Ambush"
     },
     {
         "id": 676454,
         "name": "Earthen Devastation"
     },
     {
+        "id": 673125,
+        "name": "Elemental Summoner"
+    },
+    {
+        "id": 681461,
+        "name": "Cult Leader"
+    },
+    {
+        "id": 676805,
+        "name": "Heightened Malice"
+    },
+    {
+        "id": 679695,
+        "name": "Cunning Stratagem"
+    },
+    {
         "id": 2025032,
         "name": "Spiney Skin"
     },
     {
-        "id": 2026485,
-        "name": "Revealing"
+        "id": 2026647,
+        "name": "Drive"
     },
     {
         "id": 934519,
@@ -208,8 +208,8 @@
         "name": "Inner Beast"
     },
     {
-        "id": 672901,
-        "name": "Icefall"
+        "id": 2026485,
+        "name": "Revealing"
     },
     {
         "id": 2060011,
