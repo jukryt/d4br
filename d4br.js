@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.15.0
+// @version      0.15.1
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -14,21 +14,21 @@
 // @supportURL   https://github.com/jukryt/d4br/issues
 // @grant        GM_getResourceText
 
-// @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/aspect.json
-// @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/glyph.json
-// @resource     unq_item_en  https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/unq_item.json
-// @resource     leg_node_en  https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/leg_node.json
-// @resource     rune_en      https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/rune.json
-// @resource     skill_en     https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/skill.json
-// @resource     temper_en    https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/en/temper.json
+// @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/en/aspect.json
+// @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/en/glyph.json
+// @resource     unq_item_en  https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/en/unq_item.json
+// @resource     leg_node_en  https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/en/leg_node.json
+// @resource     rune_en      https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/en/rune.json
+// @resource     skill_en     https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/en/skill.json
+// @resource     temper_en    https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/en/temper.json
 
-// @resource     aspect_ru    https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/aspect.json
-// @resource     glyph_ru     https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/glyph.json
-// @resource     unq_item_ru  https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/unq_item.json
-// @resource     leg_node_ru  https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/leg_node.json
-// @resource     rune_ru      https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/rune.json
-// @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/skill.json
-// @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/01294eaaaf0c6587866d85cea0add1fbf226e1c5/ru/temper.json
+// @resource     aspect_ru    https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/ru/aspect.json
+// @resource     glyph_ru     https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/ru/glyph.json
+// @resource     unq_item_ru  https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/ru/unq_item.json
+// @resource     leg_node_ru  https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/ru/leg_node.json
+// @resource     rune_ru      https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/ru/rune.json
+// @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/ru/skill.json
+// @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/3ed3bb4dfe9656c8e4810604986701978d6c3eab/ru/temper.json
 
 // ==/UserScript==
 
@@ -60,13 +60,13 @@ class EnglishLanguage extends Language {
     constructor() {
         super();
 
-        this.aspects = ExternalResource.getJsonResource("aspect_en").items;
-        this.glyphs = ExternalResource.getJsonResource("glyph_en").items;
-        this.unqItems = ExternalResource.getJsonResource("unq_item_en").items;
-        this.legNodes = ExternalResource.getJsonResource("leg_node_en").items;
-        this.runes = ExternalResource.getJsonResource("rune_en").items;
-        this.skills = ExternalResource.getJsonResource("skill_en").items;
-        this.tempers = ExternalResource.getJsonResource("temper_en").items;
+        this.aspects = ExternalResource.getJsonResource("aspect_en");
+        this.glyphs = ExternalResource.getJsonResource("glyph_en");
+        this.unqItems = ExternalResource.getJsonResource("unq_item_en");
+        this.legNodes = ExternalResource.getJsonResource("leg_node_en");
+        this.runes = ExternalResource.getJsonResource("rune_en");
+        this.skills = ExternalResource.getJsonResource("skill_en");
+        this.tempers = ExternalResource.getJsonResource("temper_en");
     }
 }
 
@@ -74,13 +74,13 @@ class RussianLanguage extends Language {
     constructor() {
         super();
 
-        this.aspects = ExternalResource.getJsonResource("aspect_ru").items;
-        this.glyphs = ExternalResource.getJsonResource("glyph_ru").items;
-        this.unqItems = ExternalResource.getJsonResource("unq_item_ru").items;
-        this.legNodes = ExternalResource.getJsonResource("leg_node_ru").items;
-        this.runes = ExternalResource.getJsonResource("rune_ru").items;
-        this.skills = ExternalResource.getJsonResource("skill_ru").items;
-        this.tempers = ExternalResource.getJsonResource("temper_ru").items;
+        this.aspects = ExternalResource.getJsonResource("aspect_ru");
+        this.glyphs = ExternalResource.getJsonResource("glyph_ru");
+        this.unqItems = ExternalResource.getJsonResource("unq_item_ru");
+        this.legNodes = ExternalResource.getJsonResource("leg_node_ru");
+        this.runes = ExternalResource.getJsonResource("rune_ru");
+        this.skills = ExternalResource.getJsonResource("skill_ru");
+        this.tempers = ExternalResource.getJsonResource("temper_ru");
     }
 }
 
