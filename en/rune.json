@@ -1,256 +1,250 @@
-{
-    "url1":"https://www.wowhead.com/diablo-4/items/type:446841",
-    "url2":"https://www.wowhead.com/diablo-4/items/type:446842",
-    "source":"g_listviews.items.data.sort(i=>i.id).map(i=>({id: i.id, name: i.name}))",
-    "items":
 [
-    {
-        "id": 2165977,
-        "name": "Igni"
-    },
-    {
-        "id": 1999352,
-        "name": "Bac"
-    },
-    {
-        "id": 2060482,
-        "name": "Lith"
-    },
-    {
-        "id": 2040700,
-        "name": "Xol"
-    },
-    {
-        "id": 1968107,
-        "name": "Tam"
-    },
-    {
-        "id": 2004498,
-        "name": "Yul"
-    },
-    {
-        "id": 1968550,
-        "name": "Zan"
-    },
-    {
-        "id": 2060618,
-        "name": "Cir"
-    },
-    {
-        "id": 2155997,
-        "name": "Nagu"
-    },
-    {
-        "id": 2004454,
-        "name": "Poc"
-    },
-    {
-        "id": 2063887,
-        "name": "Moni"
-    },
-    {
-        "id": 1969054,
-        "name": "Yax"
-    },
-    {
-        "id": 2006748,
-        "name": "Feo"
-    },
-    {
-        "id": 2089875,
-        "name": "Noc"
-    },
-    {
-        "id": 1968097,
-        "name": "Cem"
-    },
-    {
-        "id": 2063988,
-        "name": "Neo"
-    },
-    {
-        "id": 2020681,
-        "name": "Ur"
-    },
-    {
-        "id": 2081285,
-        "name": "Kaa"
-    },
-    {
-        "id": 2080568,
-        "name": "Ahu"
-    },
-    {
-        "id": 2046440,
-        "name": "Hak"
-    },
-    {
-        "id": 2085644,
-        "name": "Pac"
-    },
-    {
-        "id": 2021604,
-        "name": "Cip"
-    },
-    {
-        "id": 2040857,
-        "name": "Tza"
-    },
-    {
-        "id": 2050494,
-        "name": "TEST 0.1 Hz rune"
-    },
-    {
-        "id": 2041397,
-        "name": "TEST 1 Hz rune"
-    },
-    {
-        "id": 1969851,
-        "name": "Ohm"
-    },
-    {
-        "id": 2047114,
-        "name": "Xan"
-    },
-    {
-        "id": 2059627,
-        "name": "Qax"
-    },
-    {
-        "id": 2060652,
-        "name": "Eom"
-    },
-    {
-        "id": 2024157,
-        "name": "Vex"
-    },
-    {
-        "id": 2004863,
-        "name": "Wat"
-    },
-    {
-        "id": 1983345,
-        "name": "Tec"
-    },
-    {
-        "id": 2021641,
-        "name": "Xal"
-    },
-    {
-        "id": 2039543,
-        "name": "Jah"
-    },
-    {
-        "id": 2004805,
-        "name": "Que"
-    },
-    {
-        "id": 1969099,
-        "name": "Gar"
-    },
-    {
-        "id": 1968672,
-        "name": "Zec"
-    },
-    {
-        "id": 2039679,
-        "name": "Kry"
-    },
-    {
-        "id": 2004724,
-        "name": "Met"
-    },
-    {
-        "id": 2004876,
-        "name": "Ton"
-    },
-    {
-        "id": 2090245,
-        "name": "Lac"
-    },
-    {
-        "id": 2090794,
-        "name": "Yom"
-    },
-    {
-        "id": 2166985,
-        "name": "Chac"
-    },
-    {
-        "id": 1969846,
-        "name": "Thul"
-    },
-    {
-        "id": 2021777,
-        "name": "Thar"
-    },
-    {
-        "id": 1968586,
-        "name": "Lum"
-    },
-    {
-        "id": 2039603,
-        "name": "Ner"
-    },
-    {
-        "id": 2096425,
-        "name": "Ehe"
-    },
-    {
-        "id": 2040871,
-        "name": "Tal"
-    },
-    {
-        "id": 2057889,
-        "name": "Ixk"
-    },
-    {
-        "id": 2089935,
-        "name": "Mot"
-    },
-    {
-        "id": 2093514,
-        "name": "Tzic"
-    },
-    {
-        "id": 2043182,
-        "name": "Qua"
-    },
-    {
-        "id": 2004782,
-        "name": "Tun"
-    },
-    {
-        "id": 2057116,
-        "name": "Ceh"
-    },
-    {
-        "id": 2006151,
-        "name": "Ono"
-    },
-    {
-        "id": 2088917,
-        "name": "Teb"
-    },
-    {
-        "id": 2040966,
-        "name": "Ura"
-    },
-    {
-        "id": 2088738,
-        "name": "Cha"
-    },
-    {
-        "id": 2073683,
-        "name": "Nam"
-    },
-    {
-        "id": 2073773,
-        "name": "Ixt"
-    },
-    {
-        "id": 2089449,
-        "name": "May"
-    }
+  {
+    "id": 1968097,
+    "name": "Cem"
+  },
+  {
+    "id": 1968107,
+    "name": "Tam"
+  },
+  {
+    "id": 1968550,
+    "name": "Zan"
+  },
+  {
+    "id": 1968586,
+    "name": "Lum"
+  },
+  {
+    "id": 1968672,
+    "name": "Zec"
+  },
+  {
+    "id": 1969054,
+    "name": "Yax"
+  },
+  {
+    "id": 1969099,
+    "name": "Gar"
+  },
+  {
+    "id": 1969846,
+    "name": "Thul"
+  },
+  {
+    "id": 1969851,
+    "name": "Ohm"
+  },
+  {
+    "id": 1983345,
+    "name": "Tec"
+  },
+  {
+    "id": 1999352,
+    "name": "Bac"
+  },
+  {
+    "id": 2004454,
+    "name": "Poc"
+  },
+  {
+    "id": 2004498,
+    "name": "Yul"
+  },
+  {
+    "id": 2004724,
+    "name": "Met"
+  },
+  {
+    "id": 2004782,
+    "name": "Tun"
+  },
+  {
+    "id": 2004805,
+    "name": "Que"
+  },
+  {
+    "id": 2004863,
+    "name": "Wat"
+  },
+  {
+    "id": 2004876,
+    "name": "Ton"
+  },
+  {
+    "id": 2006151,
+    "name": "Ono"
+  },
+  {
+    "id": 2006748,
+    "name": "Feo"
+  },
+  {
+    "id": 2020681,
+    "name": "Ur"
+  },
+  {
+    "id": 2021604,
+    "name": "Cip"
+  },
+  {
+    "id": 2021641,
+    "name": "Xal"
+  },
+  {
+    "id": 2021777,
+    "name": "Thar"
+  },
+  {
+    "id": 2024157,
+    "name": "Vex"
+  },
+  {
+    "id": 2039543,
+    "name": "Jah"
+  },
+  {
+    "id": 2039603,
+    "name": "Ner"
+  },
+  {
+    "id": 2039679,
+    "name": "Kry"
+  },
+  {
+    "id": 2040700,
+    "name": "Xol"
+  },
+  {
+    "id": 2040857,
+    "name": "Tza"
+  },
+  {
+    "id": 2040871,
+    "name": "Tal"
+  },
+  {
+    "id": 2040966,
+    "name": "Ura"
+  },
+  {
+    "id": 2041397,
+    "name": "TEST 1 Hz rune"
+  },
+  {
+    "id": 2043182,
+    "name": "Qua"
+  },
+  {
+    "id": 2046440,
+    "name": "Hak"
+  },
+  {
+    "id": 2047114,
+    "name": "Xan"
+  },
+  {
+    "id": 2050494,
+    "name": "TEST 0.1 Hz rune"
+  },
+  {
+    "id": 2057116,
+    "name": "Ceh"
+  },
+  {
+    "id": 2057889,
+    "name": "Ixk"
+  },
+  {
+    "id": 2059627,
+    "name": "Qax"
+  },
+  {
+    "id": 2060482,
+    "name": "Lith"
+  },
+  {
+    "id": 2060618,
+    "name": "Cir"
+  },
+  {
+    "id": 2060652,
+    "name": "Eom"
+  },
+  {
+    "id": 2063887,
+    "name": "Moni"
+  },
+  {
+    "id": 2063988,
+    "name": "Neo"
+  },
+  {
+    "id": 2073683,
+    "name": "Nam"
+  },
+  {
+    "id": 2073773,
+    "name": "Ixt"
+  },
+  {
+    "id": 2080568,
+    "name": "Ahu"
+  },
+  {
+    "id": 2081285,
+    "name": "Kaa"
+  },
+  {
+    "id": 2085644,
+    "name": "Pac"
+  },
+  {
+    "id": 2088738,
+    "name": "Cha"
+  },
+  {
+    "id": 2088917,
+    "name": "Teb"
+  },
+  {
+    "id": 2089449,
+    "name": "May"
+  },
+  {
+    "id": 2089875,
+    "name": "Noc"
+  },
+  {
+    "id": 2089935,
+    "name": "Mot"
+  },
+  {
+    "id": 2090245,
+    "name": "Lac"
+  },
+  {
+    "id": 2090794,
+    "name": "Yom"
+  },
+  {
+    "id": 2093514,
+    "name": "Tzic"
+  },
+  {
+    "id": 2096425,
+    "name": "Ehe"
+  },
+  {
+    "id": 2155997,
+    "name": "Nagu"
+  },
+  {
+    "id": 2165977,
+    "name": "Igni"
+  },
+  {
+    "id": 2166985,
+    "name": "Chac"
+  }
 ]
-}
