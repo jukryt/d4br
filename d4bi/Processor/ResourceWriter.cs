@@ -17,8 +17,8 @@ namespace Importer.Processor
 
         public async Task WriteAsync(IEnumerable<T> items)
         {
-            var folderPath = Path.Combine(_workFolder, _target.ResultFolder);
-            var filePath = Path.Combine(folderPath, _target.ResultFileName);
+            var folderPath = Path.Combine(_workFolder, _target.Folder);
+            var filePath = Path.Combine(folderPath, _target.FileName);
 
             if (!string.IsNullOrEmpty(folderPath))
                 Directory.CreateDirectory(folderPath);

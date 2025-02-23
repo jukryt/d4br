@@ -21,8 +21,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "en",
-                        ResultFileName = "aspect.json",
+                        Folder = "en",
+                        FileName = "aspect.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -38,8 +38,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "en",
-                        ResultFileName = "glyph.json",
+                        Folder = "en",
+                        FileName = "glyph.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -55,8 +55,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "en",
-                        ResultFileName = "leg_node.json",
+                        Folder = "en",
+                        FileName = "leg_node.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -76,8 +76,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "en",
-                        ResultFileName = "rune.json",
+                        Folder = "en",
+                        FileName = "rune.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -93,8 +93,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "en",
-                        ResultFileName = "skill.json",
+                        Folder = "en",
+                        FileName = "skill.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -110,8 +110,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "en",
-                        ResultFileName = "temper.json",
+                        Folder = "en",
+                        FileName = "temper.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -127,8 +127,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "en",
-                        ResultFileName = "unq_item.json",
+                        Folder = "en",
+                        FileName = "unq_item.json",
                     },
                 },
                 // Russian
@@ -145,8 +145,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "ru",
-                        ResultFileName = "aspect.json",
+                        Folder = "ru",
+                        FileName = "aspect.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -162,8 +162,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "ru",
-                        ResultFileName = "glyph.json",
+                        Folder = "ru",
+                        FileName = "glyph.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -179,8 +179,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "ru",
-                        ResultFileName = "leg_node.json",
+                        Folder = "ru",
+                        FileName = "leg_node.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -200,8 +200,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "ru",
-                        ResultFileName = "rune.json",
+                        Folder = "ru",
+                        FileName = "rune.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -217,8 +217,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "ru",
-                        ResultFileName = "skill.json",
+                        Folder = "ru",
+                        FileName = "skill.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -234,8 +234,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "ru",
-                        ResultFileName = "temper.json",
+                        Folder = "ru",
+                        FileName = "temper.json",
                     },
                 },
                 new ResourceInfo<Item>
@@ -251,8 +251,8 @@ namespace Importer
                         ],
                     },
                     Target = new ResourceTarget<Item> {
-                        ResultFolder = "ru",
-                        ResultFileName = "unq_item.json",
+                        Folder = "ru",
+                        FileName = "unq_item.json",
                     },
                 },
             ];

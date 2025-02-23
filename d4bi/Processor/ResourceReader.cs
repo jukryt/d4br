@@ -19,13 +19,13 @@ namespace Importer.Processor
             {
                 var items = new List<T>();
                 foreach (var sourceInfo in _source.SourceInfos)
-                    items.AddRange(await ProcessAsync(page, sourceInfo));
+                    items.AddRange(await ReadAsync(page, sourceInfo));
 
                 return items;
             }
         }
 
-        private async Task<IEnumerable<T>> ProcessAsync(IPage page, SourceInfo sourceInfo)
+        private async Task<IEnumerable<T>> ReadAsync(IPage page, SourceInfo sourceInfo)
         {
             await page.GoToAsync(sourceInfo.Url, waitUntil: WaitUntilNavigation.DOMContentLoaded);
             var items =  await page.EvaluateFunctionAsync<List<T>>(sourceInfo.Script);
