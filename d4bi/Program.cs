@@ -8,7 +8,6 @@ namespace Importer
         static async Task Main(string[] args)
         {
             var appConfig = await AppConfig.LoadAsync();
-            await appConfig.SaveAsync();
             Static.Init(appConfig);
             AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionTrapper;
 
@@ -23,14 +22,17 @@ namespace Importer
 
             logger.WriteMessage("Begin");
 
-            var tasks = new List<Task>();
-            foreach (var resourceInfo in Resources.GetResources())
+            var chunks = Resources.GetResources().Chunk(5);
+            foreach (var chunk in chunks)
             {
-                var processor = resourceInfo.CreateProcessor(logger);
-                tasks.Add(processor.ProcessAsync(browser));
+                var tasks = new List<Task>();
+                foreach (var resourceInfo in chunk)
+                {
+                    var processor = resourceInfo.CreateProcessor(logger);
+                    tasks.Add(processor.ProcessAsync(browser));
+                }
+                await Task.WhenAll(tasks);
             }
-
-            await Task.WhenAll(tasks);
 
             logger.WriteMessage("Complete");
         }        
