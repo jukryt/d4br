@@ -96,10 +96,10 @@ namespace Importer
                     Fix = new() {
                         ItemActions =
                         [
-                            new TrimNameItemAction<Item>(),
+                            new TrimNameItemAction(),
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "en",
                         FileName = "skill.json",
                     },
@@ -227,7 +227,7 @@ namespace Importer
                     {
                         ItemActions =
                         [
-                            new TrimNameItemAction<Item>(),
+                            new TrimNameItemAction(),
                         ],
                     },
                     Target = new() {

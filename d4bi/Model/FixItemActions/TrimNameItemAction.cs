@@ -1,8 +1,8 @@
 ﻿namespace Importer.Model.FixItemActions
 {
-    internal class TrimNameItemAction<T> : IFixItemAction<T> where T : Item
+    internal class TrimNameItemAction : IFixItemAction<Item>
     {
-        public Task FixItemAsync(T item)
+        public Task FixItemAsync(Item item)
         {
             item.Name = item.Name?.Trim();
             return Task.CompletedTask;
