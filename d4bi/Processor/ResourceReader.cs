@@ -13,7 +13,7 @@ namespace Importer.Processor
             _source = source;
         }
 
-        public async Task<IEnumerable<T>> ReadAsync(PuppeteerBrowser browser)
+        public async Task<List<T>> ReadAsync(PuppeteerBrowser browser)
         {
             using (var page = await browser.NewPageAsync())
             {

@@ -12,6 +12,7 @@ namespace Importer.Model
     {
         public required string Name { get; init; }
         public required ResourceSource<T> Source { get; init; }
+        public ResourceFix<T>? Fix { get; init; }
         public required ResourceTarget<T> Target { get; init; }
 
         public IResourceProcessor CreateProcessor(ILogger logger)

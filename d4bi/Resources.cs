@@ -1,4 +1,5 @@
 ﻿using Importer.Model;
+using Importer.Model.FixItemActions;
 
 namespace Importer
 {
@@ -11,7 +12,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "aspect en",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -20,7 +21,7 @@ namespace Importer
                             }
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "en",
                         FileName = "aspect.json",
                     },
@@ -28,7 +29,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "glyph en",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -37,7 +38,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "en",
                         FileName = "glyph.json",
                     },
@@ -45,7 +46,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "leg_node en",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -54,7 +55,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "en",
                         FileName = "leg_node.json",
                     },
@@ -62,7 +63,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "rune en",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -75,7 +76,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "en",
                         FileName = "rune.json",
                     },
@@ -83,13 +84,19 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "skill en",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
                                 Url = "https://www.wowhead.com/diablo-4/skills",
                                 Script = "() => g_listviews.skills.data.map(i=>({id: i.id, name: i.name}))",
                             },
+                        ],
+                    },
+                    Fix = new() {
+                        ItemActions =
+                        [
+                            new TrimNameItemAction<Item>(),
                         ],
                     },
                     Target = new ResourceTarget<Item> {
@@ -100,7 +107,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "temper en",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -109,7 +116,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "en",
                         FileName = "temper.json",
                     },
@@ -117,7 +124,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "unq_item en",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -126,7 +133,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "en",
                         FileName = "unq_item.json",
                     },
@@ -135,7 +142,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "aspect ru",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -144,7 +151,7 @@ namespace Importer
                             }
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "ru",
                         FileName = "aspect.json",
                     },
@@ -152,7 +159,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "glyph ru",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -161,7 +168,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "ru",
                         FileName = "glyph.json",
                     },
@@ -169,7 +176,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "leg_node ru",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -178,7 +185,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "ru",
                         FileName = "leg_node.json",
                     },
@@ -186,7 +193,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "rune ru",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -199,7 +206,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "ru",
                         FileName = "rune.json",
                     },
@@ -207,7 +214,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "skill ru",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -216,7 +223,14 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Fix = new()
+                    {
+                        ItemActions =
+                        [
+                            new TrimNameItemAction<Item>(),
+                        ],
+                    },
+                    Target = new() {
                         Folder = "ru",
                         FileName = "skill.json",
                     },
@@ -224,7 +238,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "temper ru",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -233,7 +247,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "ru",
                         FileName = "temper.json",
                     },
@@ -241,7 +255,7 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "unq_item ru",
-                    Source = new ResourceSource<Item>{
+                    Source = new() {
                         SourceInfos =
                         [
                             new() {
@@ -250,7 +264,7 @@ namespace Importer
                             },
                         ],
                     },
-                    Target = new ResourceTarget<Item> {
+                    Target = new() {
                         Folder = "ru",
                         FileName = "unq_item.json",
                     },
