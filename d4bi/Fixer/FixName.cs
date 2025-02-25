@@ -9,6 +9,9 @@ namespace Importer.Fixer
             foreach (var item in items)
             {
                 item.Name = item.Name
+                    ?.Replace('\u00A0', ' ') // non-breaking space
+                    ?.Replace('\u2014', '-') // Em Dash
+                    ?.Replace("  ", " ")     // double space
                     ?.Trim();
             }
 
