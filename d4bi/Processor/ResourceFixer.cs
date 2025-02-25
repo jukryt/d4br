@@ -13,16 +13,8 @@ namespace Importer.Processor
 
         public async Task FixItemsAsync(List<T> items)
         {
-            await ApplyFixActionsAsync(items, _fix.ItemActions);
-        }
-
-        private async Task ApplyFixActionsAsync(IEnumerable<T> items, IEnumerable<IFixItemAction<T>> fixActions)
-        {
-            foreach (var fixAction in fixActions)
-            {
-                foreach (var item in items)
-                    await fixAction.FixItemAsync(item);
-            }
+            foreach (var fixer in _fix.Fixers)
+                await fixer.FixItemsAsync(items);
         }
     }
 }

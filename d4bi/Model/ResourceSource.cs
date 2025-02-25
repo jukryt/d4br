@@ -1,8 +1,15 @@
-﻿namespace Importer.Model
+﻿using Importer.Processor;
+
+namespace Importer.Model
 {
     internal class ResourceSource<T> where T : Item
     {
         public required List<SourceInfo> SourceInfos { get; init; }
+
+        public virtual ResourceReader<T> CreateReader()
+        {
+            return new ResourceReader<T>(this);
+        }
     }
 
     internal class SourceInfo

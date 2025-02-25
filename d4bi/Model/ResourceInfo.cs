@@ -5,6 +5,7 @@ namespace Importer.Model
 {
     internal interface IResourceInfo
     {
+        string Name { get; }
         IResourceProcessor CreateProcessor(ILogger logger);
     }
 
@@ -15,7 +16,7 @@ namespace Importer.Model
         public ResourceFix<T>? Fix { get; init; }
         public required ResourceTarget<T> Target { get; init; }
 
-        public IResourceProcessor CreateProcessor(ILogger logger)
+        public virtual IResourceProcessor CreateProcessor(ILogger logger)
         {
             return new ResourceProcessor<T>(this, logger);
         }

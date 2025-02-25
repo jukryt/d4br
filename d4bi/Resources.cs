@@ -1,5 +1,6 @@
-﻿using Importer.Model;
-using Importer.Model.FixItemActions;
+﻿using Importer.Custom.Temper;
+using Importer.Fixer;
+using Importer.Model;
 
 namespace Importer
 {
@@ -12,16 +13,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "aspect en",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/aspects",
                                 Script = "() => g_listviews.aspects.data.map(i=>({id: i.id, name: i.name}))",
-                            }
+                            },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "en",
                         FileName = "aspect.json",
                     },
@@ -29,16 +40,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "glyph en",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/paragon-glyphs",
                                 Script = "() => g_listviews['paragon-glyphs'].data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "en",
                         FileName = "glyph.json",
                     },
@@ -46,16 +67,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "leg_node en",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new() 
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/paragon-nodes/quality:4",
                                 Script = "() => g_listviews['paragon-nodes'].data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "en",
                         FileName = "leg_node.json",
                     },
@@ -63,20 +94,31 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "rune en",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/items/type:446841",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/items/type:446842",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "en",
                         FileName = "rune.json",
                     },
@@ -84,22 +126,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "skill en",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/skills",
                                 Script = "() => g_listviews.skills.data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Fix = new() {
-                        ItemActions =
+                    Fix = new()
+                    {
+                        Fixers =
                         [
-                            new TrimNameItemAction(),
+                            new FixName<Item>(),
                         ],
                     },
-                    Target = new() {
+                    Target = new()
+                    {
                         Folder = "en",
                         FileName = "skill.json",
                     },
@@ -107,16 +153,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "temper en",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/items/temper-manual",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "en",
                         FileName = "temper.json",
                     },
@@ -124,16 +180,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "unq_item en",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/items/quality:8:6",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "en",
                         FileName = "unq_item.json",
                     },
@@ -142,16 +208,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "aspect ru",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/ru/aspects",
                                 Script = "() => g_listviews.aspects.data.map(i=>({id: i.id, name: i.name}))",
-                            }
+                            },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "ru",
                         FileName = "aspect.json",
                     },
@@ -159,16 +235,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "glyph ru",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/ru/paragon-glyphs",
                                 Script = "() => g_listviews['paragon-glyphs'].data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "ru",
                         FileName = "glyph.json",
                     },
@@ -176,16 +262,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "leg_node ru",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/ru/paragon-nodes/quality:4",
                                 Script = "() => g_listviews['paragon-nodes'].data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "ru",
                         FileName = "leg_node.json",
                     },
@@ -193,20 +289,31 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "rune ru",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/ru/items/type:446841",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/ru/items/type:446842",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "ru",
                         FileName = "rune.json",
                     },
@@ -214,10 +321,12 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "skill ru",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/ru/skills",
                                 Script = "() => g_listviews.skills.data.map(i=>({id: i.id, name: i.name}))",
                             },
@@ -225,12 +334,13 @@ namespace Importer
                     },
                     Fix = new()
                     {
-                        ItemActions =
+                        Fixers =
                         [
-                            new TrimNameItemAction(),
+                            new FixName<Item>(),
                         ],
                     },
-                    Target = new() {
+                    Target = new()
+                    {
                         Folder = "ru",
                         FileName = "skill.json",
                     },
@@ -238,16 +348,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "temper ru",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/ru/items/temper-manual",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "ru",
                         FileName = "temper.json",
                     },
@@ -255,16 +375,26 @@ namespace Importer
                 new ResourceInfo<Item>
                 {
                     Name = "unq_item ru",
-                    Source = new() {
+                    Source = new()
+                    {
                         SourceInfos =
                         [
-                            new() {
+                            new()
+                            {
                                 Url = "https://www.wowhead.com/diablo-4/ru/items/quality:8:6",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
                     },
-                    Target = new() {
+                    Fix = new()
+                    {
+                        Fixers =
+                        [
+                            new FixName<Item>(),
+                        ],
+                    },
+                    Target = new()
+                    {
                         Folder = "ru",
                         FileName = "unq_item.json",
                     },

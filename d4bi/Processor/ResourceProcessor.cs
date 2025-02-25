@@ -22,36 +22,15 @@ namespace Importer.Processor
 
         public async Task ProcessAsync(PuppeteerBrowser browser)
         {
-            var reader = CreateReader(_info.Source);
-            var fixer = CreateFixer(_info.Fix);
-            var writer = CreateWriter(_info.Target);
+            var reader = _info.Source.CreateReader();
+            var fixer = _info.Fix?.CreateFixer();
+            var writer = _info.Target.CreateWriter(Static.WorkFolder);
 
             var items = await reader.ReadAsync(browser);
-
-            if (fixer != null)
-                await fixer.FixItemsAsync(items);
-
+            await (fixer?.FixItemsAsync(items) ?? Task.CompletedTask);
             await writer.WriteAsync(items.OrderBy(i => i.Id));
 
             _logger.WriteMessage(_info.Name);
-        }
-
-        public ResourceReader<T> CreateReader(ResourceSource<T> source)
-        {
-            return new ResourceReader<T>(source);
-        }
-
-        private ResourceFixer<T>? CreateFixer(ResourceFix<T>? fix)
-        {
-            if (fix == null)
-                return null;
-
-            return new ResourceFixer<T>(fix);
-        }
-
-        public ResourceWriter<T> CreateWriter(ResourceTarget<T> target)
-        {
-            return new ResourceWriter<T>(target, Static.WorkFolder);
         }
     }
 }
