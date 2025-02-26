@@ -383,7 +383,7 @@ class D4MaxrollProcessor {
     }
 
     aspectNameProcess(titleNode, subTitleNode) {
-        if (!titleNode || !subTitleNode) {
+        if (!subTitleNode) {
             return false;
         }
 
@@ -433,27 +433,22 @@ class D4MaxrollProcessor {
     }
 
     unqItemNameProcess(node) {
-        if (!node) { return false; }
         return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems, true);
     }
 
     skillNameProcess(node) {
-        if (!node) { return false; }
         return this.nodeProcess(node, "d4br_skill_name", Language.skills, true);
     }
 
     legNodeNameProcess(node) {
-        if (!node) { return false; }
         return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes, true);
     }
 
     glyphNameProcess(node) {
-        if (!node) { return false; }
         return this.nodeProcess(node, "d4br_glyph_name", Language.glyphs, true);
     }
 
     runeNameProcess(node) {
-        if (!node) { return false; }
         return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
     }
 
