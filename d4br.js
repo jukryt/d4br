@@ -104,9 +104,9 @@ class D4BuildsProcessor {
                         if (newNode.id.startsWith("tippy-")) {
                             // aspect and temper
                             if (newNode.querySelector("div.codex__tooltip")) {
-                                const gearNameNode = newNode.querySelector("div.codex__tooltip__name");
-                                if (gearNameNode) {
-                                    processor.aspectNameProcess(gearNameNode);
+                                const aspectNameNode = newNode.querySelector("div.codex__tooltip__name");
+                                if (aspectNameNode) {
+                                    processor.aspectNameProcess(aspectNameNode);
                                 }
                                 const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
                                 if (tempersNode) {
@@ -278,11 +278,12 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const sourceItem = this.sourceLanguage.getResource(resourceName).find(i => i.name === sourceValue);
-        if (!sourceItem) {
+        const sourceItems = this.sourceLanguage.getResource(resourceName).filter(i => i.name === sourceValue);
+        if (sourceItems.length != 1) {
             return false;
         }
 
+        const sourceItem = sourceItems[0];
         const targetItem = this.targetLanguage.getResource(resourceName).find(i => i.id === sourceItem.id);
         if (!targetItem) {
             return false;
@@ -458,11 +459,12 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const sourceItem = this.sourceLanguage.getResource(resourceName).find(i => i.name === sourceValue);
-        if (!sourceItem) {
+        const sourceItems = this.sourceLanguage.getResource(resourceName).filter(i => i.name === sourceValue);
+        if (sourceItems.length != 1) {
             return false;
         }
 
+        const sourceItem = sourceItems[0];
         const targetItem = this.targetLanguage.getResource(resourceName).find(i => i.id === sourceItem.id);
         if (!targetItem) {
             return false;
@@ -631,11 +633,12 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        const sourceItem = this.sourceLanguage.getResource(resourceName).find(i => i.name === sourceValue);
-        if (!sourceItem) {
+        const sourceItems = this.sourceLanguage.getResource(resourceName).filter(i => i.name === sourceValue);
+        if (sourceItems.length != 1) {
             return false;
         }
 
+        const sourceItem = sourceItems[0];
         const targetItem = this.targetLanguage.getResource(resourceName).find(i => i.id === sourceItem.id);
         if (!targetItem) {
             return false;
