@@ -133,6 +133,14 @@ class D4BuildsProcessor {
                                     }
                                 }
                             }
+                            // generic: temper
+                            if (newNode.querySelector("div.generic__tooltip")) {
+                                const genericTooltips = newNode.querySelectorAll("div.generic__tooltip");
+                                if (genericTooltips.length > 0) {
+                                    const genericTooltip = genericTooltips[genericTooltips.length - 1];
+                                    this.genericTemperNameProcess(genericTooltip);
+                                }
+                            }
                             // unq item
                             else if (newNode.querySelector("div.unique__tooltip")) {
                                 const unqItemNameNode = newNode.querySelector("h2.unique__tooltip__name");
@@ -305,6 +313,56 @@ class D4BuildsProcessor {
         node.parentNode.insertBefore(newNode, node);
 
         return this.setTargetValue(newNode, "d4br_temper_name", targetTemperName, false);
+    }
+
+    genericTemperNameProcess(node) {
+        const className = "d4br_temper_name";
+
+        let existsNode = node.parentNode.querySelector(`div.${className}`);
+        if (existsNode) {
+            existsNode.parentNode.remove();
+            existsNode = null;
+        }
+
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const temperNameMatchs = [...sourceValue.matchAll(/\(([^\(\)]+) - ([^\(\)]+)\)/g)];
+        if (temperNameMatchs.length === 0) {
+            return false;
+        }
+
+        const temperNameMatch = temperNameMatchs[temperNameMatchs.length - 1];
+        const temperName = temperNameMatch[1];
+        const temperType = temperNameMatch[2];
+
+        const sourceItem = this.sourceLanguage.tempers.find(i => i.name === temperName && i.type === temperType);
+        if (!sourceItem) {
+            return false;
+        }
+
+        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return false;
+        }
+
+        let targetTemperName = targetItem.name;
+
+        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
+        if (sourceTemperType) {
+            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
+            if (targetTemperType) {
+                targetTemperName = targetTemperType.name + " - " + targetTemperName;
+            }
+        }
+
+        const newNode = document.createElement("div");
+        newNode.className = "generic__tooltip";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, targetTemperName, false);
     }
 
     unqItemNameProcess(node) {
