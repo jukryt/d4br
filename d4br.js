@@ -90,13 +90,13 @@ class D4BuildsProcessor {
         this.targetLanguage = new RussianLanguage();
     }
 
-    mutationObserverCallback(processor, mutations) {
+    mutationObserverCallback(mutations) {
         for (const mutation of mutations) {
             if (mutation.type === "attributes") {
                 if (mutation.attributeName === "style" &&
                     mutation.target.id.startsWith("tippy-")) {
                     const tippy = mutation.target;
-                    processor.fixPopupStyleBug(tippy);
+                    this.fixPopupStyleBug(tippy);
                 }
             } else if (mutation.type === "childList") {
                 if (mutation.target.localName === "body") {
@@ -106,13 +106,13 @@ class D4BuildsProcessor {
                             if (newNode.querySelector("div.codex__tooltip")) {
                                 const aspectNameNode = newNode.querySelector("div.codex__tooltip__name");
                                 if (aspectNameNode) {
-                                    processor.aspectNameProcess(aspectNameNode);
+                                    this.aspectNameProcess(aspectNameNode);
                                 }
                                 const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
                                 if (tempersNode) {
                                     const temperNameNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
                                     for (const temperNameNode of temperNameNodes) {
-                                        processor.temperNameProcess(temperNameNode);
+                                        this.temperNameProcess(temperNameNode);
                                     }
                                 }
                             }
@@ -120,35 +120,35 @@ class D4BuildsProcessor {
                             else if (newNode.querySelector("div.unique__tooltip")) {
                                 const unqItemNameNode = newNode.querySelector("h2.unique__tooltip__name");
                                 if (unqItemNameNode) {
-                                    processor.unqItemNameProcess(unqItemNameNode);
+                                    this.unqItemNameProcess(unqItemNameNode);
                                 }
                             }
                             // skill
                             else if (newNode.querySelector("div.skill__tooltip")) {
                                 const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
                                 if (skillNameNode) {
-                                    processor.skillNameProcess(skillNameNode);
+                                    this.skillNameProcess(skillNameNode);
                                 }
                             }
                             // glyph
                             else if (newNode.querySelector("div.paragon__tile__tooltip__rarity.rare")) {
                                 const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
                                 if (paragonTitleNode) {
-                                    processor.glyphNameProcess(paragonTitleNode);
+                                    this.glyphNameProcess(paragonTitleNode);
                                 }
                             }
                             // leg node
                             else if (newNode.querySelector("div.paragon__tile__tooltip__rarity.legendary")) {
                                 const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
                                 if (paragonTitleNode) {
-                                    processor.legNodeNameProcess(paragonTitleNode);
+                                    this.legNodeNameProcess(paragonTitleNode);
                                 }
                             }
                             // gem
                             else if (newNode.querySelector("div.gem__tooltip")) {
                                 const gemTitleNode = newNode.querySelector("div.gem__tooltip__name");
                                 if (gemTitleNode) {
-                                    processor.gemNameProcess(gemTitleNode);
+                                    this.gemNameProcess(gemTitleNode);
                                 }
                             }
                         }
@@ -317,7 +317,7 @@ class D4MaxrollProcessor {
         this.targetLanguage = new RussianLanguage();
     }
 
-    mutationObserverCallback(processor, mutations) {
+    mutationObserverCallback(mutations) {
         for (const mutation of mutations) {
             if (mutation.type === "childList") {
                 if (mutation.target.id === "uitools-tooltip-root") {
@@ -328,10 +328,10 @@ class D4MaxrollProcessor {
                                 const titleNodes = newNode.querySelectorAll("div.d4t-title");
                                 const subTitleNode = newNode.querySelector("div.d4t-sub-title");
                                 for (const titleNode of titleNodes) {
-                                    if (processor.legNodeNameProcess(titleNode) ||
-                                        processor.glyphNameProcess(titleNode) ||
-                                        processor.runeNameProcess(titleNode) ||
-                                        processor.aspectNameProcess(titleNode, subTitleNode)) {
+                                    if (this.legNodeNameProcess(titleNode) ||
+                                        this.glyphNameProcess(titleNode) ||
+                                        this.runeNameProcess(titleNode) ||
+                                        this.aspectNameProcess(titleNode, subTitleNode)) {
                                         break;
                                     }
                                 }
@@ -340,8 +340,8 @@ class D4MaxrollProcessor {
                             else if (newNode.querySelector("div.d4t-tip-rare")) {
                                 const titleNodes = newNode.querySelectorAll("div.d4t-title");
                                 for (const titleNode of titleNodes) {
-                                    if (processor.glyphNameProcess(titleNode) ||
-                                        processor.runeNameProcess(titleNode)) {
+                                    if (this.glyphNameProcess(titleNode) ||
+                                        this.runeNameProcess(titleNode)) {
                                         break;
                                     }
                                 }
@@ -350,7 +350,7 @@ class D4MaxrollProcessor {
                             else if (newNode.querySelector("div.d4t-tip-magic")) {
                                 const titleNodes = newNode.querySelectorAll("div.d4t-title");
                                 for (const titleNode of titleNodes) {
-                                    if (processor.runeNameProcess(titleNode)) {
+                                    if (this.runeNameProcess(titleNode)) {
                                         break;
                                     }
                                 }
@@ -359,21 +359,21 @@ class D4MaxrollProcessor {
                             else if (newNode.querySelector("div.d4t-tip-unique")) {
                                 const titleNode = newNode.querySelector("div.d4t-title");
                                 if (titleNode) {
-                                    processor.unqItemNameProcess(titleNode);
+                                    this.unqItemNameProcess(titleNode);
                                 }
                             }
                             // mythic item
                             else if (newNode.querySelector("div.d4t-tip-mythic")) {
                                 const titleNode = newNode.querySelector("div.d4t-title");
                                 if (titleNode) {
-                                    processor.unqItemNameProcess(titleNode);
+                                    this.unqItemNameProcess(titleNode);
                                 }
                             }
                             // skill
                             else if (newNode.querySelector("div.d4t-tip-skill")) {
                                 const skillTitleNode = newNode.querySelector("div.d4t-title");
                                 if (skillTitleNode) {
-                                    processor.skillNameProcess(skillTitleNode);
+                                    this.skillNameProcess(skillTitleNode);
                                 }
                             }
                         }
@@ -498,7 +498,7 @@ class D4MobalyticsProcessor {
         this.targetLanguage = new RussianLanguage();
     }
 
-    mutationObserverCallback(processor, mutations) {
+    mutationObserverCallback(mutations) {
         for (const mutation of mutations) {
             if (mutation.type === "childList" && mutation.addedNodes.length > 0) {
                 if (mutation.target.id.startsWith("tippy-")) {
@@ -507,46 +507,46 @@ class D4MobalyticsProcessor {
                     if (tippyNode.querySelector("div.m-1tii5t")) {
                         const aspectNameNode = tippyNode.querySelector("p.m-foqf9j");
                         if (aspectNameNode) {
-                            processor.aspectNameProcess(aspectNameNode);
+                            this.aspectNameProcess(aspectNameNode);
                         }
                         const temperNameNodes = tippyNode.querySelectorAll("span.m-1yjh4k8");
                         for (const temperNameNode of temperNameNodes) {
-                            processor.temperNameProcess(temperNameNode);
+                            this.temperNameProcess(temperNameNode);
                         }
                     }
                     // unq item
                     else if (tippyNode.querySelector("div.m-mqkczm")) {
                         const unqItemNameNode = tippyNode.querySelector("h4.m-yb0jxq");
                         if (unqItemNameNode) {
-                            processor.unqItemNameProcess(unqItemNameNode);
+                            this.unqItemNameProcess(unqItemNameNode);
                         }
                     }
                     // skill
                     else if (tippyNode.querySelector("div.m-1saunj6")) {
                         const skillNameNode = tippyNode.querySelector("p.m-foqf9j");
                         if (skillNameNode) {
-                            processor.skillNameProcess(skillNameNode);
+                            this.skillNameProcess(skillNameNode);
                         }
                     }
                     // glyph
                     else if (tippyNode.querySelector("div.m-yak0pv")) {
                         const glyphNameNode = tippyNode.querySelector("p.m-pv4zw0");
                         if (glyphNameNode) {
-                            processor.glyphNameProcess(glyphNameNode);
+                            this.glyphNameProcess(glyphNameNode);
                         }
                     }
                     // leg node
                     else if (tippyNode.querySelector("div.m-1fwtoiz")) {
                         const legNameNode = tippyNode.querySelector("p.m-1vrrnd3");
                         if (legNameNode) {
-                            processor.legNodeNameProcess(legNameNode);
+                            this.legNodeNameProcess(legNameNode);
                         }
                     }
                     // rune
                     else if (tippyNode.querySelector("div.m-1m5senx")) {
                         const runeNameNode = tippyNode.querySelector("p.m-54521m");
                         if (runeNameNode) {
-                            processor.runeNameProcess(runeNameNode);
+                            this.runeNameProcess(runeNameNode);
                         }
                     }
                 }
@@ -676,14 +676,14 @@ class D4MobalyticsProcessor {
 
     const processor = CreateProcessor();
     const observer = new MutationObserver((mutations, observer) => {
-        processor.mutationObserverCallback(processor, mutations);
+        processor.mutationObserverCallback(mutations);
     });
     observer.observe(document, { subtree: true, childList: true, attributes: true });
 
     setInterval(() => {
         const mutations = observer.takeRecords();
         if (mutations.length > 0) {
-            processor.mutationObserverCallback(processor, mutations);
+            processor.mutationObserverCallback(mutations);
         }
     }, 1000);
 })();
