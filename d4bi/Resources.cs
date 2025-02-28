@@ -150,7 +150,7 @@ namespace Importer
                         FileName = "skill.json",
                     },
                 },
-                new ResourceInfo<Item>
+                new ResourceInfo<TemperEnItem>
                 {
                     Name = "temper en",
                     Source = new()
@@ -159,7 +159,7 @@ namespace Importer
                         [
                             new()
                             {
-                                Url = "https://www.wowhead.com/diablo-4/items/temper-manual",
+                                Url = "https://www.wowhead.com/diablo-4/items/temper-manual/quality:5",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],
@@ -168,7 +168,11 @@ namespace Importer
                     {
                         Fixers =
                         [
-                            new FixName<Item>(),
+                            new FixName<TemperEnItem>(),
+                            new TemperEnFill
+                            {
+                                ManualsUrl = "https://d4builds.gg/page-data/database/tempering-manuals/page-data.json",
+                            },
                         ],
                     },
                     Target = new()
@@ -354,7 +358,7 @@ namespace Importer
                         [
                             new()
                             {
-                                Url = "https://www.wowhead.com/diablo-4/ru/items/temper-manual",
+                                Url = "https://www.wowhead.com/diablo-4/ru/items/temper-manual/quality:5",
                                 Script = "() => g_listviews.items.data.map(i=>({id: i.id, name: i.name}))",
                             },
                         ],

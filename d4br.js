@@ -67,6 +67,14 @@ class EnglishLanguage extends Language {
         this.runes = ExternalResource.getJsonResource("rune_en");
         this.skills = ExternalResource.getJsonResource("skill_en");
         this.tempers = ExternalResource.getJsonResource("temper_en");
+        this.temperTypes = [
+            { id: 1, name: "Weapons" },
+            { id: 2, name: "Offensive" },
+            { id: 3, name: "Defensive" },
+            { id: 4, name: "Utility" },
+            { id: 5, name: "Mobility" },
+            { id: 6, name: "Resource" },
+        ];
     }
 }
 
@@ -81,6 +89,14 @@ class RussianLanguage extends Language {
         this.runes = ExternalResource.getJsonResource("rune_ru");
         this.skills = ExternalResource.getJsonResource("skill_ru");
         this.tempers = ExternalResource.getJsonResource("temper_ru");
+        this.temperTypes = [
+            { id: 1, name: "Оружие" },
+            { id: 2, name: "Атака" },
+            { id: 3, name: "Защита" },
+            { id: 4, name: "Поддержка" },
+            { id: 5, name: "Подвижность" },
+            { id: 6, name: "Ресурсы" },
+        ];
     }
 }
 
@@ -108,11 +124,12 @@ class D4BuildsProcessor {
                                 if (aspectNameNode) {
                                     this.aspectNameProcess(aspectNameNode);
                                 }
+
                                 const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
                                 if (tempersNode) {
-                                    const temperNameNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
-                                    for (const temperNameNode of temperNameNodes) {
-                                        this.temperNameProcess(temperNameNode);
+                                    const temperValueNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
+                                    for (const temperValueNode of temperValueNodes) {
+                                        this.temperNameProcess(temperValueNode);
                                     }
                                 }
                             }
@@ -228,24 +245,66 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const temperMatch = sourceValue.match(/.+\((.+) - (.+)\)/);
-        if (!temperMatch) {
+        let headers = document.querySelectorAll("button.builder__header__selection h2.builder__header__name");
+        if (headers.length != 1) {
+            headers = document.querySelectorAll("div.builder__header__title h2.builder__header__description");
+            if (headers.length != 1) {
+                return false;
+            }
+        }
+
+        const className = headers[0].innerText?.replace(" Build", "");
+        if (!className) {
             return false;
         }
 
-        const temperName = temperMatch[1];
+        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === className || i.class === "All"));
+        let sourceItems = tempers.filter(i => i.values.some(s => {
+            const match = sourceValue.match(s)
+            return match &&
+                match.index === 0 &&
+                match[0] === sourceValue;
+        }));
 
-        const sourceItem = this.sourceLanguage.tempers.find(i => i.name === temperName);
-        if (!sourceItem) {
+        if (sourceItems.length === 0) {
             return false;
         }
 
+        if (sourceItems.length > 1) {
+            if (Array.from(new Set(sourceItems.map(i => i.type))).length == 1) {
+                const classItem = sourceItems.find(i => i.class === className);
+                if (classItem) {
+                    sourceItems = [classItem];
+                } else {
+                    sourceItems = [sourceItems[0]];
+                }
+            }
+            else {
+                return false;
+            }
+        }
+
+        const sourceItem = sourceItems[0];
         const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
         if (!targetItem) {
             return false;
         }
 
-        return this.setTargetValue(node, "d4br_temper_name", targetItem.name, false);
+        let targetTemperName = targetItem.name;
+
+        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
+        if (sourceTemperType) {
+            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
+            if (targetTemperType) {
+                targetTemperName = targetTemperType.name + " - " + targetTemperName;
+            }
+        }
+
+        const newNode = document.createElement("div");
+        newNode.style["margin-left"] = "25px";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, "d4br_temper_name", targetTemperName, false);
     }
 
     unqItemNameProcess(node) {
@@ -334,6 +393,11 @@ class D4MaxrollProcessor {
                                         this.aspectNameProcess(titleNode, subTitleNode)) {
                                         break;
                                     }
+                                }
+
+                                const temperNodes = newNode.querySelectorAll("li.d4t-list-tempered");
+                                for (const temperNode of temperNodes) {
+                                    this.temperNameProcess(temperNode);
                                 }
                             }
                             // rare: glyph, rune
@@ -431,6 +495,78 @@ class D4MaxrollProcessor {
         }
 
         return false;
+    }
+
+    temperNameProcess(node) {
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const title = document.querySelector("div.d4t-PlannerLink div.d4t-title") ??
+              document.querySelector("div.header_Header__buildTitle__WS8cB");
+        if (!title) {
+            return false;
+        }
+
+        const className = title.innerText;
+        if (!className) {
+            return false;
+        }
+
+        const temperValue = sourceValue
+            .replace(/\([^\)]+\)/, "") // (text)
+            .replace(/\[[0-9\. \-]+\]%?/, "") // [values]
+            .trim();
+
+        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === className || i.class === "All"));
+        let sourceItems = tempers.filter(i => i.values.some(s => {
+            const match = temperValue.match(s)
+            return match &&
+                match.index === 0 &&
+                match[0] === temperValue;
+        }));
+
+        if (sourceItems.length === 0) {
+            return false;
+        }
+
+        if (sourceItems.length > 1) {
+            if (Array.from(new Set(sourceItems.map(i => i.type))).length == 1) {
+                const classItem = sourceItems.find(i => i.class === className);
+                if (classItem) {
+                    sourceItems = [classItem];
+                } else {
+                    sourceItems = [sourceItems[0]];
+                }
+            }
+            else {
+                return false;
+            }
+        }
+
+        const sourceItem = sourceItems[0];
+        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return false;
+        }
+
+        let targetTemperName = targetItem.name;
+
+        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
+        if (sourceTemperType) {
+            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
+            if (targetTemperType) {
+                targetTemperName = targetTemperType.name + " - " + targetTemperName;
+            }
+        }
+
+        const newNode = document.createElement("div");
+        newNode.style["margin-top"] = "5px";
+        newNode.style.opacity = "0.6";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, "d4br_temper_name", targetTemperName, false);
     }
 
     unqItemNameProcess(node) {
@@ -583,7 +719,21 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        return this.setTargetValue(node, "d4br_temper_name", targetItem.name, true);
+        let targetTemperName = targetItem.name;
+
+        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
+        if (sourceTemperType) {
+            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
+            if (targetTemperType) {
+                targetTemperName = targetTemperType.name + " - " + targetTemperName;
+            }
+        }
+
+        const newNode = document.createElement("div");
+        newNode.style.opacity = "0.6";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, "d4br_temper_name", targetTemperName, false);
     }
 
     unqItemNameProcess(node) {

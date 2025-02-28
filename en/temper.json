@@ -1,1826 +1,1747 @@
 [
   {
     "id": 1861207,
-    "name": "Barbarian Control"
+    "name": "Barbarian Control",
+    "class": "Barbarian",
+    "type": "Utility",
+    "values": [
+      "Steel Grasp Stuns for \\+? ?[0-9\\.,\\-% \\[\\]]+ Seconds",
+      "Upheaval Overpowers Stun for \\+? ?[0-9\\.,\\-% \\[\\]]+ Seconds",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Concussion"
+    ]
   },
   {
     "id": 1861324,
-    "name": "Barbarian Strategy"
+    "name": "Barbarian Strategy",
+    "class": "Barbarian",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ground Stomp Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Iron Skin Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Challenging Shout Cooldown Reduction"
+    ]
   },
   {
     "id": 1861345,
-    "name": "Bleed Augments"
+    "name": "Bleed Augments",
+    "class": "Barbarian",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Cut to the Bone",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Rend to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Rupture to Deal Double Damage"
+    ]
   },
   {
     "id": 1861353,
-    "name": "Barbarian Motion"
+    "name": "Barbarian Motion",
+    "class": "Barbarian",
+    "type": "Mobility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+Movement Speed for \\+? ?[0-9\\.,\\-% \\[\\]]+ Seconds After Killing an Elite",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lunging Strike Range",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Charge Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Leap Cooldown Reduction"
+    ]
   },
   {
     "id": 1861356,
-    "name": "Berserking Innovation"
+    "name": "Berserking Innovation",
+    "class": null,
+    "type": null
   },
   {
     "id": 1861360,
-    "name": "Ultimate Efficiency - Barbarian"
+    "name": "Ultimate Efficiency - Barbarian",
+    "class": "Barbarian",
+    "type": "Resource",
+    "values": [
+      "Casting Ultimate Skills Restores \\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Resource",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Call of the Ancients Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Iron Maelstrom Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Wrath of the Berserker Cooldown Reduction"
+    ]
   },
   {
     "id": 1861375,
-    "name": "Weapon Mastery Efficiency"
+    "name": "Weapon Mastery Efficiency",
+    "class": "Barbarian",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Weapon Mastery Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Death Blow Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rupture Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Steel Grasp Cooldown Reduction"
+    ]
   },
   {
     "id": 1861381,
-    "name": "Brawling Efficiency"
+    "name": "Brawling Efficiency",
+    "class": "Barbarian",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Brawling Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Kick Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ War Cry Cooldown Reduction"
+    ]
   },
   {
     "id": 1862208,
-    "name": "Barbarian Recovery"
+    "name": "Barbarian Recovery",
+    "class": "Barbarian",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lunging Strike Healing",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Raid Leader",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Invigorating Fury"
+    ]
   },
   {
     "id": 1862212,
-    "name": "Barbarian Protection (Legacy)"
+    "name": "Barbarian Protection (Legacy)",
+    "class": null,
+    "type": null
   },
   {
     "id": 1862230,
-    "name": "Arsenal Finesse"
+    "name": "Arsenal Finesse",
+    "class": "Barbarian",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage with Two\\-Handed Bludgeoning Weapons",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage with Dual\\-Wielded Weapons",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage with Two\\-Handed Slashing Weapons",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage when Swapping Weapons"
+    ]
   },
   {
     "id": 1862232,
-    "name": "Berserking Finesse"
+    "name": "Berserking Finesse",
+    "class": "Barbarian",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage while Berserking",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage while Wrath of the Berserker is Active",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage while War Cry is Active",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Dust Devil Damage"
+    ]
   },
   {
     "id": 1862234,
-    "name": "Demolition Finesse"
+    "name": "Demolition Finesse",
+    "class": "Barbarian",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Brawling Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Weapon Mastery Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage while Iron Maelstrom is Active"
+    ]
   },
   {
     "id": 1862424,
-    "name": "Worldly Fortune"
+    "name": "Worldly Fortune",
+    "class": "All",
+    "type": "Utility",
+    "values": [
+      "Lucky Hit\\: Up to a \\+? ?[0-9\\.,\\-% \\[\\]]+ Chance to Slow for 2 Seconds",
+      "Lucky Hit\\: Up to a \\+? ?[0-9\\.,\\-% \\[\\]]+ Chance to Immobilize for 2 Seconds",
+      "Lucky Hit\\: Up to a \\+? ?[0-9\\.,\\-% \\[\\]]+ Chance to Stun for 2 Seconds",
+      "Lucky Hit\\: Up to a \\+? ?[0-9\\.,\\-% \\[\\]]+ Chance to Freeze for 2 Seconds"
+    ]
   },
   {
     "id": 1862428,
-    "name": "Worldly Endurance"
+    "name": "Worldly Endurance",
+    "class": "All",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Maximum Life",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Total Armor",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Dodge Chance"
+    ]
   },
   {
     "id": 1862434,
-    "name": "Worldly Stability"
+    "name": "Worldly Stability",
+    "class": "All",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Resource Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Resource Cost Reduction",
+      "Lucky Hit\\: Up to a 15\\% Chance to Restore \\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Resource"
+    ]
   },
   {
     "id": 1862442,
-    "name": "Natural Motion"
+    "name": "Natural Motion",
+    "class": "All",
+    "type": "Mobility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed for \\+? ?[0-9\\.,\\-% \\[\\]]+ Seconds After Killing an Elite",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Mobility Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Evade Cooldown Reduction"
+    ]
   },
   {
     "id": 1862444,
-    "name": "Natural Schemes"
+    "name": "Natural Schemes",
+    "class": "All",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Thorns",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Crowd Control Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Barrier Generation"
+    ]
   },
   {
     "id": 1862450,
-    "name": "Natural Finesse"
+    "name": "Natural Finesse",
+    "class": "All",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Crowd Controlled Enemies",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Close Enemies",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Distant Enemies"
+    ]
   },
   {
     "id": 1868196,
-    "name": "Profane Innovation"
+    "name": "Profane Innovation",
+    "class": "Necromancer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Corpse Explosion Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Corpse Tendrils Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Curse Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Curse Duration"
+    ]
   },
   {
     "id": 1868198,
-    "name": "Necromancer Efficiency"
+    "name": "Necromancer Efficiency",
+    "class": "Necromancer",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ultimate Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Golem Active Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Bone Spirit Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Rapid Ossification"
+    ]
   },
   {
     "id": 1868200,
-    "name": "Minion Finesse"
+    "name": "Minion Finesse",
+    "class": null,
+    "type": null
   },
   {
     "id": 1868565,
-    "name": "Blood Endurance"
+    "name": "Blood Endurance",
+    "class": "Necromancer",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Hemorrhage to Form Blood Orbs",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blood Orb Healing",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blood Mist Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blood Mist Cooldown Reduction"
+    ]
   },
   {
     "id": 1868569,
-    "name": "Profane Cage"
+    "name": "Profane Cage",
+    "class": "Necromancer",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blight Chill Potency",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Corpse Tendrils Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Crippling Darkness"
+    ]
   },
   {
     "id": 1868588,
-    "name": "Blood Finesse"
+    "name": "Blood Finesse",
+    "class": "Necromancer",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blood Attack Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blood Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blood Overpower Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage while Fortified"
+    ]
   },
   {
     "id": 1868590,
-    "name": "Bone Finesse"
+    "name": "Bone Finesse",
+    "class": "Necromancer",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Bone Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Bone Critical Strike Chance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Bone Critical Strike Damage"
+    ]
   },
   {
     "id": 1868592,
-    "name": "Shadow Finesse"
+    "name": "Shadow Finesse",
+    "class": "Necromancer",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Shadow Damage Over Time",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Darkness Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Desecrated Ground Damage"
+    ]
   },
   {
     "id": 1873385,
-    "name": "Alchemist Control"
+    "name": "Alchemist Control",
+    "class": "Rogue",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Chilling Weight",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Shadow Crash",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Flurry Size"
+    ]
   },
   {
     "id": 1873391,
-    "name": "Marksman Augments - Basic"
+    "name": "Marksman Augments - Basic",
+    "class": "Rogue",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Puncture Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Heartseeker Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Forceful Arrow Projectiles to Cast Twice"
+    ]
   },
   {
     "id": 1873393,
-    "name": "Agility Efficiency"
+    "name": "Agility Efficiency",
+    "class": "Rogue",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Agility Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Shadow Step Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Caltrops Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Dash Cooldown Reduction"
+    ]
   },
   {
     "id": 1873395,
-    "name": "Cutthroat Finesse"
+    "name": "Cutthroat Finesse",
+    "class": "Rogue",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Vulnerable Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Cutthroat Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Cutthroat Attack Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Cutthroat Critical Strike Chance"
+    ]
   },
   {
     "id": 1873413,
-    "name": "Rogue Cloaking"
+    "name": "Rogue Cloaking",
+    "class": "Rogue",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Concealment Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Concealment Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Aftermath"
+    ]
   },
   {
     "id": 1873418,
-    "name": "Rogue Recovery"
+    "name": "Rogue Recovery",
+    "class": "Rogue",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Flurry Healing",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Siphoning Strikes",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Mending Obscurity"
+    ]
   },
   {
     "id": 1873421,
-    "name": "Rogue Motion"
+    "name": "Rogue Motion",
+    "class": "Rogue",
+    "type": "Mobility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed from Blade Shift",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed per Dark Shroud Shadow",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Shadow Step Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Stutter Step"
+    ]
   },
   {
     "id": 1873423,
-    "name": "Trap Augments"
+    "name": "Trap Augments",
+    "class": "Rogue",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Death Trap to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Caltrops to Consume No Charges",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Poison Trap Duration"
+    ]
   },
   {
     "id": 1873425,
-    "name": "Imbuement Abundance"
+    "name": "Imbuement Abundance",
+    "class": "Rogue",
+    "type": "Utility",
+    "values": [
+      "Shadow Imbue Lasts For \\+ \\+? ?[0-9\\.,\\-% \\[\\]]+ Casts",
+      "Poison Imbue Lasts For \\+ \\+? ?[0-9\\.,\\-% \\[\\]]+ Casts",
+      "Cold Imbue Lasts For \\+ \\+? ?[0-9\\.,\\-% \\[\\]]+ Casts"
+    ]
   },
   {
     "id": 1873428,
-    "name": "Subterfuge Efficiency"
+    "name": "Subterfuge Efficiency",
+    "class": "Rogue",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Subterfuge Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Trap Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Poison Trap Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Dark Shroud Cooldown Reduction"
+    ]
   },
   {
     "id": 1873430,
-    "name": "Marksman Finesse"
+    "name": "Marksman Finesse",
+    "class": "Rogue",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Critical Strike Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Marksman Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Marksman Critical Strike Chance"
+    ]
   },
   {
     "id": 1873432,
-    "name": "Skillful Finesse"
+    "name": "Skillful Finesse",
+    "class": "Rogue",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Agility Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Core Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ultimate Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Stun Grenade Damage"
+    ]
   },
   {
     "id": 1873434,
-    "name": "Scoundrel Finesse"
+    "name": "Scoundrel Finesse",
+    "class": "Rogue",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Poisoned Enemies",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Trapped Enemies",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Imbued Damage"
+    ]
   },
   {
     "id": 1880193,
-    "name": "Furious Augments"
+    "name": "Furious Augments",
+    "class": "Barbarian",
+    "type": "Weapons",
+    "values": [
+      "Bash Cleaves for \\+? ?[0-9\\.,\\-% \\[\\]]+ Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Frenzy to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Lunging Strike to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Flay Duration"
+    ]
   },
   {
     "id": 1880200,
-    "name": "Wasteland Augments"
+    "name": "Wasteland Augments",
+    "class": "Barbarian",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Dust Devils to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Earthquakes to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Earthquake Duration"
+    ]
   },
   {
     "id": 1880202,
-    "name": "Wasteland Innovation"
+    "name": "Wasteland Innovation",
+    "class": "Barbarian",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ground Stomp Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Leap Slam Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Dust Devil Size"
+    ]
   },
   {
     "id": 1880204,
-    "name": "Thorn Body"
+    "name": "Thorn Body",
+    "class": "Barbarian",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Thorns while Fortified",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Outburst",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Tough as Nails"
+    ]
   },
   {
     "id": 1880220,
-    "name": "Minion Augments"
+    "name": "Minion Augments",
+    "class": null,
+    "type": null
   },
   {
     "id": 1880225,
-    "name": "Blood Augments"
+    "name": "Blood Augments",
+    "class": "Necromancer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Blood Surge to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Blood Lance to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Hemorrhage to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Blood Wave to Deal Double Damage"
+    ]
   },
   {
     "id": 1880227,
-    "name": "Bone Augments"
+    "name": "Bone Augments",
+    "class": "Necromancer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Bone Splinters Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Bone Spear Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Bone Spirit to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Bone Storm to Deal Double Damage"
+    ]
   },
   {
     "id": 1880229,
-    "name": "Shadow Augments - Decay"
+    "name": "Shadow Augments - Decay",
+    "class": "Necromancer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Decompose to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Blight Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Soulrift to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Affliction to Deal Double Damage"
+    ]
   },
   {
     "id": 1880235,
-    "name": "Marksman Augments - Core"
+    "name": "Marksman Augments - Core",
+    "class": "Rogue",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Barrage Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Rapid Fire Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Penetrating Shot Projectiles to Cast Twice"
+    ]
   },
   {
     "id": 1881993,
-    "name": "Rogue Invigoration"
+    "name": "Rogue Invigoration",
+    "class": "Rogue",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Puncture Resource Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Invigorating Strike Energy Regeneration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Innervation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Adrenaline Rush"
+    ]
   },
   {
     "id": 1885017,
-    "name": "Nature Magic Wall"
+    "name": "Nature Magic Wall",
+    "class": "Druid",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Cyclone Armor Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Earthen Bulwark Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Earthen Bulwark Duration"
+    ]
   },
   {
     "id": 1885019,
-    "name": "Earth Augments"
+    "name": "Earth Augments",
+    "class": "Druid",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Earth Spike Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Landslide Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Boulder Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Stone Burst to Cast Twice"
+    ]
   },
   {
     "id": 1885021,
-    "name": "Wrath Efficiency"
+    "name": "Wrath Efficiency",
+    "class": "Druid",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Hurricane Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Boulder Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rabies Cooldown Reduction"
+    ]
   },
   {
     "id": 1885023,
-    "name": "Companion Augments"
+    "name": "Companion Augments",
+    "class": "Druid",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Wolves to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Poison Creeper to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Ravens to Deal Double Damage"
+    ]
   },
   {
     "id": 1885027,
-    "name": "Shapeshifting Endurance"
+    "name": "Shapeshifting Endurance",
+    "class": "Druid",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blood Howl Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Debilitating Roar Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Debilitating Roar Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Nature's Resolve"
+    ]
   },
   {
     "id": 1885041,
-    "name": "Companion Innovation"
+    "name": "Companion Innovation",
+    "class": "Druid",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Wolves Attack Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ravens Attack Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Poison Creeper Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ravens Active Size"
+    ]
   },
   {
     "id": 1885043,
-    "name": "Storm Augments"
+    "name": "Storm Augments",
+    "class": "Druid",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Wind Shear Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Tornado Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Hurricane to Deal Double Damage"
+    ]
   },
   {
     "id": 1885045,
-    "name": "Werewolf Augments"
+    "name": "Werewolf Augments",
+    "class": "Druid",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Shred to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rabies Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lacerate Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Claw to Deal Double Damage"
+    ]
   },
   {
     "id": 1885047,
-    "name": "Companion Efficiency"
+    "name": "Companion Efficiency",
+    "class": "Druid",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Companion Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Wolves Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Poison Creeper Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ravens Cooldown Reduction"
+    ]
   },
   {
     "id": 1885049,
-    "name": "Druid Invigoration"
+    "name": "Druid Invigoration",
+    "class": "Druid",
+    "type": "Resource",
+    "values": [
+      "Casting Wrath Skills Restores \\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Resource",
+      "Casting Ultimate Skills Restores \\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Resource",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Abundance"
+    ]
   },
   {
     "id": 1885051,
-    "name": "Earth Finesse"
+    "name": "Earth Finesse",
+    "class": "Druid",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Earth Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Earth Lucky Hit Chance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Earth Critical Strike Chance"
+    ]
   },
   {
     "id": 1885053,
-    "name": "Storm Finesse"
+    "name": "Storm Finesse",
+    "class": "Druid",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Storm Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lightning Bolt Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Storm Critical Strike Chance"
+    ]
   },
   {
     "id": 1885055,
-    "name": "Shapeshifting Finesse"
-  },
-  {
-    "id": 1906199,
-    "name": "Natural Resistance"
-  },
-  {
-    "id": 1906201,
-    "name": "Natural Resistance"
+    "name": "Shapeshifting Finesse",
+    "class": "Druid",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Werebear Overpower Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Grizzly Rage Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage while Fortified"
+    ]
   },
   {
     "id": 1924568,
-    "name": "Weapon Attunement - Barbarian"
-  },
-  {
-    "id": 1924871,
-    "name": "Natural Schemes"
-  },
-  {
-    "id": 1924873,
-    "name": "Natural Schemes"
-  },
-  {
-    "id": 1924875,
-    "name": "Worldly Fortune"
-  },
-  {
-    "id": 1924877,
-    "name": "Worldly Fortune"
-  },
-  {
-    "id": 1924879,
-    "name": "Worldly Stability"
-  },
-  {
-    "id": 1924881,
-    "name": "Worldly Stability"
-  },
-  {
-    "id": 1924883,
-    "name": "Natural Finesse"
-  },
-  {
-    "id": 1924885,
-    "name": "Natural Finesse"
-  },
-  {
-    "id": 1924887,
-    "name": "Natural Motion"
-  },
-  {
-    "id": 1924889,
-    "name": "Natural Motion"
-  },
-  {
-    "id": 1924891,
-    "name": "Worldly Endurance"
-  },
-  {
-    "id": 1924893,
-    "name": "Worldly Endurance"
+    "name": "Weapon Attunement - Barbarian",
+    "class": "Barbarian",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Basic Resource Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Resource Generation with Two\\-Handed Bludgeoning Weapons",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Resource Generation with Dual\\-Wielded Weapons",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Resource Generation with Two\\-Handed Slashing Weapons"
+    ]
   },
   {
     "id": 1924895,
-    "name": "Natural Resistance"
-  },
-  {
-    "id": 1924897,
-    "name": "Wasteland Innovation"
-  },
-  {
-    "id": 1924899,
-    "name": "Wasteland Innovation"
-  },
-  {
-    "id": 1924901,
-    "name": "Wasteland Augments"
-  },
-  {
-    "id": 1924903,
-    "name": "Wasteland Augments"
-  },
-  {
-    "id": 1924905,
-    "name": "Bleed Augments"
-  },
-  {
-    "id": 1924907,
-    "name": "Bleed Augments"
-  },
-  {
-    "id": 1924909,
-    "name": "Furious Augments"
-  },
-  {
-    "id": 1924911,
-    "name": "Furious Augments"
-  },
-  {
-    "id": 1924913,
-    "name": "Berserking Innovation"
-  },
-  {
-    "id": 1924915,
-    "name": "Berserking Innovation"
-  },
-  {
-    "id": 1924917,
-    "name": "Thorn Body"
-  },
-  {
-    "id": 1924921,
-    "name": "Barbarian Control"
-  },
-  {
-    "id": 1924923,
-    "name": "Barbarian Control"
-  },
-  {
-    "id": 1924925,
-    "name": "Weapon Attunement - Barbarian"
-  },
-  {
-    "id": 1924927,
-    "name": "Weapon Attunement - Barbarian"
-  },
-  {
-    "id": 1924929,
-    "name": "Weapon Mastery Efficiency"
-  },
-  {
-    "id": 1924931,
-    "name": "Weapon Mastery Efficiency"
-  },
-  {
-    "id": 1924933,
-    "name": "Ultimate Efficiency - Barbarian"
-  },
-  {
-    "id": 1924935,
-    "name": "Ultimate Efficiency - Barbarian"
-  },
-  {
-    "id": 1924938,
-    "name": "Brawling Efficiency"
-  },
-  {
-    "id": 1924940,
-    "name": "Brawling Efficiency"
-  },
-  {
-    "id": 1924942,
-    "name": "Demolition Finesse"
-  },
-  {
-    "id": 1924944,
-    "name": "Demolition Finesse"
-  },
-  {
-    "id": 1924946,
-    "name": "Berserking Finesse"
-  },
-  {
-    "id": 1924948,
-    "name": "Berserking Finesse"
-  },
-  {
-    "id": 1924950,
-    "name": "Arsenal Finesse"
-  },
-  {
-    "id": 1924952,
-    "name": "Arsenal Finesse"
-  },
-  {
-    "id": 1924954,
-    "name": "Barbarian Motion"
-  },
-  {
-    "id": 1924956,
-    "name": "Barbarian Motion"
-  },
-  {
-    "id": 1924958,
-    "name": "Barbarian Protection (Legacy)"
-  },
-  {
-    "id": 1924962,
-    "name": "Barbarian Recovery"
-  },
-  {
-    "id": 1924966,
-    "name": "Barbarian Strategy"
-  },
-  {
-    "id": 1924968,
-    "name": "Barbarian Strategy"
+    "name": "Natural Resistance",
+    "class": "All",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Fire Resistance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lightning Resistance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Cold Resistance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Poison Resistance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Shadow Resistance"
+    ]
   },
   {
     "id": 1925846,
-    "name": "Shadow Augments - Execution"
+    "name": "Shadow Augments - Execution",
+    "class": "Necromancer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Sever to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Reap to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Corpse Explosion to Deal Double Damage"
+    ]
   },
   {
     "id": 1926048,
-    "name": "Profane Finesse"
+    "name": "Profane Finesse",
+    "class": "Necromancer",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Cursed Enemies",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Macabre Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Iron Maiden Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Corpse Tendrils Damage"
+    ]
   },
   {
     "id": 1926142,
-    "name": "Necromancer Motion"
+    "name": "Necromancer Motion",
+    "class": "Necromancer",
+    "type": "Mobility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed for \\+? ?[0-9\\.,\\-% \\[\\]]+ Seconds After Killing an Elite",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed during Blood Mist"
+    ]
   },
   {
     "id": 1926183,
-    "name": "Weapon Attunement - Necromancer"
+    "name": "Weapon Attunement - Necromancer",
+    "class": "Necromancer",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Basic Resource Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Resource Generation with Two\\-Handed Weapons",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Resource Generation while Wielding a Shield"
+    ]
   },
   {
     "id": 1926187,
-    "name": "Necromancer Invigoration"
+    "name": "Necromancer Invigoration",
+    "class": "Necromancer",
+    "type": "Resource",
+    "values": [
+      "Blood Orbs Restores \\+? ?[0-9\\.,\\-% \\[\\]]+ Essence",
+      "Casting Macabrre Skills Restores \\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Resource",
+      "Casting Ultimate Skills Restores \\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Resource"
+    ]
   },
   {
     "id": 1926288,
-    "name": "Thorn Army"
+    "name": "Thorn Army",
+    "class": "Necromancer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Thorns while Fortified",
+      "Minions Inherit \\+? ?[0-9\\.,\\-% \\[\\]]+ of Your Thorns",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Spiked Armor"
+    ]
   },
   {
     "id": 1926491,
-    "name": "Specialist Evolution"
+    "name": "Specialist Evolution",
+    "class": "Rogue",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage per Combo Point Spent",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Shadow Clone Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Inner Sight Duration"
+    ]
   },
   {
     "id": 1926624,
-    "name": "Werebear Augments"
+    "name": "Werebear Augments",
+    "class": "Druid",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Maul to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Pulverize to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Trample to Deal Double Damage"
+    ]
   },
   {
     "id": 1927398,
-    "name": "Druid Motion"
+    "name": "Druid Motion",
+    "class": "Druid",
+    "type": "Mobility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Trample Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Digitigrade Gait"
+    ]
   },
   {
     "id": 1927405,
-    "name": "Pyromancy Endurance"
+    "name": "Pyromancy Endurance",
+    "class": "Sorcerer",
+    "type": "Defensive",
+    "values": [
+      "Lucky Hit\\: Up to a 15\\% Chance to Heal \\+? ?[0-9\\.,\\-% \\[\\]]+ Life",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Flame Shield Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Warmth"
+    ]
   },
   {
     "id": 1927409,
-    "name": "Pyromancy Finesse"
+    "name": "Pyromancy Finesse",
+    "class": "Sorcerer",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Fire Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Pyromancy Attack Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Pyromancy Critical Strike Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Mastery Damage"
+    ]
   },
   {
     "id": 1927415,
-    "name": "Pyromancy Augments"
+    "name": "Pyromancy Augments",
+    "class": "Sorcerer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Fire Bolt Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Fireball Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Meteor to Deal Double Damage"
+    ]
   },
   {
     "id": 1927423,
-    "name": "Sorcerer Motion"
+    "name": "Sorcerer Motion",
+    "class": "Sorcerer",
+    "type": "Mobility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Movement Speed for \\+? ?[0-9\\.,\\-% \\[\\]]+ Seconds After Killing an Elite",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Teleport Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Conduction"
+    ]
   },
   {
     "id": 1927429,
-    "name": "Sorcerer Control"
+    "name": "Sorcerer Control",
+    "class": "Sorcerer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Immobilize Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Stun Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Freeze Duration"
+    ]
   },
   {
     "id": 1927431,
-    "name": "Ultimate Efficiency - Sorcerer"
+    "name": "Ultimate Efficiency - Sorcerer",
+    "class": "Sorcerer",
+    "type": "Resource",
+    "values": [
+      "Casting Ultimate Skills Restores \\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Resource",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Deep Freeze Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Inferno Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Unstable Currents Cooldown Reduction"
+    ]
   },
   {
     "id": 1927449,
-    "name": "Frost Cage"
+    "name": "Frost Cage",
+    "class": "Sorcerer",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Frost Nova Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chill Slow Potency",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Cold Front",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ice Armor Duration"
+    ]
   },
   {
     "id": 1927451,
-    "name": "Frost Finesse"
+    "name": "Frost Finesse",
+    "class": "Sorcerer",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Cold Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Vulnerable Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Frozen Enemies"
+    ]
   },
   {
     "id": 1927453,
-    "name": "Shock Finesse"
+    "name": "Shock Finesse",
+    "class": "Sorcerer",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lightning Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Shock Critical Strike Chance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Shock Critical Strike Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Crackling Energy Damage"
+    ]
   },
   {
     "id": 1927455,
-    "name": "Sorcerer Stability"
+    "name": "Sorcerer Stability",
+    "class": "Sorcerer",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Invigorating Conduit",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Frigid Breeze",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Fiery Surge"
+    ]
   },
   {
     "id": 1927461,
-    "name": "Frost Augments"
+    "name": "Frost Augments",
+    "class": "Sorcerer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Frost Bolt Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Frozen Orb Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Ice Shards Projectiles to Cast Twice"
+    ]
   },
   {
     "id": 1927463,
-    "name": "Shock Augments - Surge"
+    "name": "Shock Augments - Surge",
+    "class": "Sorcerer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Spark Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Chain Lightning to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Ball Lightning Projectiles to Cast Twice"
+    ]
   },
   {
     "id": 1927490,
-    "name": "Conjuration Finesse"
+    "name": "Conjuration Finesse",
+    "class": "Sorcerer",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Hydra Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ice Blades Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lightning Spear Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Familiar Damage"
+    ]
   },
   {
     "id": 1927494,
-    "name": "Conjuration Efficiency"
-  },
-  {
-    "id": 1927541,
-    "name": "Nature Magic Wall"
-  },
-  {
-    "id": 1927543,
-    "name": "Shapeshifting Endurance"
-  },
-  {
-    "id": 1927545,
-    "name": "Druid Motion"
-  },
-  {
-    "id": 1927547,
-    "name": "Companion Augments"
-  },
-  {
-    "id": 1927564,
-    "name": "Earth Finesse"
-  },
-  {
-    "id": 1927571,
-    "name": "Shapeshifting Finesse"
-  },
-  {
-    "id": 1927575,
-    "name": "Storm Finesse"
-  },
-  {
-    "id": 1927579,
-    "name": "Wrath Efficiency"
-  },
-  {
-    "id": 1927581,
-    "name": "Companion Efficiency"
-  },
-  {
-    "id": 1927674,
-    "name": "Companion Innovation"
-  },
-  {
-    "id": 1927676,
-    "name": "Werebear Augments"
+    "name": "Conjuration Efficiency",
+    "class": "Sorcerer",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Hydra Resource Cost Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ice Blades Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lightning Spear Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Familiar Duration"
+    ]
   },
   {
     "id": 1927846,
-    "name": "Daze Control"
-  },
-  {
-    "id": 1927853,
-    "name": "Earth Augments"
-  },
-  {
-    "id": 1927856,
-    "name": "Storm Augments"
-  },
-  {
-    "id": 1927858,
-    "name": "Werewolf Augments"
-  },
-  {
-    "id": 1927860,
-    "name": "Blood Endurance"
-  },
-  {
-    "id": 1927862,
-    "name": "Profane Cage"
-  },
-  {
-    "id": 1927864,
-    "name": "Necromancer Motion"
-  },
-  {
-    "id": 1927868,
-    "name": "Minion Finesse"
-  },
-  {
-    "id": 1927870,
-    "name": "Blood Finesse"
-  },
-  {
-    "id": 1927872,
-    "name": "Bone Finesse"
-  },
-  {
-    "id": 1927874,
-    "name": "Shadow Finesse"
-  },
-  {
-    "id": 1927876,
-    "name": "Profane Finesse"
-  },
-  {
-    "id": 1927878,
-    "name": "Necromancer Efficiency"
-  },
-  {
-    "id": 1927880,
-    "name": "Necromancer Invigoration"
-  },
-  {
-    "id": 1927882,
-    "name": "Weapon Attunement - Necromancer"
-  },
-  {
-    "id": 1927884,
-    "name": "Profane Innovation"
-  },
-  {
-    "id": 1927886,
-    "name": "Thorn Army"
-  },
-  {
-    "id": 1927888,
-    "name": "Minion Augments"
-  },
-  {
-    "id": 1927890,
-    "name": "Blood Augments"
-  },
-  {
-    "id": 1927892,
-    "name": "Bone Augments"
-  },
-  {
-    "id": 1927894,
-    "name": "Shadow Augments - Execution"
-  },
-  {
-    "id": 1927896,
-    "name": "Shadow Augments - Decay"
-  },
-  {
-    "id": 1927898,
-    "name": "Rogue Cloaking"
-  },
-  {
-    "id": 1927902,
-    "name": "Rogue Motion"
-  },
-  {
-    "id": 1927910,
-    "name": "Cutthroat Finesse"
-  },
-  {
-    "id": 1927912,
-    "name": "Marksman Finesse"
-  },
-  {
-    "id": 1927914,
-    "name": "Specialist Evolution"
-  },
-  {
-    "id": 1927916,
-    "name": "Skillful Finesse"
-  },
-  {
-    "id": 1927918,
-    "name": "Scoundrel Finesse"
-  },
-  {
-    "id": 1927920,
-    "name": "Agility Efficiency"
-  },
-  {
-    "id": 1927924,
-    "name": "Subterfuge Efficiency"
-  },
-  {
-    "id": 1927926,
-    "name": "Rogue Invigoration"
-  },
-  {
-    "id": 1927930,
-    "name": "Daze Control"
-  },
-  {
-    "id": 1927932,
-    "name": "Marksman Augments - Basic"
-  },
-  {
-    "id": 1927934,
-    "name": "Marksman Augments - Core"
-  },
-  {
-    "id": 1927936,
-    "name": "Trap Augments"
-  },
-  {
-    "id": 1927938,
-    "name": "Frost Cage"
-  },
-  {
-    "id": 1927940,
-    "name": "Pyromancy Endurance"
-  },
-  {
-    "id": 1927942,
-    "name": "Sorcerer Motion"
-  },
-  {
-    "id": 1927944,
-    "name": "Frost Finesse"
-  },
-  {
-    "id": 1927946,
-    "name": "Conjuration Finesse"
-  },
-  {
-    "id": 1927948,
-    "name": "Pyromancy Finesse"
-  },
-  {
-    "id": 1927950,
-    "name": "Shock Finesse"
-  },
-  {
-    "id": 1927952,
-    "name": "Conjuration Efficiency"
-  },
-  {
-    "id": 1927954,
-    "name": "Ultimate Efficiency - Sorcerer"
-  },
-  {
-    "id": 1927958,
-    "name": "Sorcerer Control"
-  },
-  {
-    "id": 1927960,
-    "name": "Frost Augments"
-  },
-  {
-    "id": 1927962,
-    "name": "Pyromancy Augments"
-  },
-  {
-    "id": 1927964,
-    "name": "Shock Augments - Surge"
-  },
-  {
-    "id": 1928103,
-    "name": "Nature Magic Wall"
-  },
-  {
-    "id": 1928105,
-    "name": "Shapeshifting Endurance"
-  },
-  {
-    "id": 1928107,
-    "name": "Druid Motion"
-  },
-  {
-    "id": 1928109,
-    "name": "Companion Augments"
-  },
-  {
-    "id": 1928111,
-    "name": "Earth Finesse"
-  },
-  {
-    "id": 1928113,
-    "name": "Shapeshifting Finesse"
-  },
-  {
-    "id": 1928115,
-    "name": "Storm Finesse"
-  },
-  {
-    "id": 1928117,
-    "name": "Wrath Efficiency"
-  },
-  {
-    "id": 1928119,
-    "name": "Companion Efficiency"
-  },
-  {
-    "id": 1928121,
-    "name": "Druid Invigoration"
-  },
-  {
-    "id": 1928123,
-    "name": "Companion Innovation"
-  },
-  {
-    "id": 1928125,
-    "name": "Werebear Augments"
-  },
-  {
-    "id": 1928127,
-    "name": "Earth Augments"
-  },
-  {
-    "id": 1928129,
-    "name": "Storm Augments"
-  },
-  {
-    "id": 1928131,
-    "name": "Werewolf Augments"
-  },
-  {
-    "id": 1928133,
-    "name": "Blood Endurance"
-  },
-  {
-    "id": 1928135,
-    "name": "Profane Cage"
-  },
-  {
-    "id": 1928137,
-    "name": "Necromancer Motion"
-  },
-  {
-    "id": 1928139,
-    "name": "Minion Finesse"
-  },
-  {
-    "id": 1928141,
-    "name": "Blood Finesse"
-  },
-  {
-    "id": 1928143,
-    "name": "Bone Finesse"
-  },
-  {
-    "id": 1928145,
-    "name": "Shadow Finesse"
-  },
-  {
-    "id": 1928147,
-    "name": "Profane Finesse"
-  },
-  {
-    "id": 1928149,
-    "name": "Necromancer Efficiency"
-  },
-  {
-    "id": 1928151,
-    "name": "Necromancer Invigoration"
-  },
-  {
-    "id": 1928153,
-    "name": "Weapon Attunement - Necromancer"
-  },
-  {
-    "id": 1928155,
-    "name": "Profane Innovation"
-  },
-  {
-    "id": 1928157,
-    "name": "Thorn Army"
-  },
-  {
-    "id": 1928159,
-    "name": "Minion Augments"
-  },
-  {
-    "id": 1928161,
-    "name": "Blood Augments"
-  },
-  {
-    "id": 1928163,
-    "name": "Bone Augments"
-  },
-  {
-    "id": 1928165,
-    "name": "Shadow Augments - Execution"
-  },
-  {
-    "id": 1928167,
-    "name": "Shadow Augments - Decay"
-  },
-  {
-    "id": 1928169,
-    "name": "Rogue Cloaking"
-  },
-  {
-    "id": 1928171,
-    "name": "Rogue Recovery"
-  },
-  {
-    "id": 1928173,
-    "name": "Rogue Motion"
-  },
-  {
-    "id": 1928175,
-    "name": "Cutthroat Finesse"
-  },
-  {
-    "id": 1928177,
-    "name": "Marksman Finesse"
-  },
-  {
-    "id": 1928179,
-    "name": "Specialist Evolution"
-  },
-  {
-    "id": 1928181,
-    "name": "Skillful Finesse"
-  },
-  {
-    "id": 1928183,
-    "name": "Scoundrel Finesse"
-  },
-  {
-    "id": 1928185,
-    "name": "Agility Efficiency"
-  },
-  {
-    "id": 1928187,
-    "name": "Imbuement Abundance"
-  },
-  {
-    "id": 1928189,
-    "name": "Subterfuge Efficiency"
-  },
-  {
-    "id": 1928191,
-    "name": "Rogue Invigoration"
-  },
-  {
-    "id": 1928193,
-    "name": "Alchemist Control"
-  },
-  {
-    "id": 1928195,
-    "name": "Daze Control"
-  },
-  {
-    "id": 1928197,
-    "name": "Marksman Augments - Basic"
-  },
-  {
-    "id": 1928199,
-    "name": "Marksman Augments - Core"
-  },
-  {
-    "id": 1928206,
-    "name": "Trap Augments"
-  },
-  {
-    "id": 1928208,
-    "name": "Frost Cage"
-  },
-  {
-    "id": 1928210,
-    "name": "Pyromancy Endurance"
-  },
-  {
-    "id": 1928212,
-    "name": "Sorcerer Motion"
-  },
-  {
-    "id": 1928214,
-    "name": "Frost Finesse"
-  },
-  {
-    "id": 1928216,
-    "name": "Conjuration Finesse"
-  },
-  {
-    "id": 1928218,
-    "name": "Pyromancy Finesse"
-  },
-  {
-    "id": 1928220,
-    "name": "Shock Finesse"
-  },
-  {
-    "id": 1928222,
-    "name": "Conjuration Efficiency"
-  },
-  {
-    "id": 1928224,
-    "name": "Ultimate Efficiency - Sorcerer"
-  },
-  {
-    "id": 1928226,
-    "name": "Sorcerer Stability"
-  },
-  {
-    "id": 1928228,
-    "name": "Sorcerer Control"
-  },
-  {
-    "id": 1928230,
-    "name": "Frost Augments"
-  },
-  {
-    "id": 1928232,
-    "name": "Pyromancy Augments"
-  },
-  {
-    "id": 1928234,
-    "name": "Shock Augments - Surge"
-  },
-  {
-    "id": 1928669,
-    "name": "Elemental Surge - Day"
-  },
-  {
-    "id": 1928677,
-    "name": "Elemental Surge - Day"
+    "name": "Daze Control",
+    "class": "Rogue",
+    "type": "Utility",
+    "values": [
+      "Lucky Hit\\: Up to a \\+? ?[0-9\\.,\\-% \\[\\]]+ Chance to Daze for 2 Seconds",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Smoke Grenade Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Smoke Grenade Duration"
+    ]
   },
   {
     "id": 1928679,
-    "name": "Elemental Surge - Day"
-  },
-  {
-    "id": 1989553,
-    "name": "Elemental Control"
+    "name": "Elemental Surge - Day",
+    "class": "All",
+    "type": "Weapons",
+    "values": [
+      "Lucky Hit\\: Up to a 40\\% Chance to Deal \\+? ?[0-9\\.,\\-% \\[\\]]+ Physical Damage",
+      "Lucky Hit\\: Up to a 40\\% Chance to Deal \\+? ?[0-9\\.,\\-% \\[\\]]+ Fire Damage",
+      "Lucky Hit\\: Up to a 40\\% Chance to Deal \\+? ?[0-9\\.,\\-% \\[\\]]+ Lightning Damage"
+    ]
   },
   {
     "id": 1989556,
-    "name": "Elemental Control"
-  },
-  {
-    "id": 1989568,
-    "name": "Conjuration Fortune"
-  },
-  {
-    "id": 1989570,
-    "name": "Conjuration Fortune"
+    "name": "Elemental Control",
+    "class": "Sorcerer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Snap Freeze",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Crippling Flames",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Convulsions"
+    ]
   },
   {
     "id": 1989572,
-    "name": "Conjuration Fortune"
-  },
-  {
-    "id": 1997918,
-    "name": "Rogue Persistence"
-  },
-  {
-    "id": 1997920,
-    "name": "Rogue Persistence"
+    "name": "Conjuration Fortune",
+    "class": "Sorcerer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Hydra Lucky Hit Chance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ice Blade Lucky Hit Chance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lightning Spear Lucky Hit Chance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Familiar Lucky Hit Chance"
+    ]
   },
   {
     "id": 1997922,
-    "name": "Rogue Persistence"
-  },
-  {
-    "id": 1998714,
-    "name": "Conjuration Augments"
+    "name": "Rogue Persistence",
+    "class": "Rogue",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Maximum Life while Dark Shroud is Active",
+      "Your Potion Also Grants \\+? ?[0-9\\.,\\-% \\[\\]]+ Maximum Resistances for 5 Seconds",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Second Wind"
+    ]
   },
   {
     "id": 1998716,
-    "name": "Conjuration Augments"
-  },
-  {
-    "id": 2006406,
-    "name": "Conjuration Augments"
-  },
-  {
-    "id": 2007684,
-    "name": "Necromancer Wall"
+    "name": "Conjuration Augments",
+    "class": "Sorcerer",
+    "type": "Weapons",
+    "values": [
+      "Casted Hydras Have \\+ \\+? ?[0-9\\.,\\-% \\[\\]]+ Heads",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Lightning Spear to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Familiars to Hit Twice"
+    ]
   },
   {
     "id": 2007697,
-    "name": "Necromancer Wall"
-  },
-  {
-    "id": 2007699,
-    "name": "Necromancer Wall"
-  },
-  {
-    "id": 2007838,
-    "name": "Subterfuge Expertise"
-  },
-  {
-    "id": 2007848,
-    "name": "Subterfuge Expertise"
+    "name": "Necromancer Wall",
+    "class": "Necromancer",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage Reduction for Your Minons",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for your Minion Attacks to Fortify you for 3\\% Maximum Life",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Drain Vitality",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Necrotic Carapace"
+    ]
   },
   {
     "id": 2007850,
-    "name": "Subterfuge Expertise"
-  },
-  {
-    "id": 2016321,
-    "name": "Shock Augments - Discharge"
-  },
-  {
-    "id": 2016323,
-    "name": "Shock Augments - Discharge"
+    "name": "Subterfuge Expertise",
+    "class": "All",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage per Dark Shroud",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage on Next Attack After Entering Stealth",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Smoke Grenade Size"
+    ]
   },
   {
     "id": 2016325,
-    "name": "Shock Augments - Discharge"
-  },
-  {
-    "id": 2016679,
-    "name": "Ultimate Efficiency - Druid"
-  },
-  {
-    "id": 2016786,
-    "name": "Ultimate Efficiency - Druid"
+    "name": "Shock Augments - Discharge",
+    "class": "Sorcerer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Teleport to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Arc Lash to Swipe Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Charged Bolts Projectiles to Cast Twice"
+    ]
   },
   {
     "id": 2016788,
-    "name": "Ultimate Efficiency - Druid"
-  },
-  {
-    "id": 2017352,
-    "name": "Barbarian Innovation"
-  },
-  {
-    "id": 2017354,
-    "name": "Barbarian Innovation"
+    "name": "Ultimate Efficiency - Druid",
+    "class": "Druid",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Petrify Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Cataclysm Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Lacerate Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Grizzly Rage Cooldown Reduction"
+    ]
   },
   {
     "id": 2017356,
-    "name": "Barbarian Innovation"
-  },
-  {
-    "id": 2017900,
-    "name": "Nature Magic Innovation"
-  },
-  {
-    "id": 2017902,
-    "name": "Nature Magic Innovation"
+    "name": "Barbarian Innovation",
+    "class": "Barbarian",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Earthquake Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Frenzy Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Stun Duration"
+    ]
   },
   {
     "id": 2017904,
-    "name": "Nature Magic Innovation"
-  },
-  {
-    "id": 2018127,
-    "name": "Rogue Innovation"
-  },
-  {
-    "id": 2018130,
-    "name": "Rogue Innovation"
+    "name": "Nature Magic Innovation",
+    "class": "Druid",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Hurricane Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Hurricane Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Cyclone Armor Active Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Petrify Duration"
+    ]
   },
   {
     "id": 2018132,
-    "name": "Rogue Innovation"
-  },
-  {
-    "id": 2040706,
-    "name": "Worldly Finesse"
-  },
-  {
-    "id": 2040708,
-    "name": "Worldly Finesse"
+    "name": "Rogue Innovation",
+    "class": "Rogue",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Invigorating Strike Duration",
+      "Twisting Blades Returns \\+? ?[0-9\\.,\\-% \\[\\]]+ Faster",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Heartseeker Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Stun Grenade Size"
+    ]
   },
   {
     "id": 2040710,
-    "name": "Worldly Finesse"
-  },
-  {
-    "id": 2053013,
-    "name": "Slayer's Finesse"
-  },
-  {
-    "id": 2053015,
-    "name": "Slayer's Finesse"
+    "name": "Worldly Finesse",
+    "class": "All",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Critical Strike Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Vulnerable Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Overpower Damage"
+    ]
   },
   {
     "id": 2053018,
-    "name": "Slayer's Finesse"
-  },
-  {
-    "id": 2057913,
-    "name": "Spiritborn Endurance"
-  },
-  {
-    "id": 2057915,
-    "name": "Spiritborn Endurance"
+    "name": "Slayer's Finesse",
+    "class": "Barbarian",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Vulnerable Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Injured Enemies",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Physical Damage Over Time"
+    ]
   },
   {
     "id": 2057917,
-    "name": "Spiritborn Endurance"
-  },
-  {
-    "id": 2058680,
-    "name": "Spiritborn Guard"
-  },
-  {
-    "id": 2058685,
-    "name": "Spiritborn Guard"
+    "name": "Spiritborn Endurance",
+    "class": "Spiritborn",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ The Protector Barrier Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Crushing Hand Barrier Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Concussive Stomp Barrier Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Auspicious"
+    ]
   },
   {
     "id": 2058689,
-    "name": "Spiritborn Guard"
-  },
-  {
-    "id": 2058693,
-    "name": "Spiritborn Recovery"
-  },
-  {
-    "id": 2058696,
-    "name": "Spiritborn Recovery"
+    "name": "Spiritborn Guard",
+    "class": "Spiritborn",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rock Splitter Block Chance Bonus",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Armored Hide Active Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Patient Guard"
+    ]
   },
   {
     "id": 2058699,
-    "name": "Spiritborn Recovery"
-  },
-  {
-    "id": 2058703,
-    "name": "Spiritborn Resolve"
-  },
-  {
-    "id": 2058707,
-    "name": "Spiritborn Resolve"
+    "name": "Spiritborn Recovery",
+    "class": "Spiritborn",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Touch of Death Healing Bonus",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Fueled",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Resilient"
+    ]
   },
   {
     "id": 2058710,
-    "name": "Spiritborn Resolve"
-  },
-  {
-    "id": 2058715,
-    "name": "Spiritborn Motion"
-  },
-  {
-    "id": 2058718,
-    "name": "Spiritborn Motion"
+    "name": "Spiritborn Resolve",
+    "class": "Spiritborn",
+    "type": "Defensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Armored Hide Resolve Generation Rate",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Resolve Generated",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Total Armor"
+    ]
   },
   {
     "id": 2058721,
-    "name": "Spiritborn Motion"
-  },
-  {
-    "id": 2058724,
-    "name": "Centipede Finesse"
-  },
-  {
-    "id": 2058727,
-    "name": "Centipede Finesse"
+    "name": "Spiritborn Motion",
+    "class": "Spiritborn",
+    "type": "Mobility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Soar Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rushing Claw Charges",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Swift"
+    ]
   },
   {
     "id": 2058730,
-    "name": "Centipede Finesse"
-  },
-  {
-    "id": 2058733,
-    "name": "Eagle Finesse"
-  },
-  {
-    "id": 2058736,
-    "name": "Eagle Finesse"
+    "name": "Centipede Finesse",
+    "class": "Spiritborn",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Potency Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Pestilent Swarm Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Centipede Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Slowed Enemies"
+    ]
   },
   {
     "id": 2058740,
-    "name": "Eagle Finesse"
-  },
-  {
-    "id": 2058749,
-    "name": "Gorilla Finesse"
-  },
-  {
-    "id": 2058752,
-    "name": "Gorilla Finesse"
+    "name": "Eagle Finesse",
+    "class": "Spiritborn",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Focus Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Storm Feather Potency",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Eagle Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Vulnerable Damage"
+    ]
   },
   {
     "id": 2058755,
-    "name": "Gorilla Finesse"
-  },
-  {
-    "id": 2058759,
-    "name": "Jaguar Finesse"
-  },
-  {
-    "id": 2058762,
-    "name": "Jaguar Finesse"
+    "name": "Gorilla Finesse",
+    "class": "Spiritborn",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Bastion",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Defensive Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Gorilla Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Knocked\\-Down Enemies"
+    ]
   },
   {
     "id": 2058765,
-    "name": "Jaguar Finesse"
-  },
-  {
-    "id": 2058780,
-    "name": "Centipede Efficiency"
-  },
-  {
-    "id": 2058783,
-    "name": "Centipede Efficiency"
+    "name": "Jaguar Finesse",
+    "class": "Spiritborn",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Mobility Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Mystic Circle Potency",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Jaguar Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Damage to Injured Enemies"
+    ]
   },
   {
     "id": 2058786,
-    "name": "Centipede Efficiency"
-  },
-  {
-    "id": 2058792,
-    "name": "Eagle Efficiency"
-  },
-  {
-    "id": 2058795,
-    "name": "Eagle Efficiency"
+    "name": "Centipede Efficiency",
+    "class": "Spiritborn",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Withering Fist Resource Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ The Devourer Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Potency Cooldown Reduction"
+    ]
   },
   {
     "id": 2058798,
-    "name": "Eagle Efficiency"
-  },
-  {
-    "id": 2058814,
-    "name": "Fitness Efficiency"
-  },
-  {
-    "id": 2058818,
-    "name": "Fitness Efficiency"
+    "name": "Eagle Efficiency",
+    "class": "Spiritborn",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Thunderspike Resource Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ The Seeker Charges",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Focus Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Razor Wing Charges"
+    ]
   },
   {
     "id": 2058820,
-    "name": "Fitness Efficiency"
-  },
-  {
-    "id": 2058825,
-    "name": "Gorilla Efficiency"
-  },
-  {
-    "id": 2058829,
-    "name": "Gorilla Efficiency"
+    "name": "Fitness Efficiency",
+    "class": "Spiritborn",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Vigorous",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Velocity",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Endurance"
+    ]
   },
   {
     "id": 2058832,
-    "name": "Gorilla Efficiency"
-  },
-  {
-    "id": 2058846,
-    "name": "Jaguar Efficiency"
-  },
-  {
-    "id": 2058848,
-    "name": "Jaguar Efficiency"
+    "name": "Gorilla Efficiency",
+    "class": "Spiritborn",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rock Splitter Resource Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ The Protector Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Defensive Cooldown Reduction"
+    ]
   },
   {
     "id": 2058850,
-    "name": "Jaguar Efficiency"
-  },
-  {
-    "id": 2058852,
-    "name": "Centipede Innovation"
-  },
-  {
-    "id": 2058855,
-    "name": "Centipede Innovation"
+    "name": "Jaguar Efficiency",
+    "class": "Spiritborn",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Thrash Resource Generation",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ The Hunter Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Incarnate Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Counterattack Charges"
+    ]
   },
   {
     "id": 2058857,
-    "name": "Centipede Innovation"
-  },
-  {
-    "id": 2058859,
-    "name": "Eagle Innovation"
-  },
-  {
-    "id": 2058861,
-    "name": "Eagle Innovation"
+    "name": "Centipede Innovation",
+    "class": "Spiritborn",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Withering Fist Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Stinger Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Scourge Size"
+    ]
   },
   {
     "id": 2058863,
-    "name": "Eagle Innovation"
-  },
-  {
-    "id": 2058865,
-    "name": "Gorilla Innovation"
-  },
-  {
-    "id": 2058867,
-    "name": "Gorilla Innovation"
+    "name": "Eagle Innovation",
+    "class": "Spiritborn",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Thunderspike Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Vortex Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Soar Size"
+    ]
   },
   {
     "id": 2058869,
-    "name": "Gorilla Innovation"
-  },
-  {
-    "id": 2058871,
-    "name": "Jaguar Innovation"
-  },
-  {
-    "id": 2058873,
-    "name": "Jaguar Innovation"
+    "name": "Gorilla Innovation",
+    "class": "Spiritborn",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rock Splitter Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Crushing Hand Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Concussive Stomp Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Armored Hide Active Thorns Bonus"
+    ]
   },
   {
     "id": 2058875,
-    "name": "Jaguar Innovation"
-  },
-  {
-    "id": 2058877,
-    "name": "Centipede Augments"
-  },
-  {
-    "id": 2058879,
-    "name": "Centipede Augments"
+    "name": "Jaguar Innovation",
+    "class": "Spiritborn",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Thrash Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rake Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ravager On Kill Duration Extension"
+    ]
   },
   {
     "id": 2058881,
-    "name": "Centipede Augments"
-  },
-  {
-    "id": 2058883,
-    "name": "Eagle Augments"
-  },
-  {
-    "id": 2058885,
-    "name": "Eagle Augments"
+    "name": "Centipede Augments",
+    "class": "Spiritborn",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Withering Fist to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Stinger to Extra Hit",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for The Devourer to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Centipede Spirit Hall Potency"
+    ]
   },
   {
     "id": 2058887,
-    "name": "Eagle Augments"
-  },
-  {
-    "id": 2058889,
-    "name": "Gorilla Augments"
-  },
-  {
-    "id": 2058896,
-    "name": "Gorilla Augments"
+    "name": "Eagle Augments",
+    "class": "Spiritborn",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Thunderspike to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Quill Volley Projectiles to Cast Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for The Seeker to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Eagle Spirit Hall Potency"
+    ]
   },
   {
     "id": 2058898,
-    "name": "Gorilla Augments"
-  },
-  {
-    "id": 2058900,
-    "name": "Jaguar Augments"
-  },
-  {
-    "id": 2058902,
-    "name": "Jaguar Augments"
+    "name": "Gorilla Augments",
+    "class": "Spiritborn",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Rock Splitter to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Crushing Hand to Extra Hit",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for The Protector to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Gorilla Spirit Hall Potency"
+    ]
   },
   {
     "id": 2058904,
-    "name": "Jaguar Augments"
-  },
-  {
-    "id": 2085372,
-    "name": "Bone Innovation"
-  },
-  {
-    "id": 2085375,
-    "name": "Bone Innovation"
+    "name": "Jaguar Augments",
+    "class": "Spiritborn",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Thrash to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Rake to Extra Hit",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for The Hunter to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Jaguar Spirit Hall Potency"
+    ]
   },
   {
     "id": 2085377,
-    "name": "Bone Innovation"
-  },
-  {
-    "id": 2085430,
-    "name": "Blood Innovation"
-  },
-  {
-    "id": 2085432,
-    "name": "Blood Innovation"
+    "name": "Bone Innovation",
+    "class": "Necromancer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Bone Storm Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Bone Spirit Explosion Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Bone Prison Duration"
+    ]
   },
   {
     "id": 2085436,
-    "name": "Blood Innovation"
-  },
-  {
-    "id": 2085447,
-    "name": "Decay Innovation"
-  },
-  {
-    "id": 2085450,
-    "name": "Decay Innovation"
+    "name": "Blood Innovation",
+    "class": "Necromancer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blood Surge Nova Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Hemorrhage Explosion Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blood Lance Duration"
+    ]
   },
   {
     "id": 2085452,
-    "name": "Decay Innovation"
-  },
-  {
-    "id": 2085462,
-    "name": "Execution Innovation"
-  },
-  {
-    "id": 2085464,
-    "name": "Execution Innovation"
+    "name": "Decay Innovation",
+    "class": "Necromancer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blight Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Decompose Explosion Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Soulrift Duration"
+    ]
   },
   {
     "id": 2085466,
-    "name": "Execution Innovation"
-  },
-  {
-    "id": 2085672,
-    "name": "Bleed Innovation"
-  },
-  {
-    "id": 2085674,
-    "name": "Bleed Innovation"
+    "name": "Execution Innovation",
+    "class": "Necromancer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Sever Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Reap Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Skeleton Priest Effect Duration"
+    ]
   },
   {
     "id": 2085676,
-    "name": "Bleed Innovation"
-  },
-  {
-    "id": 2086076,
-    "name": "Barbarian Breach"
-  },
-  {
-    "id": 2086080,
-    "name": "Barbarian Breach"
+    "name": "Bleed Innovation",
+    "class": "Barbarian",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rend Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Enhanced Rupture Explosion Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Hamstring"
+    ]
   },
   {
     "id": 2086084,
-    "name": "Barbarian Breach"
-  },
-  {
-    "id": 2086142,
-    "name": "Brute Innovation"
-  },
-  {
-    "id": 2086144,
-    "name": "Brute Innovation"
+    "name": "Barbarian Breach",
+    "class": "Barbarian",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Kick Vulnerable Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Expose Vulnerability",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Pressure Point"
+    ]
   },
   {
     "id": 2086146,
-    "name": "Brute Innovation"
-  },
-  {
-    "id": 2086168,
-    "name": "Lightning Augments"
-  },
-  {
-    "id": 2086172,
-    "name": "Lightning Augments"
+    "name": "Brute Innovation",
+    "class": "Barbarian",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Hammer of the Ancients Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Upheaval Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Mighty Throw Pulse Size"
+    ]
   },
   {
     "id": 2086175,
-    "name": "Lightning Augments"
-  },
-  {
-    "id": 2086440,
-    "name": "Core Augments - Barbarian"
-  },
-  {
-    "id": 2086442,
-    "name": "Core Augments - Barbarian"
+    "name": "Lightning Augments",
+    "class": "Druid",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Storm Strike to Hit Twice",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Lightning Storm to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Cataclysm to Deal Double Damage"
+    ]
   },
   {
     "id": 2086444,
-    "name": "Core Augments - Barbarian"
-  },
-  {
-    "id": 2086722,
-    "name": "Brawling Augments"
-  },
-  {
-    "id": 2086724,
-    "name": "Brawling Augments"
+    "name": "Core Augments - Barbarian",
+    "class": "Barbarian",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Hammer of the Ancients to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Whirlwind to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Upheaval to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Double Swing to Hit Twice"
+    ]
   },
   {
     "id": 2086726,
-    "name": "Brawling Augments"
-  },
-  {
-    "id": 2086822,
-    "name": "Weapon Augments"
-  },
-  {
-    "id": 2086824,
-    "name": "Weapon Augments"
+    "name": "Brawling Augments",
+    "class": "Barbarian",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Charge to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Kick to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Leap to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Ground Stomp to Hit Twice"
+    ]
   },
   {
     "id": 2086826,
-    "name": "Weapon Augments"
-  },
-  {
-    "id": 2087578,
-    "name": "Assassin Augments"
-  },
-  {
-    "id": 2087580,
-    "name": "Assassin Augments"
+    "name": "Weapon Augments",
+    "class": "Barbarian",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Mighty Throw to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Steel Grasp to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Death Blow to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Iron Maelstrom to Hit Twice"
+    ]
   },
   {
     "id": 2087582,
-    "name": "Assassin Augments"
-  },
-  {
-    "id": 2087584,
-    "name": "Agile Augments"
-  },
-  {
-    "id": 2087586,
-    "name": "Agile Augments"
+    "name": "Assassin Augments",
+    "class": "Rogue",
+    "type": "Weapons",
+    "values": [
+      "Shadow Step Cleaves for \\+? ?[0-9\\.,\\-% \\[\\]]+  Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Smoke Grenade to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Rain of Arrows to Deal Double Damage"
+    ]
   },
   {
     "id": 2087588,
-    "name": "Agile Augments"
-  },
-  {
-    "id": 2087591,
-    "name": "Trap Expertise"
-  },
-  {
-    "id": 2087593,
-    "name": "Trap Expertise"
+    "name": "Agile Augments",
+    "class": "Rogue",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Flurry to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Dance of Knives Projectiles to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Dash to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Shadow Clone to Deal Double Damage"
+    ]
   },
   {
     "id": 2087595,
-    "name": "Trap Expertise"
-  },
-  {
-    "id": 2089971,
-    "name": "Sharpened Finesse"
-  },
-  {
-    "id": 2089976,
-    "name": "Sharpened Finesse"
+    "name": "Trap Expertise",
+    "class": "Rogue",
+    "type": "Offensive",
+    "values": [
+      "Traps Arm \\+? ?[0-9\\.,\\-% \\[\\]]+ Seconds Faster",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Caltrops Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Caltrops Duration"
+    ]
   },
   {
     "id": 2089978,
-    "name": "Sharpened Finesse"
-  },
-  {
-    "id": 2100467,
-    "name": "Soil Augments"
-  },
-  {
-    "id": 2100469,
-    "name": "Soil Augments"
+    "name": "Sharpened Finesse",
+    "class": "All",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Basic Skill Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Core Skill Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Ultimate Skill Damage"
+    ]
   },
   {
     "id": 2100471,
-    "name": "Soil Augments"
-  },
-  {
-    "id": 2100474,
-    "name": "Sky Augments"
-  },
-  {
-    "id": 2100476,
-    "name": "Sky Augments"
+    "name": "Soil Augments",
+    "class": "Spiritborn",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Touch of Death Swarm Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Scourge Poisoning Duration",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Ravenous"
+    ]
   },
   {
     "id": 2100481,
-    "name": "Sky Augments"
-  },
-  {
-    "id": 2100483,
-    "name": "Forest Augments"
-  },
-  {
-    "id": 2100490,
-    "name": "Forest Augments"
+    "name": "Sky Augments",
+    "class": "Spiritborn",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Soar to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Vortex to Extra Hit",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Razor Wings to Deal Double Damage"
+    ]
   },
   {
     "id": 2100494,
-    "name": "Forest Augments"
-  },
-  {
-    "id": 2100497,
-    "name": "Plains Augments"
-  },
-  {
-    "id": 2100500,
-    "name": "Plains Augments"
+    "name": "Forest Augments",
+    "class": "Spiritborn",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Payback to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Concussive Stomp to Extra Hit",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Dominant"
+    ]
   },
   {
     "id": 2100502,
-    "name": "Plains Augments"
-  },
-  {
-    "id": 2101063,
-    "name": "Pyromancy Augments - Fiery"
-  },
-  {
-    "id": 2101065,
-    "name": "Pyromancy Augments - Fiery"
+    "name": "Plains Augments",
+    "class": "Spiritborn",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Rushing Claw to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Ravager to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Furnace"
+    ]
   },
   {
     "id": 2101067,
-    "name": "Pyromancy Augments - Fiery"
-  },
-  {
-    "id": 2101070,
-    "name": "Frost Augments - Frozen"
-  },
-  {
-    "id": 2101072,
-    "name": "Frost Augments - Frozen"
+    "name": "Pyromancy Augments - Fiery",
+    "class": "Sorcerer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Incinerate to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Firewall to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Meteorites to Deal Double Damage"
+    ]
   },
   {
     "id": 2101074,
-    "name": "Frost Augments - Frozen"
-  },
-  {
-    "id": 2101077,
-    "name": "Sorcerer Innovation"
-  },
-  {
-    "id": 2101079,
-    "name": "Sorcerer Innovation"
+    "name": "Frost Augments - Frozen",
+    "class": "Sorcerer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Blizzard to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Ice Spike to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Deep Freeze to Deal Double Damage"
+    ]
   },
   {
     "id": 2101081,
-    "name": "Sorcerer Innovation"
-  },
-  {
-    "id": 2108317,
-    "name": "Elemental Surge - Night"
-  },
-  {
-    "id": 2108324,
-    "name": "Elemental Surge - Night"
+    "name": "Sorcerer Innovation",
+    "class": "Sorcerer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Frost Nova Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Blizzard Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Teleport Nova Size"
+    ]
   },
   {
     "id": 2108327,
-    "name": "Elemental Surge - Night"
-  },
-  {
-    "id": 2112095,
-    "name": "Cutthroat Augments"
-  },
-  {
-    "id": 2112097,
-    "name": "Cutthroat Augments"
+    "name": "Elemental Surge - Night",
+    "class": "All",
+    "type": "Weapons",
+    "values": [
+      "Lucky Hit\\: Up to a 40\\% Chance to Deal \\+? ?[0-9\\.,\\-% \\[\\]]+ Cold Damage",
+      "Lucky Hit\\: Up to a 40\\% Chance to Deal \\+? ?[0-9\\.,\\-% \\[\\]]+ Poison Damage",
+      "Lucky Hit\\: Up to a 40\\% Chance to Deal \\+? ?[0-9\\.,\\-% \\[\\]]+ Shadow Damage"
+    ]
   },
   {
     "id": 2112099,
-    "name": "Cutthroat Augments"
-  },
-  {
-    "id": 2124999,
-    "name": "Sorcerer Innovation - Fiery"
-  },
-  {
-    "id": 2125001,
-    "name": "Sorcerer Innovation - Fiery"
+    "name": "Cutthroat Augments",
+    "class": "Rogue",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Blade Shift to Deal Double Damage",
+      "Invigorating Strike Cleaves for \\+? ?[0-9\\.,\\-% \\[\\]]+ Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Twisting Blades to Hit Twice"
+    ]
   },
   {
     "id": 2125003,
-    "name": "Sorcerer Innovation - Fiery"
-  },
-  {
-    "id": 2166155,
-    "name": "Vehement Augments"
-  },
-  {
-    "id": 2166157,
-    "name": "Vehement Augments"
+    "name": "Sorcerer Innovation - Fiery",
+    "class": "Sorcerer",
+    "type": "Utility",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Incinerate Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Meteor Size",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Firewall Size"
+    ]
   },
   {
     "id": 2166159,
-    "name": "Vehement Augments"
-  },
-  {
-    "id": 2166239,
-    "name": "Dreadful Augments"
-  },
-  {
-    "id": 2166241,
-    "name": "Dreadful Augments"
+    "name": "Vehement Augments",
+    "class": "Barbarian",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Warpath",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Belligerence",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Heavy Hitter"
+    ]
   },
   {
     "id": 2166243,
-    "name": "Dreadful Augments"
-  },
-  {
-    "id": 2169778,
-    "name": "Ultimate Efficiency - Rogue"
-  },
-  {
-    "id": 2169785,
-    "name": "Ultimate Efficiency - Rogue"
+    "name": "Dreadful Augments",
+    "class": "Necromancer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Fueled by Death",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Finality",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Titan's Fall"
+    ]
   },
   {
     "id": 2169791,
-    "name": "Ultimate Efficiency - Rogue"
-  },
-  {
-    "id": 2172859,
-    "name": "Prismatic Augments"
-  },
-  {
-    "id": 2172861,
-    "name": "Prismatic Augments"
+    "name": "Ultimate Efficiency - Rogue",
+    "class": "Rogue",
+    "type": "Resource",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Rain of Arrows Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Death Trap Cooldown Reduction",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Shadow Clone Cooldown Reduction Casting Ultimate Skills Restores \\+? ?[0-9\\.,\\-% \\[\\]]+ Primary Resource"
+    ]
   },
   {
     "id": 2172863,
-    "name": "Prismatic Augments"
-  },
-  {
-    "id": 2180748,
-    "name": "Werewolf Finesse"
-  },
-  {
-    "id": 2180750,
-    "name": "Werewolf Finesse"
+    "name": "Prismatic Augments",
+    "class": "Sorcerer",
+    "type": "Weapons",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for a Second Ice Blades When Cast",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Chance for Inferno to Deal Double Damage",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ to Shocking Impact"
+    ]
   },
   {
     "id": 2180752,
-    "name": "Werewolf Finesse"
+    "name": "Werewolf Finesse",
+    "class": "Druid",
+    "type": "Offensive",
+    "values": [
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Werewolf Attack Speed",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Werewolf Critical Strike Chance",
+      "\\+? ?[0-9\\.,\\-% \\[\\]]+ Poison Damage"
+    ]
   }
 ]
