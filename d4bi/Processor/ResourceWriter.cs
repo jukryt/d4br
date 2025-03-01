@@ -17,11 +17,10 @@ namespace Importer.Processor
 
         public async Task WriteAsync(IEnumerable<T> items)
         {
-            var folderPath = Path.Combine(_workFolder, _target.Folder);
-            var filePath = Path.Combine(folderPath, _target.FileName);
+            var filePath = Path.Combine(_workFolder, _target.FileName);
 
-            if (!string.IsNullOrEmpty(folderPath))
-                Directory.CreateDirectory(folderPath);
+            if (!string.IsNullOrEmpty(_workFolder))
+                Directory.CreateDirectory(_workFolder);
 
             using var stream = new FileStream(filePath, FileMode.Create);
             using var writer = new StreamWriter(stream, new UTF8Encoding(false));
