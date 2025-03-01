@@ -185,7 +185,7 @@ class D4BuildsProcessor {
 
     fixPopupStyleBug(node) {
         return this.transformTranslateProcess(node) ||
-               this.transformTranslate3dProcess(node)
+            this.transformTranslate3dProcess(node)
     }
 
     transformTranslateProcess(node) {
@@ -243,6 +243,14 @@ class D4BuildsProcessor {
         return true;
     }
 
+    getCharClassName() {
+        const classNameHeader =
+            document.querySelector("div.builder__header__title h2.builder__header__description") ?? // build
+            document.querySelector("button.builder__header__selection h2.builder__header__name");   // planner
+
+        return classNameHeader?.innerText?.replace(" Build", "");
+    }
+
     aspectNameProcess(node) {
         return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, false);
     }
@@ -253,20 +261,12 @@ class D4BuildsProcessor {
             return false;
         }
 
-        let headers = document.querySelectorAll("button.builder__header__selection h2.builder__header__name");
-        if (headers.length != 1) {
-            headers = document.querySelectorAll("div.builder__header__title h2.builder__header__description");
-            if (headers.length != 1) {
-                return false;
-            }
-        }
-
-        const className = headers[0].innerText?.replace(" Build", "");
-        if (!className) {
+        const charClassName = this.getCharClassName();
+        if (!charClassName) {
             return false;
         }
 
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === className || i.class === "All"));
+        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
         let sourceItems = tempers.filter(i => i.values.some(s => {
             const match = sourceValue.match(s)
             return match &&
@@ -279,8 +279,8 @@ class D4BuildsProcessor {
         }
 
         if (sourceItems.length > 1) {
-            if (Array.from(new Set(sourceItems.map(i => i.type))).length == 1) {
-                const classItem = sourceItems.find(i => i.class === className);
+            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
+                const classItem = sourceItems.find(i => i.class === charClassName);
                 if (classItem) {
                     sourceItems = [classItem];
                 } else {
@@ -329,6 +329,11 @@ class D4BuildsProcessor {
             return false;
         }
 
+        const charClassName = this.getCharClassName();
+        if (!charClassName) {
+            return false;
+        }
+
         const temperNameMatchs = [...sourceValue.matchAll(/\(([^\(\)]+) - ([^\(\)]+)\)/g)];
         if (temperNameMatchs.length === 0) {
             return false;
@@ -338,7 +343,7 @@ class D4BuildsProcessor {
         const temperName = temperNameMatch[1];
         const temperType = temperNameMatch[2];
 
-        const sourceItem = this.sourceLanguage.tempers.find(i => i.name === temperName && i.type === temperType);
+        const sourceItem = this.sourceLanguage.tempers.find(i => (i.class === charClassName || i.class === "All") && i.type === temperType && i.name === temperName);
         if (!sourceItem) {
             return false;
         }
@@ -505,6 +510,14 @@ class D4MaxrollProcessor {
         }
     }
 
+    getCharClassName() {
+        const classNameTitle =
+            document.querySelector("div.d4t-PlannerLink div.d4t-title") ??  // guide
+            document.querySelector("div.header_Header__buildTitle__WS8cB"); // planner
+
+        return classNameTitle?.innerText;
+    }
+
     aspectNameProcess(titleNode, subTitleNode) {
         if (!subTitleNode) {
             return false;
@@ -561,14 +574,8 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const title = document.querySelector("div.d4t-PlannerLink div.d4t-title") ??
-              document.querySelector("div.header_Header__buildTitle__WS8cB");
-        if (!title) {
-            return false;
-        }
-
-        const className = title.innerText;
-        if (!className) {
+        const charClassName = this.getCharClassName();
+        if (!charClassName) {
             return false;
         }
 
@@ -577,7 +584,7 @@ class D4MaxrollProcessor {
             .replace(/\[[0-9\. \-]+\]%?/, "") // [values]
             .trim();
 
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === className || i.class === "All"));
+        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
         let sourceItems = tempers.filter(i => i.values.some(s => {
             const match = temperValue.match(s)
             return match &&
@@ -590,8 +597,8 @@ class D4MaxrollProcessor {
         }
 
         if (sourceItems.length > 1) {
-            if (Array.from(new Set(sourceItems.map(i => i.type))).length == 1) {
-                const classItem = sourceItems.find(i => i.class === className);
+            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
+                const classItem = sourceItems.find(i => i.class === charClassName);
                 if (classItem) {
                     sourceItems = [classItem];
                 } else {
@@ -748,6 +755,16 @@ class D4MobalyticsProcessor {
         }
     }
 
+    getCharClassName() {
+        const classNameTitle =
+            document.querySelector("span.m-a53mf3") ??                           // build
+            document.querySelector("#downshift-0-toggle-button span.m-1sjbyfv"); // planner
+
+        return classNameTitle?.innerText
+            ?.replace("Diablo 4 ", "")
+            ?.replace(" Build", "");
+    }
+
     aspectNameProcess(node) {
         return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, true);
     }
@@ -758,20 +775,29 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        let sourceItem = this.sourceLanguage.tempers.find(i => i.name === sourceValue);
+        const charClassName = this.getCharClassName();
 
-        if (!sourceItem) {
-            const temperNameMatch = sourceValue.match(/(.+) - (.+)/);
-            if (temperNameMatch) {
-                const temperName = `${temperNameMatch[1]}-${temperNameMatch[2]}`;
-                sourceItem = this.sourceLanguage.tempers.find(i => i.name === temperName);
-            }
-        }
+        const sourceItems = this.sourceLanguage.tempers.filter(i => (i.class === charClassName || i.class === "All") && i.name === sourceValue);
 
-        if (!sourceItem) {
+        if (sourceItems.length === 0) {
             return false;
         }
 
+        if (sourceItems.length > 1) {
+            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
+                const classItem = sourceItems.find(i => i.class === charClassName);
+                if (classItem) {
+                    sourceItems = [classItem];
+                } else {
+                    sourceItems = [sourceItems[0]];
+                }
+            }
+            else {
+                return false;
+            }
+        }
+
+        const sourceItem = sourceItems[0];
         const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
         if (!targetItem) {
             return false;
@@ -874,7 +900,7 @@ class D4MobalyticsProcessor {
     }
 }
 
-(function() {
+(function () {
     'use strict';
 
     AddStyle("@keyframes d4br_show_anim { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }");
@@ -899,18 +925,18 @@ class D4MobalyticsProcessor {
 function CreateProcessor() {
     const host = window.location.host;
     switch (host) {
-        case "d4builds.gg" :
+        case "d4builds.gg":
             return new D4BuildsProcessor();
-        case "maxroll.gg" :
+        case "maxroll.gg":
             return new D4MaxrollProcessor();
-        case "mobalytics.gg" :
+        case "mobalytics.gg":
             return new D4MobalyticsProcessor();
     }
 }
 
 function AddStyle(css) {
     const name = "d4br_style";
-    const style = document.getElementById(name) || (function() {
+    const style = document.getElementById(name) || (function () {
         const style = document.createElement('style');
         style.type = 'text/css';
         style.id = name;
