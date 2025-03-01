@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      0.15.3
+// @version      0.15.100
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
