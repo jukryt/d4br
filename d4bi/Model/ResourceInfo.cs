@@ -14,6 +14,7 @@ namespace Importer.Model
         public required string Name { get; init; }
         public required ResourceSource<T> Source { get; init; }
         public ResourceFix<T>? Fix { get; init; }
+        public ResourceCheck<T>? Check { get; init; }
         public required ResourceTarget<T> Target { get; init; }
 
         public virtual IResourceProcessor CreateProcessor(string folder, ILogger logger)

@@ -1,4 +1,5 @@
-﻿using Importer.Custom.Temper;
+﻿using Importer.Checker;
+using Importer.Custom.Temper;
 using Importer.Fixer;
 using Importer.Model;
 
@@ -35,6 +36,17 @@ namespace Importer
                                     new FixName<Item>(),
                                 ],
                             },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
+                                ],
+                            },
                             Target = new()
                             {
                                 FileName = "aspect.json",
@@ -61,6 +73,17 @@ namespace Importer
                                     new FixName<Item>(),
                                 ],
                             },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
+                                ],
+                            },
                             Target = new()
                             {
                                 FileName = "glyph.json",
@@ -85,6 +108,17 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                ],
+                            },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
                                 ],
                             },
                             Target = new()
@@ -118,6 +152,17 @@ namespace Importer
                                     new FixName<Item>(),
                                 ],
                             },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
+                                ],
+                            },
                             Target = new()
                             {
                                 FileName = "rune.json",
@@ -142,6 +187,17 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                ],
+                            },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
                                 ],
                             },
                             Target = new()
@@ -174,6 +230,17 @@ namespace Importer
                                     },
                                 ],
                             },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
+                                ],
+                            },
                             Target = new()
                             {
                                 FileName = "temper.json",
@@ -198,6 +265,17 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                ],
+                            },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
                                 ],
                             },
                             Target = new()
@@ -233,6 +311,17 @@ namespace Importer
                                     new FixName<Item>(),
                                 ],
                             },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
+                                ],
+                            },
                             Target = new()
                             {
                                 FileName = "aspect.json",
@@ -259,6 +348,17 @@ namespace Importer
                                     new FixName<Item>(),
                                 ],
                             },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
+                                ],
+                            },
                             Target = new()
                             {
                                 FileName = "glyph.json",
@@ -283,6 +383,17 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                ],
+                            },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
                                 ],
                             },
                             Target = new()
@@ -316,6 +427,17 @@ namespace Importer
                                     new FixName<Item>(),
                                 ],
                             },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
+                                ],
+                            },
                             Target = new()
                             {
                                 FileName = "rune.json",
@@ -340,6 +462,17 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                ],
+                            },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
                                 ],
                             },
                             Target = new()
@@ -368,6 +501,17 @@ namespace Importer
                                     new FixName<Item>(),
                                 ],
                             },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
+                                ],
+                            },
                             Target = new()
                             {
                                 FileName = "temper.json",
@@ -392,6 +536,17 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                ],
+                            },
+                            Check = new()
+                            {
+                                Checkers =
+                                [
+                                    new CheckEmptyName(),
+                                    new CheckUnique<Item>()
+                                    {
+                                        Comparer = new ItemEqualityComparer(),
+                                    },
                                 ],
                             },
                             Target = new()

@@ -28,10 +28,12 @@ namespace Importer.Processor
 
             var reader = _info.Source.CreateReader();
             var fixer = _info.Fix?.CreateFixer();
+            var checker = _info.Check?.CreateChecker(_info.Name, _logger);
             var writer = _info.Target.CreateWriter(workFolder);
 
             var items = await reader.ReadAsync(browser);
             await (fixer?.FixItemsAsync(items) ?? Task.CompletedTask);
+            checker?.CheckItems(items);
             await writer.WriteAsync(items.OrderBy(i => i.Id));
 
             _logger.WriteMessage(_info.Name);
