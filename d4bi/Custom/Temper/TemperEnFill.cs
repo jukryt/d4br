@@ -17,33 +17,11 @@ namespace Importer.Custom.Temper
         {
             var manuals = await GetManualsAsync();
 
-            foreach (var manual in manuals)
-            {
-                if (manual.Name == "Ultimate Efficiency")
-                    manual.Name = "Ultimate Efficiency - Rogue";
-            }
+            FixTemperName(manuals);
 
             var tempers = manuals.ToDictionary(m => m.Name, m => new TemperInfo(m.Class, m.Type, m.Stats));
 
-            foreach (var temperInfo in tempers.Values)
-            {
-                for (var i = 0; i < temperInfo.Values.Count; i++)
-                {
-                    var sourceValue = temperInfo.Values[i];
-                    temperInfo.Values[i] = Regex.Replace(sourceValue, @"\[[^\]]+\]", "///")
-                        .Replace("%", "\\%")
-                        .Replace("+", "\\+")
-                        .Replace("-", "\\-")
-                        .Replace(".", "\\.")
-                        .Replace(" X ", " \\+? ?[0-9\\.,\\-% \\[\\]]+ ") // for js regex
-                        .Replace("///", "\\+? ?[0-9\\.,\\-% \\[\\]]+") // for js regex
-                        .Replace("\n", " ")
-                        .Replace("*", "\\*")
-                        .Replace(":", "\\:")
-                        .Replace("(", "\\(")
-                        .Replace(")", "\\)");
-                }
-            }
+            FixTemperValues(tempers.Values);
 
             foreach (var item in items)
             {
@@ -57,6 +35,48 @@ namespace Importer.Custom.Temper
                     item.Class = temperInfo.CharClass;
                     item.Type = temperInfo.TemperType;
                     item.Values = [.. temperInfo.Values];
+                }
+            }
+        }
+
+        private void FixTemperName(IEnumerable<ManualObject.TemperingStat> manuals)
+        {
+            foreach (var manual in manuals)
+            {
+                if (manual.Name == "Ultimate Efficiency")
+                    manual.Name = "Ultimate Efficiency - Rogue";
+            }
+        }
+
+        private void FixTemperValues(IEnumerable<TemperInfo> temperInfos)
+        {
+            foreach (var temperInfo in temperInfos)
+            {
+                for (var i = 0; i < temperInfo.Values.Count; i++)
+                {
+                    var sourceValue = temperInfo.Values[i];
+
+                    if (sourceValue == "[13.5-22.5%] Shadow Clone Cooldown Reduction\nCasting Ultimate Skills Restores [36 - 45] Primary Resource")
+                    {
+                        var values = sourceValue.Split('\n');
+
+                        sourceValue = values[0];
+                        foreach (var value in values.Skip(1))
+                            temperInfo.Values.Add(value);
+                    }
+
+                    temperInfo.Values[i] = Regex.Replace(sourceValue, @"\[[^\]]+\]", "///")
+                        .Replace("%", "\\%")
+                        .Replace("+", "\\+")
+                        .Replace("-", "\\-")
+                        .Replace(".", "\\.")
+                        .Replace(" X ", " \\+? ?[0-9\\.,\\-% \\[\\]]+ ") // for js regex
+                        .Replace("///", "\\+? ?[0-9\\.,\\-% \\[\\]]+") // for js regex
+                        .Replace("\n", " ")
+                        .Replace("*", "\\*")
+                        .Replace(":", "\\:")
+                        .Replace("(", "\\(")
+                        .Replace(")", "\\)");
                 }
             }
         }
