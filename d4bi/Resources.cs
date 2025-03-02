@@ -34,6 +34,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -71,6 +72,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -108,6 +110,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -150,6 +153,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -187,6 +191,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -224,6 +229,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<TemperEnItem>(),
+                                    new FixRemoveEmptyName<TemperEnItem>(),
                                     new TemperEnFill
                                     {
                                         ManualsUrl = "https://d4builds.gg/page-data/database/tempering-manuals/page-data.json",
@@ -265,6 +271,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -309,6 +316,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -346,6 +354,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -383,6 +392,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -425,6 +435,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -462,6 +473,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -499,6 +511,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
@@ -536,6 +549,7 @@ namespace Importer
                                 Fixers =
                                 [
                                     new FixName<Item>(),
+                                    new FixRemoveEmptyName<Item>(),
                                 ],
                             },
                             Check = new()
