@@ -179,7 +179,7 @@ class D4MobalyticsProcessor {
 
         const sourceItems = this.sourceLanguage.getResource(resourceName).filter(i => {
             return i.name === sourceValue &&
-                (!i.classes || i.classes.find(c => c === charClassName))
+                (!i.classes || i.classes.length === 0 || i.classes.find(c => c === charClassName))
         });
 
         if (sourceItems.length != 1) {

@@ -12,7 +12,8 @@
             if (!base.Equals(x, y))
                 return false;
 
-            return x.Classes.Intersect(y.Classes).Any();
+            return x.Classes.Length == 0 || y.Classes.Length == 0 ||
+                x.Classes.Intersect(y.Classes).Any();
         }
     }
 }
