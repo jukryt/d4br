@@ -6,13 +6,10 @@
         public string? Name { get; set; }
     }
 
-    internal class ItemEqualComparer : IEqualComparer<Item>
+    internal class ItemEqualComparer<T> : IEqualComparer<T> where T : Item
     {
-        public bool Equals(Item? x, Item? y)
+        public virtual bool Equals(T x, T y)
         {
-            if (x == null || y == null)
-                return false;
-
             return x.Name == y.Name;
         }
     }

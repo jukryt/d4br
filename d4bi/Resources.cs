@@ -41,10 +41,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -53,7 +53,7 @@ namespace Importer
                                 FileName = "aspect.json",
                             },
                         },
-                        new ResourceInfo<Item>
+                        new ResourceInfo<ClassItem>
                         {
                             Name = "glyph en",
                             Source = new()
@@ -63,7 +63,7 @@ namespace Importer
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/paragon-glyphs",
-                                        Script = "() => g_listviews['paragon-glyphs'].data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews['paragon-glyphs'].data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames.split(', ')}))",
                                     },
                                 ],
                             },
@@ -71,18 +71,18 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
-                                    new FixRemoveEmptyName<Item>(),
+                                    new FixName<ClassItem>(),
+                                    new FixRemoveEmptyName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
-                                    new CheckUnique<Item>()
+                                    new CheckEmptyName<ClassItem>(),
+                                    new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ClassItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -117,10 +117,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -160,10 +160,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -198,10 +198,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -240,10 +240,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
-                                    new CheckUnique<Item>()
+                                    new CheckEmptyName<TemperEnItem>(),
+                                    new CheckUnique<TemperEnItem>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<TemperEnItem>(),
                                     },
                                 ],
                             },
@@ -278,10 +278,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -323,10 +323,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -335,7 +335,7 @@ namespace Importer
                                 FileName = "aspect.json",
                             },
                         },
-                        new ResourceInfo<Item>
+                        new ResourceInfo<ClassItem>
                         {
                             Name = "glyph ru",
                             Source = new()
@@ -345,7 +345,7 @@ namespace Importer
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/paragon-glyphs",
-                                        Script = "() => g_listviews['paragon-glyphs'].data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews['paragon-glyphs'].data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames.split(', ')}))",
                                     },
                                 ],
                             },
@@ -353,18 +353,18 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
-                                    new FixRemoveEmptyName<Item>(),
+                                    new FixName<ClassItem>(),
+                                    new FixRemoveEmptyName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
-                                    new CheckUnique<Item>()
+                                    new CheckEmptyName<ClassItem>(),
+                                    new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ClassItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -399,10 +399,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -442,10 +442,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -480,10 +480,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -518,10 +518,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
@@ -556,10 +556,10 @@ namespace Importer
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName(),
+                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualComparer(),
+                                        Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },

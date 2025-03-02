@@ -225,7 +225,16 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const sourceItems = this.sourceLanguage.getResource(resourceName).filter(i => i.name === sourceValue);
+        const charClassName = this.getCharClassName();
+        if (!charClassName) {
+            return false;
+        }
+
+        const sourceItems = this.sourceLanguage.getResource(resourceName).filter(i => {
+            return i.name === sourceValue &&
+                (!i.classes || i.classes.find(c => c === charClassName))
+        });
+
         if (sourceItems.length != 1) {
             return false;
         }
