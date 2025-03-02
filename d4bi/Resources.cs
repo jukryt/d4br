@@ -1,5 +1,6 @@
 ﻿using Importer.Checker;
 using Importer.Custom.Temper;
+using Importer.Custom.UnqItem;
 using Importer.Fixer;
 using Importer.Model;
 
@@ -272,6 +273,7 @@ namespace Importer
                                 [
                                     new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
+                                    new UnqItemFilter(),
                                 ],
                             },
                             Check = new()
@@ -550,6 +552,7 @@ namespace Importer
                                 [
                                     new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
+                                    new UnqItemFilter(),
                                 ],
                             },
                             Check = new()
