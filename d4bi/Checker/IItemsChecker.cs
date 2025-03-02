@@ -5,6 +5,6 @@ namespace Importer.Checker
 {
     internal interface IItemsChecker<in T> where T : Item
     {
-        public void CheckItems(IReadOnlyCollection<T> items, ILogger logger);
+        public void CheckItems(IReadOnlyList<T> items, ILogger logger);
     }
 }

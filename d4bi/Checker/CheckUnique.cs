@@ -5,16 +5,23 @@ namespace Importer.Checker
 {
     internal class CheckUnique<T> : IItemsChecker<T> where T : Item
     {
-        public required IEqualityComparer<T> Comparer { get; init; }
+        public required IEqualComparer<T> Comparer { get; init; }
 
-        public void CheckItems(IReadOnlyCollection<T> items, ILogger logger)
+        public void CheckItems(IReadOnlyList<T> items, ILogger logger)
         {
-            var set = new HashSet<T>(items.Count, Comparer);
-            foreach (var item in items)
+            var duplicates = new HashSet<T>();
+
+            for (int i = 0; i < items.Count; i++)
             {
-                if(!set.Add(item))
-                    logger.WriteMessage($"Id: {item.Id} - duplicate", nameof(CheckUnique<T>));
+                for (int j = i + 1; j < items.Count; j++)
+                {
+                    if (Comparer.Equals(items[i], items[j]))
+                        duplicates.Add(items[j]);
+                }
             }
+
+            foreach (var item in duplicates)
+                logger.WriteMessage($"Id: {item.Id} - duplicate", nameof(CheckUnique<T>));
         }
     }
 }

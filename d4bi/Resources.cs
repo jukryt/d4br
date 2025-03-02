@@ -44,7 +44,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -82,7 +82,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -120,7 +120,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -163,7 +163,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -201,7 +201,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -243,7 +243,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -281,7 +281,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -326,7 +326,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -364,7 +364,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -402,7 +402,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -445,7 +445,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -483,7 +483,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -521,7 +521,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -559,7 +559,7 @@ namespace Importer
                                     new CheckEmptyName(),
                                     new CheckUnique<Item>()
                                     {
-                                        Comparer = new ItemEqualityComparer(),
+                                        Comparer = new ItemEqualComparer(),
                                     },
                                 ],
                             },

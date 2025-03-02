@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
-
-namespace Importer.Model
+﻿namespace Importer.Model
 {
     internal class Item
     {
@@ -8,7 +6,7 @@ namespace Importer.Model
         public string? Name { get; set; }
     }
 
-    internal class ItemEqualityComparer : IEqualityComparer<Item>
+    internal class ItemEqualComparer : IEqualComparer<Item>
     {
         public bool Equals(Item? x, Item? y)
         {
@@ -16,11 +14,6 @@ namespace Importer.Model
                 return false;
 
             return x.Name == y.Name;
-        }
-
-        public int GetHashCode([DisallowNull] Item obj)
-        {
-            return obj.Name?.GetHashCode() ?? 0;
         }
     }
 }

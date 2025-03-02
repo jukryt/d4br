@@ -5,7 +5,7 @@ namespace Importer.Checker
 {
     internal class CheckEmptyName : IItemsChecker<Item>
     {
-        public void CheckItems(IReadOnlyCollection<Item> items, ILogger logger)
+        public void CheckItems(IReadOnlyList<Item> items, ILogger logger)
         {
             foreach (var item in items)
             {
