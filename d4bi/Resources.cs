@@ -172,7 +172,7 @@ namespace Importer
                                 FileName = "rune.json",
                             },
                         },
-                        new ResourceInfo<Item>
+                        new ResourceInfo<ClassItem>
                         {
                             Name = "skill en",
                             Source = new()
@@ -182,7 +182,7 @@ namespace Importer
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/skills",
-                                        Script = "() => g_listviews.skills.data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews.skills.data.map(i => ({id: i.id, name: i.name, classes: [i.playerClassName]}))",
                                     },
                                 ],
                             },
@@ -190,18 +190,18 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
-                                    new FixRemoveEmptyName<Item>(),
+                                    new FixName<ClassItem>(),
+                                    new FixRemoveEmptyName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
-                                    new CheckUnique<Item>()
+                                    new CheckEmptyName<ClassItem>(),
+                                    new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ItemEqualComparer<Item>(),
+                                        Comparer = new ClassItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -454,7 +454,7 @@ namespace Importer
                                 FileName = "rune.json",
                             },
                         },
-                        new ResourceInfo<Item>
+                        new ResourceInfo<ClassItem>
                         {
                             Name = "skill ru",
                             Source = new()
@@ -464,7 +464,7 @@ namespace Importer
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/skills",
-                                        Script = "() => g_listviews.skills.data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews.skills.data.map(i => ({id: i.id, name: i.name, classes: [i.playerClassName]}))",
                                     },
                                 ],
                             },
@@ -472,18 +472,18 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
-                                    new FixRemoveEmptyName<Item>(),
+                                    new FixName<ClassItem>(),
+                                    new FixRemoveEmptyName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
-                                    new CheckUnique<Item>()
+                                    new CheckEmptyName<ClassItem>(),
+                                    new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ItemEqualComparer<Item>(),
+                                        Comparer = new ClassItemEqualComparer(),
                                     },
                                 ],
                             },
