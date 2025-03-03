@@ -43,28 +43,11 @@ namespace Importer.Custom.Temper
         private async Task FillStatsAsync(List<TemperEnItem> items, ILogger logger)
         {
             var manuals = await GetManualsAsync();
-
             var tempers = manuals.Select(m => new TemperInfo(m.Name, m.Class, m.Type, m.Stats)).ToList();
 
             FixTemperHeads(tempers, logger);
             FixTemperValues(tempers, logger);
-
-            var temperDictionary = tempers.ToDictionary(t => t.Name, t => t);
-
-            foreach (var item in items)
-            {
-                if (string.IsNullOrEmpty(item.Name))
-                    continue;
-
-                var name = item.Name;
-
-                if (temperDictionary.TryGetValue(item.Name, out var temperInfo))
-                {
-                    item.Class = temperInfo.CharClass;
-                    item.Type = temperInfo.TemperType;
-                    item.Values = [.. temperInfo.Values];
-                }
-            }
+            ApplyChanges(items, tempers);
         }
 
         private void FixTemperHeads(IEnumerable<TemperInfo> tempers, ILogger logger)
@@ -96,14 +79,15 @@ namespace Importer.Custom.Temper
                 for (var i = 0; i < temper.Values.Count; i++)
                 {
                     var sourceValue = temper.Values[i];
+                    var targetValue = sourceValue;
 
                     if (_fixTemperValues.TryGetValue(sourceValue, out var valueAction))
                     {
-                        sourceValue = valueAction(temper.Values, sourceValue);
+                        targetValue = valueAction(temper.Values, sourceValue);
                         fixTemperValues.Add(sourceValue);
                     }
 
-                    temper.Values[i] = Regex.Replace(sourceValue, @"\[[^\]]+\]", "///")
+                    temper.Values[i] = Regex.Replace(targetValue, @"\[[^\]]+\]", "///")
                         .Replace("%", "\\%")
                         .Replace("+", "\\+")
                         .Replace("-", "\\-")
@@ -120,6 +104,26 @@ namespace Importer.Custom.Temper
 
             if (_fixTemperValues.Count != fixTemperValues.Count)
                 logger.WriteMessage($"{nameof(FixTemperValues)} count not match", nameof(TemperEnFill));
+        }
+
+        private void ApplyChanges(List<TemperEnItem> items, IEnumerable<TemperInfo> tempers)
+        {
+            var temperDictionary = tempers.ToDictionary(t => t.Name, t => t);
+
+            foreach (var item in items.ToList())
+            {
+                if (string.IsNullOrEmpty(item.Name))
+                    continue;
+
+                var name = item.Name;
+
+                if (temperDictionary.TryGetValue(item.Name, out var temperInfo))
+                {
+                    item.Class = temperInfo.CharClass;
+                    item.Type = temperInfo.TemperType;
+                    item.Values = [.. temperInfo.Values];
+                }
+            }
         }
 
         private async Task<List<ManualObject.TemperingStat>> GetManualsAsync()
