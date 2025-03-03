@@ -3,21 +3,21 @@ using Importer.Model;
 
 namespace Importer.Processor
 {
-    internal class ResourceFixer<T> where T : Item
+    internal class ResourceCkecker<T> where T : Item
     {
-        private readonly ResourceFix<T> _fix;
+        private readonly ResourceCheck<T> _check;
         private readonly ILogger _logger;
 
-        public ResourceFixer(string resourceName, ResourceFix<T> fix, ILogger logger)
+        public ResourceCkecker(string resourceName, ResourceCheck<T> check, ILogger logger)
         {
-            _fix = fix;
+            _check = check;
             _logger = new LoggerWrapper(resourceName, logger);
         }
 
-        public async Task FixItemsAsync(List<T> items)
+        public void CheckItems(List<T> items)
         {
-            foreach (var fixer in _fix.Fixers)
-                await fixer.FixItemsAsync(items, _logger);
+            foreach (var checker in _check.Checkers)
+                checker.CheckItems(items, _logger);
         }
 
         private sealed class LoggerWrapper : ILogger

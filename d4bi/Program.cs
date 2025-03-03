@@ -1,4 +1,5 @@
 ﻿using Importer.Logger;
+using Importer.Model;
 using Importer.Puppeteer;
 
 namespace Importer
@@ -22,13 +23,16 @@ namespace Importer
 
             logger.WriteMessage("Begin");
 
-            var chunks = Resources.GetResources().Chunk(5);
+            var chunks = Resources.GetResources()
+                .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)))
+                .Chunk(5);
+
             foreach (var chunk in chunks)
             {
                 var tasks = new List<Task>();
-                foreach (var resourceInfo in chunk)
+                foreach (var resource in chunk)
                 {
-                    var processor = resourceInfo.CreateProcessor(logger);
+                    var processor = resource.Info.CreateProcessor(resource.Folder, logger);
                     tasks.Add(processor.ProcessAsync(browser));
                 }
                 await Task.WhenAll(tasks);
@@ -42,6 +46,18 @@ namespace Importer
             var source = $"{nameof(Program)}.{nameof(UnhandledExceptionTrapper)}";
             var exception = (Exception)args.ExceptionObject;
             Static.Logger.WriteException(exception, source);
+        }
+
+        public sealed class Resource
+        {
+            public Resource(IResourceInfo info, string folder)
+            {
+                Info = info;
+                Folder = folder;
+            }
+
+            public IResourceInfo Info { get; }
+            public string Folder { get; }
         }
     }
 }
