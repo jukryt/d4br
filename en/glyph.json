@@ -1,494 +1,871 @@
 [
   {
-    "id": 732443,
-    "name": ""
-  },
-  {
     "id": 1023184,
-    "name": "Enchanter"
+    "name": "Enchanter",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023185,
-    "name": "Unleash"
+    "name": "Unleash",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023186,
-    "name": "Elementalist"
+    "name": "Elementalist",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023187,
-    "name": "Adept"
+    "name": "Adept",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023188,
-    "name": "Conjurer"
+    "name": "Conjurer",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023189,
-    "name": "Charged"
+    "name": "Charged",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023190,
-    "name": "Torch"
+    "name": "Torch",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023191,
-    "name": "Pyromaniac"
+    "name": "Pyromaniac",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023192,
-    "name": "Frostbite"
+    "name": "Frostbite",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023193,
-    "name": "Tactician"
+    "name": "Tactician",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023194,
-    "name": "Guzzler"
+    "name": "Guzzler",
+    "classes": [
+      "Druid",
+      "Spiritborn"
+    ]
   },
   {
     "id": 1023195,
-    "name": "Reinforced"
+    "name": "Reinforced",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023196,
-    "name": "Warding"
+    "name": "Warding",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023197,
-    "name": "Territorial"
+    "name": "Territorial",
+    "classes": [
+      "Sorcerer",
+      "Druid",
+      "Barbarian",
+      "Necromancer"
+    ]
   },
   {
     "id": 1023198,
-    "name": "Flamefeeder"
+    "name": "Flamefeeder",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023199,
-    "name": "Exploit"
+    "name": "Exploit",
+    "classes": [
+      "Druid",
+      "Barbarian"
+    ]
   },
   {
     "id": 1023200,
-    "name": "Winter"
+    "name": "Winter",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023201,
-    "name": "Electrocute"
+    "name": "Electrocute",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023202,
-    "name": "Destruction"
+    "name": "Destruction",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1023203,
-    "name": "Control"
+    "name": "Control",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1027075,
-    "name": "Ambidextrous"
+    "name": "Ambidextrous",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027083,
-    "name": "Might"
+    "name": "Might",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027084,
-    "name": "Cleaver"
+    "name": "Cleaver",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027085,
-    "name": "Seething"
+    "name": "Seething",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027086,
-    "name": "Crusher"
+    "name": "Crusher",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027087,
-    "name": "Executioner"
+    "name": "Executioner",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027088,
-    "name": "Ire"
+    "name": "Ire",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027089,
-    "name": "Marshal"
+    "name": "Marshal",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027090,
-    "name": "Bloodfeeder"
+    "name": "Bloodfeeder",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027091,
-    "name": "Wrath"
+    "name": "Wrath",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027093,
-    "name": "Weapon Master"
+    "name": "Weapon Master",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027094,
-    "name": "Mortal Draw"
+    "name": "Mortal Draw",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027095,
-    "name": "Revenge"
+    "name": "Revenge",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027096,
-    "name": "Undaunted"
+    "name": "Undaunted",
+    "classes": [
+      "Barbarian",
+      "Necromancer"
+    ]
   },
   {
     "id": 1027097,
-    "name": "Dominate"
+    "name": "Dominate",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027098,
-    "name": "Disembowel"
+    "name": "Disembowel",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1027099,
-    "name": "Brawl"
+    "name": "Brawl",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1028219,
-    "name": "Poise"
+    "name": "Poise",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028226,
-    "name": "Fang and Claw"
+    "name": "Fang and Claw",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028227,
-    "name": "Earth and Sky"
+    "name": "Earth and Sky",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028228,
-    "name": "Wilds"
+    "name": "Wilds",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028229,
-    "name": "Werebear"
+    "name": "Werebear",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028230,
-    "name": "Werewolf"
+    "name": "Werewolf",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028231,
-    "name": "Human"
+    "name": "Human",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028232,
-    "name": "Bane"
+    "name": "Bane",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028233,
-    "name": "Keeper"
+    "name": "Keeper",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028234,
-    "name": "Fulminate"
+    "name": "Fulminate",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028235,
-    "name": "Tracker"
+    "name": "Tracker",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028236,
-    "name": "Outmatch"
+    "name": "Outmatch",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028237,
-    "name": "Spirit"
+    "name": "Spirit",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1028238,
-    "name": "Shapeshifter"
+    "name": "Shapeshifter",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1029476,
-    "name": "Versatility"
+    "name": "Versatility",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029477,
-    "name": "Closer"
+    "name": "Closer",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029478,
-    "name": "Ranger"
+    "name": "Ranger",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029479,
-    "name": "Chip"
+    "name": "Chip",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029480,
-    "name": "Frostfeeder"
+    "name": "Frostfeeder",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029481,
-    "name": "Fluidity"
+    "name": "Fluidity",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029482,
-    "name": "Devious"
+    "name": "Devious",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029485,
-    "name": "Infusion"
+    "name": "Infusion",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029486,
-    "name": "Combat"
+    "name": "Combat",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029487,
-    "name": "Canny"
+    "name": "Canny",
+    "classes": [
+      "Rogue",
+      "Spiritborn"
+    ]
   },
   {
     "id": 1029488,
-    "name": "Efficacy"
+    "name": "Efficacy",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029489,
-    "name": "Snare"
+    "name": "Snare",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029490,
-    "name": "Exploit"
+    "name": "Exploit",
+    "classes": [
+      "Rogue",
+      "Spiritborn"
+    ]
   },
   {
     "id": 1029491,
-    "name": "Control"
+    "name": "Control",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029493,
-    "name": "Turf"
+    "name": "Turf",
+    "classes": [
+      "Rogue",
+      "Spiritborn"
+    ]
   },
   {
     "id": 1029494,
-    "name": "Pride"
+    "name": "Pride",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029495,
-    "name": "Ambush"
+    "name": "Ambush",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029496,
-    "name": "Tracker"
+    "name": "Tracker",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1029497,
-    "name": "Bane"
+    "name": "Bane",
+    "classes": [
+      "Rogue",
+      "Spiritborn"
+    ]
   },
   {
     "id": 1031000,
-    "name": "Sacrificial"
+    "name": "Sacrificial",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031001,
-    "name": "Corporeal"
+    "name": "Corporeal",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031002,
-    "name": "Blood-drinker"
+    "name": "Blood-drinker",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031003,
-    "name": "Control"
+    "name": "Control",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031004,
-    "name": "Deadraiser"
+    "name": "Deadraiser",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031005,
-    "name": "Mage"
+    "name": "Mage",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031006,
-    "name": "Amplify"
+    "name": "Amplify",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031007,
-    "name": "Golem"
+    "name": "Golem",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031008,
-    "name": "Scourge"
+    "name": "Scourge",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031010,
-    "name": "Essence"
+    "name": "Essence",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031011,
-    "name": "Warrior"
+    "name": "Warrior",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031012,
-    "name": "Gravekeeper"
+    "name": "Gravekeeper",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1031058,
-    "name": "Abyssal"
+    "name": "Abyssal",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1068816,
-    "name": "Protector"
+    "name": "Protector",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1068821,
-    "name": "Undaunted"
+    "name": "Undaunted",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1068833,
-    "name": "Dominate"
+    "name": "Dominate",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1071719,
-    "name": "Imbiber"
+    "name": "Imbiber",
+    "classes": [
+      "Sorcerer",
+      "Barbarian",
+      "Necromancer"
+    ]
   },
   {
     "id": 1217015,
-    "name": "Diminish"
+    "name": "Diminish",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1294418,
-    "name": "Darkness"
+    "name": "Darkness",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1296014,
-    "name": "Exploit"
+    "name": "Exploit",
+    "classes": [
+      "Sorcerer",
+      "Necromancer"
+    ]
   },
   {
     "id": 1331811,
-    "name": "Dominate"
+    "name": "Dominate",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1331846,
-    "name": "Revenge"
+    "name": "Revenge",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1621704,
-    "name": "Twister"
+    "name": "Twister",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1622788,
-    "name": "Rumble"
+    "name": "Rumble",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1622887,
-    "name": "Explosive"
+    "name": "Explosive",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1622957,
-    "name": "Nightstalker"
+    "name": "Nightstalker",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1623724,
-    "name": "Stalagmite"
+    "name": "Stalagmite",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1623747,
-    "name": "Invocation"
+    "name": "Invocation",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1624740,
-    "name": "Tectonic"
+    "name": "Tectonic",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1627925,
-    "name": "Electrocution"
+    "name": "Electrocution",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1629205,
-    "name": "Exhumation"
+    "name": "Exhumation",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1631011,
-    "name": "Desecration"
+    "name": "Desecration",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2063983,
-    "name": "Fitness"
+    "name": "Fitness",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2064639,
-    "name": "Menagerist"
+    "name": "Menagerist",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2066786,
-    "name": "Jagged Plume"
+    "name": "Jagged Plume",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2067363,
-    "name": "Hone"
+    "name": "Hone",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2067375,
-    "name": "Talon"
+    "name": "Talon",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2067561,
-    "name": "Innate"
+    "name": "Innate",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2067631,
-    "name": "Wildfire"
+    "name": "Wildfire",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2069252,
-    "name": "Colossal"
+    "name": "Colossal",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2069914,
-    "name": "Ritual"
+    "name": "Ritual",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2070496,
-    "name": "Consumption"
+    "name": "Consumption",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2070631,
-    "name": "Hubris"
+    "name": "Hubris",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2072563,
-    "name": "Fester"
+    "name": "Fester",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2072751,
-    "name": "Eliminator"
+    "name": "Eliminator",
+    "classes": [
+      "Sorcerer",
+      "Necromancer"
+    ]
   },
   {
     "id": 2073373,
-    "name": "Challenger"
+    "name": "Challenger",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2073378,
-    "name": "Headhunter"
+    "name": "Headhunter",
+    "classes": [
+      "Rogue",
+      "Spiritborn"
+    ]
   },
   {
     "id": 2077016,
-    "name": "Fulminate"
+    "name": "Fulminate",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2077106,
-    "name": "Spirit"
+    "name": "Spirit",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2077200,
-    "name": "Outmatch"
+    "name": "Outmatch",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2117207,
-    "name": "Headhunter"
+    "name": "Headhunter",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2120405,
-    "name": "Revenge"
+    "name": "Revenge",
+    "classes": [
+      "Spiritborn"
+    ]
   }
 ]
