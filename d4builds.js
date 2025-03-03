@@ -238,14 +238,35 @@ class D4BuildsProcessor {
         }
 
         const temperNameMatch = temperNameMatchs[temperNameMatchs.length - 1];
-        const temperName = temperNameMatch[1];
-        const temperType = temperNameMatch[2];
+        const temperValue = sourceValue.replace(temperNameMatch[0], "").trim();
 
-        const sourceItem = this.sourceLanguage.tempers.find(i => (i.class === charClassName || i.class === "All") && i.type === temperType && i.name === temperName);
-        if (!sourceItem) {
+        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        let sourceItems = tempers.filter(i => i.values.some(s => {
+            const match = temperValue.match(s)
+            return match &&
+                match.index === 0 &&
+                match[0] === temperValue;
+        }));
+
+        if (sourceItems.length === 0) {
             return false;
         }
 
+        if (sourceItems.length > 1) {
+            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
+                const classItem = sourceItems.find(i => i.class === charClassName);
+                if (classItem) {
+                    sourceItems = [classItem];
+                } else {
+                    sourceItems = [sourceItems[0]];
+                }
+            }
+            else {
+                return false;
+            }
+        }
+
+        const sourceItem = sourceItems[0];
         const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
         if (!targetItem) {
             return false;
