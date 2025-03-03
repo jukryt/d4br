@@ -274,9 +274,9 @@ namespace Importer
                             {
                                 Fixers =
                                 [
+                                    new UnqItemFilter(),
                                     new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
-                                    new UnqItemFilter(),
                                 ],
                             },
                             Check = new()
@@ -554,9 +554,9 @@ namespace Importer
                             {
                                 Fixers =
                                 [
+                                    new UnqItemFilter(),
                                     new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
-                                    new UnqItemFilter(),
                                 ],
                             },
                             Check = new()
