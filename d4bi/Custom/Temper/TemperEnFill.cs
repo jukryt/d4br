@@ -7,9 +7,12 @@ namespace Importer.Custom.Temper
 {
     internal class TemperEnFill : IItemsFixer<TemperEnItem>
     {
-        private readonly Dictionary<string, string> _renameTempers = new()
+        private readonly Dictionary<string, Action<TemperInfo>> _fixTemperHeads = new()
         {
-            ["Ultimate Efficiency"] = "Ultimate Efficiency - Rogue",
+            ["Ultimate Efficiency"] = (temper) =>
+            {
+                temper.Name = "Ultimate Efficiency - Rogue";
+            },
         };
 
         private readonly Dictionary<string, Func<List<string>, string, string>> _fixTemperValues = new()
@@ -36,11 +39,12 @@ namespace Importer.Custom.Temper
         {
             var manuals = await GetManualsAsync();
 
-            FixTemperName(manuals, logger);
+            var tempers = manuals.Select(m => new TemperInfo(m.Name, m.Class, m.Type, m.Stats)).ToList();
 
-            var tempers = manuals.ToDictionary(m => m.Name, m => new TemperInfo(m.Class, m.Type, m.Stats));
+            FixTemperHeads(tempers, logger);
+            FixTemperValues(tempers, logger);
 
-            FixTemperValues(tempers.Values, logger);
+            var temperDictionary = tempers.ToDictionary(t => t.Name, t => t);
 
             foreach (var item in items)
             {
@@ -49,7 +53,7 @@ namespace Importer.Custom.Temper
 
                 var name = item.Name;
 
-                if (tempers.TryGetValue(item.Name, out var temperInfo))
+                if (temperDictionary.TryGetValue(item.Name, out var temperInfo))
                 {
                     item.Class = temperInfo.CharClass;
                     item.Type = temperInfo.TemperType;
@@ -58,42 +62,43 @@ namespace Importer.Custom.Temper
             }
         }
 
-        private void FixTemperName(IEnumerable<ManualObject.TemperingStat> manuals, ILogger logger)
+        private void FixTemperHeads(IEnumerable<TemperInfo> tempers, ILogger logger)
         {
-            if (!_renameTempers.Any())
+            if (!_fixTemperHeads.Any())
                 return;
 
-            var renameCount = 0;
-            foreach (var manual in manuals)
+            var fixTemperHeads = new HashSet<string>();
+            foreach (var temper in tempers)
             {
-                if (_renameTempers.TryGetValue(manual.Name, out var newName))
+                if (_fixTemperHeads.TryGetValue(temper.Name, out var headAction))
                 {
-                    manual.Name = newName;
-                    renameCount++;
+                    var name = temper.Name;
+                    headAction(temper);
+                    fixTemperHeads.Add(name);
                 }
             }
 
-            if (_renameTempers.Count != renameCount)
-                logger.WriteMessage("RenameTempers not match", nameof(TemperEnFill));
+            if (_fixTemperHeads.Count != fixTemperHeads.Count)
+                logger.WriteMessage($"{nameof(FixTemperHeads)} count not match", nameof(TemperEnFill));
         }
 
-        private void FixTemperValues(IEnumerable<TemperInfo> temperInfos, ILogger logger)
+        private void FixTemperValues(IEnumerable<TemperInfo> tempers, ILogger logger)
         {
-            var fixTemperValuesCount = 0;
+            var fixTemperValues = new HashSet<string>();
 
-            foreach (var temperInfo in temperInfos)
+            foreach (var temper in tempers)
             {
-                for (var i = 0; i < temperInfo.Values.Count; i++)
+                for (var i = 0; i < temper.Values.Count; i++)
                 {
-                    var sourceValue = temperInfo.Values[i];
+                    var sourceValue = temper.Values[i];
 
-                    if (_fixTemperValues.TryGetValue(sourceValue, out var invalidValueAction))
+                    if (_fixTemperValues.TryGetValue(sourceValue, out var valueAction))
                     {
-                        sourceValue = invalidValueAction(temperInfo.Values, sourceValue);
-                        fixTemperValuesCount++;
+                        sourceValue = valueAction(temper.Values, sourceValue);
+                        fixTemperValues.Add(sourceValue);
                     }
 
-                    temperInfo.Values[i] = Regex.Replace(sourceValue, @"\[[^\]]+\]", "///")
+                    temper.Values[i] = Regex.Replace(sourceValue, @"\[[^\]]+\]", "///")
                         .Replace("%", "\\%")
                         .Replace("+", "\\+")
                         .Replace("-", "\\-")
@@ -108,8 +113,8 @@ namespace Importer.Custom.Temper
                 }
             }
 
-            if (_fixTemperValues.Count != fixTemperValuesCount)
-                logger.WriteMessage("FixTemperValues not match", nameof(TemperEnFill));
+            if (_fixTemperValues.Count != fixTemperValues.Count)
+                logger.WriteMessage($"{nameof(FixTemperValues)} count not match", nameof(TemperEnFill));
         }
 
         private async Task<List<ManualObject.TemperingStat>> GetManualsAsync()
@@ -120,8 +125,9 @@ namespace Importer.Custom.Temper
                 .Result.PageContext.TemperingStats;
         }
 
-        private sealed class TemperInfo(string charСlass, string temperType, IEnumerable<string> values)
+        private sealed class TemperInfo(string name, string charСlass, string temperType, IEnumerable<string> values)
         {
+            public string Name { get; set; } = name;
             public string CharClass { get; set; } = charСlass;
             public string TemperType { get; set; } = temperType;
             public List<string> Values { get; set; } = [.. values];
