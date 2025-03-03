@@ -26,6 +26,11 @@ namespace Importer.Custom.Temper
 
                 return splitValues[0];
             },
+            ["Casting Macabrre Skills Restores [15-21] Primary Resource"] = (values, value) =>
+            {
+                values.Add(value.Replace("Macabrre", "Macabre"));
+                return value;
+            },
         };
 
         public required string ManualsUrl { get; init; }
