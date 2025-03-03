@@ -27,7 +27,7 @@ namespace Importer.Processor
             var workFolder = Path.Combine(Static.WorkFolder, _folder);
 
             var reader = _info.Source.CreateReader();
-            var fixer = _info.Fix?.CreateFixer();
+            var fixer = _info.Fix?.CreateFixer(_info.Name, _logger);
             var checker = _info.Check?.CreateChecker(_info.Name, _logger);
             var writer = _info.Target.CreateWriter(workFolder);
 

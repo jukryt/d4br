@@ -1,4 +1,5 @@
 ﻿using Importer.Fixer;
+using Importer.Logger;
 using Importer.Serializer;
 using System.Text.RegularExpressions;
 
@@ -6,22 +7,40 @@ namespace Importer.Custom.Temper
 {
     internal class TemperEnFill : IItemsFixer<TemperEnItem>
     {
+        private readonly Dictionary<string, string> _renameTempers = new()
+        {
+            ["Ultimate Efficiency"] = "Ultimate Efficiency - Rogue",
+        };
+
+        private readonly Dictionary<string, Func<List<string>, string, string>> _fixTemperValues = new()
+        {
+            ["[13.5-22.5%] Shadow Clone Cooldown Reduction\nCasting Ultimate Skills Restores [36 - 45] Primary Resource"] = (values, value) =>
+            {
+                var splitValues = value.Split('\n');
+
+                foreach (var splitValue in splitValues.Skip(1))
+                    values.Add(splitValue);
+
+                return splitValues[0];
+            },
+        };
+
         public required string ManualsUrl { get; init; }
 
-        public Task FixItemsAsync(List<TemperEnItem> items)
+        public Task FixItemsAsync(List<TemperEnItem> items, ILogger logger)
         {
-            return FillStatsAsync(items);
+            return FillStatsAsync(items, logger);
         }
 
-        private async Task FillStatsAsync(List<TemperEnItem> items)
+        private async Task FillStatsAsync(List<TemperEnItem> items, ILogger logger)
         {
             var manuals = await GetManualsAsync();
 
-            FixTemperName(manuals);
+            FixTemperName(manuals, logger);
 
             var tempers = manuals.ToDictionary(m => m.Name, m => new TemperInfo(m.Class, m.Type, m.Stats));
 
-            FixTemperValues(tempers.Values);
+            FixTemperValues(tempers.Values, logger);
 
             foreach (var item in items)
             {
@@ -39,30 +58,39 @@ namespace Importer.Custom.Temper
             }
         }
 
-        private void FixTemperName(IEnumerable<ManualObject.TemperingStat> manuals)
+        private void FixTemperName(IEnumerable<ManualObject.TemperingStat> manuals, ILogger logger)
         {
+            if (!_renameTempers.Any())
+                return;
+
+            var renameCount = 0;
             foreach (var manual in manuals)
             {
-                if (manual.Name == "Ultimate Efficiency")
-                    manual.Name = "Ultimate Efficiency - Rogue";
+                if (_renameTempers.TryGetValue(manual.Name, out var newName))
+                {
+                    manual.Name = newName;
+                    renameCount++;
+                }
             }
+
+            if (_renameTempers.Count != renameCount)
+                logger.WriteMessage("RenameTempers not match", nameof(TemperEnFill));
         }
 
-        private void FixTemperValues(IEnumerable<TemperInfo> temperInfos)
+        private void FixTemperValues(IEnumerable<TemperInfo> temperInfos, ILogger logger)
         {
+            var fixTemperValuesCount = 0;
+
             foreach (var temperInfo in temperInfos)
             {
                 for (var i = 0; i < temperInfo.Values.Count; i++)
                 {
                     var sourceValue = temperInfo.Values[i];
 
-                    if (sourceValue == "[13.5-22.5%] Shadow Clone Cooldown Reduction\nCasting Ultimate Skills Restores [36 - 45] Primary Resource")
+                    if (_fixTemperValues.TryGetValue(sourceValue, out var invalidValueAction))
                     {
-                        var values = sourceValue.Split('\n');
-
-                        sourceValue = values[0];
-                        foreach (var value in values.Skip(1))
-                            temperInfo.Values.Add(value);
+                        sourceValue = invalidValueAction(temperInfo.Values, sourceValue);
+                        fixTemperValuesCount++;
                     }
 
                     temperInfo.Values[i] = Regex.Replace(sourceValue, @"\[[^\]]+\]", "///")
@@ -79,6 +107,9 @@ namespace Importer.Custom.Temper
                         .Replace(")", "\\)");
                 }
             }
+
+            if (_fixTemperValues.Count != fixTemperValuesCount)
+                logger.WriteMessage("FixTemperValues not match", nameof(TemperEnFill));
         }
 
         private async Task<List<ManualObject.TemperingStat>> GetManualsAsync()

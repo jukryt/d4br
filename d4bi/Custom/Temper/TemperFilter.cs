@@ -1,4 +1,5 @@
 ﻿using Importer.Fixer;
+using Importer.Logger;
 using Importer.Model;
 
 namespace Importer.Custom.Temper
@@ -10,13 +11,21 @@ namespace Importer.Custom.Temper
             1862212, 1880220, 1861356, 1868200,
             ];
 
-        public Task FixItemsAsync(List<T> items)
+        public Task FixItemsAsync(List<T> items, ILogger logger)
         {
+            var ignoreItesCount = 0;
+
             foreach (var item in items.ToList())
             {
                 if (_ignoreItems.Contains(item.Id))
+                { 
                     items.Remove(item);
+                    ignoreItesCount++;
+                }
             }
+
+            if (_ignoreItems.Length != ignoreItesCount)
+                logger.WriteMessage("IgnoreItems not match", nameof(TemperFilter<T>));
 
             return Task.CompletedTask;
         }

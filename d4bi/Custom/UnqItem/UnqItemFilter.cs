@@ -1,4 +1,5 @@
 ﻿using Importer.Fixer;
+using Importer.Logger;
 using Importer.Model;
 
 namespace Importer.Custom.UnqItem
@@ -17,13 +18,21 @@ namespace Importer.Custom.UnqItem
             2185044, 2185046, 2185048, 2185050,
             ];
         
-        public Task FixItemsAsync(List<Item> items)
+        public Task FixItemsAsync(List<Item> items, ILogger logger)
         {
+            var ignoreItesCount = 0;
+
             foreach (var item in items.ToList())
             {
                 if (_ignoreItems.Contains(item.Id))
+                {
                     items.Remove(item);
+                    ignoreItesCount++;
+                }
             }
+
+            if (_ignoreItems.Length != ignoreItesCount)
+                logger.WriteMessage("IgnoreItems not match", nameof(UnqItemFilter));
 
             return Task.CompletedTask;
         }
