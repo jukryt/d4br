@@ -36,7 +36,7 @@ namespace Importer.Processor
             checker?.CheckItems(items);
             await writer.WriteAsync(items.OrderBy(i => i.Id));
 
-            _logger.WriteMessage(_info.Name);
+            _logger.WriteMessage($"{_info.Name}. Complete", nameof(ResourceProcessor<T>));
         }
     }
 }

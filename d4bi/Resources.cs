@@ -3,6 +3,7 @@ using Importer.Custom.Temper;
 using Importer.Custom.UnqItem;
 using Importer.Fixer;
 using Importer.Model;
+using System.Reflection;
 
 namespace Importer
 {
@@ -229,6 +230,7 @@ namespace Importer
                             {
                                 Fixers =
                                 [
+                                    new TemperFilter<TemperEnItem>(),
                                     new FixName<TemperEnItem>(),
                                     new FixRemoveEmptyName<TemperEnItem>(),
                                     new TemperEnFill
@@ -242,6 +244,7 @@ namespace Importer
                                 Checkers =
                                 [
                                     new CheckEmptyName<TemperEnItem>(),
+                                    new TemperEnCheckPropertyes(),
                                     new CheckUnique<TemperEnItem>()
                                     {
                                         Comparer = new ItemEqualComparer<TemperEnItem>(),
@@ -512,6 +515,7 @@ namespace Importer
                             {
                                 Fixers =
                                 [
+                                    new TemperFilter<Item>(),
                                     new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
                                 ],
