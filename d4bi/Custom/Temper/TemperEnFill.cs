@@ -17,6 +17,26 @@ namespace Importer.Custom.Temper
 
         private readonly Dictionary<string, Func<List<string>, string, string>> _fixTemperValues = new()
         {
+            ["[88-115%] Basic Skill Damage"] = (values, value) =>
+            {
+                values.Add("[88-115%] Basic Damage");
+                return value;
+            },
+            ["[46.5-60%] Core Skill Damage"] = (values, value) =>
+            {
+                values.Add("[46.5-60%] Core Damage");
+                return value;
+            },
+            ["[88-115%] Ultimate Skill Damage"] = (values, value) =>
+            {
+                values.Add("[88-115%] Ultimate Damage");
+                return value;
+            },
+            ["[2-3] Razor Wing Charges"] = (values, value) =>
+            {
+                values.Add("[2-3] Razor Wings Charges");
+                return value;
+            },
             ["[13.5-22.5%] Shadow Clone Cooldown Reduction\nCasting Ultimate Skills Restores [36 - 45] Primary Resource"] = (values, value) =>
             {
                 var splitValues = value.Split('\n');
