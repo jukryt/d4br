@@ -92,8 +92,8 @@ namespace Importer.Custom.Temper
                         .Replace("+", "\\+")
                         .Replace("-", "\\-")
                         .Replace(".", "\\.")
-                        .Replace(" X ", " \\+? ?[0-9\\.,\\-% \\[\\]]+ ") // for js regex
-                        .Replace("///", "\\+? ?[0-9\\.,\\-% \\[\\]]+") // for js regex
+                        .Replace(" X ", " \\+? ?[X0-9\\.,\\-% \\[\\]]+ ") // for js regex
+                        .Replace("///", "\\+? ?[X0-9\\.,\\-% \\[\\]]+") // for js regex
                         .Replace("\n", " ")
                         .Replace("*", "\\*")
                         .Replace(":", "\\:")
