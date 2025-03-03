@@ -1,1902 +1,3313 @@
 [
   {
     "id": 111422,
-    "name": "Firewall"
+    "name": "Firewall",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 143483,
-    "name": "Spark"
+    "name": "Spark",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 146743,
-    "name": "Hydra"
+    "name": "Hydra",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 153249,
-    "name": "Fire Bolt"
+    "name": "Fire Bolt",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156208,
-    "name": "Align the Elements"
+    "name": "Align the Elements",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156211,
-    "name": "Elemental Attunement"
+    "name": "Elemental Attunement",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156217,
-    "name": "Soulfire"
+    "name": "Soulfire",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156220,
-    "name": "Combustion"
+    "name": "Combustion",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156224,
-    "name": "Glass Cannon"
+    "name": "Glass Cannon",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156225,
-    "name": "Devastation"
+    "name": "Devastation",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156227,
-    "name": "Shocking Impact"
+    "name": "Shocking Impact",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156229,
-    "name": "Convulsions"
+    "name": "Convulsions",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156230,
-    "name": "Icy Veil"
+    "name": "Icy Veil",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156232,
-    "name": "Shatter"
+    "name": "Shatter",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156233,
-    "name": "Potent Warding"
+    "name": "Potent Warding",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156234,
-    "name": "Vyr's Mastery"
+    "name": "Vyr's Mastery",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 156235,
-    "name": "Static Discharge"
+    "name": "Static Discharge",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 165023,
-    "name": "Fireball"
+    "name": "Fireball",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 166341,
-    "name": "Devouring Blaze"
+    "name": "Devouring Blaze",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 167341,
-    "name": "Flame Shield"
+    "name": "Flame Shield",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 168572,
-    "name": "Endless Pyre"
+    "name": "Endless Pyre",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 169887,
-    "name": "Coursing Currents"
+    "name": "Coursing Currents",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 171610,
-    "name": "Inner Flames"
+    "name": "Inner Flames",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 171937,
-    "name": "Charged Bolts"
+    "name": "Charged Bolts",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 172459,
-    "name": "Elemental Dominance"
+    "name": "Elemental Dominance",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 172497,
-    "name": "Warmth"
+    "name": "Warmth",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 172509,
-    "name": "Snap Freeze"
+    "name": "Snap Freeze",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 184600,
-    "name": "War Cry"
+    "name": "War Cry",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 186358,
-    "name": "Ground Stomp"
+    "name": "Ground Stomp",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 196545,
-    "name": "Leap"
+    "name": "Leap",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 199516,
-    "name": "Kick"
+    "name": "Kick",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 200765,
-    "name": "Bash"
+    "name": "Bash",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 202484,
-    "name": "Upheaval"
+    "name": "Upheaval",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 204662,
-    "name": "Charge"
+    "name": "Charge",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 206435,
-    "name": "Whirlwind"
+    "name": "Whirlwind",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 206504,
-    "name": "Lunging Strike"
+    "name": "Lunging Strike",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 208000,
-    "name": "Double Swing"
+    "name": "Double Swing",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 210431,
-    "name": "Flay"
+    "name": "Flay",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 210919,
-    "name": "Frenzy"
+    "name": "Frenzy",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 211871,
-    "name": "Wrath of the Berserker"
+    "name": "Wrath of the Berserker",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 211938,
-    "name": "Rallying Cry"
+    "name": "Rallying Cry",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 212712,
-    "name": "Swiftness"
+    "name": "Swiftness",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 212731,
-    "name": "Endless Fury"
+    "name": "Endless Fury",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 212832,
-    "name": "Expose Vulnerability"
+    "name": "Expose Vulnerability",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 212867,
-    "name": "Duelist"
+    "name": "Duelist",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 213021,
-    "name": "Hamstring"
+    "name": "Hamstring",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 213077,
-    "name": "Quick Impulses"
+    "name": "Quick Impulses",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 213153,
-    "name": "Cut to the Bone"
+    "name": "Cut to the Bone",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 213673,
-    "name": "Hammer of the Ancients"
+    "name": "Hammer of the Ancients",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 213811,
-    "name": "Battle Fervor"
+    "name": "Battle Fervor",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 213949,
-    "name": "Slaying Strike"
+    "name": "Slaying Strike",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 213961,
-    "name": "Gushing Wounds"
+    "name": "Gushing Wounds",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 213966,
-    "name": "Unconstrained"
+    "name": "Unconstrained",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 214020,
-    "name": "Martial Vigor"
+    "name": "Martial Vigor",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 214021,
-    "name": "Tough as Nails"
+    "name": "Tough as Nails",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 214786,
-    "name": "Rend"
+    "name": "Rend",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 215027,
-    "name": "Rupture"
+    "name": "Rupture",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 215518,
-    "name": "Booming Voice"
+    "name": "Booming Voice",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 215519,
-    "name": "Brute Force"
+    "name": "Brute Force",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 216116,
-    "name": "Thick Skin"
+    "name": "Thick Skin",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 216222,
-    "name": "Guttural Yell"
+    "name": "Guttural Yell",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 216365,
-    "name": "Furious Impulse"
+    "name": "Furious Impulse",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 216535,
-    "name": "Pit Fighter"
+    "name": "Pit Fighter",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 216608,
-    "name": "No Mercy"
+    "name": "No Mercy",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 216638,
-    "name": "Walking Arsenal"
+    "name": "Walking Arsenal",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 216644,
-    "name": "Unbridled Rage"
+    "name": "Unbridled Rage",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 217121,
-    "name": "Invigorating Fury"
+    "name": "Invigorating Fury",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 217175,
-    "name": "Iron Maelstrom"
+    "name": "Iron Maelstrom",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 218754,
-    "name": "Prolific Fury"
+    "name": "Prolific Fury",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 238345,
-    "name": "Boulder"
+    "name": "Boulder",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 258243,
-    "name": "Trample"
+    "name": "Trample",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 258990,
-    "name": "Hurricane"
+    "name": "Hurricane",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 265663,
-    "name": "Wolves"
+    "name": "Wolves",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 266570,
-    "name": "Cataclysm"
+    "name": "Cataclysm",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 267021,
-    "name": "Grizzly Rage"
+    "name": "Grizzly Rage",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 272138,
-    "name": "Pulverize"
+    "name": "Pulverize",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 280119,
-    "name": "Cyclone Armor"
+    "name": "Cyclone Armor",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 281516,
-    "name": "Ravens"
+    "name": "Ravens",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 287256,
-    "name": "Frost Bolt"
+    "name": "Frost Bolt",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 288106,
-    "name": "Teleport"
+    "name": "Teleport",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 288287,
-    "name": "Abundance"
+    "name": "Abundance",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 289512,
-    "name": "Nature's Resolve"
+    "name": "Nature's Resolve",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 289513,
-    "name": "Heightened Senses"
+    "name": "Heightened Senses",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 289518,
-    "name": "Circle of Life"
+    "name": "Circle of Life",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 290420,
-    "name": "Iron Fur"
+    "name": "Iron Fur",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 290475,
-    "name": "Digitigrade Gait"
+    "name": "Digitigrade Gait",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 290798,
-    "name": "Crushing Earth"
+    "name": "Crushing Earth",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 290910,
-    "name": "Elemental Exposure"
+    "name": "Elemental Exposure",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 290911,
-    "name": "Ancestral Fortitude"
+    "name": "Ancestral Fortitude",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 290951,
-    "name": "Predatory Instinct"
+    "name": "Predatory Instinct",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 290954,
-    "name": "Natural Fortitude"
+    "name": "Natural Fortitude",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 290969,
-    "name": "Quickshift"
+    "name": "Quickshift",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 290971,
-    "name": "Toxic Claws"
+    "name": "Toxic Claws",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 291045,
-    "name": "Resonance"
+    "name": "Resonance",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 291046,
-    "name": "Endless Tempest"
+    "name": "Endless Tempest",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 291047,
-    "name": "Electric Shock"
+    "name": "Electric Shock",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 291048,
-    "name": "Defiance"
+    "name": "Defiance",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 291078,
-    "name": "Earthen Might"
+    "name": "Earthen Might",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 291079,
-    "name": "Perfect Storm"
+    "name": "Perfect Storm",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 291084,
-    "name": "Ursine Strength"
+    "name": "Ursine Strength",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 291085,
-    "name": "Lupine Ferocity"
+    "name": "Lupine Ferocity",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 291215,
-    "name": "Frost Nova"
+    "name": "Frost Nova",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 291347,
-    "name": "Frozen Orb"
+    "name": "Frozen Orb",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 291403,
-    "name": "Blizzard"
+    "name": "Blizzard",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 291492,
-    "name": "Ice Blades"
+    "name": "Ice Blades",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 291827,
-    "name": "Deep Freeze"
+    "name": "Deep Freeze",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 292074,
-    "name": "Lightning Spear"
+    "name": "Lightning Spear",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 292737,
-    "name": "Incinerate"
+    "name": "Incinerate",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 292757,
-    "name": "Chain Lightning"
+    "name": "Chain Lightning",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 292836,
-    "name": "Cold Front"
+    "name": "Cold Front",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 293195,
-    "name": "Ice Shards"
+    "name": "Ice Shards",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 294198,
-    "name": "Inferno"
+    "name": "Inferno",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 296998,
-    "name": "Meteor"
+    "name": "Meteor",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 297039,
-    "name": "Ice Armor"
+    "name": "Ice Armor",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 297902,
-    "name": "Arc Lash"
+    "name": "Arc Lash",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 304065,
-    "name": "Tornado"
+    "name": "Tornado",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 309070,
-    "name": "Maul"
+    "name": "Maul",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 309320,
-    "name": "Storm Strike"
+    "name": "Storm Strike",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 309802,
-    "name": "Call of the Ancients"
+    "name": "Call of the Ancients",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 313893,
-    "name": "Landslide"
+    "name": "Landslide",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 314601,
-    "name": "Poison Creeper"
+    "name": "Poison Creeper",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 323105,
-    "name": "Death Blow"
+    "name": "Death Blow",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 333197,
-    "name": "Esu's Ferocity"
+    "name": "Esu's Ferocity",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 333421,
-    "name": "Earthen Bulwark"
+    "name": "Earthen Bulwark",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 334217,
-    "name": "Icy Touch"
+    "name": "Icy Touch",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 334224,
-    "name": "Permafrost"
+    "name": "Permafrost",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 334380,
-    "name": "Avalanche"
+    "name": "Avalanche",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 334677,
-    "name": "Electrocution"
+    "name": "Electrocution",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 334791,
-    "name": "Overflowing Energy"
+    "name": "Overflowing Energy",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 336238,
-    "name": "Debilitating Roar"
+    "name": "Debilitating Roar",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 346247,
-    "name": "Call of the Wild"
+    "name": "Call of the Wild",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 346283,
-    "name": "Neurotoxin"
+    "name": "Neurotoxin",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 350820,
-    "name": "Natural Disaster"
+    "name": "Natural Disaster",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 351722,
-    "name": "Petrify"
+    "name": "Petrify",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 355606,
-    "name": "Shadow Step"
+    "name": "Shadow Step",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 355926,
-    "name": "Rapid Fire"
+    "name": "Rapid Fire",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 356162,
-    "name": "Smoke Grenade"
+    "name": "Smoke Grenade",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 356587,
-    "name": "Wind Shear"
+    "name": "Wind Shear",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 357628,
-    "name": "Shadow Clone"
+    "name": "Shadow Clone",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 358339,
-    "name": "Flurry"
+    "name": "Flurry",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 358508,
-    "name": "Poison Imbuement"
+    "name": "Poison Imbuement",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 358761,
-    "name": "Dash"
+    "name": "Dash",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 359246,
-    "name": "Cold Imbuement"
+    "name": "Cold Imbuement",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 363402,
-    "name": "Heartseeker"
+    "name": "Heartseeker",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 364877,
-    "name": "Puncture"
+    "name": "Puncture",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 375484,
-    "name": "Challenging Shout"
+    "name": "Challenging Shout",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 377137,
-    "name": "Penetrating Shot"
+    "name": "Penetrating Shot",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 380288,
-    "name": "Shadow Imbuement"
+    "name": "Shadow Imbuement",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 389667,
-    "name": "Caltrops"
+    "name": "Caltrops",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391629,
-    "name": "Stutter Step"
+    "name": "Stutter Step",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391662,
-    "name": "Mending Obscurity"
+    "name": "Mending Obscurity",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391663,
-    "name": "Weapon Mastery"
+    "name": "Weapon Mastery",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391664,
-    "name": "Rugged"
+    "name": "Rugged",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391666,
-    "name": "Impetus"
+    "name": "Impetus",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391667,
-    "name": "Alchemical Advantage"
+    "name": "Alchemical Advantage",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391669,
-    "name": "Close Quarters Combat"
+    "name": "Close Quarters Combat",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391671,
-    "name": "Agile"
+    "name": "Agile",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391673,
-    "name": "Sturdy"
+    "name": "Sturdy",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391674,
-    "name": "Alchemist's Fortune"
+    "name": "Alchemist's Fortune",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391675,
-    "name": "Deadly Venom"
+    "name": "Deadly Venom",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391676,
-    "name": "Exploit"
+    "name": "Exploit",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391677,
-    "name": "Consuming Shadows"
+    "name": "Consuming Shadows",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391678,
-    "name": "Frigid Finesse"
+    "name": "Frigid Finesse",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391679,
-    "name": "Malice"
+    "name": "Malice",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391680,
-    "name": "Exposure"
+    "name": "Exposure",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 391681,
-    "name": "Momentum"
+    "name": "Momentum",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 394251,
-    "name": "Lacerate"
+    "name": "Lacerate",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 398258,
-    "name": "Twisting Blades"
+    "name": "Twisting Blades",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 399111,
-    "name": "Blade Shift"
+    "name": "Blade Shift",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 400232,
-    "name": "Rain of Arrows"
+    "name": "Rain of Arrows",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 414638,
-    "name": "Precision Imbuement"
+    "name": "Precision Imbuement",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 416057,
-    "name": "Invigorating Strike"
+    "name": "Invigorating Strike",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 416272,
-    "name": "Forceful Arrow"
+    "name": "Forceful Arrow",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 416337,
-    "name": "Rabies"
+    "name": "Rabies",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 416528,
-    "name": "Poison Trap"
+    "name": "Poison Trap",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 421161,
-    "name": "Death Trap"
+    "name": "Death Trap",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 423126,
-    "name": "Bestial Rampage"
+    "name": "Bestial Rampage",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 423721,
-    "name": "Reactive Defense"
+    "name": "Reactive Defense",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 432879,
-    "name": "Bone Spear"
+    "name": "Bone Spear",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 432896,
-    "name": "Reap"
+    "name": "Reap",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 432897,
-    "name": "Corpse Explosion"
+    "name": "Corpse Explosion",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 439581,
-    "name": "Claw"
+    "name": "Claw",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 439762,
-    "name": "Barrage"
+    "name": "Barrage",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 440463,
-    "name": "Golem"
+    "name": "Golem",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 463175,
-    "name": "Decompose"
+    "name": "Decompose",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 463349,
-    "name": "Corpse Tendrils"
+    "name": "Corpse Tendrils",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 469641,
-    "name": "Bone Spirit"
+    "name": "Bone Spirit",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 481293,
-    "name": "Blight"
+    "name": "Blight",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 481785,
-    "name": "Sever"
+    "name": "Sever",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 484661,
-    "name": "Hemorrhage"
+    "name": "Hemorrhage",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 493422,
-    "name": "Blood Mist"
+    "name": "Blood Mist",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 493453,
-    "name": "Bone Prison"
+    "name": "Bone Prison",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495560,
-    "name": "Bonded in Essence"
+    "name": "Bonded in Essence",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495561,
-    "name": "Evulsion"
+    "name": "Evulsion",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495562,
-    "name": "Hellbent Commander"
+    "name": "Hellbent Commander",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495563,
-    "name": "Hewed Flesh"
+    "name": "Hewed Flesh",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495564,
-    "name": "Imperfectly Balanced"
+    "name": "Imperfectly Balanced",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495565,
-    "name": "Compound Fracture"
+    "name": "Compound Fracture",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495568,
-    "name": "Reaper's Pursuit"
+    "name": "Reaper's Pursuit",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495569,
-    "name": "Gruesome Mending"
+    "name": "Gruesome Mending",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495570,
-    "name": "Rathma's Vigor"
+    "name": "Rathma's Vigor",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495571,
-    "name": "Kalan's Edict"
+    "name": "Kalan's Edict",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495572,
-    "name": "Stand Alone"
+    "name": "Stand Alone",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495573,
-    "name": "Crippling Darkness"
+    "name": "Crippling Darkness",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495574,
-    "name": "Terror"
+    "name": "Terror",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495575,
-    "name": "Amplify Damage"
+    "name": "Amplify Damage",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495576,
-    "name": "Inspiring Leader"
+    "name": "Inspiring Leader",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495577,
-    "name": "Ossified Essence"
+    "name": "Ossified Essence",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495578,
-    "name": "Coalesced Blood"
+    "name": "Coalesced Blood",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495579,
-    "name": "Fueled by Death"
+    "name": "Fueled by Death",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495580,
-    "name": "Transfusion"
+    "name": "Transfusion",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 495581,
-    "name": "Shadowblight"
+    "name": "Shadowblight",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 497193,
-    "name": "Army of the Dead"
+    "name": "Army of the Dead",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 499281,
-    "name": "Bone Storm"
+    "name": "Bone Storm",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 500962,
-    "name": "Bone Splinters"
+    "name": "Bone Splinters",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 501629,
-    "name": "Blood Lance"
+    "name": "Blood Lance",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 503368,
-    "name": "Drain Vitality"
+    "name": "Drain Vitality",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 503508,
-    "name": "Serration"
+    "name": "Serration",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 510270,
-    "name": "Siphoning Strikes"
+    "name": "Siphoning Strikes",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 512222,
-    "name": "Iron Skin"
+    "name": "Iron Skin",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 514030,
-    "name": "Ball Lightning"
+    "name": "Ball Lightning",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 517417,
-    "name": "Unstable Currents"
+    "name": "Unstable Currents",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 543387,
-    "name": "Earth Spike"
+    "name": "Earth Spike",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 548399,
-    "name": "Lightning Storm"
+    "name": "Lightning Storm",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 566517,
-    "name": "Blood Howl"
+    "name": "Blood Howl",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 588207,
-    "name": "Rapid Ossification"
+    "name": "Rapid Ossification",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 588208,
-    "name": "Tides of Blood"
+    "name": "Tides of Blood",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 592163,
-    "name": "Blood Surge"
+    "name": "Blood Surge",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 603603,
-    "name": "Heavy Handed"
+    "name": "Heavy Handed",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 658216,
-    "name": "Blood Wave"
+    "name": "Blood Wave",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 748825,
-    "name": "Nature's Fury"
+    "name": "Nature's Fury",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 777009,
-    "name": "Aftermath"
+    "name": "Aftermath",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 777505,
-    "name": "Unstable Elixirs"
+    "name": "Unstable Elixirs",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 786381,
-    "name": "Dark Shroud"
+    "name": "Dark Shroud",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 786834,
-    "name": "Victimize"
+    "name": "Victimize",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 794965,
-    "name": "Concealment"
+    "name": "Concealment",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 915150,
-    "name": "Decrepify"
+    "name": "Decrepify",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 915152,
-    "name": "Iron Maiden"
+    "name": "Iron Maiden",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 943744,
-    "name": "Skeletal Warrior Mastery"
+    "name": "Skeletal Warrior Mastery",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 943745,
-    "name": "Skeletal Mage Mastery"
+    "name": "Skeletal Mage Mastery",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 943748,
-    "name": "Golem Mastery"
+    "name": "Golem Mastery",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 964631,
-    "name": "Steel Grasp"
+    "name": "Steel Grasp",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1000301,
-    "name": "Stone Guard"
+    "name": "Stone Guard",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000308,
-    "name": "Safeguard"
+    "name": "Safeguard",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000309,
-    "name": "Clarity"
+    "name": "Clarity",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000310,
-    "name": "Defensive Posture"
+    "name": "Defensive Posture",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000311,
-    "name": "Heart of the Wild"
+    "name": "Heart of the Wild",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000312,
-    "name": "Nature's Reach"
+    "name": "Nature's Reach",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000313,
-    "name": "Thick Hide"
+    "name": "Thick Hide",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000315,
-    "name": "Unrestrained"
+    "name": "Unrestrained",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000347,
-    "name": "Wild Impulses"
+    "name": "Wild Impulses",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000349,
-    "name": "Mending"
+    "name": "Mending",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000350,
-    "name": "Provocation"
+    "name": "Provocation",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1000352,
-    "name": "Vigilance"
+    "name": "Vigilance",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1003188,
-    "name": "Aggressive Resistance"
+    "name": "Aggressive Resistance",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003207,
-    "name": "Concussion"
+    "name": "Concussion",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003208,
-    "name": "Counteroffensive"
+    "name": "Counteroffensive",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003209,
-    "name": "Defensive Stance"
+    "name": "Defensive Stance",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003210,
-    "name": "Tempered Fury"
+    "name": "Tempered Fury",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003229,
-    "name": "Imposing Presence"
+    "name": "Imposing Presence",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003230,
-    "name": "Outburst"
+    "name": "Outburst",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003231,
-    "name": "Pressure Point"
+    "name": "Pressure Point",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003232,
-    "name": "Raid Leader"
+    "name": "Raid Leader",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003233,
-    "name": "Wallop"
+    "name": "Wallop",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1003729,
-    "name": "Hoarfrost"
+    "name": "Hoarfrost",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1003731,
-    "name": "Primordial Binding"
+    "name": "Primordial Binding",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1003732,
-    "name": "Precision Magic"
+    "name": "Precision Magic",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1003733,
-    "name": "Fiery Surge"
+    "name": "Fiery Surge",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1003734,
-    "name": "Frigid Breeze"
+    "name": "Frigid Breeze",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1003735,
-    "name": "Mana Shield"
+    "name": "Mana Shield",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1003736,
-    "name": "Protection"
+    "name": "Protection",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1003737,
-    "name": "Crippling Flames"
+    "name": "Crippling Flames",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1003738,
-    "name": "Invigorating Conduit"
+    "name": "Invigorating Conduit",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1003739,
-    "name": "Conduction"
+    "name": "Conduction",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1007840,
-    "name": "Gloom"
+    "name": "Gloom",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1007841,
-    "name": "Death's Defense"
+    "name": "Death's Defense",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1007842,
-    "name": "Unliving Energy"
+    "name": "Unliving Energy",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1007843,
-    "name": "Grim Harvest"
+    "name": "Grim Harvest",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1007844,
-    "name": "Death's Approach"
+    "name": "Death's Approach",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1007846,
-    "name": "Memento Mori"
+    "name": "Memento Mori",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1007847,
-    "name": "Necrotic Carapace"
+    "name": "Necrotic Carapace",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1007849,
-    "name": "Death's Embrace"
+    "name": "Death's Embrace",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1007850,
-    "name": "Spiked Armor"
+    "name": "Spiked Armor",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1008671,
-    "name": "Trap Mastery"
+    "name": "Trap Mastery",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1008672,
-    "name": "Shadow Crash"
+    "name": "Shadow Crash",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1008673,
-    "name": "Chilling Weight"
+    "name": "Chilling Weight",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1008674,
-    "name": "Trick Attacks"
+    "name": "Trick Attacks",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1008675,
-    "name": "Debilitating Toxins"
+    "name": "Debilitating Toxins",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1008676,
-    "name": "Rapid Gambits"
+    "name": "Rapid Gambits",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1008677,
-    "name": "Second Wind"
+    "name": "Second Wind",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1008678,
-    "name": "Haste"
+    "name": "Haste",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1008679,
-    "name": "Adrenaline Rush"
+    "name": "Adrenaline Rush",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1008680,
-    "name": "Innervation"
+    "name": "Innervation",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1059157,
-    "name": "Raise Skeleton"
+    "name": "Raise Skeleton",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1065693,
-    "name": "Charged Atmosphere"
+    "name": "Charged Atmosphere",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1066757,
-    "name": "Bad Omen"
+    "name": "Bad Omen",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1098169,
-    "name": "Precision"
+    "name": "Precision",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1196884,
-    "name": "Attack"
+    "name": "Attack",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1201192,
-    "name": "Attack"
+    "name": "Attack",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1201846,
-    "name": "Attack"
+    "name": "Attack",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1204385,
-    "name": "Attack"
+    "name": "Attack",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1205333,
-    "name": "Attack"
+    "name": "Attack",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1256958,
-    "name": "Shred"
+    "name": "Shred",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1294159,
-    "name": "Provoke"
+    "name": "Provoke",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1304803,
-    "name": "Envenom"
+    "name": "Envenom",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1389926,
-    "name": "Bastion"
+    "name": "Bastion",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1391558,
-    "name": "Valiance"
+    "name": "Valiance",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1401573,
-    "name": "Shield Charge"
+    "name": "Shield Charge",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1404603,
-    "name": "Ground Slam"
+    "name": "Ground Slam",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1408295,
-    "name": "Whirlwind"
+    "name": "Whirlwind",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1439338,
-    "name": "Bloodthirst"
+    "name": "Bloodthirst",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1450903,
-    "name": "Crater"
+    "name": "Crater",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1452355,
-    "name": "Shield Throw"
+    "name": "Shield Throw",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1453992,
-    "name": "Alchemical Admixture"
+    "name": "Alchemical Admixture",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1456571,
-    "name": "Raheir's Guard"
+    "name": "Raheir's Guard",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1458350,
-    "name": "Raheir's Aegis"
+    "name": "Raheir's Aegis",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1458593,
-    "name": "Vanguard"
+    "name": "Vanguard",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1458607,
-    "name": "Mocking Lure"
+    "name": "Mocking Lure",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1458685,
-    "name": "Iron Wolf's Ward"
+    "name": "Iron Wolf's Ward",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1458750,
-    "name": "Sundering Shield"
+    "name": "Sundering Shield",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1458775,
-    "name": "Iron Wolf's Call"
+    "name": "Iron Wolf's Call",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1459061,
-    "name": "Draw Fire"
+    "name": "Draw Fire",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1459276,
-    "name": "Inspiration"
+    "name": "Inspiration",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1459513,
-    "name": "Iron Wolf's Virtue"
+    "name": "Iron Wolf's Virtue",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1460071,
-    "name": "Consecrated Shield"
+    "name": "Consecrated Shield",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1460102,
-    "name": "Iron Wolf's Arrival"
+    "name": "Iron Wolf's Arrival",
+    "classes": [
+      "Raheir"
+    ]
   },
   {
     "id": 1473878,
-    "name": "Stone Burst"
+    "name": "Stone Burst",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1475284,
-    "name": "Cleave"
+    "name": "Cleave",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1475286,
-    "name": "Shockwave"
+    "name": "Shockwave",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1475288,
-    "name": "Earth Breaker"
+    "name": "Earth Breaker",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1479154,
-    "name": "Massacre"
+    "name": "Massacre",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1482187,
-    "name": "Hysteria"
+    "name": "Hysteria",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1482560,
-    "name": "Recklessness"
+    "name": "Recklessness",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1482901,
-    "name": "Intimidated"
+    "name": "Intimidated",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1482903,
-    "name": "Bloodlust"
+    "name": "Bloodlust",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1483451,
-    "name": "Taste of Flesh"
+    "name": "Taste of Flesh",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1483521,
-    "name": "No Escape"
+    "name": "No Escape",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1484926,
-    "name": "Crushing Force"
+    "name": "Crushing Force",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1484928,
-    "name": "Reprisal"
+    "name": "Reprisal",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1484930,
-    "name": "Rampage"
+    "name": "Rampage",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1484932,
-    "name": "Dismembering"
+    "name": "Dismembering",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1484934,
-    "name": "Iron Grip"
+    "name": "Iron Grip",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1484938,
-    "name": "Annihilator"
+    "name": "Annihilator",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1489641,
-    "name": "Vortex"
+    "name": "Vortex",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1493968,
-    "name": "Chain of Souls"
+    "name": "Chain of Souls",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1494843,
-    "name": "Storm of Fire"
+    "name": "Storm of Fire",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1519048,
-    "name": "Quill Volley"
+    "name": "Quill Volley",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1519050,
-    "name": "Crushing Hand"
+    "name": "Crushing Hand",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1521907,
-    "name": "Haunt"
+    "name": "Haunt",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1522203,
-    "name": "Field of Languish"
+    "name": "Field of Languish",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1525668,
-    "name": "Flame Surge"
+    "name": "Flame Surge",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1525670,
-    "name": "Wave of Flame"
+    "name": "Wave of Flame",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529334,
-    "name": "Terrify"
+    "name": "Terrify",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529357,
-    "name": "Exhaustion"
+    "name": "Exhaustion",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529359,
-    "name": "Paranoia"
+    "name": "Paranoia",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529372,
-    "name": "Condemned"
+    "name": "Condemned",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529374,
-    "name": "Shared Pain"
+    "name": "Shared Pain",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529376,
-    "name": "Amplified Suffering"
+    "name": "Amplified Suffering",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529505,
-    "name": "Covered in Ash"
+    "name": "Covered in Ash",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529508,
-    "name": "Raging Violence"
+    "name": "Raging Violence",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529510,
-    "name": "Eradication"
+    "name": "Eradication",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529512,
-    "name": "Ember's Gift"
+    "name": "Ember's Gift",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529514,
-    "name": "Raging Havoc"
+    "name": "Raging Havoc",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1529518,
-    "name": "Burning Chaos"
+    "name": "Burning Chaos",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1555493,
-    "name": "Blasphemous Fate"
+    "name": "Blasphemous Fate",
+    "classes": [
+      "Aldkin"
+    ]
   },
   {
     "id": 1578225,
-    "name": "Piercing Arrows"
+    "name": "Piercing Arrows",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578255,
-    "name": "Ready At Hand"
+    "name": "Ready At Hand",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578257,
-    "name": "Pin Cushion"
+    "name": "Pin Cushion",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578259,
-    "name": "Opening Fire"
+    "name": "Opening Fire",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578261,
-    "name": "Loaded Munitions"
+    "name": "Loaded Munitions",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578263,
-    "name": "Mastermind"
+    "name": "Mastermind",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578265,
-    "name": "Scorched Earth"
+    "name": "Scorched Earth",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578267,
-    "name": "Share a Drink"
+    "name": "Share a Drink",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578271,
-    "name": "Incendiary Bolt"
+    "name": "Incendiary Bolt",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578273,
-    "name": "Ambusher"
+    "name": "Ambusher",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578275,
-    "name": "Bargaining Chips"
+    "name": "Bargaining Chips",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1578277,
-    "name": "Thrillseeker"
+    "name": "Thrillseeker",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1580735,
-    "name": "Wire Trap"
+    "name": "Wire Trap",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1580738,
-    "name": "Cover Fire"
+    "name": "Cover Fire",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1580744,
-    "name": "Trip Mines"
+    "name": "Trip Mines",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1580746,
-    "name": "Molotov"
+    "name": "Molotov",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1580748,
-    "name": "Snipe"
+    "name": "Snipe",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1580751,
-    "name": "Explosive Charge"
+    "name": "Explosive Charge",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1611316,
-    "name": "Mighty Throw"
+    "name": "Mighty Throw",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1619032,
-    "name": "Attack"
+    "name": "Attack",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1619677,
-    "name": "Ancient Harpoons"
+    "name": "Ancient Harpoons",
+    "classes": [
+      "Varyana"
+    ]
   },
   {
     "id": 1627075,
-    "name": "Familiar"
+    "name": "Familiar",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1640931,
-    "name": "Rake"
+    "name": "Rake",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1644584,
-    "name": "Soulrift"
+    "name": "Soulrift",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1648342,
-    "name": "Patient Guard"
+    "name": "Patient Guard",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648344,
-    "name": "Diminishment"
+    "name": "Diminishment",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648346,
-    "name": "Perseverance"
+    "name": "Perseverance",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648348,
-    "name": "Bastion"
+    "name": "Bastion",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648350,
-    "name": "Brilliance"
+    "name": "Brilliance",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648352,
-    "name": "Mirage"
+    "name": "Mirage",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648354,
-    "name": "Velocity"
+    "name": "Velocity",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648356,
-    "name": "Fueled"
+    "name": "Fueled",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648358,
-    "name": "Furnace"
+    "name": "Furnace",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648360,
-    "name": "Apex"
+    "name": "Apex",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648362,
-    "name": "Follow Through"
+    "name": "Follow Through",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648364,
-    "name": "Auspicious"
+    "name": "Auspicious",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648366,
-    "name": "Antivenom"
+    "name": "Antivenom",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648368,
-    "name": "Nourishment"
+    "name": "Nourishment",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648370,
-    "name": "Ravenous"
+    "name": "Ravenous",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648372,
-    "name": "Unrestrained Power"
+    "name": "Unrestrained Power",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648374,
-    "name": "Swift"
+    "name": "Swift",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648376,
-    "name": "Oppressive"
+    "name": "Oppressive",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648378,
-    "name": "Resilient"
+    "name": "Resilient",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648380,
-    "name": "Potent"
+    "name": "Potent",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648387,
-    "name": "Initiative"
+    "name": "Initiative",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648389,
-    "name": "Spiritual Attunement"
+    "name": "Spiritual Attunement",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648391,
-    "name": "Resolution"
+    "name": "Resolution",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648393,
-    "name": "Supremacy"
+    "name": "Supremacy",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1648395,
-    "name": "Intricacy"
+    "name": "Intricacy",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1663204,
-    "name": "The Seeker"
+    "name": "The Seeker",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1663206,
-    "name": "The Hunter"
+    "name": "The Hunter",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1663208,
-    "name": "The Protector"
+    "name": "The Protector",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1663210,
-    "name": "The Devourer"
+    "name": "The Devourer",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1684569,
-    "name": "Seeker"
+    "name": "Seeker",
+    "classes": [
+      "Subo"
+    ]
   },
   {
     "id": 1690398,
-    "name": "Dance of Knives"
+    "name": "Dance of Knives",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1722900,
-    "name": "Sustenance"
+    "name": "Sustenance",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1730677,
-    "name": "Acceleration"
+    "name": "Acceleration",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1730680,
-    "name": "Endurance"
+    "name": "Endurance",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1730682,
-    "name": "Dominant"
+    "name": "Dominant",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1730684,
-    "name": "Vigorous"
+    "name": "Vigorous",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1817045,
-    "name": "Rock Splitter"
+    "name": "Rock Splitter",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1834471,
-    "name": "Withering Fist"
+    "name": "Withering Fist",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1834473,
-    "name": "Thrash"
+    "name": "Thrash",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1834476,
-    "name": "Thunderspike"
+    "name": "Thunderspike",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1836008,
-    "name": "Stinger"
-  },
-  {
-    "id": 1858262,
-    "name": ""
-  },
-  {
-    "id": 1859218,
-    "name": ""
+    "name": "Stinger",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1862773,
-    "name": "Ravager"
+    "name": "Ravager",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871761,
-    "name": "Rushing Claw"
+    "name": "Rushing Claw",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871764,
-    "name": "Armored Hide"
+    "name": "Armored Hide",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871801,
-    "name": "Scourge"
+    "name": "Scourge",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871807,
-    "name": "Razor Wings"
+    "name": "Razor Wings",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871809,
-    "name": "Touch of Death"
+    "name": "Touch of Death",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871813,
-    "name": "Toxic Skin"
+    "name": "Toxic Skin",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871819,
-    "name": "Counterattack"
+    "name": "Counterattack",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871821,
-    "name": "Soar"
+    "name": "Soar",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871823,
-    "name": "Payback"
+    "name": "Payback",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1871825,
-    "name": "Concussive Stomp"
+    "name": "Concussive Stomp",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1907017,
-    "name": "Barbed Carapace"
+    "name": "Barbed Carapace",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1920204,
-    "name": "Vital Strikes"
+    "name": "Vital Strikes",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1920209,
-    "name": "Prodigy's Tempo"
+    "name": "Prodigy's Tempo",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1920211,
-    "name": "Noxious Resonance"
+    "name": "Noxious Resonance",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1955450,
-    "name": "Adaptive Stances"
+    "name": "Adaptive Stances",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1984422,
-    "name": "One With Nature"
+    "name": "One With Nature",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1993937,
-    "name": "Affliction"
+    "name": "Affliction",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2016157,
-    "name": "Enlightenment"
+    "name": "Enlightenment",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 2074903,
-    "name": "Necrotic Fortitude"
+    "name": "Necrotic Fortitude",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2075107,
-    "name": "Evasive"
+    "name": "Evasive",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2075140,
-    "name": "Unto Dawn"
+    "name": "Unto Dawn",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2075148,
-    "name": "Finality"
+    "name": "Finality",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2075705,
-    "name": "Catastrophe"
+    "name": "Catastrophe",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2075710,
-    "name": "Humanity"
+    "name": "Humanity",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2075735,
-    "name": "Belligerence"
+    "name": "Belligerence",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2075737,
-    "name": "Heavy Hitter"
+    "name": "Heavy Hitter",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2091156,
-    "name": "Warpath"
+    "name": "Warpath",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2091159,
-    "name": "Irrepressible"
+    "name": "Irrepressible",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2091164,
-    "name": "Feral Aptitude"
+    "name": "Feral Aptitude",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2091166,
-    "name": "Backlash"
+    "name": "Backlash",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2092223,
-    "name": "Titan's Fall"
+    "name": "Titan's Fall",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2092225,
-    "name": "Precision Decay"
+    "name": "Precision Decay",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2092249,
-    "name": "Target Practice"
+    "name": "Target Practice",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2092251,
-    "name": "Balestra"
+    "name": "Balestra",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2093631,
-    "name": "Dampen Layer"
+    "name": "Dampen Layer",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 2093633,
-    "name": "Elemental Synergies"
+    "name": "Elemental Synergies",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 2093635,
-    "name": "Evocation"
+    "name": "Evocation",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 2093637,
-    "name": "Energy Focus"
+    "name": "Energy Focus",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 2110174,
-    "name": "Balanced Exertion"
+    "name": "Balanced Exertion",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2110217,
-    "name": "Focal Point"
+    "name": "Focal Point",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2110231,
-    "name": "Vehemence"
+    "name": "Vehemence",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2140400,
-    "name": "Deadeye"
+    "name": "Deadeye",
+    "classes": [
+      "Rogue"
+    ]
   }
 ]
