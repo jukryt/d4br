@@ -8,6 +8,22 @@ class ExternalResource {
     }
 }
 
+class StringExtension {
+    static equelsIgnoreCase(str1, str2) {
+        return str1?.toLowerCase() === str2?.toLowerCase();
+    }
+
+    static startswithIgnoreCase(sourceString, searchString, position) {
+        return sourceString && searchString &&
+            sourceString.toLowerCase().startsWith(searchString.toLowerCase(), position);
+    }
+
+    static endsWithIgnoreCase(sourceString, searchString, position) {
+        return sourceString && searchString &&
+            sourceString.toLowerCase().endsWith(searchString.toLowerCase(), position);
+    }
+}
+
 class Language {
     static aspects = "aspects";
     static glyphs = "glyphs";

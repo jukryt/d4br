@@ -82,7 +82,10 @@ class D4MobalyticsProcessor {
 
         const charClassName = this.getCharClassName();
 
-        const sourceItems = this.sourceLanguage.tempers.filter(i => (i.class === charClassName || i.class === "All") && i.name === sourceValue);
+        const sourceItems = this.sourceLanguage.tempers.filter(i => {
+            return (i.class === charClassName || i.class === "All") &&
+                StringExtension.equelsIgnoreCase(i.name, sourceValue)
+        });
 
         if (sourceItems.length === 0) {
             return false;
@@ -145,7 +148,7 @@ class D4MobalyticsProcessor {
         }
 
         const glyphName = glyphMatch[1];
-        const sourceItem = this.sourceLanguage.glyphs.find(i => i.name === glyphName);
+        const sourceItem = this.sourceLanguage.glyphs.find(i => StringExtension.equelsIgnoreCase(i.name, glyphName));
         if (!sourceItem) {
             return false;
         }
@@ -173,14 +176,13 @@ class D4MobalyticsProcessor {
         }
 
         const charClassName = this.getCharClassName();
-        if (!charClassName) {
-            return false;
-        }
 
-        const sourceItems = this.sourceLanguage.getResource(resourceName).filter(i => {
-            return i.name === sourceValue &&
-                (!i.classes || i.classes.length === 0 || i.classes.find(c => c === charClassName))
+        const availableItems = this.sourceLanguage.getResource(resourceName).filter(i => {
+            return !i.classes || i.classes.length === 0 ||
+                (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
         });
+
+        const sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
 
         if (sourceItems.length != 1) {
             return false;
