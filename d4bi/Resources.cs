@@ -74,6 +74,7 @@ namespace Importer
                                 [
                                     new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
+                                    new FixRemoveEmptyClass<ClassItem>(),
                                 ],
                             },
                             Check = new()
@@ -112,6 +113,7 @@ namespace Importer
                                 [
                                     new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
+                                    new FixRemoveEmptyClass<ClassItem>(),
                                 ],
                             },
                             Check = new()
@@ -193,6 +195,7 @@ namespace Importer
                                 [
                                     new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
+                                    new FixRemoveEmptyClass<ClassItem>(),
                                 ],
                             },
                             Check = new()
@@ -359,6 +362,7 @@ namespace Importer
                                 [
                                     new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
+                                    new FixRemoveEmptyClass<ClassItem>(),
                                 ],
                             },
                             Check = new()
@@ -397,6 +401,7 @@ namespace Importer
                                 [
                                     new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
+                                    new FixRemoveEmptyClass<ClassItem>(),
                                 ],
                             },
                             Check = new()
@@ -478,6 +483,7 @@ namespace Importer
                                 [
                                     new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
+                                    new FixRemoveEmptyClass<ClassItem>(),
                                 ],
                             },
                             Check = new()
