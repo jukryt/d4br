@@ -92,7 +92,7 @@ namespace Importer
                                 FileName = "glyph.json",
                             },
                         },
-                        new ResourceInfo<Item>
+                        new ResourceInfo<ClassItem>
                         {
                             Name = "leg_node en",
                             Source = new()
@@ -102,7 +102,7 @@ namespace Importer
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/paragon-nodes/quality:4",
-                                        Script = "() => g_listviews['paragon-nodes'].data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews['paragon-nodes'].data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames.split(', ')}))",
                                     },
                                 ],
                             },
@@ -110,18 +110,18 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
-                                    new FixRemoveEmptyName<Item>(),
+                                    new FixName<ClassItem>(),
+                                    new FixRemoveEmptyName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
-                                    new CheckUnique<Item>()
+                                    new CheckEmptyName<ClassItem>(),
+                                    new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ItemEqualComparer<Item>(),
+                                        Comparer = new ClassItemEqualComparer(),
                                     },
                                 ],
                             },
@@ -377,7 +377,7 @@ namespace Importer
                                 FileName = "glyph.json",
                             },
                         },
-                        new ResourceInfo<Item>
+                        new ResourceInfo<ClassItem>
                         {
                             Name = "leg_node ru",
                             Source = new()
@@ -387,7 +387,7 @@ namespace Importer
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/paragon-nodes/quality:4",
-                                        Script = "() => g_listviews['paragon-nodes'].data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews['paragon-nodes'].data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames.split(', ')}))",
                                     },
                                 ],
                             },
@@ -395,18 +395,18 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
-                                    new FixRemoveEmptyName<Item>(),
+                                    new FixName<ClassItem>(),
+                                    new FixRemoveEmptyName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
-                                    new CheckUnique<Item>()
+                                    new CheckEmptyName<ClassItem>(),
+                                    new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ItemEqualComparer<Item>(),
+                                        Comparer = new ClassItemEqualComparer(),
                                     },
                                 ],
                             },
