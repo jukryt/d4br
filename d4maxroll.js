@@ -118,14 +118,14 @@ class D4MaxrollProcessor {
         // [Aspect of ...] => [Item_Name of Aspect_Name]
         if (aspectIndex === 0) {
             const aspectName = sourceItem.name.substring(6);
-            if (titleValue.endsWith(aspectName)) {
+            if (StringExtension.endsWithIgnoreCase(titleValue, aspectName)) {
                 return true;
             }
         }
         // [... Aspect] => [Aspect_Name Item_Name]
         else {
             const aspectName = sourceItem.name.substring(0, aspectIndex);
-            if (titleValue.startsWith(aspectName)) {
+            if (StringExtension.startswithIgnoreCase(titleValue, aspectName)) {
                 return true;
             }
         }
@@ -226,14 +226,13 @@ class D4MaxrollProcessor {
         }
 
         const charClassName = this.getCharClassName();
-        if (!charClassName) {
-            return false;
-        }
 
-        const sourceItems = this.sourceLanguage.getResource(resourceName).filter(i => {
-            return i.name === sourceValue &&
-                (!i.classes || i.classes.length === 0 || i.classes.find(c => c === charClassName))
+        const availableItems = this.sourceLanguage.getResource(resourceName).filter(i => {
+            return !i.classes || i.classes.length === 0 ||
+                (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
         });
+
+        const sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
 
         if (sourceItems.length != 1) {
             return false;

@@ -1,218 +1,373 @@
 [
   {
     "id": 671203,
-    "name": "Warbringer"
+    "name": "Warbringer",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 671205,
-    "name": "Carnage"
-  },
-  {
-    "id": 671209,
-    "name": "Natural Leader"
+    "name": "Carnage",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 671210,
-    "name": "Blood Rage"
+    "name": "Blood Rage",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 671212,
-    "name": "Hemorrhage"
+    "name": "Hemorrhage",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 671213,
-    "name": "Force of Nature"
+    "name": "Force of Nature",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 672773,
-    "name": "Burning Instinct"
+    "name": "Burning Instinct",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 672795,
-    "name": "Searing Heat"
+    "name": "Searing Heat",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 672898,
-    "name": "Frigid Fate"
+    "name": "Frigid Fate",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 672901,
-    "name": "Icefall"
+    "name": "Icefall",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 672943,
-    "name": "Static Surge"
+    "name": "Static Surge",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 673102,
-    "name": "Ceaseless Conduit"
+    "name": "Ceaseless Conduit",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 673125,
-    "name": "Elemental Summoner"
+    "name": "Elemental Summoner",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 673447,
-    "name": "Enchantment Master"
+    "name": "Enchantment Master",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 674891,
-    "name": "Decimator"
+    "name": "Decimator",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 674910,
-    "name": "Bone Breaker"
+    "name": "Bone Breaker",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 674923,
-    "name": "Flawless Technique"
+    "name": "Flawless Technique",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 676410,
-    "name": "Thunderstruck"
+    "name": "Thunderstruck",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 676454,
-    "name": "Earthen Devastation"
+    "name": "Earthen Devastation",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 676479,
-    "name": "Survival Instincts"
+    "name": "Survival Instincts",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 676788,
-    "name": "Lust for Carnage"
+    "name": "Lust for Carnage",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 676805,
-    "name": "Heightened Malice"
+    "name": "Heightened Malice",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 676807,
-    "name": "Inner Beast"
+    "name": "Inner Beast",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 679683,
-    "name": "Eldritch Bounty"
+    "name": "Eldritch Bounty",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 679687,
-    "name": "Tricks of the Trade"
+    "name": "Tricks of the Trade",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 679689,
-    "name": "Cheap Shot"
+    "name": "Cheap Shot",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 679690,
-    "name": "Deadly Ambush"
+    "name": "Deadly Ambush",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 679691,
-    "name": "Leyrana's Instinct"
+    "name": "Leyrana's Instinct",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 679692,
-    "name": "Exploit Weakness"
+    "name": "Exploit Weakness",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 679694,
-    "name": "No Witnesses"
+    "name": "No Witnesses",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 679695,
-    "name": "Cunning Stratagem"
+    "name": "Cunning Stratagem",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 681461,
-    "name": "Cult Leader"
+    "name": "Cult Leader",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 681465,
-    "name": "Hulking Monstrosity"
+    "name": "Hulking Monstrosity",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 681467,
-    "name": "Scent of Death"
+    "name": "Scent of Death",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 681468,
-    "name": "Flesh-eater"
+    "name": "Flesh-eater",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 681470,
-    "name": "Bloodbath"
+    "name": "Bloodbath",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 681471,
-    "name": "Blood Begets Blood"
+    "name": "Blood Begets Blood",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 681476,
-    "name": "Wither"
+    "name": "Wither",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 909281,
-    "name": "Constricting Tendrils"
+    "name": "Constricting Tendrils",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 909282,
-    "name": "Ancestral Guidance"
+    "name": "Ancestral Guidance",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 934519,
-    "name": "Bone Graft"
+    "name": "Bone Graft",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 945466,
-    "name": "Weapons Master"
+    "name": "Weapons Master",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2021651,
-    "name": "In-Fighter"
+    "name": "In-Fighter",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2025032,
-    "name": "Spiney Skin"
+    "name": "Spiney Skin",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2025928,
-    "name": "Viscous Shield"
+    "name": "Viscous Shield",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2026208,
-    "name": "Bitter Medicine"
+    "name": "Bitter Medicine",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2026485,
-    "name": "Revealing"
+    "name": "Revealing",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2026647,
-    "name": "Drive"
+    "name": "Drive",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2058789,
-    "name": "Convergence"
+    "name": "Convergence",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2060011,
-    "name": "Untamed"
+    "name": "Untamed",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2060357,
-    "name": "Sapping"
+    "name": "Sapping",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2066155,
-    "name": "Danse Macabre"
+    "name": "Danse Macabre",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2066708,
-    "name": "Frailty"
+    "name": "Frailty",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2092084,
-    "name": "Fundamental Release"
+    "name": "Fundamental Release",
+    "classes": [
+      "Sorcerer"
+    ]
   }
 ]

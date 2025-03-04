@@ -320,14 +320,13 @@ class D4BuildsProcessor {
         }
 
         const charClassName = this.getCharClassName();
-        if (!charClassName) {
-            return false;
-        }
 
-        const sourceItems = this.sourceLanguage.getResource(resourceName).filter(i => {
-            return i.name === sourceValue &&
-                (!i.classes || i.classes.length === 0 || i.classes.find(c => c === charClassName))
+        const availableItems = this.sourceLanguage.getResource(resourceName).filter(i => {
+            return !i.classes || i.classes.length === 0 ||
+                (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
         });
+
+        const sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
 
         if (sourceItems.length != 1) {
             return false;
