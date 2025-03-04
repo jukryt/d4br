@@ -37,15 +37,6 @@ namespace Importer.Custom.Temper
                 values.Add("[2-3] Razor Wings Charges");
                 return value;
             },
-            ["[13.5-22.5%] Shadow Clone Cooldown Reduction\nCasting Ultimate Skills Restores [36 - 45] Primary Resource"] = (values, value) =>
-            {
-                var splitValues = value.Split('\n');
-
-                foreach (var splitValue in splitValues.Skip(1))
-                    values.Add(splitValue);
-
-                return splitValues[0];
-            },
             ["Casting Macabrre Skills Restores [15-21] Primary Resource"] = (values, value) =>
             {
                 values.Add(value.Replace("Macabrre", "Macabre"));
