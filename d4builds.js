@@ -175,7 +175,7 @@ class D4BuildsProcessor {
     genericTemperNameProcess(node) {
         const className = "d4br_temper_name";
 
-        let existsNode = node.parentNode.querySelector(`div.${className}`);
+        let existsNode = node.parentNode?.querySelector(`div.${className}`);
         if (existsNode) {
             existsNode.parentNode.remove();
             existsNode = null;
