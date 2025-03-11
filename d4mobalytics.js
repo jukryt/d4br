@@ -82,9 +82,10 @@ class D4MobalyticsProcessor {
 
         const charClassName = this.getCharClassName();
 
-        const sourceItems = this.sourceLanguage.tempers.filter(i => {
-            return (i.class === charClassName || i.class === "All") &&
-                StringExtension.equelsIgnoreCase(i.name, sourceValue)
+        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        const sourceItems = tempers.filter(i => {
+            return StringExtension.equelsIgnoreCase(i.name, sourceValue) ||
+                StringExtension.equelsIgnoreCase(i.name, `${sourceValue} - ${charClassName}`)
         });
 
         if (sourceItems.length === 0) {
@@ -121,11 +122,7 @@ class D4MobalyticsProcessor {
             }
         }
 
-        const newNode = document.createElement("div");
-        newNode.style.opacity = "0.6";
-        node.parentNode.insertBefore(newNode, node);
-
-        return this.setTargetValue(newNode, "d4br_temper_name", targetTemperName, false);
+        return this.setTemperNodeTargetValue(node, "d4br_temper_name", targetTemperName);
     }
 
     unqItemNameProcess(node) {
@@ -195,6 +192,14 @@ class D4MobalyticsProcessor {
         }
 
         return this.setTargetValue(node, className, targetItem.name, addSourceValue);
+    }
+
+    setTemperNodeTargetValue(node, className, targetValue) {
+        const newNode = document.createElement("div");
+        newNode.style.opacity = "0.6";
+        node.parentNode.prepend(newNode);
+
+        return this.setTargetValue(newNode, className, targetValue, false);
     }
 
     setTargetValue(node, className, targetValue, addSourceValue) {

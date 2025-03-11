@@ -9,7 +9,7 @@ class D4MaxrollProcessor {
             if (mutation.type === "childList") {
                 if (mutation.target.id === "uitools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
-                        // legendary: aspect, leg node, glyph, rune
+                        // legendary: aspect, temper, leg node, glyph, rune
                         if (newNode.querySelector("div.d4t-tip-legendary")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             const subTitleNode = newNode.querySelector("div.d4t-sub-title");
@@ -147,33 +147,11 @@ class D4MaxrollProcessor {
             .replace(/\[[0-9\. \-]+\]%?/, "") // [values]
             .trim();
 
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
-        let sourceItems = tempers.filter(i => i.values.some(s => {
-            const match = temperValue.match(s)
-            return match &&
-                match.index === 0 &&
-                match[0] === temperValue;
-        }));
-
-        if (sourceItems.length === 0) {
+        const sourceItem = this.getTemperSourceItem(charClassName, temperValue);
+        if (!sourceItem) {
             return false;
         }
 
-        if (sourceItems.length > 1) {
-            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
-                if (classItem) {
-                    sourceItems = [classItem];
-                } else {
-                    sourceItems = [sourceItems[0]];
-                }
-            }
-            else {
-                return false;
-            }
-        }
-
-        const sourceItem = sourceItems[0];
         const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
         if (!targetItem) {
             return false;
@@ -189,12 +167,37 @@ class D4MaxrollProcessor {
             }
         }
 
-        const newNode = document.createElement("div");
-        newNode.style["margin-top"] = "5px";
-        newNode.style.opacity = "0.6";
-        node.parentNode.insertBefore(newNode, node);
+        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperName);
+    }
 
-        return this.setTargetValue(newNode, "d4br_temper_name", targetTemperName, false);
+    getTemperSourceItem(charClassName, temperValue) {
+        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        let sourceItems = tempers.filter(i => i.values.some(s => {
+            const match = temperValue.match(s)
+            return match &&
+                match.index === 0 &&
+                match[0] === temperValue;
+        }));
+
+        if (sourceItems.length === 0) {
+            return null;
+        }
+
+        if (sourceItems.length > 1) {
+            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
+                const classItem = sourceItems.find(i => i.class === charClassName);
+                if (classItem) {
+                    sourceItems = [classItem];
+                } else {
+                    sourceItems = [sourceItems[0]];
+                }
+            }
+            else {
+                return null;
+            }
+        }
+
+        return sourceItems[0];
     }
 
     unqItemNameProcess(node) {
@@ -215,6 +218,15 @@ class D4MaxrollProcessor {
 
     runeNameProcess(node) {
         return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
+    }
+
+    setAffixNodeTargetValue(node, className, targetValue) {
+        const newNode = document.createElement("div");
+        newNode.style["margin-top"] = "5px";
+        newNode.style.opacity = "0.6";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, targetValue, false);
     }
 
     nodeProcess(node, className, resourceName, addSourceValue) {

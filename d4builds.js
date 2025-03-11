@@ -164,53 +164,12 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
-        let sourceItems = tempers.filter(i => i.values.some(s => {
-            const match = sourceValue.match(s)
-            return match &&
-                match.index === 0 &&
-                match[0] === sourceValue;
-        }));
-
-        if (sourceItems.length === 0) {
+        const targetTemperName = this.getTemperTargetName(charClassName, sourceValue);
+        if (!targetTemperName) {
             return false;
         }
 
-        if (sourceItems.length > 1) {
-            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
-                if (classItem) {
-                    sourceItems = [classItem];
-                } else {
-                    sourceItems = [sourceItems[0]];
-                }
-            }
-            else {
-                return false;
-            }
-        }
-
-        const sourceItem = sourceItems[0];
-        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
-        if (!targetItem) {
-            return false;
-        }
-
-        let targetTemperName = targetItem.name;
-
-        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
-        if (sourceTemperType) {
-            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
-            if (targetTemperType) {
-                targetTemperName = targetTemperType.name + " - " + targetTemperName;
-            }
-        }
-
-        const newNode = document.createElement("div");
-        newNode.style["margin-left"] = "25px";
-        node.parentNode.insertBefore(newNode, node);
-
-        return this.setTargetValue(newNode, "d4br_temper_name", targetTemperName, false);
+        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperName);
     }
 
     genericTemperNameProcess(node) {
@@ -240,36 +199,27 @@ class D4BuildsProcessor {
         const temperNameMatch = temperNameMatchs[temperNameMatchs.length - 1];
         const temperValue = sourceValue.replace(temperNameMatch[0], "").trim();
 
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
-        let sourceItems = tempers.filter(i => i.values.some(s => {
-            const match = temperValue.match(s)
-            return match &&
-                match.index === 0 &&
-                match[0] === temperValue;
-        }));
-
-        if (sourceItems.length === 0) {
+        const targetTemperName = this.getTemperTargetName(charClassName, temperValue);
+        if (!targetTemperName) {
             return false;
         }
 
-        if (sourceItems.length > 1) {
-            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
-                if (classItem) {
-                    sourceItems = [classItem];
-                } else {
-                    sourceItems = [sourceItems[0]];
-                }
-            }
-            else {
-                return false;
-            }
+        const newNode = document.createElement("div");
+        newNode.className = "generic__tooltip";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, targetTemperName, false);
+    }
+
+    getTemperTargetName(charClassName, temperValue) {
+        const sourceItem = this.getTemperSourceItem(charClassName, temperValue);
+        if (!sourceItem) {
+            return null;
         }
 
-        const sourceItem = sourceItems[0];
         const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
         if (!targetItem) {
-            return false;
+            return null;
         }
 
         let targetTemperName = targetItem.name;
@@ -282,11 +232,37 @@ class D4BuildsProcessor {
             }
         }
 
-        const newNode = document.createElement("div");
-        newNode.className = "generic__tooltip";
-        node.parentNode.insertBefore(newNode, node);
+        return targetTemperName;
+    }
 
-        return this.setTargetValue(newNode, className, targetTemperName, false);
+    getTemperSourceItem(charClassName, temperValue) {
+        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        let sourceItems = tempers.filter(i => i.values.some(s => {
+            const match = temperValue.match(s)
+            return match &&
+                match.index === 0 &&
+                match[0] === temperValue;
+        }));
+
+        if (sourceItems.length === 0) {
+            return null;
+        }
+
+        if (sourceItems.length > 1) {
+            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
+                const classItem = sourceItems.find(i => i.class === charClassName);
+                if (classItem) {
+                    sourceItems = [classItem];
+                } else {
+                    sourceItems = [sourceItems[0]];
+                }
+            }
+            else {
+                return null;
+            }
+        }
+
+        return sourceItems[0];
     }
 
     unqItemNameProcess(node) {
@@ -307,6 +283,14 @@ class D4BuildsProcessor {
 
     gemNameProcess(node) {
         return this.nodeProcess(node, "d4br_rune_name", Language.runes, false);
+    }
+
+    setAffixNodeTargetValue(node, className, targetValue) {
+        const newNode = document.createElement("div");
+        newNode.style["margin-left"] = "25px";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, targetValue, false);
     }
 
     nodeProcess(node, className, resourceName, addSourceValue) {
