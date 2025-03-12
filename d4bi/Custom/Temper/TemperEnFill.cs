@@ -17,6 +17,10 @@ namespace Importer.Custom.Temper
 
         private readonly Dictionary<string, Func<List<string>, string, string>> _fixTemperValues = new()
         {
+            ["Lucky Hit: Up to a 40% Chance to Deal [900-2400] Poison\nDamage"] = (values, value) =>
+            {
+                return value.Replace('\n', ' ');
+            },
             ["[88-115%] Basic Skill Damage"] = (values, value) =>
             {
                 values.Add("[88-115%] Basic Damage");
@@ -105,7 +109,6 @@ namespace Importer.Custom.Temper
                         .Replace(".", "\\.")
                         .Replace(" X ", " \\+? ?[X0-9\\.,\\-% \\[\\]]+ ") // for js regex
                         .Replace("///", "\\+? ?[X0-9\\.,\\-% \\[\\]]+") // for js regex
-                        .Replace("\n", " ")
                         .Replace("*", "\\*")
                         .Replace(":", "\\:")
                         .Replace("(", "\\(")
