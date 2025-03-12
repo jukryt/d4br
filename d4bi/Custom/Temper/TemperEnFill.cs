@@ -114,13 +114,13 @@ namespace Importer.Custom.Temper
                         fixTemperValues.Add(sourceValue);
                     }
 
-                    temper.Values[i] = Regex.Replace(targetValue, @"\[[^\]]+\]", "///")
+                    temper.Values[i] = Regex.Replace(targetValue, @"\+? ?\[[^\]]+\]", "XXX")
                         .Replace("%", "\\%")
                         .Replace("+", "\\+")
                         .Replace("-", "\\-")
                         .Replace(".", "\\.")
-                        .Replace(" X ", " \\+? ?[X0-9\\.,\\-% \\[\\]]+ ") // for js regex
-                        .Replace("///", "\\+? ?[X0-9\\.,\\-% \\[\\]]+") // for js regex
+                        .Replace(" X ", " XXX ")
+                        .Replace("XXX", @" ?\+? ?[X0-9\.,\-% \[\]]+") // for js regex
                         .Replace("*", "\\*")
                         .Replace(":", "\\:")
                         .Replace("(", "\\(")
