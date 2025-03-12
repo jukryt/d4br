@@ -9,7 +9,7 @@ class D4MaxrollProcessor {
             if (mutation.type === "childList") {
                 if (mutation.target.id === "uitools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
-                        // legendary: aspect, temper, leg node, glyph, rune
+                        // legendary: aspect, affix, temper, leg node, glyph, rune
                         if (newNode.querySelector("div.d4t-tip-legendary")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             const subTitleNode = newNode.querySelector("div.d4t-sub-title");
@@ -20,6 +20,11 @@ class D4MaxrollProcessor {
                                     this.aspectNameProcess(titleNode, subTitleNode)) {
                                     break;
                                 }
+                            }
+
+                            const affixNodes = newNode.querySelectorAll("li.d4t-list-affix, li.d4t-list-greater");
+                            for (const affixNode of affixNodes) {
+                                this.affixNameProcess(affixNode);
                             }
 
                             const temperNodes = newNode.querySelectorAll("li.d4t-list-tempered");
@@ -129,6 +134,43 @@ class D4MaxrollProcessor {
         }
 
         return false;
+    }
+
+    affixNameProcess(node) {
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const charClassName = this.getCharClassName();
+        if (!charClassName) {
+            return false;
+        }
+
+        const affixValue = sourceValue
+            .replace(/\([^\)]+\)/, "") // (text)
+            .replace(/\[[0-9\. \-]+\]%?/, "") // [values]
+            .trim();
+
+        const skillNameMatch = affixValue.match(/\+\d+ to (.+)/);
+        if (!skillNameMatch) {
+            return false;
+        }
+
+        const skillName = skillNameMatch[1];
+        const skills = this.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+        const sourceItems = skills.filter(i => StringExtension.equelsIgnoreCase(i.name, skillName));
+        if (sourceItems.length != 1) {
+            return false;
+        }
+
+        const sourceItem = sourceItems[0];
+        const targetItem = this.targetLanguage.skills.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return false;
+        }
+
+        return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetItem.name);
     }
 
     temperNameProcess(node) {

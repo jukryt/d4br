@@ -9,12 +9,18 @@ class D4MobalyticsProcessor {
             if (mutation.type === "childList" && mutation.addedNodes.length > 0) {
                 if (mutation.target.id.startsWith("tippy-")) {
                     const tippyNode = mutation.target;
-                    // aspect and temper
+                    // aspect, affix, temper
                     if (tippyNode.querySelector("div.m-1tii5t")) {
                         const aspectNameNode = tippyNode.querySelector("p.m-foqf9j");
                         if (aspectNameNode) {
                             this.aspectNameProcess(aspectNameNode);
                         }
+
+                        const affisNameNodes = tippyNode.querySelectorAll("span.m-3zcy6z, span.m-y0za0q, span.m-vhsx5y, span.m-14rp55x");
+                        for (const affisNameNode of affisNameNodes) {
+                            this.affixNameProcess(affisNameNode);
+                        }
+
                         const temperNameNodes = tippyNode.querySelectorAll("span.m-1yjh4k8");
                         for (const temperNameNode of temperNameNodes) {
                             this.temperNameProcess(temperNameNode);
@@ -72,6 +78,38 @@ class D4MobalyticsProcessor {
 
     aspectNameProcess(node) {
         return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, true);
+    }
+
+    affixNameProcess(node) {
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const charClassName = this.getCharClassName();
+        if (!charClassName) {
+            return false;
+        }
+
+        const skillNameMatch = sourceValue.match(/Ranks (to )?(.+)/);
+        if (!skillNameMatch) {
+            return false;
+        }
+
+        const skillName = skillNameMatch[2];
+        const skills = this.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+        const sourceItems = skills.filter(i => StringExtension.equelsIgnoreCase(i.name, skillName));
+        if (sourceItems.length != 1) {
+            return false;
+        }
+
+        const sourceItem = sourceItems[0];
+        const targetItem = this.targetLanguage.skills.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return false;
+        }
+
+        return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetItem.name);
     }
 
     temperNameProcess(node) {
@@ -192,6 +230,14 @@ class D4MobalyticsProcessor {
         }
 
         return this.setTargetValue(node, className, targetItem.name, addSourceValue);
+    }
+
+    setAffixNodeTargetValue(node, className, targetValue) {
+        const newNode = document.createElement("div");
+        newNode.style.opacity = "0.6";
+        node.prepend(newNode);
+
+        return this.setTargetValue(newNode, className, targetValue, false);
     }
 
     setTemperNodeTargetValue(node, className, targetValue) {
