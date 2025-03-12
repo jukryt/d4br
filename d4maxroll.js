@@ -9,64 +9,62 @@ class D4MaxrollProcessor {
             if (mutation.type === "childList") {
                 if (mutation.target.id === "uitools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
-                        if (newNode.className === "uitools-tooltip-frame ui-tooltip-active") {
-                            // legendary: aspect, leg node, glyph, rune
-                            if (newNode.querySelector("div.d4t-tip-legendary")) {
-                                const titleNodes = newNode.querySelectorAll("div.d4t-title");
-                                const subTitleNode = newNode.querySelector("div.d4t-sub-title");
-                                for (const titleNode of titleNodes) {
-                                    if (this.legNodeNameProcess(titleNode) ||
-                                        this.glyphNameProcess(titleNode) ||
-                                        this.runeNameProcess(titleNode) ||
-                                        this.aspectNameProcess(titleNode, subTitleNode)) {
-                                        break;
-                                    }
+                        // legendary: aspect, leg node, glyph, rune
+                        if (newNode.querySelector("div.d4t-tip-legendary")) {
+                            const titleNodes = newNode.querySelectorAll("div.d4t-title");
+                            const subTitleNode = newNode.querySelector("div.d4t-sub-title");
+                            for (const titleNode of titleNodes) {
+                                if (this.legNodeNameProcess(titleNode) ||
+                                    this.glyphNameProcess(titleNode) ||
+                                    this.runeNameProcess(titleNode) ||
+                                    this.aspectNameProcess(titleNode, subTitleNode)) {
+                                    break;
                                 }
+                            }
 
-                                const temperNodes = newNode.querySelectorAll("li.d4t-list-tempered");
-                                for (const temperNode of temperNodes) {
-                                    this.temperNameProcess(temperNode);
+                            const temperNodes = newNode.querySelectorAll("li.d4t-list-tempered");
+                            for (const temperNode of temperNodes) {
+                                this.temperNameProcess(temperNode);
+                            }
+                        }
+                        // rare: glyph, rune
+                        else if (newNode.querySelector("div.d4t-tip-rare")) {
+                            const titleNodes = newNode.querySelectorAll("div.d4t-title");
+                            for (const titleNode of titleNodes) {
+                                if (this.glyphNameProcess(titleNode) ||
+                                    this.runeNameProcess(titleNode)) {
+                                    break;
                                 }
                             }
-                            // rare: glyph, rune
-                            else if (newNode.querySelector("div.d4t-tip-rare")) {
-                                const titleNodes = newNode.querySelectorAll("div.d4t-title");
-                                for (const titleNode of titleNodes) {
-                                    if (this.glyphNameProcess(titleNode) ||
-                                        this.runeNameProcess(titleNode)) {
-                                        break;
-                                    }
+                        }
+                        // magic: rune
+                        else if (newNode.querySelector("div.d4t-tip-magic")) {
+                            const titleNodes = newNode.querySelectorAll("div.d4t-title");
+                            for (const titleNode of titleNodes) {
+                                if (this.runeNameProcess(titleNode)) {
+                                    break;
                                 }
                             }
-                            // magic: rune
-                            else if (newNode.querySelector("div.d4t-tip-magic")) {
-                                const titleNodes = newNode.querySelectorAll("div.d4t-title");
-                                for (const titleNode of titleNodes) {
-                                    if (this.runeNameProcess(titleNode)) {
-                                        break;
-                                    }
-                                }
+                        }
+                        // unq item
+                        else if (newNode.querySelector("div.d4t-tip-unique")) {
+                            const titleNode = newNode.querySelector("div.d4t-title");
+                            if (titleNode) {
+                                this.unqItemNameProcess(titleNode);
                             }
-                            // unq item
-                            else if (newNode.querySelector("div.d4t-tip-unique")) {
-                                const titleNode = newNode.querySelector("div.d4t-title");
-                                if (titleNode) {
-                                    this.unqItemNameProcess(titleNode);
-                                }
+                        }
+                        // mythic item
+                        else if (newNode.querySelector("div.d4t-tip-mythic")) {
+                            const titleNode = newNode.querySelector("div.d4t-title");
+                            if (titleNode) {
+                                this.unqItemNameProcess(titleNode);
                             }
-                            // mythic item
-                            else if (newNode.querySelector("div.d4t-tip-mythic")) {
-                                const titleNode = newNode.querySelector("div.d4t-title");
-                                if (titleNode) {
-                                    this.unqItemNameProcess(titleNode);
-                                }
-                            }
-                            // skill
-                            else if (newNode.querySelector("div.d4t-tip-skill")) {
-                                const skillTitleNode = newNode.querySelector("div.d4t-title");
-                                if (skillTitleNode) {
-                                    this.skillNameProcess(skillTitleNode);
-                                }
+                        }
+                        // skill
+                        else if (newNode.querySelector("div.d4t-tip-skill")) {
+                            const skillTitleNode = newNode.querySelector("div.d4t-title");
+                            if (skillTitleNode) {
+                                this.skillNameProcess(skillTitleNode);
                             }
                         }
                     }
