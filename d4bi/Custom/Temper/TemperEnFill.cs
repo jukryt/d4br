@@ -58,6 +58,16 @@ namespace Importer.Custom.Temper
                 values.Add(value.Replace("Macabrre", "Macabre"));
                 return value;
             },
+            ["[21-30%] Damage per Dark Shroud"] = (values, value) =>
+            {
+                values.Add("[21-30%] Damage per Dark Shroud Shadow");
+                return value;
+            },
+            ["Blood Orbs Restores [5-6] Essence"] = (values, value) =>
+            {
+                values.Add("Blood Orbs Restore [5-6] Essence");
+                return value;
+            },
         };
 
         public required string ManualsUrl { get; init; }
