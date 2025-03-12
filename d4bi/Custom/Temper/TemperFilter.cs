@@ -8,7 +8,7 @@ namespace Importer.Custom.Temper
     {
         private readonly HashSet<long> _ignoreItems = new()
         {
-            1862212, 1880220, 1861356, 1868200,
+            1862212, // Barbarian Protection (Legacy)
         };
 
         public Task FixItemsAsync(List<T> items, ILogger logger)

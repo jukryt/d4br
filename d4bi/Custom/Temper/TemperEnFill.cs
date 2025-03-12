@@ -13,6 +13,18 @@ namespace Importer.Custom.Temper
             {
                 temper.Name = "Ultimate Efficiency - Rogue";
             },
+            ["Summoning Finesse"] = (temper) =>
+            {
+                temper.Name = "Minion Finesse";
+            },
+            ["Berserking Augments"] = (temper) =>
+            {
+                temper.Name = "Berserking Innovation";
+            },
+            ["Summoning Augments"] = (temper) =>
+            {
+                temper.Name = "Minion Augments";
+            },
         };
 
         private readonly Dictionary<string, Func<List<string>, string, string>> _fixTemperValues = new()
