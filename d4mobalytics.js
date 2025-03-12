@@ -119,11 +119,17 @@ class D4MobalyticsProcessor {
         }
 
         const charClassName = this.getCharClassName();
+        if (!charClassName) {
+            return false;
+        }
+
+        // bug in mobalytics data
+        const temperName = sourceValue.replace("Wordly", "Worldly");
 
         const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
         const sourceItems = tempers.filter(i => {
-            return StringExtension.equelsIgnoreCase(i.name, sourceValue) ||
-                StringExtension.equelsIgnoreCase(i.name, `${sourceValue} - ${charClassName}`)
+            return StringExtension.equelsIgnoreCase(i.name, temperName) ||
+                StringExtension.equelsIgnoreCase(i.name, `${temperName} - ${charClassName}`)
         });
 
         if (sourceItems.length === 0) {
