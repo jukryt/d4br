@@ -13,10 +13,26 @@ namespace Importer.Custom.Temper
             {
                 temper.Name = "Ultimate Efficiency - Rogue";
             },
+            ["Summoning Finesse"] = (temper) =>
+            {
+                temper.Name = "Minion Finesse";
+            },
+            ["Berserking Augments"] = (temper) =>
+            {
+                temper.Name = "Berserking Innovation";
+            },
+            ["Summoning Augments"] = (temper) =>
+            {
+                temper.Name = "Minion Augments";
+            },
         };
 
         private readonly Dictionary<string, Func<List<string>, string, string>> _fixTemperValues = new()
         {
+            ["Lucky Hit: Up to a 40% Chance to Deal [900-2400] Poison\nDamage"] = (values, value) =>
+            {
+                return value.Replace('\n', ' ');
+            },
             ["[88-115%] Basic Skill Damage"] = (values, value) =>
             {
                 values.Add("[88-115%] Basic Damage");
@@ -40,6 +56,16 @@ namespace Importer.Custom.Temper
             ["Casting Macabrre Skills Restores [15-21] Primary Resource"] = (values, value) =>
             {
                 values.Add(value.Replace("Macabrre", "Macabre"));
+                return value;
+            },
+            ["[21-30%] Damage per Dark Shroud"] = (values, value) =>
+            {
+                values.Add("[21-30%] Damage per Dark Shroud Shadow");
+                return value;
+            },
+            ["Blood Orbs Restores [5-6] Essence"] = (values, value) =>
+            {
+                values.Add("Blood Orbs Restore [5-6] Essence");
                 return value;
             },
         };
@@ -98,14 +124,13 @@ namespace Importer.Custom.Temper
                         fixTemperValues.Add(sourceValue);
                     }
 
-                    temper.Values[i] = Regex.Replace(targetValue, @"\[[^\]]+\]", "///")
+                    temper.Values[i] = Regex.Replace(targetValue, @"\+? ?\[[^\]]+\]", "XXX")
                         .Replace("%", "\\%")
                         .Replace("+", "\\+")
                         .Replace("-", "\\-")
                         .Replace(".", "\\.")
-                        .Replace(" X ", " \\+? ?[X0-9\\.,\\-% \\[\\]]+ ") // for js regex
-                        .Replace("///", "\\+? ?[X0-9\\.,\\-% \\[\\]]+") // for js regex
-                        .Replace("\n", " ")
+                        .Replace(" X ", " XXX ")
+                        .Replace("XXX", @" ?\+? ?[X0-9\.,\-% \[\]]+") // for js regex
                         .Replace("*", "\\*")
                         .Replace(":", "\\:")
                         .Replace("(", "\\(")
