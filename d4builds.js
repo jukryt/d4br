@@ -16,11 +16,19 @@ class D4BuildsProcessor {
                 if (mutation.target.localName === "body") {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.id.startsWith("tippy-")) {
-                            // aspect and temper
+                            // aspect, affix, temper
                             if (newNode.querySelector("div.codex__tooltip")) {
                                 const aspectNameNode = newNode.querySelector("div.codex__tooltip__name");
                                 if (aspectNameNode) {
                                     this.aspectNameProcess(aspectNameNode);
+                                }
+
+                                const affixesNode = newNode.querySelector("div.codex__tooltip__stats:not(.codex__tooltip__stats--tempering)");
+                                if (affixesNode) {
+                                    const affixValueNodes = affixesNode.querySelectorAll("div.codex__tooltip__stat");
+                                    for (const affixValueNode of affixValueNodes) {
+                                        this.affixNameProcess(affixValueNode);
+                                    }
                                 }
 
                                 const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
@@ -31,12 +39,14 @@ class D4BuildsProcessor {
                                     }
                                 }
                             }
-                            // generic: temper
+                            // generic: affix, temper
                             if (newNode.querySelector("div.generic__tooltip")) {
                                 const genericTooltips = newNode.querySelectorAll("div.generic__tooltip");
-                                if (genericTooltips.length > 0) {
-                                    const genericTooltip = genericTooltips[genericTooltips.length - 1];
-                                    this.genericTemperNameProcess(genericTooltip);
+                                for (const genericTooltip of genericTooltips) {
+                                    if (this.genericAffixNameProcess(genericTooltip) ||
+                                        this.genericTemperNameProcess(genericTooltip)) {
+                                        break;
+                                    }
                                 }
                             }
                             // unq item
@@ -153,6 +163,73 @@ class D4BuildsProcessor {
         return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, false);
     }
 
+    affixNameProcess(node) {
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const affixTargetName = this.getAffixTargetName(sourceValue);
+        if (!affixTargetName) {
+            return false;
+        }
+
+        return this.setAffixNodeTargetValue(node, "d4br_affix_name", affixTargetName);
+    }
+
+    genericAffixNameProcess(node) {
+        const className = "d4br_affix_name";
+
+        let existsNode = node.parentNode?.querySelector(`div.${className}`);
+        if (existsNode) {
+            existsNode.parentNode.remove();
+            existsNode = null;
+        }
+
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const affixTargetName = this.getAffixTargetName(sourceValue);
+        if (!affixTargetName) {
+            return false;
+        }
+
+        const newNode = document.createElement("div");
+        newNode.className = "generic__tooltip";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, affixTargetName, false);
+    }
+
+    getAffixTargetName(sourceValue) {
+        const charClassName = this.getCharClassName();
+        if (!charClassName) {
+            return null;
+        }
+
+        const skillNameMatch = sourceValue.match(/Ranks (to )?(.+)/);
+        if (!skillNameMatch) {
+            return null;
+        }
+
+        const skillName = skillNameMatch[2];
+        const skills = this.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+        const sourceItems = skills.filter(i => StringExtension.equelsIgnoreCase(i.name, skillName));
+        if (sourceItems.length != 1) {
+            return null;
+        }
+
+        const sourceItem = sourceItems[0];
+        const targetItem = this.targetLanguage.skills.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return null;
+        }
+
+        return targetItem.name;
+    }
+
     temperNameProcess(node) {
         const sourceValue = node.innerText;
         if (!sourceValue) {
@@ -164,59 +241,18 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
-        let sourceItems = tempers.filter(i => i.values.some(s => {
-            const match = sourceValue.match(s)
-            return match &&
-                match.index === 0 &&
-                match[0] === sourceValue;
-        }));
-
-        if (sourceItems.length === 0) {
+        const targetTemperName = this.getTemperTargetName(charClassName, sourceValue);
+        if (!targetTemperName) {
             return false;
         }
 
-        if (sourceItems.length > 1) {
-            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
-                if (classItem) {
-                    sourceItems = [classItem];
-                } else {
-                    sourceItems = [sourceItems[0]];
-                }
-            }
-            else {
-                return false;
-            }
-        }
-
-        const sourceItem = sourceItems[0];
-        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
-        if (!targetItem) {
-            return false;
-        }
-
-        let targetTemperName = targetItem.name;
-
-        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
-        if (sourceTemperType) {
-            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
-            if (targetTemperType) {
-                targetTemperName = targetTemperType.name + " - " + targetTemperName;
-            }
-        }
-
-        const newNode = document.createElement("div");
-        newNode.style["margin-left"] = "25px";
-        node.parentNode.insertBefore(newNode, node);
-
-        return this.setTargetValue(newNode, "d4br_temper_name", targetTemperName, false);
+        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperName);
     }
 
     genericTemperNameProcess(node) {
         const className = "d4br_temper_name";
 
-        let existsNode = node.parentNode.querySelector(`div.${className}`);
+        let existsNode = node.parentNode?.querySelector(`div.${className}`);
         if (existsNode) {
             existsNode.parentNode.remove();
             existsNode = null;
@@ -240,36 +276,27 @@ class D4BuildsProcessor {
         const temperNameMatch = temperNameMatchs[temperNameMatchs.length - 1];
         const temperValue = sourceValue.replace(temperNameMatch[0], "").trim();
 
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
-        let sourceItems = tempers.filter(i => i.values.some(s => {
-            const match = temperValue.match(s)
-            return match &&
-                match.index === 0 &&
-                match[0] === temperValue;
-        }));
-
-        if (sourceItems.length === 0) {
+        const targetTemperName = this.getTemperTargetName(charClassName, temperValue);
+        if (!targetTemperName) {
             return false;
         }
 
-        if (sourceItems.length > 1) {
-            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
-                if (classItem) {
-                    sourceItems = [classItem];
-                } else {
-                    sourceItems = [sourceItems[0]];
-                }
-            }
-            else {
-                return false;
-            }
+        const newNode = document.createElement("div");
+        newNode.className = "generic__tooltip";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, targetTemperName, false);
+    }
+
+    getTemperTargetName(charClassName, temperValue) {
+        const sourceItem = this.getTemperSourceItem(charClassName, temperValue);
+        if (!sourceItem) {
+            return null;
         }
 
-        const sourceItem = sourceItems[0];
         const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
         if (!targetItem) {
-            return false;
+            return null;
         }
 
         let targetTemperName = targetItem.name;
@@ -282,11 +309,37 @@ class D4BuildsProcessor {
             }
         }
 
-        const newNode = document.createElement("div");
-        newNode.className = "generic__tooltip";
-        node.parentNode.insertBefore(newNode, node);
+        return targetTemperName;
+    }
 
-        return this.setTargetValue(newNode, className, targetTemperName, false);
+    getTemperSourceItem(charClassName, temperValue) {
+        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        let sourceItems = tempers.filter(i => i.values.some(s => {
+            const match = temperValue.match(s)
+            return match &&
+                match.index === 0 &&
+                match[0] === temperValue;
+        }));
+
+        if (sourceItems.length === 0) {
+            return null;
+        }
+
+        if (sourceItems.length > 1) {
+            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
+                const classItem = sourceItems.find(i => i.class === charClassName);
+                if (classItem) {
+                    sourceItems = [classItem];
+                } else {
+                    sourceItems = [sourceItems[0]];
+                }
+            }
+            else {
+                return null;
+            }
+        }
+
+        return sourceItems[0];
     }
 
     unqItemNameProcess(node) {
@@ -307,6 +360,14 @@ class D4BuildsProcessor {
 
     gemNameProcess(node) {
         return this.nodeProcess(node, "d4br_rune_name", Language.runes, false);
+    }
+
+    setAffixNodeTargetValue(node, className, targetValue) {
+        const newNode = document.createElement("div");
+        newNode.style["margin-left"] = "25px";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, targetValue, false);
     }
 
     nodeProcess(node, className, resourceName, addSourceValue) {
