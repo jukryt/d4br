@@ -1,4 +1,5 @@
-﻿using Importer.Logger;
+﻿using Importer.Extension;
+using Importer.Logger;
 using Importer.Model;
 using Importer.Puppeteer;
 
@@ -21,25 +22,29 @@ namespace Importer
             using var browser = new PuppeteerBrowser();
             await browser.RunAsync(cancellationToken);
 
+            var semaphore = new SemaphoreSlim(5, 5);
+
             logger.WriteMessage("Begin");
 
-            var chunks = Resources.GetResources()
-                .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)))
-                .Chunk(5);
+            var resources = Resources.GetResources()
+                .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)));
 
-            foreach (var chunk in chunks)
-            {
-                var tasks = new List<Task>();
-                foreach (var resource in chunk)
-                {
-                    var processor = resource.Info.CreateProcessor(resource.Folder, logger);
-                    tasks.Add(processor.ProcessAsync(browser));
-                }
-                await Task.WhenAll(tasks);
-            }
+            var tasks = new List<Task>();
+            foreach (var resource in resources)
+                tasks.Add(ExecuteAsync(resource, browser, semaphore, logger, cancellationToken));
 
+            await Task.WhenAll(tasks);
             logger.WriteMessage("Complete");
-        }        
+        }
+
+        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, SemaphoreSlim semaphore, ILogger logger, CancellationToken cancellationToken)
+        {
+            using (await semaphore.WaitAndReleaseAsync(cancellationToken))
+            {
+                var processor = resource.Info.CreateProcessor(resource.Folder, logger);
+                await processor.ProcessAsync(browser);
+            }
+        }
 
         private static void UnhandledExceptionTrapper(object sender, UnhandledExceptionEventArgs args)
         {
