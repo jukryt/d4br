@@ -84,7 +84,7 @@ namespace Importer
                                     new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ClassItemEqualComparer(),
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
@@ -123,7 +123,7 @@ namespace Importer
                                     new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ClassItemEqualComparer(),
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
@@ -205,7 +205,7 @@ namespace Importer
                                     new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ClassItemEqualComparer(),
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
@@ -372,7 +372,7 @@ namespace Importer
                                     new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ClassItemEqualComparer(),
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
@@ -411,7 +411,7 @@ namespace Importer
                                     new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ClassItemEqualComparer(),
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
@@ -493,7 +493,7 @@ namespace Importer
                                     new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ClassItemEqualComparer(),
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },

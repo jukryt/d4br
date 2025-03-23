@@ -5,9 +5,9 @@
         public string[] Classes { get; set; } = [];
     }
 
-    internal class ClassItemEqualComparer : ItemEqualComparer<ClassItem>
+    internal class ClassItemEqualComparer<T> : ItemEqualComparer<T> where T : ClassItem
     {
-        public override bool Equals(ClassItem x, ClassItem y)
+        public override bool Equals(T x, T y)
         {
             if (!base.Equals(x, y))
                 return false;
