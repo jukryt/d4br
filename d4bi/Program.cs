@@ -53,7 +53,7 @@ namespace Importer
             Static.Logger.WriteException(exception, source);
         }
 
-        public sealed class Resource
+        private sealed class Resource
         {
             public Resource(IResourceInfo info, string folder)
             {

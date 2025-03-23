@@ -34,15 +34,14 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
+                                    new FixName<Item>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
                                         Comparer = new ItemEqualComparer<Item>(),
@@ -72,16 +71,15 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
+                                    new FixName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
@@ -111,16 +109,15 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
+                                    new FixName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
@@ -155,15 +152,14 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
+                                    new FixName<Item>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
                                         Comparer = new ItemEqualComparer<Item>(),
@@ -193,16 +189,15 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
+                                    new FixName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
@@ -237,20 +232,20 @@ namespace Importer
                                 Fixers =
                                 [
                                     new TemperFilter<TemperItem>(),
-                                    new FixName<TemperItem>(),
                                     new FixRemoveEmptyName<TemperItem>(),
+                                    new FixRemoveEmptyClass<TemperItem>(),
+                                    new FixName<TemperItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<TemperItem>(),
-                                    new TemperCheckPropertyes(),
                                     new CheckUnique<TemperItem>()
                                     {
                                         Comparer = new ClassItemEqualComparer<TemperItem>(),
                                     },
+                                    new TemperCheckPropertyes(),
                                 ],
                             },
                             Target = new()
@@ -277,15 +272,14 @@ namespace Importer
                                 Fixers =
                                 [
                                     new UnqItemFilter(),
-                                    new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
+                                    new FixName<Item>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
                                         Comparer = new ItemEqualComparer<Item>(),
@@ -322,15 +316,14 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
+                                    new FixName<Item>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
                                         Comparer = new ItemEqualComparer<Item>(),
@@ -360,16 +353,15 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
+                                    new FixName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
@@ -399,16 +391,15 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
+                                    new FixName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
@@ -443,15 +434,14 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
+                                    new FixName<Item>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
                                         Comparer = new ItemEqualComparer<Item>(),
@@ -481,16 +471,15 @@ namespace Importer
                             {
                                 Fixers =
                                 [
-                                    new FixName<ClassItem>(),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
+                                    new FixName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<ClassItem>(),
                                     new CheckUnique<ClassItem>()
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
@@ -521,15 +510,14 @@ namespace Importer
                                 Fixers =
                                 [
                                     new TemperFilter<Item>(),
-                                    new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
+                                    new FixName<Item>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
                                         Comparer = new ItemEqualComparer<Item>(),
@@ -560,15 +548,14 @@ namespace Importer
                                 Fixers =
                                 [
                                     new UnqItemFilter(),
-                                    new FixName<Item>(),
                                     new FixRemoveEmptyName<Item>(),
+                                    new FixName<Item>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<Item>(),
                                     new CheckUnique<Item>()
                                     {
                                         Comparer = new ItemEqualComparer<Item>(),
