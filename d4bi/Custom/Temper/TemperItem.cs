@@ -2,9 +2,8 @@
 
 namespace Importer.Custom.Temper
 {
-    internal class TemperEnItem : Item
+    internal class TemperItem : ClassItem
     {
-        public string? Class { get; set; }
         public string? Type { get; set; }
         public List<string> Values { get; set; } = [];
     }

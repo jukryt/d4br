@@ -214,42 +214,42 @@ namespace Importer
                                 FileName = "skill.json",
                             },
                         },
-                        new ResourceInfo<TemperEnItem>
+                        new ResourceInfo<TemperItem>
                         {
                             Name = "temper en",
-                            Source = new()
+                            Source = new TemperSource()
                             {
                                 SourceInfos =
                                 [
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/items/temper-manual/quality:5",
-                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames}))",
                                     },
                                 ],
+                                DetailsUrlTemplate = "https://www.wowhead.com/diablo-4/item/[id]",
+                                PropertesScript = "() => [...document.querySelectorAll('#infobox-contents-0 div')].map(e => e.innerText)",
+                                ValuesScript = "() => [...document.querySelectorAll('div.whtt-damage-details li[data-type=\"empty-bullet\"]')].map(e => e.innerText)",
+                                InternalNameParser = new TemperInternalNameParserEn(),
                             },
                             Fix = new()
                             {
                                 Fixers =
                                 [
-                                    new TemperFilter<TemperEnItem>(),
-                                    new FixName<TemperEnItem>(),
-                                    new FixRemoveEmptyName<TemperEnItem>(),
-                                    new TemperEnFill
-                                    {
-                                        ManualsUrl = "https://d4builds.gg/page-data/database/tempering-manuals/page-data.json",
-                                    },
+                                    new TemperFilter<TemperItem>(),
+                                    new FixName<TemperItem>(),
+                                    new FixRemoveEmptyName<TemperItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckEmptyName<TemperEnItem>(),
-                                    new TemperEnCheckPropertyes(),
-                                    new CheckUnique<TemperEnItem>()
+                                    new CheckEmptyName<TemperItem>(),
+                                    new TemperCheckPropertyes(),
+                                    new CheckUnique<TemperItem>()
                                     {
-                                        Comparer = new ItemEqualComparer<TemperEnItem>(),
+                                        Comparer = new ClassItemEqualComparer<TemperItem>(),
                                     },
                                 ],
                             },
