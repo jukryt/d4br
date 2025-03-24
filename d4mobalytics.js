@@ -126,7 +126,12 @@ class D4MobalyticsProcessor {
         // bug in mobalytics data
         const temperName = sourceValue.replace("Wordly", "Worldly");
 
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        const tempers = this.sourceLanguage.tempers
+            .filter(i => {
+                return !i.classes || i.classes.length === 0 ||
+                    (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+            })
+            .filter(i => i.values);
         const sourceItems = tempers.filter(i => {
             return StringExtension.equelsIgnoreCase(i.name, temperName) ||
                 StringExtension.equelsIgnoreCase(i.name, `${temperName} - ${charClassName}`)
@@ -138,7 +143,7 @@ class D4MobalyticsProcessor {
 
         if (sourceItems.length > 1) {
             if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
+                const classItem = sourceItems.find(i => i.classes && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
                 if (classItem) {
                     sourceItems = [classItem];
                 } else {

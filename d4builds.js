@@ -313,12 +313,29 @@ class D4BuildsProcessor {
     }
 
     getTemperSourceItem(charClassName, temperValue) {
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        const fixedTemperValue = temperValue
+            .replace("Basic Skill Damage", "Basic Damage")
+            .replace("Core Skill Damage", "Core Damage")
+            .replace("Ultimate Skill Damage", "Ultimate Damage")
+            .replace("Razor Wing Charges", "Razor Wings Charges")
+            .replace("Casting Macabrre Skills Restores", "Casting Macabre Skills Restores")
+            .replace("Damage per Dark Shroud", "Damage per Dark Shroud Shadow")
+            .replace("Blood Orbs Restores", "Blood Orbs Restore")
+            .replace("Summoning Damage", "Summon Damage")
+            .replace("Skeletal Mages Damage", "Skeleton Mage Damage")
+            .replace("Golems Damage", "Golem Damage");
+
+        const tempers = this.sourceLanguage.tempers
+            .filter(i => {
+                return !i.classes || i.classes.length === 0 ||
+                    (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+            })
+            .filter(i => i.values);
         let sourceItems = tempers.filter(i => i.values.some(s => {
-            const match = temperValue.match(s)
+            const match = fixedTemperValue.match(s)
             return match &&
                 match.index === 0 &&
-                match[0] === temperValue;
+                match[0] === fixedTemperValue;
         }));
 
         if (sourceItems.length === 0) {
@@ -327,7 +344,7 @@ class D4BuildsProcessor {
 
         if (sourceItems.length > 1) {
             if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
+                const classItem = sourceItems.find(i => i.classes && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
                 if (classItem) {
                     sourceItems = [classItem];
                 } else {
