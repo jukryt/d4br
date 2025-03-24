@@ -1,5 +1,4 @@
-﻿using Importer.Extension;
-using Importer.Logger;
+﻿using Importer.Logger;
 using Importer.Model;
 using Importer.Puppeteer;
 
@@ -13,37 +12,28 @@ namespace Importer
             Static.Init(appConfig);
             AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionTrapper;
 
-            var cancellationTokenSource = new CancellationTokenSource();
-            await ExecuteAsync(Static.Logger, cancellationTokenSource.Token);
+            await ExecuteAsync(Static.Logger);
         }
 
-        private static async Task ExecuteAsync(ILogger logger, CancellationToken cancellationToken)
+        private static async Task ExecuteAsync(ILogger logger)
         {
-            using var browser = new PuppeteerBrowser();
-            await browser.RunAsync(cancellationToken);
-
-            var semaphore = new SemaphoreSlim(5, 5);
+            using var browser = await PuppeteerBrowser.RunAsync(maxPageCount: 5);
 
             logger.WriteMessage("Begin");
 
             var resources = Resources.GetResources()
                 .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)));
 
-            var tasks = new List<Task>();
-            foreach (var resource in resources)
-                tasks.Add(ExecuteAsync(resource, browser, semaphore, logger, cancellationToken));
-
+            var tasks = resources.Select(r => ExecuteAsync(r, browser, logger));
             await Task.WhenAll(tasks);
+
             logger.WriteMessage("Complete");
         }
 
-        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, SemaphoreSlim semaphore, ILogger logger, CancellationToken cancellationToken)
+        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, ILogger logger)
         {
-            using (await semaphore.WaitAndReleaseAsync(cancellationToken))
-            {
-                var processor = resource.Info.CreateProcessor(resource.Folder, logger);
-                await processor.ProcessAsync(browser);
-            }
+            var processor = resource.Info.CreateProcessor(resource.Folder, logger);
+            await processor.ProcessAsync(browser);
         }
 
         private static void UnhandledExceptionTrapper(object sender, UnhandledExceptionEventArgs args)

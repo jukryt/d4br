@@ -1,5 +1,4 @@
-﻿using Importer.Extension;
-using Importer.Processor;
+﻿using Importer.Processor;
 using Importer.Puppeteer;
 using PuppeteerSharp;
 using System.Text.RegularExpressions;
@@ -24,27 +23,19 @@ namespace Importer.Custom.Temper
 
         private async Task FillTemperItems(IEnumerable<TemperItem> items, PuppeteerBrowser browser)
         {
-            var semaphore = new SemaphoreSlim(3, 3);
-
-            var tasks = new List<Task>();
-            foreach (var item in items)
-                tasks.Add(FillTemperItem(item, browser, semaphore));
-
+            var tasks = items.Select(i => FillTemperItem(i, browser));
             await Task.WhenAll(tasks);
         }
 
-        private async Task FillTemperItem(TemperItem item, PuppeteerBrowser browser, SemaphoreSlim semaphore)
+        private async Task FillTemperItem(TemperItem item, PuppeteerBrowser browser)
         {
-            using (await semaphore.WaitAndReleaseAsync())
+            using (var page = await browser.NewPageAsync())
             {
-                using (var temperPage = await browser.NewPageAsync())
-                {
-                    var temperUrl = _source.DetailsUrlTemplate.Replace("[id]", item.Id.ToString());
-                    await temperPage.GoToAsync(temperUrl, waitUntil: WaitUntilNavigation.DOMContentLoaded);
+                var temperUrl = _source.DetailsUrlTemplate.Replace("[id]", item.Id.ToString());
+                await page.GoToAsync(temperUrl, waitUntil: WaitUntilNavigation.DOMContentLoaded);
 
-                    await FillPropertes(item, temperPage);
-                    await FillValuesAsync(item, temperPage);
-                }
+                await FillPropertes(item, page);
+                await FillValuesAsync(item, page);
             }
         }
 
