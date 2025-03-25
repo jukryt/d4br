@@ -225,7 +225,7 @@ namespace Importer
                                 DetailsUrlTemplate = "https://www.wowhead.com/diablo-4/item/[id]",
                                 PropertesScript = "() => [...document.querySelectorAll('#infobox-contents-0 div')].map(e => e.innerText)",
                                 ValuesScript = "() => [...document.querySelectorAll('div.whtt-damage-details li[data-type=\"empty-bullet\"]')].map(e => e.innerText)",
-                                InternalNameParser = new TemperInternalNameParserEn(),
+                                InternalNameParser = new TemperEnInternalNameParser(),
                             },
                             Fix = new()
                             {

@@ -1,6 +1,6 @@
 ﻿namespace Importer.Custom.Temper
 {
-    internal class TemperInternalNameParserEn : ITemperInternalNameParser
+    internal class TemperRuInternalNameParser : ITemperInternalNameParser
     {
         public string GetTemperType(string? internalName)
         {
@@ -8,22 +8,22 @@
                 return string.Empty;
 
             if (internalName.Contains("Weapon"))
-                return "Weapons";
+                return "Оружие";
 
             if (internalName.Contains("Offensive"))
-                return "Offensive";
+                return "Атака";
 
             if (internalName.Contains("Defensive"))
-                return "Defensive";
+                return "Защита";
 
             if (internalName.Contains("Utility"))
-                return "Utility";
+                return "Поддержка";
 
             if (internalName.Contains("Mobility"))
-                return "Mobility";
+                return "Подвижность";
 
             if (internalName.Contains("Resource"))
-                return "Resource";
+                return "Ресурсы";
 
             return string.Empty;
         }
