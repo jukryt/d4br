@@ -509,7 +509,7 @@ namespace Importer
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/items/temper-manual/quality:5",
-                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames}))",
                                     },
                                 ],
                                 DetailsUrlTemplate = "https://www.wowhead.com/diablo-4/ru/item/[id]",
