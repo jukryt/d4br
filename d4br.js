@@ -50,13 +50,6 @@
         processor.mutationObserverCallback(mutations);
     });
     observer.observe(document, { subtree: true, childList: true, attributes: true });
-
-    setInterval(() => {
-        const mutations = observer.takeRecords();
-        if (mutations.length > 0) {
-            processor.mutationObserverCallback(mutations);
-        }
-    }, 1000);
 })();
 
 function CreateProcessor() {
