@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         d4builds rus
 // @namespace    d4br
-// @version      2.0.0
+// @version      3.0.0
 // @description  Перевод для d4builds
 // @author       jukryt
 // @match        https://d4builds.gg/*
@@ -14,26 +14,26 @@
 // @supportURL   https://github.com/jukryt/d4br/issues
 // @grant        GM_getResourceText
 
-// @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/en/aspect.json
-// @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/en/glyph.json
-// @resource     unq_item_en  https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/en/unq_item.json
-// @resource     leg_node_en  https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/en/leg_node.json
-// @resource     rune_en      https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/en/rune.json
-// @resource     skill_en     https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/en/skill.json
-// @resource     temper_en    https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/en/temper.json
+// @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/en/aspect.json
+// @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/en/glyph.json
+// @resource     unq_item_en  https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/en/unq_item.json
+// @resource     leg_node_en  https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/en/leg_node.json
+// @resource     rune_en      https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/en/rune.json
+// @resource     skill_en     https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/en/skill.json
+// @resource     temper_en    https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/en/temper.json
 
-// @resource     aspect_ru    https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/ru/aspect.json
-// @resource     glyph_ru     https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/ru/glyph.json
-// @resource     unq_item_ru  https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/ru/unq_item.json
-// @resource     leg_node_ru  https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/ru/leg_node.json
-// @resource     rune_ru      https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/ru/rune.json
-// @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/ru/skill.json
-// @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/ru/temper.json
+// @resource     aspect_ru    https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/ru/aspect.json
+// @resource     glyph_ru     https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/ru/glyph.json
+// @resource     unq_item_ru  https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/ru/unq_item.json
+// @resource     leg_node_ru  https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/ru/leg_node.json
+// @resource     rune_ru      https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/ru/rune.json
+// @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/ru/skill.json
+// @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/ru/temper.json
 
-// @require      https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/d4resource.js
-// @require      https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/d4builds.js
-// @require      https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/d4maxroll.js
-// @require      https://raw.githubusercontent.com/jukryt/d4br/e9e034071b7513e892d300d8f5ca18dd0b16ab6c/d4mobalytics.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/d4resource.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/d4builds.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/d4maxroll.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/17ff19f73b1e34a03665d0625c80924fb0e58088/d4mobalytics.js
 
 // ==/UserScript==
 
