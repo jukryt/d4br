@@ -1,4 +1,5 @@
 ﻿using Importer.Checker;
+using Importer.Custom.Glyph;
 using Importer.Custom.Temper;
 using Importer.Custom.UnqItem;
 using Importer.Fixer;
@@ -71,6 +72,7 @@ namespace Importer
                             {
                                 Fixers =
                                 [
+                                    new GlyphFilter(),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
                                     new FixName<ClassItem>(),
@@ -355,6 +357,7 @@ namespace Importer
                             {
                                 Fixers =
                                 [
+                                    new GlyphFilter(),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
                                     new FixName<ClassItem>(),
