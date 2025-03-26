@@ -3,7 +3,7 @@ using Importer.Logger;
 
 namespace Importer.Custom.Temper
 {
-    internal class TemperCheckPropertyes : IItemsChecker<TemperItem>
+    internal class TemperCheckProperties : IItemsChecker<TemperItem>
     {
         public void CheckItems(IReadOnlyList<TemperItem> items, ILogger logger)
         {
@@ -12,7 +12,7 @@ namespace Importer.Custom.Temper
                 if (string.IsNullOrEmpty(item.Type) ||
                     item.Values.Count == 0 ||
                     item.Values.Any(v => v.Contains('\n')))
-                    logger.WriteMessage($"Id: {item.Id} - invalid", nameof(TemperCheckPropertyes));
+                    logger.WriteMessage($"Id: {item.Id} - invalid", nameof(TemperCheckProperties));
             }
         }
     }

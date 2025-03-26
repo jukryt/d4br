@@ -8,9 +8,9 @@ namespace Importer.Model
     {
         public required IReadOnlyCollection<IItemsChecker<T>> Checkers { get; init; } = [];
 
-        public virtual ResourceCkecker<T> CreateChecker(string resourceName, ILogger logger)
+        public virtual ResourceChecker<T> CreateChecker(string resourceName, ILogger logger)
         {
-            return new ResourceCkecker<T>(resourceName, this, logger);
+            return new ResourceChecker<T>(resourceName, this, logger);
         }
     }
 }

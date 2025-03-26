@@ -15,7 +15,7 @@ namespace Importer
         {
             try
             {
-                return await GetAppConfigAsync(AppConfigFileName);
+                return await GetAppConfigAsync(AppConfigFileName, cancellationToken);
             }
             catch (Exception ex)
             {
@@ -36,15 +36,15 @@ namespace Importer
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.GetMessage());
-                Console.WriteLine(ex.GetMessage());            
+                Console.WriteLine(ex.GetMessage());
             }
         }
 
-        private static async Task<AppConfig> GetAppConfigAsync(string fileName)
+        private static async Task<AppConfig> GetAppConfigAsync(string fileName, CancellationToken cancellationToken)
         {
             if (File.Exists(fileName))
             {
-                var jsonString = await File.ReadAllTextAsync(fileName);
+                var jsonString = await File.ReadAllTextAsync(fileName, cancellationToken);
                 return JsonSerializer.Deserialize<AppConfig>(jsonString);
             }
 

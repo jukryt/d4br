@@ -52,7 +52,7 @@
                         return null;
 
                     return !message.EndsWith('.', ',', ':', ';')
-                        ? message + "."
+                        ? $"{message}."
                         : message;
                 })
                 .Where(m => !string.IsNullOrEmpty(m));

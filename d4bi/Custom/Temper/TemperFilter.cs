@@ -6,36 +6,36 @@ namespace Importer.Custom.Temper
 {
     internal class TemperFilter<T> : IItemsFixer<T> where T : Item
     {
-        private readonly HashSet<long> _ignoreItems = new()
+        private static readonly HashSet<long> IgnoreItems = new()
         {
             1862212, // Barbarian Protection (Legacy)
         };
 
         public Task FixItemsAsync(List<T> items, ILogger logger)
         {
-            IgnoreItems(items, logger);
+            RemoveIgnoreItems(items, logger);
 
             return Task.CompletedTask;
         }
 
-        private void IgnoreItems(List<T> items, ILogger logger)
+        private void RemoveIgnoreItems(List<T> items, ILogger logger)
         {
             var ignoreItems = new HashSet<long>();
 
             foreach (var item in items.ToList())
             {
-                if (_ignoreItems.Contains(item.Id))
+                if (IgnoreItems.Contains(item.Id))
                 {
                     items.Remove(item);
                     ignoreItems.Add(item.Id);
                 }
             }
 
-            if (_ignoreItems.Count != ignoreItems.Count)
+            if (IgnoreItems.Count != ignoreItems.Count)
             {
-                var exceptItems = _ignoreItems.Except(ignoreItems);
+                var exceptItems = IgnoreItems.Except(ignoreItems);
                 var exceptItemsString = string.Join(", ", exceptItems);
-                logger.WriteMessage($"{nameof(IgnoreItems)} not match ({exceptItemsString})", nameof(TemperFilter<T>));
+                logger.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(TemperFilter<T>));
             }
         }
     }

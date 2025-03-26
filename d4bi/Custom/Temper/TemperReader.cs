@@ -19,31 +19,31 @@ namespace Importer.Custom.Temper
         public override async Task<List<TemperItem>> ReadAsync(PuppeteerBrowser browser)
         {
             var items = await base.ReadAsync(browser);
-            await FillTemperItems(items, browser);
+            await FillTemperItemsAsync(items, browser);
             return items;
         }
 
-        private async Task FillTemperItems(IEnumerable<TemperItem> items, PuppeteerBrowser browser)
+        private async Task FillTemperItemsAsync(IEnumerable<TemperItem> items, PuppeteerBrowser browser)
         {
-            var tasks = items.Select(i => FillTemperItem(i, browser));
+            var tasks = items.Select(i => FillTemperItemAsync(i, browser));
             await Task.WhenAll(tasks);
         }
 
-        private async Task FillTemperItem(TemperItem item, PuppeteerBrowser browser)
+        private async Task FillTemperItemAsync(TemperItem item, PuppeteerBrowser browser)
         {
             using (var page = await browser.NewPageAsync())
             {
                 var temperUrl = _source.DetailsUrlTemplate.Replace("[id]", item.Id.ToString());
                 await page.GoToAsync(temperUrl, waitUntil: WaitUntilNavigation.DOMContentLoaded);
 
-                await FillPropertes(item, page);
+                await FillPropertesAsync(item, page);
                 await FillValuesAsync(item, page);
             }
         }
 
-        private async Task FillPropertes(TemperItem item, IPage page)
+        private async Task FillPropertesAsync(TemperItem item, IPage page)
         {
-            var propertyes = await page.EvaluateFunctionAsync<List<string>>(_source.PropertesScript);
+            var propertyes = await page.EvaluateFunctionAsync<List<string>>(_source.PropertiesScript);
 
             var internalName = propertyes.FirstOrDefault(p => p.Contains(".itm"));
             item.InternalType = GetTemperType(internalName);

@@ -3,12 +3,12 @@ using Importer.Model;
 
 namespace Importer.Processor
 {
-    internal class ResourceCkecker<T> where T : Item
+    internal class ResourceChecker<T> where T : Item
     {
         private readonly ResourceCheck<T> _check;
         private readonly ILogger _logger;
 
-        public ResourceCkecker(string resourceName, ResourceCheck<T> check, ILogger logger)
+        public ResourceChecker(string resourceName, ResourceCheck<T> check, ILogger logger)
         {
             _check = check;
             _logger = new LoggerWrapper(resourceName, logger);
