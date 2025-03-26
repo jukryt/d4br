@@ -314,16 +314,8 @@ class D4BuildsProcessor {
 
     getTemperSourceItem(charClassName, temperValue) {
         const fixedTemperValue = temperValue
-            .replace("Basic Skill Damage", "Basic Damage")
-            .replace("Core Skill Damage", "Core Damage")
-            .replace("Ultimate Skill Damage", "Ultimate Damage")
-            .replace("Razor Wing Charges", "Razor Wings Charges")
-            .replace("Casting Macabrre Skills Restores", "Casting Macabre Skills Restores")
-            .replace("Damage per Dark Shroud", "Damage per Dark Shroud Shadow")
-            .replace("Blood Orbs Restores", "Blood Orbs Restore")
-            .replace("Summoning Damage", "Summon Damage")
-            .replace("Skeletal Mages Damage", "Skeleton Mage Damage")
-            .replace("Golems Damage", "Golem Damage");
+            .replace(/\[([0-9]+)\]/, "$1")
+            .replace("Movement Speed for X", "Movement Speed for 4");
 
         const tempers = this.sourceLanguage.tempers
             .filter(i => {

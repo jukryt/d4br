@@ -7,6 +7,8 @@ namespace Importer.Custom.Temper
 {
     internal class TemperReader : ResourceReader<TemperItem>
     {
+        public const string ValueRegex = @" ?\+? ?[X0-9\.,\-% \[\]]+ ?";
+
         private readonly TemperSource _source;
 
         public TemperReader(TemperSource source) : base(source)
@@ -53,7 +55,7 @@ namespace Importer.Custom.Temper
 
             item.Values = values.Select(v =>
             {
-                return Regex.Replace(v, @"\+? ?\[[^\]]+\]%?", "XXX")
+                return Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", "XXX")
                         .Replace("+", "\\+")
                         .Replace("-", "\\-")
                         .Replace(".", "\\.")
@@ -62,7 +64,7 @@ namespace Importer.Custom.Temper
                         .Replace("(", "\\(")
                         .Replace(")", "\\)")
                         .Replace(" X ", " XXX ")
-                        .Replace("XXX", @" ?\+? ?[X0-9\.,\-% \[\]]+"); // for js regex
+                        .Replace("XXX", ValueRegex); // for js regex
             }).ToList();
         }
     }

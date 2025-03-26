@@ -235,6 +235,7 @@ namespace Importer
                                     new FixRemoveEmptyName<TemperItem>(),
                                     new FixRemoveEmptyClass<TemperItem>(),
                                     new FixName<TemperItem>(),
+                                    new TemperEnFixData(),
                                 ],
                             },
                             Check = new()
