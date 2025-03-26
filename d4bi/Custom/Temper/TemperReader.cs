@@ -56,15 +56,17 @@ namespace Importer.Custom.Temper
             item.Values = values.Select(v =>
             {
                 return Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", "XXX")
-                        .Replace("+", "\\+")
-                        .Replace("-", "\\-")
-                        .Replace(".", "\\.")
-                        .Replace("*", "\\*")
-                        .Replace(":", "\\:")
-                        .Replace("(", "\\(")
-                        .Replace(")", "\\)")
-                        .Replace(" X ", " XXX ")
-                        .Replace("XXX", ValueRegex); // for js regex
+                    .Replace("$", "\\$")
+                    .Replace("^", "\\^")
+                    .Replace(".", "\\.")
+                    .Replace("+", "\\+")
+                    .Replace("*", "\\*")
+                    .Replace("(", "\\(")
+                    .Replace(")", "\\)")
+                    .Replace("[", "\\[")
+                    .Replace("]", "\\]")
+                    .Replace(" X ", " XXX ")
+                    .Replace("XXX", ValueRegex); // for js regex
             }).ToList();
         }
 
