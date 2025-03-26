@@ -68,8 +68,8 @@ class D4MobalyticsProcessor {
 
     getCharClassName() {
         const classNameTitle =
-            document.querySelector("span.m-a53mf3") ??                           // build
-            document.querySelector("#downshift-0-toggle-button span.m-1sjbyfv"); // planner
+            document.querySelector("span.m-a53mf3") ??              // build
+            document.querySelector("div.m-183mevi span.m-1sjbyfv"); // planner
 
         return classNameTitle?.innerText
             ?.replace("Diablo 4 ", "")
