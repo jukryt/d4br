@@ -10,9 +10,6 @@ namespace Importer.Fixer
             foreach (var item in items.ToList())
             {
                 item.Classes = [.. item.Classes.Where(c => !string.IsNullOrEmpty(c))];
-
-                if (item.Classes.Length == 0)
-                    items.Remove(item);
             }
 
             return Task.CompletedTask;

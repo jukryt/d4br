@@ -28,7 +28,7 @@ namespace Importer.Processor
         private async Task<IEnumerable<T>> ReadAsync(IPage page, SourceInfo sourceInfo)
         {
             await page.GoToAsync(sourceInfo.Url, waitUntil: WaitUntilNavigation.DOMContentLoaded);
-            var items =  await page.EvaluateFunctionAsync<List<T>>(sourceInfo.Script);
+            var items = await page.EvaluateFunctionAsync<List<T>>(sourceInfo.Script);
             return items;
         }
     }
