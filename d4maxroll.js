@@ -149,7 +149,7 @@ class D4MaxrollProcessor {
 
         const affixValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
-            .replace(/\[[0-9\. \-]+\]%?/, "") // [values]
+            .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
         const skillNameMatch = affixValue.match(/\+\d+ to (.+)/);
@@ -186,7 +186,7 @@ class D4MaxrollProcessor {
 
         const temperValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
-            .replace(/\[[0-9\. \-]+\]%?/, "") // [values]
+            .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
         const sourceItem = this.getTemperSourceItem(charClassName, temperValue);
