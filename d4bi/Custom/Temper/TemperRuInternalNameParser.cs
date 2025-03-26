@@ -1,31 +1,20 @@
 ﻿namespace Importer.Custom.Temper
 {
-    internal class TemperRuInternalNameParser : ITemperInternalNameParser
+    internal class TemperRuInternalNameParser : TemperInternalNameParser
     {
-        public string GetTemperType(string? internalName)
+        public override string GetTemperType(string? internalName)
         {
-            if (string.IsNullOrEmpty(internalName))
-                return string.Empty;
-
-            if (internalName.Contains("Weapon"))
-                return "Оружие";
-
-            if (internalName.Contains("Offensive"))
-                return "Атака";
-
-            if (internalName.Contains("Defensive"))
-                return "Защита";
-
-            if (internalName.Contains("Utility"))
-                return "Поддержка";
-
-            if (internalName.Contains("Mobility"))
-                return "Подвижность";
-
-            if (internalName.Contains("Resource"))
-                return "Ресурсы";
-
-            return string.Empty;
+            var temperType = ParseTemperType(internalName);
+            return temperType switch
+            {
+                TemperType.Weapon => "Оружие",
+                TemperType.Offensive => "Атака",
+                TemperType.Defensive => "Защита",
+                TemperType.Utility => "Поддержка",
+                TemperType.Mobility => "Подвижность",
+                TemperType.Resource => "Ресурсы",
+                _ => string.Empty,
+            };
         }
     }
 }
