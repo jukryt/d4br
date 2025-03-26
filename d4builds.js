@@ -299,26 +299,26 @@ class D4BuildsProcessor {
             return null;
         }
 
-        let targetTemperName = targetItem.name;
-
-        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
-        if (sourceTemperType) {
-            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
-            if (targetTemperType) {
-                targetTemperName = targetTemperType.name + " - " + targetTemperName;
-            }
-        }
-
+        const targetTemperName = targetItem.type + " - " + targetItem.name;
         return targetTemperName;
     }
 
     getTemperSourceItem(charClassName, temperValue) {
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        const fixedTemperValue = temperValue
+            .replace(/\[([0-9]+)\]/, "$1")
+            .replace("Movement Speed for X", "Movement Speed for 4");
+
+        const tempers = this.sourceLanguage.tempers
+            .filter(i => {
+                return !i.classes || i.classes.length === 0 ||
+                    (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+            })
+            .filter(i => i.values);
         let sourceItems = tempers.filter(i => i.values.some(s => {
-            const match = temperValue.match(s)
+            const match = fixedTemperValue.match(s)
             return match &&
                 match.index === 0 &&
-                match[0] === temperValue;
+                match[0] === fixedTemperValue;
         }));
 
         if (sourceItems.length === 0) {
@@ -327,7 +327,7 @@ class D4BuildsProcessor {
 
         if (sourceItems.length > 1) {
             if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
+                const classItem = sourceItems.find(i => i.classes && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
                 if (classItem) {
                     sourceItems = [classItem];
                 } else {

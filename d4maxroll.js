@@ -149,7 +149,7 @@ class D4MaxrollProcessor {
 
         const affixValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
-            .replace(/\[[0-9\. \-]+\]%?/, "") // [values]
+            .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
         const skillNameMatch = affixValue.match(/\+\d+ to (.+)/);
@@ -186,7 +186,7 @@ class D4MaxrollProcessor {
 
         const temperValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
-            .replace(/\[[0-9\. \-]+\]%?/, "") // [values]
+            .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
         const sourceItem = this.getTemperSourceItem(charClassName, temperValue);
@@ -199,21 +199,17 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        let targetTemperName = targetItem.name;
-
-        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
-        if (sourceTemperType) {
-            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
-            if (targetTemperType) {
-                targetTemperName = targetTemperType.name + " - " + targetTemperName;
-            }
-        }
-
+        const targetTemperName = targetItem.type + " - " + targetItem.name;
         return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperName);
     }
 
     getTemperSourceItem(charClassName, temperValue) {
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        const tempers = this.sourceLanguage.tempers
+            .filter(i => {
+                return !i.classes || i.classes.length === 0 ||
+                    (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+            })
+            .filter(i => i.values);
         let sourceItems = tempers.filter(i => i.values.some(s => {
             const match = temperValue.match(s)
             return match &&
@@ -227,7 +223,7 @@ class D4MaxrollProcessor {
 
         if (sourceItems.length > 1) {
             if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
+                const classItem = sourceItems.find(i => i.classes && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
                 if (classItem) {
                     sourceItems = [classItem];
                 } else {

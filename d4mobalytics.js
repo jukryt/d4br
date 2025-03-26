@@ -68,8 +68,8 @@ class D4MobalyticsProcessor {
 
     getCharClassName() {
         const classNameTitle =
-            document.querySelector("span.m-a53mf3") ??                           // build
-            document.querySelector("#downshift-0-toggle-button span.m-1sjbyfv"); // planner
+            document.querySelector("span.m-a53mf3") ??              // build
+            document.querySelector("div.m-183mevi span.m-1sjbyfv"); // planner
 
         return classNameTitle?.innerText
             ?.replace("Diablo 4 ", "")
@@ -126,7 +126,12 @@ class D4MobalyticsProcessor {
         // bug in mobalytics data
         const temperName = sourceValue.replace("Wordly", "Worldly");
 
-        const tempers = this.sourceLanguage.tempers.filter(i => i.values && (i.class === charClassName || i.class === "All"));
+        const tempers = this.sourceLanguage.tempers
+            .filter(i => {
+                return !i.classes || i.classes.length === 0 ||
+                    (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+            })
+            .filter(i => i.values);
         const sourceItems = tempers.filter(i => {
             return StringExtension.equelsIgnoreCase(i.name, temperName) ||
                 StringExtension.equelsIgnoreCase(i.name, `${temperName} - ${charClassName}`)
@@ -138,7 +143,7 @@ class D4MobalyticsProcessor {
 
         if (sourceItems.length > 1) {
             if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.class === charClassName);
+                const classItem = sourceItems.find(i => i.classes && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
                 if (classItem) {
                     sourceItems = [classItem];
                 } else {
@@ -156,16 +161,7 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        let targetTemperName = targetItem.name;
-
-        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
-        if (sourceTemperType) {
-            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
-            if (targetTemperType) {
-                targetTemperName = targetTemperType.name + " - " + targetTemperName;
-            }
-        }
-
+        const targetTemperName = targetItem.type + " - " + targetItem.name;
         return this.setTemperNodeTargetValue(node, "d4br_temper_name", targetTemperName);
     }
 

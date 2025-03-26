@@ -10,7 +10,8 @@
     {
         public virtual bool Equals(T x, T y)
         {
-            return x.Name == y.Name;
+            return x.Id == y.Id ||
+                x.Name == y.Name;
         }
     }
 }

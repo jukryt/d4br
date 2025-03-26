@@ -12,34 +12,29 @@ namespace Importer
             Static.Init(appConfig);
             AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionTrapper;
 
-            var cancellationTokenSource = new CancellationTokenSource();
-            await ExecuteAsync(Static.Logger, cancellationTokenSource.Token);
+            await ExecuteAsync(Static.Logger);
         }
 
-        private static async Task ExecuteAsync(ILogger logger, CancellationToken cancellationToken)
+        private static async Task ExecuteAsync(ILogger logger)
         {
-            using var browser = new PuppeteerBrowser();
-            await browser.RunAsync(cancellationToken);
+            using var browser = await PuppeteerBrowser.RunAsync(maxPageCount: 5);
 
             logger.WriteMessage("Begin");
 
-            var chunks = Resources.GetResources()
-                .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)))
-                .Chunk(5);
+            var resources = Resources.GetResources()
+                .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)));
 
-            foreach (var chunk in chunks)
-            {
-                var tasks = new List<Task>();
-                foreach (var resource in chunk)
-                {
-                    var processor = resource.Info.CreateProcessor(resource.Folder, logger);
-                    tasks.Add(processor.ProcessAsync(browser));
-                }
-                await Task.WhenAll(tasks);
-            }
+            var tasks = resources.Select(r => ExecuteAsync(r, browser, logger));
+            await Task.WhenAll(tasks);
 
             logger.WriteMessage("Complete");
-        }        
+        }
+
+        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, ILogger logger)
+        {
+            var processor = resource.Info.CreateProcessor(resource.Folder, logger);
+            await processor.ProcessAsync(browser);
+        }
 
         private static void UnhandledExceptionTrapper(object sender, UnhandledExceptionEventArgs args)
         {
@@ -48,7 +43,7 @@ namespace Importer
             Static.Logger.WriteException(exception, source);
         }
 
-        public sealed class Resource
+        private sealed class Resource
         {
             public Resource(IResourceInfo info, string folder)
             {

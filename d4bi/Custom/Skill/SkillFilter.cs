@@ -2,23 +2,23 @@
 using Importer.Logger;
 using Importer.Model;
 
-namespace Importer.Custom.Temper
+namespace Importer.Custom.Skill
 {
-    internal class TemperFilter<T> : IItemsFixer<T> where T : Item
+    internal class SkillFilter : IItemsFixer<ClassItem>
     {
         private static readonly HashSet<long> IgnoreItems = new()
         {
-            1862212, // Barbarian Protection (Legacy)
+            1858262, 1859218,
         };
 
-        public Task FixItemsAsync(List<T> items, ILogger logger)
+        public Task FixItemsAsync(List<ClassItem> items, ILogger logger)
         {
             RemoveIgnoreItems(items, logger);
 
             return Task.CompletedTask;
         }
 
-        private void RemoveIgnoreItems(List<T> items, ILogger logger)
+        private void RemoveIgnoreItems(List<ClassItem> items, ILogger logger)
         {
             var ignoreItems = new HashSet<long>();
 
@@ -35,7 +35,7 @@ namespace Importer.Custom.Temper
             {
                 var exceptItems = IgnoreItems.Except(ignoreItems);
                 var exceptItemsString = string.Join(", ", exceptItems);
-                logger.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(TemperFilter<T>));
+                logger.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(SkillFilter));
             }
         }
     }
