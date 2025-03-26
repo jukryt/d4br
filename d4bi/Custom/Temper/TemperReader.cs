@@ -46,7 +46,7 @@ namespace Importer.Custom.Temper
             var propertyes = await page.EvaluateFunctionAsync<List<string>>(_source.PropertesScript);
 
             var internalName = propertyes.FirstOrDefault(p => p.Contains(".itm"));
-            item.Type = _source.InternalNameParser.GetTemperType(internalName);
+            item.InternalType = GetTemperType(internalName);
         }
 
         private async Task FillValuesAsync(TemperItem item, IPage page)
@@ -66,6 +66,32 @@ namespace Importer.Custom.Temper
                         .Replace(" X ", " XXX ")
                         .Replace("XXX", ValueRegex); // for js regex
             }).ToList();
+        }
+
+        protected TemperType GetTemperType(string? internalName)
+        {
+            if (string.IsNullOrEmpty(internalName))
+                return TemperType.None;
+
+            if (internalName.Contains("\u200BWeapon_"))
+                return TemperType.Weapon;
+
+            if (internalName.Contains("\u200BOffensive_"))
+                return TemperType.Offensive;
+
+            if (internalName.Contains("\u200BDefensive_"))
+                return TemperType.Defensive;
+
+            if (internalName.Contains("\u200BUtility_"))
+                return TemperType.Utility;
+
+            if (internalName.Contains("\u200BMobility_"))
+                return TemperType.Mobility;
+
+            if (internalName.Contains("\u200BResource_"))
+                return TemperType.Resource;
+
+            return TemperType.None;
         }
     }
 }

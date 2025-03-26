@@ -1,10 +1,20 @@
-﻿namespace Importer.Custom.Temper
+﻿using Importer.Fixer;
+using Importer.Logger;
+
+namespace Importer.Custom.Temper
 {
-    internal class TemperRuInternalNameParser : TemperInternalNameParser
+    internal class TemperRuFillType : IItemsFixer<TemperItem>
     {
-        public override string GetTemperType(string? internalName)
+        public Task FixItemsAsync(List<TemperItem> items, ILogger logger)
         {
-            var temperType = ParseTemperType(internalName);
+            foreach (var item in items)
+                item.Type = ConvertTemperType(item.InternalType);
+
+            return Task.CompletedTask;
+        }
+
+        private string ConvertTemperType(TemperType temperType)
+        {
             return temperType switch
             {
                 TemperType.Weapon => "Оружие",

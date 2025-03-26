@@ -13,6 +13,5 @@ namespace Importer.Custom.Temper
         public required string DetailsUrlTemplate { get; init; }
         public required string PropertesScript { get; init; }
         public required string ValuesScript { get; init; }
-        public required ITemperInternalNameParser InternalNameParser { get; init; }
     }
 }

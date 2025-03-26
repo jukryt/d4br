@@ -13,16 +13,12 @@ namespace Importer.Custom.Temper
             AddAlternativeValue(temper, $"{TemperReader.ValueRegex}Golem Damage", $"{TemperReader.ValueRegex}Golems Damage"),
 
             [1873425] = (temper) =>
-            UpdateType(temper, "Resource", "Utility") &
             AddAlternativeValue(temper, $"Shadow Imbue Lasts For{TemperReader.ValueRegex}Cast", $"Shadow Imbue Lasts For{TemperReader.ValueRegex}Casts") &
             AddAlternativeValue(temper, $"Poison Imbue Lasts For{TemperReader.ValueRegex}Cast", $"Poison Imbue Lasts For{TemperReader.ValueRegex}Casts") &
             AddAlternativeValue(temper, $"Cold Imbue Lasts For{TemperReader.ValueRegex}Cast", $"Cold Imbue Lasts For{TemperReader.ValueRegex}Casts"),
 
             [1873434] = (temper) =>
             AddAlternativeValue(temper, $"{TemperReader.ValueRegex}Damage to Enemies Affected by Trap Skills", $"{TemperReader.ValueRegex}Damage to Trapped Enemies"),
-
-            [1885023] = (temper) =>
-            UpdateType(temper, "Offensive", "Weapons"),
 
             [1885045] = (temper) =>
             AddAlternativeValue(temper, $"{TemperReader.ValueRegex}Chance for Shred to Deal Double Damage", $"{TemperReader.ValueRegex}Chance for Shred to Hit Twice"),
@@ -74,15 +70,6 @@ namespace Importer.Custom.Temper
             }
 
             return Task.CompletedTask;
-        }
-
-        private static bool UpdateType(TemperItem item, string oldType, string newType)
-        {
-            if (item.Type != oldType)
-                return false;
-
-            item.Type = newType;
-            return true;
         }
 
         private static bool AddAlternativeValue(TemperItem item, string originValue, string newValue)
