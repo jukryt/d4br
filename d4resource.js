@@ -49,14 +49,6 @@ class EnglishLanguage extends Language {
         this.runes = ExternalResource.getJsonResource("rune_en");
         this.skills = ExternalResource.getJsonResource("skill_en");
         this.tempers = ExternalResource.getJsonResource("temper_en");
-        this.temperTypes = [
-            { id: 1, name: "Weapons" },
-            { id: 2, name: "Offensive" },
-            { id: 3, name: "Defensive" },
-            { id: 4, name: "Utility" },
-            { id: 5, name: "Mobility" },
-            { id: 6, name: "Resource" },
-        ];
     }
 }
 
@@ -71,13 +63,5 @@ class RussianLanguage extends Language {
         this.runes = ExternalResource.getJsonResource("rune_ru");
         this.skills = ExternalResource.getJsonResource("skill_ru");
         this.tempers = ExternalResource.getJsonResource("temper_ru");
-        this.temperTypes = [
-            { id: 1, name: "Оружие" },
-            { id: 2, name: "Атака" },
-            { id: 3, name: "Защита" },
-            { id: 4, name: "Поддержка" },
-            { id: 5, name: "Подвижность" },
-            { id: 6, name: "Ресурсы" },
-        ];
     }
 }

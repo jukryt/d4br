@@ -493,10 +493,10 @@ namespace Importer
                                 FileName = "skill.json",
                             },
                         },
-                        new ResourceInfo<Item>
+                        new ResourceInfo<TemperItem>
                         {
                             Name = "temper ru",
-                            Source = new()
+                            Source = new TemperSource()
                             {
                                 SourceInfos =
                                 [
@@ -506,24 +506,31 @@ namespace Importer
                                         Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
                                     },
                                 ],
+                                DetailsUrlTemplate = "https://www.wowhead.com/diablo-4/ru/item/[id]",
+                                PropertiesScript = "() => [...document.querySelectorAll('#infobox-contents-0 div')].map(e => e.innerText)",
+                                ValuesScript = "() => [...document.querySelectorAll('div.whtt-damage-details li[data-type=\"empty-bullet\"]')].map(e => e.innerText)",
                             },
                             Fix = new()
                             {
                                 Fixers =
                                 [
-                                    new TemperFilter<Item>(),
-                                    new FixRemoveEmptyName<Item>(),
-                                    new FixName<Item>(),
+                                    new TemperFilter<TemperItem>(),
+                                    new FixRemoveEmptyName<TemperItem>(),
+                                    new FixRemoveEmptyClass<TemperItem>(),
+                                    new FixName<TemperItem>(),
+                                    new TemperFixData(),
+                                    new TemperRuFillType(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<Item>()
+                                    new CheckUnique<TemperItem>()
                                     {
-                                        Comparer = new ItemEqualComparer<Item>(),
+                                        Comparer = new ClassItemEqualComparer<TemperItem>(),
                                     },
+                                    new TemperCheckProperties(),
                                 ],
                             },
                             Target = new()

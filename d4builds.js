@@ -299,16 +299,7 @@ class D4BuildsProcessor {
             return null;
         }
 
-        let targetTemperName = targetItem.name;
-
-        const sourceTemperType = this.sourceLanguage.temperTypes.find(i => i.name === sourceItem.type);
-        if (sourceTemperType) {
-            const targetTemperType = this.targetLanguage.temperTypes.find(i => i.id === sourceTemperType.id);
-            if (targetTemperType) {
-                targetTemperName = targetTemperType.name + " - " + targetTemperName;
-            }
-        }
-
+        const targetTemperName = targetItem.type + " - " + targetItem.name;
         return targetTemperName;
     }
 
