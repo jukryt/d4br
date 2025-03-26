@@ -44,8 +44,7 @@ namespace Importer.Custom.Temper
                 AddAlternativeValue(temper, $"{TemperReader.ValueRegex}Chance For Minion Attacks to Fortify You for 3% Maximum Life", $"{TemperReader.ValueRegex}Chance for your Minion Attacks to Fortify you for 3% Maximum Life"),
 
             [2007850] = (temper) =>
-                AddAlternativeValue(temper, $"{TemperReader.ValueRegex}Damage per Dark Shroud Shadow",
-                    $"{TemperReader.ValueRegex}Damage per Dark Shroud"),
+                AddAlternativeValue(temper, $"{TemperReader.ValueRegex}Damage per Dark Shroud Shadow", $"{TemperReader.ValueRegex}Damage per Dark Shroud"),
 
             [2058798] = (temper) =>
                 AddAlternativeValue(temper, $"{TemperReader.ValueRegex}Razor Wings Charges", $"{TemperReader.ValueRegex}Razor Wing Charges"),
