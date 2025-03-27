@@ -1,11 +1,11 @@
 ﻿using Importer.Fixer;
-using Importer.Logger;
+using Importer.Report;
 
 namespace Importer.Custom.Temper
 {
     internal class TemperEnFillType : IItemsFixer<TemperItem>
     {
-        public Task FixItemsAsync(List<TemperItem> items, ILogger logger)
+        public Task FixItemsAsync(List<TemperItem> items, IMessageReporter reporter)
         {
             foreach (var item in items)
                 item.Type = ConvertTemperType(item.InternalType);

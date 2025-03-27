@@ -1,6 +1,6 @@
 ﻿using Importer.Fixer;
-using Importer.Logger;
 using Importer.Model;
+using Importer.Report;
 
 namespace Importer.Custom.Temper
 {
@@ -11,14 +11,14 @@ namespace Importer.Custom.Temper
             1862212, // Barbarian Protection (Legacy)
         };
 
-        public Task FixItemsAsync(List<T> items, ILogger logger)
+        public Task FixItemsAsync(List<T> items, IMessageReporter reporter)
         {
-            RemoveIgnoreItems(items, logger);
+            RemoveIgnoreItems(items, reporter);
 
             return Task.CompletedTask;
         }
 
-        private void RemoveIgnoreItems(List<T> items, ILogger logger)
+        private void RemoveIgnoreItems(List<T> items, IMessageReporter reporter)
         {
             var ignoreItems = new HashSet<long>();
 
@@ -35,7 +35,7 @@ namespace Importer.Custom.Temper
             {
                 var exceptItems = IgnoreItems.Except(ignoreItems);
                 var exceptItemsString = string.Join(", ", exceptItems);
-                logger.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(TemperFilter<T>));
+                reporter.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(TemperFilter<T>));
             }
         }
     }

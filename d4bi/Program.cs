@@ -1,38 +1,36 @@
-﻿using Importer.Logger;
-using Importer.Model;
+﻿using Importer.Model;
 using Importer.Puppeteer;
+using Importer.Report;
 
 namespace Importer
 {
     internal class Program
     {
+        private static readonly ReportManager ReportManager = ReportManager.Instance;
+
         static async Task Main(string[] args)
         {
-            var appConfig = await AppConfig.LoadAsync();
-            Static.Init(appConfig);
             AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionTrapper;
 
-            await ExecuteAsync(Static.Logger);
+            var appConfig = await AppConfig.LoadAsync();
+            await ExecuteAsync(appConfig);
         }
 
-        private static async Task ExecuteAsync(ILogger logger)
+        private static async Task ExecuteAsync(AppConfig appConfig)
         {
-            using var browser = await PuppeteerBrowser.RunAsync(maxPageCount: 5);
-
-            logger.WriteMessage("Begin");
+            using var browser = await PuppeteerBrowser.RunAsync(maxPageCount: 5, requestTimeout: appConfig.BrowserRequestTimeout);
 
             var resources = Resources.GetResources()
                 .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)));
 
-            var tasks = resources.Select(r => ExecuteAsync(r, browser, logger));
+            var tasks = resources.Select(r => ExecuteAsync(r, browser, appConfig));
             await Task.WhenAll(tasks);
-
-            logger.WriteMessage("Complete");
         }
 
-        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, ILogger logger)
+        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, AppConfig appConfig)
         {
-            var processor = resource.Info.CreateProcessor(resource.Folder, logger);
+            var resourceWorkFolderPath = Path.Combine(appConfig.WorkFolder, resource.Folder);
+            var processor = resource.Info.CreateProcessor(resourceWorkFolderPath, ReportManager);
             await processor.ProcessAsync(browser);
         }
 
@@ -40,7 +38,7 @@ namespace Importer
         {
             var source = $"{nameof(Program)}.{nameof(UnhandledExceptionTrapper)}";
             var exception = (Exception)args.ExceptionObject;
-            Static.Logger.WriteException(exception, source);
+            ReportManager.CreateMessageReporter().WriteException(exception, source);
         }
 
         private sealed class Resource

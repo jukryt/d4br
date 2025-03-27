@@ -1,5 +1,5 @@
-﻿using Importer.Logger;
-using Importer.Model;
+﻿using Importer.Model;
+using Importer.Report;
 
 namespace Importer.Checker
 {
@@ -7,7 +7,7 @@ namespace Importer.Checker
     {
         public required IEqualComparer<T> Comparer { get; init; }
 
-        public void CheckItems(IReadOnlyList<T> items, ILogger logger)
+        public void CheckItems(IReadOnlyList<T> items, IMessageReporter reporter)
         {
             var duplicates = new HashSet<T>();
 
@@ -21,7 +21,7 @@ namespace Importer.Checker
             }
 
             foreach (var item in duplicates)
-                logger.WriteMessage($"Id: {item.Id} - duplicate", nameof(CheckUnique<T>));
+                reporter.WriteMessage($"Id: {item.Id} - duplicate", nameof(CheckUnique<T>));
         }
     }
 }

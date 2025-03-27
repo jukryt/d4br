@@ -1,5 +1,5 @@
 ﻿using Importer.Fixer;
-using Importer.Logger;
+using Importer.Report;
 
 namespace Importer.Custom.Temper
 {
@@ -69,14 +69,14 @@ namespace Importer.Custom.Temper
             return false;
         }
 
-        public Task FixItemsAsync(List<TemperItem> items, ILogger logger)
+        public Task FixItemsAsync(List<TemperItem> items, IMessageReporter reporter)
         {
             foreach (var item in items)
             {
                 if (TemperFixers.TryGetValue(item.Id, out var temperFix))
                 {
                     if (!temperFix(item))
-                        logger.WriteMessage($"Fix not completed ({item.Id})", nameof(TemperEnFixData));
+                        reporter.WriteMessage($"Fix not completed ({item.Id})", nameof(TemperEnFixData));
                 }
             }
 

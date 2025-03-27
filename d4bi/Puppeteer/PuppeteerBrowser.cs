@@ -4,18 +4,18 @@ namespace Importer.Puppeteer
 {
     internal class PuppeteerBrowser : IDisposable
     {
-        public static async Task<PuppeteerBrowser> RunAsync(int maxPageCount)
+        public static async Task<PuppeteerBrowser> RunAsync(int maxPageCount, int requestTimeout)
         {
             // Download browser if need.
             await new BrowserFetcher().DownloadAsync();
 
-            var launchOptions = CreateLaunchOptions();
+            var launchOptions = CreateLaunchOptions(requestTimeout);
             var browser = await PuppeteerSharp.Puppeteer.LaunchAsync(launchOptions);
 
-            return new PuppeteerBrowser(browser, maxPageCount);
+            return new PuppeteerBrowser(browser, maxPageCount, requestTimeout);
         }
 
-        private static LaunchOptions CreateLaunchOptions()
+        private static LaunchOptions CreateLaunchOptions(int requestTimeout)
         {
             var args = new[]
             {
@@ -33,17 +33,19 @@ namespace Importer.Puppeteer
             {
                 Args = args,
                 Headless = true,
-                Timeout = Static.BrowserRequestTimeout,
+                Timeout = requestTimeout,
                 DefaultViewport = new ViewPortOptions { Width = 958, Height = 918 }
             };
         }
 
         private readonly IBrowser _browser;
+        private readonly int _requestTimeout;
         private readonly SemaphoreSlim _pageSemaphore;
 
-        private PuppeteerBrowser(IBrowser browser, int maxPageCount)
+        private PuppeteerBrowser(IBrowser browser, int maxPageCount, int requestTimeout)
         {
             _browser = browser;
+            _requestTimeout = requestTimeout;
             _pageSemaphore = new SemaphoreSlim(maxPageCount, maxPageCount);
         }
 
@@ -52,7 +54,7 @@ namespace Importer.Puppeteer
             await _pageSemaphore.WaitAsync();
 
             var page = await _browser.NewPageAsync();
-            page.DefaultNavigationTimeout = Static.BrowserRequestTimeout;
+            page.DefaultNavigationTimeout = _requestTimeout;
             page.Close += PageClose;
 
             return page;

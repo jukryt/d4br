@@ -1,4 +1,5 @@
 ﻿using Importer.Processor;
+using Importer.Report;
 
 namespace Importer.Model
 {
@@ -6,9 +7,9 @@ namespace Importer.Model
     {
         public required List<SourceInfo> SourceInfos { get; init; }
 
-        public virtual ResourceReader<T> CreateReader()
+        public virtual ResourceReader<T> CreateReader(ProgressReporter progressReporter)
         {
-            return new ResourceReader<T>(this);
+            return new ResourceReader<T>(this, progressReporter);
         }
     }
 

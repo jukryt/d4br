@@ -1,6 +1,6 @@
-﻿using Importer.Logger;
-using Importer.Model;
+﻿using Importer.Model;
 using Importer.Puppeteer;
+using Importer.Report;
 
 namespace Importer.Processor
 {
@@ -12,31 +12,32 @@ namespace Importer.Processor
     internal class ResourceProcessor<T> : IResourceProcessor where T : Item
     {
         private readonly ResourceInfo<T> _info;
-        private readonly string _folder;
-        private readonly ILogger _logger;
+        private readonly string _workFolder;
+        private readonly ReportManager _reportManager;
 
-        public ResourceProcessor(ResourceInfo<T> info, string folder, ILogger logger)
+        public ResourceProcessor(ResourceInfo<T> info, string workFolder, ReportManager reportManager)
         {
             _info = info;
-            _folder = folder;
-            _logger = logger;
+            _workFolder = workFolder;
+            _reportManager = reportManager;
         }
 
         public async Task ProcessAsync(PuppeteerBrowser browser)
         {
-            var workFolder = Path.Combine(Static.WorkFolder, _folder);
+            var progressReporter = _reportManager.CreateProgressReporter(_info.Name, 1);
+            var messageReporter = _reportManager.CreateMessageReporter();
 
-            var reader = _info.Source.CreateReader();
-            var fixer = _info.Fix?.CreateFixer(_info.Name, _logger);
-            var checker = _info.Check?.CreateChecker(_info.Name, _logger);
-            var writer = _info.Target.CreateWriter(workFolder);
+            var reader = _info.Source.CreateReader(progressReporter);
+            var fixer = _info.Fix?.CreateFixer(_info.Name, messageReporter);
+            var checker = _info.Check?.CreateChecker(_info.Name, messageReporter);
+            var writer = _info.Target.CreateWriter(_workFolder);
 
             var items = await reader.ReadAsync(browser);
             await (fixer?.FixItemsAsync(items) ?? Task.CompletedTask);
             checker?.CheckItems(items);
             await writer.WriteAsync(items.OrderBy(i => i.Id));
 
-            _logger.WriteMessage($"{_info.Name}. Complete", nameof(ResourceProcessor<T>));
+            progressReporter.Complete();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Importer.Checker;
-using Importer.Logger;
 using Importer.Processor;
+using Importer.Report;
 
 namespace Importer.Model
 {
@@ -8,9 +8,9 @@ namespace Importer.Model
     {
         public required IReadOnlyCollection<IItemsChecker<T>> Checkers { get; init; } = [];
 
-        public virtual ResourceChecker<T> CreateChecker(string resourceName, ILogger logger)
+        public virtual ResourceChecker<T> CreateChecker(string resourceName, IMessageReporter reporter)
         {
-            return new ResourceChecker<T>(resourceName, this, logger);
+            return new ResourceChecker<T>(resourceName, this, reporter);
         }
     }
 }

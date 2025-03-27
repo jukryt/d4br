@@ -1,5 +1,6 @@
 ﻿using Importer.Processor;
 using Importer.Puppeteer;
+using Importer.Report;
 using PuppeteerSharp;
 using System.Text.RegularExpressions;
 
@@ -11,7 +12,7 @@ namespace Importer.Custom.Temper
 
         private readonly TemperSource _source;
 
-        public TemperReader(TemperSource source) : base(source)
+        public TemperReader(TemperSource source, ProgressReporter progressReporter) : base(source, progressReporter)
         {
             _source = source;
         }
@@ -19,12 +20,15 @@ namespace Importer.Custom.Temper
         public override async Task<List<TemperItem>> ReadAsync(PuppeteerBrowser browser)
         {
             var items = await base.ReadAsync(browser);
+
             await FillTemperItemsAsync(items, browser);
             return items;
         }
 
-        private async Task FillTemperItemsAsync(IEnumerable<TemperItem> items, PuppeteerBrowser browser)
+        private async Task FillTemperItemsAsync(IReadOnlyCollection<TemperItem> items, PuppeteerBrowser browser)
         {
+            ProgressReporter.AddMaxValue(items.Count);
+
             var tasks = items.Select(i => FillTemperItemAsync(i, browser));
             await Task.WhenAll(tasks);
         }
@@ -33,6 +37,8 @@ namespace Importer.Custom.Temper
         {
             using (var page = await browser.NewPageAsync())
             {
+                ProgressReporter.ReportNext($"Read '{item.Name}'");
+
                 var temperUrl = _source.DetailsUrlTemplate.Replace("[id]", item.Id.ToString());
                 await page.GoToAsync(temperUrl, waitUntil: WaitUntilNavigation.DOMContentLoaded);
 
