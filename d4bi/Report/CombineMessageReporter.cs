@@ -2,15 +2,16 @@
 {
     internal class CombineMessageReporter : IMessageReporter
     {
-        private readonly IReadOnlyCollection<IMessageReporter> _reporters;
+        private readonly List<IMessageReporter> _reporters;
 
-        public CombineMessageReporter(params IMessageReporter[] reporters) : this((IReadOnlyCollection<IMessageReporter>)reporters)
+        public CombineMessageReporter()
         {
+            _reporters = new List<IMessageReporter>();
         }
 
-        public CombineMessageReporter(IReadOnlyCollection<IMessageReporter> reporters)
+        public void Add(IMessageReporter reporter)
         {
-            _reporters = reporters;
+            _reporters.Add(reporter);
         }
 
         public void WriteError(string message, string source = "")

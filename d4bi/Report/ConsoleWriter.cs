@@ -2,16 +2,16 @@
 
 namespace Importer.Report
 {
-    internal class ConsoleMessageReporter : BaseMessageReporter
+    internal class ConsoleWriter : IWriter
     {
         private readonly IConsole _console;
 
-        public ConsoleMessageReporter(IConsole console)
+        public ConsoleWriter(IConsole console)
         {
             _console = console;
         }
 
-        protected override void Write(string message)
+        public void WriteLine(string message)
         {
             _console.WriteLine(message);
         }

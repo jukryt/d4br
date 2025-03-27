@@ -25,6 +25,8 @@ namespace Importer
 
             var tasks = resources.Select(r => ExecuteAsync(r, browser, appConfig));
             await Task.WhenAll(tasks);
+
+            ReportManager.FlushMessages();
         }
 
         private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, AppConfig appConfig)
