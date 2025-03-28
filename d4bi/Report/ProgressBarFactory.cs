@@ -26,6 +26,7 @@ namespace Importer.Report
                 DisplayTimeInRealTime = false,
                 ProgressBarOnBottom = true,
                 DisablePercentageAtZeroMaxTicks = true,
+                ShowDuration = false,
                 ProgressCharacter = '─',
                 PercentageFormat = "{0,7:N2}% ",
             };
