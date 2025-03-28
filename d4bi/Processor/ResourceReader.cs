@@ -18,9 +18,11 @@ namespace Importer.Processor
 
         public virtual async Task<List<T>> ReadAsync(PuppeteerBrowser browser)
         {
+            ProgressReporter.UpdateMessage("Wait...");
+
             using (var page = await browser.NewPageAsync())
             {
-                ProgressReporter.AddMaxValue(_source.SourceInfos.Count);
+                ProgressReporter.IncrementMaxValue(_source.SourceInfos.Count);
 
                 var items = new List<T>();
                 foreach (var sourceInfo in _source.SourceInfos)

@@ -24,7 +24,7 @@ namespace Importer.Processor
 
         public async Task ProcessAsync(PuppeteerBrowser browser)
         {
-            var progressReporter = _reportManager.CreateProgressReporter(_info.Name, 1);
+            using var progressReporter = _reportManager.CreateProgressReporter(_info.Name);
             var messageReporter = _reportManager.CreateMessageReporter();
 
             var reader = _info.Source.CreateReader(progressReporter);

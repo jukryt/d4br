@@ -6,41 +6,30 @@ namespace Importer
 {
     internal class Program
     {
-        private static readonly ReportManager ReportManager = ReportManager.Instance;
-
         static async Task Main(string[] args)
         {
-            AppDomain.CurrentDomain.UnhandledException += UnhandledExceptionTrapper;
-
             var appConfig = await AppConfig.LoadAsync();
-            await ExecuteAsync(appConfig);
+
+            using (var reportManager = new ReportManager())
+                await ExecuteAsync(appConfig, reportManager);
         }
 
-        private static async Task ExecuteAsync(AppConfig appConfig)
+        private static async Task ExecuteAsync(AppConfig appConfig, ReportManager reportManager)
         {
             using var browser = await PuppeteerBrowser.RunAsync(maxPageCount: 5, requestTimeout: appConfig.BrowserRequestTimeout);
 
             var resources = Resources.GetResources()
                 .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)));
 
-            var tasks = resources.Select(r => ExecuteAsync(r, browser, appConfig));
+            var tasks = resources.Select(r => ExecuteAsync(r, browser, appConfig, reportManager));
             await Task.WhenAll(tasks);
-
-            ReportManager.FlushMessages();
         }
 
-        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, AppConfig appConfig)
+        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, AppConfig appConfig, ReportManager reportManager)
         {
             var resourceWorkFolderPath = Path.Combine(appConfig.WorkFolder, resource.Folder);
-            var processor = resource.Info.CreateProcessor(resourceWorkFolderPath, ReportManager);
+            var processor = resource.Info.CreateProcessor(resourceWorkFolderPath, reportManager);
             await processor.ProcessAsync(browser);
-        }
-
-        private static void UnhandledExceptionTrapper(object sender, UnhandledExceptionEventArgs args)
-        {
-            var source = $"{nameof(Program)}.{nameof(UnhandledExceptionTrapper)}";
-            var exception = (Exception)args.ExceptionObject;
-            ReportManager.CreateMessageReporter().WriteException(exception, source);
         }
 
         private sealed class Resource

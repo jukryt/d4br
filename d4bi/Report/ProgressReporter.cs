@@ -1,24 +1,44 @@
-﻿using Konsole;
+﻿using ShellProgressBar;
 
 namespace Importer.Report
 {
-    internal class ProgressReporter
+    internal class ProgressReporter : IDisposable
     {
-        private readonly ProgressBar _progressBar;
-        private readonly object _lock;
-
-        public ProgressReporter(IConsole console, string name, int maxValue)
+        public static ProgressReporter CreateMainReporter(string name)
         {
-            Name = name;
-            MaxValue = maxValue;
-            _lock = new object();
-            _progressBar = new ProgressBar(console, PbStyle.DoubleLine, MaxValue);
-            _progressBar.Refresh(0, GenerateMessage());
+            var progressBar = ProgressBarFactory.CreateProgressBar(name);
+            return new ProgressReporter(progressBar);
         }
 
+        public static ProgressReporter CreateChildReporter(ProgressReporter mainReporter, string name)
+        {
+            var progressBar = ProgressBarFactory.CreateChildProgressBar(mainReporter.ProgressBar, name);
+            mainReporter.IncrementMaxValue();
+            return new ProgressReporter(progressBar, () => mainReporter.ReportNext());
+        }
+
+        private readonly Action? _completeCallBack;
+        private readonly object _lock;
+
+        private ProgressReporter(IProgressBar progressBar, Action? completeCallBack = null)
+        {
+            ProgressBar = progressBar;
+            _completeCallBack = completeCallBack;
+            _lock = new object();
+
+            Name = progressBar.Message;
+            MaxValue = progressBar.MaxTicks;
+        }
+
+        public IProgressBar ProgressBar { get; }
         public string Name { get; }
         public int CurrentValue { get; private set; }
         public int MaxValue { get; private set; }
+
+        public void UpdateMessage(string? message = null)
+        {
+            ProgressBar.Message = GenerateMessage(message);
+        }
 
         public void ReportNext(string? message = null)
         {
@@ -27,33 +47,40 @@ namespace Importer.Report
                 CurrentValue++;
 
                 if (CurrentValue > MaxValue)
-                    AddMaxValue(CurrentValue - MaxValue);
+                    IncrementMaxValue(CurrentValue - MaxValue);
 
-                _progressBar.Refresh(CurrentValue, GenerateMessage(message));
+                ProgressBar.Tick(CurrentValue, GenerateMessage(message));
             }
         }
 
         public void Complete()
         {
-            lock (_lock)
-                _progressBar.Refresh(MaxValue, GenerateMessage("Complete"));
+            ProgressBar.Tick(MaxValue, GenerateMessage("Complete"));
+            _completeCallBack?.Invoke();
         }
 
-        public void AddMaxValue(int value)
+        public void IncrementMaxValue(int value = 1)
         {
             lock (_lock)
             {
                 MaxValue += value;
-                _progressBar.Max = MaxValue;
+                ProgressBar.MaxTicks = MaxValue;
             }
         }
 
         private string GenerateMessage(string? message = null)
         {
-            if (string.IsNullOrEmpty(message))
-                return Name;
+            var result = $"{Name,-20} ({CurrentValue} of {MaxValue})";
 
-            return $"{Name} - {message}";
+            if (!string.IsNullOrEmpty(message))
+                result = $"{result} - {message}";
+
+            return result;
+        }
+
+        public void Dispose()
+        {
+            ProgressBar.Dispose();
         }
     }
 }

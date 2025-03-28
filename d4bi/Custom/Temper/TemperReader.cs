@@ -27,7 +27,7 @@ namespace Importer.Custom.Temper
 
         private async Task FillTemperItemsAsync(IReadOnlyCollection<TemperItem> items, PuppeteerBrowser browser)
         {
-            ProgressReporter.AddMaxValue(items.Count);
+            ProgressReporter.IncrementMaxValue(items.Count);
 
             var tasks = items.Select(i => FillTemperItemAsync(i, browser));
             await Task.WhenAll(tasks);
@@ -35,6 +35,8 @@ namespace Importer.Custom.Temper
 
         private async Task FillTemperItemAsync(TemperItem item, PuppeteerBrowser browser)
         {
+            ProgressReporter.UpdateMessage("Wait...");
+
             using (var page = await browser.NewPageAsync())
             {
                 ProgressReporter.ReportNext($"Read '{item.Name}'");

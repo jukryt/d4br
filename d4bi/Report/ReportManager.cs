@@ -1,23 +1,19 @@
-﻿using Konsole;
-
-namespace Importer.Report
+﻿namespace Importer.Report
 {
-    internal class ReportManager
+    internal class ReportManager : IDisposable
     {
-        public static ReportManager Instance { get; } = new ReportManager();
-
-        private readonly IConsole _console;
+        private readonly ProgressReporter _mainReporter;
         private readonly BufferWriter _reportWriter;
 
-        private ReportManager()
+        public ReportManager()
         {
-            _console = new ConcurrentWriter();
-            _reportWriter = new BufferWriter(new ConsoleWriter(_console));
+            _mainReporter = ProgressReporter.CreateMainReporter("Import progress");
+            _reportWriter = new BufferWriter(new ConsoleWriter());
         }
 
-        public ProgressReporter CreateProgressReporter(string name, int maxValue)
+        public ProgressReporter CreateProgressReporter(string name)
         {
-            return new ProgressReporter(_console, name, maxValue);
+            return ProgressReporter.CreateChildReporter(_mainReporter, name);
         }
 
         public IMessageReporter CreateMessageReporter()
@@ -31,19 +27,26 @@ namespace Importer.Report
             return reporter;
         }
 
-        public void FlushMessages()
+        private void FlushMessages()
         {
-            _console.WriteLine(string.Empty);
+            Console.WriteLine(string.Empty);
 
             if (_reportWriter.MessageCount > 0)
             {
-                _console.WriteLine(ConsoleColor.White, "Messages:");
+                Console.WriteLine("Messages:");
                 _reportWriter.Flush();
             }
             else
             {
-                _console.WriteLine(ConsoleColor.White, "No Messages");
+                Console.WriteLine("No Messages");
             }
+        }
+
+        public void Dispose()
+        {
+            _mainReporter.Complete();
+            _mainReporter.Dispose();
+            FlushMessages();
         }
     }
 }
