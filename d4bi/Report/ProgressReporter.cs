@@ -12,17 +12,18 @@ namespace Importer.Report
 
         public static ProgressReporter CreateChildReporter(ProgressReporter mainReporter, string name)
         {
-            var progressBar = ProgressBarFactory.CreateChildProgressBar(mainReporter.ProgressBar, name);
+            var progressBar = ProgressBarFactory.CreateChildProgressBar(mainReporter._progressBar, name);
             mainReporter.IncrementMaxValue();
             return new ProgressReporter(progressBar, () => mainReporter.ReportNext());
         }
 
+        private readonly IProgressBar _progressBar;
         private readonly Action? _completeCallBack;
         private readonly object _lock;
 
         private ProgressReporter(IProgressBar progressBar, Action? completeCallBack = null)
         {
-            ProgressBar = progressBar;
+            _progressBar = progressBar;
             _completeCallBack = completeCallBack;
             _lock = new object();
 
@@ -30,14 +31,13 @@ namespace Importer.Report
             MaxValue = progressBar.MaxTicks;
         }
 
-        public IProgressBar ProgressBar { get; }
         public string Name { get; }
         public int CurrentValue { get; private set; }
         public int MaxValue { get; private set; }
 
         public void UpdateMessage(string? message = null)
         {
-            ProgressBar.Message = GenerateMessage(message);
+            _progressBar.Message = GenerateMessage(message);
         }
 
         public void ReportNext(string? message = null)
@@ -49,13 +49,13 @@ namespace Importer.Report
                 if (CurrentValue > MaxValue)
                     IncrementMaxValue(CurrentValue - MaxValue);
 
-                ProgressBar.Tick(CurrentValue, GenerateMessage(message));
+                _progressBar.Tick(CurrentValue, GenerateMessage(message));
             }
         }
 
         public void Complete()
         {
-            ProgressBar.Tick(MaxValue, GenerateMessage("Complete"));
+            _progressBar.Tick(MaxValue, GenerateMessage("Complete"));
             _completeCallBack?.Invoke();
         }
 
@@ -64,7 +64,7 @@ namespace Importer.Report
             lock (_lock)
             {
                 MaxValue += value;
-                ProgressBar.MaxTicks = MaxValue;
+                _progressBar.MaxTicks = MaxValue;
             }
         }
 
@@ -80,7 +80,7 @@ namespace Importer.Report
 
         public void Dispose()
         {
-            ProgressBar.Dispose();
+            _progressBar.Dispose();
         }
     }
 }
