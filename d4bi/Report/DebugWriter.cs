@@ -2,9 +2,9 @@
 
 namespace Importer.Report
 {
-    internal class DebugMessageReporter : BaseMessageReporter
+    internal class DebugWriter : IWriter
     {
-        protected override void Write(string message)
+        public void WriteLine(string message)
         {
             Debug.WriteLine(message);
         }

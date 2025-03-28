@@ -20,7 +20,7 @@
         {
             var reporter = new CombineMessageReporter();
 #if DEBUG
-            reporter.Add(new DebugMessageReporter());
+            reporter.Add(new WriterMessageReporter(new DebugWriter()));
 #endif
             reporter.Add(new WriterMessageReporter(_reportWriter));
 
