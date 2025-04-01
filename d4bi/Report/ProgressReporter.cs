@@ -55,6 +55,7 @@ namespace Importer.Report
 
         public void Complete()
         {
+            CurrentValue = MaxValue;
             _progressBar.Tick(MaxValue, GenerateMessage("Complete"));
             _completeCallBack?.Invoke();
         }

@@ -21,22 +21,21 @@ namespace Importer.Custom.Temper
         {
             var items = await base.ReadAsync(browser);
 
+            ProgressReporter.IncrementMaxValue(items.Count);
+            ProgressReporter.UpdateMessage("Wait...");
+
             await FillTemperItemsAsync(items, browser);
             return items;
         }
 
         private async Task FillTemperItemsAsync(IReadOnlyCollection<TemperItem> items, PuppeteerBrowser browser)
         {
-            ProgressReporter.IncrementMaxValue(items.Count);
-
             var tasks = items.Select(i => FillTemperItemAsync(i, browser));
             await Task.WhenAll(tasks);
         }
 
         private async Task FillTemperItemAsync(TemperItem item, PuppeteerBrowser browser)
         {
-            ProgressReporter.UpdateMessage("Wait...");
-
             using (var page = await browser.NewPageAsync())
             {
                 ProgressReporter.ReportNext($"Read '{item.Name}'");

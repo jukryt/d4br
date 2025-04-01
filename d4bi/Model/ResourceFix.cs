@@ -8,9 +8,9 @@ namespace Importer.Model
     {
         public required IReadOnlyCollection<IItemsFixer<T>> Fixers { get; init; } = [];
 
-        public virtual ResourceFixer<T> CreateFixer(string resourceName, IMessageReporter reporter)
+        public virtual ResourceFixer<T> CreateFixer(string resourceName, ProgressReporter progressReporter, IMessageReporter reporter)
         {
-            return new ResourceFixer<T>(resourceName, this, reporter);
+            return new ResourceFixer<T>(resourceName, this, progressReporter, reporter);
         }
     }
 }

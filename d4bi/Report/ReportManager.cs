@@ -7,7 +7,7 @@
 
         public ReportManager()
         {
-            _mainReporter = ProgressReporter.CreateMainReporter("Import progress");
+            _mainReporter = ProgressReporter.CreateMainReporter("Import process...");
             _reportWriter = new BufferWriter(new ConsoleWriter());
         }
 

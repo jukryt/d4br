@@ -14,6 +14,8 @@ namespace Importer.Processor
         {
             _source = source;
             ProgressReporter = progressReporter;
+
+            ProgressReporter.IncrementMaxValue(source.SourceInfos.Count);
         }
 
         public virtual async Task<List<T>> ReadAsync(PuppeteerBrowser browser)
@@ -22,8 +24,6 @@ namespace Importer.Processor
 
             using (var page = await browser.NewPageAsync())
             {
-                ProgressReporter.IncrementMaxValue(_source.SourceInfos.Count);
-
                 var items = new List<T>();
                 foreach (var sourceInfo in _source.SourceInfos)
                     items.AddRange(await ReadAsync(page, sourceInfo));
@@ -34,7 +34,7 @@ namespace Importer.Processor
 
         private async Task<IEnumerable<T>> ReadAsync(IPage page, SourceInfo sourceInfo)
         {
-            ProgressReporter.ReportNext("Read Source");
+            ProgressReporter.ReportNext("Read Source...");
 
             await page.GoToAsync(sourceInfo.Url, waitUntil: WaitUntilNavigation.DOMContentLoaded);
             var items = await page.EvaluateFunctionAsync<List<T>>(sourceInfo.Script);

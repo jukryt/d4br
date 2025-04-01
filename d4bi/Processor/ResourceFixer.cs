@@ -6,16 +6,22 @@ namespace Importer.Processor
     internal class ResourceFixer<T> where T : Item
     {
         private readonly ResourceFix<T> _fix;
+        private readonly ProgressReporter _progressReporter;
         private readonly IMessageReporter _reporter;
 
-        public ResourceFixer(string resourceName, ResourceFix<T> fix, IMessageReporter reporter)
+        public ResourceFixer(string resourceName, ResourceFix<T> fix, ProgressReporter progressReporter, IMessageReporter reporter)
         {
             _fix = fix;
+            _progressReporter = progressReporter;
             _reporter = new ReporterWrapper(resourceName, reporter);
+
+            _progressReporter.IncrementMaxValue();
         }
 
         public async Task FixItemsAsync(List<T> items)
         {
+            _progressReporter.ReportNext("Fix process...");
+
             foreach (var fixer in _fix.Fixers)
                 await fixer.FixItemsAsync(items, _reporter);
         }

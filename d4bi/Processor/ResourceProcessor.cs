@@ -28,9 +28,9 @@ namespace Importer.Processor
             var messageReporter = _reportManager.CreateMessageReporter();
 
             var reader = _info.Source.CreateReader(progressReporter);
-            var fixer = _info.Fix?.CreateFixer(_info.Name, messageReporter);
+            var fixer = _info.Fix?.CreateFixer(_info.Name, progressReporter, messageReporter);
             var checker = _info.Check?.CreateChecker(_info.Name, messageReporter);
-            var writer = _info.Target.CreateWriter(_workFolder);
+            var writer = _info.Target.CreateWriter(_workFolder, progressReporter);
 
             var items = await reader.ReadAsync(browser);
             await (fixer?.FixItemsAsync(items) ?? Task.CompletedTask);
