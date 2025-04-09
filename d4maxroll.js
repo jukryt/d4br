@@ -258,15 +258,6 @@ class D4MaxrollProcessor {
         return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
     }
 
-    setAffixNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("div");
-        newNode.style["margin-top"] = "5px";
-        newNode.style.opacity = "0.6";
-        node.parentNode.insertBefore(newNode, node);
-
-        return this.setTargetValue(newNode, className, targetValue, false);
-    }
-
     nodeProcess(node, className, resourceName, addSourceValue) {
         const sourceValue = node.innerText;
         if (!sourceValue) {
@@ -293,6 +284,15 @@ class D4MaxrollProcessor {
         }
 
         return this.setTargetValue(node, className, targetItem.name, addSourceValue);
+    }
+
+    setAffixNodeTargetValue(node, className, targetValue) {
+        const newNode = document.createElement("div");
+        newNode.style["margin-top"] = "5px";
+        newNode.style.opacity = "0.6";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, targetValue, false);
     }
 
     setTargetValue(node, className, targetValue, addSourceValue) {

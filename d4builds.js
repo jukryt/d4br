@@ -362,14 +362,6 @@ class D4BuildsProcessor {
         return this.nodeProcess(node, "d4br_rune_name", Language.runes, false);
     }
 
-    setAffixNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("div");
-        newNode.style["margin-left"] = "25px";
-        node.parentNode.insertBefore(newNode, node);
-
-        return this.setTargetValue(newNode, className, targetValue, false);
-    }
-
     nodeProcess(node, className, resourceName, addSourceValue) {
         if (!node.childNodes) {
             return false;
@@ -400,6 +392,14 @@ class D4BuildsProcessor {
         }
 
         return this.setTargetValue(node, className, targetItem.name, addSourceValue);
+    }
+
+    setAffixNodeTargetValue(node, className, targetValue) {
+        const newNode = document.createElement("div");
+        newNode.style["margin-left"] = "25px";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, targetValue, false);
     }
 
     setTargetValue(node, className, targetValue, addSourceValue) {
