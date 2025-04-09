@@ -169,12 +169,12 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const affixTargetName = this.getAffixTargetName(sourceValue);
-        if (!affixTargetName) {
+        const affixTargetValue = this.getAffixTargetValue(sourceValue);
+        if (!affixTargetValue) {
             return false;
         }
 
-        return this.setAffixNodeTargetValue(node, "d4br_affix_name", affixTargetName);
+        return this.setAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
     }
 
     genericAffixNameProcess(node) {
@@ -191,8 +191,8 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const affixTargetName = this.getAffixTargetName(sourceValue);
-        if (!affixTargetName) {
+        const affixTargetValue = this.getAffixTargetValue(sourceValue);
+        if (!affixTargetValue) {
             return false;
         }
 
@@ -200,10 +200,10 @@ class D4BuildsProcessor {
         newNode.className = "generic__tooltip";
         node.parentNode.insertBefore(newNode, node);
 
-        return this.setTargetValue(newNode, className, affixTargetName, false);
+        return this.setTargetValue(newNode, className, affixTargetValue, false);
     }
 
-    getAffixTargetName(sourceValue) {
+    getAffixTargetValue(sourceValue) {
         const charClassName = this.getCharClassName();
         if (!charClassName) {
             return null;
@@ -227,7 +227,7 @@ class D4BuildsProcessor {
             return null;
         }
 
-        return targetItem.name;
+        return this.targetLanguage.getSkillAffixValue(targetItem);
     }
 
     temperNameProcess(node) {

@@ -39,6 +39,7 @@ class Language {
         };
 
         const memberNames = [
+            "getSkillAffixValue",
             "getTemperValue",
         ];
 
@@ -102,6 +103,10 @@ class EnglishLanguage extends Language {
         this._tempers = ExternalResource.getJsonResource("temper_en");
     }
 
+    getSkillAffixValue(skillItem) {
+        return `+ to ${skillItem.name}`;
+    }
+
     getTemperValue(temperItem) {
         return temperItem.type + " - " + temperItem.name;
     }
@@ -118,6 +123,10 @@ class RussianLanguage extends Language {
         this._runes = ExternalResource.getJsonResource("rune_ru");
         this._skills = ExternalResource.getJsonResource("skill_ru");
         this._tempers = ExternalResource.getJsonResource("temper_ru");
+    }
+
+    getSkillAffixValue(skillItem) {
+        return `${skillItem.name}: + к уровню`;
     }
 
     getTemperValue(temperItem) {

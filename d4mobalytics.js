@@ -109,7 +109,8 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetItem.name);
+        const targetAffixValue = this.targetLanguage.getSkillAffixValue(targetItem);
+        return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetAffixValue);
     }
 
     temperNameProcess(node) {
