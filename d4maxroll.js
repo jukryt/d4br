@@ -199,8 +199,8 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const targetTemperName = targetItem.type + " - " + targetItem.name;
-        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperName);
+        const targetTemperValue = this.targetLanguage.getTemperValue(targetItem);
+        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
     }
 
     getTemperSourceItem(charClassName, temperValue) {

@@ -161,8 +161,8 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        const targetTemperName = targetItem.type + " - " + targetItem.name;
-        return this.setTemperNodeTargetValue(node, "d4br_temper_name", targetTemperName);
+        const targetTemperValue = this.targetLanguage.getTemperValue(targetItem);
+        return this.setTemperNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
     }
 
     unqItemNameProcess(node) {

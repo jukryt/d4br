@@ -241,12 +241,12 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const targetTemperName = this.getTemperTargetName(charClassName, sourceValue);
-        if (!targetTemperName) {
+        const targetTemperValue = this.getTemperTargetValue(charClassName, sourceValue);
+        if (!targetTemperValue) {
             return false;
         }
 
-        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperName);
+        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
     }
 
     genericTemperNameProcess(node) {
@@ -274,10 +274,10 @@ class D4BuildsProcessor {
         }
 
         const temperNameMatch = temperNameMatchs[temperNameMatchs.length - 1];
-        const temperValue = sourceValue.replace(temperNameMatch[0], "").trim();
+        const sourceTemperValue = sourceValue.replace(temperNameMatch[0], "").trim();
 
-        const targetTemperName = this.getTemperTargetName(charClassName, temperValue);
-        if (!targetTemperName) {
+        const targetTemperValue = this.getTemperTargetValue(charClassName, sourceTemperValue);
+        if (!targetTemperValue) {
             return false;
         }
 
@@ -285,11 +285,11 @@ class D4BuildsProcessor {
         newNode.className = "generic__tooltip";
         node.parentNode.insertBefore(newNode, node);
 
-        return this.setTargetValue(newNode, className, targetTemperName, false);
+        return this.setTargetValue(newNode, className, targetTemperValue, false);
     }
 
-    getTemperTargetName(charClassName, temperValue) {
-        const sourceItem = this.getTemperSourceItem(charClassName, temperValue);
+    getTemperTargetValue(charClassName, sourceTemperValue) {
+        const sourceItem = this.getTemperSourceItem(charClassName, sourceTemperValue);
         if (!sourceItem) {
             return null;
         }
@@ -299,12 +299,11 @@ class D4BuildsProcessor {
             return null;
         }
 
-        const targetTemperName = targetItem.type + " - " + targetItem.name;
-        return targetTemperName;
+        return this.targetLanguage.getTemperValue(targetItem);
     }
 
-    getTemperSourceItem(charClassName, temperValue) {
-        const fixedTemperValue = temperValue
+    getTemperSourceItem(charClassName, sourceTemperValue) {
+        const fixedTemperValue = sourceTemperValue
             .replace(/\[([0-9]+)\]/, "$1")
             .replace("Movement Speed for X", "Movement Speed for 4");
 
