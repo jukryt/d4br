@@ -37,17 +37,6 @@ class Language {
         if (this.constructor == Language) {
             throw new Error("Abstract classes can't be instantiated.");
         };
-
-        const memberNames = [
-            "getSkillAffixValue",
-            "getTemperValue",
-        ];
-
-        for (const memberName of memberNames) {
-            if (this[memberName] == undefined) {
-                throw new Error(`'${memberName}' must be implemented.`);
-            };
-        }
     }
 
     _aspects;
@@ -88,6 +77,14 @@ class Language {
     getResource(name) {
         return this[name];
     }
+
+    getSkillAffixValue(skillItem) {
+        return skillItem.name;
+    }
+
+    getTemperValue(temperItem) {
+        return temperItem.type + " - " + temperItem.name;
+    }
 }
 
 class EnglishLanguage extends Language {
@@ -106,10 +103,6 @@ class EnglishLanguage extends Language {
     getSkillAffixValue(skillItem) {
         return `+ to ${skillItem.name}`;
     }
-
-    getTemperValue(temperItem) {
-        return temperItem.type + " - " + temperItem.name;
-    }
 }
 
 class RussianLanguage extends Language {
@@ -127,9 +120,5 @@ class RussianLanguage extends Language {
 
     getSkillAffixValue(skillItem) {
         return `${skillItem.name}: + к уровню`;
-    }
-
-    getTemperValue(temperItem) {
-        return temperItem.type + " - " + temperItem.name;
     }
 }

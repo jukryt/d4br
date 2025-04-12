@@ -66,13 +66,15 @@ function CreateProcessor() {
 
 function AddStyle(css) {
     const name = "d4br_style";
+
     const style = document.getElementById(name) || (function () {
-        const style = document.createElement('style');
-        style.type = 'text/css';
+        const style = document.createElement("style");
+        style.type = "text/css";
         style.id = name;
         document.head.appendChild(style);
         return style;
     })();
+
     const sheet = style.sheet;
     sheet.insertRule(css, (sheet.rules || sheet.cssRules || []).length);
 }
