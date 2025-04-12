@@ -58,15 +58,14 @@ namespace Importer.Custom.Temper
                 AddAlternativeValue(temper, $"{TemperReader.ValueRegex}Ultimate Damage", $"{TemperReader.ValueRegex}Ultimate Skill Damage"),
         };
 
-        private static bool AddAlternativeValue(TemperItem item, string originValue, string newValue)
+        private static bool AddAlternativeValue(TemperItem item, string originValueName, string addedValueName)
         {
-            if (item.Values.Any(v => v == originValue))
-            {
-                item.Values.Add(newValue);
-                return true;
-            }
+            var value = item.Values.SingleOrDefault(v => v.Names.Contains(originValueName));
+            if (value == null)
+                return false;
 
-            return false;
+            value.Names.Add(addedValueName);
+            return true;
         }
 
         public Task FixItemsAsync(List<TemperItem> items, IMessageReporter reporter)

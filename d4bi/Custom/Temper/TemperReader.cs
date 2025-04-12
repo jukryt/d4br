@@ -1,4 +1,5 @@
-﻿using Importer.Processor;
+﻿using Importer.Extension;
+using Importer.Processor;
 using Importer.Puppeteer;
 using Importer.Report;
 using PuppeteerSharp;
@@ -60,21 +61,26 @@ namespace Importer.Custom.Temper
         {
             var values = await page.EvaluateFunctionAsync<List<string>>(_source.ValuesScript);
 
-            item.Values = values.Select(v =>
-            {
-                return Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", "XXX")
-                    .Replace("$", "\\$")
-                    .Replace("^", "\\^")
-                    .Replace(".", "\\.")
-                    .Replace("+", "\\+")
-                    .Replace("*", "\\*")
-                    .Replace("(", "\\(")
-                    .Replace(")", "\\)")
-                    .Replace("[", "\\[")
-                    .Replace("]", "\\]")
-                    .Replace(" X ", " XXX ")
-                    .Replace("XXX", ValueRegex); // for js regex
-            }).ToList();
+            var tmp = values
+                .Select((v, i) => new TemperValue(i + 1, v))
+                .ForEach(v =>
+                {
+                    v.Names = v.Names.Select(v => Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", "XXX")
+                        .Replace("$", "\\$")
+                        .Replace("^", "\\^")
+                        .Replace(".", "\\.")
+                        .Replace("+", "\\+")
+                        .Replace("*", "\\*")
+                        .Replace("(", "\\(")
+                        .Replace(")", "\\)")
+                        .Replace("[", "\\[")
+                        .Replace("]", "\\]")
+                        .Replace(" X ", " XXX ")
+                        .Replace("XXX", ValueRegex)) // for js regex
+                        .ToList();
+                });
+
+            item.Values = tmp.ToList();
         }
 
         protected TemperType GetTemperType(string? internalName)

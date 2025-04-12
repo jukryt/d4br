@@ -294,12 +294,13 @@ class D4BuildsProcessor {
             return null;
         }
 
-        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
+        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.temper.id);
         if (!targetItem) {
             return null;
         }
 
-        return this.targetLanguage.getTemperValue(targetItem);
+        const targetValue = targetItem.values.find(v => v.id === sourceItem.value.id);
+        return this.targetLanguage.getTemperValue(targetItem, targetValue);
     }
 
     getTemperSourceItem(charClassName, sourceTemperValue) {
@@ -313,20 +314,32 @@ class D4BuildsProcessor {
                     (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
             })
             .filter(i => i.values);
-        let sourceItems = tempers.filter(i => i.values.some(s => {
-            const match = fixedTemperValue.match(s)
-            return match &&
-                match.index === 0 &&
-                match[0] === fixedTemperValue;
-        }));
+
+        let sourceItems = [];
+        for (const temper of tempers) {
+            const values = temper.values.filter(v => {
+                var names = v.names.filter(n => {
+                    const match = fixedTemperValue.match(n)
+                    return match &&
+                        match.index === 0 &&
+                        match[0] === fixedTemperValue;
+                });
+                return names.length === 1;
+            });
+
+            if (values.length === 1) {
+                const value = values[0];
+                sourceItems.push({ temper, value });
+            }
+        }
 
         if (sourceItems.length === 0) {
             return null;
         }
 
         if (sourceItems.length > 1) {
-            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.classes && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+            if (Array.from(new Set(sourceItems.map(i => i.temper.type))).length === 1) {
+                const classItem = sourceItems.find(i => i.temper.classes && i.temper.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
                 if (classItem) {
                     sourceItems = [classItem];
                 } else {

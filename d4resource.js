@@ -82,8 +82,14 @@ class Language {
         return skillItem.name;
     }
 
-    getTemperValue(temperItem) {
-        return temperItem.type + " - " + temperItem.name;
+    getTemperValue(temperItem, targetValue) {
+        const names = [temperItem.type, temperItem.name];
+
+        if (targetValue && targetValue.names.length > 0) {
+            names.push(targetValue.names[0]);
+        }
+
+        return names.join(" - ");
     }
 }
 
