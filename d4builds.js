@@ -319,7 +319,8 @@ class D4BuildsProcessor {
         for (const temper of tempers) {
             const values = temper.values.filter(v => {
                 var names = v.names.filter(n => {
-                    const match = fixedTemperValue.match(n)
+                    const nameRegex = this.sourceLanguage.buildTemperValueNameRegex(n);
+                    const match = fixedTemperValue.match(nameRegex);
                     return match &&
                         match.index === 0 &&
                         match[0] === fixedTemperValue;

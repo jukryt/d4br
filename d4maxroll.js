@@ -217,7 +217,8 @@ class D4MaxrollProcessor {
         for (const temper of tempers) {
             const values = temper.values.filter(v => {
                 var names = v.names.filter(n => {
-                    const match = temperValue.match(n)
+                    const nameRegex = this.sourceLanguage.buildTemperValueNameRegex(n);
+                    const match = temperValue.match(nameRegex);
                     return match &&
                         match.index === 0 &&
                         match[0] === temperValue;

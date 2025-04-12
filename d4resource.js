@@ -82,11 +82,26 @@ class Language {
         return skillItem.name;
     }
 
+    buildTemperValueNameRegex(targetValueName) {
+        return targetValueName
+            .replace("$", "\\$")
+            .replace("^", "\\^")
+            .replace(".", "\\.")
+            .replace("+", "\\+")
+            .replace("*", "\\*")
+            .replace("(", "\\(")
+            .replace(")", "\\)")
+            .replace("[", "\\[")
+            .replace("]", "\\]")
+            .replace(" X ", " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?");
+    }
+
     getTemperValue(temperItem, targetValue) {
         const names = [temperItem.type, temperItem.name];
 
         if (targetValue && targetValue.names.length > 0) {
-            names.push(targetValue.names[0]);
+            const valueName = targetValue.names[0].trim();
+            names.push(valueName);
         }
 
         return names.join(" - ");
