@@ -45,7 +45,7 @@ namespace Importer.Custom.Temper
                 await page.GoToAsync(temperUrl, waitUntil: WaitUntilNavigation.DOMContentLoaded);
 
                 await FillPropertesAsync(item, page);
-                await FillValuesAsync(item, page);
+                await FillDetalesAsync(item, page);
             }
         }
 
@@ -57,19 +57,18 @@ namespace Importer.Custom.Temper
             item.InternalType = GetTemperType(internalName);
         }
 
-        private async Task FillValuesAsync(TemperItem item, IPage page)
+        private async Task FillDetalesAsync(TemperItem item, IPage page)
         {
-            var values = await page.EvaluateFunctionAsync<List<string>>(_source.ValuesScript);
+            var details = await page.EvaluateFunctionAsync<List<string>>(_source.DetailsScript);
 
-            var tmp = values
-                .Select((v, i) => new TemperValue(i + 1, v))
+            item.Details = details
+                .Select((v, i) => new TemperDetail(i + 1, v))
                 .ForEach(v =>
                 {
-                    v.Names = v.Names.Select(v => Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", ValueMacros))
+                    v.Names = v.Names
+                        .Select(v => Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", ValueMacros))
                         .ToList();
-                });
-
-            item.Values = tmp.ToList();
+                }).ToList();
         }
 
         protected TemperType GetTemperType(string? internalName)

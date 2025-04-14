@@ -227,7 +227,7 @@ namespace Importer.Resource
                                 ],
                                 DetailsUrlTemplate = "https://www.wowhead.com/diablo-4/item/[id]",
                                 PropertiesScript = "() => [...document.querySelectorAll('#infobox-contents-0 div')].map(e => e.innerText)",
-                                ValuesScript = "() => [...document.querySelectorAll('div.whtt-damage-details li[data-type=\"empty-bullet\"]')].map(e => e.innerText)",
+                                DetailsScript = "() => [...document.querySelectorAll('div.whtt-damage-details li[data-type=\"empty-bullet\"]')].map(e => e.innerText)",
                             },
                             Fix = new()
                             {

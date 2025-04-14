@@ -82,8 +82,8 @@ class Language {
         return skillItem.name;
     }
 
-    buildTemperValueNameRegex(targetValueName) {
-        return targetValueName
+    buildTemperValueRegex(value) {
+        return value
             .replace("$", "\\$")
             .replace("^", "\\^")
             .replace(".", "\\.")
@@ -96,12 +96,13 @@ class Language {
             .replace(" X ", " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?");
     }
 
-    getTemperValue(temperItem, targetValue) {
+    getTemperValue(temperItem) {
         const names = [temperItem.type, temperItem.name];
 
-        if (targetValue && targetValue.names.length > 0) {
-            const valueName = targetValue.names[0].trim();
-            names.push(valueName);
+        if (temperItem.detail && temperItem.detail.names.length > 0) {
+            let detailName = temperItem.detail.names[0];
+
+            names.push(detailName.trim());
         }
 
         return names.join(" ● ");

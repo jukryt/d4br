@@ -132,7 +132,7 @@ class D4MobalyticsProcessor {
                 return !i.classes || i.classes.length === 0 ||
                     (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
             })
-            .filter(i => i.values);
+            .filter(i => i.details);
         const sourceItems = tempers.filter(i => {
             return StringExtension.equelsIgnoreCase(i.name, temperName) ||
                 StringExtension.equelsIgnoreCase(i.name, `${temperName} - ${charClassName}`)
