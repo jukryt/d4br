@@ -104,7 +104,7 @@ class Language {
             names.push(valueName);
         }
 
-        return names.join(" - ");
+        return names.join(" ● ");
     }
 }
 
