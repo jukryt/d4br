@@ -152,12 +152,14 @@ class D4MaxrollProcessor {
             .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
-        const skillNameMatch = affixValue.match(/\+\d+ to (.+)/);
+        const skillNameMatch = affixValue.match(/(\+\d+) to (.+)/);
         if (!skillNameMatch) {
             return false;
         }
 
-        const skillName = skillNameMatch[1];
+        const value = skillNameMatch[1];
+        const skillName = skillNameMatch[2];
+
         const skills = this.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
         const sourceItems = skills.filter(i => StringExtension.equelsIgnoreCase(i.name, skillName));
         if (sourceItems.length != 1) {
@@ -170,7 +172,7 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const targetAffixValue = this.targetLanguage.getSkillAffixValue(targetItem);
+        const targetAffixValue = this.targetLanguage.getSkillAffixValue(targetItem, value);
         return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetAffixValue);
     }
 

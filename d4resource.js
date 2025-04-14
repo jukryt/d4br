@@ -100,8 +100,10 @@ class EnglishLanguage extends Language {
         this._tempers = ExternalResource.getJsonResource("temper_en");
     }
 
-    getSkillAffixValue(skillItem) {
-        return `+ to ${skillItem.name}`;
+    getSkillAffixValue(skillItem, value) {
+        return value
+            ? `${value} to ${skillItem.name}`
+            : `+ to ${skillItem.name}`;
     }
 }
 
@@ -118,7 +120,9 @@ class RussianLanguage extends Language {
         this._tempers = ExternalResource.getJsonResource("temper_ru");
     }
 
-    getSkillAffixValue(skillItem) {
-        return `${skillItem.name}: + к уровню`;
+    getSkillAffixValue(skillItem, value) {
+        return value
+            ? `${skillItem.name}: ${value} к уровню`
+            : `${skillItem.name}: + к уровню`;
     }
 }
