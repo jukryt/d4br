@@ -93,7 +93,7 @@ class Language {
             .replace(")", "\\)")
             .replace("[", "\\[")
             .replace("]", "\\]")
-            .replace(" X ", " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?");
+            .replace(" X ", " ?(\\+? ?[X0-9\\.,\\-% \\[\\]]+) ?");
     }
 
     getTemperValue(temperItem) {
@@ -101,6 +101,10 @@ class Language {
 
         if (temperItem.detail && temperItem.detail.names.length > 0) {
             let detailName = temperItem.detail.names[0];
+
+            if (temperItem.detail.value) {
+                detailName = detailName.replace(" X ", ` ${temperItem.detail.value} `);
+            }
 
             names.push(detailName.trim());
         }

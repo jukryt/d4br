@@ -201,6 +201,7 @@ class D4MaxrollProcessor {
         }
 
         targetItem.detail = targetItem.details.find(v => v.id === sourceItem.detail.id);
+        targetItem.detail.value = sourceItem.detail.value;
 
         const targetTemperValue = this.targetLanguage.getTemperValue(targetItem);
         return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
@@ -223,6 +224,7 @@ class D4MaxrollProcessor {
                     if (valueMatch &&
                         valueMatch.index === 0 &&
                         valueMatch[0] === sourceTemperValue) {
+                        d.value = valueMatch[1].trim();
                         return true;
                     }
                 });

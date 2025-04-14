@@ -300,6 +300,7 @@ class D4BuildsProcessor {
         }
 
         targetItem.detail = targetItem.details.find(v => v.id === sourceItem.detail.id);
+        targetItem.detail.value = sourceItem.detail.value;
 
         return this.targetLanguage.getTemperValue(targetItem);
     }
@@ -325,6 +326,7 @@ class D4BuildsProcessor {
                     if (valueMatch &&
                         valueMatch.index === 0 &&
                         valueMatch[0] === fixedTemperValue) {
+                        d.value = valueMatch[1].trim();
                         return true;
                     }
                 });
