@@ -1,5 +1,4 @@
-﻿using Importer.Extension;
-using Importer.Processor;
+﻿using Importer.Processor;
 using Importer.Puppeteer;
 using Importer.Report;
 using PuppeteerSharp;
@@ -62,12 +61,10 @@ namespace Importer.Custom.Temper
             var details = await page.EvaluateFunctionAsync<List<string>>(_source.DetailsScript);
 
             item.Details = details
-                .Select((v, i) => new TemperDetail(i + 1, v))
-                .ForEach(v =>
+                .Select((v, i) =>
                 {
-                    v.Names = v.Names
-                        .Select(v => Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", ValueMacros))
-                        .ToList();
+                    var name = Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", ValueMacros);
+                    return new TemperDetail(i + 1, name);
                 }).ToList();
         }
 
