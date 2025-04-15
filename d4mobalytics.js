@@ -21,9 +21,11 @@ class D4MobalyticsProcessor {
                             this.affixNameProcess(affisNameNode);
                         }
 
-                        const temperNameNodes = tippyNode.querySelectorAll("span.m-1yjh4k8");
-                        for (const temperNameNode of temperNameNodes) {
-                            this.temperNameProcess(temperNameNode);
+                        const temperNodes = tippyNode.querySelectorAll("li.m-16l5u8x:has(span.m-1yjh4k8)");
+                        for (const temperNode of temperNodes) {
+                            const temperNameNode = temperNode.querySelector("span.m-1yjh4k8");
+                            const temperValueNode = temperNode.querySelector("span.m-3zcy6z, span.m-14rp55x, span.m-vhsx5y, span.m-y0za0q");
+                            this.temperNameProcess(temperNameNode, temperValueNode);
                         }
                     }
                     // unq item
@@ -76,6 +78,10 @@ class D4MobalyticsProcessor {
             ?.replace(" Build", "");
     }
 
+    buildTemperValueRegex(value) {
+        return value.replace(Language.temperValueMacros, " ?(Bonus)? ?");
+    }
+
     aspectNameProcess(node) {
         return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, true);
     }
@@ -113,9 +119,9 @@ class D4MobalyticsProcessor {
         return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetAffixValue);
     }
 
-    temperNameProcess(node) {
-        const sourceValue = node.innerText;
-        if (!sourceValue) {
+    temperNameProcess(temperNameNode, temperValueNode) {
+        const temperName = temperNameNode.innerText;
+        if (!temperName) {
             return false;
         }
 
@@ -124,22 +130,66 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        // bug in mobalytics data
-        const temperName = sourceValue.replace("Wordly", "Worldly");
+        let temperValueSource = "";
+        if (temperValueNode) {
+            const nodeText = temperValueNode?.innerText;
+            const end = nodeText.length - temperName.length - 1;
+            temperValueSource = nodeText.substring(0, end);
+        }
+
+        const sourceItem = this.getTemperSourceItem(charClassName, temperName, temperValueSource);
+        if (!sourceItem) {
+            return false;
+        }
+
+        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return false;
+        }
+
+        if (sourceItem.detail) {
+            targetItem.detail = targetItem.details.find(v => v.id === sourceItem.detail.id);
+        }
+
+        const targetTemperValue = this.targetLanguage.getTemperValue(targetItem);
+        return this.setTemperNodeTargetValue(temperNameNode, "d4br_temper_name", targetTemperValue);
+    }
+
+    getTemperSourceItem(charClassName, temperName, temperValueSource) {
+        const fixedTemperName = temperName
+            .replace("Wordly", "Worldly")
+            .replace(/^Ultimate Efficiency$/, "Ultimate Efficiency - Rogue")
+            .replace("Summoning Finesse", "Minion Finesse")
+            .replace("Berserking Augments", "Berserking Innovation")
+            .replace("Summoning Augments", "Minion Augments");
+
+        let sourceTemperType = "";
+        let sourceTemperValue = "";
+        if (temperValueSource) {
+            const fixedTemperValueSource = temperValueSource
+                .replace("Weapon:", "Weapons:")
+                .replace("Movement Speed for X Seconds", "Movement Speed for 4 Seconds")
+                .replace("Movement Speed for Seconds", "Movement Speed for 4 Seconds");
+
+            const temperValueMath = fixedTemperValueSource.match(/([^:]+): (.+)/);
+            if (temperValueMath) {
+                sourceTemperType = temperValueMath[1];
+                sourceTemperValue = temperValueMath[2];
+            }
+        }
 
         const tempers = this.sourceLanguage.tempers
             .filter(i => {
                 return !i.classes || i.classes.length === 0 ||
                     (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
             })
+            .filter(i => !sourceTemperType || StringExtension.equelsIgnoreCase(i.type, sourceTemperType))
             .filter(i => i.details);
-        const sourceItems = tempers.filter(i => {
-            return StringExtension.equelsIgnoreCase(i.name, temperName) ||
-                StringExtension.equelsIgnoreCase(i.name, `${temperName} - ${charClassName}`)
-        });
+
+        const sourceItems = tempers.filter(i => StringExtension.equelsIgnoreCase(i.name, fixedTemperName));
 
         if (sourceItems.length === 0) {
-            return false;
+            return null;
         }
 
         if (sourceItems.length > 1) {
@@ -152,18 +202,31 @@ class D4MobalyticsProcessor {
                 }
             }
             else {
-                return false;
+                return null;
             }
         }
 
         const sourceItem = sourceItems[0];
-        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
-        if (!targetItem) {
-            return false;
+
+        const sourceDetails = sourceItem.details.filter(d => {
+            var names = d.names.filter(n => {
+                const valueRegex = this.buildTemperValueRegex(n);
+                const valueMatch = sourceTemperValue.match(valueRegex);
+
+                if (valueMatch &&
+                    valueMatch.index === 0 &&
+                    valueMatch[0] === sourceTemperValue) {
+                    return true;
+                }
+            });
+            return names.length === 1;
+        });
+
+        if (sourceDetails.length === 1) {
+            sourceItem.detail = sourceDetails[0];
         }
 
-        const targetTemperValue = this.targetLanguage.getTemperValue(targetItem);
-        return this.setTemperNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
+        return sourceItem;
     }
 
     unqItemNameProcess(node) {

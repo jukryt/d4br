@@ -33,6 +33,8 @@ class Language {
     static skills = "skills";
     static tempers = "tempers";
 
+    static temperValueMacros = " X ";
+
     constructor() {
         if (this.constructor == Language) {
             throw new Error("Abstract classes can't be instantiated.");
@@ -93,7 +95,7 @@ class Language {
             .replace(")", "\\)")
             .replace("[", "\\[")
             .replace("]", "\\]")
-            .replace(" X ", " ?(\\+? ?[X0-9\\.,\\-% \\[\\]]+) ?");
+            .replace(Language.temperValueMacros, " ?(\\+? ?[X0-9\\.,\\-% \\[\\]]+) ?");
     }
 
     getTemperValue(temperItem) {
@@ -103,7 +105,7 @@ class Language {
             let detailName = temperItem.detail.names[0];
 
             if (temperItem.detail.value) {
-                detailName = detailName.replace(" X ", ` ${temperItem.detail.value} `);
+                detailName = detailName.replace(Language.temperValueMacros, ` ${temperItem.detail.value} `);
             }
 
             names.push(detailName.trim());

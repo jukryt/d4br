@@ -308,7 +308,7 @@ class D4BuildsProcessor {
     getTemperSourceItem(charClassName, sourceTemperValue) {
         const fixedTemperValue = sourceTemperValue
             .replace(/\[([0-9]+)\]/, "$1")
-            .replace("Movement Speed for X", "Movement Speed for 4");
+            .replace("Movement Speed for X Seconds", "Movement Speed for 4 Seconds");
 
         const tempers = this.sourceLanguage.tempers
             .filter(i => {
