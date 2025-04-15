@@ -18,7 +18,7 @@ namespace Importer.Custom.Temper
             Names = [name];
         }
 
-        public long Id { get; set; }
-        public List<string> Names { get; set; }
+        public long Id { get; }
+        public List<string> Names { get; }
     }
 }

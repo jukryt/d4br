@@ -11,9 +11,7 @@ namespace Importer.Custom.Temper
             {
                 if (string.IsNullOrEmpty(item.Type) ||
                     item.Details.Count == 0 ||
-                    item.Details.Any(v => v.Names == null) ||
-                    item.Details.Any(v => v.Names.Count == 0) ||
-                    item.Details.Any(v => v.Names.Any(n => n.Contains('\n'))))
+                    item.Details.Any(v => v.Names.Count == 0 || v.Names.Any(n => n.Contains('\n'))))
                     reporter.WriteMessage($"Id: {item.Id} - invalid", nameof(TemperCheckProperties));
             }
         }
