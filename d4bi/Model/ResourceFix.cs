@@ -1,6 +1,6 @@
 ﻿using Importer.Fixer;
-using Importer.Logger;
 using Importer.Processor;
+using Importer.Report;
 
 namespace Importer.Model
 {
@@ -8,9 +8,9 @@ namespace Importer.Model
     {
         public required IReadOnlyCollection<IItemsFixer<T>> Fixers { get; init; } = [];
 
-        public virtual ResourceFixer<T> CreateFixer(string resourceName, ILogger logger)
+        public virtual ResourceFixer<T> CreateFixer(string resourceName, ProgressReporter progressReporter, IMessageReporter reporter)
         {
-            return new ResourceFixer<T>(resourceName, this, logger);
+            return new ResourceFixer<T>(resourceName, this, progressReporter, reporter);
         }
     }
 }

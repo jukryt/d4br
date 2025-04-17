@@ -1,6 +1,6 @@
 ﻿using Importer.Fixer;
-using Importer.Logger;
 using Importer.Model;
+using Importer.Report;
 
 namespace Importer.Custom.UnqItem
 {
@@ -18,14 +18,14 @@ namespace Importer.Custom.UnqItem
             2185048, 2185050, 1749652, 1928896, 1928903, 1928911, 1928913, 2099578,
         };
 
-        public Task FixItemsAsync(List<Item> items, ILogger logger)
+        public Task FixItemsAsync(List<Item> items, IMessageReporter reporter)
         {
-            RemoveIgnoreItems(items, logger);
+            RemoveIgnoreItems(items, reporter);
 
             return Task.CompletedTask;
         }
 
-        private void RemoveIgnoreItems(List<Item> items, ILogger logger)
+        private void RemoveIgnoreItems(List<Item> items, IMessageReporter reporter)
         {
             var ignoreItems = new HashSet<long>();
 
@@ -42,7 +42,7 @@ namespace Importer.Custom.UnqItem
             {
                 var exceptItems = IgnoreItems.Except(ignoreItems);
                 var exceptItemsString = string.Join(", ", exceptItems);
-                logger.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(UnqItemFilter));
+                reporter.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(UnqItemFilter));
             }
         }
     }

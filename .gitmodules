@@ -1,0 +1,3 @@
+[submodule "shellprogressbar"]
+	path = shellprogressbar
+	url = https://github.com/jukryt/shellprogressbar.git

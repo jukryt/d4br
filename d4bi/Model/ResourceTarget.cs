@@ -1,4 +1,5 @@
 ﻿using Importer.Processor;
+using Importer.Report;
 
 namespace Importer.Model
 {
@@ -6,9 +7,9 @@ namespace Importer.Model
     {
         public required string FileName { get; init; }
 
-        public virtual ResourceWriter<T> CreateWriter(string workFolder)
+        public virtual ResourceWriter<T> CreateWriter(string workFolder, ProgressReporter progressReporter)
         {
-            return new ResourceWriter<T>(this, workFolder);
+            return new ResourceWriter<T>(this, workFolder, progressReporter);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Importer.Model;
+using Importer.Report;
 using Importer.Serializer;
 using System.Text;
 
@@ -8,15 +9,21 @@ namespace Importer.Processor
     {
         private readonly ResourceTarget<T> _target;
         private readonly string _workFolder;
+        private readonly ProgressReporter _progressReporter;
 
-        public ResourceWriter(ResourceTarget<T> target, string workFolder)
+        public ResourceWriter(ResourceTarget<T> target, string workFolder, ProgressReporter progressReporter)
         {
             _target = target;
             _workFolder = workFolder;
+            _progressReporter = progressReporter;
+
+            _progressReporter.IncrementMaxValue();
         }
 
         public async Task WriteAsync(IEnumerable<T> items)
         {
+            _progressReporter.ReportNext("Save process...");
+
             var filePath = Path.Combine(_workFolder, _target.FileName);
 
             if (!string.IsNullOrEmpty(_workFolder))

@@ -1,6 +1,6 @@
 ﻿using Importer.Fixer;
-using Importer.Logger;
 using Importer.Model;
+using Importer.Report;
 
 namespace Importer.Custom.Glyph
 {
@@ -11,14 +11,14 @@ namespace Importer.Custom.Glyph
             732443,
         };
 
-        public Task FixItemsAsync(List<ClassItem> items, ILogger logger)
+        public Task FixItemsAsync(List<ClassItem> items, IMessageReporter reporter)
         {
-            RemoveIgnoreItems(items, logger);
+            RemoveIgnoreItems(items, reporter);
 
             return Task.CompletedTask;
         }
 
-        private void RemoveIgnoreItems(List<ClassItem> items, ILogger logger)
+        private void RemoveIgnoreItems(List<ClassItem> items, IMessageReporter reporter)
         {
             var ignoreItems = new HashSet<long>();
 
@@ -35,7 +35,7 @@ namespace Importer.Custom.Glyph
             {
                 var exceptItems = IgnoreItems.Except(ignoreItems);
                 var exceptItemsString = string.Join(", ", exceptItems);
-                logger.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(GlyphFilter));
+                reporter.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(GlyphFilter));
             }
         }
     }

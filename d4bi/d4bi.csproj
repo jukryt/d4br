@@ -14,4 +14,8 @@
     <PackageReference Include="PuppeteerSharp" Version="20.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\shellprogressbar\src\ShellProgressBar\ShellProgressBar.csproj" />
+  </ItemGroup>
+
 </Project>

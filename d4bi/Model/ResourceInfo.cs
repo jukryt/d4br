@@ -1,12 +1,13 @@
-﻿using Importer.Logger;
-using Importer.Processor;
+﻿using Importer.Processor;
+using Importer.Report;
 
 namespace Importer.Model
 {
     internal interface IResourceInfo
     {
         string Name { get; }
-        IResourceProcessor CreateProcessor(string folder, ILogger logger);
+
+        IResourceProcessor CreateProcessor(string workFolder, ReportManager reportManager);
     }
 
     internal class ResourceInfo<T> : IResourceInfo where T : Item
@@ -17,9 +18,9 @@ namespace Importer.Model
         public ResourceCheck<T>? Check { get; init; }
         public required ResourceTarget<T> Target { get; init; }
 
-        public virtual IResourceProcessor CreateProcessor(string folder, ILogger logger)
+        public virtual IResourceProcessor CreateProcessor(string workFolder, ReportManager reportManager)
         {
-            return new ResourceProcessor<T>(this, folder, logger);
+            return new ResourceProcessor<T>(this, workFolder, reportManager);
         }
     }
 }

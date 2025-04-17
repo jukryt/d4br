@@ -1,11 +1,11 @@
-﻿using Importer.Logger;
-using Importer.Model;
+﻿using Importer.Model;
+using Importer.Report;
 
 namespace Importer.Fixer
 {
     internal class FixName<T> : IItemsFixer<T> where T : Item
     {
-        public Task FixItemsAsync(List<T> items, ILogger logger)
+        public Task FixItemsAsync(List<T> items, IMessageReporter reporter)
         {
             foreach (var item in items)
             {

@@ -6,9 +6,19 @@ class D4MaxrollProcessor {
 
     mutationObserverCallback(mutations) {
         for (const mutation of mutations) {
-            if (mutation.type === "childList") {
+            if (mutation.type === "attributes") {
+                if (mutation.attributeName === "style" &&
+                    mutation.target.className.startsWith("_Tooltip__positioner_orqi")) {
+                    const positioner = mutation.target;
+                    this.fixPopupPosotion(positioner);
+                }
+            } else if (mutation.type === "childList") {
                 if (mutation.target.id === "uitools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
+                        if (newNode.className.startsWith("_Tooltip_orqi")) {
+                            this.fixPopupStyle(newNode);
+                        }
+
                         // legendary: aspect, affix, temper, leg node, glyph, rune
                         if (newNode.querySelector("div.d4t-tip-legendary")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
@@ -75,6 +85,51 @@ class D4MaxrollProcessor {
                     }
                 }
             }
+        }
+    }
+
+    fixPopupStyle(node) {
+        // reduce font size for fix disabled scroll
+
+        const mainNode = node.querySelector("div.d4t-GameTooltip");
+        if (mainNode) {
+            mainNode.style["font-size"] = "16px";
+            mainNode.style["min-width"] = "400px";
+        }
+
+        const tagNodes = node.querySelectorAll("div.d4t-SkillTagTooltip");
+        for (const tagNode of tagNodes) {
+            tagNode.style["font-size"] = "14px";
+        }
+    }
+
+    fixPopupPosotion(node) {
+        if (!node || !node.style["top"]) {
+            return false;
+        }
+
+        const maxHeight = window.innerHeight;
+        const nodeRect = node.getBoundingClientRect();
+        const currentTop = nodeRect.top;
+        let newTop = currentTop;
+
+        if (nodeRect.top > 0 && maxHeight < nodeRect.bottom) {
+            newTop = maxHeight - nodeRect.height;
+
+            if (newTop < 0) {
+                newTop = 0;
+            }
+        }
+        else if (nodeRect.top < 0 && maxHeight > nodeRect.bottom) {
+            newTop = maxHeight - nodeRect.height;
+
+            if (newTop > 0) {
+                newTop = 0;
+            }
+        }
+
+        if (newTop !== currentTop) {
+            node.style["top"] = `${newTop}px`;
         }
     }
 
@@ -152,12 +207,14 @@ class D4MaxrollProcessor {
             .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
-        const skillNameMatch = affixValue.match(/\+\d+ to (.+)/);
+        const skillNameMatch = affixValue.match(/(\+\d+) to (.+)/);
         if (!skillNameMatch) {
             return false;
         }
 
-        const skillName = skillNameMatch[1];
+        const value = skillNameMatch[1];
+        const skillName = skillNameMatch[2];
+
         const skills = this.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
         const sourceItems = skills.filter(i => StringExtension.equelsIgnoreCase(i.name, skillName));
         if (sourceItems.length != 1) {
@@ -170,7 +227,8 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetItem.name);
+        const targetAffixValue = this.targetLanguage.getSkillAffixValue(targetItem, value);
+        return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetAffixValue);
     }
 
     temperNameProcess(node) {
@@ -199,23 +257,42 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const targetTemperName = targetItem.type + " - " + targetItem.name;
-        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperName);
+        targetItem.detail = targetItem.details.find(v => v.id === sourceItem.detail.id);
+        targetItem.detail.value = sourceItem.detail.value;
+
+        const targetTemperValue = this.targetLanguage.getTemperValue(targetItem);
+        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
     }
 
-    getTemperSourceItem(charClassName, temperValue) {
+    getTemperSourceItem(charClassName, sourceTemperValue) {
         const tempers = this.sourceLanguage.tempers
             .filter(i => {
                 return !i.classes || i.classes.length === 0 ||
                     (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
             })
-            .filter(i => i.values);
-        let sourceItems = tempers.filter(i => i.values.some(s => {
-            const match = temperValue.match(s)
-            return match &&
-                match.index === 0 &&
-                match[0] === temperValue;
-        }));
+            .filter(i => i.details);
+
+        let sourceItems = tempers.filter(t => {
+            const details = t.details.filter(d => {
+                var names = d.names.filter(n => {
+                    const valueRegex = this.sourceLanguage.buildTemperValueRegex(n);
+                    const valueMatch = sourceTemperValue.match(valueRegex);
+
+                    if (valueMatch &&
+                        valueMatch.index === 0 &&
+                        valueMatch[0] === sourceTemperValue) {
+                        d.value = valueMatch[1].trim();
+                        return true;
+                    }
+                });
+                return names.length === 1;
+            });
+
+            if (details.length === 1) {
+                t.detail = details[0];
+                return true;
+            }
+        });
 
         if (sourceItems.length === 0) {
             return null;
@@ -258,15 +335,6 @@ class D4MaxrollProcessor {
         return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
     }
 
-    setAffixNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("div");
-        newNode.style["margin-top"] = "5px";
-        newNode.style.opacity = "0.6";
-        node.parentNode.insertBefore(newNode, node);
-
-        return this.setTargetValue(newNode, className, targetValue, false);
-    }
-
     nodeProcess(node, className, resourceName, addSourceValue) {
         const sourceValue = node.innerText;
         if (!sourceValue) {
@@ -295,6 +363,15 @@ class D4MaxrollProcessor {
         return this.setTargetValue(node, className, targetItem.name, addSourceValue);
     }
 
+    setAffixNodeTargetValue(node, className, targetValue) {
+        const newNode = document.createElement("div");
+        newNode.style["margin-top"] = "0.3em";
+        newNode.style.opacity = "0.6";
+        node.parentNode.insertBefore(newNode, node);
+
+        return this.setTargetValue(newNode, className, targetValue, false);
+    }
+
     setTargetValue(node, className, targetValue, addSourceValue) {
         if (!targetValue) {
             return false;
@@ -310,6 +387,6 @@ class D4MaxrollProcessor {
     }
 
     buildHtmlValue(className, value) {
-        return `<div class="d4br_show ${className}" style="color:darkgray; font-size:18px;">${value}</div>`;
+        return `<div class="d4br_show ${className}" style="color:darkgray;">${value}</div>`;
     }
 }

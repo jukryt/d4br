@@ -1,5 +1,6 @@
 ﻿using Importer.Processor;
 using Importer.Puppeteer;
+using Importer.Report;
 using PuppeteerSharp;
 using System.Text.RegularExpressions;
 
@@ -7,11 +8,11 @@ namespace Importer.Custom.Temper
 {
     internal class TemperReader : ResourceReader<TemperItem>
     {
-        public const string ValueRegex = @" ?\+? ?[X0-9\.,\-% \[\]]+ ?";
+        public const string ValueMacros = " X ";
 
         private readonly TemperSource _source;
 
-        public TemperReader(TemperSource source) : base(source)
+        public TemperReader(TemperSource source, ProgressReporter progressReporter) : base(source, progressReporter)
         {
             _source = source;
         }
@@ -19,11 +20,15 @@ namespace Importer.Custom.Temper
         public override async Task<List<TemperItem>> ReadAsync(PuppeteerBrowser browser)
         {
             var items = await base.ReadAsync(browser);
+
+            ProgressReporter.IncrementMaxValue(items.Count);
+            ProgressReporter.UpdateMessage("Wait...");
+
             await FillTemperItemsAsync(items, browser);
             return items;
         }
 
-        private async Task FillTemperItemsAsync(IEnumerable<TemperItem> items, PuppeteerBrowser browser)
+        private async Task FillTemperItemsAsync(IReadOnlyCollection<TemperItem> items, PuppeteerBrowser browser)
         {
             var tasks = items.Select(i => FillTemperItemAsync(i, browser));
             await Task.WhenAll(tasks);
@@ -33,11 +38,13 @@ namespace Importer.Custom.Temper
         {
             using (var page = await browser.NewPageAsync())
             {
+                ProgressReporter.ReportNext($"Read '{item.Name}'");
+
                 var temperUrl = _source.DetailsUrlTemplate.Replace("[id]", item.Id.ToString());
                 await page.GoToAsync(temperUrl, waitUntil: WaitUntilNavigation.DOMContentLoaded);
 
                 await FillPropertesAsync(item, page);
-                await FillValuesAsync(item, page);
+                await FillDetalesAsync(item, page);
             }
         }
 
@@ -49,25 +56,16 @@ namespace Importer.Custom.Temper
             item.InternalType = GetTemperType(internalName);
         }
 
-        private async Task FillValuesAsync(TemperItem item, IPage page)
+        private async Task FillDetalesAsync(TemperItem item, IPage page)
         {
-            var values = await page.EvaluateFunctionAsync<List<string>>(_source.ValuesScript);
+            var details = await page.EvaluateFunctionAsync<List<string>>(_source.DetailsScript);
 
-            item.Values = values.Select(v =>
-            {
-                return Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", "XXX")
-                    .Replace("$", "\\$")
-                    .Replace("^", "\\^")
-                    .Replace(".", "\\.")
-                    .Replace("+", "\\+")
-                    .Replace("*", "\\*")
-                    .Replace("(", "\\(")
-                    .Replace(")", "\\)")
-                    .Replace("[", "\\[")
-                    .Replace("]", "\\]")
-                    .Replace(" X ", " XXX ")
-                    .Replace("XXX", ValueRegex); // for js regex
-            }).ToList();
+            item.Details = details
+                .Select((v, i) =>
+                {
+                    var name = Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", ValueMacros);
+                    return new TemperDetail(i + 1, name);
+                }).ToList();
         }
 
         protected TemperType GetTemperType(string? internalName)

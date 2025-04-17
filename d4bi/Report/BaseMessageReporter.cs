@@ -1,52 +1,23 @@
 ﻿using Importer.Extension;
-using System.Diagnostics;
 
-namespace Importer.Logger
+namespace Importer.Report
 {
-    internal abstract class BaseLogger : ILogger
+    internal abstract class BaseMessageReporter : IMessageReporter
     {
         private const int ExceptionLineIndent = 2;
 
-        private readonly object _lockObject;
-        private readonly bool _addTimestamp;
-        private readonly bool _addCallStack;
-
-        protected BaseLogger(bool addTimestamp, bool addCallStack)
-        {
-            _lockObject = new object();
-            _addTimestamp = addTimestamp;
-            _addCallStack = addCallStack;
-        }
-
         public void WriteMessage(string message, string source = "")
         {
-            lock (_lockObject)
-            {
-                var messages = new List<string>();
+            var messages = new List<string>();
 
-                if (_addTimestamp)
-                    messages.Add(DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss zzz"));
+            if (!string.IsNullOrEmpty(source))
+                messages.Add(source.Linearize(false));
 
-                if (!string.IsNullOrEmpty(source))
-                    messages.Add(source.Linearize(false));
+            messages.Add(message);
 
-                messages.Add(message);
+            var finalMessage = string.Join(". ", messages);
 
-                var finalMessage = string.Join(". ", messages);
-
-                try
-                {
-                    Write(finalMessage);
-                }
-                catch (Exception ex)
-                {
-#if DEBUG
-                    Debug.WriteLine(ex.GetMessage());
-#else
-                    Console.WriteLine(ex.GetMessage());
-#endif
-                }
-            }
+            Write(finalMessage);
         }
 
         public void WriteError(string message, string source = "")
@@ -66,9 +37,6 @@ namespace Importer.Logger
                 var exceptionIndent = exceptionLevel * ExceptionLineIndent;
                 var exceptionMessage = currentException.GetMessage().AddLeft(exceptionIndent);
                 messages.Add(exceptionMessage);
-
-                if (!_addCallStack)
-                    break;
 
                 var stackTraceLines = currentException.StackTrace.GetLines();
                 foreach (var stackTraceLine in stackTraceLines)
