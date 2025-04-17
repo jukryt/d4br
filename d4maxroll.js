@@ -6,9 +6,19 @@ class D4MaxrollProcessor {
 
     mutationObserverCallback(mutations) {
         for (const mutation of mutations) {
-            if (mutation.type === "childList") {
+            if (mutation.type === "attributes") {
+                if (mutation.attributeName === "style" &&
+                    mutation.target.className.startsWith("_Tooltip__positioner_orqi")) {
+                    const positioner = mutation.target;
+                    this.fixPopupPosotion(positioner);
+                }
+            } else if (mutation.type === "childList") {
                 if (mutation.target.id === "uitools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
+                        if (newNode.className.startsWith("_Tooltip_orqi")) {
+                            this.fixPopupStyle(newNode);
+                        }
+
                         // legendary: aspect, affix, temper, leg node, glyph, rune
                         if (newNode.querySelector("div.d4t-tip-legendary")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
@@ -75,6 +85,51 @@ class D4MaxrollProcessor {
                     }
                 }
             }
+        }
+    }
+
+    fixPopupStyle(node) {
+        // reduce font size for fix disabled scroll
+
+        const mainNode = node.querySelector("div.d4t-GameTooltip");
+        if (mainNode) {
+            mainNode.style["font-size"] = "16px";
+            mainNode.style["min-width"] = "400px";
+        }
+
+        const tagNodes = node.querySelectorAll("div.d4t-SkillTagTooltip");
+        for (const tagNode of tagNodes) {
+            tagNode.style["font-size"] = "14px";
+        }
+    }
+
+    fixPopupPosotion(node) {
+        if (!node || !node.style["top"]) {
+            return false;
+        }
+
+        const maxHeight = window.innerHeight;
+        const nodeRect = node.getBoundingClientRect();
+        const currentTop = nodeRect.top;
+        let newTop = currentTop;
+
+        if (nodeRect.top > 0 && maxHeight < nodeRect.bottom) {
+            newTop = maxHeight - nodeRect.height;
+
+            if (newTop < 0) {
+                newTop = 0;
+            }
+        }
+        else if (nodeRect.top < 0 && maxHeight > nodeRect.bottom) {
+            newTop = maxHeight - nodeRect.height;
+
+            if (newTop > 0) {
+                newTop = 0;
+            }
+        }
+
+        if (newTop !== currentTop) {
+            node.style["top"] = `${newTop}px`;
         }
     }
 
@@ -308,7 +363,7 @@ class D4MaxrollProcessor {
 
     setAffixNodeTargetValue(node, className, targetValue) {
         const newNode = document.createElement("div");
-        newNode.style["margin-top"] = "5px";
+        newNode.style["margin-top"] = "0.3em";
         newNode.style.opacity = "0.6";
         node.parentNode.insertBefore(newNode, node);
 
@@ -330,6 +385,6 @@ class D4MaxrollProcessor {
     }
 
     buildHtmlValue(className, value) {
-        return `<div class="d4br_show ${className}" style="color:darkgray; font-size:18px;">${value}</div>`;
+        return `<div class="d4br_show ${className}" style="color:darkgray;">${value}</div>`;
     }
 }
