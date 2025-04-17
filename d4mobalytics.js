@@ -130,14 +130,23 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        let temperValueSource = "";
-        if (temperValueNode) {
-            const nodeText = temperValueNode?.innerText;
-            const end = nodeText.length - temperName.length - 1;
-            temperValueSource = nodeText.substring(0, end);
+        let sourceTemperValue;
+        const temperValueNodeText = temperValueNode?.innerText;
+        if (temperValueNodeText) {
+            const temperValueEnd = temperValueNodeText.length - temperName.length - 1;
+            const temperValueSource = temperValueNodeText.substring(0, temperValueEnd);
+
+            const temperValueMath = temperValueSource.match(/([^:]+): (.+)/);
+            if (temperValueMath) {
+                sourceTemperValue = temperValueMath[2];
+            }
         }
 
-        const sourceItem = this.getTemperSourceItem(charClassName, temperName, temperValueSource);
+        if (!sourceTemperValue) {
+            return false;
+        }
+
+        const sourceItem = this.getTemperSourceItem(charClassName, sourceTemperValue);
         if (!sourceItem) {
             return false;
         }
@@ -155,38 +164,38 @@ class D4MobalyticsProcessor {
         return this.setTemperNodeTargetValue(temperNameNode, "d4br_temper_name", targetTemperValue);
     }
 
-    getTemperSourceItem(charClassName, temperName, temperValueSource) {
-        const fixedTemperName = temperName
-            .replace("Wordly", "Worldly")
-            .replace(/^Ultimate Efficiency$/, "Ultimate Efficiency - Rogue")
-            .replace("Summoning Finesse", "Minion Finesse")
-            .replace("Berserking Augments", "Berserking Innovation")
-            .replace("Summoning Augments", "Minion Augments");
-
-        let sourceTemperType = "";
-        let sourceTemperValue = "";
-        if (temperValueSource) {
-            const fixedTemperValueSource = temperValueSource
-                .replace("Weapon:", "Weapons:")
-                .replace("Movement Speed for X Seconds", "Movement Speed for 4 Seconds")
-                .replace("Movement Speed for Seconds", "Movement Speed for 4 Seconds");
-
-            const temperValueMath = fixedTemperValueSource.match(/([^:]+): (.+)/);
-            if (temperValueMath) {
-                sourceTemperType = temperValueMath[1];
-                sourceTemperValue = temperValueMath[2];
-            }
-        }
+    getTemperSourceItem(charClassName, sourceTemperValue) {
+        const fixedTemperValue = sourceTemperValue
+            .replace("Movement Speed for X Seconds", "Movement Speed for 4 Seconds")
+            .replace("Movement Speed for Seconds", "Movement Speed for 4 Seconds");
 
         const tempers = this.sourceLanguage.tempers
             .filter(i => {
                 return !i.classes || i.classes.length === 0 ||
                     (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
             })
-            .filter(i => !sourceTemperType || StringExtension.equelsIgnoreCase(i.type, sourceTemperType))
             .filter(i => i.details);
 
-        const sourceItems = tempers.filter(i => StringExtension.equelsIgnoreCase(i.name, fixedTemperName));
+        let sourceItems = tempers.filter(t => {
+            const details = t.details.filter(d => {
+                var names = d.names.filter(n => {
+                    const valueRegex = this.buildTemperValueRegex(n);
+                    const valueMatch = fixedTemperValue.match(valueRegex);
+
+                    if (valueMatch &&
+                        valueMatch.index === 0 &&
+                        valueMatch[0] === fixedTemperValue) {
+                        return true;
+                    }
+                });
+                return names.length === 1;
+            });
+
+            if (details.length === 1) {
+                t.detail = details[0];
+                return true;
+            }
+        });
 
         if (sourceItems.length === 0) {
             return null;
@@ -206,27 +215,7 @@ class D4MobalyticsProcessor {
             }
         }
 
-        const sourceItem = sourceItems[0];
-
-        const sourceDetails = sourceItem.details.filter(d => {
-            var names = d.names.filter(n => {
-                const valueRegex = this.buildTemperValueRegex(n);
-                const valueMatch = sourceTemperValue.match(valueRegex);
-
-                if (valueMatch &&
-                    valueMatch.index === 0 &&
-                    valueMatch[0] === sourceTemperValue) {
-                    return true;
-                }
-            });
-            return names.length === 1;
-        });
-
-        if (sourceDetails.length === 1) {
-            sourceItem.detail = sourceDetails[0];
-        }
-
-        return sourceItem;
+        return sourceItems[0];
     }
 
     unqItemNameProcess(node) {

@@ -46,6 +46,9 @@ namespace Importer.Custom.Temper
             [2007850] = (temper) =>
                 AddAlternativeDetailName(temper, $"{TemperReader.ValueMacros}Damage per Dark Shroud Shadow", $"{TemperReader.ValueMacros}Damage per Dark Shroud"),
 
+            [2058740] = (temper) =>
+                AddAlternativeDetailName(temper, $"{TemperReader.ValueMacros}Storm Feather Potency", $"{TemperReader.ValueMacros}Spirit Feather Potency"),
+
             [2058798] = (temper) =>
                 AddAlternativeDetailName(temper, $"{TemperReader.ValueMacros}Razor Wings Charges", $"{TemperReader.ValueMacros}Razor Wing Charges"),
 
