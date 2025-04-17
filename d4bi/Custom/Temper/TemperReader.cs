@@ -8,7 +8,7 @@ namespace Importer.Custom.Temper
 {
     internal class TemperReader : ResourceReader<TemperItem>
     {
-        public const string ValueRegex = @" ?\+? ?[X0-9\.,\-% \[\]]+ ?";
+        public const string ValueMacros = " X ";
 
         private readonly TemperSource _source;
 
@@ -44,7 +44,7 @@ namespace Importer.Custom.Temper
                 await page.GoToAsync(temperUrl, waitUntil: WaitUntilNavigation.DOMContentLoaded);
 
                 await FillPropertesAsync(item, page);
-                await FillValuesAsync(item, page);
+                await FillDetalesAsync(item, page);
             }
         }
 
@@ -56,25 +56,16 @@ namespace Importer.Custom.Temper
             item.InternalType = GetTemperType(internalName);
         }
 
-        private async Task FillValuesAsync(TemperItem item, IPage page)
+        private async Task FillDetalesAsync(TemperItem item, IPage page)
         {
-            var values = await page.EvaluateFunctionAsync<List<string>>(_source.ValuesScript);
+            var details = await page.EvaluateFunctionAsync<List<string>>(_source.DetailsScript);
 
-            item.Values = values.Select(v =>
-            {
-                return Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", "XXX")
-                    .Replace("$", "\\$")
-                    .Replace("^", "\\^")
-                    .Replace(".", "\\.")
-                    .Replace("+", "\\+")
-                    .Replace("*", "\\*")
-                    .Replace("(", "\\(")
-                    .Replace(")", "\\)")
-                    .Replace("[", "\\[")
-                    .Replace("]", "\\]")
-                    .Replace(" X ", " XXX ")
-                    .Replace("XXX", ValueRegex); // for js regex
-            }).ToList();
+            item.Details = details
+                .Select((v, i) =>
+                {
+                    var name = Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", ValueMacros);
+                    return new TemperDetail(i + 1, name);
+                }).ToList();
         }
 
         protected TemperType GetTemperType(string? internalName)

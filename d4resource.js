@@ -33,6 +33,8 @@ class Language {
     static skills = "skills";
     static tempers = "tempers";
 
+    static temperValueMacros = " X ";
+
     constructor() {
         if (this.constructor == Language) {
             throw new Error("Abstract classes can't be instantiated.");
@@ -82,8 +84,34 @@ class Language {
         return skillItem.name;
     }
 
+    buildTemperValueRegex(value) {
+        return value
+            .replace("$", "\\$")
+            .replace("^", "\\^")
+            .replace(".", "\\.")
+            .replace("+", "\\+")
+            .replace("*", "\\*")
+            .replace("(", "\\(")
+            .replace(")", "\\)")
+            .replace("[", "\\[")
+            .replace("]", "\\]")
+            .replace(Language.temperValueMacros, " ?(\\+? ?[X0-9\\.,\\-% \\[\\]]+) ?");
+    }
+
     getTemperValue(temperItem) {
-        return temperItem.type + " - " + temperItem.name;
+        const names = [temperItem.type, temperItem.name];
+
+        if (temperItem.detail && temperItem.detail.names.length > 0) {
+            let detailName = temperItem.detail.names[0];
+
+            if (temperItem.detail.value) {
+                detailName = detailName.replace(Language.temperValueMacros, ` ${temperItem.detail.value} `);
+            }
+
+            names.push(detailName.trim());
+        }
+
+        return names.join(" ● ");
     }
 }
 

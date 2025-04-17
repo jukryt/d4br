@@ -13,6 +13,6 @@ namespace Importer.Custom.Temper
 
         public required string DetailsUrlTemplate { get; init; }
         public required string PropertiesScript { get; init; }
-        public required string ValuesScript { get; init; }
+        public required string DetailsScript { get; init; }
     }
 }

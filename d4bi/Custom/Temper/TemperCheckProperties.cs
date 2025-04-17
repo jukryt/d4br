@@ -10,8 +10,8 @@ namespace Importer.Custom.Temper
             foreach (var item in items)
             {
                 if (string.IsNullOrEmpty(item.Type) ||
-                    item.Values.Count == 0 ||
-                    item.Values.Any(v => v.Contains('\n')))
+                    item.Details.Count == 0 ||
+                    item.Details.Any(v => v.Names.Count == 0 || v.Names.Any(n => n.Contains('\n'))))
                     reporter.WriteMessage($"Id: {item.Id} - invalid", nameof(TemperCheckProperties));
             }
         }
