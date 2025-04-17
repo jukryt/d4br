@@ -6,10 +6,25 @@
       "Barbarian"
     ],
     "type": "Utility",
-    "values": [
-      "Steel Grasp Stuns for ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Seconds",
-      "Upheaval Overpowers Stun for ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Seconds",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Concussion"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Steel Grasp Stuns for X Seconds"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Upheaval Overpowers Stun for X Seconds"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Concussion"
+        ]
+      }
     ]
   },
   {
@@ -19,10 +34,25 @@
       "Barbarian"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ground Stomp Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Iron Skin Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Challenging Shout Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Ground Stomp Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Iron Skin Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Challenging Shout Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -32,10 +62,25 @@
       "Barbarian"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Cut to the Bone",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Rend to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Rupture to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X to Cut to the Bone"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Rend to Hit Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Rupture to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -45,12 +90,37 @@
       "Barbarian"
     ],
     "type": "Mobility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed for 4 Seconds After Killing an Elite",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lunging Strike Range",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Charge Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Leap Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Movement Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Movement Speed for 4 Seconds After Killing an Elite"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Lunging Strike Range"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Charge Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 5,
+        "names": [
+          " X Leap Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -60,10 +130,25 @@
       "Barbarian"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Double Swing Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Whirlwind Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Berserking Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Double Swing Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Whirlwind Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Berserking Duration"
+        ]
+      }
     ]
   },
   {
@@ -73,11 +158,31 @@
       "Barbarian"
     ],
     "type": "Resource",
-    "values": [
-      "Casting Ultimate Skills Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Call of the Ancients Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Iron Maelstrom Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Wrath of the Berserker Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Casting Ultimate Skills Restores X Primary Resource"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Call of the Ancients Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Iron Maelstrom Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Wrath of the Berserker Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -87,11 +192,31 @@
       "Barbarian"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Weapon Mastery Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Death Blow Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rupture Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Steel Grasp Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Weapon Mastery Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Death Blow Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Rupture Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Steel Grasp Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -101,10 +226,25 @@
       "Barbarian"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Brawling Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Kick Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?War Cry Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Brawling Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Kick Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X War Cry Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -114,10 +254,25 @@
       "Barbarian"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lunging Strike Healing",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Raid Leader",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Invigorating Fury"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Lunging Strike Healing"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Raid Leader"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Invigorating Fury"
+        ]
+      }
     ]
   },
   {
@@ -127,10 +282,25 @@
       "Barbarian"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage with Two-Handed Bludgeoning Weapons",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage with Dual-Wielded Weapons",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage with Two-Handed Slashing Weapons"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Damage with Two-Handed Bludgeoning Weapons"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Damage with Dual-Wielded Weapons"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Damage with Two-Handed Slashing Weapons"
+        ]
+      }
     ]
   },
   {
@@ -140,11 +310,31 @@
       "Barbarian"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage while Berserking",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage while Wrath of the Berserker is Active",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage while War Cry is Active",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Dust Devil Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Damage while Berserking"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Damage while Wrath of the Berserker is Active"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Damage while War Cry is Active"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Dust Devil Damage"
+        ]
+      }
     ]
   },
   {
@@ -154,73 +344,193 @@
       "Barbarian"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Brawling Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Weapon Mastery Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage when Swapping Weapons"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Brawling Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Weapon Mastery Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Damage when Swapping Weapons"
+        ]
+      }
     ]
   },
   {
     "id": 1862424,
     "name": "Worldly Fortune",
     "type": "Utility",
-    "values": [
-      "Lucky Hit: Up to a ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance to Slow for 2 Seconds",
-      "Lucky Hit: Up to a ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance to Immobilize for 2 Seconds",
-      "Lucky Hit: Up to a ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance to Stun for 2 Seconds",
-      "Lucky Hit: Up to a ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance to Freeze for 2 Seconds"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Slow for 2 Seconds"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Immobilize for 2 Seconds"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Stun for 2 Seconds"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Freeze for 2 Seconds"
+        ]
+      }
     ]
   },
   {
     "id": 1862428,
     "name": "Worldly Endurance",
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Maximum Life",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Total Armor",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Dodge Chance"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Maximum Life"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Total Armor"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Dodge Chance"
+        ]
+      }
     ]
   },
   {
     "id": 1862434,
     "name": "Worldly Stability",
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Resource Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Resource Cost Reduction",
-      "Lucky Hit: Up to a 15% Chance to Restore ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Resource Cost Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource"
+        ]
+      }
     ]
   },
   {
     "id": 1862442,
     "name": "Natural Motion",
     "type": "Mobility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed for 4 Seconds After Killing an Elite",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Mobility Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Evade Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Movement Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Movement Speed for 4 Seconds After Killing an Elite"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Mobility Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Evade Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
     "id": 1862444,
     "name": "Natural Schemes",
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Thorns",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Crowd Control Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Barrier Generation"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Thorns"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Crowd Control Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Barrier Generation"
+        ]
+      }
     ]
   },
   {
     "id": 1862450,
     "name": "Natural Finesse",
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Crowd Controlled Enemies",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Close Enemies",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Distant Enemies"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Damage to Crowd Controlled Enemies"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Damage to Close Enemies"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Damage to Distant Enemies"
+        ]
+      }
     ]
   },
   {
@@ -230,11 +540,31 @@
       "Necromancer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Corpse Explosion Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Corpse Tendrils Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Curse Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Curse Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Corpse Explosion Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Corpse Tendrils Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Curse Size"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Curse Duration"
+        ]
+      }
     ]
   },
   {
@@ -244,11 +574,31 @@
       "Necromancer"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ultimate Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Golem Active Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Bone Spirit Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Rapid Ossification"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Ultimate Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Golem Active Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Bone Spirit Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X to Rapid Ossification"
+        ]
+      }
     ]
   },
   {
@@ -258,13 +608,28 @@
       "Necromancer"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Summon Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Skeleton Mage Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Golem Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Summoning Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Skeletal Mages Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Golems Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Summon Damage",
+          " X Summoning Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Skeleton Mage Damage",
+          " X Skeletal Mages Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Golem Damage",
+          " X Golems Damage"
+        ]
+      }
     ]
   },
   {
@@ -274,11 +639,31 @@
       "Necromancer"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Hemorrhage to Form Blood Orbs",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blood Orb Healing",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blood Mist Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blood Mist Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Hemorrhage to Form Blood Orbs"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Blood Orb Healing"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Blood Mist Duration"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Blood Mist Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -288,10 +673,25 @@
       "Necromancer"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blight Chill Potency",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Corpse Tendrils Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Crippling Darkness"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Blight Chill Potency"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Corpse Tendrils Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Crippling Darkness"
+        ]
+      }
     ]
   },
   {
@@ -301,11 +701,31 @@
       "Necromancer"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blood Attack Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blood Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blood Overpower Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage while Fortified"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Blood Attack Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Blood Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Blood Overpower Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Damage while Fortified"
+        ]
+      }
     ]
   },
   {
@@ -315,10 +735,25 @@
       "Necromancer"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Bone Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Bone Critical Strike Chance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Bone Critical Strike Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Bone Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Bone Critical Strike Chance"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Bone Critical Strike Damage"
+        ]
+      }
     ]
   },
   {
@@ -328,10 +763,25 @@
       "Necromancer"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Shadow Damage Over Time",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Darkness Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Desecrated Ground Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Shadow Damage Over Time"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Darkness Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Desecrated Ground Damage"
+        ]
+      }
     ]
   },
   {
@@ -341,10 +791,25 @@
       "Rogue"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Chilling Weight",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Shadow Crash",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Flurry Size"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X to Chilling Weight"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Shadow Crash"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Flurry Size"
+        ]
+      }
     ]
   },
   {
@@ -354,10 +819,25 @@
       "Rogue"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Puncture Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Heartseeker Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Forceful Arrow Projectiles to Cast Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Puncture Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Heartseeker Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Forceful Arrow Projectiles to Cast Twice"
+        ]
+      }
     ]
   },
   {
@@ -367,11 +847,31 @@
       "Rogue"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Agility Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Shadow Step Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Caltrops Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Dash Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Agility Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Shadow Step Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Caltrops Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Dash Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -381,11 +881,31 @@
       "Rogue"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Vulnerable Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cutthroat Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cutthroat Attack Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cutthroat Critical Strike Chance"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Vulnerable Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Cutthroat Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Cutthroat Attack Speed"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Cutthroat Critical Strike Chance"
+        ]
+      }
     ]
   },
   {
@@ -395,10 +915,25 @@
       "Rogue"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Concealment Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Concealment Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Aftermath"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Concealment Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Concealment Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Aftermath"
+        ]
+      }
     ]
   },
   {
@@ -408,10 +943,25 @@
       "Rogue"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Flurry Healing",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Siphoning Strikes",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Mending Obscurity"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Flurry Healing"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Siphoning Strikes"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Mending Obscurity"
+        ]
+      }
     ]
   },
   {
@@ -421,11 +971,31 @@
       "Rogue"
     ],
     "type": "Mobility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed from Blade Shift",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed per Dark Shroud Shadow",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Shadow Step Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Stutter Step"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Movement Speed from Blade Shift"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Movement Speed per Dark Shroud Shadow"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Shadow Step Duration"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X to Stutter Step"
+        ]
+      }
     ]
   },
   {
@@ -435,10 +1005,25 @@
       "Rogue"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Death Trap to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Caltrops to Consume No Charges",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Poison Trap Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Death Trap to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Caltrops to Consume No Charges"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Poison Trap Duration"
+        ]
+      }
     ]
   },
   {
@@ -448,13 +1033,28 @@
       "Rogue"
     ],
     "type": "Utility",
-    "values": [
-      "Shadow Imbue Lasts For ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cast",
-      "Poison Imbue Lasts For ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cast",
-      "Cold Imbue Lasts For ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cast",
-      "Shadow Imbue Lasts For ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Casts",
-      "Poison Imbue Lasts For ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Casts",
-      "Cold Imbue Lasts For ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Casts"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Shadow Imbue Lasts For X Cast",
+          "Shadow Imbue Lasts For X Casts"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Poison Imbue Lasts For X Cast",
+          "Poison Imbue Lasts For X Casts"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Cold Imbue Lasts For X Cast",
+          "Cold Imbue Lasts For X Casts"
+        ]
+      }
     ]
   },
   {
@@ -464,11 +1064,31 @@
       "Rogue"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Subterfuge Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Trap Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Poison Trap Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Dark Shroud Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Subterfuge Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Trap Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Poison Trap Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Dark Shroud Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -478,10 +1098,25 @@
       "Rogue"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Critical Strike Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Marksman Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Marksman Critical Strike Chance"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Critical Strike Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Marksman Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Marksman Critical Strike Chance"
+        ]
+      }
     ]
   },
   {
@@ -491,11 +1126,31 @@
       "Rogue"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Agility Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Core Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ultimate Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Stun Grenade Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Agility Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Core Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Ultimate Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Stun Grenade Damage"
+        ]
+      }
     ]
   },
   {
@@ -505,11 +1160,26 @@
       "Rogue"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Poisoned Enemies",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Enemies Affected by Trap Skills",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Imbued Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Trapped Enemies"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Damage to Poisoned Enemies"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Damage to Enemies Affected by Trap Skills",
+          " X Damage to Trapped Enemies"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Imbued Damage"
+        ]
+      }
     ]
   },
   {
@@ -519,11 +1189,31 @@
       "Barbarian"
     ],
     "type": "Weapons",
-    "values": [
-      "Bash Cleaves for ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Frenzy to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Lunging Strike to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Flay Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Bash Cleaves for X Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Frenzy to Hit Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Lunging Strike to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Flay Duration"
+        ]
+      }
     ]
   },
   {
@@ -533,10 +1223,25 @@
       "Barbarian"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Dust Devils to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Earthquakes to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Earthquake Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Dust Devils to Cast Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Earthquakes to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Earthquake Duration"
+        ]
+      }
     ]
   },
   {
@@ -546,10 +1251,25 @@
       "Barbarian"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ground Stomp Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Leap Slam Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Dust Devil Size"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Ground Stomp Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Leap Slam Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Dust Devil Size"
+        ]
+      }
     ]
   },
   {
@@ -559,10 +1279,25 @@
       "Barbarian"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Thorns while Fortified",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Outburst",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Tough as Nails"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Thorns while Fortified"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Outburst"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Tough as Nails"
+        ]
+      }
     ]
   },
   {
@@ -572,11 +1307,31 @@
       "Necromancer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Army of the Dead to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Skeletal Mage Attacks to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Skeleton Warriors to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Golem to Hit Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Army of the Dead to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Skeletal Mage Attacks to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Skeleton Warriors to Hit Twice"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Golem to Hit Twice"
+        ]
+      }
     ]
   },
   {
@@ -586,11 +1341,31 @@
       "Necromancer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Blood Surge to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Blood Lance to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Hemorrhage to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Blood Wave to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Blood Surge to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Blood Lance to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Hemorrhage to Hit Twice"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Blood Wave to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -600,11 +1375,31 @@
       "Necromancer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Bone Splinters Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Bone Spear Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Bone Spirit to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Bone Storm to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Bone Splinters Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Bone Spear Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Bone Spirit to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Bone Storm to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -614,11 +1409,31 @@
       "Necromancer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Decompose to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Blight Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Soulrift to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Affliction to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Decompose to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Blight Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Soulrift to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Affliction to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -628,10 +1443,25 @@
       "Rogue"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Barrage Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Rapid Fire Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Penetrating Shot Projectiles to Cast Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Barrage Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Rapid Fire Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Penetrating Shot Projectiles to Cast Twice"
+        ]
+      }
     ]
   },
   {
@@ -641,11 +1471,31 @@
       "Rogue"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Puncture Resource Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Invigorating Strike Energy Regeneration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Innervation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Adrenaline Rush"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Puncture Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Invigorating Strike Energy Regeneration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Innervation"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X to Adrenaline Rush"
+        ]
+      }
     ]
   },
   {
@@ -655,10 +1505,25 @@
       "Druid"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cyclone Armor Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Earthen Bulwark Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Earthen Bulwark Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Cyclone Armor Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Earthen Bulwark Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Earthen Bulwark Duration"
+        ]
+      }
     ]
   },
   {
@@ -668,11 +1533,31 @@
       "Druid"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Earth Spike Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Landslide Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Boulder Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Stone Burst to Cast Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Earth Spike Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Landslide Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Boulder Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Stone Burst to Cast Twice"
+        ]
+      }
     ]
   },
   {
@@ -682,10 +1567,25 @@
       "Druid"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Hurricane Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Boulder Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rabies Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Hurricane Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Boulder Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Rabies Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -695,10 +1595,25 @@
       "Druid"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Wolves to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Poison Creeper to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Ravens to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Wolves to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Poison Creeper to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Ravens to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -708,11 +1623,31 @@
       "Druid"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blood Howl Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Debilitating Roar Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Debilitating Roar Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Nature's Resolve"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Blood Howl Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Debilitating Roar Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Debilitating Roar Duration"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X to Nature's Resolve"
+        ]
+      }
     ]
   },
   {
@@ -722,11 +1657,31 @@
       "Druid"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Wolves Attack Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ravens Attack Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Poison Creeper Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ravens Active Size"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Wolves Attack Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Ravens Attack Speed"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Poison Creeper Duration"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Ravens Active Size"
+        ]
+      }
     ]
   },
   {
@@ -736,10 +1691,25 @@
       "Druid"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Wind Shear Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Tornado Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Hurricane to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Wind Shear Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Tornado Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Hurricane to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -749,12 +1719,32 @@
       "Druid"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Shred to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rabies Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lacerate Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Claw to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Shred to Hit Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Shred to Deal Double Damage",
+          " X Chance for Shred to Hit Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Rabies Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Lacerate Duration"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Claw to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -764,11 +1754,31 @@
       "Druid"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Companion Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Wolves Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Poison Creeper Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ravens Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Companion Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Wolves Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Poison Creeper Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Ravens Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -778,10 +1788,25 @@
       "Druid"
     ],
     "type": "Resource",
-    "values": [
-      "Casting Wrath Skills Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource",
-      "Casting Ultimate Skills Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Abundance"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Casting Wrath Skills Restores X Primary Resource"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Casting Ultimate Skills Restores X Primary Resource"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Abundance"
+        ]
+      }
     ]
   },
   {
@@ -791,10 +1816,25 @@
       "Druid"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Earth Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Earth Lucky Hit Chance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Earth Critical Strike Chance"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Earth Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Earth Lucky Hit Chance"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Earth Critical Strike Chance"
+        ]
+      }
     ]
   },
   {
@@ -804,10 +1844,25 @@
       "Druid"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Storm Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lightning Bolt Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Storm Critical Strike Chance"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Storm Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Lightning Bolt Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Storm Critical Strike Chance"
+        ]
+      }
     ]
   },
   {
@@ -817,10 +1872,25 @@
       "Druid"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Werebear Overpower Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Grizzly Rage Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage while Fortified"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Werebear Overpower Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Grizzly Rage Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Damage while Fortified"
+        ]
+      }
     ]
   },
   {
@@ -830,23 +1900,68 @@
       "Barbarian"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Basic Resource Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Resource Generation with Two-Handed Bludgeoning Weapons",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Resource Generation with Dual-Wielded Weapons",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Resource Generation with Two-Handed Slashing Weapons"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Basic Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Resource Generation with Two-Handed Bludgeoning Weapons"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Resource Generation with Dual-Wielded Weapons"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Resource Generation with Two-Handed Slashing Weapons"
+        ]
+      }
     ]
   },
   {
     "id": 1924895,
     "name": "Natural Resistance",
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Fire Resistance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lightning Resistance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cold Resistance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Poison Resistance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Shadow Resistance"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Fire Resistance"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Lightning Resistance"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Cold Resistance"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Poison Resistance"
+        ]
+      },
+      {
+        "id": 5,
+        "names": [
+          " X Shadow Resistance"
+        ]
+      }
     ]
   },
   {
@@ -856,10 +1971,25 @@
       "Necromancer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Sever to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Reap to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Corpse Explosion to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Sever to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Reap to Hit Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Corpse Explosion to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -869,12 +1999,32 @@
       "Necromancer"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Enemies Affected by Curse Skills",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Macabre Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Iron Maiden Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Corpse Tendrils Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Cursed Enemies"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Damage to Enemies Affected by Curse Skills",
+          " X Damage to Cursed Enemies"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Macabre Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Iron Maiden Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Corpse Tendrils Damage"
+        ]
+      }
     ]
   },
   {
@@ -884,10 +2034,25 @@
       "Necromancer"
     ],
     "type": "Mobility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed for 4 Seconds After Killing an Elite",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed during Blood Mist"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Movement Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Movement Speed for 4 Seconds After Killing an Elite"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Movement Speed during Blood Mist"
+        ]
+      }
     ]
   },
   {
@@ -897,10 +2062,25 @@
       "Necromancer"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Basic Resource Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Resource Generation with Two-Handed Weapons",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Resource Generation while Wielding a Shield"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Basic Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Resource Generation with Two-Handed Weapons"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Resource Generation while Wielding a Shield"
+        ]
+      }
     ]
   },
   {
@@ -910,12 +2090,27 @@
       "Necromancer"
     ],
     "type": "Resource",
-    "values": [
-      "Blood Orbs Restore ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Essence",
-      "Casting Macabre Skills Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource",
-      "Casting Ultimate Skills Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource",
-      "Blood Orbs Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Essence",
-      "Casting Macabrre Skills Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Blood Orbs Restore X Essence",
+          "Blood Orbs Restores X Essence"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Casting Macabre Skills Restores X Primary Resource",
+          "Casting Macabrre Skills Restores X Primary Resource"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Casting Ultimate Skills Restores X Primary Resource"
+        ]
+      }
     ]
   },
   {
@@ -925,11 +2120,26 @@
       "Necromancer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Thorns while Fortified",
-      "Minions Inherit ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?of Your Thorns",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Spiked Armor",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Spiked Armor"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Thorns while Fortified"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Minions Inherit X of Your Thorns"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Spiked Armor",
+          " X Spiked Armor"
+        ]
+      }
     ]
   },
   {
@@ -939,10 +2149,25 @@
       "Rogue"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage per Combo Point Spent",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Shadow Clone Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Inner Sight Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Damage per Combo Point Spent"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Shadow Clone Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Inner Sight Duration"
+        ]
+      }
     ]
   },
   {
@@ -952,10 +2177,25 @@
       "Druid"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Maul to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Pulverize to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Trample to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Maul to Hit Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Pulverize to Hit Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Trample to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -965,10 +2205,25 @@
       "Druid"
     ],
     "type": "Mobility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Trample Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Digitigrade Gait"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Movement Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Trample Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Digitigrade Gait"
+        ]
+      }
     ]
   },
   {
@@ -978,10 +2233,25 @@
       "Sorcerer"
     ],
     "type": "Defensive",
-    "values": [
-      "Lucky Hit: Up to a 15% Chance to Heal ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Life",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Flame Shield Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Warmth"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Lucky Hit: Up to a 15% Chance to Heal X Life"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Flame Shield Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Warmth"
+        ]
+      }
     ]
   },
   {
@@ -991,11 +2261,31 @@
       "Sorcerer"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Fire Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Pyromancy Attack Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Pyromancy Critical Strike Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Mastery Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Fire Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Pyromancy Attack Speed"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Pyromancy Critical Strike Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Mastery Damage"
+        ]
+      }
     ]
   },
   {
@@ -1005,10 +2295,25 @@
       "Sorcerer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Fire Bolt Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Fireball Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Meteor to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Fire Bolt Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Fireball Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Meteor to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -1018,11 +2323,31 @@
       "Sorcerer"
     ],
     "type": "Mobility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Movement Speed for 4 Seconds After Killing an Elite",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Teleport Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Conduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Movement Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Movement Speed for 4 Seconds After Killing an Elite"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Teleport Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X to Conduction"
+        ]
+      }
     ]
   },
   {
@@ -1032,10 +2357,25 @@
       "Sorcerer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Immobilize Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Stun Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Freeze Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Immobilize Duration"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Stun Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Freeze Duration"
+        ]
+      }
     ]
   },
   {
@@ -1045,11 +2385,31 @@
       "Sorcerer"
     ],
     "type": "Resource",
-    "values": [
-      "Casting Ultimate Skills Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Deep Freeze Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Inferno Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Unstable Currents Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Casting Ultimate Skills Restores X Primary Resource"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Deep Freeze Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Inferno Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Unstable Currents Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -1059,11 +2419,31 @@
       "Sorcerer"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Frost Nova Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ice Armor Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chill Slow Potency",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Cold Front"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Frost Nova Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Ice Armor Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chill Slow Potency"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X to Cold Front"
+        ]
+      }
     ]
   },
   {
@@ -1073,10 +2453,25 @@
       "Sorcerer"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cold Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Vulnerable Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Frozen Enemies"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Cold Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Vulnerable Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Damage to Frozen Enemies"
+        ]
+      }
     ]
   },
   {
@@ -1086,11 +2481,31 @@
       "Sorcerer"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lightning Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Shock Critical Strike Chance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Shock Critical Strike Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Crackling Energy Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Lightning Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Shock Critical Strike Chance"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Shock Critical Strike Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Crackling Energy Damage"
+        ]
+      }
     ]
   },
   {
@@ -1100,10 +2515,25 @@
       "Sorcerer"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Invigorating Conduit",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Frigid Breeze",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Fiery Surge"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X to Invigorating Conduit"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Frigid Breeze"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Fiery Surge"
+        ]
+      }
     ]
   },
   {
@@ -1113,10 +2543,25 @@
       "Sorcerer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Frost Bolt Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Frozen Orb Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Ice Shards Projectiles to Cast Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Frost Bolt Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Frozen Orb Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Ice Shards Projectiles to Cast Twice"
+        ]
+      }
     ]
   },
   {
@@ -1126,10 +2571,25 @@
       "Sorcerer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Spark Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Chain Lightning to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Ball Lightning Projectiles to Cast Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Spark Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Chain Lightning to Hit Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Ball Lightning Projectiles to Cast Twice"
+        ]
+      }
     ]
   },
   {
@@ -1139,11 +2599,31 @@
       "Sorcerer"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Hydra Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ice Blades Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lightning Spear Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Familiar Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Hydra Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Ice Blades Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Lightning Spear Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Familiar Damage"
+        ]
+      }
     ]
   },
   {
@@ -1153,11 +2633,31 @@
       "Sorcerer"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Hydra Resource Cost Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ice Blades Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lightning Spear Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Familiar Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Hydra Resource Cost Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Ice Blades Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Lightning Spear Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Familiar Duration"
+        ]
+      }
     ]
   },
   {
@@ -1167,20 +2667,50 @@
       "Rogue"
     ],
     "type": "Utility",
-    "values": [
-      "Lucky Hit: Up to a ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance to Daze for 2 Seconds",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Smoke Grenade Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Smoke Grenade Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Daze for 2 Seconds"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Smoke Grenade Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Smoke Grenade Duration"
+        ]
+      }
     ]
   },
   {
     "id": 1928679,
     "name": "Elemental Surge - Day",
     "type": "Weapons",
-    "values": [
-      "Lucky Hit: Up to a 40% Chance to Deal ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Physical Damage",
-      "Lucky Hit: Up to a 40% Chance to Deal ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Fire Damage",
-      "Lucky Hit: Up to a 40% Chance to Deal ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lightning Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Lucky Hit: Up to a 40% Chance to Deal X Physical Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Lucky Hit: Up to a 40% Chance to Deal X Fire Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Lucky Hit: Up to a 40% Chance to Deal X Lightning Damage"
+        ]
+      }
     ]
   },
   {
@@ -1190,10 +2720,25 @@
       "Sorcerer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Snap Freeze",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Crippling Flames",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Convulsions"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X to Snap Freeze"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Crippling Flames"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Convulsions"
+        ]
+      }
     ]
   },
   {
@@ -1203,12 +2748,32 @@
       "Sorcerer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Hydra Lucky Hit Chance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ice Blades Lucky Hit Chance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lightning Spear Lucky Hit Chance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Familiar Lucky Hit Chance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ice Blade Lucky Hit Chance"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Hydra Lucky Hit Chance"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Ice Blades Lucky Hit Chance",
+          " X Ice Blade Lucky Hit Chance"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Lightning Spear Lucky Hit Chance"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Familiar Lucky Hit Chance"
+        ]
+      }
     ]
   },
   {
@@ -1218,10 +2783,25 @@
       "Rogue"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Maximum Life while Dark Shroud is Active",
-      "Your Potion Also Grants ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Maximum Resistances for 5 Seconds",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Second Wind"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Maximum Life while Dark Shroud is Active"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Your Potion Also Grants X Maximum Resistances for 5 Seconds"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Second Wind"
+        ]
+      }
     ]
   },
   {
@@ -1231,11 +2811,26 @@
       "Sorcerer"
     ],
     "type": "Weapons",
-    "values": [
-      "Casted Hydras Have ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Head",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Lightning Spear to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Familiars to Hit Twice",
-      "Casted Hydras Have ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Heads"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Casted Hydras Have X Head",
+          "Casted Hydras Have X Heads"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Lightning Spear to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Familiars to Hit Twice"
+        ]
+      }
     ]
   },
   {
@@ -1245,13 +2840,33 @@
       "Necromancer"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage Reduction for Your Summons",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance For Minion Attacks to Fortify You for 3% Maximum Life",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Drain Vitality",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Necrotic Carapace",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage Reduction for Your Minons",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for your Minion Attacks to Fortify you for 3% Maximum Life"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Damage Reduction for Your Summons",
+          " X Damage Reduction for Your Minons"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance For Minion Attacks to Fortify You for 3% Maximum Life",
+          " X Chance for your Minion Attacks to Fortify you for 3% Maximum Life"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Drain Vitality"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X to Necrotic Carapace"
+        ]
+      }
     ]
   },
   {
@@ -1261,11 +2876,26 @@
       "Rogue"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage per Dark Shroud Shadow",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage on Next Attack After Entering Stealth",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Smoke Grenade Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage per Dark Shroud"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Damage per Dark Shroud Shadow",
+          " X Damage per Dark Shroud"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Damage on Next Attack After Entering Stealth"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Smoke Grenade Size"
+        ]
+      }
     ]
   },
   {
@@ -1275,10 +2905,25 @@
       "Sorcerer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Teleport to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Arc Lash to Swipe Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Charged Bolts Projectiles to Cast Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Teleport to Hit Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Arc Lash to Swipe Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Charged Bolts Projectiles to Cast Twice"
+        ]
+      }
     ]
   },
   {
@@ -1288,11 +2933,31 @@
       "Druid"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Petrify Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cataclysm Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Lacerate Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Grizzly Rage Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Petrify Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Cataclysm Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Lacerate Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Grizzly Rage Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -1302,10 +2967,25 @@
       "Barbarian"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Earthquake Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Frenzy Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Stun Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Earthquake Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Frenzy Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Stun Duration"
+        ]
+      }
     ]
   },
   {
@@ -1315,11 +2995,31 @@
       "Druid"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Hurricane Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Hurricane Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cyclone Armor Active Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Petrify Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Hurricane Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Hurricane Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Cyclone Armor Active Size"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Petrify Duration"
+        ]
+      }
     ]
   },
   {
@@ -1329,21 +3029,56 @@
       "Rogue"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Invigorating Strike Duration",
-      "Twisting Blades Returns ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Faster",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Heartseeker Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Stun Grenade Size"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Invigorating Strike Duration"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Twisting Blades Returns X Faster"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Heartseeker Duration"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Stun Grenade Size"
+        ]
+      }
     ]
   },
   {
     "id": 2040710,
     "name": "Worldly Finesse",
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Critical Strike Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Vulnerable Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Overpower Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Critical Strike Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Vulnerable Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Overpower Damage"
+        ]
+      }
     ]
   },
   {
@@ -1353,10 +3088,25 @@
       "Barbarian"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Vulnerable Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Injured Enemies",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Physical Damage Over Time"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Vulnerable Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Damage to Injured Enemies"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Physical Damage Over Time"
+        ]
+      }
     ]
   },
   {
@@ -1366,11 +3116,31 @@
       "Spiritborn"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?The Protector Barrier Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Crushing Hand Barrier Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Concussive Stomp Barrier Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Auspicious"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X The Protector Barrier Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Crushing Hand Barrier Generation"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Concussive Stomp Barrier Generation"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X to Auspicious"
+        ]
+      }
     ]
   },
   {
@@ -1380,10 +3150,25 @@
       "Spiritborn"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rock Splitter Block Chance Bonus",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Armored Hide Active Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Patient Guard"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Rock Splitter Block Chance Bonus"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Armored Hide Active Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Patient Guard"
+        ]
+      }
     ]
   },
   {
@@ -1393,10 +3178,25 @@
       "Spiritborn"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Touch of Death Healing Bonus",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Fueled",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Resilient"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Touch of Death Healing Bonus"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Fueled"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Resilient"
+        ]
+      }
     ]
   },
   {
@@ -1406,10 +3206,25 @@
       "Spiritborn"
     ],
     "type": "Defensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Armored Hide Resolve Generation Rate",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Resolve Generated",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Total Armor"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Armored Hide Resolve Generation Rate"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Resolve Generated"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Total Armor"
+        ]
+      }
     ]
   },
   {
@@ -1419,10 +3234,25 @@
       "Spiritborn"
     ],
     "type": "Mobility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Soar Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rushing Claw Charges",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Swift"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Soar Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Rushing Claw Charges"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Swift"
+        ]
+      }
     ]
   },
   {
@@ -1432,11 +3262,31 @@
       "Spiritborn"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Potency Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Pestilent Swarm Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Centipede Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Slowed Enemies"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Potency Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Pestilent Swarm Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Centipede Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Damage to Slowed Enemies"
+        ]
+      }
     ]
   },
   {
@@ -1446,11 +3296,32 @@
       "Spiritborn"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Focus Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Storm Feather Potency",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Eagle Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Vulnerable Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Focus Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Storm Feather Potency",
+          " X Spirit Feather Potency"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Eagle Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Vulnerable Damage"
+        ]
+      }
     ]
   },
   {
@@ -1460,11 +3331,31 @@
       "Spiritborn"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Bastion",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Defensive Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Gorilla Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Knocked-Down Enemies"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X to Bastion"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Defensive Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Gorilla Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Damage to Knocked-Down Enemies"
+        ]
+      }
     ]
   },
   {
@@ -1474,11 +3365,31 @@
       "Spiritborn"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Mobility Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Mystic Circle Potency",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Jaguar Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage to Injured Enemies"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Mobility Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Mystic Circle Potency"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Jaguar Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Damage to Injured Enemies"
+        ]
+      }
     ]
   },
   {
@@ -1488,10 +3399,25 @@
       "Spiritborn"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Withering Fist Resource Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?The Devourer Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Potency Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Withering Fist Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X The Devourer Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Potency Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -1501,12 +3427,32 @@
       "Spiritborn"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Thunderspike Resource Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?The Seeker Charges",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Focus Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Razor Wings Charges",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Razor Wing Charges"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Thunderspike Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X The Seeker Charges"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Focus Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Razor Wings Charges",
+          " X Razor Wing Charges"
+        ]
+      }
     ]
   },
   {
@@ -1516,11 +3462,31 @@
       "Spiritborn"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Vigorous",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Velocity",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Endurance",
-      "Casting Ultimate Skills Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X to Vigorous"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Velocity"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Endurance"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          "Casting Ultimate Skills Restores X Primary Resource"
+        ]
+      }
     ]
   },
   {
@@ -1530,10 +3496,25 @@
       "Spiritborn"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rock Splitter Resource Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?The Protector Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Defensive Cooldown Reduction"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Rock Splitter Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X The Protector Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Defensive Cooldown Reduction"
+        ]
+      }
     ]
   },
   {
@@ -1543,11 +3524,31 @@
       "Spiritborn"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Thrash Resource Generation",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?The Hunter Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Incarnate Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Counterattack Charges"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Thrash Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X The Hunter Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Incarnate Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Counterattack Charges"
+        ]
+      }
     ]
   },
   {
@@ -1557,10 +3558,25 @@
       "Spiritborn"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Withering Fist Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Stinger Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Scourge Size"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Withering Fist Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Stinger Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Scourge Size"
+        ]
+      }
     ]
   },
   {
@@ -1570,10 +3586,25 @@
       "Spiritborn"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Thunderspike Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Vortex Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Soar Size"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Thunderspike Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Vortex Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Soar Size"
+        ]
+      }
     ]
   },
   {
@@ -1583,11 +3614,31 @@
       "Spiritborn"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rock Splitter Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Crushing Hand Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Concussive Stomp Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Armored Hide Active Thorns Bonus"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Rock Splitter Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Crushing Hand Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Concussive Stomp Size"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Armored Hide Active Thorns Bonus"
+        ]
+      }
     ]
   },
   {
@@ -1597,10 +3648,25 @@
       "Spiritborn"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Thrash Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rake Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ravager On Kill Duration Extension"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Thrash Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Rake Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Ravager On Kill Duration Extension"
+        ]
+      }
     ]
   },
   {
@@ -1610,11 +3676,31 @@
       "Spiritborn"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Withering Fist to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Stinger to Extra Hit",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for The Devourer to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Centipede Spirit Hall Potency"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Withering Fist to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Stinger to Extra Hit"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for The Devourer to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Primary Centipede Spirit Hall Potency"
+        ]
+      }
     ]
   },
   {
@@ -1624,11 +3710,31 @@
       "Spiritborn"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Thunderspike to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Quill Volley Projectiles to Cast Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for The Seeker to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Eagle Spirit Hall Potency"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Thunderspike to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Quill Volley Projectiles to Cast Twice"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for The Seeker to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Primary Eagle Spirit Hall Potency"
+        ]
+      }
     ]
   },
   {
@@ -1638,11 +3744,31 @@
       "Spiritborn"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Rock Splitter to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Crushing Hand to Extra Hit",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for The Protector to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Gorilla Spirit Hall Potency"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Rock Splitter to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Crushing Hand to Extra Hit"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for The Protector to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Primary Gorilla Spirit Hall Potency"
+        ]
+      }
     ]
   },
   {
@@ -1652,11 +3778,31 @@
       "Spiritborn"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Thrash to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Rake to Extra Hit",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for The Hunter to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Jaguar Spirit Hall Potency"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Thrash to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Rake to Extra Hit"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for The Hunter to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Primary Jaguar Spirit Hall Potency"
+        ]
+      }
     ]
   },
   {
@@ -1666,10 +3812,25 @@
       "Necromancer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Bone Storm Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Bone Spirit Explosion Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Bone Prison Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Bone Storm Duration"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Bone Spirit Explosion Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Bone Prison Duration"
+        ]
+      }
     ]
   },
   {
@@ -1679,10 +3840,25 @@
       "Necromancer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blood Surge Nova Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Hemorrhage Explosion Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blood Lance Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Blood Surge Nova Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Hemorrhage Explosion Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Blood Lance Duration"
+        ]
+      }
     ]
   },
   {
@@ -1692,10 +3868,25 @@
       "Necromancer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blight Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Decompose Explosion Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Soulrift Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Blight Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Decompose Explosion Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Soulrift Duration"
+        ]
+      }
     ]
   },
   {
@@ -1705,10 +3896,25 @@
       "Necromancer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Sever Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Reap Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Skeleton Priest Effect Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Sever Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Reap Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Skeleton Priest Effect Duration"
+        ]
+      }
     ]
   },
   {
@@ -1718,10 +3924,25 @@
       "Barbarian"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rend Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Enhanced Rupture Explosion Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Hamstring"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Rend Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Enhanced Rupture Explosion Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Hamstring"
+        ]
+      }
     ]
   },
   {
@@ -1731,10 +3952,25 @@
       "Barbarian"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Kick Vulnerable Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Expose Vulnerability",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Pressure Point"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Kick Vulnerable Duration"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Expose Vulnerability"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Pressure Point"
+        ]
+      }
     ]
   },
   {
@@ -1744,10 +3980,25 @@
       "Barbarian"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Hammer of the Ancients Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Upheaval Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Mighty Throw Pulse Size"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Hammer of the Ancients Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Upheaval Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Mighty Throw Pulse Size"
+        ]
+      }
     ]
   },
   {
@@ -1757,10 +4008,25 @@
       "Druid"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Storm Strike to Hit Twice",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Lightning Storm to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Cataclysm to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Storm Strike to Hit Twice"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Lightning Storm to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Cataclysm to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -1770,11 +4036,31 @@
       "Barbarian"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Hammer of the Ancients to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Whirlwind to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Upheaval to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Double Swing to Hit Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Hammer of the Ancients to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Whirlwind to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Upheaval to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Double Swing to Hit Twice"
+        ]
+      }
     ]
   },
   {
@@ -1784,11 +4070,31 @@
       "Barbarian"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Charge to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Kick to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Leap to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Ground Stomp to Hit Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Charge to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Kick to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Leap to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Ground Stomp to Hit Twice"
+        ]
+      }
     ]
   },
   {
@@ -1798,11 +4104,31 @@
       "Barbarian"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Mighty Throw to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Steel Grasp to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Death Blow to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Iron Maelstrom to Hit Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Mighty Throw to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Steel Grasp to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Death Blow to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Iron Maelstrom to Hit Twice"
+        ]
+      }
     ]
   },
   {
@@ -1812,10 +4138,25 @@
       "Rogue"
     ],
     "type": "Weapons",
-    "values": [
-      "Shadow Step Cleaves for ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Smoke Grenade to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Rain of Arrows to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Shadow Step Cleaves for X Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Smoke Grenade to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Rain of Arrows to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -1825,12 +4166,32 @@
       "Rogue"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Flurry to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Dance of Knives to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Dash to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Shadow Clone to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Dance of Knives Projectiles to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Flurry to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Dance of Knives to Deal Double Damage",
+          " X Chance for Dance of Knives Projectiles to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Dash to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Shadow Clone to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -1840,23 +4201,53 @@
       "Rogue"
     ],
     "type": "Offensive",
-    "values": [
-      "Traps Arm ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Seconds Faster",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Caltrops Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Caltrops Duration"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Traps Arm X Seconds Faster"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Caltrops Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Caltrops Duration"
+        ]
+      }
     ]
   },
   {
     "id": 2089978,
     "name": "Sharpened Finesse",
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Basic Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Core Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ultimate Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Basic Skill Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Core Skill Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Ultimate Skill Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Basic Damage",
+          " X Basic Skill Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Core Damage",
+          " X Core Skill Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Ultimate Damage",
+          " X Ultimate Skill Damage"
+        ]
+      }
     ]
   },
   {
@@ -1866,10 +4257,25 @@
       "Spiritborn"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Touch of Death Swarm Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Scourge Poisoning Duration",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Ravenous"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Touch of Death Swarm Duration"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Scourge Poisoning Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Ravenous"
+        ]
+      }
     ]
   },
   {
@@ -1879,10 +4285,25 @@
       "Spiritborn"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Soar to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Vortex to Extra Hit",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Razor Wings to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Soar to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Vortex to Extra Hit"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Razor Wings to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -1892,10 +4313,25 @@
       "Spiritborn"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Payback to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Concussive Stomp to Extra Hit",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Dominant"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Payback to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Concussive Stomp to Extra Hit"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Dominant"
+        ]
+      }
     ]
   },
   {
@@ -1905,10 +4341,25 @@
       "Spiritborn"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Rushing Claw to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Ravager to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Furnace"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Rushing Claw to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Ravager to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Furnace"
+        ]
+      }
     ]
   },
   {
@@ -1918,10 +4369,25 @@
       "Sorcerer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Incinerate to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Firewall to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Meteorites to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Incinerate to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Firewall to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Meteorites to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -1931,10 +4397,25 @@
       "Sorcerer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Blizzard to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Ice Spike to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Deep Freeze to Deal Double Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Blizzard to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Ice Spike to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Deep Freeze to Deal Double Damage"
+        ]
+      }
     ]
   },
   {
@@ -1944,20 +4425,50 @@
       "Sorcerer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Frost Nova Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Blizzard Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Teleport Nova Size"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Frost Nova Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Blizzard Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Teleport Nova Size"
+        ]
+      }
     ]
   },
   {
     "id": 2108327,
     "name": "Elemental Surge - Night",
     "type": "Weapons",
-    "values": [
-      "Lucky Hit: Up to a 40% Chance to Deal ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Cold Damage",
-      "Lucky Hit: Up to a 40% Chance to Deal ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Poison Damage",
-      "Lucky Hit: Up to a 40% Chance to Deal ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Shadow Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Lucky Hit: Up to a 40% Chance to Deal X Cold Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Lucky Hit: Up to a 40% Chance to Deal X Poison Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Lucky Hit: Up to a 40% Chance to Deal X Shadow Damage"
+        ]
+      }
     ]
   },
   {
@@ -1967,10 +4478,25 @@
       "Rogue"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Blade Shift to Deal Double Damage",
-      "Invigorating Strike Cleaves for ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Twisting Blades to Hit Twice"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Blade Shift to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Invigorating Strike Cleaves for X Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Twisting Blades to Hit Twice"
+        ]
+      }
     ]
   },
   {
@@ -1980,10 +4506,25 @@
       "Sorcerer"
     ],
     "type": "Utility",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Incinerate Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Meteor Size",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Firewall Size"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Incinerate Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Meteor Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Firewall Size"
+        ]
+      }
     ]
   },
   {
@@ -1993,10 +4534,25 @@
       "Barbarian"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Warpath",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Belligerence",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Heavy Hitter"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X to Warpath"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Belligerence"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Heavy Hitter"
+        ]
+      }
     ]
   },
   {
@@ -2006,10 +4562,25 @@
       "Necromancer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Fueled by Death",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Finality",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Titan's Fall"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X to Fueled by Death"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X to Finality"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Titan's Fall"
+        ]
+      }
     ]
   },
   {
@@ -2019,11 +4590,31 @@
       "Rogue"
     ],
     "type": "Resource",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Rain of Arrows Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Death Trap Cooldown Reduction",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Shadow Clone Cooldown Reduction",
-      "Casting Ultimate Skills Restores ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Primary Resource"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Rain of Arrows Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Death Trap Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Shadow Clone Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          "Casting Ultimate Skills Restores X Primary Resource"
+        ]
+      }
     ]
   },
   {
@@ -2033,10 +4624,25 @@
       "Sorcerer"
     ],
     "type": "Weapons",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for a Second Ice Blades When Cast",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Chance for Inferno to Deal Double Damage",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?to Shocking Impact"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for a Second Ice Blades When Cast"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Inferno to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Shocking Impact"
+        ]
+      }
     ]
   },
   {
@@ -2046,10 +4652,25 @@
       "Druid"
     ],
     "type": "Offensive",
-    "values": [
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Werewolf Attack Speed",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Werewolf Critical Strike Chance",
-      " ?\\+? ?[X0-9\\.,\\-% \\[\\]]+ ?Poison Damage"
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Werewolf Attack Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Werewolf Critical Strike Chance"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Poison Damage"
+        ]
+      }
     ]
   }
 ]
