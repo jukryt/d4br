@@ -373,25 +373,19 @@
       {
         "id": 1,
         "names": [
-          "Lucky Hit: Up to a X Chance to Slow for 2 Seconds"
+          " X Lucky Hit Chance"
         ]
       },
       {
         "id": 2,
         "names": [
-          "Lucky Hit: Up to a X Chance to Immobilize for 2 Seconds"
+          " X Impairment Reduction"
         ]
       },
       {
         "id": 3,
         "names": [
-          "Lucky Hit: Up to a X Chance to Stun for 2 Seconds"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          "Lucky Hit: Up to a X Chance to Freeze for 2 Seconds"
+          " X Crowd Control Duration"
         ]
       }
     ]
@@ -491,7 +485,7 @@
       {
         "id": 2,
         "names": [
-          " X Crowd Control Duration"
+          " X Fortify Generation"
         ]
       },
       {
@@ -2736,7 +2730,7 @@
       {
         "id": 3,
         "names": [
-          " X to Convulsions"
+          " X to Static Discharge"
         ]
       }
     ]
@@ -4669,6 +4663,56 @@
         "id": 3,
         "names": [
           " X Poison Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2299598,
+    "name": "Elemental Finesse - Day",
+    "type": "Offensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Physical Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Fire Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Lightning Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2299606,
+    "name": "Elemental Finesse - Night",
+    "type": "Offensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Cold Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Poison Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Shadow Damage"
         ]
       }
     ]
