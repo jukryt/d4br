@@ -444,6 +444,10 @@
     "name": "Cleansing Prayer"
   },
   {
+    "id": 1858740,
+    "name": "Yen's Blessing"
+  },
+  {
     "id": 1859723,
     "name": "Iron Horn"
   },
@@ -468,6 +472,10 @@
     "name": "Highest Honors of the Iron Wolves"
   },
   {
+    "id": 1894225,
+    "name": "Highest Honors of the Iron Wolves"
+  },
+  {
     "id": 1895398,
     "name": "Glimmering Herb Supply"
   },
@@ -476,8 +484,20 @@
     "name": "Iron Wolves' Heroic Spoils"
   },
   {
+    "id": 1895652,
+    "name": "Iron Wolves' Heroic Spoils"
+  },
+  {
     "id": 1895711,
     "name": "Flameweaver"
+  },
+  {
+    "id": 1895747,
+    "name": "Glimmering Herb Supply"
+  },
+  {
+    "id": 1895757,
+    "name": "Cages of Hubris"
   },
   {
     "id": 1895761,
@@ -485,6 +505,10 @@
   },
   {
     "id": 1895831,
+    "name": "Iron Wolves' Final Harvest"
+  },
+  {
+    "id": 1895838,
     "name": "Iron Wolves' Final Harvest"
   },
   {
@@ -520,8 +544,8 @@
     "name": "Saboteur's Signet"
   },
   {
-    "id": 1905888,
-    "name": "Yen's Blessing"
+    "id": 1913227,
+    "name": "Traces of the Maiden"
   },
   {
     "id": 1913276,
@@ -596,12 +620,24 @@
     "name": "Champion's Equipment Cache"
   },
   {
+    "id": 1945835,
+    "name": "Destroyer's Equipment Cache"
+  },
+  {
     "id": 1960166,
     "name": "Triune Strongbox of Endurant Faith"
   },
   {
     "id": 1961692,
     "name": "Greater Triune Arms Cache"
+  },
+  {
+    "id": 1963748,
+    "name": "Slayer's Equipment Cache"
+  },
+  {
+    "id": 1963756,
+    "name": "Champion's Equipment Cache"
   },
   {
     "id": 1963764,
@@ -740,6 +776,14 @@
     "name": "Shattered Vow"
   },
   {
+    "id": 2081122,
+    "name": "Bane of Ahjad-Den"
+  },
+  {
+    "id": 2081129,
+    "name": "Gathlen's Birthright"
+  },
+  {
     "id": 2081131,
     "name": "Mantle of Mountain's Fury"
   },
@@ -752,12 +796,40 @@
     "name": "Strike of Stormhorn"
   },
   {
+    "id": 2081143,
+    "name": "Hail of Verglas"
+  },
+  {
     "id": 2081153,
     "name": "Kessime's Legacy"
   },
   {
+    "id": 2081159,
+    "name": "Sanguivor, Blade of Zir"
+  },
+  {
     "id": 2081162,
     "name": "Assassin's Stride"
+  },
+  {
+    "id": 2081193,
+    "name": "Sunbird's Gorget"
+  },
+  {
+    "id": 2088133,
+    "name": "Slayer's Equipment Cache"
+  },
+  {
+    "id": 2088142,
+    "name": "Champion's Equipment Cache"
+  },
+  {
+    "id": 2088144,
+    "name": "Destroyer's Cache"
+  },
+  {
+    "id": 2088150,
+    "name": "Destroyer's Equipment Cache"
   },
   {
     "id": 2090362,
@@ -769,6 +841,10 @@
   },
   {
     "id": 2103028,
+    "name": "Severed Hand of the Zakarum"
+  },
+  {
+    "id": 2106123,
     "name": "Severed Hand of the Zakarum"
   },
   {
@@ -816,6 +892,18 @@
     "name": "Tribute of Ascendance (United)"
   },
   {
+    "id": 2125596,
+    "name": "Destroyer's Equipment Cache"
+  },
+  {
+    "id": 2125631,
+    "name": "Slayer's Equipment Cache"
+  },
+  {
+    "id": 2125639,
+    "name": "Champion's Equipment Cache"
+  },
+  {
     "id": 2125641,
     "name": "Destroyer's Cache"
   },
@@ -840,12 +928,36 @@
     "name": "Okun's Catalyst"
   },
   {
+    "id": 2152972,
+    "name": "Unique Coven Crate"
+  },
+  {
     "id": 2152974,
     "name": "Resplendent Coven Crate"
   },
   {
+    "id": 2162475,
+    "name": "Unique Coven Crate"
+  },
+  {
+    "id": 2164894,
+    "name": "Greater Gift from the Ancestors"
+  },
+  {
+    "id": 2164973,
+    "name": "Unique Coven Crate"
+  },
+  {
     "id": 2166765,
     "name": "Unique Coven Crate"
+  },
+  {
+    "id": 2166772,
+    "name": "Unique Coven Crate"
+  },
+  {
+    "id": 2166775,
+    "name": "Resplendent Coven Crate"
   },
   {
     "id": 2173056,
@@ -868,7 +980,27 @@
     "name": "Greater Gift from the Ancestors"
   },
   {
+    "id": 2201576,
+    "name": "Tyrael's Shopping List"
+  },
+  {
     "id": 2224834,
     "name": "Fedric's Gift"
+  },
+  {
+    "id": 2235931,
+    "name": "Resplendent Cache"
+  },
+  {
+    "id": 2235944,
+    "name": "Lair Cache"
+  },
+  {
+    "id": 2235946,
+    "name": "Greater Lair Cache"
+  },
+  {
+    "id": 2246455,
+    "name": "Bands of Ichorous Rose"
   }
 ]
