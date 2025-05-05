@@ -18,7 +18,7 @@ namespace Importer.Resource
                 Folder = "ru",
                 Infos =
                     [
-                        new ResourceInfo<Item>
+                        new ResourceInfo<ClassItem>
                         {
                             Name = "aspect ru",
                             Source = new()
@@ -28,7 +28,7 @@ namespace Importer.Resource
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/aspects",
-                                        Script = "() => g_listviews.aspects.data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews.aspects.data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames.split(', ').filter(c => c !== 'Все')}))",
                                     },
                                 ],
                             },
@@ -36,17 +36,18 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new FixRemoveEmptyName<Item>(),
-                                    new FixName<Item>(),
+                                    new FixRemoveEmptyName<ClassItem>(),
+                                    new FixRemoveEmptyClass<ClassItem>(),
+                                    new FixName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<Item>()
+                                    new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ItemEqualComparer<Item>(),
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
