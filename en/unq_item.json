@@ -100,36 +100,8 @@
     "name": "Cowl of the Nameless"
   },
   {
-    "id": 498460,
-    "name": "Boost Helm"
-  },
-  {
-    "id": 498549,
-    "name": "Boost Dagger"
-  },
-  {
-    "id": 498557,
-    "name": "Boost Scythe"
-  },
-  {
-    "id": 498567,
-    "name": "Boost Pants"
-  },
-  {
-    "id": 504685,
-    "name": "Something Super Cool"
-  },
-  {
     "id": 609820,
     "name": "Harlequin Crest"
-  },
-  {
-    "id": 622324,
-    "name": "Icy Rib"
-  },
-  {
-    "id": 625960,
-    "name": "Rusty Heirloom Dagger"
   },
   {
     "id": 873651,
@@ -140,52 +112,8 @@
     "name": "Storm's Companion"
   },
   {
-    "id": 946245,
-    "name": "Eternal Journey Chapter 2 Cache"
-  },
-  {
-    "id": 946976,
-    "name": "Eternal Journey Chapter 3 Cache"
-  },
-  {
-    "id": 946982,
-    "name": "Eternal Journey Chapter 4 Cache"
-  },
-  {
-    "id": 946984,
-    "name": "Eternal Journey Chapter 5 Cache"
-  },
-  {
-    "id": 946986,
-    "name": "Eternal Journey Chapter 6 Cache"
-  },
-  {
-    "id": 946988,
-    "name": "Eternal Journey Chapter 7 Cache"
-  },
-  {
-    "id": 946990,
-    "name": "Eternal Journey Chapter 8 Cache"
-  },
-  {
-    "id": 946992,
-    "name": "Eternal Journey Chapter 9 Cache"
-  },
-  {
     "id": 989678,
     "name": "Hunter's Zenith"
-  },
-  {
-    "id": 1028192,
-    "name": "Chapter 1 Reward Cache"
-  },
-  {
-    "id": 1040946,
-    "name": "Chapter 2 Reward Cache"
-  },
-  {
-    "id": 1041475,
-    "name": "Boost Staff"
   },
   {
     "id": 1063172,
@@ -408,22 +336,6 @@
     "name": "Starfall Coronet"
   },
   {
-    "id": 1717304,
-    "name": "Bloodforged Sigil"
-  },
-  {
-    "id": 1719158,
-    "name": "[WIP] Eye of the Depths"
-  },
-  {
-    "id": 1723622,
-    "name": "Tuning Stone: Evernight"
-  },
-  {
-    "id": 1723635,
-    "name": "Tuning Stone: Genesis"
-  },
-  {
     "id": 1758459,
     "name": "Pitfighter's Gull"
   },
@@ -432,84 +344,16 @@
     "name": "Ugly Bastard Helm"
   },
   {
-    "id": 1821197,
-    "name": "Snake Glaive"
-  },
-  {
-    "id": 1827378,
-    "name": "Hateshard Core"
-  },
-  {
-    "id": 1829684,
-    "name": "Cleansing Prayer"
-  },
-  {
-    "id": 1858740,
-    "name": "Yen's Blessing"
-  },
-  {
-    "id": 1859723,
-    "name": "Iron Horn"
-  },
-  {
     "id": 1862757,
     "name": "Fractured Winterglass"
-  },
-  {
-    "id": 1865358,
-    "name": "Resplendent Spark"
-  },
-  {
-    "id": 1870166,
-    "name": "Skatsimi Tome"
   },
   {
     "id": 1881284,
     "name": "Earthbreaker"
   },
   {
-    "id": 1894213,
-    "name": "Highest Honors of the Iron Wolves"
-  },
-  {
-    "id": 1894225,
-    "name": "Highest Honors of the Iron Wolves"
-  },
-  {
-    "id": 1895398,
-    "name": "Glimmering Herb Supply"
-  },
-  {
-    "id": 1895545,
-    "name": "Iron Wolves' Heroic Spoils"
-  },
-  {
-    "id": 1895652,
-    "name": "Iron Wolves' Heroic Spoils"
-  },
-  {
     "id": 1895711,
     "name": "Flameweaver"
-  },
-  {
-    "id": 1895747,
-    "name": "Glimmering Herb Supply"
-  },
-  {
-    "id": 1895757,
-    "name": "Cages of Hubris"
-  },
-  {
-    "id": 1895761,
-    "name": "Cages of Hubris"
-  },
-  {
-    "id": 1895831,
-    "name": "Iron Wolves' Final Harvest"
-  },
-  {
-    "id": 1895838,
-    "name": "Iron Wolves' Final Harvest"
   },
   {
     "id": 1901484,
@@ -544,12 +388,8 @@
     "name": "Saboteur's Signet"
   },
   {
-    "id": 1913227,
-    "name": "Traces of the Maiden"
-  },
-  {
-    "id": 1913276,
-    "name": "Traces of the Maiden"
+    "id": 1905888,
+    "name": "Yen's Blessing"
   },
   {
     "id": 1934408,
@@ -610,42 +450,6 @@
   {
     "id": 1944574,
     "name": "The Mortacrux"
-  },
-  {
-    "id": 1945830,
-    "name": "Slayer's Equipment Cache"
-  },
-  {
-    "id": 1945833,
-    "name": "Champion's Equipment Cache"
-  },
-  {
-    "id": 1945835,
-    "name": "Destroyer's Equipment Cache"
-  },
-  {
-    "id": 1960166,
-    "name": "Triune Strongbox of Endurant Faith"
-  },
-  {
-    "id": 1961692,
-    "name": "Greater Triune Arms Cache"
-  },
-  {
-    "id": 1963748,
-    "name": "Slayer's Equipment Cache"
-  },
-  {
-    "id": 1963756,
-    "name": "Champion's Equipment Cache"
-  },
-  {
-    "id": 1963764,
-    "name": "Destroyer's Equipment Cache"
-  },
-  {
-    "id": 1963851,
-    "name": "(PH) Template Unique"
   },
   {
     "id": 1966407,
@@ -720,28 +524,12 @@
     "name": "Stone of Vehemen"
   },
   {
-    "id": 2043693,
-    "name": "The Mortacrux / The Umbracrux"
-  },
-  {
-    "id": 2043695,
-    "name": "Shard of Verathiel / The Third Blade"
-  },
-  {
-    "id": 2043706,
-    "name": "Vox Omnium / The Basilisk"
-  },
-  {
     "id": 2044974,
     "name": "Bucrani's Tread"
   },
   {
     "id": 2044976,
     "name": "Bucrani's Will"
-  },
-  {
-    "id": 2044978,
-    "name": "Bucrani's Grip"
   },
   {
     "id": 2044980,
@@ -766,10 +554,6 @@
   {
     "id": 2059803,
     "name": "Shroud of False Death"
-  },
-  {
-    "id": 2059805,
-    "name": "PH Barb Boots"
   },
   {
     "id": 2059813,
@@ -816,188 +600,20 @@
     "name": "Sunbird's Gorget"
   },
   {
-    "id": 2088133,
-    "name": "Slayer's Equipment Cache"
-  },
-  {
-    "id": 2088142,
-    "name": "Champion's Equipment Cache"
-  },
-  {
-    "id": 2088144,
-    "name": "Destroyer's Cache"
-  },
-  {
-    "id": 2088150,
-    "name": "Destroyer's Equipment Cache"
-  },
-  {
-    "id": 2090362,
-    "name": "Tribute of Ascendance (Resolute)"
-  },
-  {
     "id": 2093166,
     "name": "Rod of Kepeleke"
-  },
-  {
-    "id": 2103028,
-    "name": "Severed Hand of the Zakarum"
-  },
-  {
-    "id": 2106123,
-    "name": "Severed Hand of the Zakarum"
-  },
-  {
-    "id": 2108291,
-    "name": "PTR Cache - Generic Uniques"
-  },
-  {
-    "id": 2108304,
-    "name": "PTR Cache - Class Uniques"
-  },
-  {
-    "id": 2108306,
-    "name": "PTR Cache - Mythic Uniques"
-  },
-  {
-    "id": 2118062,
-    "name": "Mythic Unique Cache"
-  },
-  {
-    "id": 2120650,
-    "name": "Harriers of War"
-  },
-  {
-    "id": 2120652,
-    "name": "Heart of War"
-  },
-  {
-    "id": 2120654,
-    "name": "Fists of War"
-  },
-  {
-    "id": 2120656,
-    "name": "Guise of War"
-  },
-  {
-    "id": 2120658,
-    "name": "Strides of War"
   },
   {
     "id": 2123318,
     "name": "Indira's Memory"
   },
   {
-    "id": 2125049,
-    "name": "Tribute of Ascendance (United)"
-  },
-  {
-    "id": 2125596,
-    "name": "Destroyer's Equipment Cache"
-  },
-  {
-    "id": 2125631,
-    "name": "Slayer's Equipment Cache"
-  },
-  {
-    "id": 2125639,
-    "name": "Champion's Equipment Cache"
-  },
-  {
-    "id": 2125641,
-    "name": "Destroyer's Cache"
-  },
-  {
-    "id": 2128605,
-    "name": "Piranhado"
-  },
-  {
-    "id": 2132211,
-    "name": "Doom Orb"
-  },
-  {
-    "id": 2132228,
-    "name": "The Cycle"
-  },
-  {
-    "id": 2132230,
-    "name": "Vengeful Spirit"
-  },
-  {
     "id": 2134748,
     "name": "Okun's Catalyst"
   },
   {
-    "id": 2152972,
-    "name": "Unique Coven Crate"
-  },
-  {
-    "id": 2152974,
-    "name": "Resplendent Coven Crate"
-  },
-  {
-    "id": 2162475,
-    "name": "Unique Coven Crate"
-  },
-  {
-    "id": 2164894,
-    "name": "Greater Gift from the Ancestors"
-  },
-  {
-    "id": 2164973,
-    "name": "Unique Coven Crate"
-  },
-  {
-    "id": 2166765,
-    "name": "Unique Coven Crate"
-  },
-  {
-    "id": 2166772,
-    "name": "Unique Coven Crate"
-  },
-  {
-    "id": 2166775,
-    "name": "Resplendent Coven Crate"
-  },
-  {
-    "id": 2173056,
-    "name": "Mythic Treasure Bag"
-  },
-  {
-    "id": 2173075,
-    "name": "Treasure Bag of Ascendance"
-  },
-  {
-    "id": 2174880,
-    "name": "Greater Midwinter Purse"
-  },
-  {
-    "id": 2179153,
-    "name": "Fedric's Masterpiece"
-  },
-  {
-    "id": 2196161,
-    "name": "Greater Gift from the Ancestors"
-  },
-  {
     "id": 2201576,
     "name": "Tyrael's Shopping List"
-  },
-  {
-    "id": 2224834,
-    "name": "Fedric's Gift"
-  },
-  {
-    "id": 2235931,
-    "name": "Resplendent Cache"
-  },
-  {
-    "id": 2235944,
-    "name": "Lair Cache"
-  },
-  {
-    "id": 2235946,
-    "name": "Greater Lair Cache"
   },
   {
     "id": 2246455,
