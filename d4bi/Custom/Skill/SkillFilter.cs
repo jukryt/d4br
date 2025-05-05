@@ -6,10 +6,18 @@ namespace Importer.Custom.Skill
 {
     internal class SkillFilter : IItemsFixer<ClassItem>
     {
-        private static readonly HashSet<long> IgnoreItems = new()
+        private static readonly IReadOnlyDictionary<long, string> IgnoreItems = new Dictionary<long, string>()
         {
-            1858262, 1859218,
+            [1858262] = "Spiritborn CentipedeRuler ProjectileAttack",
+            [1859218] = "Spiritborn CentipedeRuler BreathAttack",
         };
+
+        private readonly bool _ignoreName;
+
+        public SkillFilter(bool ignoreName)
+        {
+            _ignoreName = ignoreName;
+        }
 
         public Task FixItemsAsync(List<ClassItem> items, IMessageReporter reporter)
         {
@@ -24,7 +32,8 @@ namespace Importer.Custom.Skill
 
             foreach (var item in items.ToList())
             {
-                if (IgnoreItems.Contains(item.Id))
+                if (IgnoreItems.TryGetValue(item.Id, out var name) &&
+                    (_ignoreName || name.Equals(item.Name)))
                 {
                     items.Remove(item);
                     ignoreItems.Add(item.Id);
@@ -33,7 +42,7 @@ namespace Importer.Custom.Skill
 
             if (IgnoreItems.Count != ignoreItems.Count)
             {
-                var exceptItems = IgnoreItems.Except(ignoreItems);
+                var exceptItems = IgnoreItems.Keys.Except(ignoreItems);
                 var exceptItemsString = string.Join(", ", exceptItems);
                 reporter.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(SkillFilter));
             }

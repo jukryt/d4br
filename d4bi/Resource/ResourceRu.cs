@@ -72,7 +72,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new GlyphFilter(),
+                                    new GlyphFilter(true),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
                                     new FixName<ClassItem>(),
@@ -191,7 +191,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new SkillFilter(),
+                                    new SkillFilter(true),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
                                     new FixName<ClassItem>(),
@@ -233,7 +233,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new TemperFilter<TemperItem>(),
+                                    new TemperFilter(true),
                                     new FixRemoveEmptyName<TemperItem>(),
                                     new FixRemoveEmptyClass<TemperItem>(),
                                     new FixName<TemperItem>(),
@@ -275,7 +275,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new UnqItemFilter(),
+                                    new UnqItemFilter(true),
                                     new FixRemoveEmptyName<Item>(),
                                     new FixName<Item>(),
                                 ],

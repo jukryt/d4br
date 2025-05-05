@@ -6,10 +6,17 @@ namespace Importer.Custom.Glyph
 {
     internal class GlyphFilter : IItemsFixer<ClassItem>
     {
-        private static readonly HashSet<long> IgnoreItems = new()
+        private static readonly IReadOnlyDictionary<long, string> IgnoreItems = new Dictionary<long, string>()
         {
-            732443,
+            [732443] = "Axe Bad Data",
         };
+
+        private readonly bool _ignoreName;
+
+        public GlyphFilter(bool ignoreName)
+        {
+            _ignoreName = ignoreName;
+        }
 
         public Task FixItemsAsync(List<ClassItem> items, IMessageReporter reporter)
         {
@@ -24,7 +31,8 @@ namespace Importer.Custom.Glyph
 
             foreach (var item in items.ToList())
             {
-                if (IgnoreItems.Contains(item.Id))
+                if (IgnoreItems.TryGetValue(item.Id, out var name) &&
+                    (_ignoreName || name.Equals(item.Name)))
                 {
                     items.Remove(item);
                     ignoreItems.Add(item.Id);
@@ -33,7 +41,7 @@ namespace Importer.Custom.Glyph
 
             if (IgnoreItems.Count != ignoreItems.Count)
             {
-                var exceptItems = IgnoreItems.Except(ignoreItems);
+                var exceptItems = IgnoreItems.Keys.Except(ignoreItems);
                 var exceptItemsString = string.Join(", ", exceptItems);
                 reporter.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(GlyphFilter));
             }
