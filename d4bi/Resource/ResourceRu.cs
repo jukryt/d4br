@@ -1,5 +1,6 @@
 ﻿using Importer.Checker;
 using Importer.Custom.Glyph;
+using Importer.Custom.Rune;
 using Importer.Custom.Skill;
 using Importer.Custom.Temper;
 using Importer.Custom.UnqItem;
@@ -154,6 +155,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
+                                    new RuneFilter(true),
                                     new FixRemoveEmptyName<Item>(),
                                     new FixName<Item>(),
                                 ],
