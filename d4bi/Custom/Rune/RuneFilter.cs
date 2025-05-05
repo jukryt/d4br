@@ -1,32 +1,36 @@
-﻿using Importer.Fixer;
+﻿using Importer.Custom.UnqItem;
+using Importer.Fixer;
 using Importer.Model;
 using Importer.Report;
 
-namespace Importer.Custom.Skill
+namespace Importer.Custom.Rune
 {
-    internal class SkillFilter : IItemsFixer<ClassItem>
+    internal class RuneFilter : IItemsFixer<Item>
     {
         private static readonly IReadOnlyDictionary<long, string> IgnoreItems = new Dictionary<long, string>()
         {
-            [1858262] = "Spiritborn CentipedeRuler ProjectileAttack",
-            [1859218] = "Spiritborn CentipedeRuler BreathAttack",
+            [2100070] = "Random Legendary Rune",
+            [2099971] = "Random Rare or Legendary Rune",
+            [2062544] = "Random Rune",
+            [2041397] = "TEST 1 Hz rune",
+            [2050494] = "TEST 0.1 Hz rune",
         };
 
         private readonly bool _ignoreName;
 
-        public SkillFilter(bool ignoreName)
+        public RuneFilter(bool ignoreName)
         {
             _ignoreName = ignoreName;
         }
 
-        public Task FixItemsAsync(List<ClassItem> items, IMessageReporter reporter)
+        public Task FixItemsAsync(List<Item> items, IMessageReporter reporter)
         {
             RemoveIgnoreItems(items, reporter);
 
             return Task.CompletedTask;
         }
 
-        private void RemoveIgnoreItems(List<ClassItem> items, IMessageReporter reporter)
+        private void RemoveIgnoreItems(List<Item> items, IMessageReporter reporter)
         {
             var ignoreItems = new HashSet<long>();
 
@@ -44,7 +48,7 @@ namespace Importer.Custom.Skill
             {
                 var exceptItems = IgnoreItems.Keys.Except(ignoreItems);
                 var exceptItemsString = string.Join(", ", exceptItems);
-                reporter.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(SkillFilter));
+                reporter.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(UnqItemFilter));
             }
         }
     }

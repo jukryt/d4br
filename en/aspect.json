@@ -1,11 +1,17 @@
 [
   {
     "id": 578699,
-    "name": "Relentless Berserker's Aspect"
+    "name": "Relentless Berserker's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578702,
-    "name": "Aspect of Bul-Kathos"
+    "name": "Aspect of Bul-Kathos",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578703,
@@ -13,11 +19,17 @@
   },
   {
     "id": 578706,
-    "name": "Aspect of Berserk Ripping"
+    "name": "Aspect of Berserk Ripping",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578707,
-    "name": "Aspect of Berserk Fury"
+    "name": "Aspect of Berserk Fury",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578708,
@@ -29,67 +41,115 @@
   },
   {
     "id": 578712,
-    "name": "Battle-Mad Aspect"
+    "name": "Battle-Mad Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578716,
-    "name": "Brawler's Aspect"
+    "name": "Brawler's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578723,
-    "name": "Aspect of Numbing Wrath"
+    "name": "Aspect of Numbing Wrath",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578728,
-    "name": "Aspect of Grasping Whirlwind"
+    "name": "Aspect of Grasping Whirlwind",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578731,
-    "name": "Death Wish Aspect"
+    "name": "Death Wish Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578735,
-    "name": "Aspect of the Dire Whirlwind"
+    "name": "Aspect of the Dire Whirlwind",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578736,
-    "name": "Aspect of Perpetual Stomping"
+    "name": "Aspect of Perpetual Stomping",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578738,
-    "name": "Aspect of Burning Rage"
+    "name": "Aspect of Burning Rage",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578741,
-    "name": "Veteran Brawler's Aspect"
+    "name": "Veteran Brawler's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578745,
-    "name": "Aspect of the Relentless Armsmaster"
+    "name": "Aspect of the Relentless Armsmaster",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578749,
-    "name": "Iron Blood Aspect"
+    "name": "Iron Blood Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578751,
-    "name": "Aspect of Encroaching Wrath"
+    "name": "Aspect of Encroaching Wrath",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578754,
-    "name": "Skullbreaker's Aspect"
+    "name": "Skullbreaker's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578755,
-    "name": "Aspect of Limitless Rage"
+    "name": "Aspect of Limitless Rage",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578756,
-    "name": "Aspect of the Iron Warrior"
+    "name": "Aspect of the Iron Warrior",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578758,
-    "name": "Windlasher Aspect"
+    "name": "Windlasher Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578762,
@@ -97,11 +157,17 @@
   },
   {
     "id": 578764,
-    "name": "Aspect of Earthquakes"
+    "name": "Aspect of Earthquakes",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578765,
-    "name": "Aspect of Ancestral Echoes"
+    "name": "Aspect of Ancestral Echoes",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 578779,
@@ -113,19 +179,31 @@
   },
   {
     "id": 578786,
-    "name": "Lightning Dancer's Aspect"
+    "name": "Lightning Dancer's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 578787,
-    "name": "Overcharged Aspect"
+    "name": "Overcharged Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 578788,
-    "name": "Dire Wolf's Aspect"
+    "name": "Dire Wolf's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 578791,
-    "name": "Aspect of Cyclonic Force"
+    "name": "Aspect of Cyclonic Force",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 578792,
@@ -133,23 +211,38 @@
   },
   {
     "id": 578793,
-    "name": "Aspect of the Trampled Earth"
+    "name": "Aspect of the Trampled Earth",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 578803,
-    "name": "Runeworker's Conduit Aspect"
+    "name": "Runeworker's Conduit Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 578807,
-    "name": "Mangled Aspect"
+    "name": "Mangled Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 578814,
-    "name": "Aspect of the Calm Breeze"
+    "name": "Aspect of the Calm Breeze",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 578816,
-    "name": "Aspect of Natural Balance"
+    "name": "Aspect of Natural Balance",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 578825,
@@ -173,19 +266,31 @@
   },
   {
     "id": 578850,
-    "name": "Aspect of Unstable Imbuements"
+    "name": "Aspect of Unstable Imbuements",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578854,
-    "name": "Aspect of Volatile Shadows"
+    "name": "Aspect of Volatile Shadows",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578858,
-    "name": "Icy Alchemist's Aspect"
+    "name": "Icy Alchemist's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578860,
-    "name": "Enshrouding Aspect"
+    "name": "Enshrouding Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578865,
@@ -193,11 +298,17 @@
   },
   {
     "id": 578868,
-    "name": "Aspect of Encircling Blades"
+    "name": "Aspect of Encircling Blades",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578874,
-    "name": "Aspect of Arrow Storms"
+    "name": "Aspect of Arrow Storms",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578875,
@@ -205,35 +316,59 @@
   },
   {
     "id": 578876,
-    "name": "Bladedancer's Aspect"
+    "name": "Bladedancer's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578878,
-    "name": "Shadowslicer Aspect"
+    "name": "Shadowslicer Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578879,
-    "name": "Energizing Aspect"
+    "name": "Energizing Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578880,
-    "name": "Aspect of Imitated Imbuement"
+    "name": "Aspect of Imitated Imbuement",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578882,
-    "name": "Toxic Alchemist's Aspect"
+    "name": "Toxic Alchemist's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578885,
-    "name": "Aspect of Surprise"
+    "name": "Aspect of Surprise",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578893,
-    "name": "Aspect of Bursting Venoms"
+    "name": "Aspect of Bursting Venoms",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578894,
-    "name": "Trickster's Aspect"
+    "name": "Trickster's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 578897,
@@ -245,19 +380,31 @@
   },
   {
     "id": 578914,
-    "name": "Charged Aspect"
+    "name": "Charged Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 578919,
-    "name": "Snowguard's Aspect"
+    "name": "Snowguard's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 578925,
-    "name": "Aspect of Three Curses"
+    "name": "Aspect of Three Curses",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 578927,
-    "name": "Aspect of Frozen Orbit"
+    "name": "Aspect of Frozen Orbit",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 578933,
@@ -265,519 +412,908 @@
   },
   {
     "id": 579639,
-    "name": "Steadfast Berserker's Aspect"
+    "name": "Steadfast Berserker's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 579641,
-    "name": "Aspect of Giant Strides"
+    "name": "Aspect of Giant Strides",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 579643,
-    "name": "Weapon Master's Aspect"
+    "name": "Weapon Master's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 579652,
-    "name": "Aspect of Vocalized Empowerment"
+    "name": "Aspect of Vocalized Empowerment",
+    "classes": [
+      "Barbarian",
+      "Druid"
+    ]
   },
   {
     "id": 579653,
-    "name": "Aspect of Ancestral Force"
+    "name": "Aspect of Ancestral Force",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 579680,
-    "name": "Balanced Aspect"
+    "name": "Balanced Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579682,
-    "name": "Mighty Storm's Aspect"
+    "name": "Mighty Storm's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579683,
-    "name": "Seismic-shift Aspect"
+    "name": "Seismic-shift Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579686,
-    "name": "Aspect of Retaliation"
+    "name": "Aspect of Retaliation",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579688,
-    "name": "Aspect of Mending Stone"
+    "name": "Aspect of Mending Stone",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579699,
-    "name": "Stormclaw's Aspect"
+    "name": "Stormclaw's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579700,
-    "name": "Aspect of The Aftershock"
+    "name": "Aspect of The Aftershock",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579701,
-    "name": "Shockwave Aspect"
+    "name": "Shockwave Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579702,
-    "name": "Stormchaser's Aspect"
+    "name": "Stormchaser's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579704,
-    "name": "Aspect of the Unsatiated"
+    "name": "Aspect of the Unsatiated",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 579709,
-    "name": "Trickshot Aspect"
+    "name": "Trickshot Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 579746,
-    "name": "Aspect of Piercing Static"
+    "name": "Aspect of Piercing Static",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 579747,
-    "name": "Frostblitz Aspect"
+    "name": "Frostblitz Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 579749,
-    "name": "Aspect of Binding Embers"
+    "name": "Aspect of Binding Embers",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 579752,
-    "name": "Serpentine Aspect"
+    "name": "Serpentine Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 607856,
-    "name": "Aspect of Frenzied Dead"
+    "name": "Aspect of Frenzied Dead",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 607884,
-    "name": "Flesh-Rending Aspect"
+    "name": "Flesh-Rending Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 608902,
-    "name": "Splintering Aspect"
+    "name": "Splintering Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 609903,
-    "name": "Aspect of Plunging Darkness"
+    "name": "Aspect of Plunging Darkness",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 610047,
-    "name": "Aspect of Explosive Mist"
+    "name": "Aspect of Explosive Mist",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 610216,
-    "name": "Aspect of the Void"
+    "name": "Aspect of the Void",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 610241,
-    "name": "Rotting Aspect"
+    "name": "Rotting Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 610368,
-    "name": "Aspect of Empowering Reaper"
+    "name": "Aspect of Empowering Reaper",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 610372,
-    "name": "Coldbringer's Aspect"
+    "name": "Coldbringer's Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 614832,
-    "name": "Blood Seeker's Aspect"
+    "name": "Blood Seeker's Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 614914,
-    "name": "Aspect of Hungry Blood"
+    "name": "Aspect of Hungry Blood",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 615173,
-    "name": "Aspect of Occult Dominion"
+    "name": "Aspect of Occult Dominion",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 615483,
-    "name": "Blood-soaked Aspect"
+    "name": "Blood-soaked Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 616063,
-    "name": "Aspect of Swelling Curse"
+    "name": "Aspect of Swelling Curse",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 616076,
-    "name": "Aspect of Ultimate Shadow"
+    "name": "Aspect of Ultimate Shadow",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 616122,
-    "name": "Aspect of Bursting Bones"
+    "name": "Aspect of Bursting Bones",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 616486,
-    "name": "Unyielding Commander's Aspect"
+    "name": "Unyielding Commander's Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 616507,
-    "name": "Aspect of Shielding Storm"
+    "name": "Aspect of Shielding Storm",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 621929,
-    "name": "Aspect of Grasping Veins"
+    "name": "Aspect of Grasping Veins",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 621955,
-    "name": "Blood Getter's Aspect"
+    "name": "Blood Getter's Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 652950,
-    "name": "Dust Devil's Aspect"
+    "name": "Dust Devil's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 667442,
-    "name": "Bold Chieftain's Aspect"
+    "name": "Bold Chieftain's Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid"
+    ]
   },
   {
     "id": 849401,
-    "name": "Aspect of the Alpha"
+    "name": "Aspect of the Alpha",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 854661,
-    "name": "Nighthowler's Aspect"
+    "name": "Nighthowler's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 872356,
-    "name": "Aspect of Nature's Savagery"
+    "name": "Aspect of Nature's Savagery",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 880500,
-    "name": "Aspect of the Tempest"
+    "name": "Aspect of the Tempest",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 884984,
-    "name": "Aspect of the Ursine Horror"
+    "name": "Aspect of the Ursine Horror",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 988683,
-    "name": "Aspect of Quicksand"
+    "name": "Aspect of Quicksand",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1040952,
-    "name": "Aspect of Armageddon"
+    "name": "Aspect of Armageddon",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1064169,
-    "name": "Shepherd's Aspect"
+    "name": "Shepherd's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1184010,
-    "name": "Aspect of Cruel Sustenance"
+    "name": "Aspect of Cruel Sustenance",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1184418,
-    "name": "Aspect of Uncanny Treachery"
+    "name": "Aspect of Uncanny Treachery",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1184469,
-    "name": "Ravenous Aspect"
+    "name": "Ravenous Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1184525,
-    "name": "Vengeful Aspect"
+    "name": "Vengeful Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1185976,
-    "name": "Escape Artist's Aspect"
+    "name": "Escape Artist's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1186374,
-    "name": "Cheat's Aspect"
+    "name": "Cheat's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1186378,
-    "name": "Aspect of Siphoned Victuals"
+    "name": "Aspect of Siphoned Victuals",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1186380,
-    "name": "Aspect of Corruption"
+    "name": "Aspect of Corruption",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1186574,
-    "name": "Blast-Trapper's Aspect"
+    "name": "Blast-Trapper's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1186690,
-    "name": "Mangler's Aspect"
+    "name": "Mangler's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1186856,
-    "name": "Aspect of Stolen Vigor"
+    "name": "Aspect of Stolen Vigor",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1187879,
-    "name": "Aspect of Quickening Fog"
+    "name": "Aspect of Quickening Fog",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1189297,
-    "name": "Opportunist's Aspect"
+    "name": "Opportunist's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1199204,
-    "name": "Earthstriker's Aspect"
+    "name": "Earthstriker's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1199206,
-    "name": "Luckbringer Aspect"
+    "name": "Luckbringer Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1199208,
-    "name": "Bear Clan Berserker's Aspect"
+    "name": "Bear Clan Berserker's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1199626,
-    "name": "Devilish Aspect"
+    "name": "Devilish Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1200309,
-    "name": "Skinwalker's Aspect"
+    "name": "Skinwalker's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1200856,
-    "name": "Aspect of Tempering Blows"
+    "name": "Aspect of Tempering Blows",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1201315,
-    "name": "Aspect of Anemia"
+    "name": "Aspect of Anemia",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1201797,
-    "name": "Aspect of the Dark Howl"
+    "name": "Aspect of the Dark Howl",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1201951,
-    "name": "Aspect of the Changeling's Debt"
+    "name": "Aspect of the Changeling's Debt",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1202013,
-    "name": "Slaking Aspect"
+    "name": "Slaking Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1202439,
-    "name": "Ballistic Aspect"
+    "name": "Ballistic Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1202541,
-    "name": "Stormshifter's Aspect"
+    "name": "Stormshifter's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1205051,
-    "name": "Aspect of the Wildrage"
+    "name": "Aspect of the Wildrage",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1205995,
-    "name": "Aspect of the Rampaging Werebeast"
+    "name": "Aspect of the Rampaging Werebeast",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1206103,
-    "name": "Repeating Aspect"
+    "name": "Repeating Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1206400,
-    "name": "Vigorous Aspect"
+    "name": "Vigorous Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1206645,
-    "name": "Crashstone Aspect"
+    "name": "Crashstone Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1208172,
-    "name": "Aspect of Branching Volleys"
+    "name": "Aspect of Branching Volleys",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1211283,
-    "name": "Snowveiled Aspect"
+    "name": "Snowveiled Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1211552,
-    "name": "Aspect of Frozen Memories"
+    "name": "Aspect of Frozen Memories",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1211656,
-    "name": "Shattered Aspect"
+    "name": "Shattered Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212246,
-    "name": "Aspect of Efficiency"
+    "name": "Aspect of Efficiency",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212281,
-    "name": "Aspect of the Frozen Tundra"
+    "name": "Aspect of the Frozen Tundra",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212316,
-    "name": "Aspect of the Frozen Wake"
+    "name": "Aspect of the Frozen Wake",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212318,
-    "name": "Glacial Aspect"
+    "name": "Glacial Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212462,
-    "name": "Aspect of Fortune"
+    "name": "Aspect of Fortune",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212469,
-    "name": "Aspect of Engulfing Flames"
+    "name": "Aspect of Engulfing Flames",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212474,
-    "name": "Aspect of Conflagration"
+    "name": "Aspect of Conflagration",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212483,
-    "name": "Incendiary Aspect"
+    "name": "Incendiary Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212493,
-    "name": "Aspect of Ancient Flame"
+    "name": "Aspect of Ancient Flame",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212497,
-    "name": "Encased Aspect"
+    "name": "Encased Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212506,
-    "name": "Aspect of Piercing Cold"
+    "name": "Aspect of Piercing Cold",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212515,
-    "name": "Aspect of Shattered Stars"
+    "name": "Aspect of Shattered Stars",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1212894,
-    "name": "Symbiotic Aspect"
+    "name": "Symbiotic Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1213533,
-    "name": "Elementalist's Aspect"
+    "name": "Elementalist's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1213812,
-    "name": "Aspect of Singed Extremities"
+    "name": "Aspect of Singed Extremities",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1214116,
-    "name": "Prodigy's Aspect"
+    "name": "Prodigy's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1214265,
-    "name": "Flamewalker's Aspect"
+    "name": "Flamewalker's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1214292,
-    "name": "Earthguard Aspect"
+    "name": "Earthguard Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1215396,
-    "name": "Everliving Aspect"
+    "name": "Everliving Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1215682,
-    "name": "Aspect of Concentration"
+    "name": "Aspect of Concentration",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1215769,
-    "name": "Aspect of Control"
+    "name": "Aspect of Control",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1218948,
-    "name": "Aspect of Explosive Verve"
+    "name": "Aspect of Explosive Verve",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1219216,
-    "name": "Snap Frozen Aspect"
+    "name": "Snap Frozen Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1220102,
-    "name": "Umbrous Aspect"
+    "name": "Umbrous Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1220408,
-    "name": "Osseous Gale Aspect"
+    "name": "Osseous Gale Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1220424,
-    "name": "Aspect of Exposed Flesh"
+    "name": "Aspect of Exposed Flesh",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1220474,
-    "name": "Blighted Aspect"
+    "name": "Blighted Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1221015,
-    "name": "Aspect of the Damned"
+    "name": "Aspect of the Damned",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1221426,
-    "name": "Aspect of Serration"
+    "name": "Aspect of Serration",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1221467,
-    "name": "Torturous Aspect"
+    "name": "Torturous Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1221534,
-    "name": "Aspect of Decay"
+    "name": "Aspect of Decay",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1221645,
-    "name": "Aspect of Potent Blood"
+    "name": "Aspect of Potent Blood",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1221651,
-    "name": "Fastblood Aspect"
+    "name": "Fastblood Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1221659,
-    "name": "Blood-bathed Aspect"
+    "name": "Blood-bathed Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1221702,
-    "name": "Aspect of Rathma's Chosen"
+    "name": "Aspect of Rathma's Chosen",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1221707,
-    "name": "Aspect of Untimely Death"
+    "name": "Aspect of Untimely Death",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1222123,
-    "name": "Hulking Aspect"
+    "name": "Hulking Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1222268,
-    "name": "Sacrificial Aspect"
+    "name": "Sacrificial Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1222402,
-    "name": "Aspect of the Stampede"
+    "name": "Aspect of the Stampede",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1222415,
-    "name": "Cadaverous Aspect"
+    "name": "Cadaverous Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1222472,
-    "name": "Aspect of the Embalmer"
+    "name": "Aspect of the Embalmer",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1222592,
-    "name": "Aspect of Hardened Bones"
+    "name": "Aspect of Hardened Bones",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1223239,
-    "name": "Requiem Aspect"
+    "name": "Requiem Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1223323,
-    "name": "Aspect of Reanimation"
+    "name": "Aspect of Reanimation",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1223790,
-    "name": "Tidal Aspect"
+    "name": "Tidal Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1223890,
@@ -785,35 +1321,59 @@
   },
   {
     "id": 1224521,
-    "name": "Aspect of Biting Cold"
+    "name": "Aspect of Biting Cold",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1224681,
-    "name": "Storm Swell Aspect"
+    "name": "Storm Swell Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1224753,
-    "name": "Aspect of Torment"
+    "name": "Aspect of Torment",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1225181,
-    "name": "Aspect of Overwhelming Currents"
+    "name": "Aspect of Overwhelming Currents",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1225191,
-    "name": "Aspect of the Unwavering"
+    "name": "Aspect of the Unwavering",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1225218,
-    "name": "Recharging Aspect"
+    "name": "Recharging Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1225295,
-    "name": "Aspect of Splintering Energy"
+    "name": "Aspect of Splintering Energy",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1225298,
-    "name": "Aspect of the Unbroken Tether"
+    "name": "Aspect of the Unbroken Tether",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1225423,
@@ -825,7 +1385,10 @@
   },
   {
     "id": 1225570,
-    "name": "Aspect of Abundant Energy"
+    "name": "Aspect of Abundant Energy",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1225581,
@@ -837,11 +1400,17 @@
   },
   {
     "id": 1227240,
-    "name": "Mage-Lord's Aspect"
+    "name": "Mage-Lord's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1227270,
-    "name": "Stable Aspect"
+    "name": "Stable Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1227283,
@@ -853,55 +1422,94 @@
   },
   {
     "id": 1229076,
-    "name": "Aspect of the Bounding Conduit"
+    "name": "Aspect of the Bounding Conduit",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1229701,
-    "name": "Gravitational Aspect"
+    "name": "Gravitational Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1301738,
-    "name": "Aspect of Synergy"
+    "name": "Aspect of Synergy",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1301761,
-    "name": "Aspect of Lethal Dusk"
+    "name": "Aspect of Lethal Dusk",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1302491,
-    "name": "Aspect of Noxious Ice"
+    "name": "Aspect of Noxious Ice",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1302634,
-    "name": "Frostbitten Aspect"
+    "name": "Frostbitten Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1304554,
-    "name": "Ravager's Aspect"
+    "name": "Ravager's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1304681,
-    "name": "Aspect of Elusive Menace"
+    "name": "Aspect of Elusive Menace",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1304822,
-    "name": "Infiltrator's Aspect"
+    "name": "Infiltrator's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1338011,
-    "name": "Aspect of Metamorphic Stone"
+    "name": "Aspect of Metamorphic Stone",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1338285,
-    "name": "Aspect of the Blurred Beast"
+    "name": "Aspect of the Blurred Beast",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1427873,
-    "name": "Aspect of Ancestral Charge"
+    "name": "Aspect of Ancestral Charge",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1433953,
-    "name": "Subterranean Aspect"
+    "name": "Subterranean Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1437499,
@@ -913,19 +1521,31 @@
   },
   {
     "id": 1439746,
-    "name": "Aspect of Pestilent Points"
+    "name": "Aspect of Pestilent Points",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1439751,
-    "name": "Aspect of Gore Quills"
+    "name": "Aspect of Gore Quills",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1439762,
-    "name": "Aspect of Searing Wards"
+    "name": "Aspect of Searing Wards",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1457950,
-    "name": "Moonrage Aspect"
+    "name": "Moonrage Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1485369,
@@ -937,39 +1557,66 @@
   },
   {
     "id": 1603698,
-    "name": "Wanton Rupture Aspect"
+    "name": "Wanton Rupture Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1619483,
-    "name": "Raw Might Aspect"
+    "name": "Raw Might Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1620630,
-    "name": "Aspect of Artful Initiative"
+    "name": "Aspect of Artful Initiative",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1622847,
-    "name": "Aspect of the Long Shadow"
+    "name": "Aspect of the Long Shadow",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1622932,
-    "name": "Battle Caster's Aspect"
+    "name": "Battle Caster's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1737620,
-    "name": "Aspect of Sundered Ground"
+    "name": "Aspect of Sundered Ground",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1738556,
-    "name": "Virulent Aspect"
+    "name": "Virulent Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1739655,
-    "name": "Resistant Assailant's Aspect"
+    "name": "Resistant Assailant's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1740178,
-    "name": "Shattered Spirit's Aspect"
+    "name": "Shattered Spirit's Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1741829,
@@ -977,7 +1624,10 @@
   },
   {
     "id": 1743946,
-    "name": "Aspect of Shredding Blades"
+    "name": "Aspect of Shredding Blades",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1746093,
@@ -985,131 +1635,229 @@
   },
   {
     "id": 1754892,
-    "name": "Aphotic Aspect"
+    "name": "Aphotic Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1755013,
-    "name": "Flamethrower's Aspect"
+    "name": "Flamethrower's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1761328,
-    "name": "Aspect of Poisonous Clouds"
+    "name": "Aspect of Poisonous Clouds",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1768379,
-    "name": "Aspect of Splintering Shards"
+    "name": "Aspect of Splintering Shards",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1791939,
-    "name": "Aspect of Shattering Steel"
+    "name": "Aspect of Shattering Steel",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1803887,
-    "name": "Aspect of the Flaming Rampage"
+    "name": "Aspect of the Flaming Rampage",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1811514,
-    "name": "Ruthless Aspect"
+    "name": "Ruthless Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1812312,
-    "name": "Aspect of the Agile Wolf"
+    "name": "Aspect of the Agile Wolf",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1814245,
-    "name": "Aspect of the Rabid Bear"
+    "name": "Aspect of the Rabid Bear",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1815979,
-    "name": "Stormcrow's Aspect"
+    "name": "Stormcrow's Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1822320,
-    "name": "Aspect of Rallying Reversal"
+    "name": "Aspect of Rallying Reversal",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822322,
-    "name": "Aspect of Exhilaration"
+    "name": "Aspect of Exhilaration",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822324,
-    "name": "Aspect of Wild Claws"
+    "name": "Aspect of Wild Claws",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822329,
-    "name": "Aspect of Unyielding Hits"
+    "name": "Aspect of Unyielding Hits",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822332,
-    "name": "Aspect of Combined Strikes"
+    "name": "Aspect of Combined Strikes",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822334,
-    "name": "Aspect of Infestation"
+    "name": "Aspect of Infestation",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822339,
-    "name": "Bruiser's Aspect"
+    "name": "Bruiser's Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822341,
-    "name": "Aspect of Binding Morass"
+    "name": "Aspect of Binding Morass",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822343,
-    "name": "Aspect of Falling Feathers"
+    "name": "Aspect of Falling Feathers",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822345,
-    "name": "Raider's Aspect"
+    "name": "Raider's Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822347,
-    "name": "Reaper's Aspect"
+    "name": "Reaper's Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1822350,
-    "name": "Duelist's Aspect"
+    "name": "Duelist's Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1841369,
-    "name": "Reaping Lotus' Aspect"
+    "name": "Reaping Lotus' Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1848038,
-    "name": "Phasing Poltergeist's Aspect"
+    "name": "Phasing Poltergeist's Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1858270,
-    "name": "Unrelenting Aspect"
+    "name": "Unrelenting Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1858272,
-    "name": "Rebounding Aspect"
+    "name": "Rebounding Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1858274,
-    "name": "Aspect of Pestilence"
+    "name": "Aspect of Pestilence",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1858276,
-    "name": "Aspect of Bristling Vengeance"
+    "name": "Aspect of Bristling Vengeance",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1858278,
-    "name": "Insatiable Aspect"
+    "name": "Insatiable Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1858280,
-    "name": "Bristleback Aspect"
+    "name": "Bristleback Aspect",
+    "classes": [
+      "Necromancer",
+      "Spiritborn"
+    ]
   },
   {
     "id": 1858282,
-    "name": "Tormentor's Aspect"
+    "name": "Tormentor's Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1858284,
-    "name": "Aspect of Redirected Force"
+    "name": "Aspect of Redirected Force",
+    "classes": [
+      "Necromancer",
+      "Spiritborn"
+    ]
   },
   {
     "id": 1859769,
@@ -1137,11 +1885,17 @@
   },
   {
     "id": 1882773,
-    "name": "Aspect of Fel Gluttony"
+    "name": "Aspect of Fel Gluttony",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1884339,
-    "name": "High Velocity Aspect"
+    "name": "High Velocity Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1893589,
@@ -1161,7 +1915,14 @@
   },
   {
     "id": 1922389,
-    "name": "Sticker-thought Aspect"
+    "name": "Sticker-thought Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer"
+    ]
   },
   {
     "id": 1923692,
@@ -1169,71 +1930,122 @@
   },
   {
     "id": 1924068,
-    "name": "Aspect of Fierce Winds"
+    "name": "Aspect of Fierce Winds",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1925377,
-    "name": "Aspect of Charged Flash"
+    "name": "Aspect of Charged Flash",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1926238,
-    "name": "Aspect of Fevered Mauling"
+    "name": "Aspect of Fevered Mauling",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1926363,
-    "name": "Aspect of Tenuous Destruction"
+    "name": "Aspect of Tenuous Destruction",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1926782,
-    "name": "Aspect of Anger Management"
+    "name": "Aspect of Anger Management",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1929337,
-    "name": "Executioner's Aspect"
+    "name": "Executioner's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 1933286,
-    "name": "Rejuvenating Aspect"
+    "name": "Rejuvenating Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1934391,
-    "name": "Spirit Bond Aspect"
+    "name": "Spirit Bond Aspect",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 1934512,
-    "name": "Winter Touch Aspect"
+    "name": "Winter Touch Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1934644,
-    "name": "Aspect of Elemental Constellation"
+    "name": "Aspect of Elemental Constellation",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1935062,
-    "name": "Jolting Aspect"
+    "name": "Jolting Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1936204,
-    "name": "Firestarter Aspect"
+    "name": "Firestarter Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1937739,
-    "name": "Aspect of Overheating"
+    "name": "Aspect of Overheating",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1942672,
-    "name": "Aspect of True Sight"
+    "name": "Aspect of True Sight",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1943568,
-    "name": "Coldclip Aspect"
+    "name": "Coldclip Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1946028,
-    "name": "Aspect of the Cursed Aura"
+    "name": "Aspect of the Cursed Aura",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1949276,
-    "name": "Shademist Aspect"
+    "name": "Shademist Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1950240,
@@ -1249,203 +2061,354 @@
   },
   {
     "id": 1950503,
-    "name": "Aspect of the Great Feast"
+    "name": "Aspect of the Great Feast",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1956797,
-    "name": "Aspect of Tenuous Agility"
+    "name": "Aspect of Tenuous Agility",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1963371,
-    "name": "Aspect of the Firebird"
+    "name": "Aspect of the Firebird",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1964483,
-    "name": "Aspect of the Orange Herald"
+    "name": "Aspect of the Orange Herald",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1965000,
-    "name": "Aspect of Elemental Acuity"
+    "name": "Aspect of Elemental Acuity",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1965062,
-    "name": "Lightning Rod Aspect"
+    "name": "Lightning Rod Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 1966074,
-    "name": "Fell Soothsayer's Aspect"
+    "name": "Fell Soothsayer's Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1967627,
-    "name": "Starving Ravager's Aspect"
+    "name": "Starving Ravager's Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1968061,
-    "name": "Aspect of Haste"
+    "name": "Aspect of Haste",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1968381,
-    "name": "Aspect of Nebulous Brews"
+    "name": "Aspect of Nebulous Brews",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1969083,
-    "name": "Breakneck Bandit's Aspect"
+    "name": "Breakneck Bandit's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1970962,
-    "name": "Galvanized Slasher's Aspect"
+    "name": "Galvanized Slasher's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1971366,
-    "name": "Aspect of Iron Rain"
+    "name": "Aspect of Iron Rain",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1972501,
-    "name": "Aspect of the Unholy Tether"
+    "name": "Aspect of the Unholy Tether",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1972587,
-    "name": "Aspect of Fleet Wings"
+    "name": "Aspect of Fleet Wings",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1974257,
-    "name": "Aspect of Avoidance"
+    "name": "Aspect of Avoidance",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1974301,
-    "name": "Inexorable Reaper's Aspect"
+    "name": "Inexorable Reaper's Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1975355,
-    "name": "Aspect of Apprehension"
+    "name": "Aspect of Apprehension",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1976569,
-    "name": "Aspect of Recalling Feathers"
+    "name": "Aspect of Recalling Feathers",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1976571,
-    "name": "Aspect of Empowered Feathers"
+    "name": "Aspect of Empowered Feathers",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1977089,
-    "name": "Aspect of Creeping Mist"
+    "name": "Aspect of Creeping Mist",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1977735,
-    "name": "Imprisoned Spirit's Aspect"
+    "name": "Imprisoned Spirit's Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 1978374,
-    "name": "Aspect of Sky Power"
+    "name": "Aspect of Sky Power",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1978616,
-    "name": "Aspect of Soil Power"
+    "name": "Aspect of Soil Power",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1978626,
-    "name": "Aspect of Forest Power"
+    "name": "Aspect of Forest Power",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1978628,
-    "name": "Aspect of Plains Power"
+    "name": "Aspect of Plains Power",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1980708,
-    "name": "Mired Sharpshooter's Aspect"
+    "name": "Mired Sharpshooter's Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 1981714,
-    "name": "Aspect of Deflection"
+    "name": "Aspect of Deflection",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1981761,
-    "name": "Aspect of Simple Reprisal"
+    "name": "Aspect of Simple Reprisal",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1981977,
-    "name": "Menacing Aspect"
+    "name": "Menacing Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1983255,
-    "name": "Aspect of Kinetic Suppression"
+    "name": "Aspect of Kinetic Suppression",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1983319,
-    "name": "Aspect of Reactive Armor"
+    "name": "Aspect of Reactive Armor",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1983349,
-    "name": "Aspect of Turbulence"
+    "name": "Aspect of Turbulence",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1983612,
-    "name": "Aspect of Momentum"
+    "name": "Aspect of Momentum",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1983766,
-    "name": "Aspect of Tenacity"
+    "name": "Aspect of Tenacity",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1985480,
-    "name": "Aspect of Endurance"
+    "name": "Aspect of Endurance",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1987425,
-    "name": "Aspect of Layered Wards"
+    "name": "Aspect of Layered Wards",
+    "classes": [
+      "Necromancer",
+      "Spiritborn"
+    ]
   },
   {
     "id": 1987429,
-    "name": "Aspect of Interdiction"
+    "name": "Aspect of Interdiction",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1987443,
-    "name": "Aspect of Potent Exchange"
+    "name": "Aspect of Potent Exchange",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1987448,
-    "name": "Aspect of Alacrity"
+    "name": "Aspect of Alacrity",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1987452,
-    "name": "Aspect of Temporal Incisions"
+    "name": "Aspect of Temporal Incisions",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 1989503,
-    "name": "Aspect of Invigorating Will"
+    "name": "Aspect of Invigorating Will",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2014186,
-    "name": "Aspect of the Fortress"
+    "name": "Aspect of the Fortress",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2014637,
-    "name": "Aspect of the Rushing Wilds"
+    "name": "Aspect of the Rushing Wilds",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2019033,
-    "name": "Aspect of Forward Momentum"
+    "name": "Aspect of Forward Momentum",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2040941,
-    "name": "Aspect of Star Shards"
+    "name": "Aspect of Star Shards",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2042271,
-    "name": "Aspect of Herculean Spectacle"
+    "name": "Aspect of Herculean Spectacle",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2044227,
-    "name": "Clandestine Aspect"
+    "name": "Clandestine Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2098752,
-    "name": "Aspect of Shattered Defenses"
+    "name": "Aspect of Shattered Defenses",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2099442,
-    "name": "Aspect of Anticline Burst"
+    "name": "Aspect of Anticline Burst",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2107188,
@@ -1453,31 +2416,52 @@
   },
   {
     "id": 2117213,
-    "name": "Aspect of Distilled Anima"
+    "name": "Aspect of Distilled Anima",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2145128,
-    "name": "Aspect of Electrified Claws"
+    "name": "Aspect of Electrified Claws",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2147318,
-    "name": "Aspect of Mind's Awakening"
+    "name": "Aspect of Mind's Awakening",
+    "classes": [
+      "Sorcerer"
+    ]
   },
   {
     "id": 2148881,
-    "name": "Bone Duster's Aspect"
+    "name": "Bone Duster's Aspect",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2152208,
-    "name": "Slice and Dice Aspect"
+    "name": "Slice and Dice Aspect",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2152638,
-    "name": "Aspect of Bitter Infection"
+    "name": "Aspect of Bitter Infection",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2156287,
-    "name": "Aspect of Incendiary Fissures"
+    "name": "Aspect of Incendiary Fissures",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2164685,
@@ -1489,34 +2473,58 @@
   },
   {
     "id": 2175683,
-    "name": "Aspect of Endless Talons"
+    "name": "Aspect of Endless Talons",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2176630,
-    "name": "Aspect of Wolf's Rain"
+    "name": "Aspect of Wolf's Rain",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2192357,
-    "name": "Aspect of Delayed Extinction"
+    "name": "Aspect of Delayed Extinction",
+    "classes": [
+      "Barbarian"
+    ]
   },
   {
     "id": 2208083,
-    "name": "Rip and Tear Aspect"
+    "name": "Rip and Tear Aspect",
+    "classes": [
+      "Spiritborn"
+    ]
   },
   {
     "id": 2239052,
-    "name": "Aspect of Service and Sacrifice"
+    "name": "Aspect of Service and Sacrifice",
+    "classes": [
+      "Necromancer"
+    ]
   },
   {
     "id": 2241686,
-    "name": "Aspect of Impending Deluge"
+    "name": "Aspect of Impending Deluge",
+    "classes": [
+      "Druid"
+    ]
   },
   {
     "id": 2246466,
-    "name": "Aspect of Contamination"
+    "name": "Aspect of Contamination",
+    "classes": [
+      "Rogue"
+    ]
   },
   {
     "id": 2249121,
-    "name": "Shivering Aspect"
+    "name": "Shivering Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
   }
 ]

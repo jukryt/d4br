@@ -1,5 +1,6 @@
 ﻿using Importer.Checker;
 using Importer.Custom.Glyph;
+using Importer.Custom.Rune;
 using Importer.Custom.Skill;
 using Importer.Custom.Temper;
 using Importer.Custom.UnqItem;
@@ -17,7 +18,7 @@ namespace Importer.Resource
                 Folder = "en",
                 Infos =
                     [
-                        new ResourceInfo<Item>
+                        new ResourceInfo<ClassItem>
                         {
                             Name = "aspect en",
                             Source = new()
@@ -27,7 +28,7 @@ namespace Importer.Resource
                                     new()
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/aspects",
-                                        Script = "() => g_listviews.aspects.data.map(i => ({id: i.id, name: i.name}))",
+                                        Script = "() => g_listviews.aspects.data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames.split(', ').filter(c => c !== 'All')}))",
                                     },
                                 ],
                             },
@@ -35,17 +36,18 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new FixRemoveEmptyName<Item>(),
-                                    new FixName<Item>(),
+                                    new FixRemoveEmptyName<ClassItem>(),
+                                    new FixRemoveEmptyClass<ClassItem>(),
+                                    new FixName<ClassItem>(),
                                 ],
                             },
                             Check = new()
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<Item>()
+                                    new CheckUnique<ClassItem>()
                                     {
-                                        Comparer = new ItemEqualComparer<Item>(),
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
@@ -72,7 +74,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new GlyphFilter(),
+                                    new GlyphFilter(false),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
                                     new FixName<ClassItem>(),
@@ -154,6 +156,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
+                                    new RuneFilter(false),
                                     new FixRemoveEmptyName<Item>(),
                                     new FixName<Item>(),
                                 ],
@@ -191,7 +194,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new SkillFilter(),
+                                    new SkillFilter(false),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
                                     new FixName<ClassItem>(),
@@ -233,7 +236,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new TemperFilter<TemperItem>(),
+                                    new TemperFilter(false),
                                     new FixRemoveEmptyName<TemperItem>(),
                                     new FixRemoveEmptyClass<TemperItem>(),
                                     new FixName<TemperItem>(),
@@ -276,7 +279,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
-                                    new UnqItemFilter(),
+                                    new UnqItemFilter(false),
                                     new FixRemoveEmptyName<Item>(),
                                     new FixName<Item>(),
                                 ],
