@@ -1,4 +1,5 @@
 ﻿using Importer.Model;
+using Importer.Processor;
 using Importer.Puppeteer;
 using Importer.Report;
 
@@ -9,27 +10,28 @@ namespace Importer
         static async Task Main(string[] args)
         {
             var appConfig = await AppConfig.LoadAsync();
+            using var reportManager = new ReportManager();
 
-            using (var reportManager = new ReportManager())
-                await ExecuteAsync(appConfig, reportManager);
+            await ExecuteAsync(appConfig, reportManager);
         }
 
         private static async Task ExecuteAsync(AppConfig appConfig, ReportManager reportManager)
         {
-            using var browser = await PuppeteerBrowser.RunAsync(maxPageCount: 5, requestTimeout: appConfig.BrowserRequestTimeout);
+            using var browser = await PuppeteerBrowser.RunAsync(appConfig.MaxBrowserPageCount, appConfig.BrowserRequestTimeout);
+            var runner = new ProcessorRunner(browser, appConfig.MaxProcessorCount);
 
             var resources = Resources.GetResources()
                 .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)));
 
-            var tasks = resources.Select(r => ExecuteAsync(r, browser, appConfig, reportManager));
+            var tasks = resources.Select(r => ExecuteAsync(r, runner, appConfig, reportManager));
             await Task.WhenAll(tasks);
         }
 
-        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, AppConfig appConfig, ReportManager reportManager)
+        private static async Task ExecuteAsync(Resource resource, ProcessorRunner runner, AppConfig appConfig, ReportManager reportManager)
         {
             var resourceWorkFolderPath = Path.Combine(appConfig.WorkFolder, resource.Folder);
             var processor = resource.Info.CreateProcessor(resourceWorkFolderPath, reportManager);
-            await processor.ProcessAsync(browser);
+            await runner.ExecuteAsync(processor);
         }
 
         private sealed class Resource

@@ -9,6 +9,8 @@ namespace Importer
         private const string AppConfigFileName = "_app.config.json";
 
         public string WorkFolder { get; set; } = string.Empty;
+        public int MaxProcessorCount { get; set; } = 10;
+        public int MaxBrowserPageCount { get; set; } = 5;
         public int BrowserRequestTimeout { get; set; } = 30 * 1000;
 
         public static async Task<AppConfig> LoadAsync(CancellationToken cancellationToken = default)

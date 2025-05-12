@@ -24,20 +24,23 @@ namespace Importer.Processor
 
         public async Task ProcessAsync(PuppeteerBrowser browser)
         {
-            using var progressReporter = _reportManager.CreateProgressReporter(_info.Name);
-            var messageReporter = _reportManager.CreateMessageReporter();
+            using (var progressReporter = _reportManager.CreateProgressReporter(_info.Name))
+            {
+                var messageReporter = _reportManager.CreateMessageReporter();
 
-            var reader = _info.Source.CreateReader(progressReporter);
-            var fixer = _info.Fix?.CreateFixer(_info.Name, progressReporter, messageReporter);
-            var checker = _info.Check?.CreateChecker(_info.Name, messageReporter);
-            var writer = _info.Target.CreateWriter(_workFolder, progressReporter);
+                var reader = _info.Source.CreateReader(progressReporter);
+                var fixer = _info.Fix?.CreateFixer(_info.Name, progressReporter, messageReporter);
+                var checker = _info.Check?.CreateChecker(_info.Name, messageReporter);
+                var writer = _info.Target.CreateWriter(_workFolder, progressReporter);
 
-            var items = await reader.ReadAsync(browser);
-            await (fixer?.FixItemsAsync(items) ?? Task.CompletedTask);
-            checker?.CheckItems(items);
-            await writer.WriteAsync(items.OrderBy(i => i.Id));
+                var items = await reader.ReadAsync(browser);
+                await (fixer?.FixItemsAsync(items) ?? Task.CompletedTask);
+                checker?.CheckItems(items);
+                await writer.WriteAsync(items.OrderBy(i => i.Id));
 
-            progressReporter.Complete();
+                progressReporter.Complete();
+                await Task.Delay(1000);
+            }
         }
     }
 }
