@@ -134,10 +134,7 @@ class D4MaxrollProcessor {
     }
 
     getCharClassName() {
-        const classNameTitle =
-            document.querySelector("div.d4t-PlannerLink div.d4t-title") ??  // guide
-            document.querySelector("div.header_Header__buildTitle__WS8cB"); // planner
-
+        const classNameTitle = document.querySelector("div.d4t-Paperdoll div.d4t-title");
         return classNameTitle?.innerText;
     }
 
