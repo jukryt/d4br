@@ -34,6 +34,7 @@
 // @require      https://raw.githubusercontent.com/jukryt/d4br/57c9312eea0aff5056e898bffb4c1c059c4e793e/d4builds.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/57c9312eea0aff5056e898bffb4c1c059c4e793e/d4maxroll.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/57c9312eea0aff5056e898bffb4c1c059c4e793e/d4mobalytics.js
+// @require      d4d2core.js
 
 // ==/UserScript==
 
@@ -61,6 +62,8 @@ function CreateProcessor() {
             return new D4MaxrollProcessor();
         case "mobalytics.gg":
             return new D4MobalyticsProcessor();
+        case "www.d2core.com":
+            return new D4d2coreProcessor();
     }
 }
 
