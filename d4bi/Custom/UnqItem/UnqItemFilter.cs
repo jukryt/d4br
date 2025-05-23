@@ -23,8 +23,6 @@ namespace Importer.Custom.UnqItem
             [2125049] = "Tribute of Ascendance (United)",
             [2090362] = "Tribute of Ascendance (Resolute)",
             [1858740] = "Yen's Blessing",
-
-            // g_listviews.items.data.slice(170).map(i => `[${i.id}] = "${i.name}",`).join("\n")
             [1928911] = "Pants Unique Necro 98",
             [2043693] = "The Mortacrux / The Umbracrux",
             [1905117] = "[PH] Barb uniq 99 pants",
@@ -165,6 +163,21 @@ namespace Importer.Custom.UnqItem
             [2185042] = "[PH]",
             [2185050] = "[PH]",
             [2196161] = "Greater Gift from the Ancestors",
+            [2297770] = "[PH]",
+            [2297772] = "[PH]",
+            [2297768] = "[PH]",
+            [2297764] = "[PH]",
+            [2303141] = "[PH] Chest_Unique_Barbarian_96",
+            [2303145] = "[PH] Helm_Unique_Barbarian_96",
+            [2293979] = "Legendary Test Pants",
+            [2293971] = "Legendary Test Boots",
+            [2293973] = "Legendary Test Chest",
+            [2293975] = "Legendary Test Gloves",
+            [2293977] = "Legendary Test Helm",
+            [2297766] = "[PH]",
+            [2303138] = "[PH] Boots_Unique_Barbarian_96",
+            [2303143] = "[PH] Gloves_Unique_Barbarian_96",
+            [2303147] = "[PH] Pants_Unique_Barbarian_96",
         };
 
         private readonly bool _ignoreName;

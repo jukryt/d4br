@@ -8,8 +8,6 @@ namespace Importer.Custom.Skill
     {
         private static readonly IReadOnlyDictionary<long, string> IgnoreItems = new Dictionary<long, string>()
         {
-            [1858262] = "Spiritborn CentipedeRuler ProjectileAttack",
-            [1859218] = "Spiritborn CentipedeRuler BreathAttack",
         };
 
         private readonly bool _ignoreName;
