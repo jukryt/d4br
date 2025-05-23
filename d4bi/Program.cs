@@ -1,4 +1,5 @@
 ﻿using Importer.Model;
+using Importer.Processor;
 using Importer.Puppeteer;
 using Importer.Report;
 
@@ -10,38 +11,33 @@ namespace Importer
         {
             var appConfig = await AppConfig.LoadAsync();
 
-            using (var reportManager = new ReportManager())
-                await ExecuteAsync(appConfig, reportManager);
+            await ExecuteAsync(appConfig);
         }
 
-        private static async Task ExecuteAsync(AppConfig appConfig, ReportManager reportManager)
+        private static async Task ExecuteAsync(AppConfig appConfig)
         {
-            using var browser = await PuppeteerBrowser.RunAsync(maxPageCount: 5, requestTimeout: appConfig.BrowserRequestTimeout);
+            using var browser = await PuppeteerBrowser.RunAsync(appConfig.MaxBrowserPageCount, appConfig.BrowserRequestTimeout);
+            using var reportManager = new ReportManager();
 
-            var resources = Resources.GetResources()
-                .SelectMany(c => c.Infos.Select(i => new Resource(i, c.Folder)));
+            var runner = new ProcessorRunner(browser, appConfig.MaxProcessorCount);
 
-            var tasks = resources.Select(r => ExecuteAsync(r, browser, appConfig, reportManager));
+            var tasks = Enumerable.Empty<Task>();
+            foreach (var resourceCollection in Resources.GetResources())
+            {
+                var resourceTasks = resourceCollection.Infos
+                    .Select(i => ExecuteAsync(i, resourceCollection.Folder, runner, appConfig, reportManager));
+
+                tasks = tasks.Union(resourceTasks);
+            }
+
             await Task.WhenAll(tasks);
         }
 
-        private static async Task ExecuteAsync(Resource resource, PuppeteerBrowser browser, AppConfig appConfig, ReportManager reportManager)
+        private static async Task ExecuteAsync(IResourceInfo info, string folder, ProcessorRunner runner, AppConfig appConfig, ReportManager reportManager)
         {
-            var resourceWorkFolderPath = Path.Combine(appConfig.WorkFolder, resource.Folder);
-            var processor = resource.Info.CreateProcessor(resourceWorkFolderPath, reportManager);
-            await processor.ProcessAsync(browser);
-        }
-
-        private sealed class Resource
-        {
-            public Resource(IResourceInfo info, string folder)
-            {
-                Info = info;
-                Folder = folder;
-            }
-
-            public IResourceInfo Info { get; }
-            public string Folder { get; }
+            var resourceWorkFolderPath = Path.Combine(appConfig.WorkFolder, folder);
+            var processor = info.CreateProcessor(resourceWorkFolderPath, reportManager);
+            await runner.ExecuteAsync(processor);
         }
     }
 }

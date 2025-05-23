@@ -25,6 +25,7 @@ namespace Importer.Report
             {
                 DisplayTimeInRealTime = false,
                 ProgressBarOnBottom = true,
+                CollapseWhenFinished = true,
                 DisablePercentageAtZeroMaxTicks = true,
                 ShowDuration = false,
                 ProgressCharacter = '─',

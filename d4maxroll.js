@@ -134,10 +134,7 @@ class D4MaxrollProcessor {
     }
 
     getCharClassName() {
-        const classNameTitle =
-            document.querySelector("div.d4t-PlannerLink div.d4t-title") ??  // guide
-            document.querySelector("div.header_Header__buildTitle__WS8cB"); // planner
-
+        const classNameTitle = document.querySelector("div.d4t-Paperdoll div.d4t-title");
         return classNameTitle?.innerText;
     }
 
@@ -150,7 +147,7 @@ class D4MaxrollProcessor {
         const subTitleValue = subTitleNode.innerText;
         // aspect node
         if (subTitleValue === "Legendary Aspect") {
-            return this.nodeProcess(titleNode, className, Language.aspects, true);
+            return this.nodeProcess(titleNode, className, Language.aspects);
         }
         // item node
         else {
@@ -167,7 +164,7 @@ class D4MaxrollProcessor {
                 return false;
             }
 
-            return this.setTargetValue(titleNode, className, targetItem.name, true);
+            return this.addTargetValue(titleNode, className, targetItem.name);
         }
     }
 
@@ -228,7 +225,7 @@ class D4MaxrollProcessor {
         }
 
         const targetAffixValue = this.targetLanguage.getSkillAffixValue(targetItem, value);
-        return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetAffixValue);
+        return this.addAffixNodeTargetValue(node, "d4br_affix_name", targetAffixValue);
     }
 
     temperNameProcess(node) {
@@ -261,7 +258,7 @@ class D4MaxrollProcessor {
         targetItem.detail.value = sourceItem.detail.value;
 
         const targetTemperValue = this.targetLanguage.getTemperValue(targetItem);
-        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
+        return this.addAffixNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
     }
 
     getTemperSourceItem(charClassName, sourceTemperValue) {
@@ -316,26 +313,26 @@ class D4MaxrollProcessor {
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems, true);
+        return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", Language.skills, true);
+        return this.nodeProcess(node, "d4br_skill_name", Language.skills);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes, true);
+        return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes);
     }
 
     glyphNameProcess(node) {
-        return this.nodeProcess(node, "d4br_glyph_name", Language.glyphs, true);
+        return this.nodeProcess(node, "d4br_glyph_name", Language.glyphs);
     }
 
     runeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
+        return this.nodeProcess(node, "d4br_rune_name", Language.runes);
     }
 
-    nodeProcess(node, className, resourceName, addSourceValue) {
+    nodeProcess(node, className, resourceName) {
         const sourceValue = node.innerText;
         if (!sourceValue) {
             return false;
@@ -360,33 +357,44 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        return this.setTargetValue(node, className, targetItem.name, addSourceValue);
+        return this.addTargetValue(node, className, targetItem.name);
     }
 
-    setAffixNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("div");
-        newNode.style["margin-top"] = "0.3em";
-        newNode.style.opacity = "0.6";
-        node.parentNode.insertBefore(newNode, node);
+    addAffixNodeTargetValue(node, className, targetValue) {
+        const affixNode = document.createElement("div");
+        affixNode.style["margin-top"] = "0.3em";
+        affixNode.style.opacity = "0.6";
+        affixNode.innerText = targetValue;
 
-        return this.setTargetValue(newNode, className, targetValue, false);
+        return this.addTargetValue(node, className, affixNode.outerHTML, true);
     }
 
-    setTargetValue(node, className, targetValue, addSourceValue) {
+    addTargetValue(node, className, targetValue, isHtml = false) {
         if (!targetValue) {
             return false;
         }
 
-        let htmlValue = this.buildHtmlValue(className, targetValue);
-        if (addSourceValue) {
-            htmlValue += node.innerHTML;
+        const nodeStyle = window.getComputedStyle(node);
+
+        const valueNode = document.createElement("div");
+        valueNode.className = `d4br_show ${className}`;
+        valueNode.style["font-family"] = nodeStyle.getPropertyValue("font-family");
+        valueNode.style["font-size"] = nodeStyle.getPropertyValue("font-size");
+        valueNode.style["text-align"] = nodeStyle.getPropertyValue("text-align");
+        valueNode.style["color"] = "darkgray";
+
+        if (isHtml) {
+            valueNode.innerHTML = targetValue;
+        }
+        else {
+            valueNode.innerText = targetValue;
         }
 
-        node.innerHTML = htmlValue;
-        return true;
-    }
+        node.parentNode.insertBefore(valueNode, node);
 
-    buildHtmlValue(className, value) {
-        return `<div class="d4br_show ${className}" style="color:darkgray;">${value}</div>`;
+        valueNode.style["margin-top"] = nodeStyle.getPropertyValue("margin-top");
+        valueNode.style["margin-bottom"] = `-${nodeStyle.getPropertyValue("margin-top")}`;
+
+        return true;
     }
 }
