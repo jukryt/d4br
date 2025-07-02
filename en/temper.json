@@ -1187,7 +1187,7 @@
       {
         "id": 1,
         "names": [
-          "Bash Cleaves for X Damage"
+          " X Chance for Bash to Hit Twice"
         ]
       },
       {
@@ -2631,23 +2631,17 @@
       {
         "id": 1,
         "names": [
-          " X Hydra Resource Cost Reduction"
+          " X Ice Blades Cooldown Reduction"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Ice Blades Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Lightning Spear Cooldown Reduction"
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "names": [
           " X Familiar Duration"
         ]
@@ -3006,12 +3000,6 @@
         "id": 3,
         "names": [
           " X Cyclone Armor Active Size"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X Petrify Duration"
         ]
       }
     ]
@@ -4544,7 +4532,7 @@
       {
         "id": 3,
         "names": [
-          " X to Heavy Hitter"
+          " X to Wallop"
         ]
       }
     ]
@@ -4713,6 +4701,34 @@
         "id": 3,
         "names": [
           " X Shadow Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2370974,
+    "name": "Werebear Innovation",
+    "classes": [
+      "Druid"
+    ],
+    "type": "Utility",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Pulverize Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Maul Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Petrify Duration"
         ]
       }
     ]
