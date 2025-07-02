@@ -88,6 +88,10 @@
     "name": "Condemnation"
   },
   {
+    "id": 455405,
+    "name": "Deathmask of Nirmitruq"
+  },
+  {
     "id": 469648,
     "name": "Asheara's Khanjar"
   },
@@ -556,6 +560,14 @@
     "name": "Shroud of False Death"
   },
   {
+    "id": 2059805,
+    "name": "Hooves of the Mountain God"
+  },
+  {
+    "id": 2059808,
+    "name": "Wilted Potential"
+  },
+  {
     "id": 2059813,
     "name": "Shattered Vow"
   },
@@ -616,7 +628,87 @@
     "name": "Tyrael's Shopping List"
   },
   {
+    "id": 2242286,
+    "name": "Rotting Lightbringer"
+  },
+  {
+    "id": 2242301,
+    "name": "The Hand of Naz"
+  },
+  {
+    "id": 2242304,
+    "name": "Ophidian Iris"
+  },
+  {
+    "id": 2242307,
+    "name": "Balazan's Maxtlatl"
+  },
+  {
     "id": 2246455,
     "name": "Bands of Ichorous Rose"
+  },
+  {
+    "id": 2329621,
+    "name": "Seal of Control"
+  },
+  {
+    "id": 2329677,
+    "name": "Seal of Power"
+  },
+  {
+    "id": 2329679,
+    "name": "Seal of Denial"
+  },
+  {
+    "id": 2329682,
+    "name": "Horadric Crest"
+  },
+  {
+    "id": 2329697,
+    "name": "Reverie Horn"
+  },
+  {
+    "id": 2329725,
+    "name": "Scornful Light"
+  },
+  {
+    "id": 2329728,
+    "name": "Tyrant's Bane"
+  },
+  {
+    "id": 2329732,
+    "name": "Liminal Echo"
+  },
+  {
+    "id": 2329750,
+    "name": "Idol From Below"
+  },
+  {
+    "id": 2329770,
+    "name": "Myriad Stone"
+  },
+  {
+    "id": 2329776,
+    "name": "Spark of Creation"
+  },
+  {
+    "id": 2329780,
+    "name": "Luminate Eye"
+  },
+  {
+    "id": 2329805,
+    "name": "Brilliant Sigil"
+  },
+  {
+    "id": 2329814,
+    "name": "Elemental Brand"
+  },
+  {
+    "id": 2330723,
+    "name": "The Starflux"
+  },
+  {
+    "id": 2368546,
+    "name": "Willbreaker"
   }
 ]
