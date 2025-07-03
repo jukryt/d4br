@@ -138,6 +138,11 @@ class D4MaxrollProcessor {
         return classNameTitle?.innerText;
     }
 
+    buildTemperValueRegex(value) {
+        return StringExtension.escapeRegexChars(value)
+            .replace(Language.temperValueMacros, " ?(\\+? ?[0-9\\.,\\-% ]+)? ?");
+    }
+
     aspectNameProcess(titleNode, subTitleNode) {
         if (!subTitleNode) {
             return false;
@@ -272,13 +277,13 @@ class D4MaxrollProcessor {
         let sourceItems = tempers.filter(t => {
             const details = t.details.filter(d => {
                 var names = d.names.filter(n => {
-                    const valueRegex = this.sourceLanguage.buildTemperValueRegex(n);
+                    const valueRegex = this.buildTemperValueRegex(n);
                     const valueMatch = sourceTemperValue.match(valueRegex);
 
                     if (valueMatch &&
                         valueMatch.index === 0 &&
                         valueMatch[0] === sourceTemperValue) {
-                        d.value = valueMatch[1].trim();
+                        d.value = valueMatch[1]?.trim();
                         return true;
                     }
                 });

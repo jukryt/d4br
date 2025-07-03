@@ -22,6 +22,10 @@ class StringExtension {
         return sourceString && searchString &&
             sourceString.toLowerCase().endsWith(searchString.toLowerCase(), position);
     }
+	
+	static escapeRegexChars(sourceString) {
+		return sourceString?.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+	}
 }
 
 class Language {
@@ -82,20 +86,6 @@ class Language {
 
     getSkillAffixValue(skillItem) {
         return skillItem.name;
-    }
-
-    buildTemperValueRegex(value) {
-        return value
-            .replace("$", "\\$")
-            .replace("^", "\\^")
-            .replace(".", "\\.")
-            .replace("+", "\\+")
-            .replace("*", "\\*")
-            .replace("(", "\\(")
-            .replace(")", "\\)")
-            .replace("[", "\\[")
-            .replace("]", "\\]")
-            .replace(Language.temperValueMacros, " ?(\\+? ?[X0-9\\.,\\-% \\[\\]]+) ?");
     }
 
     getTemperValue(temperItem) {

@@ -79,7 +79,8 @@ class D4MobalyticsProcessor {
     }
 
     buildTemperValueRegex(value) {
-        return value.replace(Language.temperValueMacros, " ?(Bonus)? ?");
+        return StringExtension.escapeRegexChars(value)
+            .replace(Language.temperValueMacros, " ?(?:Bonus)? ?");
     }
 
     aspectNameProcess(node) {
@@ -156,9 +157,8 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        if (sourceItem.detail) {
-            targetItem.detail = targetItem.details.find(v => v.id === sourceItem.detail.id);
-        }
+        targetItem.detail = targetItem.details.find(v => v.id === sourceItem.detail.id);
+        targetItem.detail.value = sourceItem.detail.value;
 
         const targetTemperValue = this.targetLanguage.getTemperValue(targetItem);
         return this.setTemperNodeTargetValue(temperNameNode, "d4br_temper_name", targetTemperValue);
@@ -185,6 +185,7 @@ class D4MobalyticsProcessor {
                     if (valueMatch &&
                         valueMatch.index === 0 &&
                         valueMatch[0] === fixedTemperValue) {
+                        d.value = valueMatch[1]?.trim();
                         return true;
                     }
                 });
