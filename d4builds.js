@@ -158,6 +158,11 @@ class D4BuildsProcessor {
 
         return classNameHeader?.innerText?.replace(" Build", "");
     }
+	
+	buildTemperValueRegex(value) {
+        return StringExtension.escapeRegexChars(value)
+		    .replace(Language.temperValueMacros, " ?(\\+? ?[X0-9\\.,\\-% \\[\\]]+)? ?");
+    }
 
     aspectNameProcess(node) {
         return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, false);
@@ -320,7 +325,7 @@ class D4BuildsProcessor {
         let sourceItems = tempers.filter(t => {
             const details = t.details.filter(d => {
                 var names = d.names.filter(n => {
-                    const valueRegex = this.sourceLanguage.buildTemperValueRegex(n);
+                    const valueRegex = this.buildTemperValueRegex(n);
                     const valueMatch = fixedTemperValue.match(valueRegex);
 
                     if (valueMatch &&

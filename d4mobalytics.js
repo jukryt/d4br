@@ -79,7 +79,8 @@ class D4MobalyticsProcessor {
     }
 
     buildTemperValueRegex(value) {
-        return value.replace(Language.temperValueMacros, " ?(Bonus)? ?");
+        return StringExtension.escapeRegexChars(value)
+		    .replace(Language.temperValueMacros, " ?(Bonus)? ?");
     }
 
     aspectNameProcess(node) {

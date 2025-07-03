@@ -137,6 +137,11 @@ class D4MaxrollProcessor {
         const classNameTitle = document.querySelector("div.d4t-Paperdoll div.d4t-title");
         return classNameTitle?.innerText;
     }
+	
+	buildTemperValueRegex(value) {
+        return StringExtension.escapeRegexChars(value)
+		    .replace(Language.temperValueMacros, " ?(\\+? ?[X0-9\\.,\\-% \\[\\]]+) ?");
+    }
 
     aspectNameProcess(titleNode, subTitleNode) {
         if (!subTitleNode) {
@@ -272,7 +277,7 @@ class D4MaxrollProcessor {
         let sourceItems = tempers.filter(t => {
             const details = t.details.filter(d => {
                 var names = d.names.filter(n => {
-                    const valueRegex = this.sourceLanguage.buildTemperValueRegex(n);
+                    const valueRegex = this.buildTemperValueRegex(n);
                     const valueMatch = sourceTemperValue.match(valueRegex);
 
                     if (valueMatch &&
