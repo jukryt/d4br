@@ -2,6 +2,7 @@ class D4MobalyticsProcessor {
     constructor() {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
+        this.temperBuilder = new TemperBulder(this.sourceLanguage, this.targetLanguage, " ?(?:Bonus)? ?");
     }
 
     mutationObserverCallback(mutations) {
@@ -78,10 +79,6 @@ class D4MobalyticsProcessor {
             ?.replace(" Build", "");
     }
 
-    buildTemperValueRegex(value) {
-        return value.replace(Language.temperValueMacros, " ?(Bonus)? ?");
-    }
-
     aspectNameProcess(node) {
         return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, true);
     }
@@ -146,76 +143,23 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        const sourceItem = this.getTemperSourceItem(charClassName, sourceTemperValue);
-        if (!sourceItem) {
+        const targetTemperValue = this.getTemperTargetValue(charClassName, sourceTemperValue);
+        if (!targetTemperValue) {
             return false;
         }
 
-        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
-        if (!targetItem) {
-            return false;
-        }
-
-        if (sourceItem.detail) {
-            targetItem.detail = targetItem.details.find(v => v.id === sourceItem.detail.id);
-        }
-
-        const targetTemperValue = this.targetLanguage.getTemperValue(targetItem);
         return this.setTemperNodeTargetValue(temperNameNode, "d4br_temper_name", targetTemperValue);
     }
 
-    getTemperSourceItem(charClassName, sourceTemperValue) {
-        const fixedTemperValue = sourceTemperValue
+    getTemperTargetValue(charClassName, sourceValue) {
+        const fixedTemperValue = sourceValue
             .replace("Movement Speed for X Seconds", "Movement Speed for 4 Seconds")
             .replace("Movement Speed for Seconds", "Movement Speed for 4 Seconds");
 
-        const tempers = this.sourceLanguage.tempers
-            .filter(i => {
-                return !i.classes || i.classes.length === 0 ||
-                    (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
-            })
-            .filter(i => i.details);
+        const targetTemperItem = this.temperBuilder.getTargetItem(charClassName, fixedTemperValue);
+        const targetTemperValue = this.temperBuilder.buildValue(targetTemperItem);
 
-        let sourceItems = tempers.filter(t => {
-            const details = t.details.filter(d => {
-                var names = d.names.filter(n => {
-                    const valueRegex = this.buildTemperValueRegex(n);
-                    const valueMatch = fixedTemperValue.match(valueRegex);
-
-                    if (valueMatch &&
-                        valueMatch.index === 0 &&
-                        valueMatch[0] === fixedTemperValue) {
-                        return true;
-                    }
-                });
-                return names.length === 1;
-            });
-
-            if (details.length === 1) {
-                t.detail = details[0];
-                return true;
-            }
-        });
-
-        if (sourceItems.length === 0) {
-            return null;
-        }
-
-        if (sourceItems.length > 1) {
-            if (Array.from(new Set(sourceItems.map(i => i.type))).length === 1) {
-                const classItem = sourceItems.find(i => i.classes && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
-                if (classItem) {
-                    sourceItems = [classItem];
-                } else {
-                    sourceItems = [sourceItems[0]];
-                }
-            }
-            else {
-                return null;
-            }
-        }
-
-        return sourceItems[0];
+        return targetTemperValue;
     }
 
     unqItemNameProcess(node) {
