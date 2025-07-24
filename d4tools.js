@@ -23,6 +23,14 @@ class StringExtension {
             sourceString.toLowerCase().endsWith(searchString.toLowerCase(), position);
     }
 
+    static hashCode(sourceString) {
+        var hash = 0, i = sourceString.length;
+        while (i > 0) {
+            hash = (hash << 5) - hash + sourceString.charCodeAt(--i) | 0;
+        }
+        return hash;
+    }
+
     static escapeRegexChars(sourceString) {
         return sourceString?.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     }
