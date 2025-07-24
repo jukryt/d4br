@@ -2,7 +2,9 @@ class D4MaxrollProcessor {
     constructor() {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
-        this.temperBuilder = new TemperBulder(this.sourceLanguage, this.targetLanguage, " ?(\\+? ?[0-9\\.,\\-% ]+)? ?");
+        this.resourceBuilder = new ResourceBuilder(this);
+        this.affixBuilder = new AffixBuilder(this, /(?<value>\+\d+) to (?<skillName>.+)/);
+        this.temperBuilder = new TemperBulder(this, / ?(?<value>\+? ?[0-9\.,\-% ]+)? ?/);
     }
 
     mutationObserverCallback(mutations) {
@@ -195,38 +197,25 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const charClassName = this.getCharClassName();
-        if (!charClassName) {
+        const affixTargetValue = this.getAffixTargetValue(sourceValue);
+        if (!affixTargetValue) {
             return false;
         }
 
-        const affixValue = sourceValue
+        return this.addAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
+    }
+
+    getAffixTargetValue(sourceValue) {
+        const fixedAffixValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
             .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
-        const skillNameMatch = affixValue.match(/(\+\d+) to (.+)/);
-        if (!skillNameMatch) {
-            return false;
-        }
+        const sourceItem = this.affixBuilder.getSourceItem(fixedAffixValue);
+        const targetItem = this.affixBuilder.getTargetItem(sourceItem);
+        const targetValue = this.affixBuilder.buildTargetValue(targetItem);
 
-        const value = skillNameMatch[1];
-        const skillName = skillNameMatch[2];
-
-        const skills = this.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
-        const sourceItems = skills.filter(i => StringExtension.equelsIgnoreCase(i.name, skillName));
-        if (sourceItems.length != 1) {
-            return false;
-        }
-
-        const sourceItem = sourceItems[0];
-        const targetItem = this.targetLanguage.skills.find(i => i.id === sourceItem.id);
-        if (!targetItem) {
-            return false;
-        }
-
-        const targetAffixValue = this.targetLanguage.getSkillAffixValue(targetItem, value);
-        return this.addAffixNodeTargetValue(node, "d4br_affix_name", targetAffixValue);
+        return targetValue;
     }
 
     temperNameProcess(node) {
@@ -235,29 +224,25 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const charClassName = this.getCharClassName();
-        if (!charClassName) {
+        const temperTargetValue = this.getTemperTargetValue(sourceValue);
+        if (!temperTargetValue) {
             return false;
         }
 
-        const targetTemperValue = this.getTemperTargetValue(charClassName, sourceValue);
-        if (!targetTemperValue) {
-            return false;
-        }
-
-        return this.addAffixNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
+        return this.addAffixNodeTargetValue(node, "d4br_temper_name", temperTargetValue);
     }
 
-    getTemperTargetValue(charClassName, sourceValue) {
+    getTemperTargetValue(sourceValue) {
         const fixedTemperValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
             .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
-        const targetTemperItem = this.temperBuilder.getTargetItem(charClassName, fixedTemperValue);
-        const targetTemperValue = this.temperBuilder.buildValue(targetTemperItem);
+        const sourceItem = this.temperBuilder.getSourceItem(fixedTemperValue);
+        const targetItem = this.temperBuilder.getTargetItem(sourceItem);
+        const targetValue = this.temperBuilder.buildValue(targetItem);
 
-        return targetTemperValue;
+        return targetValue;
     }
 
     unqItemNameProcess(node) {
@@ -286,21 +271,9 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const charClassName = this.getCharClassName();
+        var sourceItem = this.resourceBuilder.getSourceItem(resourceName, sourceValue);
+        const targetItem = this.resourceBuilder.getTargetItem(sourceItem);
 
-        const availableItems = this.sourceLanguage.getResource(resourceName).filter(i => {
-            return !i.classes || i.classes.length === 0 ||
-                (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
-        });
-
-        const sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
-
-        if (sourceItems.length != 1) {
-            return false;
-        }
-
-        const sourceItem = sourceItems[0];
-        const targetItem = this.targetLanguage.getResource(resourceName).find(i => i.id === sourceItem.id);
         if (!targetItem) {
             return false;
         }

@@ -1,26 +1,104 @@
-class ExternalResource {
-    static getJsonResource(name) {
-        const text = GM_getResourceText(name);
-        if (!text) {
+class ResourceBuilder {
+    constructor(processor) {
+        this.processor = processor;
+    }
+
+    getSourceItem(resourceName, sourceValue) {
+        if (!resourceName || !sourceValue) {
             return null;
         }
-        return JSON.parse(text);
+
+        const charClassName = this.processor.getCharClassName();
+
+        const availableItems = this.processor.sourceLanguage.getResource(resourceName).filter(i => {
+            return !i.classes || i.classes.length === 0 ||
+                (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+        });
+
+        const sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
+
+        if (sourceItems.length != 1) {
+            return null;
+        }
+
+        const sourceItem = sourceItems[0];
+        if (!sourceItem) {
+            return null;
+        }
+
+        sourceItem.resourceName = resourceName;
+        return sourceItem;
+    }
+
+    getTargetItem(sourceItem) {
+        if (!sourceItem) {
+            return null;
+        }
+
+        const targetItem = this.processor.targetLanguage.getResource(sourceItem.resourceName).find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return null;
+        }
+
+        targetItem.resourceName = sourceItem.resourceName;
+        return targetItem;
     }
 }
 
-class StringExtension {
-    static equelsIgnoreCase(str1, str2) {
-        return str1?.toLowerCase() === str2?.toLowerCase();
+class AffixBuilder {
+    constructor(processor, skillRankRegex) {
+        this.processor = processor;
+        this.skillRankRegex = skillRankRegex;
     }
 
-    static startswithIgnoreCase(sourceString, searchString, position) {
-        return sourceString && searchString &&
-            sourceString.toLowerCase().startsWith(searchString.toLowerCase(), position);
+    getSourceItem(sourceValue) {
+        if (!sourceValue) {
+            return null;
+        }
+
+        const charClassName = this.processor.getCharClassName();
+        if (!charClassName) {
+            return null;
+        }
+
+        const sourceValueMatch = sourceValue.match(this.skillRankRegex);
+        if (!sourceValueMatch) {
+            return null;
+        }
+
+        const skillName = sourceValueMatch.groups?.skillName;
+        const value = sourceValueMatch.groups?.value;
+
+        if (!skillName) {
+            return null;
+        }
+
+        const fixSkillName = skillName.trim();
+
+        const skills = this.processor.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+        const sourceItems = skills.filter(i => StringExtension.equelsIgnoreCase(i.name, fixSkillName));
+        if (sourceItems.length != 1) {
+            return null;
+        }
+
+        const sourceItem = sourceItems[0];
+
+        sourceItem.value = value?.trim();
+        return sourceItem;
     }
 
-    static endsWithIgnoreCase(sourceString, searchString, position) {
-        return sourceString && searchString &&
-            sourceString.toLowerCase().endsWith(searchString.toLowerCase(), position);
+    getTargetItem(sourceItem) {
+        if (!sourceItem) {
+            return null;
+        }
+
+        const targetItem = this.processor.targetLanguage.skills.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return null;
+        }
+
+        targetItem.value = sourceItem.value;
+        return targetItem;
     }
     
     static hashCode(sourceString) {
@@ -31,58 +109,34 @@ class StringExtension {
         return hash;
     }
 
-    static escapeRegexChars(sourceString) {
-        return sourceString?.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    buildTargetValue(targetItem) {
+        if (!targetItem) {
+            return null;
+        }
+
+        return this.processor.targetLanguage.getSkillAffixValue(targetItem)
     }
 }
 
 class TemperBulder {
     static temperValueMacros = " X ";
 
-    constructor(sourceLanguage, targetLanguage, valueRegex) {
-        this.sourceLanguage = sourceLanguage;
-        this.targetLanguage = targetLanguage;
+    constructor(processor, valueRegex) {
+        this.processor = processor;
         this.valueRegex = valueRegex;
     }
 
-    buildValue(temperItem) {
-        if (!temperItem)
-            return null;
-
-        const names = [temperItem.type, temperItem.name];
-
-        if (temperItem.detail && temperItem.detail.names.length > 0) {
-            let detailName = temperItem.detail.names[0];
-
-            if (temperItem.detail.value) {
-                detailName = detailName.replace(TemperBulder.temperValueMacros, ` ${temperItem.detail.value} `);
-            }
-
-            names.push(detailName.trim());
-        }
-
-        return names.join(" ● ");
-    }
-
-    getTargetItem(charClassName, sourceTemperValue) {
-        const sourceItem = this.getSourceItem(charClassName, sourceTemperValue);
-        if (!sourceItem) {
+    getSourceItem(sourceValue) {
+        if (!sourceValue) {
             return null;
         }
 
-        const targetItem = this.targetLanguage.tempers.find(i => i.id === sourceItem.id);
-        if (!targetItem) {
+        const charClassName = this.processor.getCharClassName();
+        if (!charClassName) {
             return null;
         }
 
-        targetItem.detail = targetItem.details.find(v => v.id === sourceItem.detail.id);
-        targetItem.detail.value = sourceItem.detail.value;
-
-        return targetItem;
-    }
-
-    getSourceItem(charClassName, sourceTemperValue) {
-        const tempers = this.sourceLanguage.tempers
+        const tempers = this.processor.sourceLanguage.tempers
             .filter(i => {
                 return !i.classes || i.classes.length === 0 ||
                     (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
@@ -91,14 +145,15 @@ class TemperBulder {
 
         let sourceItems = tempers.filter(t => {
             const details = t.details.filter(d => {
-                var names = d.names.filter(n => {
-                    const valueRegex = this.buildValueRegex(n);
-                    const valueMatch = sourceTemperValue.match(valueRegex);
+                const names = d.names.filter(n => {
+                    const valueRegex = this._buildValueRegex(n);
+                    const valueMatch = sourceValue.match(valueRegex);
 
                     if (valueMatch &&
                         valueMatch.index === 0 &&
-                        valueMatch[0] === sourceTemperValue) {
-                        d.value = valueMatch[1]?.trim();
+                        valueMatch[0] === sourceValue) {
+                        const value = valueMatch.groups?.value;
+                        d.value = value?.trim();
                         return true;
                     }
                 });
@@ -132,107 +187,50 @@ class TemperBulder {
         return sourceItems[0];
     }
 
-    buildValueRegex(value) {
+    getTargetItem(sourceItem) {
+        if (!sourceItem) {
+            return null;
+        }
+
+        const targetItem = this.processor.targetLanguage.tempers.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return null;
+        }
+
+        const detail = targetItem.details.find(v => v.id === sourceItem.detail.id);
+        if (!detail) {
+            return null;
+        }
+
+        detail.value = sourceItem.detail.value;
+
+        targetItem.detail = detail;
+        return targetItem;
+    }
+
+    buildValue(temperItem) {
+        if (!temperItem) {
+            return null;
+        }
+
+        const names = [temperItem.type, temperItem.name];
+
+        if (temperItem.detail && temperItem.detail.names.length > 0) {
+            let detailName = temperItem.detail.names[0];
+
+            if (temperItem.detail.value) {
+                detailName = detailName.replace(TemperBulder.temperValueMacros, ` ${temperItem.detail.value} `);
+            }
+
+            names.push(detailName.trim());
+        }
+
+        return names.join(" ● ");
+    }
+
+    _buildValueRegex(value) {
+        const valueRegex = this.valueRegex?.source ?? this.valueRegex;
         return StringExtension.escapeRegexChars(value)
-            .replace(TemperBulder.temperValueMacros, this.valueRegex);
-    }
-}
-
-class Language {
-    static aspects = "aspects";
-    static glyphs = "glyphs";
-    static unqItems = "unqItems";
-    static legNodes = "legNodes";
-    static runes = "runes";
-    static skills = "skills";
-    static tempers = "tempers";
-
-    constructor() {
-        if (this.constructor == Language) {
-            throw new Error("Abstract classes can't be instantiated.");
-        };
-    }
-
-    _aspects;
-    get aspects() {
-        return this._aspects ?? [];
-    }
-
-    _glyphs;
-    get glyphs() {
-        return this._glyphs ?? [];
-    }
-
-    _unqItems;
-    get unqItems() {
-        return this._unqItems ?? [];
-    }
-
-    _legNodes;
-    get legNodes() {
-        return this._legNodes ?? [];
-    }
-
-    _runes;
-    get runes() {
-        return this._runes ?? [];
-    }
-
-    _skills;
-    get skills() {
-        return this._skills ?? [];
-    }
-
-    _tempers;
-    get tempers() {
-        return this._tempers ?? [];
-    }
-
-    getResource(name) {
-        return this[name];
-    }
-
-    getSkillAffixValue(skillItem) {
-        return skillItem.name;
-    }
-}
-
-class EnglishLanguage extends Language {
-    constructor() {
-        super();
-
-        this._aspects = ExternalResource.getJsonResource("aspect_en");
-        this._glyphs = ExternalResource.getJsonResource("glyph_en");
-        this._unqItems = ExternalResource.getJsonResource("unq_item_en");
-        this._legNodes = ExternalResource.getJsonResource("leg_node_en");
-        this._runes = ExternalResource.getJsonResource("rune_en");
-        this._skills = ExternalResource.getJsonResource("skill_en");
-        this._tempers = ExternalResource.getJsonResource("temper_en");
-    }
-
-    getSkillAffixValue(skillItem, value) {
-        return value
-            ? `${value} to ${skillItem.name}`
-            : `+ to ${skillItem.name}`;
-    }
-}
-
-class RussianLanguage extends Language {
-    constructor() {
-        super();
-
-        this._aspects = ExternalResource.getJsonResource("aspect_ru");
-        this._glyphs = ExternalResource.getJsonResource("glyph_ru");
-        this._unqItems = ExternalResource.getJsonResource("unq_item_ru");
-        this._legNodes = ExternalResource.getJsonResource("leg_node_ru");
-        this._runes = ExternalResource.getJsonResource("rune_ru");
-        this._skills = ExternalResource.getJsonResource("skill_ru");
-        this._tempers = ExternalResource.getJsonResource("temper_ru");
-    }
-
-    getSkillAffixValue(skillItem, value) {
-        return value
-            ? `${skillItem.name}: ${value} к уровню`
-            : `${skillItem.name}: + к уровню`;
+            .replace(TemperBulder.temperValueMacros, valueRegex);
     }
 }
