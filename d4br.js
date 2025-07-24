@@ -30,6 +30,8 @@
 // @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/920550849edd273120e2a6df11e9b25b6f790fea/ru/skill.json
 // @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/920550849edd273120e2a6df11e9b25b6f790fea/ru/temper.json
 
+// @require      d4tools.js
+// @require      d4language.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/920550849edd273120e2a6df11e9b25b6f790fea/d4resource.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/920550849edd273120e2a6df11e9b25b6f790fea/d4builds.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/920550849edd273120e2a6df11e9b25b6f790fea/d4maxroll.js
