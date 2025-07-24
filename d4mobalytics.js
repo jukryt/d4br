@@ -4,7 +4,7 @@ class D4MobalyticsProcessor {
         this.targetLanguage = new RussianLanguage();
         this.resourceBuilder = new ResourceBuilder(this);
         this.affixBuilder = new AffixBuilder(this, /Ranks (?:to )?(?<skillName>.+)/);
-        this.temperBuilder = new TemperBulder(this, / ?(?:(?:(?:B|b)onus)|(?:\+))? ?/);
+        this.temperBuilder = new TemperBulder(this, / ?(?:(?:(?:B|b)onus)|(?<value>\+))? ?/);
     }
 
     mutationObserverCallback(mutations) {
