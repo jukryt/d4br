@@ -2,7 +2,9 @@ class D4BuildsProcessor {
     constructor() {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
-        this.temperBuilder = new TemperBulder(this.sourceLanguage, this.targetLanguage, " ?(\\+? ?[X0-9\\.,\\-% \\[\\]]+)? ?");
+        this.resourceBuilder = new ResourceBuilder(this);
+        this.affixBuilder = new AffixBuilder(this, /Ranks (?:to )?(?<skillName>.+)/);
+        this.temperBuilder = new TemperBulder(this, / ?(?<value>\+? ?[X0-9\.,\-% \[\]]+)? ?/);
     }
 
     mutationObserverCallback(mutations) {
@@ -205,30 +207,11 @@ class D4BuildsProcessor {
     }
 
     getAffixTargetValue(sourceValue) {
-        const charClassName = this.getCharClassName();
-        if (!charClassName) {
-            return null;
-        }
+        const sourceItem = this.affixBuilder.getSourceItem(sourceValue);
+        const targetItem = this.affixBuilder.getTargetItem(sourceItem);
+        const targetValue = this.affixBuilder.buildTargetValue(targetItem);
 
-        const skillNameMatch = sourceValue.match(/Ranks (to )?(.+)/);
-        if (!skillNameMatch) {
-            return null;
-        }
-
-        const skillName = skillNameMatch[2];
-        const skills = this.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
-        const sourceItems = skills.filter(i => StringExtension.equelsIgnoreCase(i.name, skillName));
-        if (sourceItems.length != 1) {
-            return null;
-        }
-
-        const sourceItem = sourceItems[0];
-        const targetItem = this.targetLanguage.skills.find(i => i.id === sourceItem.id);
-        if (!targetItem) {
-            return null;
-        }
-
-        return this.targetLanguage.getSkillAffixValue(targetItem);
+        return targetValue;
     }
 
     temperNameProcess(node) {
@@ -237,17 +220,12 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const charClassName = this.getCharClassName();
-        if (!charClassName) {
+        const temperTargetValue = this.getTemperTargetValue(sourceValue);
+        if (!temperTargetValue) {
             return false;
         }
 
-        const targetTemperValue = this.getTemperTargetValue(charClassName, sourceValue);
-        if (!targetTemperValue) {
-            return false;
-        }
-
-        return this.setAffixNodeTargetValue(node, "d4br_temper_name", targetTemperValue);
+        return this.setAffixNodeTargetValue(node, "d4br_temper_name", temperTargetValue);
     }
 
     genericTemperNameProcess(node) {
@@ -264,21 +242,16 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const charClassName = this.getCharClassName();
-        if (!charClassName) {
-            return false;
-        }
-
         const temperNameMatchs = [...sourceValue.matchAll(/\(([^\(\)]+) - ([^\(\)]+)\)/g)];
         if (temperNameMatchs.length === 0) {
             return false;
         }
 
         const temperNameMatch = temperNameMatchs[temperNameMatchs.length - 1];
-        const sourceTemperValue = sourceValue.replace(temperNameMatch[0], "").trim();
+        const temperSourceValue = sourceValue.replace(temperNameMatch[0], "").trim();
 
-        const targetTemperValue = this.getTemperTargetValue(charClassName, sourceTemperValue);
-        if (!targetTemperValue) {
+        const temperTargetValue = this.getTemperTargetValue(temperSourceValue);
+        if (!temperTargetValue) {
             return false;
         }
 
@@ -286,18 +259,19 @@ class D4BuildsProcessor {
         newNode.className = "generic__tooltip";
         node.parentNode.insertBefore(newNode, node);
 
-        return this.setTargetValue(newNode, className, targetTemperValue, false);
+        return this.setTargetValue(newNode, className, temperTargetValue, false);
     }
 
-    getTemperTargetValue(charClassName, sourceValue) {
+    getTemperTargetValue(sourceValue) {
         const fixedTemperValue = sourceValue
             .replace(/\[([0-9]+)\]/, "$1")
             .replace("Movement Speed for X Seconds", "Movement Speed for 4 Seconds");
 
-        const targetTemperItem = this.temperBuilder.getTargetItem(charClassName, fixedTemperValue);
-        const targetTemperValue = this.temperBuilder.buildValue(targetTemperItem);
+        const sourceItem = this.temperBuilder.getSourceItem(fixedTemperValue);
+        const targetItem = this.temperBuilder.getTargetItem(sourceItem);
+        const targetValue = this.temperBuilder.buildValue(targetItem);
 
-        return targetTemperValue;
+        return targetValue;
     }
 
     unqItemNameProcess(node) {
@@ -330,21 +304,8 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const charClassName = this.getCharClassName();
-
-        const availableItems = this.sourceLanguage.getResource(resourceName).filter(i => {
-            return !i.classes || i.classes.length === 0 ||
-                (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
-        });
-
-        const sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
-
-        if (sourceItems.length != 1) {
-            return false;
-        }
-
-        const sourceItem = sourceItems[0];
-        const targetItem = this.targetLanguage.getResource(resourceName).find(i => i.id === sourceItem.id);
+        var sourceItem = this.resourceBuilder.getSourceItem(resourceName, sourceValue);
+        const targetItem = this.resourceBuilder.getTargetItem(sourceItem);
         if (!targetItem) {
             return false;
         }

@@ -2,7 +2,9 @@ class D4MobalyticsProcessor {
     constructor() {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
-        this.temperBuilder = new TemperBulder(this.sourceLanguage, this.targetLanguage, " ?(?:Bonus)? ?");
+        this.resourceBuilder = new ResourceBuilder(this);
+        this.affixBuilder = new AffixBuilder(this, /Ranks (?:to )?(?<skillName>.+)/);
+        this.temperBuilder = new TemperBulder(this, / ?(?:(?:(?:B|b)onus)|(?<value>\+))? ?/);
     }
 
     mutationObserverCallback(mutations) {
@@ -89,41 +91,25 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        const charClassName = this.getCharClassName();
-        if (!charClassName) {
+        const affixTargetValue = this.getAffixTargetValue(sourceValue);
+        if (!affixTargetValue) {
             return false;
         }
 
-        const skillNameMatch = sourceValue.match(/Ranks (to )?(.+)/);
-        if (!skillNameMatch) {
-            return false;
-        }
+        return this.setAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
+    }
 
-        const skillName = skillNameMatch[2];
-        const skills = this.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
-        const sourceItems = skills.filter(i => StringExtension.equelsIgnoreCase(i.name, skillName));
-        if (sourceItems.length != 1) {
-            return false;
-        }
+    getAffixTargetValue(sourceValue) {
+        const sourceItem = this.affixBuilder.getSourceItem(sourceValue);
+        const targetItem = this.affixBuilder.getTargetItem(sourceItem);
+        const targetValue = this.affixBuilder.buildTargetValue(targetItem);
 
-        const sourceItem = sourceItems[0];
-        const targetItem = this.targetLanguage.skills.find(i => i.id === sourceItem.id);
-        if (!targetItem) {
-            return false;
-        }
-
-        const targetAffixValue = this.targetLanguage.getSkillAffixValue(targetItem);
-        return this.setAffixNodeTargetValue(node, "d4br_affix_name", targetAffixValue);
+        return targetValue;
     }
 
     temperNameProcess(temperNameNode, temperValueNode) {
         const temperName = temperNameNode.innerText;
         if (!temperName) {
-            return false;
-        }
-
-        const charClassName = this.getCharClassName();
-        if (!charClassName) {
             return false;
         }
 
@@ -143,23 +129,24 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        const targetTemperValue = this.getTemperTargetValue(charClassName, sourceTemperValue);
-        if (!targetTemperValue) {
+        const temperTargetValue = this.getTemperTargetValue(sourceTemperValue);
+        if (!temperTargetValue) {
             return false;
         }
 
-        return this.setTemperNodeTargetValue(temperNameNode, "d4br_temper_name", targetTemperValue);
+        return this.setTemperNodeTargetValue(temperNameNode, "d4br_temper_name", temperTargetValue);
     }
 
-    getTemperTargetValue(charClassName, sourceValue) {
+    getTemperTargetValue(sourceValue) {
         const fixedTemperValue = sourceValue
             .replace("Movement Speed for X Seconds", "Movement Speed for 4 Seconds")
             .replace("Movement Speed for Seconds", "Movement Speed for 4 Seconds");
 
-        const targetTemperItem = this.temperBuilder.getTargetItem(charClassName, fixedTemperValue);
-        const targetTemperValue = this.temperBuilder.buildValue(targetTemperItem);
+        const sourceItem = this.temperBuilder.getSourceItem(fixedTemperValue);
+        const targetItem = this.temperBuilder.getTargetItem(sourceItem);
+        const targetValue = this.temperBuilder.buildValue(targetItem);
 
-        return targetTemperValue;
+        return targetValue;
     }
 
     unqItemNameProcess(node) {
@@ -209,21 +196,9 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        const charClassName = this.getCharClassName();
+        var sourceItem = this.resourceBuilder.getSourceItem(resourceName, sourceValue);
+        const targetItem = this.resourceBuilder.getTargetItem(sourceItem);
 
-        const availableItems = this.sourceLanguage.getResource(resourceName).filter(i => {
-            return !i.classes || i.classes.length === 0 ||
-                (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
-        });
-
-        const sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
-
-        if (sourceItems.length != 1) {
-            return false;
-        }
-
-        const sourceItem = sourceItems[0];
-        const targetItem = this.targetLanguage.getResource(resourceName).find(i => i.id === sourceItem.id);
         if (!targetItem) {
             return false;
         }
