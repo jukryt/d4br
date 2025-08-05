@@ -199,6 +199,9 @@ namespace Importer.Custom.UnqItem
             [2348869] = "Lair Cache",
             [2355156] = "Challenge Journey Cache",
             [2368678] = "Willbreaker Tome",
+            [2358070] = "[PH] Helm_Unique_Barbarian_97",
+            [2201576] = "Tyrael's Shopping List",
+            [1934420] = "Björnfang's Tusks (Not used, we reuse for future!)",
         };
 
         private readonly bool _ignoreName;
