@@ -1,9 +1,9 @@
 ﻿using Importer.Fixer;
 using Importer.Report;
 
-namespace Importer.Custom.Temper
+namespace Importer.Custom.Temper.En
 {
-    internal class TemperRuFillType : IItemsFixer<TemperItem>
+    internal class TemperEnFillType : IItemsFixer<TemperItem>
     {
         public Task FixItemsAsync(List<TemperItem> items, IMessageReporter reporter)
         {
@@ -17,12 +17,12 @@ namespace Importer.Custom.Temper
         {
             return temperType switch
             {
-                TemperType.Weapon => "Оружие",
-                TemperType.Offensive => "Атака",
-                TemperType.Defensive => "Защита",
-                TemperType.Utility => "Поддержка",
-                TemperType.Mobility => "Подвижность",
-                TemperType.Resource => "Ресурсы",
+                TemperType.Weapon => "Weapons",
+                TemperType.Offensive => "Offensive",
+                TemperType.Defensive => "Defensive",
+                TemperType.Utility => "Utility",
+                TemperType.Mobility => "Mobility",
+                TemperType.Resource => "Resource",
                 _ => string.Empty,
             };
         }

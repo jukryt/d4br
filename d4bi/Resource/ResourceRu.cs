@@ -3,6 +3,7 @@ using Importer.Custom.Glyph;
 using Importer.Custom.Rune;
 using Importer.Custom.Skill;
 using Importer.Custom.Temper;
+using Importer.Custom.Temper.Ru;
 using Importer.Custom.UnqItem;
 using Importer.Fixer;
 using Importer.Model;
