@@ -14,7 +14,7 @@ namespace Importer.Resource
     {
         public static ResourceCollection GetResources()
         {
-            return new()
+            return new ResourceCollection
             {
                 Folder = "ru",
                 Infos =
@@ -22,18 +22,18 @@ namespace Importer.Resource
                         new ResourceInfo<ClassItem>
                         {
                             Name = "aspect ru",
-                            Source = new()
+                            Source = new ResourceSource<ClassItem>
                             {
                                 SourceInfos =
                                 [
-                                    new()
+                                    new SourceInfo
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/aspects",
                                         Script = "() => g_listviews.aspects.data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames.split(', ').filter(c => c !== 'Все')}))",
                                     },
                                 ],
                             },
-                            Fix = new()
+                            Fix = new ResourceFix<ClassItem>
                             {
                                 Fixers =
                                 [
@@ -42,17 +42,17 @@ namespace Importer.Resource
                                     new FixName<ClassItem>(),
                                 ],
                             },
-                            Check = new()
+                            Check = new ResourceCheck<ClassItem>
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<ClassItem>()
+                                    new CheckUnique<ClassItem>
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
-                            Target = new()
+                            Target = new ResourceTarget<ClassItem>
                             {
                                 FileName = "aspect.json",
                             },
@@ -60,18 +60,18 @@ namespace Importer.Resource
                         new ResourceInfo<ClassItem>
                         {
                             Name = "glyph ru",
-                            Source = new()
+                            Source = new ResourceSource<ClassItem>
                             {
                                 SourceInfos =
                                 [
-                                    new()
+                                    new SourceInfo
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/paragon-glyphs",
                                         Script = "() => g_listviews['paragon-glyphs'].data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames.split(', ')}))",
                                     },
                                 ],
                             },
-                            Fix = new()
+                            Fix = new ResourceFix<ClassItem>
                             {
                                 Fixers =
                                 [
@@ -81,17 +81,17 @@ namespace Importer.Resource
                                     new FixName<ClassItem>(),
                                 ],
                             },
-                            Check = new()
+                            Check = new ResourceCheck<ClassItem>
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<ClassItem>()
+                                    new CheckUnique<ClassItem>
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
-                            Target = new()
+                            Target = new ResourceTarget<ClassItem>
                             {
                                 FileName = "glyph.json",
                             },
@@ -99,18 +99,18 @@ namespace Importer.Resource
                         new ResourceInfo<ClassItem>
                         {
                             Name = "leg_node ru",
-                            Source = new()
+                            Source = new ResourceSource<ClassItem>
                             {
                                 SourceInfos =
                                 [
-                                    new()
+                                    new SourceInfo
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/paragon-nodes/quality:4",
                                         Script = "() => g_listviews['paragon-nodes'].data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames.split(', ')}))",
                                     },
                                 ],
                             },
-                            Fix = new()
+                            Fix = new ResourceFix<ClassItem>
                             {
                                 Fixers =
                                 [
@@ -119,17 +119,17 @@ namespace Importer.Resource
                                     new FixName<ClassItem>(),
                                 ],
                             },
-                            Check = new()
+                            Check = new ResourceCheck<ClassItem>
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<ClassItem>()
+                                    new CheckUnique<ClassItem>
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
-                            Target = new()
+                            Target = new ResourceTarget<ClassItem>
                             {
                                 FileName = "leg_node.json",
                             },
@@ -137,23 +137,23 @@ namespace Importer.Resource
                         new ResourceInfo<Item>
                         {
                             Name = "rune ru",
-                            Source = new()
+                            Source = new ResourceSource<Item>
                             {
                                 SourceInfos =
                                 [
-                                    new()
+                                    new SourceInfo
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/items/type:446841",
                                         Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
                                     },
-                                    new()
+                                    new SourceInfo
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/items/type:446842",
                                         Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
                                     },
                                 ],
                             },
-                            Fix = new()
+                            Fix = new ResourceFix<Item>
                             {
                                 Fixers =
                                 [
@@ -162,17 +162,17 @@ namespace Importer.Resource
                                     new FixName<Item>(),
                                 ],
                             },
-                            Check = new()
+                            Check = new ResourceCheck<Item>
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<Item>()
+                                    new CheckUnique<Item>
                                     {
                                         Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
-                            Target = new()
+                            Target = new ResourceTarget<Item>
                             {
                                 FileName = "rune.json",
                             },
@@ -180,18 +180,18 @@ namespace Importer.Resource
                         new ResourceInfo<ClassItem>
                         {
                             Name = "skill ru",
-                            Source = new()
+                            Source = new ResourceSource<ClassItem>
                             {
                                 SourceInfos =
                                 [
-                                    new()
+                                    new SourceInfo
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/skills",
                                         Script = "() => g_listviews.skills.data.map(i => ({id: i.id, name: i.name, classes: [i.playerClassName]}))",
                                     },
                                 ],
                             },
-                            Fix = new()
+                            Fix = new ResourceFix<ClassItem>
                             {
                                 Fixers =
                                 [
@@ -201,17 +201,17 @@ namespace Importer.Resource
                                     new FixName<ClassItem>(),
                                 ],
                             },
-                            Check = new()
+                            Check = new ResourceCheck<ClassItem>
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<ClassItem>()
+                                    new CheckUnique<ClassItem>
                                     {
                                         Comparer = new ClassItemEqualComparer<ClassItem>(),
                                     },
                                 ],
                             },
-                            Target = new()
+                            Target = new ResourceTarget<ClassItem>
                             {
                                 FileName = "skill.json",
                             },
@@ -219,11 +219,11 @@ namespace Importer.Resource
                         new ResourceInfo<TemperItem>
                         {
                             Name = "temper ru",
-                            Source = new TemperSource()
+                            Source = new TemperSource
                             {
                                 SourceInfos =
                                 [
-                                    new()
+                                    new SourceInfo
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/items/temper-manual/quality:5",
                                         Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames}))",
@@ -233,7 +233,7 @@ namespace Importer.Resource
                                 PropertiesScript = "() => [...document.querySelectorAll('#infobox-contents-0 div')].map(e => e.innerText)",
                                 DetailsScript = "() => [...document.querySelectorAll('div.whtt-damage-details li[data-type=\"empty-bullet\"]')].map(e => e.innerText)",
                             },
-                            Fix = new()
+                            Fix = new ResourceFix<TemperItem>
                             {
                                 Fixers =
                                 [
@@ -245,18 +245,18 @@ namespace Importer.Resource
                                     new TemperRuFillType(),
                                 ],
                             },
-                            Check = new()
+                            Check = new ResourceCheck<TemperItem>
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<TemperItem>()
+                                    new CheckUnique<TemperItem>
                                     {
                                         Comparer = new ClassItemEqualComparer<TemperItem>(),
                                     },
                                     new TemperCheckProperties(),
                                 ],
                             },
-                            Target = new()
+                            Target = new ResourceTarget<TemperItem>
                             {
                                 FileName = "temper.json",
                             },
@@ -264,18 +264,18 @@ namespace Importer.Resource
                         new ResourceInfo<Item>
                         {
                             Name = "unq_item ru",
-                            Source = new()
+                            Source = new ResourceSource<Item>
                             {
                                 SourceInfos =
                                 [
-                                    new()
+                                    new SourceInfo
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/items/quality:8:6",
                                         Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
                                     },
                                 ],
                             },
-                            Fix = new()
+                            Fix = new ResourceFix<Item>
                             {
                                 Fixers =
                                 [
@@ -284,17 +284,17 @@ namespace Importer.Resource
                                     new FixName<Item>(),
                                 ],
                             },
-                            Check = new()
+                            Check = new ResourceCheck<Item>
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<Item>()
+                                    new CheckUnique<Item>
                                     {
                                         Comparer = new ItemEqualComparer<Item>(),
                                     },
                                 ],
                             },
-                            Target = new()
+                            Target = new ResourceTarget<Item>
                             {
                                 FileName = "unq_item.json",
                             },
