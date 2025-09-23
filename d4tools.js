@@ -13,7 +13,7 @@ class StringExtension {
         return str1?.toLowerCase() === str2?.toLowerCase();
     }
 
-    static startswithIgnoreCase(sourceString, searchString, position) {
+    static startsWithIgnoreCase(sourceString, searchString, position) {
         return sourceString && searchString &&
             sourceString.toLowerCase().startsWith(searchString.toLowerCase(), position);
     }

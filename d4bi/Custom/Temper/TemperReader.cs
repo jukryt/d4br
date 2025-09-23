@@ -43,32 +43,39 @@ namespace Importer.Custom.Temper
                 var temperUrl = _source.DetailsUrlTemplate.Replace("[id]", item.Id.ToString());
                 await page.GoToAsync(temperUrl, waitUntil: WaitUntilNavigation.DOMContentLoaded);
 
-                await FillPropertesAsync(item, page);
-                await FillDetalesAsync(item, page);
+                var properties = await GetPropertiesAsync(page);
+                item.InternalType = properties.Type;
+                item.Details = properties.Details;
             }
         }
 
-        private async Task FillPropertesAsync(TemperItem item, IPage page)
+        private async Task<TemperProperties> GetPropertiesAsync(IPage page)
         {
             var propertyes = await page.EvaluateFunctionAsync<List<string>>(_source.PropertiesScript);
+            var details = await GetDetalesAsync(page);
 
             var internalName = propertyes.FirstOrDefault(p => p.Contains(".itm"));
-            item.InternalType = GetTemperType(internalName);
+            var temperType = GetTemperType(internalName);
+
+            return new TemperProperties
+            {
+                Type = temperType,
+                Details = details,
+            };
         }
 
-        private async Task FillDetalesAsync(TemperItem item, IPage page)
+        private async Task<List<TemperDetail>> GetDetalesAsync(IPage page)
         {
             var details = await page.EvaluateFunctionAsync<List<string>>(_source.DetailsScript);
 
-            item.Details = details
-                .Select((v, i) =>
-                {
-                    var name = Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", ValueMacros);
-                    return new TemperDetail(i + 1, name);
-                }).ToList();
+            return details.Select((v, i) =>
+            {
+                var name = Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", ValueMacros);
+                return new TemperDetail(i + 1, name);
+            }).ToList();
         }
 
-        protected TemperType GetTemperType(string? internalName)
+        private TemperType GetTemperType(string? internalName)
         {
             if (string.IsNullOrEmpty(internalName))
                 return TemperType.None;
@@ -92,6 +99,12 @@ namespace Importer.Custom.Temper
                 return TemperType.Resource;
 
             return TemperType.None;
+        }
+
+        private sealed class TemperProperties
+        {
+            public required TemperType Type { get; init; }
+            public required List<TemperDetail> Details { get; init; }
         }
     }
 }

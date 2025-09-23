@@ -1,7 +1,7 @@
 ﻿using Importer.Fixer;
 using Importer.Report;
 
-namespace Importer.Custom.Temper
+namespace Importer.Custom.Temper.En
 {
     internal class TemperEnFixData : IItemsFixer<TemperItem>
     {

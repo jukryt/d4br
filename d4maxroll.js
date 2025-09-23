@@ -183,7 +183,7 @@ class D4MaxrollProcessor {
         // [... Aspect] => [Aspect_Name Item_Name]
         else {
             const aspectName = sourceItem.name.substring(0, aspectIndex);
-            if (StringExtension.startswithIgnoreCase(titleValue, aspectName)) {
+            if (StringExtension.startsWithIgnoreCase(titleValue, aspectName)) {
                 return true;
             }
         }
