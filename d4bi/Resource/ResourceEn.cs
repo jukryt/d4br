@@ -281,6 +281,7 @@ namespace Importer.Resource
                                 Fixers =
                                 [
                                     new UnqItemFilter(false),
+                                    new UniqueNameFilter<Item>(),
                                     new FixRemoveEmptyName<Item>(),
                                     new FixName<Item>(),
                                 ],

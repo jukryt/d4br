@@ -879,23 +879,17 @@
       {
         "id": 1,
         "names": [
-          " X Vulnerable Damage"
+          " X Cutthroat Damage"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Cutthroat Damage"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Cutthroat Attack Speed"
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "names": [
           " X Cutthroat Critical Strike Chance"
         ]
@@ -1543,7 +1537,7 @@
       {
         "id": 3,
         "names": [
-          " X Chance for Boulder Projectiles to Cast Twice"
+          " X Chance for Boulder to Deal Double Damage"
         ]
       },
       {
@@ -4610,7 +4604,7 @@
       {
         "id": 1,
         "names": [
-          " X Chance for a Second Ice Blades When Cast"
+          " X Chance for Crackling Energy to Zap up to Three Additional Targets"
         ]
       },
       {
