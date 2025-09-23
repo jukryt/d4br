@@ -28,7 +28,7 @@ namespace Importer.Processor
                 foreach (var sourceInfo in _source.SourceInfos)
                     items.AddRange(await ReadAsync(page, sourceInfo));
 
-                return items;
+                return items.OrderBy(i=>i.Id).ToList();
             }
         }
 

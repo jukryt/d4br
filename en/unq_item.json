@@ -124,6 +124,10 @@
     "name": "Staff of Endless Rage"
   },
   {
+    "id": 1206099,
+    "name": "Orphan Maker"
+  },
+  {
     "id": 1210594,
     "name": "100,000 Steps"
   },
@@ -400,10 +404,6 @@
     "name": "Unbroken Chain"
   },
   {
-    "id": 1934420,
-    "name": "Björnfang's Tusks (Not used, we reuse for future!)"
-  },
-  {
     "id": 1934437,
     "name": "Shroud of Khanduras"
   },
@@ -624,10 +624,6 @@
     "name": "Okun's Catalyst"
   },
   {
-    "id": 2201576,
-    "name": "Tyrael's Shopping List"
-  },
-  {
     "id": 2242286,
     "name": "Rotting Lightbringer"
   },
@@ -706,6 +702,26 @@
   {
     "id": 2330723,
     "name": "The Starflux"
+  },
+  {
+    "id": 2363567,
+    "name": "Gospel of the Devotee"
+  },
+  {
+    "id": 2363572,
+    "name": "Sabre of Tsasgal"
+  },
+  {
+    "id": 2363606,
+    "name": "Hesha e Kesungi"
+  },
+  {
+    "id": 2363617,
+    "name": "Kilt of Blackwing"
+  },
+  {
+    "id": 2363629,
+    "name": "Galvanic Azurite"
   },
   {
     "id": 2368546,
