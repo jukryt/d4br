@@ -4,9 +4,12 @@
 // @version      5.1.0
 // @description  Перевод для d4builds
 // @author       jukryt
-// @match        https://d4builds.gg/*
-// @match        https://maxroll.gg/d4/*
-// @match        https://mobalytics.gg/diablo-4/*
+// @match        *://d4builds.gg
+// @match        *://d4builds.gg/*
+// @match        *://maxroll.gg/d4
+// @match        *://maxroll.gg/d4/*
+// @match        *://mobalytics.gg/diablo-4
+// @match        *://mobalytics.gg/diablo-4/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=d4builds.gg
 // @homepageURL  https://github.com/jukryt/d4br
 // @updateURL    https://raw.githubusercontent.com/jukryt/d4br/main/d4br.js
