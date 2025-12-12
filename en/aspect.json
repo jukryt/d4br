@@ -1549,7 +1549,7 @@
   },
   {
     "id": 1485369,
-    "name": "Aspect of Elements"
+    "name": "Aspect of Elemental Fate"
   },
   {
     "id": 1602954,
@@ -1691,7 +1691,7 @@
   },
   {
     "id": 1814245,
-    "name": "Aspect of the Rabid Bear",
+    "name": "Aspect of the Rabid Beast",
     "classes": [
       "Druid"
     ]
@@ -1926,7 +1926,15 @@
   },
   {
     "id": 1923692,
-    "name": "Aspect of Sly Steps"
+    "name": "Aspect of Sly Steps",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Spiritborn"
+    ]
   },
   {
     "id": 1924068,
@@ -1951,7 +1959,7 @@
   },
   {
     "id": 1926363,
-    "name": "Aspect of Tenuous Destruction",
+    "name": "Aspect of Tenuous Survival",
     "classes": [
       "Sorcerer"
     ]
@@ -2525,6 +2533,356 @@
     "name": "Shivering Aspect",
     "classes": [
       "Sorcerer"
+    ]
+  },
+  {
+    "id": 2416740,
+    "name": "Aspect of the Northern Guard",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2419796,
+    "name": "Aspect of Celestial Strife",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2420653,
+    "name": "Aspect of Proselytizing",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2420751,
+    "name": "Aspect of the Valintyr",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2420856,
+    "name": "Bulwark's Aspect",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2420858,
+    "name": "Lord of Blood's Aspect",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2420868,
+    "name": "Vanguard's Aspect",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2420884,
+    "name": "Aspect of Lagera's Sovereignty",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2439231,
+    "name": "Aspect of Verdant Restoration",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2439343,
+    "name": "Aspect of Akarat's Blessing",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2439349,
+    "name": "Aspect of the Indomitable",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2445175,
+    "name": "Aspect of Glynn's Anvil",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2445818,
+    "name": "Aspect of the Juggernaut's Covenant",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2445850,
+    "name": "Aspect of the Zealot's Covenant",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2445852,
+    "name": "Squire's Aspect",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2445856,
+    "name": "Aspect of Jacques' Fervor",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2445862,
+    "name": "Apostle's Aspect",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2445870,
+    "name": "The Penitent's Aspect",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2447225,
+    "name": "Aspect of Lapa's Scripture",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2447675,
+    "name": "Aspect of Tyrael's Jurisdiction",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2448316,
+    "name": "Aspect of Ascension",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2448361,
+    "name": "Aspect of the Judicator",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2448369,
+    "name": "Aspect of Watkins' Law",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2448539,
+    "name": "Aspect of Pilgrim's Progress",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2455492,
+    "name": "Aspect of Valiance",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2457471,
+    "name": "Aspect of Contemplation",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2457976,
+    "name": "Aspect of Dedication",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2458224,
+    "name": "Aspect of the Light's Mending",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2460066,
+    "name": "Aspect of Salvation",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2461692,
+    "name": "Aspect of Dominance",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2461971,
+    "name": "Virtuous Aspect",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2462321,
+    "name": "Aspect of Unstoppable Force",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2463911,
+    "name": "Aspect of the Golden Hour",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2464389,
+    "name": "Aspect of Militance",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2464860,
+    "name": "Aspect of the Disciple",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2465656,
+    "name": "Aspect of Angelic Masterwork",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2465855,
+    "name": "Aspect of the Arbiter's Zephyr",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2466053,
+    "name": "Aspect of Swift Spirit",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2466880,
+    "name": "Aspect of Hale's Salve",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2467143,
+    "name": "Aspect of Firm Decree",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2467527,
+    "name": "Aspect of Dazzling Light",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2467583,
+    "name": "Aspect of Holy Cadence",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2467629,
+    "name": "Aspect of Utmost Glory",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2468273,
+    "name": "Aspect of Loyalty",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2468455,
+    "name": "Aspect of Excellence",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2468693,
+    "name": "Aspect of Chastisement",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2468717,
+    "name": "Aspect of Exorcism",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2469489,
+    "name": "Revelator's Aspect",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2470741,
+    "name": "Aspect of Holy Punishment",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2484503,
+    "name": "Aspect of Heavenly Strength",
+    "classes": [
+      "Paladin"
     ]
   }
 ]

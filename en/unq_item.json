@@ -152,6 +152,10 @@
     "name": "Blood Moon Breeches"
   },
   {
+    "id": 1219220,
+    "name": "Death's Pavane"
+  },
+  {
     "id": 1220208,
     "name": "Bloodless Scream"
   },
@@ -352,6 +356,10 @@
     "name": "Ugly Bastard Helm"
   },
   {
+    "id": 1858740,
+    "name": "Yen's Blessing"
+  },
+  {
     "id": 1862757,
     "name": "Fractured Winterglass"
   },
@@ -394,10 +402,6 @@
   {
     "id": 1903128,
     "name": "Saboteur's Signet"
-  },
-  {
-    "id": 1905888,
-    "name": "Yen's Blessing"
   },
   {
     "id": 1934408,
@@ -726,5 +730,125 @@
   {
     "id": 2368546,
     "name": "Willbreaker"
+  },
+  {
+    "id": 2420777,
+    "name": "(DNS)"
+  },
+  {
+    "id": 2420785,
+    "name": "Herald's Morningstar"
+  },
+  {
+    "id": 2420940,
+    "name": "Gate of the Red Dawn"
+  },
+  {
+    "id": 2429482,
+    "name": "Bastion of Sir Matthias"
+  },
+  {
+    "id": 2429563,
+    "name": "Argent Veil"
+  },
+  {
+    "id": 2430686,
+    "name": "Ward of the White Dove"
+  },
+  {
+    "id": 2439586,
+    "name": "March of the Stalwart Soul"
+  },
+  {
+    "id": 2439786,
+    "name": "Supplication"
+  },
+  {
+    "id": 2445950,
+    "name": "Red Sermon"
+  },
+  {
+    "id": 2446553,
+    "name": "Judicant's Glaivehelm"
+  },
+  {
+    "id": 2462030,
+    "name": "Path of the Emissary"
+  },
+  {
+    "id": 2463632,
+    "name": "Orsivane"
+  },
+  {
+    "id": 2465761,
+    "name": "Khamsin Steppewalkers"
+  },
+  {
+    "id": 2469878,
+    "name": "Gravebloom"
+  },
+  {
+    "id": 2470102,
+    "name": "Light's Rebuke"
+  },
+  {
+    "id": 2471127,
+    "name": "Greater Cache of the Lesser Evils"
+  },
+  {
+    "id": 2472779,
+    "name": "Herald of Zakarum"
+  },
+  {
+    "id": 2473929,
+    "name": "Cathedral's Song"
+  },
+  {
+    "id": 2474458,
+    "name": "Dawnfire"
+  },
+  {
+    "id": 2475969,
+    "name": "Sanctis of Kethamar"
+  },
+  {
+    "id": 2476977,
+    "name": "Griswold's Opus"
+  },
+  {
+    "id": 2477192,
+    "name": "Quarterstaff"
+  },
+  {
+    "id": 2478180,
+    "name": "Sundered Night"
+  },
+  {
+    "id": 2478941,
+    "name": "Chainscourged Mail"
+  },
+  {
+    "id": 2479144,
+    "name": "Mantle of the Grey"
+  },
+  {
+    "id": 2479735,
+    "name": "Seal of the Second Trumpet"
+  },
+  {
+    "id": 2479864,
+    "name": "Arcadia"
+  },
+  {
+    "id": 2510762,
+    "name": "Judgment of Auriel"
+  },
+  {
+    "id": 2512051,
+    "name": "Wreath of Auric Laurel"
+  },
+  {
+    "id": 2513539,
+    "name": "Sunbrand"
   }
 ]

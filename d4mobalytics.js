@@ -13,27 +13,25 @@ class D4MobalyticsProcessor {
                 if (mutation.target.id.startsWith("tippy-")) {
                     const tippyNode = mutation.target;
                     // aspect, affix, temper
-                    if (tippyNode.querySelector("div.m-1tii5t")) {
-                        const aspectNameNode = tippyNode.querySelector("p.m-foqf9j");
+                    if (tippyNode.querySelector("div.xb3r6kr img[src*='/aspects/']")) {
+                        const aspectNameNode = tippyNode.querySelector("p.x2klb21");
                         if (aspectNameNode) {
                             this.aspectNameProcess(aspectNameNode);
                         }
 
-                        const affisNameNodes = tippyNode.querySelectorAll("span.m-3zcy6z, span.m-y0za0q, span.m-vhsx5y, span.m-14rp55x");
+                        const affisNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:not(:has(span.xkirm3x))");
                         for (const affisNameNode of affisNameNodes) {
                             this.affixNameProcess(affisNameNode);
                         }
 
-                        const temperNodes = tippyNode.querySelectorAll("li.m-16l5u8x:has(span.m-1yjh4k8)");
-                        for (const temperNode of temperNodes) {
-                            const temperNameNode = temperNode.querySelector("span.m-1yjh4k8");
-                            const temperValueNode = temperNode.querySelector("span.m-3zcy6z, span.m-14rp55x, span.m-vhsx5y, span.m-y0za0q");
-                            this.temperNameProcess(temperNameNode, temperValueNode);
+                        const temperNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(span.xkirm3x)");
+                        for (const temperNameNode of temperNameNodes) {
+                            this.temperNameProcess(temperNameNode);
                         }
                     }
                     // unq item
-                    else if (tippyNode.querySelector("div.m-mqkczm")) {
-                        const unqItemNameNode = tippyNode.querySelector("h4.m-yb0jxq");
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/uniques/']")) {
+                        const unqItemNameNode = tippyNode.querySelector("p.x2klb21");
                         if (unqItemNameNode) {
                             this.unqItemNameProcess(unqItemNameNode);
                         }
@@ -60,8 +58,8 @@ class D4MobalyticsProcessor {
                         }
                     }
                     // rune
-                    else if (tippyNode.querySelector("div.m-1m5senx")) {
-                        const runeNameNode = tippyNode.querySelector("p.m-54521m");
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/runes/']")) {
+                        const runeNameNode = tippyNode.querySelector("p.x2klb21");
                         if (runeNameNode) {
                             this.runeNameProcess(runeNameNode);
                         }
@@ -73,8 +71,8 @@ class D4MobalyticsProcessor {
 
     getCharClassName() {
         const classNameTitle =
-            document.querySelector("span.m-a53mf3") ??              // build
-            document.querySelector("div.m-183mevi span.m-1sjbyfv"); // planner
+            document.querySelector("div.x1xq1gxn:has(img)") ??  // build
+            document.querySelector("button#Class span");        // planner
 
         return classNameTitle?.innerText
             ?.replace("Diablo 4 ", "")
@@ -107,22 +105,16 @@ class D4MobalyticsProcessor {
         return targetValue;
     }
 
-    temperNameProcess(temperNameNode, temperValueNode) {
+    temperNameProcess(temperNameNode) {
         const temperName = temperNameNode.innerText;
         if (!temperName) {
             return false;
         }
 
         let sourceTemperValue;
-        const temperValueNodeText = temperValueNode?.innerText;
-        if (temperValueNodeText) {
-            const temperValueEnd = temperValueNodeText.length - temperName.length - 1;
-            const temperValueSource = temperValueNodeText.substring(0, temperValueEnd);
-
-            const temperValueMath = temperValueSource.match(/([^:]+): (.+)/);
-            if (temperValueMath) {
-                sourceTemperValue = temperValueMath[2];
-            }
+        const temperNameMath = temperName.match(/(.+): (.+) \((.+)\)/);
+        if (temperNameMath) {
+            sourceTemperValue = temperNameMath[2];
         }
 
         if (!sourceTemperValue) {
@@ -207,17 +199,19 @@ class D4MobalyticsProcessor {
     }
 
     setAffixNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("div");
+        const newNode = document.createElement("li");
+        newNode.style.marginLeft = "25px";
         newNode.style.opacity = "0.6";
-        node.prepend(newNode);
+        node.parentNode.insertBefore(newNode, node);
 
         return this.setTargetValue(newNode, className, targetValue, false);
     }
 
     setTemperNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("div");
+        const newNode = document.createElement("li");
+        newNode.style.marginLeft = "25px";
         newNode.style.opacity = "0.6";
-        node.parentNode.prepend(newNode);
+        node.parentNode.insertBefore(newNode, node);
 
         return this.setTargetValue(newNode, className, targetValue, false);
     }
