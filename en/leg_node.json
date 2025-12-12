@@ -264,7 +264,7 @@
   },
   {
     "id": 909281,
-    "name": "Sinister Tendrils",
+    "name": "Constricting Tendrils",
     "classes": [
       "Druid"
     ]
@@ -372,6 +372,69 @@
     "name": "Fundamental Release",
     "classes": [
       "Sorcerer"
+    ]
+  },
+  {
+    "id": 2437020,
+    "name": "Castle",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2438097,
+    "name": "Shield Bearer",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2438099,
+    "name": "Fervent",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2438101,
+    "name": "Preacher",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2438118,
+    "name": "Relentless",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2438120,
+    "name": "Divinity",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2438124,
+    "name": "Sentencing",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2438126,
+    "name": "Endure",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2438128,
+    "name": "Beacon",
+    "classes": [
+      "Paladin"
     ]
   }
 ]

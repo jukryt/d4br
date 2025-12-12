@@ -3199,6 +3199,20 @@
     ]
   },
   {
+    "id": 2082021,
+    "name": "Blessed Shield",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2087548,
+    "name": "Shield Bash",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
     "id": 2091156,
     "name": "Warpath",
     "classes": [
@@ -3283,6 +3297,34 @@
     ]
   },
   {
+    "id": 2097465,
+    "name": "Clash",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2100457,
+    "name": "Spear of the Heavens",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2106904,
+    "name": "Falling Star",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2107555,
+    "name": "Blessed Hammer",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
     "id": 2110174,
     "name": "Balanced Exertion",
     "classes": [
@@ -3304,10 +3346,388 @@
     ]
   },
   {
+    "id": 2120228,
+    "name": "Divine Lance",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2132824,
+    "name": "Zeal",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
     "id": 2140400,
     "name": "Deadeye",
     "classes": [
       "Rogue"
+    ]
+  },
+  {
+    "id": 2174078,
+    "name": "Holy Bolt",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2187578,
+    "name": "Defiance Aura",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2187741,
+    "name": "Fanaticism Aura",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2226109,
+    "name": "Condemn",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2261380,
+    "name": "Purify",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2265693,
+    "name": "Brandish",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2273081,
+    "name": "Heaven's Fury",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2283781,
+    "name": "Consecration",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2292204,
+    "name": "Aegis",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2297097,
+    "name": "Holy Light Aura",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2297125,
+    "name": "Arbiter of Justice",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2301078,
+    "name": "Fortress",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2302974,
+    "name": "Zenith",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2303677,
+    "name": "Rally",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2329865,
+    "name": "Advance",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2343774,
+    "name": "Attack",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2393351,
+    "name": "Courage",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2393354,
+    "name": "Parry",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2412609,
+    "name": "En Garde",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2412611,
+    "name": "Piety",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2412710,
+    "name": "Discipline",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2414509,
+    "name": "Riposte",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2418247,
+    "name": "Crack in the Armor",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2418250,
+    "name": "Pacify",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2418745,
+    "name": "Renewal",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2418822,
+    "name": "Anointing",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2419009,
+    "name": "Longevity",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2420825,
+    "name": "Break the Line",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2420827,
+    "name": "Press the Advantage",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2425877,
+    "name": "Coat of Arms",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2425896,
+    "name": "Path of the Penitent",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2425899,
+    "name": "Judgement Day",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2425903,
+    "name": "Exaltation",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2426097,
+    "name": "High Charity",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2426103,
+    "name": "Giant Slayer",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2426105,
+    "name": "Heavyweight",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2426241,
+    "name": "Attenuate",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2426348,
+    "name": "Resolute",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2426377,
+    "name": "Conviction",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2466077,
+    "name": "Shield Charge",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2471058,
+    "name": "Dizzying Blow",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2471066,
+    "name": "Iron Sharpens Iron",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2471112,
+    "name": "Thorns and Thistles",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2471115,
+    "name": "Repentance",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2471117,
+    "name": "The Best Offense",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2471122,
+    "name": "Fortitude",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2471232,
+    "name": "Righteousness",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2472127,
+    "name": "Shining Armor",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2472129,
+    "name": "Sacred Arms",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2472131,
+    "name": "Leave Luck to Heaven",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2472133,
+    "name": "Master Craftwork",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2472135,
+    "name": "Shake It Off",
+    "classes": [
+      "Paladin"
     ]
   }
 ]

@@ -3,7 +3,7 @@ class D4BuildsProcessor {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
         this.resourceBuilder = new ResourceBuilder(this);
-        this.affixBuilder = new AffixBuilder(this, /Ranks (?:to )?(?<skillName>.+)/);
+        this.affixBuilder = new AffixBuilder(this, /(?<value>\d+) to (?<skillName>.+)/);
         this.temperBuilder = new TemperBulder(this, / ?(?<value>\+? ?[X0-9\.,\-% \[\]]+)? ?/);
     }
 
@@ -163,7 +163,7 @@ class D4BuildsProcessor {
     }
 
     aspectNameProcess(node) {
-        return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, false);
+        return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, true);
     }
 
     affixNameProcess(node) {
@@ -203,7 +203,7 @@ class D4BuildsProcessor {
         newNode.className = "generic__tooltip";
         node.parentNode.insertBefore(newNode, node);
 
-        return this.setTargetValue(newNode, className, affixTargetValue, false);
+        return this.setTargetValue(newNode, className, affixTargetValue, true);
     }
 
     getAffixTargetValue(sourceValue) {
@@ -259,7 +259,7 @@ class D4BuildsProcessor {
         newNode.className = "generic__tooltip";
         node.parentNode.insertBefore(newNode, node);
 
-        return this.setTargetValue(newNode, className, temperTargetValue, false);
+        return this.setTargetValue(newNode, className, temperTargetValue, true);
     }
 
     getTemperTargetValue(sourceValue) {
@@ -275,23 +275,23 @@ class D4BuildsProcessor {
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems, false);
+        return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems, true);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", Language.skills, false);
+        return this.nodeProcess(node, "d4br_skill_name", Language.skills, true);
     }
 
     glyphNameProcess(node) {
-        return this.nodeProcess(node, "d4br_glyph_name", Language.glyphs, false);
+        return this.nodeProcess(node, "d4br_glyph_name", Language.glyphs, true);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes, false);
+        return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes, true);
     }
 
     gemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_rune_name", Language.runes, false);
+        return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
     }
 
     nodeProcess(node, className, resourceName, addSourceValue) {
@@ -318,7 +318,7 @@ class D4BuildsProcessor {
         newNode.style["margin-left"] = "25px";
         node.parentNode.insertBefore(newNode, node);
 
-        return this.setTargetValue(newNode, className, targetValue, false);
+        return this.setTargetValue(newNode, className, targetValue, true);
     }
 
     setTargetValue(node, className, targetValue, addSourceValue) {

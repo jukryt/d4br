@@ -205,7 +205,7 @@ class TemperBulder {
             return null;
         }
 
-        const names = [temperItem.type, temperItem.name];
+        const names = [temperItem.type];
 
         if (temperItem.detail && temperItem.detail.names.length > 0) {
             let detailName = temperItem.detail.names[0];
