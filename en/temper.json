@@ -10,7 +10,7 @@
       {
         "id": 1,
         "names": [
-          "Steel Grasp Stuns for X Seconds"
+          "Steel Grasp Stuns for +0.0 Seconds"
         ]
       },
       {
@@ -94,29 +94,17 @@
       {
         "id": 1,
         "names": [
-          " X Movement Speed"
+          " X Lunging Strike Range"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Movement Speed for 4 Seconds After Killing an Elite"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Lunging Strike Range"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
           " X Charge Cooldown Reduction"
         ]
       },
       {
-        "id": 5,
+        "id": 3,
         "names": [
           " X Leap Cooldown Reduction"
         ]
@@ -162,23 +150,17 @@
       {
         "id": 1,
         "names": [
-          "Casting Ultimate Skills Restores X Primary Resource"
+          " X Call of the Ancients Cooldown Reduction"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Call of the Ancients Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Iron Maelstrom Cooldown Reduction"
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "names": [
           " X Wrath of the Berserker Cooldown Reduction"
         ]
@@ -276,34 +258,6 @@
     ]
   },
   {
-    "id": 1862230,
-    "name": "Arsenal Finesse",
-    "classes": [
-      "Barbarian"
-    ],
-    "type": "Offensive",
-    "details": [
-      {
-        "id": 1,
-        "names": [
-          " X Damage with Two-Handed Bludgeoning Weapons"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Damage with Dual-Wielded Weapons"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Damage with Two-Handed Slashing Weapons"
-        ]
-      }
-    ]
-  },
-  {
     "id": 1862232,
     "name": "Berserking Finesse",
     "classes": [
@@ -325,12 +279,6 @@
       },
       {
         "id": 3,
-        "names": [
-          " X Damage while War Cry is Active"
-        ]
-      },
-      {
-        "id": 4,
         "names": [
           " X Dust Devil Damage"
         ]
@@ -404,13 +352,7 @@
       {
         "id": 2,
         "names": [
-          " X Total Armor"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Dodge Chance"
+          " X Armor"
         ]
       }
     ]
@@ -434,6 +376,12 @@
       },
       {
         "id": 3,
+        "names": [
+          "Casting Ultimate Skills Restores X Primary Resource"
+        ]
+      },
+      {
+        "id": 4,
         "names": [
           "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource"
         ]
@@ -977,12 +925,6 @@
         "names": [
           " X Shadow Step Duration"
         ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X to Stutter Step"
-        ]
       }
     ]
   },
@@ -1090,17 +1032,11 @@
       {
         "id": 1,
         "names": [
-          " X Critical Strike Damage"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
           " X Marksman Damage"
         ]
       },
       {
-        "id": 3,
+        "id": 2,
         "names": [
           " X Marksman Critical Strike Chance"
         ]
@@ -1123,18 +1059,6 @@
       },
       {
         "id": 2,
-        "names": [
-          " X Core Damage"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Ultimate Damage"
-        ]
-      },
-      {
-        "id": 4,
         "names": [
           " X Stun Grenade Damage"
         ]
@@ -1786,12 +1710,6 @@
       {
         "id": 2,
         "names": [
-          "Casting Ultimate Skills Restores X Primary Resource"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X to Abundance"
         ]
       }
@@ -1894,24 +1812,6 @@
         "names": [
           " X Basic Resource Generation"
         ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Resource Generation with Two-Handed Bludgeoning Weapons"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Resource Generation with Dual-Wielded Weapons"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X Resource Generation with Two-Handed Slashing Weapons"
-        ]
       }
     ]
   },
@@ -1948,6 +1848,12 @@
         "id": 5,
         "names": [
           " X Shadow Resistance"
+        ]
+      },
+      {
+        "id": 6,
+        "names": [
+          " X Physical Resistance"
         ]
       }
     ]
@@ -2026,18 +1932,6 @@
       {
         "id": 1,
         "names": [
-          " X Movement Speed"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Movement Speed for 4 Seconds After Killing an Elite"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Movement Speed during Blood Mist"
         ]
       }
@@ -2055,18 +1949,6 @@
         "id": 1,
         "names": [
           " X Basic Resource Generation"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Resource Generation with Two-Handed Weapons"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Resource Generation while Wielding a Shield"
         ]
       }
     ]
@@ -2091,12 +1973,6 @@
         "names": [
           "Casting Macabre Skills Restores X Primary Resource",
           "Casting Macabrre Skills Restores X Primary Resource"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          "Casting Ultimate Skills Restores X Primary Resource"
         ]
       }
     ]
@@ -2197,19 +2073,7 @@
       {
         "id": 1,
         "names": [
-          " X Movement Speed"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
           " X Trample Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X to Digitigrade Gait"
         ]
       }
     ]
@@ -2225,7 +2089,7 @@
       {
         "id": 1,
         "names": [
-          "Lucky Hit: Up to a 15% Chance to Heal X Life"
+          " X Life On Hit"
         ]
       },
       {
@@ -2253,23 +2117,17 @@
       {
         "id": 1,
         "names": [
-          " X Fire Damage"
+          " X Pyromancy Attack Speed"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Pyromancy Attack Speed"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Pyromancy Critical Strike Damage"
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "names": [
           " X Mastery Damage"
         ]
@@ -2315,25 +2173,7 @@
       {
         "id": 1,
         "names": [
-          " X Movement Speed"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Movement Speed for 4 Seconds After Killing an Elite"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Teleport Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X to Conduction"
         ]
       }
     ]
@@ -2377,23 +2217,17 @@
       {
         "id": 1,
         "names": [
-          "Casting Ultimate Skills Restores X Primary Resource"
+          " X Deep Freeze Cooldown Reduction"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Deep Freeze Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Inferno Cooldown Reduction"
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "names": [
           " X Unstable Currents Cooldown Reduction"
         ]
@@ -2445,17 +2279,11 @@
       {
         "id": 1,
         "names": [
-          " X Cold Damage"
+          " X Frost Critical Strike Chance"
         ]
       },
       {
         "id": 2,
-        "names": [
-          " X Vulnerable Damage"
-        ]
-      },
-      {
-        "id": 3,
         "names": [
           " X Damage to Frozen Enemies"
         ]
@@ -2473,23 +2301,17 @@
       {
         "id": 1,
         "names": [
-          " X Lightning Damage"
+          " X Shock Critical Strike Chance"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Shock Critical Strike Chance"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Shock Critical Strike Damage"
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "names": [
           " X Crackling Energy Damage"
         ]
@@ -2653,17 +2475,11 @@
       {
         "id": 1,
         "names": [
-          "Lucky Hit: Up to a X Chance to Daze for 2 Seconds"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
           " X Smoke Grenade Cooldown Reduction"
         ]
       },
       {
-        "id": 3,
+        "id": 2,
         "names": [
           " X Smoke Grenade Duration"
         ]
@@ -2754,34 +2570,6 @@
         "id": 4,
         "names": [
           " X Familiar Lucky Hit Chance"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 1997922,
-    "name": "Rogue Persistence",
-    "classes": [
-      "Rogue"
-    ],
-    "type": "Defensive",
-    "details": [
-      {
-        "id": 1,
-        "names": [
-          " X Maximum Life while Dark Shroud is Active"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          "Your Potion Also Grants X Maximum Resistances for 5 Seconds"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X to Second Wind"
         ]
       }
     ]
@@ -3068,17 +2856,11 @@
       {
         "id": 1,
         "names": [
-          " X Vulnerable Damage"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
           " X Damage to Injured Enemies"
         ]
       },
       {
-        "id": 3,
+        "id": 2,
         "names": [
           " X Physical Damage Over Time"
         ]
@@ -3194,12 +2976,6 @@
         "names": [
           " X Resolve Generated"
         ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Total Armor"
-        ]
       }
     ]
   },
@@ -3291,12 +3067,6 @@
         "names": [
           " X Eagle Damage"
         ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X Vulnerable Damage"
-        ]
       }
     ]
   },
@@ -3351,17 +3121,11 @@
       {
         "id": 2,
         "names": [
-          " X Mystic Circle Potency"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Jaguar Damage"
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "names": [
           " X Damage to Injured Enemies"
         ]
@@ -3455,12 +3219,6 @@
         "id": 3,
         "names": [
           " X to Endurance"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          "Casting Ultimate Skills Restores X Primary Resource"
         ]
       }
     ]
@@ -3674,7 +3432,7 @@
       {
         "id": 4,
         "names": [
-          " X Primary Centipede Spirit Hall Potency"
+          " X Primary Centipede Spirit Hall Damage"
         ]
       }
     ]
@@ -3708,7 +3466,7 @@
       {
         "id": 4,
         "names": [
-          " X Primary Eagle Spirit Hall Potency"
+          " X Primary Eagle Spirit Hall Damage"
         ]
       }
     ]
@@ -3742,7 +3500,7 @@
       {
         "id": 4,
         "names": [
-          " X Primary Gorilla Spirit Hall Potency"
+          " X Primary Gorilla Spirit Hall Damage"
         ]
       }
     ]
@@ -3776,7 +3534,7 @@
       {
         "id": 4,
         "names": [
-          " X Primary Jaguar Spirit Hall Potency"
+          " X Primary Jaguar Spirit Hall Damage"
         ]
       }
     ]
@@ -4335,6 +4093,12 @@
         "names": [
           " X to Furnace"
         ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Mystic Circle Potency"
+        ]
       }
     ]
   },
@@ -4584,12 +4348,6 @@
         "names": [
           " X Shadow Clone Cooldown Reduction"
         ]
-      },
-      {
-        "id": 4,
-        "names": [
-          "Casting Ultimate Skills Restores X Primary Resource"
-        ]
       }
     ]
   },
@@ -4639,12 +4397,6 @@
         "id": 2,
         "names": [
           " X Werewolf Critical Strike Chance"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Poison Damage"
         ]
       }
     ]
@@ -4723,6 +4475,630 @@
         "id": 3,
         "names": [
           " X Petrify Duration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2478348,
+    "name": "Paladin Motion",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Mobility",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Falling Star Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Shield Charge Cooldown Reduction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2479380,
+    "name": "Juggernaut Augments",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Weapons",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Clash to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Shield Bash to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Shield Charge to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Retribution to Deal Double Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2479465,
+    "name": "Disciple Augments",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Weapons",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Brandish to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Divine Lance to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Falling Star to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Arbiter to Deal Double Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2479966,
+    "name": "Zealot Augments",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Weapons",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Advance to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Zeal to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Zenith to Deal Double Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2480090,
+    "name": "Judicator Augments",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Weapons",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Chance for Holy Bolt to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Chance for Blessed Hammer to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Chance for Blessed Shield to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Chance for Heaven's Fury to Deal Double Damage"
+        ]
+      },
+      {
+        "id": 5,
+        "names": [
+          " X Chance for Judgement to Deal Double Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2481206,
+    "name": "Juggernaut Efficiency",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Resource",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Clash Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Valor Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Fortress Cooldown Reduction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2481334,
+    "name": "Disciple Efficiency",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Resource",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Brandish Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Justice Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Arbiter of Justice Cooldown Reduction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2481526,
+    "name": "Zealot Efficiency",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Resource",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Advance Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Casting Valor Skills Restores X Primary Resource"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Zenith Cooldown Reduction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2481637,
+    "name": "Judicator Efficiency",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Resource",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Holy Bolt Resource Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Casting Justice Skills Restores X Primary Resource"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Heaven's Fury Cooldown Reduction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2481729,
+    "name": "Zealot Finesse",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Offensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Zealot Critical Strike Chance"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Zealot Critical Strike Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Zealot Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Damage to Weakened Enemies"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2481856,
+    "name": "Guardian Finesse",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Offensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Disciple Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Juggernaut Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Damage while in Arbiter Form"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Wing Strike Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2482599,
+    "name": "Judicator Finesse",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Offensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Damage to Judged Enemies"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Judicator Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Justice Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Holy Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2484363,
+    "name": "Paladin Resolve",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Defensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Resolve Generated"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Maximum Resolve Stacks"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Resolute"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2484493,
+    "name": "Paladin Perseverance",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Defensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Condemn Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Purify Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Armor in Arbiter Form"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2484596,
+    "name": "Paladin Guard",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Defensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Aegis Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Block Chance"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to En Garde"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2484677,
+    "name": "Paladin Recovery",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Defensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Fortify Generation"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Consecration Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X to Longevity"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2485244,
+    "name": "Disciple Innovation",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Utility",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Arbiter Duration"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Condemn Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Divine Lance Size"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2485337,
+    "name": "Juggernaut Innovation",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Utility",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Shield Bash Size"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Retribution Size"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Aegis Duration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2485672,
+    "name": "Judicator Innovation",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Utility",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Consecration Duration"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Spear of the Heavens Size"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2486402,
+    "name": "Zealot Innovation",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Utility",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Rally Duration"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Zenith Crowd Control Duration"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Zeal Size"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2490610,
+    "name": "Aura Innovation",
+    "classes": [
+      "Paladin"
+    ],
+    "type": "Utility",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Aura Cooldown Reduction"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Defiance Aura Potency"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Fanaticism Aura Potency"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Holy Light Aura Potency"
         ]
       }
     ]

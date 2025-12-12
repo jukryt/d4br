@@ -8,6 +8,10 @@ namespace Importer.Custom.Temper
         private static readonly IReadOnlyDictionary<long, string> IgnoreItems = new Dictionary<long, string>()
         {
             [1862212] = "Barbarian Protection (Legacy)",
+            [2475321] = "PH Tempering Template",
+            [1862230] = "Arsenal Finesse (Legacy)",
+            [1997922] = "Rogue Persistence (Legacy)",
+            [2482682] = "Juggernaut Finesse (DNS)"
         };
 
         private readonly bool _ignoreName;

@@ -71,6 +71,7 @@ namespace Importer.Custom.Temper
             return details.Select((v, i) =>
             {
                 var name = Regex.Replace(v, @" ?\+? ?\[[^\]]+\]%? ?", ValueMacros);
+                Regex.Replace(name, @" ?\+?0\.0 ?", ValueMacros);
                 return new TemperDetail(i + 1, name);
             }).ToList();
         }

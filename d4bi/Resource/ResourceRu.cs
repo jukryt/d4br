@@ -81,16 +81,6 @@ namespace Importer.Resource
                                     new FixName<ClassItem>(),
                                 ],
                             },
-                            Check = new ResourceCheck<ClassItem>
-                            {
-                                Checkers =
-                                [
-                                    new CheckUnique<ClassItem>
-                                    {
-                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
-                                    },
-                                ],
-                            },
                             Target = new ResourceTarget<ClassItem>
                             {
                                 FileName = "glyph.json",
