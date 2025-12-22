@@ -201,6 +201,7 @@ namespace Importer.Resource
                                     {
                                         Comparer = new ClassItemEqualComparer<SkillItem>(),
                                     },
+                                    new SkillCheckProperties(),
                                 ],
                             },
                             Target = new ResourceTarget<SkillItem>
