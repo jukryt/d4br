@@ -238,13 +238,17 @@ class D4d2coreProcessor {
     }
 
     addAffixNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("div");
-        newNode.style["margin-top"] = "0.3em";
-        newNode.style["margin-left"] = "25px";
-        newNode.style.opacity = "0.8";
-        newNode.innerText = targetValue;
+        const affixNode = document.createElement("div");
+        affixNode.style.marginLeft = "25px";
+        affixNode.style.opacity = "0.8";
 
-        return this.addTargetValue(node, className, newNode.outerHTML, true);
+        if (node.parentNode.firstChild !== node) {
+            affixNode.style.marginTop = "0.3em";
+        }
+
+        affixNode.innerText = targetValue;
+
+        return this.addTargetValue(node, className, affixNode.outerHTML, true);
     }
 
     addTargetValue(node, className, targetValue, isHtml = false) {
