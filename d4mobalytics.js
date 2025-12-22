@@ -5,7 +5,7 @@ class D4MobalyticsProcessor {
         this.elementBuilder = new ElementBuilder("darkgray");
         this.resourceBuilder = new ResourceBuilder(this);
         this.affixBuilder = new AffixBuilder(this, /Ranks (?:to )?(?<skillName>.+)/);
-        this.temperBuilder = new TemperBulder(this, / ?(?:(?:(?:B|b)onus)|(?<value>\+))? ?/);
+        this.temperBuilder = new TemperBulder(this, / ?(?:(?:(?:B|b)onus)|(?:(?:R|r)anks)|(?<value>\+))? ?/);
     }
 
     mutationObserverCallback(mutations) {

@@ -4,7 +4,7 @@ class D4BuildsProcessor {
         this.targetLanguage = new RussianLanguage();
         this.elementBuilder = new ElementBuilder("gray");
         this.resourceBuilder = new ResourceBuilder(this);
-        this.affixBuilder = new AffixBuilder(this, /(?<value>\d+) to (?<skillName>.+)/);
+        this.affixBuilder = new AffixBuilder(this, /(?<value>\d+|[X0-9\.,\-% \[\]]+) to (?<skillName>.+)/);
         this.temperBuilder = new TemperBulder(this, / ?(?<value>\+? ?[X0-9\.,\-% \[\]]+)? ?/);
     }
 
@@ -172,7 +172,10 @@ class D4BuildsProcessor {
     }
 
     getAffixTargetValue(sourceValue) {
-        const sourceItem = this.affixBuilder.getSourceItem(sourceValue);
+        const fixedAffixValue = sourceValue
+            .replace("to Heavy Weight", "to Heavyweight");
+
+        const sourceItem = this.affixBuilder.getSourceItem(fixedAffixValue);
         const targetItem = this.affixBuilder.getTargetItem(sourceItem);
         const targetValue = this.affixBuilder.buildTargetValue(targetItem);
 
