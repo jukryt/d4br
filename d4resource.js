@@ -1,3 +1,62 @@
+class ElementBuilder {
+    constructor(textColor) {
+        this.textColor = textColor;
+    }
+
+    addContainerBefore(sourceNode, className) {
+        const nodeStyle = window.getComputedStyle(sourceNode);
+
+        const targetNode = this.createContainerBySource(sourceNode, className);
+        targetNode.style.marginTop = nodeStyle.getPropertyValue("margin-top");
+        sourceNode.style.marginTop = "0";
+
+        sourceNode.before(targetNode);
+        return targetNode;
+    }
+
+    createContainerByTag(tagName, className) {
+        const targetNode = document.createElement(tagName);
+
+        this.addClasses(targetNode, className);
+        targetNode.style.color = this.textColor;
+
+        return targetNode;
+    }
+
+    createContainerBySource(sourceNode, className) {
+        const targetNode = this.cloneElement(sourceNode);
+
+        this.addClasses(targetNode, className)
+        targetNode.style.color = this.textColor;
+
+        return targetNode;
+    }
+
+    cloneElement(sourceNode) {
+        const nodeStyle = window.getComputedStyle(sourceNode);
+
+        const targetNode = document.createElement(sourceNode.localName);
+        targetNode.style.fontFamily = nodeStyle.getPropertyValue("font-family");
+        targetNode.style.fontSize = nodeStyle.getPropertyValue("font-size");
+        targetNode.style.textAlign = nodeStyle.getPropertyValue("text-align");
+        targetNode.style.color = nodeStyle.getPropertyValue("color");
+
+        return targetNode;
+    }
+
+    addClasses(node, className) {
+        const classList = node.classList;
+
+        if (!classList.contains("d4br_element")) {
+            classList.add("d4br_element");
+        }
+
+        if (!classList.contains(className)) {
+            classList.add(className);
+        }
+    }
+}
+
 class ResourceBuilder {
     constructor(processor) {
         this.processor = processor;
@@ -15,7 +74,20 @@ class ResourceBuilder {
                 (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
         });
 
-        const sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
+        let sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
+
+        if (sourceItems.length > 1) {
+            const classSourceItems = sourceItems.filter(i => i.classes && charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+            if (classSourceItems.length == 1) {
+                sourceItems = classSourceItems;
+            }
+            else {
+                const anySourceItems = sourceItems.filter(i => !i.classes || i.classes.length === 0);
+                if (anySourceItems.length == 1) {
+                    sourceItems = anySourceItems;
+                }
+            }
+        }
 
         if (sourceItems.length != 1) {
             return null;

@@ -2,6 +2,7 @@ class D4MaxrollProcessor {
     constructor() {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
+        this.elementBuilder = new ElementBuilder("darkgray");
         this.resourceBuilder = new ResourceBuilder(this);
         this.affixBuilder = new AffixBuilder(this, /(?<value>\+\d+) to (?<skillName>.+)/);
         this.temperBuilder = new TemperBulder(this, / ?(?<value>\+? ?[0-9\.,\-% ]+)? ?/);
@@ -44,6 +45,11 @@ class D4MaxrollProcessor {
                             for (const temperNode of temperNodes) {
                                 this.temperNameProcess(temperNode);
                             }
+
+                            const runeWordNode = newNode.querySelector("div.d4t-socket div.d4t-effect div.d4t-name");
+                            if (runeWordNode) {
+                                this.runeWordProcess(runeWordNode);
+                            }
                         }
                         // rare: glyph, rune
                         else if (newNode.querySelector("div.d4t-tip-rare")) {
@@ -70,12 +76,22 @@ class D4MaxrollProcessor {
                             if (titleNode) {
                                 this.unqItemNameProcess(titleNode);
                             }
+
+                            const runeWordNode = newNode.querySelector("div.d4t-socket div.d4t-effect div.d4t-name");
+                            if (runeWordNode) {
+                                this.runeWordProcess(runeWordNode);
+                            }
                         }
                         // mythic item
                         else if (newNode.querySelector("div.d4t-tip-mythic")) {
                             const titleNode = newNode.querySelector("div.d4t-title");
                             if (titleNode) {
                                 this.unqItemNameProcess(titleNode);
+                            }
+
+                            const runeWordNode = newNode.querySelector("div.d4t-socket div.d4t-effect div.d4t-name");
+                            if (runeWordNode) {
+                                this.runeWordProcess(runeWordNode);
                             }
                         }
                         // skill
@@ -249,6 +265,30 @@ class D4MaxrollProcessor {
         return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems);
     }
 
+    runeWordProcess(node) {
+        const sourceValue = node.querySelector("span")?.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const runeWordMaths = sourceValue.match(/[A-Z][a-z]+/g);
+        if (!runeWordMaths) {
+            return false;
+        }
+
+        const targetValue = runeWordMaths.map(runeName => {
+            const sourceItem = this.resourceBuilder.getSourceItem(Language.runes, runeName);
+            const targetItem = this.resourceBuilder.getTargetItem(sourceItem);
+            return targetItem?.name;
+        }).filter(x => x).join(" ");
+
+        if (!targetValue) {
+            return false;
+        }
+
+        return this.addAffixNodeTargetValue(node, "d4br_runeWord_name", targetValue);
+    }
+
     skillNameProcess(node) {
         return this.nodeProcess(node, "d4br_skill_name", Language.skills);
     }
@@ -283,9 +323,12 @@ class D4MaxrollProcessor {
 
     addAffixNodeTargetValue(node, className, targetValue) {
         const affixNode = document.createElement("div");
-        affixNode.style["margin-top"] = "0.3em";
         affixNode.style.opacity = "0.6";
         affixNode.innerText = targetValue;
+
+        if (node.parentNode.firstChild !== node) {
+            affixNode.style.marginTop = "0.3em";
+        }
 
         return this.addTargetValue(node, className, affixNode.outerHTML, true);
     }
@@ -295,26 +338,13 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const nodeStyle = window.getComputedStyle(node);
-
-        const valueNode = document.createElement("div");
-        valueNode.className = `d4br_show ${className}`;
-        valueNode.style["font-family"] = nodeStyle.getPropertyValue("font-family");
-        valueNode.style["font-size"] = nodeStyle.getPropertyValue("font-size");
-        valueNode.style["text-align"] = nodeStyle.getPropertyValue("text-align");
-        valueNode.style["color"] = "darkgray";
-
+        const container = this.elementBuilder.addContainerBefore(node, className);
         if (isHtml) {
-            valueNode.innerHTML = targetValue;
+            container.innerHTML = targetValue;
         }
         else {
-            valueNode.innerText = targetValue;
+            container.innerText = targetValue;
         }
-
-        node.parentNode.insertBefore(valueNode, node);
-
-        valueNode.style["margin-top"] = nodeStyle.getPropertyValue("margin-top");
-        valueNode.style["margin-bottom"] = `-${nodeStyle.getPropertyValue("margin-top")}`;
 
         return true;
     }
