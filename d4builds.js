@@ -2,8 +2,9 @@ class D4BuildsProcessor {
     constructor() {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
+        this.elementBuilder = new ElementBuilder("gray");
         this.resourceBuilder = new ResourceBuilder(this);
-        this.affixBuilder = new AffixBuilder(this, /(?<value>\d+) to (?<skillName>.+)/);
+        this.affixBuilder = new AffixBuilder(this, /(?<value>\d+|[X0-9\.,\-% \[\]]+) to (?<skillName>.+)/);
         this.temperBuilder = new TemperBulder(this, / ?(?<value>\+? ?[X0-9\.,\-% \[\]]+)? ?/);
     }
 
@@ -39,16 +40,6 @@ class D4BuildsProcessor {
                                     const temperValueNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
                                     for (const temperValueNode of temperValueNodes) {
                                         this.temperNameProcess(temperValueNode);
-                                    }
-                                }
-                            }
-                            // generic: affix, temper
-                            if (newNode.querySelector("div.generic__tooltip")) {
-                                const genericTooltips = newNode.querySelectorAll("div.generic__tooltip");
-                                for (const genericTooltip of genericTooltips) {
-                                    if (this.genericAffixNameProcess(genericTooltip) ||
-                                        this.genericTemperNameProcess(genericTooltip)) {
-                                        break;
                                     }
                                 }
                             }
@@ -163,7 +154,7 @@ class D4BuildsProcessor {
     }
 
     aspectNameProcess(node) {
-        return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, true);
+        return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, false);
     }
 
     affixNameProcess(node) {
@@ -177,37 +168,14 @@ class D4BuildsProcessor {
             return false;
         }
 
-        return this.setAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
-    }
-
-    genericAffixNameProcess(node) {
-        const className = "d4br_affix_name";
-
-        let existsNode = node.parentNode?.querySelector(`div.${className}`);
-        if (existsNode) {
-            existsNode.parentNode.remove();
-            existsNode = null;
-        }
-
-        const sourceValue = node.innerText;
-        if (!sourceValue) {
-            return false;
-        }
-
-        const affixTargetValue = this.getAffixTargetValue(sourceValue);
-        if (!affixTargetValue) {
-            return false;
-        }
-
-        const newNode = document.createElement("div");
-        newNode.className = "generic__tooltip";
-        node.parentNode.insertBefore(newNode, node);
-
-        return this.setTargetValue(newNode, className, affixTargetValue, true);
+        return this.addAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
     }
 
     getAffixTargetValue(sourceValue) {
-        const sourceItem = this.affixBuilder.getSourceItem(sourceValue);
+        const fixedAffixValue = sourceValue
+            .replace("to Heavy Weight", "to Heavyweight");
+
+        const sourceItem = this.affixBuilder.getSourceItem(fixedAffixValue);
         const targetItem = this.affixBuilder.getTargetItem(sourceItem);
         const targetValue = this.affixBuilder.buildTargetValue(targetItem);
 
@@ -225,41 +193,7 @@ class D4BuildsProcessor {
             return false;
         }
 
-        return this.setAffixNodeTargetValue(node, "d4br_temper_name", temperTargetValue);
-    }
-
-    genericTemperNameProcess(node) {
-        const className = "d4br_temper_name";
-
-        let existsNode = node.parentNode?.querySelector(`div.${className}`);
-        if (existsNode) {
-            existsNode.parentNode.remove();
-            existsNode = null;
-        }
-
-        const sourceValue = node.innerText;
-        if (!sourceValue) {
-            return false;
-        }
-
-        const temperNameMatchs = [...sourceValue.matchAll(/\(([^\(\)]+) - ([^\(\)]+)\)/g)];
-        if (temperNameMatchs.length === 0) {
-            return false;
-        }
-
-        const temperNameMatch = temperNameMatchs[temperNameMatchs.length - 1];
-        const temperSourceValue = sourceValue.replace(temperNameMatch[0], "").trim();
-
-        const temperTargetValue = this.getTemperTargetValue(temperSourceValue);
-        if (!temperTargetValue) {
-            return false;
-        }
-
-        const newNode = document.createElement("div");
-        newNode.className = "generic__tooltip";
-        node.parentNode.insertBefore(newNode, node);
-
-        return this.setTargetValue(newNode, className, temperTargetValue, true);
+        return this.addAffixNodeTargetValue(node, "d4br_temper_name", temperTargetValue);
     }
 
     getTemperTargetValue(sourceValue) {
@@ -279,7 +213,7 @@ class D4BuildsProcessor {
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", Language.skills, true);
+        return this.nodeProcess(node, "d4br_skill_name", Language.skills, false);
     }
 
     glyphNameProcess(node) {
@@ -291,10 +225,10 @@ class D4BuildsProcessor {
     }
 
     gemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
+        return this.nodeProcess(node, "d4br_rune_name", Language.runes, false);
     }
 
-    nodeProcess(node, className, resourceName, addSourceValue) {
+    nodeProcess(node, className, resourceName, isIndependent) {
         if (!node.childNodes) {
             return false;
         }
@@ -310,32 +244,37 @@ class D4BuildsProcessor {
             return false;
         }
 
-        return this.setTargetValue(node, className, targetItem.name, addSourceValue);
+        return this.addTargetValue(node, className, targetItem.name, false, isIndependent);
     }
 
-    setAffixNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("div");
-        newNode.style["margin-left"] = "25px";
-        node.parentNode.insertBefore(newNode, node);
+    addAffixNodeTargetValue(node, className, targetValue) {
+        const affixNode = document.createElement("div");
+        affixNode.style.marginLeft = "25px";
+        affixNode.innerText = targetValue;
 
-        return this.setTargetValue(newNode, className, targetValue, true);
+        return this.addTargetValue(node, className, affixNode.outerHTML, true, true);
     }
 
-    setTargetValue(node, className, targetValue, addSourceValue) {
+    addTargetValue(node, className, targetValue, isHtml, isIndependent) {
         if (!targetValue) {
             return false;
         }
 
-        let htmlValue = this.buildHtmlValue(className, targetValue);
-        if (addSourceValue) {
-            htmlValue += node.innerHTML;
+        const container = isIndependent
+            ? this.elementBuilder.addContainerBefore(node, className)
+            : this.elementBuilder.createContainerByTag("div", className);
+
+        if (isHtml) {
+            container.innerHTML = targetValue;
+        }
+        else {
+            container.innerText = targetValue;
         }
 
-        node.innerHTML = htmlValue;
-        return true;
-    }
+        if (!isIndependent) {
+            node.innerHTML = `${container.outerHTML} ${node.innerHTML}`;
+        }
 
-    buildHtmlValue(className, value) {
-        return `<div class="d4br_show ${className}" style="color:gray; font-size:15px;">${value}</div>`;
+        return true;
     }
 }
