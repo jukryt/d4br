@@ -4,6 +4,7 @@ class D4MobalyticsProcessor {
         this.targetLanguage = new RussianLanguage();
         this.elementBuilder = new ElementBuilder("darkgray");
         this.resourceBuilder = new ResourceBuilder(this);
+        this.skillBuilder = new SkillBuilder(this);
         this.affixBuilder = new AffixBuilder(this, /Ranks (?:to )?(?<skillName>.+)/);
         this.temperBuilder = new TemperBulder(this, / ?(?:(?:(?:B|b)onus)|(?:(?:R|r)anks)|(?<value>\+))? ?/);
     }
@@ -164,7 +165,20 @@ class D4MobalyticsProcessor {
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", Language.skills);
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const sourceItem = this.skillBuilder.getSourceItem(sourceValue);
+        const targetItem = this.skillBuilder.getTargetItem(sourceItem);
+        const targetValue = this.skillBuilder.buildTargetValue(targetItem);
+
+        if (!targetValue) {
+            return false;
+        }
+
+        return this.addTargetValue(node, "d4br_skill_name", targetValue);
     }
 
     glyphNameProcess(node) {

@@ -4,6 +4,7 @@ class D4BuildsProcessor {
         this.targetLanguage = new RussianLanguage();
         this.elementBuilder = new ElementBuilder("gray");
         this.resourceBuilder = new ResourceBuilder(this);
+        this.skillBuilder = new SkillBuilder(this);
         this.affixBuilder = new AffixBuilder(this, /(?<value>\d+|[X0-9\.,\-% \[\]]+) to (?<skillName>.+)/);
         this.temperBuilder = new TemperBulder(this, / ?(?<value>\+? ?[X0-9\.,\-% \[\]]+)? ?/);
     }
@@ -213,7 +214,20 @@ class D4BuildsProcessor {
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", Language.skills, false);
+        const sourceValue = node.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const sourceItem = this.skillBuilder.getSourceItem(sourceValue);
+        const targetItem = this.skillBuilder.getTargetItem(sourceItem);
+        const targetValue = this.skillBuilder.buildTargetValue(targetItem);
+
+        if (!targetValue) {
+            return false;
+        }
+
+        return this.addTargetValue(node, "d4br_skill_name", targetValue, false, false);
     }
 
     glyphNameProcess(node) {
