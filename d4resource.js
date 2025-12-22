@@ -74,7 +74,20 @@ class ResourceBuilder {
                 (charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
         });
 
-        const sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
+        let sourceItems = availableItems.filter(i => StringExtension.equelsIgnoreCase(i.name, sourceValue));
+
+        if (sourceItems.length > 1) {
+            const classSourceItems = sourceItems.filter(i => i.classes && charClassName && i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+            if (classSourceItems.length == 1) {
+                sourceItems = classSourceItems;
+            }
+            else {
+                const anySourceItems = sourceItems.filter(i => !i.classes || i.classes.length === 0);
+                if (anySourceItems.length == 1) {
+                    sourceItems = anySourceItems;
+                }
+            }
+        }
 
         if (sourceItems.length != 1) {
             return null;
