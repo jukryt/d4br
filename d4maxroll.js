@@ -45,6 +45,11 @@ class D4MaxrollProcessor {
                             for (const temperNode of temperNodes) {
                                 this.temperNameProcess(temperNode);
                             }
+
+                            const runeWordNode = newNode.querySelector("div.d4t-socket div.d4t-effect div.d4t-name");
+                            if (runeWordNode) {
+                                this.runeWordProcess(runeWordNode);
+                            }
                         }
                         // rare: glyph, rune
                         else if (newNode.querySelector("div.d4t-tip-rare")) {
@@ -71,12 +76,22 @@ class D4MaxrollProcessor {
                             if (titleNode) {
                                 this.unqItemNameProcess(titleNode);
                             }
+
+                            const runeWordNode = newNode.querySelector("div.d4t-socket div.d4t-effect div.d4t-name");
+                            if (runeWordNode) {
+                                this.runeWordProcess(runeWordNode);
+                            }
                         }
                         // mythic item
                         else if (newNode.querySelector("div.d4t-tip-mythic")) {
                             const titleNode = newNode.querySelector("div.d4t-title");
                             if (titleNode) {
                                 this.unqItemNameProcess(titleNode);
+                            }
+
+                            const runeWordNode = newNode.querySelector("div.d4t-socket div.d4t-effect div.d4t-name");
+                            if (runeWordNode) {
+                                this.runeWordProcess(runeWordNode);
                             }
                         }
                         // skill
@@ -248,6 +263,30 @@ class D4MaxrollProcessor {
 
     unqItemNameProcess(node) {
         return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems);
+    }
+
+    runeWordProcess(node) {
+        const sourceValue = node.querySelector("span")?.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const runeWordMaths = sourceValue.match(/[A-Z][a-z]+/g);
+        if (!runeWordMaths) {
+            return false;
+        }
+
+        const targetValue = runeWordMaths.map(runeName => {
+            const sourceItem = this.resourceBuilder.getSourceItem(Language.runes, runeName);
+            const targetItem = this.resourceBuilder.getTargetItem(sourceItem);
+            return targetItem?.name;
+        }).filter(x => x).join(" ");
+
+        if (!targetValue) {
+            return false;
+        }
+
+        return this.addAffixNodeTargetValue(node, "d4br_runeWord_name", targetValue);
     }
 
     skillNameProcess(node) {

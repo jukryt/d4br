@@ -29,12 +29,22 @@ class D4MobalyticsProcessor {
                         for (const temperNameNode of temperNameNodes) {
                             this.temperNameProcess(temperNameNode);
                         }
+
+                        const runeNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(img[src*='/runes/'])");
+                        for (const runeNameNode of runeNameNodes) {
+                            this.runeNameInItemProcess(runeNameNode);
+                        }
                     }
                     // unq item
                     else if (tippyNode.querySelector("div.xb3r6kr img[src*='/uniques/']")) {
                         const unqItemNameNode = tippyNode.querySelector("p.x2klb21");
                         if (unqItemNameNode) {
                             this.unqItemNameProcess(unqItemNameNode);
+                        }
+
+                        const runeNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(img[src*='/runes/'])");
+                        for (const runeNameNode of runeNameNodes) {
+                            this.runeNameInItemProcess(runeNameNode);
                         }
                     }
                     // skill
@@ -182,6 +192,29 @@ class D4MobalyticsProcessor {
     runeNameProcess(node) {
         return this.nodeProcess(node, "d4br_rune_name", Language.runes);
     }
+
+    runeNameInItemProcess(node) {
+        const sourceValue = node.querySelector("span")?.innerText;
+        if (!sourceValue) {
+            return false;
+        }
+
+        const runeWordMaths = sourceValue.match(/[A-Z][a-z]+/g);
+        if (!runeWordMaths) {
+            return false;
+        }
+
+        const targetValue = runeWordMaths.map(runeName => {
+            const sourceItem = this.resourceBuilder.getSourceItem(Language.runes, runeName);
+            const targetItem = this.resourceBuilder.getTargetItem(sourceItem);
+            return targetItem?.name;
+        }).filter(x => x).join(" ");
+
+        if (!targetValue) {
+            return false;
+        }
+
+        return this.addAffixNodeTargetValue(node, "d4br_rune_name", targetValue);
     }
 
     nodeProcess(node, className, resourceName) {
