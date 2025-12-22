@@ -230,6 +230,10 @@ class D4d2coreProcessor {
         var sourceItem = this.resourceBuilder.getSourceItem(resourceName, sourceValue);
         const targetItem = this.resourceBuilder.getTargetItem(sourceItem);
 
+        if (!targetItem) {
+            return false;
+        }
+
         return this.addTargetValue(node, className, targetItem.name);
     }
 
