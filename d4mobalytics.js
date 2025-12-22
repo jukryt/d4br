@@ -47,9 +47,16 @@ class D4MobalyticsProcessor {
                             this.runeNameInItemProcess(runeNameNode);
                         }
                     }
-                    // skill
+                    // skill (old)
                     else if (tippyNode.querySelector("div.m-1saunj6")) {
                         const skillNameNode = tippyNode.querySelector("p.m-foqf9j");
+                        if (skillNameNode) {
+                            this.skillNameProcess(skillNameNode);
+                        }
+                    }
+                    // skill (new)
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/skills/'")) {
+                        const skillNameNode = tippyNode.querySelector("p.x2klb21");
                         if (skillNameNode) {
                             this.skillNameProcess(skillNameNode);
                         }
