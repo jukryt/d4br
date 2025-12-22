@@ -1,10 +1,9 @@
 ﻿using Importer.Fixer;
-using Importer.Model;
 using Importer.Report;
 
 namespace Importer.Custom.Skill
 {
-    internal class SkillFilter : IItemsFixer<ClassItem>
+    internal class SkillFilter : IItemsFixer<SkillItem>
     {
         private static readonly IReadOnlyDictionary<long, string> IgnoreItems = new Dictionary<long, string>()
         {
@@ -17,14 +16,14 @@ namespace Importer.Custom.Skill
             _ignoreName = ignoreName;
         }
 
-        public Task FixItemsAsync(List<ClassItem> items, IMessageReporter reporter)
+        public Task FixItemsAsync(List<SkillItem> items, IMessageReporter reporter)
         {
             RemoveIgnoreItems(items, reporter);
 
             return Task.CompletedTask;
         }
 
-        private void RemoveIgnoreItems(List<ClassItem> items, IMessageReporter reporter)
+        private void RemoveIgnoreItems(List<SkillItem> items, IMessageReporter reporter)
         {
             var ignoreItems = new HashSet<long>();
 
