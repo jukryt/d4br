@@ -51,10 +51,6 @@ class ElementBuilder {
             classList.add("d4br_element");
         }
 
-        if (!classList.contains("d4br_show")) {
-            classList.add("d4br_show");
-        }
-
         if (!classList.contains(className)) {
             classList.add(className);
         }

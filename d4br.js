@@ -46,9 +46,9 @@
     'use strict';
 
     AddStyle("@keyframes d4br_show_anim { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }");
+    AddStyle(".d4br_element { animation: .7s d4br_show_anim ease; }");
     AddStyle(".d4br_element::before { display: none !important; }");
     AddStyle(".d4br_element::after { display: none !important; }");
-    AddStyle(".d4br_show { animation: .7s d4br_show_anim ease; }");
 
     var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
 
