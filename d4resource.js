@@ -1,3 +1,66 @@
+class ElementBuilder {
+    constructor(textColor) {
+        this.textColor = textColor;
+    }
+
+    addContainerBefore(sourceNode, className) {
+        const nodeStyle = window.getComputedStyle(sourceNode);
+
+        const targetNode = this.createContainerBySource(sourceNode, className);
+        targetNode.style.marginTop = nodeStyle.getPropertyValue("margin-top");
+        sourceNode.style.marginTop = "0";
+
+        sourceNode.before(targetNode);
+        return targetNode;
+    }
+
+    createContainerByTag(tagName, className) {
+        const targetNode = document.createElement(tagName);
+
+        this.addClasses(targetNode, className);
+        targetNode.style.color = this.textColor;
+
+        return targetNode;
+    }
+
+    createContainerBySource(sourceNode, className) {
+        const targetNode = this.cloneElement(sourceNode);
+
+        this.addClasses(targetNode, className)
+        targetNode.style.color = this.textColor;
+
+        return targetNode;
+    }
+
+    cloneElement(sourceNode) {
+        const nodeStyle = window.getComputedStyle(sourceNode);
+
+        const targetNode = document.createElement(sourceNode.localName);
+        targetNode.style.fontFamily = nodeStyle.getPropertyValue("font-family");
+        targetNode.style.fontSize = nodeStyle.getPropertyValue("font-size");
+        targetNode.style.textAlign = nodeStyle.getPropertyValue("text-align");
+        targetNode.style.color = nodeStyle.getPropertyValue("color");
+
+        return targetNode;
+    }
+
+    addClasses(node, className) {
+        const classList = node.classList;
+
+        if (!classList.contains("d4br_element")) {
+            classList.add("d4br_element");
+        }
+
+        if (!classList.contains("d4br_show")) {
+            classList.add("d4br_show");
+        }
+
+        if (!classList.contains(className)) {
+            classList.add(className);
+        }
+    }
+}
+
 class ResourceBuilder {
     constructor(processor) {
         this.processor = processor;

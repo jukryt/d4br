@@ -2,6 +2,7 @@ class D4MaxrollProcessor {
     constructor() {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
+        this.elementBuilder = new ElementBuilder("darkgray");
         this.resourceBuilder = new ResourceBuilder(this);
         this.affixBuilder = new AffixBuilder(this, /(?<value>\+\d+) to (?<skillName>.+)/);
         this.temperBuilder = new TemperBulder(this, / ?(?<value>\+? ?[0-9\.,\-% ]+)? ?/);
@@ -283,9 +284,12 @@ class D4MaxrollProcessor {
 
     addAffixNodeTargetValue(node, className, targetValue) {
         const affixNode = document.createElement("div");
-        affixNode.style["margin-top"] = "0.3em";
         affixNode.style.opacity = "0.6";
         affixNode.innerText = targetValue;
+
+        if (node.parentNode.firstChild !== node) {
+            affixNode.style.marginTop = "0.3em";
+        }
 
         return this.addTargetValue(node, className, affixNode.outerHTML, true);
     }
@@ -295,26 +299,13 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const nodeStyle = window.getComputedStyle(node);
-
-        const valueNode = document.createElement("div");
-        valueNode.className = `d4br_show ${className}`;
-        valueNode.style["font-family"] = nodeStyle.getPropertyValue("font-family");
-        valueNode.style["font-size"] = nodeStyle.getPropertyValue("font-size");
-        valueNode.style["text-align"] = nodeStyle.getPropertyValue("text-align");
-        valueNode.style["color"] = "darkgray";
-
+        const container = this.elementBuilder.addContainerBefore(node, className);
         if (isHtml) {
-            valueNode.innerHTML = targetValue;
+            container.innerHTML = targetValue;
         }
         else {
-            valueNode.innerText = targetValue;
+            container.innerText = targetValue;
         }
-
-        node.parentNode.insertBefore(valueNode, node);
-
-        valueNode.style["margin-top"] = nodeStyle.getPropertyValue("margin-top");
-        valueNode.style["margin-bottom"] = `-${nodeStyle.getPropertyValue("margin-top")}`;
 
         return true;
     }

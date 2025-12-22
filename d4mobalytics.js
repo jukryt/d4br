@@ -2,6 +2,7 @@ class D4MobalyticsProcessor {
     constructor() {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
+        this.elementBuilder = new ElementBuilder("darkgray");
         this.resourceBuilder = new ResourceBuilder(this);
         this.affixBuilder = new AffixBuilder(this, /Ranks (?:to )?(?<skillName>.+)/);
         this.temperBuilder = new TemperBulder(this, / ?(?:(?:(?:B|b)onus)|(?<value>\+))? ?/);
@@ -80,7 +81,7 @@ class D4MobalyticsProcessor {
     }
 
     aspectNameProcess(node) {
-        return this.nodeProcess(node, "d4br_aspect_name", Language.aspects, true);
+        return this.nodeProcess(node, "d4br_aspect_name", Language.aspects);
     }
 
     affixNameProcess(node) {
@@ -94,7 +95,7 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        return this.setAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
+        return this.addAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
     }
 
     getAffixTargetValue(sourceValue) {
@@ -126,7 +127,7 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        return this.setTemperNodeTargetValue(temperNameNode, "d4br_temper_name", temperTargetValue);
+        return this.addAffixNodeTargetValue(temperNameNode, "d4br_temper_name", temperTargetValue);
     }
 
     getTemperTargetValue(sourceValue) {
@@ -142,11 +143,11 @@ class D4MobalyticsProcessor {
     }
 
     unqItemNameProcess(node) {
-        return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems, true);
+        return this.nodeProcess(node, "d4br_unq_item_name", Language.unqItems);
     }
 
     skillNameProcess(node) {
-        return this.nodeProcess(node, "d4br_skill_name", Language.skills, true);
+        return this.nodeProcess(node, "d4br_skill_name", Language.skills);
     }
 
     glyphNameProcess(node) {
@@ -171,18 +172,19 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        return this.setTargetValue(node, "d4br_glyph_name", targetItem.name, true);
+        return this.addTargetValue(node, "d4br_glyph_name", targetItem.name);
     }
 
     legNodeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes, true);
+        return this.nodeProcess(node, "d4br_leg_node_name", Language.legNodes);
     }
 
     runeNameProcess(node) {
-        return this.nodeProcess(node, "d4br_rune_name", Language.runes, true);
+        return this.nodeProcess(node, "d4br_rune_name", Language.runes);
+    }
     }
 
-    nodeProcess(node, className, resourceName, addSourceValue) {
+    nodeProcess(node, className, resourceName) {
         const sourceValue = node.innerText;
         if (!sourceValue) {
             return false;
@@ -195,42 +197,32 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        return this.setTargetValue(node, className, targetItem.name, addSourceValue);
+        return this.addTargetValue(node, className, targetItem.name);
     }
 
-    setAffixNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("li");
-        newNode.style.marginLeft = "25px";
-        newNode.style.opacity = "0.6";
-        node.parentNode.insertBefore(newNode, node);
+    addAffixNodeTargetValue(node, className, targetValue) {
+        const affixNode = document.createElement("div");
+        affixNode.style.marginLeft = "25px";
+        affixNode.style.marginBottom = "-5px";
+        affixNode.style.opacity = "0.6";
+        affixNode.innerText = targetValue;
 
-        return this.setTargetValue(newNode, className, targetValue, false);
+        return this.addTargetValue(node, className, affixNode.outerHTML, true);
     }
 
-    setTemperNodeTargetValue(node, className, targetValue) {
-        const newNode = document.createElement("li");
-        newNode.style.marginLeft = "25px";
-        newNode.style.opacity = "0.6";
-        node.parentNode.insertBefore(newNode, node);
-
-        return this.setTargetValue(newNode, className, targetValue, false);
-    }
-
-    setTargetValue(node, className, targetValue, addSourceValue) {
+    addTargetValue(node, className, targetValue, isHtml = false) {
         if (!targetValue) {
             return false;
         }
 
-        let htmlValue = this.buildHtmlValue(className, targetValue);
-        if (addSourceValue) {
-            htmlValue += node.innerHTML;
+        const container = this.elementBuilder.addContainerBefore(node, className);
+        if (isHtml) {
+            container.innerHTML = targetValue;
+        }
+        else {
+            container.innerText = targetValue;
         }
 
-        node.innerHTML = htmlValue;
         return true;
-    }
-
-    buildHtmlValue(className, value) {
-        return `<div class="d4br_show ${className}" style="color:darkgray; font-size:15px;">${value}</div>`;
     }
 }
