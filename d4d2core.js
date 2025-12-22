@@ -2,6 +2,7 @@ class D4d2coreProcessor {
     constructor() {
         this.sourceLanguage = new EnglishLanguage();
         this.targetLanguage = new RussianLanguage();
+        this.elementBuilder = new ElementBuilder("gray");
         this.resourceBuilder = new ResourceBuilder(this);
         this.affixBuilder = new AffixBuilder(this, /(?<value>\+\d+) to (?<skillName>.+)/);
         this.temperBuilder = new TemperBulder(this, / ?(?<value>\+? ?[0-9\.,\-% ]+)? ?/);
@@ -131,7 +132,7 @@ class D4d2coreProcessor {
     }
 
     removeOldItems(node) {
-        const childs = node.querySelectorAll(".d4br_item");
+        const childs = node.querySelectorAll(".d4br_element");
         for (const child of childs) {
             child.remove();
         }
@@ -247,26 +248,13 @@ class D4d2coreProcessor {
             return false;
         }
 
-        const nodeStyle = window.getComputedStyle(node);
-
-        const valueNode = document.createElement("div");
-        valueNode.className = `d4br_show d4br_item ${className}`;
-        valueNode.style["font-family"] = nodeStyle.getPropertyValue("font-family");
-        valueNode.style["font-size"] = nodeStyle.getPropertyValue("font-size");
-        valueNode.style["text-align"] = nodeStyle.getPropertyValue("text-align");
-        valueNode.style["color"] = "gray";
-
+        const container = this.elementBuilder.addContainerBefore(node, className);
         if (isHtml) {
-            valueNode.innerHTML = targetValue;
+            container.innerHTML = targetValue;
         }
         else {
-            valueNode.innerText = targetValue;
+            container.innerText = targetValue;
         }
-
-        node.parentNode.insertBefore(valueNode, node);
-
-        valueNode.style["margin-top"] = nodeStyle.getPropertyValue("margin-top");
-        valueNode.style["margin-bottom"] = `-${nodeStyle.getPropertyValue("margin-top")}`;
 
         return true;
     }
