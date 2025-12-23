@@ -34,7 +34,7 @@
 // @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/skill.json
 // @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/temper.json
 
-// @resource     main_style   https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/style.css
+// @resource     main_style   https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/style/main.css
 
 // @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4tools.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4language.js
@@ -42,7 +42,6 @@
 // @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4builds.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4maxroll.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4mobalytics.js
-// @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/style.css
 
 // ==/UserScript==
 
