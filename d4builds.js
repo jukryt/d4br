@@ -214,7 +214,11 @@ class D4BuildsProcessor {
     }
 
     skillNameProcess(node) {
-        const sourceValue = node.innerText;
+        if (!node.childNodes) {
+            return false;
+        }
+
+        const sourceValue = node.childNodes[0].data?.trim();
         if (!sourceValue) {
             return false;
         }
