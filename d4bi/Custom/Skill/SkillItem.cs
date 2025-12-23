@@ -17,6 +17,6 @@ namespace Importer.Custom.Skill
         }
 
         public long Id { get; }
-        public string Name { get; }
+        public string Name { get; set; }
     }
 }

@@ -191,6 +191,7 @@ namespace Importer.Resource
                                     new FixRemoveEmptyName<SkillItem>(),
                                     new FixRemoveEmptyClass<SkillItem>(),
                                     new FixName<SkillItem>(),
+                                    new FixSkillModsName(),
                                 ],
                             },
                             Check = new ResourceCheck<SkillItem>
