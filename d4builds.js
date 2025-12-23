@@ -223,7 +223,13 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const sourceItem = this.skillBuilder.getSourceItem(sourceValue);
+        const fixedTemperValue = sourceValue
+            .replace("En Guarde", "En Garde")
+            .replace("Enhanced Defiance Aura", "Enhanced Defiance")
+            .replace("Enhanced Fanaticism Aura", "Enhanced Fanaticism")
+            .replace("Enhanced Holy Light Aura", "Enhanced Holy Light");
+
+        const sourceItem = this.skillBuilder.getSourceItem(fixedTemperValue);
         const targetItem = this.skillBuilder.getTargetItem(sourceItem);
         const targetValue = this.skillBuilder.buildTargetValue(targetItem);
 
