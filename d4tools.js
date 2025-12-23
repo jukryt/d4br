@@ -1,10 +1,23 @@
 class ExternalResource {
-    static getJsonResource(name) {
+    static getStringResource(name) {
         const text = GM_getResourceText(name);
+        if (!text) {
+            return "";
+        }
+        return text;
+    }
+
+    static getJsonResource(name) {
+        const text = ExternalResource.getStringResource(name);
         if (!text) {
             return null;
         }
         return JSON.parse(text);
+    }
+
+    static applyCss(name) {
+        const css = ExternalResource.getStringResource(name);
+        GM_addStyle(css);
     }
 }
 
