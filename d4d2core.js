@@ -133,7 +133,7 @@ class D4d2coreProcessor {
     }
 
     removeOldItems(node) {
-        const childs = node.querySelectorAll(".d4br_element");
+        const childs = node.querySelectorAll(this.elementBuilder.getContainerSelector());
         for (const child of childs) {
             child.remove();
         }
