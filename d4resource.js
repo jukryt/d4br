@@ -1,6 +1,12 @@
 class ElementBuilder {
+    static containerClassName = "d4br_element";
+
     constructor(textColor) {
         this.textColor = textColor;
+    }
+
+    getContainerSelector() {
+        return `.${ElementBuilder.containerClassName}`;
     }
 
     addContainerBefore(sourceNode, className) {
