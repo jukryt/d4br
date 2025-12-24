@@ -4,6 +4,21 @@
     "name": "Firewall",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Firewall"
+      },
+      {
+        "id": 2,
+        "name": "Mage's Firewall"
+      },
+      {
+        "id": 3,
+        "name": "Wizard's Firewall"
+      }
     ]
   },
   {
@@ -11,6 +26,21 @@
     "name": "Spark",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Spark"
+      },
+      {
+        "id": 2,
+        "name": "Flickering Spark"
+      },
+      {
+        "id": 3,
+        "name": "Glinting Spark"
+      }
     ]
   },
   {
@@ -18,6 +48,21 @@
     "name": "Hydra",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Hydra"
+      },
+      {
+        "id": 2,
+        "name": "Roaring Hydra"
+      },
+      {
+        "id": 3,
+        "name": "Invoked Hydra"
+      }
     ]
   },
   {
@@ -25,6 +70,21 @@
     "name": "Fire Bolt",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Fire Bolt"
+      },
+      {
+        "id": 2,
+        "name": "Flickering Fire Bolt"
+      },
+      {
+        "id": 3,
+        "name": "Glinting Fire Bolt"
+      }
     ]
   },
   {
@@ -32,97 +92,125 @@
     "name": "Align the Elements",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156211,
     "name": "Elemental Attunement",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156217,
     "name": "Soulfire",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156220,
     "name": "Combustion",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156224,
     "name": "Glass Cannon",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156225,
     "name": "Devastation",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156227,
     "name": "Shocking Impact",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156229,
     "name": "Convulsions",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156230,
     "name": "Icy Veil",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156232,
     "name": "Shatter",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156233,
     "name": "Potent Warding",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156234,
     "name": "Vyr's Mastery",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 156235,
     "name": "Static Discharge",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 165023,
     "name": "Fireball",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Fireball"
+      },
+      {
+        "id": 2,
+        "name": "Destructive Fireball"
+      },
+      {
+        "id": 3,
+        "name": "Greater Fireball"
+      }
     ]
   },
   {
@@ -130,13 +218,29 @@
     "name": "Devouring Blaze",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 167341,
     "name": "Flame Shield",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Flame Shield"
+      },
+      {
+        "id": 2,
+        "name": "Mystical Flame Shield"
+      },
+      {
+        "id": 3,
+        "name": "Shimmering Flame Shield"
+      }
     ]
   },
   {
@@ -144,27 +248,45 @@
     "name": "Endless Pyre",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 169887,
     "name": "Coursing Currents",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 171610,
     "name": "Inner Flames",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 171937,
     "name": "Charged Bolts",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Charged Bolts"
+      },
+      {
+        "id": 2,
+        "name": "Destructive Charged Bolts"
+      },
+      {
+        "id": 3,
+        "name": "Greater Charged Bolts"
+      }
     ]
   },
   {
@@ -172,27 +294,45 @@
     "name": "Elemental Dominance",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 172497,
     "name": "Warmth",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 172509,
     "name": "Snap Freeze",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 184600,
     "name": "War Cry",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced War Cry"
+      },
+      {
+        "id": 2,
+        "name": "Power War Cry"
+      },
+      {
+        "id": 3,
+        "name": "Mighty War Cry"
+      }
     ]
   },
   {
@@ -200,6 +340,21 @@
     "name": "Ground Stomp",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Ground Stomp"
+      },
+      {
+        "id": 2,
+        "name": "Tactical Ground Stomp"
+      },
+      {
+        "id": 3,
+        "name": "Strategic Ground Stomp"
+      }
     ]
   },
   {
@@ -207,6 +362,21 @@
     "name": "Leap",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Leap"
+      },
+      {
+        "id": 2,
+        "name": "Power Leap"
+      },
+      {
+        "id": 3,
+        "name": "Mighty Leap"
+      }
     ]
   },
   {
@@ -214,6 +384,21 @@
     "name": "Kick",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Kick"
+      },
+      {
+        "id": 2,
+        "name": "Power Kick"
+      },
+      {
+        "id": 3,
+        "name": "Mighty Kick"
+      }
     ]
   },
   {
@@ -221,6 +406,21 @@
     "name": "Bash",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Bash"
+      },
+      {
+        "id": 2,
+        "name": "Battle Bash"
+      },
+      {
+        "id": 3,
+        "name": "Combat Bash"
+      }
     ]
   },
   {
@@ -228,6 +428,21 @@
     "name": "Upheaval",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Upheaval"
+      },
+      {
+        "id": 2,
+        "name": "Violent Upheaval"
+      },
+      {
+        "id": 3,
+        "name": "Furious Upheaval"
+      }
     ]
   },
   {
@@ -235,6 +450,21 @@
     "name": "Charge",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Charge"
+      },
+      {
+        "id": 2,
+        "name": "Power Charge"
+      },
+      {
+        "id": 3,
+        "name": "Mighty Charge"
+      }
     ]
   },
   {
@@ -242,6 +472,21 @@
     "name": "Whirlwind",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Whirlwind"
+      },
+      {
+        "id": 2,
+        "name": "Violent Whirlwind"
+      },
+      {
+        "id": 3,
+        "name": "Furious Whirlwind"
+      }
     ]
   },
   {
@@ -249,6 +494,21 @@
     "name": "Lunging Strike",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Lunging Strike"
+      },
+      {
+        "id": 2,
+        "name": "Battle Lunging Strike"
+      },
+      {
+        "id": 3,
+        "name": "Combat Lunging Strike"
+      }
     ]
   },
   {
@@ -256,6 +516,21 @@
     "name": "Double Swing",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Double Swing"
+      },
+      {
+        "id": 2,
+        "name": "Violent Double Swing"
+      },
+      {
+        "id": 3,
+        "name": "Furious Double Swing"
+      }
     ]
   },
   {
@@ -263,6 +538,21 @@
     "name": "Flay",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Flay"
+      },
+      {
+        "id": 2,
+        "name": "Battle Flay"
+      },
+      {
+        "id": 3,
+        "name": "Combat Flay"
+      }
     ]
   },
   {
@@ -270,6 +560,21 @@
     "name": "Frenzy",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Frenzy"
+      },
+      {
+        "id": 2,
+        "name": "Battle Frenzy"
+      },
+      {
+        "id": 3,
+        "name": "Combat Frenzy"
+      }
     ]
   },
   {
@@ -277,6 +582,17 @@
     "name": "Wrath of the Berserker",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Supreme Wrath of the Berserker"
+      },
+      {
+        "id": 2,
+        "name": "Prime Wrath of the Berserker"
+      }
     ]
   },
   {
@@ -284,6 +600,21 @@
     "name": "Rallying Cry",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Rallying Cry"
+      },
+      {
+        "id": 2,
+        "name": "Tactical Rallying Cry"
+      },
+      {
+        "id": 3,
+        "name": "Strategic Rallying Cry"
+      }
     ]
   },
   {
@@ -291,55 +622,77 @@
     "name": "Swiftness",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 212731,
     "name": "Endless Fury",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 212832,
     "name": "Expose Vulnerability",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 212867,
     "name": "Duelist",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 213021,
     "name": "Hamstring",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 213077,
     "name": "Quick Impulses",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 213153,
     "name": "Cut to the Bone",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 213673,
     "name": "Hammer of the Ancients",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Hammer of the Ancients"
+      },
+      {
+        "id": 2,
+        "name": "Violent Hammer of the Ancients"
+      },
+      {
+        "id": 3,
+        "name": "Furious Hammer of the Ancients"
+      }
     ]
   },
   {
@@ -347,48 +700,69 @@
     "name": "Battle Fervor",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 213949,
     "name": "Slaying Strike",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 213961,
     "name": "Gushing Wounds",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 213966,
     "name": "Unconstrained",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 214020,
     "name": "Martial Vigor",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 214021,
     "name": "Tough as Nails",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 214786,
     "name": "Rend",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Rend"
+      },
+      {
+        "id": 2,
+        "name": "Violent Rend"
+      },
+      {
+        "id": 3,
+        "name": "Furious Rend"
+      }
     ]
   },
   {
@@ -396,6 +770,21 @@
     "name": "Rupture",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Rupture"
+      },
+      {
+        "id": 2,
+        "name": "Fighter's Rupture"
+      },
+      {
+        "id": 3,
+        "name": "Warrior's Rupture"
+      }
     ]
   },
   {
@@ -403,76 +792,97 @@
     "name": "Booming Voice",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 215519,
     "name": "Brute Force",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 216116,
     "name": "Thick Skin",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 216222,
     "name": "Guttural Yell",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 216365,
     "name": "Furious Impulse",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 216535,
     "name": "Pit Fighter",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 216608,
     "name": "No Mercy",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 216638,
     "name": "Walking Arsenal",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 216644,
     "name": "Unbridled Rage",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 217121,
     "name": "Invigorating Fury",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 217175,
     "name": "Iron Maelstrom",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Iron Maelstrom"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Iron Maelstrom"
+      }
     ]
   },
   {
@@ -480,13 +890,29 @@
     "name": "Prolific Fury",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 238345,
     "name": "Boulder",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Boulder"
+      },
+      {
+        "id": 2,
+        "name": "Natural Boulder"
+      },
+      {
+        "id": 3,
+        "name": "Savage Boulder"
+      }
     ]
   },
   {
@@ -494,6 +920,21 @@
     "name": "Trample",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Trample"
+      },
+      {
+        "id": 2,
+        "name": "Natural Trample"
+      },
+      {
+        "id": 3,
+        "name": "Savage Trample"
+      }
     ]
   },
   {
@@ -501,6 +942,21 @@
     "name": "Hurricane",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Hurricane"
+      },
+      {
+        "id": 2,
+        "name": "Natural Hurricane"
+      },
+      {
+        "id": 3,
+        "name": "Savage Hurricane"
+      }
     ]
   },
   {
@@ -508,6 +964,21 @@
     "name": "Wolves",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Wolf Pack"
+      },
+      {
+        "id": 2,
+        "name": "Brutal Wolf Pack"
+      },
+      {
+        "id": 3,
+        "name": "Ferocious Wolf Pack"
+      }
     ]
   },
   {
@@ -515,6 +986,17 @@
     "name": "Cataclysm",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Cataclysm"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Cataclysm"
+      }
     ]
   },
   {
@@ -522,6 +1004,17 @@
     "name": "Grizzly Rage",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Grizzly Rage"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Grizzly Rage"
+      }
     ]
   },
   {
@@ -529,6 +1022,25 @@
     "name": "Pulverize",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Pulverize"
+      },
+      {
+        "id": 2,
+        "name": "Primal Pulverize"
+      },
+      {
+        "id": 3,
+        "name": "Raging Pulverize"
+      },
+      {
+        "id": 4,
+        "name": "Rampaging Pulverize"
+      }
     ]
   },
   {
@@ -536,6 +1048,21 @@
     "name": "Cyclone Armor",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Cyclone Armor"
+      },
+      {
+        "id": 2,
+        "name": "Preserving Cyclone Armor"
+      },
+      {
+        "id": 3,
+        "name": "Innate Cyclone Armor"
+      }
     ]
   },
   {
@@ -543,6 +1070,21 @@
     "name": "Ravens",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Ravens"
+      },
+      {
+        "id": 2,
+        "name": "Ferocious Ravens"
+      },
+      {
+        "id": 3,
+        "name": "Brutal Ravens"
+      }
     ]
   },
   {
@@ -550,6 +1092,21 @@
     "name": "Frost Bolt",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Frost Bolt"
+      },
+      {
+        "id": 2,
+        "name": "Flickering Frost Bolt"
+      },
+      {
+        "id": 3,
+        "name": "Glinting Frost Bolt"
+      }
     ]
   },
   {
@@ -557,6 +1114,21 @@
     "name": "Teleport",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Teleport"
+      },
+      {
+        "id": 2,
+        "name": "Mystical Teleport"
+      },
+      {
+        "id": 3,
+        "name": "Shimmering Teleport"
+      }
     ]
   },
   {
@@ -564,153 +1136,189 @@
     "name": "Abundance",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 289512,
     "name": "Nature's Resolve",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 289513,
     "name": "Heightened Senses",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 289518,
     "name": "Circle of Life",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 290420,
     "name": "Iron Fur",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 290475,
     "name": "Digitigrade Gait",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 290798,
     "name": "Crushing Earth",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 290910,
     "name": "Elemental Exposure",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 290911,
     "name": "Ancestral Fortitude",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 290951,
     "name": "Predatory Instinct",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 290954,
     "name": "Natural Fortitude",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 290969,
     "name": "Quickshift",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 290971,
     "name": "Toxic Claws",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 291045,
     "name": "Resonance",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 291046,
     "name": "Endless Tempest",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 291047,
     "name": "Electric Shock",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 291048,
     "name": "Defiance",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 291078,
     "name": "Earthen Might",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 291079,
     "name": "Perfect Storm",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 291084,
     "name": "Ursine Strength",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 291085,
     "name": "Lupine Ferocity",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 291215,
     "name": "Frost Nova",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Frost Nova"
+      },
+      {
+        "id": 2,
+        "name": "Mystical Frost Nova"
+      },
+      {
+        "id": 3,
+        "name": "Shimmering Frost Nova"
+      }
     ]
   },
   {
@@ -718,6 +1326,21 @@
     "name": "Frozen Orb",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Frozen Orb"
+      },
+      {
+        "id": 2,
+        "name": "Destructive Frozen Orb"
+      },
+      {
+        "id": 3,
+        "name": "Greater Frozen Orb"
+      }
     ]
   },
   {
@@ -725,6 +1348,21 @@
     "name": "Blizzard",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Blizzard"
+      },
+      {
+        "id": 2,
+        "name": "Mage's Blizzard"
+      },
+      {
+        "id": 3,
+        "name": "Wizard's Blizzard"
+      }
     ]
   },
   {
@@ -732,6 +1370,21 @@
     "name": "Ice Blades",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Ice Blades"
+      },
+      {
+        "id": 2,
+        "name": "Roaring Ice Blades"
+      },
+      {
+        "id": 3,
+        "name": "Invoked Ice Blades"
+      }
     ]
   },
   {
@@ -739,6 +1392,17 @@
     "name": "Deep Freeze",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Deep Freeze"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Deep Freeze"
+      }
     ]
   },
   {
@@ -746,6 +1410,21 @@
     "name": "Lightning Spear",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Lightning Spear"
+      },
+      {
+        "id": 2,
+        "name": "Roaring Lightning Spear"
+      },
+      {
+        "id": 3,
+        "name": "Invoked Lightning Spear"
+      }
     ]
   },
   {
@@ -753,6 +1432,21 @@
     "name": "Incinerate",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Incinerate"
+      },
+      {
+        "id": 2,
+        "name": "Destructive Incinerate"
+      },
+      {
+        "id": 3,
+        "name": "Greater Incinerate"
+      }
     ]
   },
   {
@@ -760,6 +1454,21 @@
     "name": "Chain Lightning",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Chain Lightning"
+      },
+      {
+        "id": 2,
+        "name": "Destructive Chain Lightning"
+      },
+      {
+        "id": 3,
+        "name": "Greater Chain Lightning"
+      }
     ]
   },
   {
@@ -767,13 +1476,29 @@
     "name": "Cold Front",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 293195,
     "name": "Ice Shards",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Ice Shards"
+      },
+      {
+        "id": 2,
+        "name": "Destructive Ice Shards"
+      },
+      {
+        "id": 3,
+        "name": "Greater Ice Shards"
+      }
     ]
   },
   {
@@ -781,6 +1506,17 @@
     "name": "Inferno",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Inferno"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Inferno"
+      }
     ]
   },
   {
@@ -788,6 +1524,21 @@
     "name": "Meteor",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Meteor"
+      },
+      {
+        "id": 2,
+        "name": "Mage's Meteor"
+      },
+      {
+        "id": 3,
+        "name": "Wizard's Meteor"
+      }
     ]
   },
   {
@@ -795,6 +1546,21 @@
     "name": "Ice Armor",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Ice Armor"
+      },
+      {
+        "id": 2,
+        "name": "Mystical Ice Armor"
+      },
+      {
+        "id": 3,
+        "name": "Shimmering Ice Armor"
+      }
     ]
   },
   {
@@ -802,6 +1568,21 @@
     "name": "Arc Lash",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Arc Lash"
+      },
+      {
+        "id": 2,
+        "name": "Flickering Arc Lash"
+      },
+      {
+        "id": 3,
+        "name": "Glinting Arc Lash"
+      }
     ]
   },
   {
@@ -809,6 +1590,21 @@
     "name": "Tornado",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Tornado"
+      },
+      {
+        "id": 2,
+        "name": "Raging Tornado"
+      },
+      {
+        "id": 3,
+        "name": "Primal Tornado"
+      }
     ]
   },
   {
@@ -816,6 +1612,21 @@
     "name": "Maul",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Maul"
+      },
+      {
+        "id": 2,
+        "name": "Fierce Maul"
+      },
+      {
+        "id": 3,
+        "name": "Wild Maul"
+      }
     ]
   },
   {
@@ -823,6 +1634,25 @@
     "name": "Storm Strike",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Storm Strike"
+      },
+      {
+        "id": 2,
+        "name": "Fierce Storm Strike"
+      },
+      {
+        "id": 3,
+        "name": "Wild Storm Strike"
+      },
+      {
+        "id": 4,
+        "name": "Empowering Storm Strike"
+      }
     ]
   },
   {
@@ -830,6 +1660,17 @@
     "name": "Call of the Ancients",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Call of the Ancients"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Call of the Ancients"
+      }
     ]
   },
   {
@@ -837,6 +1678,25 @@
     "name": "Landslide",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Landslide"
+      },
+      {
+        "id": 2,
+        "name": "Primal Landslide"
+      },
+      {
+        "id": 3,
+        "name": "Raging Landslide"
+      },
+      {
+        "id": 4,
+        "name": "Torrential Landslide"
+      }
     ]
   },
   {
@@ -844,6 +1704,21 @@
     "name": "Poison Creeper",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Poison Creeper"
+      },
+      {
+        "id": 2,
+        "name": "Ferocious Poison Creeper"
+      },
+      {
+        "id": 3,
+        "name": "Brutal Poison Creeper"
+      }
     ]
   },
   {
@@ -851,6 +1726,21 @@
     "name": "Death Blow",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Death Blow"
+      },
+      {
+        "id": 2,
+        "name": "Fighter's Death Blow"
+      },
+      {
+        "id": 3,
+        "name": "Warrior's Death Blow"
+      }
     ]
   },
   {
@@ -858,13 +1748,29 @@
     "name": "Esu's Ferocity",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 333421,
     "name": "Earthen Bulwark",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Earthen Bulwark"
+      },
+      {
+        "id": 2,
+        "name": "Innate Earthen Bulwark"
+      },
+      {
+        "id": 3,
+        "name": "Preserving Earthen Bulwark"
+      }
     ]
   },
   {
@@ -872,41 +1778,61 @@
     "name": "Icy Touch",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 334224,
     "name": "Permafrost",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 334380,
     "name": "Avalanche",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 334677,
     "name": "Electrocution",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 334791,
     "name": "Overflowing Energy",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 336238,
     "name": "Debilitating Roar",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Debilitating Roar"
+      },
+      {
+        "id": 2,
+        "name": "Preserving Debilitating Roar"
+      },
+      {
+        "id": 3,
+        "name": "Innate Debilitating Roar"
+      }
     ]
   },
   {
@@ -914,27 +1840,41 @@
     "name": "Call of the Wild",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 346283,
     "name": "Neurotoxin",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 350820,
     "name": "Natural Disaster",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 351722,
     "name": "Petrify",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Petrify"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Petrify"
+      }
     ]
   },
   {
@@ -942,6 +1882,21 @@
     "name": "Shadow Step",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Shadow Step"
+      },
+      {
+        "id": 2,
+        "name": "Disciplined Shadow Step"
+      },
+      {
+        "id": 3,
+        "name": "Methodical Shadow Step"
+      }
     ]
   },
   {
@@ -949,6 +1904,21 @@
     "name": "Rapid Fire",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Rapid Fire"
+      },
+      {
+        "id": 2,
+        "name": "Improved Rapid Fire"
+      },
+      {
+        "id": 3,
+        "name": "Advanced Rapid Fire"
+      }
     ]
   },
   {
@@ -956,6 +1926,21 @@
     "name": "Smoke Grenade",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Smoke Grenade"
+      },
+      {
+        "id": 2,
+        "name": "Countering Smoke Grenade"
+      },
+      {
+        "id": 3,
+        "name": "Subverting Smoke Grenade"
+      }
     ]
   },
   {
@@ -963,6 +1948,25 @@
     "name": "Wind Shear",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Wind Shear"
+      },
+      {
+        "id": 2,
+        "name": "Fierce Wind Shear"
+      },
+      {
+        "id": 3,
+        "name": "Wild Wind Shear"
+      },
+      {
+        "id": 4,
+        "name": "Forceful Wind Shear"
+      }
     ]
   },
   {
@@ -970,6 +1974,17 @@
     "name": "Shadow Clone",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Shadow Clone"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Shadow Clone"
+      }
     ]
   },
   {
@@ -977,6 +1992,21 @@
     "name": "Flurry",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Flurry"
+      },
+      {
+        "id": 2,
+        "name": "Improved Flurry"
+      },
+      {
+        "id": 3,
+        "name": "Advanced Flurry"
+      }
     ]
   },
   {
@@ -984,6 +2014,21 @@
     "name": "Poison Imbuement",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Poison Imbuement"
+      },
+      {
+        "id": 2,
+        "name": "Mixed Poison Imbuement"
+      },
+      {
+        "id": 3,
+        "name": "Blended Poison Imbuement"
+      }
     ]
   },
   {
@@ -991,6 +2036,21 @@
     "name": "Dash",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Dash"
+      },
+      {
+        "id": 2,
+        "name": "Disciplined Dash"
+      },
+      {
+        "id": 3,
+        "name": "Methodical Dash"
+      }
     ]
   },
   {
@@ -998,6 +2058,21 @@
     "name": "Cold Imbuement",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Cold Imbuement"
+      },
+      {
+        "id": 2,
+        "name": "Mixed Cold Imbuement"
+      },
+      {
+        "id": 3,
+        "name": "Blended Cold Imbuement"
+      }
     ]
   },
   {
@@ -1005,6 +2080,21 @@
     "name": "Heartseeker",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Heartseeker"
+      },
+      {
+        "id": 2,
+        "name": "Fundamental Heartseeker"
+      },
+      {
+        "id": 3,
+        "name": "Primary Heartseeker"
+      }
     ]
   },
   {
@@ -1012,6 +2102,21 @@
     "name": "Puncture",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Puncture"
+      },
+      {
+        "id": 2,
+        "name": "Fundamental Puncture"
+      },
+      {
+        "id": 3,
+        "name": "Primary Puncture"
+      }
     ]
   },
   {
@@ -1019,6 +2124,21 @@
     "name": "Challenging Shout",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Challenging Shout"
+      },
+      {
+        "id": 2,
+        "name": "Tactical Challenging Shout"
+      },
+      {
+        "id": 3,
+        "name": "Strategic Challenging Shout"
+      }
     ]
   },
   {
@@ -1026,6 +2146,21 @@
     "name": "Penetrating Shot",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Penetrating Shot"
+      },
+      {
+        "id": 2,
+        "name": "Advanced Penetrating Shot"
+      },
+      {
+        "id": 3,
+        "name": "Improved Penetrating Shot"
+      }
     ]
   },
   {
@@ -1033,6 +2168,21 @@
     "name": "Shadow Imbuement",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Shadow Imbuement"
+      },
+      {
+        "id": 2,
+        "name": "Mixed Shadow Imbuement"
+      },
+      {
+        "id": 3,
+        "name": "Blended Shadow Imbuement"
+      }
     ]
   },
   {
@@ -1040,6 +2190,21 @@
     "name": "Caltrops",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Caltrops"
+      },
+      {
+        "id": 2,
+        "name": "Disciplined Caltrops"
+      },
+      {
+        "id": 3,
+        "name": "Methodical Caltrops"
+      }
     ]
   },
   {
@@ -1047,125 +2212,153 @@
     "name": "Stutter Step",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391662,
     "name": "Mending Obscurity",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391663,
     "name": "Weapon Mastery",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391664,
     "name": "Rugged",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391666,
     "name": "Impetus",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391667,
     "name": "Alchemical Advantage",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391669,
     "name": "Close Quarters Combat",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391671,
     "name": "Agile",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391673,
     "name": "Sturdy",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391674,
     "name": "Alchemist's Fortune",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391675,
     "name": "Deadly Venom",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391676,
     "name": "Exploit",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391677,
     "name": "Consuming Shadows",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391678,
     "name": "Frigid Finesse",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391679,
     "name": "Malice",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391680,
     "name": "Exposure",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 391681,
     "name": "Momentum",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 394251,
     "name": "Lacerate",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Lacerate"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Lacerate"
+      }
     ]
   },
   {
@@ -1173,6 +2366,21 @@
     "name": "Twisting Blades",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Improved Twisting Blades"
+      },
+      {
+        "id": 2,
+        "name": "Advanced Twisting Blades"
+      },
+      {
+        "id": 3,
+        "name": "Enhanced Twisting Blades"
+      }
     ]
   },
   {
@@ -1180,6 +2388,21 @@
     "name": "Blade Shift",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Primary Blade Shift"
+      },
+      {
+        "id": 2,
+        "name": "Enhanced Blade Shift"
+      },
+      {
+        "id": 3,
+        "name": "Fundamental Blade Shift"
+      }
     ]
   },
   {
@@ -1187,6 +2410,17 @@
     "name": "Rain of Arrows",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Supreme Rain of Arrows"
+      },
+      {
+        "id": 2,
+        "name": "Prime Rain of Arrows"
+      }
     ]
   },
   {
@@ -1194,13 +2428,29 @@
     "name": "Precision Imbuement",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 416057,
     "name": "Invigorating Strike",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Invigorating Strike"
+      },
+      {
+        "id": 2,
+        "name": "Fundamental Invigorating Strike"
+      },
+      {
+        "id": 3,
+        "name": "Primary Invigorating Strike"
+      }
     ]
   },
   {
@@ -1208,6 +2458,21 @@
     "name": "Forceful Arrow",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Forceful Arrow"
+      },
+      {
+        "id": 2,
+        "name": "Fundamental Forceful Arrow"
+      },
+      {
+        "id": 3,
+        "name": "Primary Forceful Arrow"
+      }
     ]
   },
   {
@@ -1215,6 +2480,21 @@
     "name": "Rabies",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Rabies"
+      },
+      {
+        "id": 2,
+        "name": "Natural Rabies"
+      },
+      {
+        "id": 3,
+        "name": "Savage Rabies"
+      }
     ]
   },
   {
@@ -1222,6 +2502,21 @@
     "name": "Poison Trap",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Subverting Poison Trap"
+      },
+      {
+        "id": 2,
+        "name": "Countering Poison Trap"
+      },
+      {
+        "id": 3,
+        "name": "Enhanced Poison Trap"
+      }
     ]
   },
   {
@@ -1229,6 +2524,17 @@
     "name": "Death Trap",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Death Trap"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Death Trap"
+      }
     ]
   },
   {
@@ -1236,20 +2542,37 @@
     "name": "Bestial Rampage",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 423721,
     "name": "Reactive Defense",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 432879,
     "name": "Bone Spear",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Bone Spear"
+      },
+      {
+        "id": 2,
+        "name": "Supernatural Bone Spear"
+      },
+      {
+        "id": 3,
+        "name": "Paranormal Bone Spear"
+      }
     ]
   },
   {
@@ -1257,6 +2580,21 @@
     "name": "Reap",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Reap"
+      },
+      {
+        "id": 2,
+        "name": "Acolyte's Reap"
+      },
+      {
+        "id": 3,
+        "name": "Initiate's Reap"
+      }
     ]
   },
   {
@@ -1264,6 +2602,21 @@
     "name": "Corpse Explosion",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Corpse Explosion"
+      },
+      {
+        "id": 2,
+        "name": "Blighted Corpse Explosion"
+      },
+      {
+        "id": 3,
+        "name": "Plagued Corpse Explosion"
+      }
     ]
   },
   {
@@ -1271,6 +2624,21 @@
     "name": "Claw",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Claw"
+      },
+      {
+        "id": 2,
+        "name": "Fierce Claw"
+      },
+      {
+        "id": 3,
+        "name": "Wild Claw"
+      }
     ]
   },
   {
@@ -1278,6 +2646,21 @@
     "name": "Barrage",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Barrage"
+      },
+      {
+        "id": 2,
+        "name": "Improved Barrage"
+      },
+      {
+        "id": 3,
+        "name": "Advanced Barrage"
+      }
     ]
   },
   {
@@ -1285,13 +2668,29 @@
     "name": "Golem",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 463175,
     "name": "Decompose",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Decompose"
+      },
+      {
+        "id": 2,
+        "name": "Acolyte's Decompose"
+      },
+      {
+        "id": 3,
+        "name": "Initiate's Decompose"
+      }
     ]
   },
   {
@@ -1299,6 +2698,21 @@
     "name": "Corpse Tendrils",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Corpse Tendrils"
+      },
+      {
+        "id": 2,
+        "name": "Blighted Corpse Tendrils"
+      },
+      {
+        "id": 3,
+        "name": "Plagued Corpse Tendrils"
+      }
     ]
   },
   {
@@ -1306,6 +2720,21 @@
     "name": "Bone Spirit",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Bone Spirit"
+      },
+      {
+        "id": 2,
+        "name": "Ghastly Bone Spirit"
+      },
+      {
+        "id": 3,
+        "name": "Dreadful Bone Spirit"
+      }
     ]
   },
   {
@@ -1313,6 +2742,21 @@
     "name": "Blight",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Blight"
+      },
+      {
+        "id": 2,
+        "name": "Supernatural Blight"
+      },
+      {
+        "id": 3,
+        "name": "Paranormal Blight"
+      }
     ]
   },
   {
@@ -1320,6 +2764,21 @@
     "name": "Sever",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Sever"
+      },
+      {
+        "id": 2,
+        "name": "Supernatural Sever"
+      },
+      {
+        "id": 3,
+        "name": "Paranormal Sever"
+      }
     ]
   },
   {
@@ -1327,6 +2786,21 @@
     "name": "Hemorrhage",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Hemorrhage"
+      },
+      {
+        "id": 2,
+        "name": "Acolyte's Hemorrhage"
+      },
+      {
+        "id": 3,
+        "name": "Initiate's Hemorrhage"
+      }
     ]
   },
   {
@@ -1334,6 +2808,21 @@
     "name": "Blood Mist",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Blood Mist"
+      },
+      {
+        "id": 2,
+        "name": "Ghastly Blood Mist"
+      },
+      {
+        "id": 3,
+        "name": "Dreadful Blood Mist"
+      }
     ]
   },
   {
@@ -1341,6 +2830,21 @@
     "name": "Bone Prison",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Ghastly Bone Prison"
+      },
+      {
+        "id": 2,
+        "name": "Enhanced Bone Prison"
+      },
+      {
+        "id": 3,
+        "name": "Dreadful Bone Prison"
+      }
     ]
   },
   {
@@ -1348,146 +2852,177 @@
     "name": "Bonded in Essence",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495561,
     "name": "Evulsion",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495562,
     "name": "Hellbent Commander",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495563,
     "name": "Hewed Flesh",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495564,
     "name": "Imperfectly Balanced",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495565,
     "name": "Compound Fracture",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495568,
     "name": "Reaper's Pursuit",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495569,
     "name": "Gruesome Mending",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495570,
     "name": "Rathma's Vigor",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495571,
     "name": "Kalan's Edict",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495572,
     "name": "Stand Alone",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495573,
     "name": "Crippling Darkness",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495574,
     "name": "Terror",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495575,
     "name": "Amplify Damage",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495576,
     "name": "Inspiring Leader",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495577,
     "name": "Ossified Essence",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495578,
     "name": "Coalesced Blood",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495579,
     "name": "Fueled by Death",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495580,
     "name": "Transfusion",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 495581,
     "name": "Shadowblight",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 497193,
     "name": "Army of the Dead",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Army of the Dead"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Army of the Dead"
+      }
     ]
   },
   {
@@ -1495,6 +3030,17 @@
     "name": "Bone Storm",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Bone Storm"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Bone Storm"
+      }
     ]
   },
   {
@@ -1502,6 +3048,21 @@
     "name": "Bone Splinters",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Bone Splinters"
+      },
+      {
+        "id": 2,
+        "name": "Acolyte's Bone Splinters"
+      },
+      {
+        "id": 3,
+        "name": "Initiate's Bone Splinters"
+      }
     ]
   },
   {
@@ -1509,6 +3070,21 @@
     "name": "Blood Lance",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Supernatural Blood Lance"
+      },
+      {
+        "id": 2,
+        "name": "Enhanced Blood Lance"
+      },
+      {
+        "id": 3,
+        "name": "Paranormal Blood Lance"
+      }
     ]
   },
   {
@@ -1516,27 +3092,45 @@
     "name": "Drain Vitality",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 503508,
     "name": "Serration",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 510270,
     "name": "Siphoning Strikes",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 512222,
     "name": "Iron Skin",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Iron Skin"
+      },
+      {
+        "id": 2,
+        "name": "Tactical Iron Skin"
+      },
+      {
+        "id": 3,
+        "name": "Strategic Iron Skin"
+      }
     ]
   },
   {
@@ -1544,6 +3138,21 @@
     "name": "Ball Lightning",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Ball Lightning"
+      },
+      {
+        "id": 2,
+        "name": "Mage's Ball Lightning"
+      },
+      {
+        "id": 3,
+        "name": "Wizard's Ball Lightning"
+      }
     ]
   },
   {
@@ -1551,6 +3160,17 @@
     "name": "Unstable Currents",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Unstable Currents"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Unstable Currents"
+      }
     ]
   },
   {
@@ -1558,6 +3178,21 @@
     "name": "Earth Spike",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Earth Spike"
+      },
+      {
+        "id": 2,
+        "name": "Fierce Earth Spike"
+      },
+      {
+        "id": 3,
+        "name": "Wild Earth Spike"
+      }
     ]
   },
   {
@@ -1565,6 +3200,25 @@
     "name": "Lightning Storm",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Lightning Storm"
+      },
+      {
+        "id": 2,
+        "name": "Raging Lightning Storm"
+      },
+      {
+        "id": 3,
+        "name": "Primal Lightning Storm"
+      },
+      {
+        "id": 4,
+        "name": "Enduring Lightning Storm"
+      }
     ]
   },
   {
@@ -1572,6 +3226,21 @@
     "name": "Blood Howl",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Blood Howl"
+      },
+      {
+        "id": 2,
+        "name": "Innate Blood Howl"
+      },
+      {
+        "id": 3,
+        "name": "Preserving Blood Howl"
+      }
     ]
   },
   {
@@ -1579,20 +3248,37 @@
     "name": "Rapid Ossification",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 588208,
     "name": "Tides of Blood",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 592163,
     "name": "Blood Surge",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Blood Surge"
+      },
+      {
+        "id": 2,
+        "name": "Supernatural Blood Surge"
+      },
+      {
+        "id": 3,
+        "name": "Paranormal Blood Surge"
+      }
     ]
   },
   {
@@ -1600,13 +3286,25 @@
     "name": "Heavy Handed",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 658216,
     "name": "Blood Wave",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Blood Wave"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Blood Wave"
+      }
     ]
   },
   {
@@ -1614,27 +3312,45 @@
     "name": "Nature's Fury",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 777009,
     "name": "Aftermath",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 777505,
     "name": "Unstable Elixirs",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 786381,
     "name": "Dark Shroud",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Dark Shroud"
+      },
+      {
+        "id": 2,
+        "name": "Countering Dark Shroud"
+      },
+      {
+        "id": 3,
+        "name": "Subverting Dark Shroud"
+      }
     ]
   },
   {
@@ -1642,13 +3358,29 @@
     "name": "Victimize",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 794965,
     "name": "Concealment",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Concealment"
+      },
+      {
+        "id": 2,
+        "name": "Countering Concealment"
+      },
+      {
+        "id": 3,
+        "name": "Subverting Concealment"
+      }
     ]
   },
   {
@@ -1656,6 +3388,21 @@
     "name": "Decrepify",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Decrepify"
+      },
+      {
+        "id": 2,
+        "name": "Abhorrent Decrepify"
+      },
+      {
+        "id": 3,
+        "name": "Horrid Decrepify"
+      }
     ]
   },
   {
@@ -1663,6 +3410,21 @@
     "name": "Iron Maiden",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Iron Maiden"
+      },
+      {
+        "id": 2,
+        "name": "Abhorrent Iron Maiden"
+      },
+      {
+        "id": 3,
+        "name": "Horrid Iron Maiden"
+      }
     ]
   },
   {
@@ -1670,27 +3432,45 @@
     "name": "Skeletal Warrior Mastery",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 943745,
     "name": "Skeletal Mage Mastery",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 943748,
     "name": "Golem Mastery",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 964631,
     "name": "Steel Grasp",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Steel Grasp"
+      },
+      {
+        "id": 2,
+        "name": "Fighter's Steel Grasp"
+      },
+      {
+        "id": 3,
+        "name": "Warrior's Steel Grasp"
+      }
     ]
   },
   {
@@ -1698,426 +3478,505 @@
     "name": "Stone Guard",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000308,
     "name": "Safeguard",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000309,
     "name": "Clarity",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000310,
     "name": "Defensive Posture",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000311,
     "name": "Heart of the Wild",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000312,
     "name": "Nature's Reach",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000313,
     "name": "Thick Hide",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000315,
     "name": "Unrestrained",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000347,
     "name": "Wild Impulses",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000349,
     "name": "Mending",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000350,
     "name": "Provocation",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1000352,
     "name": "Vigilance",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003188,
     "name": "Aggressive Resistance",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003207,
     "name": "Concussion",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003208,
     "name": "Counteroffensive",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003209,
     "name": "Defensive Stance",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003210,
     "name": "Tempered Fury",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003229,
     "name": "Imposing Presence",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003230,
     "name": "Outburst",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003231,
     "name": "Pressure Point",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003232,
     "name": "Raid Leader",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003233,
     "name": "Wallop",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003729,
     "name": "Hoarfrost",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003731,
     "name": "Primordial Binding",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003732,
     "name": "Precision Magic",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003733,
     "name": "Fiery Surge",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003734,
     "name": "Frigid Breeze",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003735,
     "name": "Mana Shield",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003736,
     "name": "Protection",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003737,
     "name": "Crippling Flames",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003738,
     "name": "Invigorating Conduit",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1003739,
     "name": "Conduction",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1007840,
     "name": "Gloom",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1007841,
     "name": "Death's Defense",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1007842,
     "name": "Unliving Energy",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1007843,
     "name": "Grim Harvest",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1007844,
     "name": "Death's Approach",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1007846,
     "name": "Memento Mori",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1007847,
     "name": "Necrotic Carapace",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1007849,
     "name": "Death's Embrace",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1007850,
     "name": "Spiked Armor",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008671,
     "name": "Trap Mastery",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008672,
     "name": "Shadow Crash",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008673,
     "name": "Chilling Weight",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008674,
     "name": "Trick Attacks",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008675,
     "name": "Debilitating Toxins",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008676,
     "name": "Rapid Gambits",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008677,
     "name": "Second Wind",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008678,
     "name": "Haste",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008679,
     "name": "Adrenaline Rush",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1008680,
     "name": "Innervation",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1059157,
     "name": "Raise Skeleton",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1065693,
     "name": "Charged Atmosphere",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1066757,
     "name": "Bad Omen",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1098169,
     "name": "Precision",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1196884,
     "name": "Attack",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1201192,
     "name": "Attack",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1201846,
     "name": "Attack",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1204385,
     "name": "Attack",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1205333,
     "name": "Attack",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1256958,
     "name": "Shred",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Shred"
+      },
+      {
+        "id": 2,
+        "name": "Primal Shred"
+      },
+      {
+        "id": 3,
+        "name": "Raging Shred"
+      },
+      {
+        "id": 4,
+        "name": "DEPRECATED"
+      }
     ]
   },
   {
@@ -2125,167 +3984,205 @@
     "name": "Provoke",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1304803,
     "name": "Envenom",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1389926,
     "name": "Bastion",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1391558,
     "name": "Valiance",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1401573,
     "name": "Shield Charge",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1404603,
     "name": "Ground Slam",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1408295,
     "name": "Whirlwind",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1439338,
     "name": "Bloodthirst",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1450903,
     "name": "Crater",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1452355,
     "name": "Shield Throw",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1453992,
     "name": "Alchemical Admixture",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1456571,
     "name": "Raheir's Guard",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1458350,
     "name": "Raheir's Aegis",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1458593,
     "name": "Vanguard",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1458607,
     "name": "Mocking Lure",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1458685,
     "name": "Iron Wolf's Ward",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1458750,
     "name": "Sundering Shield",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1458775,
     "name": "Iron Wolf's Call",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1459061,
     "name": "Draw Fire",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1459276,
     "name": "Inspiration",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1459513,
     "name": "Iron Wolf's Virtue",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1460071,
     "name": "Consecrated Shield",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1460102,
     "name": "Iron Wolf's Arrival",
     "classes": [
       "Raheir"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1473878,
     "name": "Stone Burst",
     "classes": [
       "Druid"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Stone Burst"
+      },
+      {
+        "id": 2,
+        "name": "Primal Stone Burst"
+      },
+      {
+        "id": 3,
+        "name": "Raging Stone Burst"
+      }
     ]
   },
   {
@@ -2293,118 +4190,149 @@
     "name": "Cleave",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1475286,
     "name": "Shockwave",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1475288,
     "name": "Earth Breaker",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1479154,
     "name": "Massacre",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1482187,
     "name": "Hysteria",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1482560,
     "name": "Recklessness",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1482901,
     "name": "Intimidated",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1482903,
     "name": "Bloodlust",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1483451,
     "name": "Taste of Flesh",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1483521,
     "name": "No Escape",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1484926,
     "name": "Crushing Force",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1484928,
     "name": "Reprisal",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1484930,
     "name": "Rampage",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1484932,
     "name": "Dismembering",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1484934,
     "name": "Iron Grip",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1484938,
     "name": "Annihilator",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1489641,
     "name": "Vortex",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Vortex"
+      },
+      {
+        "id": 2,
+        "name": "Replenishing Vortex"
+      },
+      {
+        "id": 3,
+        "name": "Measured Vortex"
+      }
     ]
   },
   {
@@ -2412,20 +4340,41 @@
     "name": "Chain of Souls",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1494843,
     "name": "Storm of Fire",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1519048,
     "name": "Quill Volley",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Quill Volley"
+      },
+      {
+        "id": 2,
+        "name": "Rampant Quill Volley"
+      },
+      {
+        "id": 3,
+        "name": "Advantageous Quill Volley"
+      },
+      {
+        "id": 4,
+        "name": "(PH) Sky Spirit"
+      }
     ]
   },
   {
@@ -2433,6 +4382,25 @@
     "name": "Crushing Hand",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Crushing Hand"
+      },
+      {
+        "id": 2,
+        "name": "Rampant Crushing Hand"
+      },
+      {
+        "id": 3,
+        "name": "Advantageous Crushing Hand"
+      },
+      {
+        "id": 4,
+        "name": "(PH) Forest Spirit"
+      }
     ]
   },
   {
@@ -2440,251 +4408,301 @@
     "name": "Haunt",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1522203,
     "name": "Field of Languish",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1525668,
     "name": "Flame Surge",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1525670,
     "name": "Wave of Flame",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1529334,
     "name": "Terrify",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529357,
     "name": "Exhaustion",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529359,
     "name": "Paranoia",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529372,
     "name": "Condemned",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529374,
     "name": "Shared Pain",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529376,
     "name": "Amplified Suffering",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529505,
     "name": "Covered in Ash",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529508,
     "name": "Raging Violence",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529510,
     "name": "Eradication",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529512,
     "name": "Ember's Gift",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529514,
     "name": "Raging Havoc",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1529518,
     "name": "Burning Chaos",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1555493,
     "name": "Blasphemous Fate",
     "classes": [
       "Aldkin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578225,
     "name": "Piercing Arrows",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578255,
     "name": "Ready At Hand",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578257,
     "name": "Pin Cushion",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578259,
     "name": "Opening Fire",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578261,
     "name": "Loaded Munitions",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578263,
     "name": "Mastermind",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578265,
     "name": "Scorched Earth",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578267,
     "name": "Share a Drink",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578271,
     "name": "Incendiary Bolt",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578273,
     "name": "Ambusher",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578275,
     "name": "Bargaining Chips",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1578277,
     "name": "Thrillseeker",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1580735,
     "name": "Wire Trap",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1580738,
     "name": "Cover Fire",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1580744,
     "name": "Trip Mines",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1580746,
     "name": "Molotov",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1580748,
     "name": "Snipe",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1580751,
     "name": "Explosive Charge",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1611316,
     "name": "Mighty Throw",
     "classes": [
       "Barbarian"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Mighty Throw"
+      },
+      {
+        "id": 2,
+        "name": "Fighter's Mighty Throw"
+      },
+      {
+        "id": 3,
+        "name": "Warrior's Mighty Throw"
+      }
     ]
   },
   {
@@ -2692,20 +4710,37 @@
     "name": "Attack",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1619677,
     "name": "Ancient Harpoons",
     "classes": [
       "Varyana"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 1627075,
     "name": "Familiar",
     "classes": [
       "Sorcerer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Familiar"
+      },
+      {
+        "id": 2,
+        "name": "Roaring Familiar"
+      },
+      {
+        "id": 3,
+        "name": "Invoked Familiar"
+      }
     ]
   },
   {
@@ -2713,6 +4748,25 @@
     "name": "Rake",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Rake"
+      },
+      {
+        "id": 2,
+        "name": "Advantageous Rake"
+      },
+      {
+        "id": 3,
+        "name": "Rampant Rake"
+      },
+      {
+        "id": 4,
+        "name": "(PH) Plains Spirit"
+      }
     ]
   },
   {
@@ -2720,6 +4774,17 @@
     "name": "Soulrift",
     "classes": [
       "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Prime Soulrift"
+      },
+      {
+        "id": 2,
+        "name": "Supreme Soulrift"
+      }
     ]
   },
   {
@@ -2727,181 +4792,217 @@
     "name": "Patient Guard",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648344,
     "name": "Diminishment",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648346,
     "name": "Perseverance",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648348,
     "name": "Bastion",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648350,
     "name": "Brilliance",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648352,
     "name": "Mirage",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648354,
     "name": "Velocity",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648356,
     "name": "Fueled",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648358,
     "name": "Furnace",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648360,
     "name": "Apex",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648362,
     "name": "Follow Through",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648364,
     "name": "Auspicious",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648366,
     "name": "Antivenom",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648368,
     "name": "Nourishment",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648370,
     "name": "Ravenous",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648372,
     "name": "Unrestrained Power",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648374,
     "name": "Swift",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648376,
     "name": "Oppressive",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648378,
     "name": "Resilient",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648380,
     "name": "Potent",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648387,
     "name": "Initiative",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648389,
     "name": "Spiritual Attunement",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648391,
     "name": "Resolution",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648393,
     "name": "Supremacy",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1648395,
     "name": "Intricacy",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1663204,
     "name": "The Seeker",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Harmonious Seeker"
+      },
+      {
+        "id": 2,
+        "name": "Exalted Seeker"
+      }
     ]
   },
   {
@@ -2909,6 +5010,17 @@
     "name": "The Hunter",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Harmonious Hunter"
+      },
+      {
+        "id": 2,
+        "name": "Exalted Hunter"
+      }
     ]
   },
   {
@@ -2916,6 +5028,17 @@
     "name": "The Protector",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Harmonious Protector"
+      },
+      {
+        "id": 2,
+        "name": "Exalted Protector"
+      }
     ]
   },
   {
@@ -2923,6 +5046,17 @@
     "name": "The Devourer",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Harmonious Devourer"
+      },
+      {
+        "id": 2,
+        "name": "Exalted Devourer"
+      }
     ]
   },
   {
@@ -2930,13 +5064,29 @@
     "name": "Seeker",
     "classes": [
       "Subo"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1690398,
     "name": "Dance of Knives",
     "classes": [
       "Rogue"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Disciplined Dance of Knives"
+      },
+      {
+        "id": 2,
+        "name": "Methodical Dance of Knives"
+      },
+      {
+        "id": 3,
+        "name": "Enhanced Dance of Knives"
+      }
     ]
   },
   {
@@ -2944,41 +5094,61 @@
     "name": "Sustenance",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1730677,
     "name": "Acceleration",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1730680,
     "name": "Endurance",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1730682,
     "name": "Dominant",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1730684,
     "name": "Vigorous",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1817045,
     "name": "Rock Splitter",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Rock Splitter"
+      },
+      {
+        "id": 2,
+        "name": "Accelerated Rock Splitter"
+      },
+      {
+        "id": 3,
+        "name": "Sharp Rock Splitter"
+      }
     ]
   },
   {
@@ -2986,6 +5156,21 @@
     "name": "Withering Fist",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Withering Fist"
+      },
+      {
+        "id": 2,
+        "name": "Accelerated Withering Fist"
+      },
+      {
+        "id": 3,
+        "name": "Sharp Withering Fist"
+      }
     ]
   },
   {
@@ -2993,6 +5178,21 @@
     "name": "Thrash",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Thrash"
+      },
+      {
+        "id": 2,
+        "name": "Accelerated Thrash"
+      },
+      {
+        "id": 3,
+        "name": "Sharp Thrash"
+      }
     ]
   },
   {
@@ -3000,6 +5200,21 @@
     "name": "Thunderspike",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Thunderspike"
+      },
+      {
+        "id": 2,
+        "name": "Accelerated Thunderspike"
+      },
+      {
+        "id": 3,
+        "name": "Sharp Thunderspike"
+      }
     ]
   },
   {
@@ -3007,6 +5222,21 @@
     "name": "Stinger",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Stinger"
+      },
+      {
+        "id": 2,
+        "name": "Rampant Stinger"
+      },
+      {
+        "id": 3,
+        "name": "Advantageous Stinger"
+      }
     ]
   },
   {
@@ -3014,6 +5244,21 @@
     "name": "Ravager",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Ravager"
+      },
+      {
+        "id": 2,
+        "name": "Measured Ravager"
+      },
+      {
+        "id": 3,
+        "name": "Replenishing Ravager"
+      }
     ]
   },
   {
@@ -3021,6 +5266,21 @@
     "name": "Rushing Claw",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Rushing Claw"
+      },
+      {
+        "id": 2,
+        "name": "Poised Rushing Claw"
+      },
+      {
+        "id": 3,
+        "name": "Invasive Rushing Claw"
+      }
     ]
   },
   {
@@ -3028,6 +5288,21 @@
     "name": "Armored Hide",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Armored Hide"
+      },
+      {
+        "id": 2,
+        "name": "Adaptable Armored Hide"
+      },
+      {
+        "id": 3,
+        "name": "Reinforced Armored Hide"
+      }
     ]
   },
   {
@@ -3035,6 +5310,21 @@
     "name": "Scourge",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Scourge"
+      },
+      {
+        "id": 2,
+        "name": "Adaptable Scourge"
+      },
+      {
+        "id": 3,
+        "name": "Reinforced Scourge"
+      }
     ]
   },
   {
@@ -3042,6 +5332,21 @@
     "name": "Razor Wings",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Razor Wings"
+      },
+      {
+        "id": 2,
+        "name": "Poised Razor Wings"
+      },
+      {
+        "id": 3,
+        "name": "Invasive Razor Wings"
+      }
     ]
   },
   {
@@ -3049,6 +5354,21 @@
     "name": "Touch of Death",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Touch of Death"
+      },
+      {
+        "id": 2,
+        "name": "Invasive Touch of Death"
+      },
+      {
+        "id": 3,
+        "name": "Poised Touch of Death"
+      }
     ]
   },
   {
@@ -3056,6 +5376,21 @@
     "name": "Toxic Skin",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Toxic Skin"
+      },
+      {
+        "id": 2,
+        "name": "Replenishing Toxic Skin"
+      },
+      {
+        "id": 3,
+        "name": "Measured Toxic Skin"
+      }
     ]
   },
   {
@@ -3063,6 +5398,21 @@
     "name": "Counterattack",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Counterattack Enhancement"
+      },
+      {
+        "id": 2,
+        "name": "Adaptable Counterattack"
+      },
+      {
+        "id": 3,
+        "name": "Reinforced Counterattack"
+      }
     ]
   },
   {
@@ -3070,6 +5420,21 @@
     "name": "Soar",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Soar"
+      },
+      {
+        "id": 2,
+        "name": "Measured Soar"
+      },
+      {
+        "id": 3,
+        "name": "Replenishing Soar"
+      }
     ]
   },
   {
@@ -3077,6 +5442,21 @@
     "name": "Payback",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Payback"
+      },
+      {
+        "id": 2,
+        "name": "Invasive Payback"
+      },
+      {
+        "id": 3,
+        "name": "Poised Payback"
+      }
     ]
   },
   {
@@ -3084,6 +5464,21 @@
     "name": "Concussive Stomp",
     "classes": [
       "Spiritborn"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Concussive Stomp"
+      },
+      {
+        "id": 2,
+        "name": "Adaptable Concussive Stomp"
+      },
+      {
+        "id": 3,
+        "name": "Reinforced Concussive Stomp"
+      }
     ]
   },
   {
@@ -3091,118 +5486,153 @@
     "name": "Barbed Carapace",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1920204,
     "name": "Vital Strikes",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1920209,
     "name": "Prodigy's Tempo",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1920211,
     "name": "Noxious Resonance",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1955450,
     "name": "Adaptive Stances",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1984422,
     "name": "One With Nature",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 1993937,
     "name": "Affliction",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2016157,
     "name": "Enlightenment",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2074903,
     "name": "Necrotic Fortitude",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2075107,
     "name": "Evasive",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2075140,
     "name": "Unto Dawn",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2075148,
     "name": "Finality",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2075705,
     "name": "Catastrophe",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2075710,
     "name": "Humanity",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2075735,
     "name": "Belligerence",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2075737,
     "name": "Heavy Hitter",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2082021,
     "name": "Blessed Shield",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Blessed Shield"
+      },
+      {
+        "id": 2,
+        "name": "Shield of Justice"
+      },
+      {
+        "id": 3,
+        "name": "Shield of the Revenant"
+      },
+      {
+        "id": 4,
+        "name": "Shield of Retribution"
+      }
     ]
   },
   {
@@ -3210,6 +5640,25 @@
     "name": "Shield Bash",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Shield Bash"
+      },
+      {
+        "id": 2,
+        "name": "Lay Siege"
+      },
+      {
+        "id": 3,
+        "name": "Smite"
+      },
+      {
+        "id": 4,
+        "name": "Breach"
+      }
     ]
   },
   {
@@ -3217,90 +5666,121 @@
     "name": "Warpath",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2091159,
     "name": "Irrepressible",
     "classes": [
       "Barbarian"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2091164,
     "name": "Feral Aptitude",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2091166,
     "name": "Backlash",
     "classes": [
       "Druid"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2092223,
     "name": "Titan's Fall",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2092225,
     "name": "Precision Decay",
     "classes": [
       "Necromancer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2092249,
     "name": "Target Practice",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2092251,
     "name": "Balestra",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2093631,
     "name": "Dampen Layer",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2093633,
     "name": "Elemental Synergies",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2093635,
     "name": "Evocation",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2093637,
     "name": "Energy Focus",
     "classes": [
       "Sorcerer"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2097465,
     "name": "Clash",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Clash"
+      },
+      {
+        "id": 2,
+        "name": "Punishment"
+      },
+      {
+        "id": 3,
+        "name": "Skirmish"
+      },
+      {
+        "id": 4,
+        "name": "Seize Them"
+      }
     ]
   },
   {
@@ -3308,6 +5788,25 @@
     "name": "Spear of the Heavens",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Spear of the Heavens"
+      },
+      {
+        "id": 2,
+        "name": "Pronouncement of Heaven"
+      },
+      {
+        "id": 3,
+        "name": "Part the Heavens"
+      },
+      {
+        "id": 4,
+        "name": "Fist of the Heavens"
+      }
     ]
   },
   {
@@ -3315,6 +5814,25 @@
     "name": "Falling Star",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Falling Star"
+      },
+      {
+        "id": 2,
+        "name": "Freefall"
+      },
+      {
+        "id": 3,
+        "name": "Fanatic Descent"
+      },
+      {
+        "id": 4,
+        "name": "Faster Than Light"
+      }
     ]
   },
   {
@@ -3322,6 +5840,25 @@
     "name": "Blessed Hammer",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Blessed Hammer"
+      },
+      {
+        "id": 2,
+        "name": "Shattering Blow"
+      },
+      {
+        "id": 3,
+        "name": "Disciple's Halo"
+      },
+      {
+        "id": 4,
+        "name": "Mortar Combat"
+      }
     ]
   },
   {
@@ -3329,27 +5866,49 @@
     "name": "Balanced Exertion",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2110217,
     "name": "Focal Point",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2110231,
     "name": "Vehemence",
     "classes": [
       "Spiritborn"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2120228,
     "name": "Divine Lance",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Divine Lance"
+      },
+      {
+        "id": 2,
+        "name": "Tip of the Spear"
+      },
+      {
+        "id": 3,
+        "name": "Zealous Joust"
+      },
+      {
+        "id": 4,
+        "name": "Divine Javelin"
+      }
     ]
   },
   {
@@ -3357,6 +5916,25 @@
     "name": "Zeal",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Zeal"
+      },
+      {
+        "id": 2,
+        "name": "Zealot's Legacy"
+      },
+      {
+        "id": 3,
+        "name": "Death or Glory"
+      },
+      {
+        "id": 4,
+        "name": "Cull the Wicked"
+      }
     ]
   },
   {
@@ -3364,13 +5942,33 @@
     "name": "Deadeye",
     "classes": [
       "Rogue"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2174078,
     "name": "Holy Bolt",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Holy Bolt"
+      },
+      {
+        "id": 2,
+        "name": "Ricocheting Bolt"
+      },
+      {
+        "id": 3,
+        "name": "Divine Bolt"
+      },
+      {
+        "id": 4,
+        "name": "Storm Bolt"
+      }
     ]
   },
   {
@@ -3378,6 +5976,25 @@
     "name": "Defiance Aura",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Defiance"
+      },
+      {
+        "id": 2,
+        "name": "Rite of Might"
+      },
+      {
+        "id": 3,
+        "name": "Rite of Prayer"
+      },
+      {
+        "id": 4,
+        "name": "Rite of Thorns"
+      }
     ]
   },
   {
@@ -3385,6 +6002,25 @@
     "name": "Fanaticism Aura",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Fanaticism"
+      },
+      {
+        "id": 2,
+        "name": "Rite of Vengeance"
+      },
+      {
+        "id": 3,
+        "name": "Rite of Humility"
+      },
+      {
+        "id": 4,
+        "name": "Rite of Redemption"
+      }
     ]
   },
   {
@@ -3392,6 +6028,25 @@
     "name": "Condemn",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Condemn"
+      },
+      {
+        "id": 2,
+        "name": "Gather the Guilty"
+      },
+      {
+        "id": 3,
+        "name": "Atonement"
+      },
+      {
+        "id": 4,
+        "name": "Shepherd the Flock"
+      }
     ]
   },
   {
@@ -3399,6 +6054,25 @@
     "name": "Purify",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Purify"
+      },
+      {
+        "id": 2,
+        "name": "Sentence"
+      },
+      {
+        "id": 3,
+        "name": "Surrender"
+      },
+      {
+        "id": 4,
+        "name": "Absolution"
+      }
     ]
   },
   {
@@ -3406,6 +6080,25 @@
     "name": "Brandish",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Brandish"
+      },
+      {
+        "id": 2,
+        "name": "Cross Strike"
+      },
+      {
+        "id": 3,
+        "name": "Sword of Mastery"
+      },
+      {
+        "id": 4,
+        "name": "Returning Light"
+      }
     ]
   },
   {
@@ -3413,6 +6106,25 @@
     "name": "Heaven's Fury",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Heaven's Fury"
+      },
+      {
+        "id": 2,
+        "name": "Triplicate"
+      },
+      {
+        "id": 3,
+        "name": "Walk With The Light"
+      },
+      {
+        "id": 4,
+        "name": "Final Justice"
+      }
     ]
   },
   {
@@ -3420,6 +6132,25 @@
     "name": "Consecration",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Consecration"
+      },
+      {
+        "id": 2,
+        "name": "Hallowed Ground"
+      },
+      {
+        "id": 3,
+        "name": "Bastion"
+      },
+      {
+        "id": 4,
+        "name": "Sanctify"
+      }
     ]
   },
   {
@@ -3427,6 +6158,25 @@
     "name": "Aegis",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Aegis"
+      },
+      {
+        "id": 2,
+        "name": "Stay Resolute"
+      },
+      {
+        "id": 3,
+        "name": "Faith Is My Shield"
+      },
+      {
+        "id": 4,
+        "name": "Impunity"
+      }
     ]
   },
   {
@@ -3434,6 +6184,25 @@
     "name": "Holy Light Aura",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Holy Light"
+      },
+      {
+        "id": 2,
+        "name": "Rite of Judgement"
+      },
+      {
+        "id": 3,
+        "name": "Rite of Mercy"
+      },
+      {
+        "id": 4,
+        "name": "Rite of Submission"
+      }
     ]
   },
   {
@@ -3441,6 +6210,25 @@
     "name": "Arbiter of Justice",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Arbiter of Justice"
+      },
+      {
+        "id": 2,
+        "name": "Seraph's Wings"
+      },
+      {
+        "id": 3,
+        "name": "Reach of the Law"
+      },
+      {
+        "id": 4,
+        "name": "Divine Intervention"
+      }
     ]
   },
   {
@@ -3448,6 +6236,25 @@
     "name": "Fortress",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Fortress"
+      },
+      {
+        "id": 2,
+        "name": "Entrench"
+      },
+      {
+        "id": 3,
+        "name": "Barricade"
+      },
+      {
+        "id": 4,
+        "name": "Rampart of Thorns"
+      }
     ]
   },
   {
@@ -3455,6 +6262,25 @@
     "name": "Zenith",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Zenith"
+      },
+      {
+        "id": 2,
+        "name": "Empyrean Edge"
+      },
+      {
+        "id": 3,
+        "name": "Sermon of Steel"
+      },
+      {
+        "id": 4,
+        "name": "Sunder"
+      }
     ]
   },
   {
@@ -3462,6 +6288,25 @@
     "name": "Rally",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Rally"
+      },
+      {
+        "id": 2,
+        "name": "Words of Rejuvenation"
+      },
+      {
+        "id": 3,
+        "name": "Words of Inspiration"
+      },
+      {
+        "id": 4,
+        "name": "Words of Sacrifice"
+      }
     ]
   },
   {
@@ -3469,6 +6314,25 @@
     "name": "Advance",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Advance"
+      },
+      {
+        "id": 2,
+        "name": "Vanguard's Rush"
+      },
+      {
+        "id": 3,
+        "name": "Wave Dash"
+      },
+      {
+        "id": 4,
+        "name": "Flash of the Blade"
+      }
     ]
   },
   {
@@ -3476,174 +6340,217 @@
     "name": "Attack",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": true
   },
   {
     "id": 2393351,
     "name": "Courage",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2393354,
     "name": "Parry",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2412609,
     "name": "En Garde",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2412611,
     "name": "Piety",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2412710,
     "name": "Discipline",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2414509,
     "name": "Riposte",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2418247,
     "name": "Crack in the Armor",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2418250,
     "name": "Pacify",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2418745,
     "name": "Renewal",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2418822,
     "name": "Anointing",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2419009,
     "name": "Longevity",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2420825,
     "name": "Break the Line",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2420827,
     "name": "Press the Advantage",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2425877,
     "name": "Coat of Arms",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2425896,
     "name": "Path of the Penitent",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2425899,
     "name": "Judgement Day",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2425903,
     "name": "Exaltation",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2426097,
     "name": "High Charity",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2426103,
     "name": "Giant Slayer",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2426105,
     "name": "Heavyweight",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2426241,
     "name": "Attenuate",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2426348,
     "name": "Resolute",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2426377,
     "name": "Conviction",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2466077,
     "name": "Shield Charge",
     "classes": [
       "Paladin"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Enhanced Shield Charge"
+      },
+      {
+        "id": 2,
+        "name": "Relentless Charge"
+      },
+      {
+        "id": 3,
+        "name": "Virtuous Charge"
+      },
+      {
+        "id": 4,
+        "name": "Phalanx Charge"
+      }
     ]
   },
   {
@@ -3651,83 +6558,95 @@
     "name": "Dizzying Blow",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2471066,
     "name": "Iron Sharpens Iron",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2471112,
     "name": "Thorns and Thistles",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2471115,
     "name": "Repentance",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2471117,
     "name": "The Best Offense",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2471122,
     "name": "Fortitude",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2471232,
     "name": "Righteousness",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2472127,
     "name": "Shining Armor",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2472129,
     "name": "Sacred Arms",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2472131,
     "name": "Leave Luck to Heaven",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2472133,
     "name": "Master Craftwork",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   },
   {
     "id": 2472135,
     "name": "Shake It Off",
     "classes": [
       "Paladin"
-    ]
+    ],
+    "isactive": false
   }
 ]

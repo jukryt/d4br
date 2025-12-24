@@ -16,6 +16,7 @@
 // @downloadURL  https://raw.githubusercontent.com/jukryt/d4br/main/d4br.js
 // @supportURL   https://github.com/jukryt/d4br/issues
 // @grant        GM_getResourceText
+// @grant        GM_addStyle
 
 // @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/en/aspect.json
 // @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/en/glyph.json
@@ -33,6 +34,8 @@
 // @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/skill.json
 // @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/temper.json
 
+// @resource     main_style   https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/style/main.css
+
 // @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4tools.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4language.js
 // @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4resource.js
@@ -47,10 +50,7 @@
 (function () {
     'use strict';
 
-    AddStyle("@keyframes d4br_show_anim { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }");
-    AddStyle(".d4br_element { animation: .7s d4br_show_anim ease; }");
-    AddStyle(".d4br_element::before { display: none !important; }");
-    AddStyle(".d4br_element::after { display: none !important; }");
+    ExternalResource.applyCss("main_style");
 
     var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
 
@@ -73,18 +73,4 @@ function CreateProcessor() {
         case "www.d2core.com":
             return new D4d2coreProcessor();
     }
-}
-
-function AddStyle(css) {
-    const name = "d4br_style";
-
-    const style = document.getElementById(name) || (function () {
-        const style = document.createElement("style");
-        style.id = name;
-        document.head.appendChild(style);
-        return style;
-    })();
-
-    const sheet = style.sheet;
-    sheet.insertRule(css, (sheet.rules || sheet.cssRules || []).length);
 }

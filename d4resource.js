@@ -117,6 +117,85 @@ class ResourceBuilder {
     }
 }
 
+class SkillBuilder {
+    constructor(processor) {
+        this.processor = processor;
+    }
+
+    getSourceItem(sourceValue) {
+        if (!sourceValue) {
+            return null;
+        }
+
+        const charClassName = this.processor.getCharClassName();
+        if (!charClassName) {
+            return null;
+        }
+
+        const skills = this.processor.sourceLanguage.skills.filter(i => i.classes.find(c => StringExtension.equelsIgnoreCase(c, charClassName)));
+        const sourceItems = skills.filter(s => {
+            if (StringExtension.equelsIgnoreCase(s.name, sourceValue)) {
+                s.mod = null;
+                return true;
+            }
+
+            if (!s.isactive || !s.mods || s.mods.length === 0) {
+                return false;
+            }
+
+            const mods = s.mods.filter(m => StringExtension.equelsIgnoreCase(m.name, sourceValue));
+            if (mods.length === 1) {
+                s.mod = mods[0];
+                return true;
+            }
+        });
+
+        if (sourceItems.length !== 1) {
+            return null;
+        }
+
+        return sourceItems[0];
+    }
+
+    getTargetItem(sourceItem) {
+        if (!sourceItem) {
+            return null;
+        }
+
+        const targetItem = this.processor.targetLanguage.skills.find(i => i.id === sourceItem.id);
+        if (!targetItem) {
+            return null;
+        }
+
+        if (!sourceItem.mod) {
+            targetItem.mod = null;
+            return targetItem;
+        }
+
+        if (targetItem.isactive && targetItem.mods && targetItem.mods.length !== 0) {
+            const mods = targetItem.mods.filter(m => m.id === sourceItem.mod.id);
+            if (mods.length === 1) {
+                targetItem.mod = mods[0];
+                return targetItem
+            }
+        }
+
+        return null;
+    }
+
+    buildTargetValue(targetItem) {
+        if (!targetItem) {
+            return null;
+        }
+
+        if (!targetItem.mod) {
+            return targetItem.name;
+        }
+
+        return targetItem.mod.name;
+    }
+}
+
 class AffixBuilder {
     constructor(processor, skillRankRegex) {
         this.processor = processor;
