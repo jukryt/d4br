@@ -53,8 +53,8 @@ class ElementBuilder {
     addClasses(node, className) {
         const classList = node.classList;
 
-        if (!classList.contains("d4br_element")) {
-            classList.add("d4br_element");
+        if (!classList.contains(ElementBuilder.containerClassName)) {
+            classList.add(ElementBuilder.containerClassName);
         }
 
         if (!classList.contains(className)) {
