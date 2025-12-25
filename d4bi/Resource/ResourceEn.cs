@@ -1,4 +1,5 @@
 ﻿using Importer.Checker;
+using Importer.Custom.Elixir;
 using Importer.Custom.Glyph;
 using Importer.Custom.Rune;
 using Importer.Custom.Skill;
@@ -293,6 +294,49 @@ namespace Importer.Resource
                             Target = new ResourceTarget<Item>
                             {
                                 FileName = "unq_item.json",
+                            },
+                        },
+                        new ResourceInfo<Item>
+                        {
+                            Name = "elixir en",
+                            Source = new ResourceSource<Item>
+                            {
+                                SourceInfos =
+                                [
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/elixir",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/incense",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                ],
+                            },
+                            Fix = new ResourceFix<Item>
+                            {
+                                Fixers =
+                                [
+                                    new ElixirFilter(false),
+                                    new FixRemoveEmptyName<Item>(),
+                                    new FixName<Item>(),
+                                ],
+                            },
+                            Check = new ResourceCheck<Item>
+                            {
+                                Checkers =
+                                [
+                                    new CheckUnique<Item>
+                                    {
+                                        Comparer = new ItemEqualComparer<Item>(),
+                                    },
+                                ],
+                            },
+                            Target = new ResourceTarget<Item>
+                            {
+                                FileName = "elixir.json",
                             },
                         },
                     ],
