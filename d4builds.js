@@ -22,7 +22,7 @@ class D4BuildsProcessor {
                     for (const newNode of mutation.addedNodes) {
                         if (newNode.id.startsWith("tippy-")) {
                             // aspect, affix, temper
-                            if (newNode.querySelector("div.codex__tooltip")) {
+                            if (newNode.querySelector("div.codex__tooltip div.codex__tooltip__header:has(img[src*='/Codex/']")) {
                                 const aspectNameNode = newNode.querySelector("div.codex__tooltip__name");
                                 if (aspectNameNode) {
                                     this.aspectNameProcess(aspectNameNode);
@@ -77,6 +77,13 @@ class D4BuildsProcessor {
                                 const gemTitleNode = newNode.querySelector("div.gem__tooltip__name");
                                 if (gemTitleNode) {
                                     this.gemNameProcess(gemTitleNode);
+                                }
+                            }
+                            // elixir
+                            else if (newNode.querySelector("div.codex__tooltip div.codex__tooltip__header:has(img[src*='/Potions/']")) {
+                                const elixirNameNode = newNode.querySelector("div.codex__tooltip__name");
+                                if (elixirNameNode) {
+                                    this.elixirNameProcess(elixirNameNode);
                                 }
                             }
                         }
@@ -250,6 +257,10 @@ class D4BuildsProcessor {
 
     gemNameProcess(node) {
         return this.nodeProcess(node, "d4br_rune_name", Language.runes, false);
+    }
+
+    elixirNameProcess(node) {
+        return this.nodeProcess(node, "d4br_elixir_name", Language.elixir, false);
     }
 
     nodeProcess(node, className, resourceName, isIndependent) {
