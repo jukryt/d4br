@@ -18,30 +18,32 @@
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 
-// @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/en/aspect.json
-// @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/en/glyph.json
-// @resource     unq_item_en  https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/en/unq_item.json
-// @resource     leg_node_en  https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/en/leg_node.json
-// @resource     rune_en      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/en/rune.json
-// @resource     skill_en     https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/en/skill.json
-// @resource     temper_en    https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/en/temper.json
+// @resource     aspect_en    https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/en/aspect.json
+// @resource     glyph_en     https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/en/glyph.json
+// @resource     unq_item_en  https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/en/unq_item.json
+// @resource     leg_node_en  https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/en/leg_node.json
+// @resource     rune_en      https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/en/rune.json
+// @resource     skill_en     https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/en/skill.json
+// @resource     temper_en    https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/en/temper.json
+// @resource     elixir_en    https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/en/elixir.json
 
-// @resource     aspect_ru    https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/aspect.json
-// @resource     glyph_ru     https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/glyph.json
-// @resource     unq_item_ru  https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/unq_item.json
-// @resource     leg_node_ru  https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/leg_node.json
-// @resource     rune_ru      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/rune.json
-// @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/skill.json
-// @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/ru/temper.json
+// @resource     aspect_ru    https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/ru/aspect.json
+// @resource     glyph_ru     https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/ru/glyph.json
+// @resource     unq_item_ru  https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/ru/unq_item.json
+// @resource     leg_node_ru  https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/ru/leg_node.json
+// @resource     rune_ru      https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/ru/rune.json
+// @resource     skill_ru     https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/ru/skill.json
+// @resource     temper_ru    https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/ru/temper.json
+// @resource     elixir_ru    https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/ru/elixir.json
 
-// @resource     main_style   https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/style/main.css
+// @resource     main_style   https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/style/main.css
 
-// @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4tools.js
-// @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4language.js
-// @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4resource.js
-// @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4builds.js
-// @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4maxroll.js
-// @require      https://raw.githubusercontent.com/jukryt/d4br/d7871954a36efbf85f9b583ef7dfbb3860b10af8/d4mobalytics.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/d4tools.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/d4language.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/d4resource.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/d4builds.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/d4maxroll.js
+// @require      https://raw.githubusercontent.com/jukryt/d4br/87bef14150f9b40b34d8c03be8bd1fafe06c7834/d4mobalytics.js
 
 // ==/UserScript==
 
