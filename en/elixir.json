@@ -1,0 +1,418 @@
+[
+  {
+    "id": 412391,
+    "name": "Elixir of Cruelty"
+  },
+  {
+    "id": 412413,
+    "name": "Elixir of Savagery"
+  },
+  {
+    "id": 412443,
+    "name": "Elixir of Undead-slaying"
+  },
+  {
+    "id": 413291,
+    "name": "Elixir of Demon-slaying"
+  },
+  {
+    "id": 413293,
+    "name": "Elixir of Beast-slaying"
+  },
+  {
+    "id": 413294,
+    "name": "Elixir of Man-slaying"
+  },
+  {
+    "id": 515173,
+    "name": "Expertise Elixir"
+  },
+  {
+    "id": 701369,
+    "name": "Elixir of Combatant Fortune"
+  },
+  {
+    "id": 701924,
+    "name": "Elixir of Magic Resist"
+  },
+  {
+    "id": 701935,
+    "name": "Iron Skin Elixir"
+  },
+  {
+    "id": 725795,
+    "name": "Storm of the Wilds"
+  },
+  {
+    "id": 730692,
+    "name": "Desert Escape"
+  },
+  {
+    "id": 731557,
+    "name": "Reddamine Buzz"
+  },
+  {
+    "id": 731614,
+    "name": "Soothing Spices"
+  },
+  {
+    "id": 731872,
+    "name": "Chorus of War"
+  },
+  {
+    "id": 731971,
+    "name": "The Creatures of Night"
+  },
+  {
+    "id": 732604,
+    "name": "Song of the Mountain"
+  },
+  {
+    "id": 732611,
+    "name": "Spirit Dance"
+  },
+  {
+    "id": 732663,
+    "name": "Ancient Times"
+  },
+  {
+    "id": 732722,
+    "name": "Sage's Whisper"
+  },
+  {
+    "id": 732725,
+    "name": "Queen's Supreme"
+  },
+  {
+    "id": 732731,
+    "name": "Blessed Guide"
+  },
+  {
+    "id": 732758,
+    "name": "Spiral Morning"
+  },
+  {
+    "id": 732762,
+    "name": "Scents of the Desert Afternoon"
+  },
+  {
+    "id": 1052096,
+    "name": "Weak Iron Barb Elixir"
+  },
+  {
+    "id": 1060592,
+    "name": "Elixir of Iron Barbs"
+  },
+  {
+    "id": 1060626,
+    "name": "Strong Iron Barb Elixir"
+  },
+  {
+    "id": 1060630,
+    "name": "Potent Iron Barb Elixir"
+  },
+  {
+    "id": 1060634,
+    "name": "Elixir of Iron Barbs II"
+  },
+  {
+    "id": 1060667,
+    "name": "Weak Third Eye Elixir"
+  },
+  {
+    "id": 1060669,
+    "name": "Third Eye Elixir"
+  },
+  {
+    "id": 1060671,
+    "name": "Strong Third Eye Elixir"
+  },
+  {
+    "id": 1060673,
+    "name": "Potent Third Eye Elixir"
+  },
+  {
+    "id": 1060675,
+    "name": "Heady Third Eye Elixir"
+  },
+  {
+    "id": 1066484,
+    "name": "Weak Acrobatics Elixir"
+  },
+  {
+    "id": 1066486,
+    "name": "Weak Assault Elixir"
+  },
+  {
+    "id": 1066488,
+    "name": "Elixir of Cold Resistance"
+  },
+  {
+    "id": 1066490,
+    "name": "Weak Crushing Elixir"
+  },
+  {
+    "id": 1066492,
+    "name": "Elixir of Fire Resistance"
+  },
+  {
+    "id": 1066495,
+    "name": "Elixir of Lightning Resistance"
+  },
+  {
+    "id": 1066497,
+    "name": "Elixir of Poison Resistance"
+  },
+  {
+    "id": 1066499,
+    "name": "Elixir of Precision"
+  },
+  {
+    "id": 1066501,
+    "name": "Elixir of Shadow Resistance"
+  },
+  {
+    "id": 1066503,
+    "name": "Weak Vampirism Elixir"
+  },
+  {
+    "id": 1066537,
+    "name": "Acrobatics Elixir"
+  },
+  {
+    "id": 1066541,
+    "name": "Strong Acrobatics Elixir"
+  },
+  {
+    "id": 1066543,
+    "name": "Potent Acrobatics Elixir"
+  },
+  {
+    "id": 1066546,
+    "name": "Heady Acrobatics Elixir"
+  },
+  {
+    "id": 1066563,
+    "name": "Assault Elixir"
+  },
+  {
+    "id": 1066565,
+    "name": "Strong Assault Elixir"
+  },
+  {
+    "id": 1066568,
+    "name": "Potent Assault Elixir"
+  },
+  {
+    "id": 1066570,
+    "name": "Heady Assault Elixir"
+  },
+  {
+    "id": 1066638,
+    "name": "Strong Elixir of Cold Resistance"
+  },
+  {
+    "id": 1066646,
+    "name": "Potent Elixir of Cold Resistance"
+  },
+  {
+    "id": 1066668,
+    "name": "Elixir of Cold Resistance II"
+  },
+  {
+    "id": 1066686,
+    "name": "Crushing Elixir"
+  },
+  {
+    "id": 1066688,
+    "name": "Strong Crushing Elixir"
+  },
+  {
+    "id": 1066690,
+    "name": "Potent Crushing Elixir"
+  },
+  {
+    "id": 1066692,
+    "name": "Heady Crushing Elixir"
+  },
+  {
+    "id": 1066697,
+    "name": "Strong Elixir of Fire Resistance"
+  },
+  {
+    "id": 1066701,
+    "name": "Potent Elixir of Fire Resistance"
+  },
+  {
+    "id": 1066704,
+    "name": "Elixir of Fire Resistance II"
+  },
+  {
+    "id": 1066709,
+    "name": "Strong Elixir of Lightning Resistance"
+  },
+  {
+    "id": 1066713,
+    "name": "Potent Elixir of Lightning Resistance"
+  },
+  {
+    "id": 1066718,
+    "name": "Elixir of Lightning Resistance II"
+  },
+  {
+    "id": 1066722,
+    "name": "Strong Elixir of Poison Resistance"
+  },
+  {
+    "id": 1066725,
+    "name": "Potent Elixir of Poison Resistance"
+  },
+  {
+    "id": 1066727,
+    "name": "Elixir of Poison Resistance II"
+  },
+  {
+    "id": 1066732,
+    "name": "Strong Precision Elixir"
+  },
+  {
+    "id": 1066734,
+    "name": "Potent Precision Elixir"
+  },
+  {
+    "id": 1066737,
+    "name": "Elixir of Precision II"
+  },
+  {
+    "id": 1067118,
+    "name": "Strong Elixir of Shadow Resistance"
+  },
+  {
+    "id": 1067120,
+    "name": "Potent Elixir of Shadow Resistance"
+  },
+  {
+    "id": 1067122,
+    "name": "Elixir of Shadow Resistance II"
+  },
+  {
+    "id": 1067134,
+    "name": "Vampirism Elixir"
+  },
+  {
+    "id": 1067136,
+    "name": "Strong Vampirism Elixir"
+  },
+  {
+    "id": 1067138,
+    "name": "Potent Vampirism Elixir"
+  },
+  {
+    "id": 1067140,
+    "name": "Heady Vampirism Elixir"
+  },
+  {
+    "id": 1236438,
+    "name": "Expired Elixir of Death Evasion"
+  },
+  {
+    "id": 1241387,
+    "name": "Elixir of Antivenin"
+  },
+  {
+    "id": 1468409,
+    "name": "Gileon's Brew"
+  },
+  {
+    "id": 1593090,
+    "name": "Spicy Paletongue"
+  },
+  {
+    "id": 1841174,
+    "name": "Elixir of Resourcefulness"
+  },
+  {
+    "id": 1841178,
+    "name": "Elixir of Resourcefulness II"
+  },
+  {
+    "id": 1841186,
+    "name": "Elixir of Advantage"
+  },
+  {
+    "id": 1841197,
+    "name": "Elixir of Advantage II"
+  },
+  {
+    "id": 1841277,
+    "name": "Elixir of Destruction"
+  },
+  {
+    "id": 1841287,
+    "name": "Elixir of Destruction II"
+  },
+  {
+    "id": 1841327,
+    "name": "Elixir of Fortitude II"
+  },
+  {
+    "id": 1841344,
+    "name": "Elixir of Fortitude"
+  },
+  {
+    "id": 1856252,
+    "name": "Elixir of Momentum"
+  },
+  {
+    "id": 1856350,
+    "name": "Elixir of Holy Bolts"
+  },
+  {
+    "id": 1882910,
+    "name": "Profane Mindcage"
+  },
+  {
+    "id": 1908277,
+    "name": "Elixir of Sacrifice"
+  },
+  {
+    "id": 1909700,
+    "name": "Elixir of Aggression"
+  },
+  {
+    "id": 1910431,
+    "name": "Elixir of Tailwind"
+  },
+  {
+    "id": 1913477,
+    "name": "Incense of Capacity"
+  },
+  {
+    "id": 1929146,
+    "name": "Incense of Khazra Power"
+  },
+  {
+    "id": 1929277,
+    "name": "Incense of Rushing Wind"
+  },
+  {
+    "id": 1952677,
+    "name": "Incense of Fortitude"
+  },
+  {
+    "id": 1952998,
+    "name": "Elixir of Swift Revival"
+  },
+  {
+    "id": 1991376,
+    "name": "Elixir of Hollow Unmaking"
+  },
+  {
+    "id": 2096184,
+    "name": "Test Rune Debug Elixer"
+  },
+  {
+    "id": 2145204,
+    "name": "Draught of Whispers"
+  }
+]

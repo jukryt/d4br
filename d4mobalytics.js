@@ -83,6 +83,13 @@ class D4MobalyticsProcessor {
                             this.runeNameProcess(runeNameNode);
                         }
                     }
+                    // elixir
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/elixirs/']")) {
+                        const elixirNameNode = tippyNode.querySelector("p.x2klb21");
+                        if (elixirNameNode) {
+                            this.elixirNameProcess(elixirNameNode);
+                        }
+                    }
                 }
             }
         }
@@ -242,6 +249,10 @@ class D4MobalyticsProcessor {
         }
 
         return this.addAffixNodeTargetValue(node, "d4br_rune_name", targetValue);
+    }
+
+    elixirNameProcess(node) {
+        return this.nodeProcess(node, "d4br_elixir_name", Language.elixir);
     }
 
     nodeProcess(node, className, resourceName) {

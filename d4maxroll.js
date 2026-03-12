@@ -24,7 +24,7 @@ class D4MaxrollProcessor {
                             this.fixPopupStyle(newNode);
                         }
 
-                        // legendary: aspect, affix, temper, leg node, glyph, rune
+                        // legendary: aspect, affix, temper, leg node, glyph, rune, elixir
                         if (newNode.querySelector("div.d4t-tip-legendary")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             const subTitleNode = newNode.querySelector("div.d4t-sub-title");
@@ -32,6 +32,7 @@ class D4MaxrollProcessor {
                                 if (this.legNodeNameProcess(titleNode) ||
                                     this.glyphNameProcess(titleNode) ||
                                     this.runeNameProcess(titleNode) ||
+                                    this.elixirNameProcess(titleNode) ||
                                     this.aspectNameProcess(titleNode, subTitleNode)) {
                                     break;
                                 }
@@ -52,21 +53,32 @@ class D4MaxrollProcessor {
                                 this.runeWordProcess(runeWordNode);
                             }
                         }
-                        // rare: glyph, rune
-                        else if (newNode.querySelector("div.d4t-tip-rare")) {
+                        // common: elixir
+                        else if (newNode.querySelector("div.d4t-tip-common")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             for (const titleNode of titleNodes) {
-                                if (this.glyphNameProcess(titleNode) ||
-                                    this.runeNameProcess(titleNode)) {
+                                if (this.elixirNameProcess(titleNode)) {
                                     break;
                                 }
                             }
                         }
-                        // magic: rune
+                        // rare: glyph, rune, elixir
+                        else if (newNode.querySelector("div.d4t-tip-rare")) {
+                            const titleNodes = newNode.querySelectorAll("div.d4t-title");
+                            for (const titleNode of titleNodes) {
+                                if (this.glyphNameProcess(titleNode) ||
+                                    this.runeNameProcess(titleNode) ||
+                                    this.elixirNameProcess(titleNode)) {
+                                    break;
+                                }
+                            }
+                        }
+                        // magic: rune, elixir
                         else if (newNode.querySelector("div.d4t-tip-magic")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             for (const titleNode of titleNodes) {
-                                if (this.runeNameProcess(titleNode)) {
+                                if (this.runeNameProcess(titleNode) ||
+                                    this.elixirNameProcess(titleNode)) {
                                     break;
                                 }
                             }
@@ -317,6 +329,10 @@ class D4MaxrollProcessor {
 
     runeNameProcess(node) {
         return this.nodeProcess(node, "d4br_rune_name", Language.runes);
+    }
+
+    elixirNameProcess(node) {
+        return this.nodeProcess(node, "d4br_elixir_name", Language.elixir);
     }
 
     nodeProcess(node, className, resourceName) {
