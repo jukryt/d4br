@@ -1,4 +1,5 @@
 ﻿using Importer.Checker;
+using Importer.Custom.Elixir;
 using Importer.Custom.Glyph;
 using Importer.Custom.Rune;
 using Importer.Custom.Skill;
@@ -167,41 +168,45 @@ namespace Importer.Resource
                                 FileName = "rune.json",
                             },
                         },
-                        new ResourceInfo<ClassItem>
+                        new ResourceInfo<SkillItem>
                         {
                             Name = "skill ru",
-                            Source = new ResourceSource<ClassItem>
+                            Source = new SkillSource
                             {
                                 SourceInfos =
                                 [
                                     new SourceInfo
                                     {
                                         Url = "https://www.wowhead.com/diablo-4/ru/skills",
-                                        Script = "() => g_listviews.skills.data.map(i => ({id: i.id, name: i.name, classes: [i.playerClassName]}))",
+                                        Script = "() => g_listviews.skills.data.map(i => ({id: i.id, name: i.name, isActive: i.active, classes: [i.playerClassName]}))",
                                     },
                                 ],
+                                DetailsUrlTemplate = "https://www.wowhead.com/diablo-4/ru/skill/[id]",
+                                ModNamesScript = "() => [...document.querySelectorAll('div.wowhead-tooltip[data-type=\"d4-skill\"][data-mod] div.whtt-name')].map(e => e.innerText)",
                             },
-                            Fix = new ResourceFix<ClassItem>
+                            Fix = new ResourceFix<SkillItem>
                             {
                                 Fixers =
                                 [
                                     new SkillFilter(true),
-                                    new FixRemoveEmptyName<ClassItem>(),
-                                    new FixRemoveEmptyClass<ClassItem>(),
-                                    new FixName<ClassItem>(),
+                                    new FixRemoveEmptyName<SkillItem>(),
+                                    new FixRemoveEmptyClass<SkillItem>(),
+                                    new FixName<SkillItem>(),
+                                    new FixSkillModsName(),
                                 ],
                             },
-                            Check = new ResourceCheck<ClassItem>
+                            Check = new ResourceCheck<SkillItem>
                             {
                                 Checkers =
                                 [
-                                    new CheckUnique<ClassItem>
+                                    new CheckUnique<SkillItem>
                                     {
-                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
+                                        Comparer = new ClassItemEqualComparer<SkillItem>(),
                                     },
+                                    new SkillCheckProperties(),
                                 ],
                             },
-                            Target = new ResourceTarget<ClassItem>
+                            Target = new ResourceTarget<SkillItem>
                             {
                                 FileName = "skill.json",
                             },
@@ -288,6 +293,49 @@ namespace Importer.Resource
                             Target = new ResourceTarget<Item>
                             {
                                 FileName = "unq_item.json",
+                            },
+                        },
+                        new ResourceInfo<Item>
+                        {
+                            Name = "elixir ru",
+                            Source = new ResourceSource<Item>
+                            {
+                                SourceInfos =
+                                [
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/elixir",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/incense",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                ],
+                            },
+                            Fix = new ResourceFix<Item>
+                            {
+                                Fixers =
+                                [
+                                    new ElixirFilter(true),
+                                    new FixRemoveEmptyName<Item>(),
+                                    new FixName<Item>(),
+                                ],
+                            },
+                            Check = new ResourceCheck<Item>
+                            {
+                                Checkers =
+                                [
+                                    new CheckUnique<Item>
+                                    {
+                                        Comparer = new ItemEqualComparer<Item>(),
+                                    },
+                                ],
+                            },
+                            Target = new ResourceTarget<Item>
+                            {
+                                FileName = "elixir.json",
                             },
                         },
                     ],

@@ -1,0 +1,23 @@
+@keyframes d4br_show_anim {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.d4br_element {
+    animation: .7s d4br_show_anim ease;
+}
+
+.d4br_element::before {
+    display: none !important;
+}
+
+.d4br_element::after {
+    display: none !important;
+}
