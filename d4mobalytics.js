@@ -49,8 +49,8 @@ class D4MobalyticsProcessor {
                         }
                     }
                     // skill (old)
-                    else if (tippyNode.querySelector("div.m-1saunj6")) {
-                        const skillNameNode = tippyNode.querySelector("p.m-foqf9j");
+                    else if (tippyNode.querySelector("div.m-1xw5npu img[src*='/skills/'")) {
+                        const skillNameNode = tippyNode.querySelector("p.m-2v1a8e");
                         if (skillNameNode) {
                             this.skillNameProcess(skillNameNode);
                         }
@@ -62,16 +62,23 @@ class D4MobalyticsProcessor {
                             this.skillNameProcess(skillNameNode);
                         }
                     }
-                    // glyph
-                    else if (tippyNode.querySelector("div.m-yak0pv")) {
-                        const glyphNameNode = tippyNode.querySelector("p.m-pv4zw0");
+                    // glyph (old)
+                    else if (tippyNode.querySelector("div.m-o31yak")) {
+                        const glyphNameNode = tippyNode.querySelector("p.m-1hf7me6");
+                        if (glyphNameNode) {
+                            this.glyphNameProcess(glyphNameNode);
+                        }
+                    }
+                    // glyph (new)
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/glyphs/'")) {
+                        const glyphNameNode = tippyNode.querySelector("p.x2klb21");
                         if (glyphNameNode) {
                             this.glyphNameProcess(glyphNameNode);
                         }
                     }
                     // leg node
-                    else if (tippyNode.querySelector("div.m-1fwtoiz")) {
-                        const legNameNode = tippyNode.querySelector("p.m-1vrrnd3");
+                    else if (tippyNode.querySelector("div.m-10eb7s2")) {
+                        const legNameNode = tippyNode.querySelector("p.m-zrc7tx");
                         if (legNameNode) {
                             this.legNodeNameProcess(legNameNode);
                         }
@@ -81,6 +88,13 @@ class D4MobalyticsProcessor {
                         const runeNameNode = tippyNode.querySelector("p.x2klb21");
                         if (runeNameNode) {
                             this.runeNameProcess(runeNameNode);
+                        }
+                    }
+                    // elixir
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/elixirs/']")) {
+                        const elixirNameNode = tippyNode.querySelector("p.x2klb21");
+                        if (elixirNameNode) {
+                            this.elixirNameProcess(elixirNameNode);
                         }
                     }
                 }
@@ -194,11 +208,10 @@ class D4MobalyticsProcessor {
         }
 
         const glyphMatch = sourceValue.match(/([a-zA-Z ]+) \(Lvl \d+\)/);
-        if (!glyphMatch) {
-            return false;
-        }
+        const glyphName = glyphMatch
+            ? glyphMatch[1]
+            : sourceValue;
 
-        const glyphName = glyphMatch[1];
         const sourceItem = this.sourceLanguage.glyphs.find(i => StringExtension.equelsIgnoreCase(i.name, glyphName));
         if (!sourceItem) {
             return false;
@@ -242,6 +255,10 @@ class D4MobalyticsProcessor {
         }
 
         return this.addAffixNodeTargetValue(node, "d4br_rune_name", targetValue);
+    }
+
+    elixirNameProcess(node) {
+        return this.nodeProcess(node, "d4br_elixir_name", Language.elixir);
     }
 
     nodeProcess(node, className, resourceName) {

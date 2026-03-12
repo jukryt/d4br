@@ -6,6 +6,7 @@ class Language {
     static runes = "runes";
     static skills = "skills";
     static tempers = "tempers";
+    static elixir = "elixir";
 
     constructor() {
         if (this.constructor == Language) {
@@ -48,6 +49,11 @@ class Language {
         return this._tempers ?? [];
     }
 
+    _elixir;
+    get elixir() {
+        return this._elixir ?? [];
+    }
+
     getResource(name) {
         return this[name];
     }
@@ -68,6 +74,7 @@ class EnglishLanguage extends Language {
         this._runes = ExternalResource.getJsonResource("rune_en");
         this._skills = ExternalResource.getJsonResource("skill_en");
         this._tempers = ExternalResource.getJsonResource("temper_en");
+        this._elixir = ExternalResource.getJsonResource("elixir_en");
     }
 
     getSkillAffixValue(skillItem) {
@@ -88,6 +95,7 @@ class RussianLanguage extends Language {
         this._runes = ExternalResource.getJsonResource("rune_ru");
         this._skills = ExternalResource.getJsonResource("skill_ru");
         this._tempers = ExternalResource.getJsonResource("temper_ru");
+        this._elixir = ExternalResource.getJsonResource("elixir_ru");
     }
 
     getSkillAffixValue(skillItem) {
