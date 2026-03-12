@@ -43,7 +43,7 @@ class D4MobalyticsProcessor {
                             this.unqItemNameProcess(unqItemNameNode);
                         }
 
-                        const runeNameNodes = tippyNode.querySelectorAll("li.xb3r6kr:has(img[src*='/runes/'])");
+                        const runeNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(img[src*='/runes/'])");
                         for (const runeNameNode of runeNameNodes) {
                             this.runeNameInItemProcess(runeNameNode);
                         }
@@ -62,9 +62,16 @@ class D4MobalyticsProcessor {
                             this.skillNameProcess(skillNameNode);
                         }
                     }
-                    // glyph
+                    // glyph (old)
                     else if (tippyNode.querySelector("div.m-o31yak")) {
                         const glyphNameNode = tippyNode.querySelector("p.m-1hf7me6");
+                        if (glyphNameNode) {
+                            this.glyphNameProcess(glyphNameNode);
+                        }
+                    }
+                    // glyph (new)
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/glyphs/'")) {
+                        const glyphNameNode = tippyNode.querySelector("p.x2klb21");
                         if (glyphNameNode) {
                             this.glyphNameProcess(glyphNameNode);
                         }
@@ -201,11 +208,10 @@ class D4MobalyticsProcessor {
         }
 
         const glyphMatch = sourceValue.match(/([a-zA-Z ]+) \(Lvl \d+\)/);
-        if (!glyphMatch) {
-            return false;
-        }
+        const glyphName = glyphMatch
+            ? glyphMatch[1]
+            : sourceValue;
 
-        const glyphName = glyphMatch[1];
         const sourceItem = this.sourceLanguage.glyphs.find(i => StringExtension.equelsIgnoreCase(i.name, glyphName));
         if (!sourceItem) {
             return false;
