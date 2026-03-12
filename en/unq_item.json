@@ -348,6 +348,10 @@
     "name": "Starfall Coronet"
   },
   {
+    "id": 1719158,
+    "name": "Blood-Mad Idol"
+  },
+  {
     "id": 1758459,
     "name": "Pitfighter's Gull"
   },
@@ -744,6 +748,10 @@
     "name": "Gate of the Red Dawn"
   },
   {
+    "id": 2424373,
+    "name": "Rustbitten Dirk"
+  },
+  {
     "id": 2429482,
     "name": "Bastion of Sir Matthias"
   },
@@ -850,5 +858,37 @@
   {
     "id": 2513539,
     "name": "Sunbrand"
+  },
+  {
+    "id": 2538578,
+    "name": "Wendigo Brand"
+  },
+  {
+    "id": 2538889,
+    "name": "Wyrdskin"
+  },
+  {
+    "id": 2538899,
+    "name": "Thousand-Eye Reaver"
+  },
+  {
+    "id": 2548918,
+    "name": "Cluckonomicon"
+  },
+  {
+    "id": 2548923,
+    "name": "Cluckeye"
+  },
+  {
+    "id": 2571332,
+    "name": "Eggcecutioner"
+  },
+  {
+    "id": 2572424,
+    "name": "Coop de Grâce"
+  },
+  {
+    "id": 2573064,
+    "name": "Eggis"
   }
 ]
