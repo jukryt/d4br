@@ -43,14 +43,14 @@ class D4MobalyticsProcessor {
                             this.unqItemNameProcess(unqItemNameNode);
                         }
 
-                        const runeNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(img[src*='/runes/'])");
+                        const runeNameNodes = tippyNode.querySelectorAll("li.xb3r6kr:has(img[src*='/runes/'])");
                         for (const runeNameNode of runeNameNodes) {
                             this.runeNameInItemProcess(runeNameNode);
                         }
                     }
                     // skill (old)
-                    else if (tippyNode.querySelector("div.m-1saunj6")) {
-                        const skillNameNode = tippyNode.querySelector("p.m-foqf9j");
+                    else if (tippyNode.querySelector("div.m-1xw5npu img[src*='/skills/'")) {
+                        const skillNameNode = tippyNode.querySelector("p.m-2v1a8e");
                         if (skillNameNode) {
                             this.skillNameProcess(skillNameNode);
                         }
@@ -63,15 +63,15 @@ class D4MobalyticsProcessor {
                         }
                     }
                     // glyph
-                    else if (tippyNode.querySelector("div.m-yak0pv")) {
-                        const glyphNameNode = tippyNode.querySelector("p.m-pv4zw0");
+                    else if (tippyNode.querySelector("div.m-o31yak")) {
+                        const glyphNameNode = tippyNode.querySelector("p.m-1hf7me6");
                         if (glyphNameNode) {
                             this.glyphNameProcess(glyphNameNode);
                         }
                     }
                     // leg node
-                    else if (tippyNode.querySelector("div.m-1fwtoiz")) {
-                        const legNameNode = tippyNode.querySelector("p.m-1vrrnd3");
+                    else if (tippyNode.querySelector("div.m-10eb7s2")) {
+                        const legNameNode = tippyNode.querySelector("p.m-zrc7tx");
                         if (legNameNode) {
                             this.legNodeNameProcess(legNameNode);
                         }

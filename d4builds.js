@@ -154,11 +154,8 @@ class D4BuildsProcessor {
     }
 
     getCharClassName() {
-        const classNameHeader =
-            document.querySelector("div.builder__header__title h2.builder__header__description") ?? // build
-            document.querySelector("button.builder__header__selection h2.builder__header__name");   // planner
-
-        return classNameHeader?.innerText?.replace(" Build", "");
+        var classNameHeader = document.querySelector("div.builder__header__class img.builder__header__icon");
+        return classNameHeader?.getAttribute("alt")?.replace("Diablo 4 ", "");
     }
 
     aspectNameProcess(node) {

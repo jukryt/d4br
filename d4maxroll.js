@@ -13,14 +13,14 @@ class D4MaxrollProcessor {
         for (const mutation of mutations) {
             if (mutation.type === "attributes") {
                 if (mutation.attributeName === "style" &&
-                    mutation.target.className.startsWith("_Tooltip__positioner_orqi")) {
+                    mutation.target.className.startsWith("_Tooltip__positioner")) {
                     const positioner = mutation.target;
                     this.fixPopupPosotion(positioner);
                 }
             } else if (mutation.type === "childList") {
                 if (mutation.target.id === "uitools-tooltip-root") {
                     for (const newNode of mutation.addedNodes) {
-                        if (newNode.className.startsWith("_Tooltip_orqi")) {
+                        if (newNode.className.startsWith("_Tooltip")) {
                             this.fixPopupStyle(newNode);
                         }
 
