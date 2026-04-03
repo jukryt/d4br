@@ -188,7 +188,11 @@ class D4MobalyticsProcessor {
             .replace("En Guarde", "En Garde")
             .replace("Enhanced Defiance Aura", "Enhanced Defiance")
             .replace("Enhanced Fanaticism Aura", "Enhanced Fanaticism")
-            .replace("Enhanced Holy Light Aura", "Enhanced Holy Light");
+            .replace("Enhanced Holy Light Aura", "Enhanced Holy Light")
+            .replace("Zealots' Legacy", "Zealot's Legacy")
+            .replace("Disciples' Halo", "Disciple's Halo")
+            .replace("Shepard the Flock", "Shepherd the Flock")
+            .replace("Seraphs' Wings", "Seraph's Wings");
 
         const sourceItem = this.skillBuilder.getSourceItem(fixedValue);
         const targetItem = this.skillBuilder.getTargetItem(sourceItem);

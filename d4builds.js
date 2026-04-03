@@ -231,7 +231,9 @@ class D4BuildsProcessor {
             .replace("En Guarde", "En Garde")
             .replace("Enhanced Defiance Aura", "Enhanced Defiance")
             .replace("Enhanced Fanaticism Aura", "Enhanced Fanaticism")
-            .replace("Enhanced Holy Light Aura", "Enhanced Holy Light");
+            .replace("Enhanced Holy Light Aura", "Enhanced Holy Light")
+            .replace("Shepard the Flock", "Shepherd the Flock")
+            .replace("Enhanced Shield Charge-v2", "Enhanced Shield Charge");
 
         const sourceItem = this.skillBuilder.getSourceItem(fixedValue);
         const targetItem = this.skillBuilder.getTargetItem(sourceItem);
