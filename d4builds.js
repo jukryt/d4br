@@ -168,19 +168,19 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const affixTargetValue = this.getAffixTargetValue(sourceValue);
-        if (!affixTargetValue) {
+        const targetValue = this.getAffixTargetValue(sourceValue);
+        if (!targetValue) {
             return false;
         }
 
-        return this.addAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
+        return this.addAffixNodeTargetValue(node, "d4br_affix_name", targetValue);
     }
 
     getAffixTargetValue(sourceValue) {
-        const fixedAffixValue = sourceValue
+        const fixedValue = sourceValue
             .replace("to Heavy Weight", "to Heavyweight");
 
-        const sourceItem = this.affixBuilder.getSourceItem(fixedAffixValue);
+        const sourceItem = this.affixBuilder.getSourceItem(fixedValue);
         const targetItem = this.affixBuilder.getTargetItem(sourceItem);
         const targetValue = this.affixBuilder.buildTargetValue(targetItem);
 
@@ -193,20 +193,20 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const temperTargetValue = this.getTemperTargetValue(sourceValue);
-        if (!temperTargetValue) {
+        const targetValue = this.getTemperTargetValue(sourceValue);
+        if (!targetValue) {
             return false;
         }
 
-        return this.addAffixNodeTargetValue(node, "d4br_temper_name", temperTargetValue);
+        return this.addAffixNodeTargetValue(node, "d4br_temper_name", targetValue);
     }
 
     getTemperTargetValue(sourceValue) {
-        const fixedTemperValue = sourceValue
+        const fixedValue = sourceValue
             .replace(/\[([0-9]+)\]/, "$1")
             .replace("Movement Speed for X Seconds", "Movement Speed for 4 Seconds");
 
-        const sourceItem = this.temperBuilder.getSourceItem(fixedTemperValue);
+        const sourceItem = this.temperBuilder.getSourceItem(fixedValue);
         const targetItem = this.temperBuilder.getTargetItem(sourceItem);
         const targetValue = this.temperBuilder.buildValue(targetItem);
 
@@ -227,13 +227,13 @@ class D4BuildsProcessor {
             return false;
         }
 
-        const fixedTemperValue = sourceValue
+        const fixedValue = sourceValue
             .replace("En Guarde", "En Garde")
             .replace("Enhanced Defiance Aura", "Enhanced Defiance")
             .replace("Enhanced Fanaticism Aura", "Enhanced Fanaticism")
             .replace("Enhanced Holy Light Aura", "Enhanced Holy Light");
 
-        const sourceItem = this.skillBuilder.getSourceItem(fixedTemperValue);
+        const sourceItem = this.skillBuilder.getSourceItem(fixedValue);
         const targetItem = this.skillBuilder.getTargetItem(sourceItem);
         const targetValue = this.skillBuilder.buildTargetValue(targetItem);
 

@@ -183,10 +183,10 @@ class D4MaxrollProcessor {
         }
         // item node
         else {
-            const titleValue = titleNode.innerText;
+            const sourceValue = titleNode.innerText;
             const self = this;
 
-            const sourceItem = this.sourceLanguage.aspects.find(i => { return self.aspectNameFilter(i, titleValue); });
+            const sourceItem = this.sourceLanguage.aspects.find(i => { return self.aspectNameFilter(i, sourceValue); });
             if (!sourceItem) {
                 return false;
             }
@@ -200,19 +200,19 @@ class D4MaxrollProcessor {
         }
     }
 
-    aspectNameFilter(sourceItem, titleValue) {
+    aspectNameFilter(sourceItem, sourceValue) {
         const aspectIndex = sourceItem.name.indexOf("Aspect");
         // [Aspect of ...] => [Item_Name of Aspect_Name]
         if (aspectIndex === 0) {
             const aspectName = sourceItem.name.substring(6);
-            if (StringExtension.endsWithIgnoreCase(titleValue, aspectName)) {
+            if (StringExtension.endsWithIgnoreCase(sourceValue, aspectName)) {
                 return true;
             }
         }
         // [... Aspect] => [Aspect_Name Item_Name]
         else {
             const aspectName = sourceItem.name.substring(0, aspectIndex);
-            if (StringExtension.startsWithIgnoreCase(titleValue, aspectName)) {
+            if (StringExtension.startsWithIgnoreCase(sourceValue, aspectName)) {
                 return true;
             }
         }
@@ -226,21 +226,21 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const affixTargetValue = this.getAffixTargetValue(sourceValue);
-        if (!affixTargetValue) {
+        const targetValue = this.getAffixTargetValue(sourceValue);
+        if (!targetValue) {
             return false;
         }
 
-        return this.addAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
+        return this.addAffixNodeTargetValue(node, "d4br_affix_name", targetValue);
     }
 
     getAffixTargetValue(sourceValue) {
-        const fixedAffixValue = sourceValue
+        const fixedValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
             .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
-        const sourceItem = this.affixBuilder.getSourceItem(fixedAffixValue);
+        const sourceItem = this.affixBuilder.getSourceItem(fixedValue);
         const targetItem = this.affixBuilder.getTargetItem(sourceItem);
         const targetValue = this.affixBuilder.buildTargetValue(targetItem);
 
@@ -253,21 +253,21 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const temperTargetValue = this.getTemperTargetValue(sourceValue);
-        if (!temperTargetValue) {
+        const targetValue = this.getTemperTargetValue(sourceValue);
+        if (!targetValue) {
             return false;
         }
 
-        return this.addAffixNodeTargetValue(node, "d4br_temper_name", temperTargetValue);
+        return this.addAffixNodeTargetValue(node, "d4br_temper_name", targetValue);
     }
 
     getTemperTargetValue(sourceValue) {
-        const fixedTemperValue = sourceValue
+        const fixedValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
             .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
-        const sourceItem = this.temperBuilder.getSourceItem(fixedTemperValue);
+        const sourceItem = this.temperBuilder.getSourceItem(fixedValue);
         const targetItem = this.temperBuilder.getTargetItem(sourceItem);
         const targetValue = this.temperBuilder.buildValue(targetItem);
 
