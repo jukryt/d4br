@@ -368,10 +368,6 @@
     "name": "Elixir of Holy Bolts"
   },
   {
-    "id": 1882910,
-    "name": "Profane Mindcage"
-  },
-  {
     "id": 1908277,
     "name": "Elixir of Sacrifice"
   },
@@ -414,5 +410,9 @@
   {
     "id": 2145204,
     "name": "Draught of Whispers"
+  },
+  {
+    "id": 2513968,
+    "name": "Profane Mindcage"
   }
 ]

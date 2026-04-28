@@ -1,0 +1,2324 @@
+[
+  {
+    "id": 2308710,
+    "name": "Phoba of Lethality"
+  },
+  {
+    "id": 2309269,
+    "name": "Phoba of Cruel Fate"
+  },
+  {
+    "id": 2312827,
+    "name": "Phoba of Deceptive Insight"
+  },
+  {
+    "id": 2313509,
+    "name": "Phoba of Bone Breaking"
+  },
+  {
+    "id": 2316308,
+    "name": "Phoba of Adept Action"
+  },
+  {
+    "id": 2426522,
+    "name": "Phoba of Sescheron's Fury",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426536,
+    "name": "Fer of Sescheron's Fury",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426549,
+    "name": "Mlor of Sescheron's Fury",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426552,
+    "name": "Linta of Sescheron's Fury",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426573,
+    "name": "Berú of Sescheron's Fury",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426580,
+    "name": "Phoba of the Crucible",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426583,
+    "name": "Fer of the Crucible",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426588,
+    "name": "Mlor of the Crucible",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426591,
+    "name": "Linta of the Crucible",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426594,
+    "name": "Berú of the Crucible",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426598,
+    "name": "Phoba of Arreat",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426602,
+    "name": "Fer of Arreat",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426606,
+    "name": "Mlor of Arreat",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426609,
+    "name": "Linta of Arreat",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426617,
+    "name": "Berú of Arreat",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426625,
+    "name": "Phoba of the Bloodletter",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426628,
+    "name": "Fer of the Bloodletter",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426634,
+    "name": "Mlor of the Bloodletter",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426637,
+    "name": "Linta of the Bloodletter",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426641,
+    "name": "Berú of the Bloodletter",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426645,
+    "name": "Phoba of Bul-Kathos' Pride",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426651,
+    "name": "Fer of Bul-Kathos' Pride",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426655,
+    "name": "Mlor of Bul-Kathos' Pride",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426657,
+    "name": "Linta of Bul-Kathos' Pride",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426661,
+    "name": "Berú of Bul-Kathos' Pride",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2426666,
+    "name": "Phoba of the Den Mother",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426669,
+    "name": "Fer of the Den Mother",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426673,
+    "name": "Mlor of the Den Mother",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426676,
+    "name": "Linta of the Den Mother",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426679,
+    "name": "Berú of the Den Mother",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426683,
+    "name": "Phoba of the Red Wolf Moon",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426687,
+    "name": "Fer of the Red Wolf Moon",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426690,
+    "name": "Mlor of the Red Wolf Moon",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426697,
+    "name": "Linta of the Red Wolf Moon",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426700,
+    "name": "Berú of the Red Wolf Moon",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426704,
+    "name": "Phoba of the Storm Shepherd",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426709,
+    "name": "Fer of the Storm Shepherd",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426711,
+    "name": "Mlor of the Storm Shepherd",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426715,
+    "name": "Linta of the Storm Shepherd",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426720,
+    "name": "Berú of the Storm Shepherd",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426723,
+    "name": "Phoba of the Old Mountain",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426739,
+    "name": "Fer of the Old Mountain",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426742,
+    "name": "Mlor of the Old Mountain",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426747,
+    "name": "Linta of the Old Mountain",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426750,
+    "name": "Berú of the Old Mountain",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426754,
+    "name": "Phoba of Nafain's Bestiary",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426757,
+    "name": "Fer of Nafain's Bestiary",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426760,
+    "name": "Mlor of Nafain's Bestiary",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426763,
+    "name": "Linta of Nafain's Bestiary",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426766,
+    "name": "Berú of Nafain's Bestiary",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2426769,
+    "name": "Phoba of the Waking Touch",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426771,
+    "name": "Fer of the Waking Touch",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426774,
+    "name": "Mlor of the Waking Touch",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426777,
+    "name": "Linta of the Waking Touch",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426779,
+    "name": "Berú of the Waking Touch",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426783,
+    "name": "Phoba of the Bone Weaver",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426785,
+    "name": "Fer of the Bone Weaver",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426789,
+    "name": "Mlor of the Bone Weaver",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426792,
+    "name": "Linta of the Bone Weaver",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426796,
+    "name": "Berú of the Bone Weaver",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426801,
+    "name": "Phoba of the Blood Binder",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426804,
+    "name": "Fer of the Blood Binder",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426809,
+    "name": "Mlor of the Blood Binder",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426812,
+    "name": "Linta of the Blood Binder",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426816,
+    "name": "Berú of the Blood Binder",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426823,
+    "name": "Phoba of the Black Shroud",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426825,
+    "name": "Fer of the Black Shroud",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426830,
+    "name": "Mlor of the Black Shroud",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426835,
+    "name": "Linta of the Black Shroud",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426839,
+    "name": "Berú of the Black Shroud",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426844,
+    "name": "Phoba of Desecration",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426848,
+    "name": "Fer of Desecration",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426851,
+    "name": "Mlor of Desecration",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426854,
+    "name": "Linta of Desecration",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2426859,
+    "name": "Berú of Desecration",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2428492,
+    "name": "Phoba of the Cauldron",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428494,
+    "name": "Fer of the Cauldron",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428496,
+    "name": "Mlor of the Cauldron",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428498,
+    "name": "Linta of the Cauldron",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428500,
+    "name": "Berú of the Cauldron",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428502,
+    "name": "Phoba of the Frozen Sea",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428504,
+    "name": "Fer of the Frozen Sea",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428506,
+    "name": "Mlor of the Frozen Sea",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428508,
+    "name": "Linta of the Frozen Sea",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428510,
+    "name": "Berú of the Frozen Sea",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428512,
+    "name": "Phoba of Wild Lightning",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428514,
+    "name": "Fer of Wild Lightning",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428516,
+    "name": "Mlor of Wild Lightning",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428518,
+    "name": "Linta of Wild Lightning",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428520,
+    "name": "Berú of Wild Lightning",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428522,
+    "name": "Phoba of the Threefold",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428524,
+    "name": "Fer of the Threefold",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428526,
+    "name": "Mlor of the Threefold",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428528,
+    "name": "Linta of the Threefold",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428530,
+    "name": "Berú of the Threefold",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428532,
+    "name": "Phoba of Uncanny Insight",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428534,
+    "name": "Fer of Uncanny Insight",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428536,
+    "name": "Mlor of Uncanny Insight",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428538,
+    "name": "Linta of Uncanny Insight",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428540,
+    "name": "Berú of Uncanny Insight",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2428542,
+    "name": "Phoba of Righteous Will",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428544,
+    "name": "Fer of Righteous Will",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428546,
+    "name": "Mlor of Righteous Will",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428548,
+    "name": "Linta of Righteous Will",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428550,
+    "name": "Berú of Righteous Will",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428552,
+    "name": "Phoba of Dauntless Faith",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428554,
+    "name": "Fer of Dauntless Faith",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428556,
+    "name": "Mlor of Dauntless Faith",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428558,
+    "name": "Linta of Dauntless Faith",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428560,
+    "name": "Berú of Dauntless Faith",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428562,
+    "name": "Phoba of Radiant Fire",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428564,
+    "name": "Fer of Radiant Fire",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428566,
+    "name": "Mlor of Radiant Fire",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428568,
+    "name": "Linta of Radiant Fire",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428570,
+    "name": "Berú of Radiant Fire",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428572,
+    "name": "Phoba of Light's Epiphany",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428574,
+    "name": "Fer of Light's Epiphany",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428577,
+    "name": "Mlor of Light's Epiphany",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428579,
+    "name": "Linta of Light's Epiphany",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428581,
+    "name": "Berú of Light's Epiphany",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428583,
+    "name": "Phoba of Iron Conviction",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428585,
+    "name": "Fer of Iron Conviction",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428587,
+    "name": "Mlor of Iron Conviction",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428589,
+    "name": "Linta of Iron Conviction",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428591,
+    "name": "Berú of Iron Conviction",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2428593,
+    "name": "Phoba of the Narrow Eye",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428595,
+    "name": "Fer of the Narrow Eye",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428597,
+    "name": "Mlor of the Narrow Eye",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428599,
+    "name": "Linta of the Narrow Eye",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428602,
+    "name": "Berú of the Narrow Eye",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428605,
+    "name": "Phoba of the Blurring Blade",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428607,
+    "name": "Fer of the Blurring Blade",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428609,
+    "name": "Mlor of the Blurring Blade",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428611,
+    "name": "Linta of the Blurring Blade",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428613,
+    "name": "Berú of the Blurring Blade",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428615,
+    "name": "Phoba of Applied Alchemy",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428617,
+    "name": "Fer of Applied Alchemy",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428619,
+    "name": "Mlor of Applied Alchemy",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428621,
+    "name": "Linta of Applied Alchemy",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428623,
+    "name": "Berú of Applied Alchemy",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428625,
+    "name": "Phoba of Spellbound Steel",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428627,
+    "name": "Fer of Spellbound Steel",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428629,
+    "name": "Mlor of Spellbound Steel",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428631,
+    "name": "Linta of Spellbound Steel",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428633,
+    "name": "Berú of Spellbound Steel",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428635,
+    "name": "Phoba of the Sightless",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428637,
+    "name": "Fer of the Sightless",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428639,
+    "name": "Mlor of the Sightless",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428641,
+    "name": "Linta of the Sightless",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428643,
+    "name": "Berú of the Sightless",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2428645,
+    "name": "Phoba of Balazan's Bite",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428647,
+    "name": "Fer of Balazan's Bite",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428649,
+    "name": "Mlor of Balazan's Bite",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428651,
+    "name": "Linta of Balazan's Bite",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428653,
+    "name": "Berú of Balazan's Bite",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428655,
+    "name": "Phoba of Wumba's Embrace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428657,
+    "name": "Fer of Wumba's Embrace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428659,
+    "name": "Mlor of Wumba's Embrace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428661,
+    "name": "Linta of Wumba's Embrace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428663,
+    "name": "Berú of Wumba's Embrace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428666,
+    "name": "Phoba of Rezoka's Rage",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428668,
+    "name": "Fer of Rezoka's Rage",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428670,
+    "name": "Mlor of Rezoka's Rage",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428672,
+    "name": "Linta of Rezoka's Rage",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428677,
+    "name": "Berú of Rezoka's Rage",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428682,
+    "name": "Phoba of Kwatli's Grace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428684,
+    "name": "Fer of Kwatli's Grace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428686,
+    "name": "Mlor of Kwatli's Grace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428689,
+    "name": "Linta of Kwatli's Grace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428691,
+    "name": "Berú of Kwatli's Grace",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428693,
+    "name": "Phoba of the Multitude",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428696,
+    "name": "Fer of the Multitude",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428698,
+    "name": "Mlor of the Multitude",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428700,
+    "name": "Linta of the Multitude",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428702,
+    "name": "Berú of the Multitude",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2428704,
+    "name": "Phoba of Mefis' Fulcrum",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428707,
+    "name": "Fer of Mefis' Fulcrum",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428709,
+    "name": "Mlor of Mefis' Fulcrum",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428711,
+    "name": "Linta of Mefis' Fulcrum",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428713,
+    "name": "Berú of Mefis' Fulcrum",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428722,
+    "name": "Phoba of Abaddon's Flesh",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428724,
+    "name": "Fer of Abaddon's Flesh",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428726,
+    "name": "Mlor of Abaddon's Flesh",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428728,
+    "name": "Linta of Abaddon's Flesh",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428731,
+    "name": "Berú of Abaddon's Flesh",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428856,
+    "name": "Phoba of Harash's Shadow",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428859,
+    "name": "Fer of Harash's Shadow",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428862,
+    "name": "Mlor of Harash's Shadow",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428875,
+    "name": "Linta of Harash's Shadow",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428877,
+    "name": "Berú of Harash's Shadow",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428880,
+    "name": "Phoba of the Nameless",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428884,
+    "name": "Fer of the Nameless",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428886,
+    "name": "Mlor of the Nameless",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428891,
+    "name": "Linta of the Nameless",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428893,
+    "name": "Berú of the Nameless",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428896,
+    "name": "Phoba of Horazon's Chains",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428899,
+    "name": "Fer of Horazon's Chains",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428903,
+    "name": "Mlor of Horazon's Chains",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428906,
+    "name": "Linta of Horazon's Chains",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2428908,
+    "name": "Berú of Horazon's Chains",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2438181,
+    "name": "Knowledgeable Charm"
+  },
+  {
+    "id": 2448158,
+    "name": "Fer of Lethality"
+  },
+  {
+    "id": 2448162,
+    "name": "Mlor of Lethality"
+  },
+  {
+    "id": 2448164,
+    "name": "Fer of Cruel Fate"
+  },
+  {
+    "id": 2448168,
+    "name": "Mlor of Cruel Fate"
+  },
+  {
+    "id": 2448170,
+    "name": "Fer of Deceptive Insight"
+  },
+  {
+    "id": 2448172,
+    "name": "Mlor of Deceptive Insight"
+  },
+  {
+    "id": 2448174,
+    "name": "Fer of Bone Breaking"
+  },
+  {
+    "id": 2448176,
+    "name": "Mlor of Bone Breaking"
+  },
+  {
+    "id": 2448180,
+    "name": "Mlor of Dark Pact"
+  },
+  {
+    "id": 2448187,
+    "name": "Fer of Adept Action"
+  },
+  {
+    "id": 2547735,
+    "name": "Charm"
+  },
+  {
+    "id": 2583871,
+    "name": "Dirge of Airidah",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2583959,
+    "name": "Greenwalker's Signet",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2583963,
+    "name": "Fractured Runestone",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2583966,
+    "name": "Accord of the Wilds",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2583968,
+    "name": "Mark of the Old Wolf",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2583970,
+    "name": "Fury of the Wilds",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2583972,
+    "name": "Might of the Ursine",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2583981,
+    "name": "The Butcher's Cleaver",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2583983,
+    "name": "Thousand-Eye Reaver",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2583985,
+    "name": "Rustbitten Dirk",
+    "classes": [
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2583987,
+    "name": "Azurewrath",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Sorcerer",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2583990,
+    "name": "Banished Lord's Talisman"
+  },
+  {
+    "id": 2583992,
+    "name": "Blood-Mad Idol"
+  },
+  {
+    "id": 2583994,
+    "name": "Penitent Greaves"
+  },
+  {
+    "id": 2583997,
+    "name": "Flickerstep"
+  },
+  {
+    "id": 2584000,
+    "name": "Yen's Blessing"
+  },
+  {
+    "id": 2584003,
+    "name": "Razorplate"
+  },
+  {
+    "id": 2584005,
+    "name": "Soulbrand"
+  },
+  {
+    "id": 2584007,
+    "name": "Fists of Fate"
+  },
+  {
+    "id": 2584009,
+    "name": "Frostburn"
+  },
+  {
+    "id": 2584011,
+    "name": "Paingorger's Gauntlets"
+  },
+  {
+    "id": 2584013,
+    "name": "Wyrdskin"
+  },
+  {
+    "id": 2584015,
+    "name": "Godslayer Crown"
+  },
+  {
+    "id": 2584017,
+    "name": "Temerity"
+  },
+  {
+    "id": 2584021,
+    "name": "Tassets of the Dawning Sky"
+  },
+  {
+    "id": 2584023,
+    "name": "Tibault's Will"
+  },
+  {
+    "id": 2584025,
+    "name": "Mother's Embrace"
+  },
+  {
+    "id": 2584027,
+    "name": "X'Fal's Corroded Signet"
+  },
+  {
+    "id": 2584030,
+    "name": "Wendigo Brand"
+  },
+  {
+    "id": 2584034,
+    "name": "Locran's Talisman"
+  },
+  {
+    "id": 2584036,
+    "name": "Rakanoth's Wake"
+  },
+  {
+    "id": 2584038,
+    "name": "Endurant Faith"
+  },
+  {
+    "id": 2584040,
+    "name": "Crown of Lucion"
+  },
+  {
+    "id": 2588951,
+    "name": "Mantle of the Grey",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589144,
+    "name": "Herald of Zakarum",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589167,
+    "name": "Griswold's Opus",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589198,
+    "name": "Argent Veil",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589213,
+    "name": "Seal of the Second Trumpet",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589221,
+    "name": "Judicant's Glaivehelm",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589239,
+    "name": "Sanctis of Kethamar",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589247,
+    "name": "Sundered Night",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589255,
+    "name": "Cathedral's Song",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589261,
+    "name": "Arcadia",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2589678,
+    "name": "Gladiator's Triumph",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589680,
+    "name": "Scoundrel's Kiss",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589682,
+    "name": "Fist of the Iron Rose",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589684,
+    "name": "Sea Lord's Fine Gloves",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589686,
+    "name": "Condemnation",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589688,
+    "name": "Cowl of the Nameless",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589690,
+    "name": "Assassin's Stride",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589692,
+    "name": "Etna's Lost Dagger",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589694,
+    "name": "Scoundrel's Leathers",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589696,
+    "name": "Saboteur's Signet",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589698,
+    "name": "Misericorde",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589700,
+    "name": "Beastfall Boots",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589702,
+    "name": "Writhing Band of Trickery",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2589704,
+    "name": "The Umbracrux",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2591837,
+    "name": "Sunbird's Gorget",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591853,
+    "name": "Jacinth Shell",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591861,
+    "name": "Wushe Nak Pa",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591865,
+    "name": "Harmony of Ebewaka",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591872,
+    "name": "Loyalty's Mantle",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591877,
+    "name": "Protection of the Prime",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591879,
+    "name": "Balazan's Maxtlatl",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591882,
+    "name": "Sunstained War-Crozier",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591884,
+    "name": "Sepazontec",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591887,
+    "name": "Rod of Kepeleke",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591889,
+    "name": "Wound Drinker",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591891,
+    "name": "Ring of Writhing Moon",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591893,
+    "name": "Ring of the Midnight Sun",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591896,
+    "name": "Echo of Kwatli",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591898,
+    "name": "Protean Heart",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591900,
+    "name": "Widow's Web",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591902,
+    "name": "Band of First Breath",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591904,
+    "name": "Peacemonger's Signet",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591906,
+    "name": "Ring of the Midday Hunt",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2592852,
+    "name": "Tuskhelm of Joritz the Mighty",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592854,
+    "name": "Rage of Harrogath",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592856,
+    "name": "Ramaladni's Magnum Opus",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592858,
+    "name": "Sabre of Tsasgal",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592860,
+    "name": "Arreat's Bearing",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592862,
+    "name": "Chainscourged Mail",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592864,
+    "name": "Hooves of the Mountain God",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592866,
+    "name": "Ring of Red Furor",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592868,
+    "name": "Emblem of Staalbreak",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592870,
+    "name": "Dark Stalker's Medallion",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592872,
+    "name": "Nomad's Longing Heart",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592874,
+    "name": "The Open Eye of Gorgorra",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2592967,
+    "name": "Anathema of the Primes",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2592971,
+    "name": "Scepter of the Three",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2592973,
+    "name": "Dirge of Odium",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2592975,
+    "name": "Seed of Horazon",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2592977,
+    "name": "Moloch's Beating Flame",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2592979,
+    "name": "Night Terror",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2592983,
+    "name": "Morlu Fleshward",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2592985,
+    "name": "Fleshwrit Carapace",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2594388,
+    "name": "The Gloom Ward",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2594390,
+    "name": "Bloodless Scream",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2594392,
+    "name": "Red Blessing",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2594394,
+    "name": "Will of Rathma",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2594396,
+    "name": "Blood Moon Breeches",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2594398,
+    "name": "Pact of Bone",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2594400,
+    "name": "Omen of Pain",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2596492,
+    "name": "Gravewalker's Hand",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2596543,
+    "name": "Orsivane",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2596545,
+    "name": "Emberfury",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2596547,
+    "name": "Molten Band",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2596549,
+    "name": "Drognan's Anguish",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2596551,
+    "name": "Tal Rasha's Iridescent Loop",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2596553,
+    "name": "Esu's Heirloom",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2611624,
+    "name": "Doombringer",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Sorcerer",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2611664,
+    "name": "Shattered Vow",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2611677,
+    "name": "The Grandfather",
+    "classes": [
+      "Barbarian",
+      "Necromancer",
+      "Paladin",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2611693,
+    "name": "Melted Heart of Selig"
+  },
+  {
+    "id": 2611812,
+    "name": "Shroud of False Death"
+  },
+  {
+    "id": 2611819,
+    "name": "Tyrael's Might"
+  },
+  {
+    "id": 2611826,
+    "name": "Nesekem, the Herald",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2611842,
+    "name": "Andariel's Visage"
+  },
+  {
+    "id": 2611848,
+    "name": "Harlequin Crest"
+  },
+  {
+    "id": 2611857,
+    "name": "Heir of Perdition"
+  },
+  {
+    "id": 2611870,
+    "name": "Ring of Starless Skies"
+  },
+  {
+    "id": 2611872,
+    "name": "El'Druin, Sword of Justice",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Sorcerer",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2614263,
+    "name": "Phoba of Slaughter"
+  },
+  {
+    "id": 2614265,
+    "name": "Fer of Slaughter"
+  },
+  {
+    "id": 2614267,
+    "name": "Mlor of Slaughter"
+  },
+  {
+    "id": 2614269,
+    "name": "Phoba of Practiced Technique"
+  },
+  {
+    "id": 2614271,
+    "name": "Fer of Practiced Technique"
+  },
+  {
+    "id": 2614273,
+    "name": "Mlor of Practiced Technique"
+  },
+  {
+    "id": 2614275,
+    "name": "Phoba of Survival"
+  },
+  {
+    "id": 2614277,
+    "name": "Fer of Survival"
+  },
+  {
+    "id": 2614279,
+    "name": "Mlor of Survival"
+  },
+  {
+    "id": 2614281,
+    "name": "Phoba of Dark Pact"
+  },
+  {
+    "id": 2614283,
+    "name": "Fer of Dark Pact"
+  },
+  {
+    "id": 2614285,
+    "name": "Phoba of Mastery"
+  },
+  {
+    "id": 2614287,
+    "name": "Fer of Mastery"
+  }
+]

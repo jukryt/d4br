@@ -74,7 +74,8 @@
     "name": "Guzzler",
     "classes": [
       "Druid",
-      "Spiritborn"
+      "Spiritborn",
+      "Warlock"
     ]
   },
   {
@@ -393,7 +394,7 @@
   },
   {
     "id": 1029480,
-    "name": "Frostfeeder",
+    "name": "Grenadier",
     "classes": [
       "Rogue"
     ]
@@ -863,7 +864,8 @@
     "id": 2117207,
     "name": "Headhunter",
     "classes": [
-      "Druid"
+      "Druid",
+      "Warlock"
     ]
   },
   {
@@ -974,6 +976,167 @@
     "name": "Turf",
     "classes": [
       "Paladin"
+    ]
+  },
+  {
+    "id": 2529463,
+    "name": "Blood Frenzy",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2529521,
+    "name": "Eliminator",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2530489,
+    "name": "Death Aura",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2530611,
+    "name": "Occultist",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2530989,
+    "name": "Unbound",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2531451,
+    "name": "Hellforge",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2531536,
+    "name": "Abyssal",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2531984,
+    "name": "Ichor Carapace",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2531995,
+    "name": "Wrath",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2532087,
+    "name": "Eldritch Sight",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2532201,
+    "name": "Entropy",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2532860,
+    "name": "Vanguard",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2532939,
+    "name": "Mastermind",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2532972,
+    "name": "Archfiend",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2533053,
+    "name": "Control",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2533352,
+    "name": "Destruction",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2533411,
+    "name": "Attrition",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2533449,
+    "name": "Demonologist",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2533580,
+    "name": "Empowered",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2617836,
+    "name": "Retribution",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2620495,
+    "name": "Volley",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2620497,
+    "name": "Eclipse",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2623581,
+    "name": "Assassin",
+    "classes": [
+      "Rogue"
     ]
   }
 ]

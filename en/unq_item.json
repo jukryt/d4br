@@ -632,6 +632,10 @@
     "name": "Okun's Catalyst"
   },
   {
+    "id": 2185046,
+    "name": "Gladiator's Triumph"
+  },
+  {
     "id": 2242286,
     "name": "Rotting Lightbringer"
   },
@@ -650,6 +654,10 @@
   {
     "id": 2246455,
     "name": "Bands of Ichorous Rose"
+  },
+  {
+    "id": 2298295,
+    "name": "Lightburst Hammer"
   },
   {
     "id": 2329621,
@@ -736,10 +744,6 @@
     "name": "Willbreaker"
   },
   {
-    "id": 2420777,
-    "name": "(DNS)"
-  },
-  {
     "id": 2420785,
     "name": "Herald's Morningstar"
   },
@@ -793,7 +797,7 @@
   },
   {
     "id": 2469878,
-    "name": "Gravebloom"
+    "name": "Mace of King Leoric"
   },
   {
     "id": 2470102,
@@ -872,6 +876,42 @@
     "name": "Thousand-Eye Reaver"
   },
   {
+    "id": 2547783,
+    "name": "Lurid Pact"
+  },
+  {
+    "id": 2548620,
+    "name": "Elegy"
+  },
+  {
+    "id": 2548622,
+    "name": "Anathema of the Primes"
+  },
+  {
+    "id": 2548626,
+    "name": "Dirge of Odium"
+  },
+  {
+    "id": 2548631,
+    "name": "Spine of Tathamet"
+  },
+  {
+    "id": 2548633,
+    "name": "Scepter of the Three"
+  },
+  {
+    "id": 2548635,
+    "name": "Litany of Sable"
+  },
+  {
+    "id": 2548638,
+    "name": "Infernal Homunculus"
+  },
+  {
+    "id": 2548640,
+    "name": "Scourge of Duriel"
+  },
+  {
     "id": 2548918,
     "name": "Cluckonomicon"
   },
@@ -880,15 +920,367 @@
     "name": "Cluckeye"
   },
   {
+    "id": 2549136,
+    "name": "Sire of Sin"
+  },
+  {
+    "id": 2549143,
+    "name": "Hecaton Chasm"
+  },
+  {
+    "id": 2549147,
+    "name": "Seal of the Ophanim"
+  },
+  {
+    "id": 2549149,
+    "name": "The Fecund Seal"
+  },
+  {
+    "id": 2549153,
+    "name": "Hellbrand Signet"
+  },
+  {
+    "id": 2549155,
+    "name": "The Eightfold Idol"
+  },
+  {
+    "id": 2549159,
+    "name": "Seed of Horazon"
+  },
+  {
+    "id": 2549162,
+    "name": "Nails of the Gore-Crowned"
+  },
+  {
+    "id": 2549164,
+    "name": "Fleshwrit Carapace"
+  },
+  {
+    "id": 2549166,
+    "name": "Gauntlets of Sheol"
+  },
+  {
+    "id": 2549168,
+    "name": "Kabraxis' Will"
+  },
+  {
+    "id": 2549170,
+    "name": "Footfalls of the Waning World"
+  },
+  {
+    "id": 2549200,
+    "name": "Hellhound's Sabatons"
+  },
+  {
+    "id": 2549203,
+    "name": "Ae'grom's Schism"
+  },
+  {
+    "id": 2549205,
+    "name": "Hand of Apotheosis"
+  },
+  {
+    "id": 2549208,
+    "name": "Thrice-Woven Nightmare"
+  },
+  {
+    "id": 2549210,
+    "name": "Hands of the Worldbreaker"
+  },
+  {
+    "id": 2549212,
+    "name": "Cowl of Malefic Torment"
+  },
+  {
+    "id": 2549214,
+    "name": "Cage of Madness"
+  },
+  {
+    "id": 2549216,
+    "name": "Rictus of Terror"
+  },
+  {
+    "id": 2549218,
+    "name": "Bridle of Tor'Baalos"
+  },
+  {
+    "id": 2549220,
+    "name": "Sashes of the Wretched"
+  },
+  {
+    "id": 2549222,
+    "name": "Bindings of Attrition"
+  },
+  {
+    "id": 2549224,
+    "name": "Morlu Fleshward"
+  },
+  {
+    "id": 2549226,
+    "name": "Moloch's Beating Flame"
+  },
+  {
+    "id": 2549228,
+    "name": "Night Terror"
+  },
+  {
+    "id": 2549230,
+    "name": "The Hemat Stone"
+  },
+  {
+    "id": 2549232,
+    "name": "Eye of Baal"
+  },
+  {
+    "id": 2559792,
+    "name": "Will of Stone"
+  },
+  {
+    "id": 2559813,
+    "name": "The Blade of Sight Aflame"
+  },
+  {
+    "id": 2559856,
+    "name": "Autumnal Crown"
+  },
+  {
+    "id": 2565879,
+    "name": "Demon-Eye Sword"
+  },
+  {
+    "id": 2567888,
+    "name": "Echo of Kwatli"
+  },
+  {
+    "id": 2567890,
+    "name": "Protean Heart"
+  },
+  {
+    "id": 2567931,
+    "name": "Widow's Web"
+  },
+  {
+    "id": 2570630,
+    "name": "Dark Howl"
+  },
+  {
+    "id": 2570935,
+    "name": "Greenwalker's Oath"
+  },
+  {
+    "id": 2571318,
+    "name": "Ifeh's Dire Totem"
+  },
+  {
     "id": 2571332,
     "name": "Eggcecutioner"
+  },
+  {
+    "id": 2571351,
+    "name": "Heart of Azgar"
+  },
+  {
+    "id": 2571869,
+    "name": "Dirge of Airidah"
+  },
+  {
+    "id": 2571975,
+    "name": "Greenwalker's Signet"
   },
   {
     "id": 2572424,
     "name": "Coop de Grâce"
   },
   {
+    "id": 2572848,
+    "name": "Fractured Runestone"
+  },
+  {
+    "id": 2573042,
+    "name": "Accord of the Wilds"
+  },
+  {
     "id": 2573064,
     "name": "Eggis"
+  },
+  {
+    "id": 2573106,
+    "name": "Mark of the Old Wolf"
+  },
+  {
+    "id": 2574414,
+    "name": "Fury of the Wilds"
+  },
+  {
+    "id": 2574426,
+    "name": "Might of the Ursine"
+  },
+  {
+    "id": 2574434,
+    "name": "Purified Lightbringer"
+  },
+  {
+    "id": 2580668,
+    "name": "Cassia's Grace"
+  },
+  {
+    "id": 2580715,
+    "name": "Fist of the Iron Rose"
+  },
+  {
+    "id": 2580846,
+    "name": "Sea Lord's Fine Gloves"
+  },
+  {
+    "id": 2580865,
+    "name": "Etna's Lost Dagger"
+  },
+  {
+    "id": 2580898,
+    "name": "Misericorde"
+  },
+  {
+    "id": 2581723,
+    "name": "Desperate March"
+  },
+  {
+    "id": 2581798,
+    "name": "Emblem of Staalbreak"
+  },
+  {
+    "id": 2581809,
+    "name": "Dark Stalker's Medallion"
+  },
+  {
+    "id": 2581812,
+    "name": "Nomad's Longing Heart"
+  },
+  {
+    "id": 2581814,
+    "name": "The Open Eye of Gorgorra"
+  },
+  {
+    "id": 2582107,
+    "name": "Shrouded Gift"
+  },
+  {
+    "id": 2582515,
+    "name": "The Maestro"
+  },
+  {
+    "id": 2583609,
+    "name": "The Relentless Heart"
+  },
+  {
+    "id": 2583613,
+    "name": "Might of Qual-Kehk"
+  },
+  {
+    "id": 2584799,
+    "name": "Fang of the Vipermagi"
+  },
+  {
+    "id": 2584868,
+    "name": "Shanar's Resonance"
+  },
+  {
+    "id": 2584899,
+    "name": "Thundergod's Blessing"
+  },
+  {
+    "id": 2584911,
+    "name": "Vision of the Firestorm"
+  },
+  {
+    "id": 2585929,
+    "name": "Staff of Zerae"
+  },
+  {
+    "id": 2586002,
+    "name": "Onyx Soul"
+  },
+  {
+    "id": 2586233,
+    "name": "Molten Band"
+  },
+  {
+    "id": 2586358,
+    "name": "Signet of Pelghain"
+  },
+  {
+    "id": 2586393,
+    "name": "Emberfury"
+  },
+  {
+    "id": 2586422,
+    "name": "Drognan's Anguish"
+  },
+  {
+    "id": 2587261,
+    "name": "Rimeblood"
+  },
+  {
+    "id": 2587293,
+    "name": "Levin Grasp"
+  },
+  {
+    "id": 2587676,
+    "name": "Hangman's Hand"
+  },
+  {
+    "id": 2587855,
+    "name": "Raiment of the Sea"
+  },
+  {
+    "id": 2587890,
+    "name": "Deathgrip"
+  },
+  {
+    "id": 2587965,
+    "name": "The Undercrown"
+  },
+  {
+    "id": 2587992,
+    "name": "Pact of Bone"
+  },
+  {
+    "id": 2588103,
+    "name": "Gift of Frost"
+  },
+  {
+    "id": 2588765,
+    "name": "Vengeful Sinew"
+  },
+  {
+    "id": 2589327,
+    "name": "Blood Wake"
+  },
+  {
+    "id": 2589351,
+    "name": "Red Blessing"
+  },
+  {
+    "id": 2589377,
+    "name": "The Gloom Ward"
+  },
+  {
+    "id": 2589387,
+    "name": "Will of Rathma"
+  },
+  {
+    "id": 2592146,
+    "name": "Omen of Pain"
+  },
+  {
+    "id": 2596127,
+    "name": "Gravewalker's Hand"
+  },
+  {
+    "id": 2603733,
+    "name": "El'Druin, Sword of Justice"
+  },
+  {
+    "id": 2623201,
+    "name": "Sliver of Hate"
   }
 ]

@@ -9,15 +9,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Firewall"
+        "name": "Wildfire"
       },
       {
         "id": 2,
-        "name": "Mage's Firewall"
+        "name": "Ring of Fire"
       },
       {
         "id": 3,
-        "name": "Wizard's Firewall"
+        "name": "Grounding"
+      },
+      {
+        "id": 4,
+        "name": "Healing"
+      },
+      {
+        "id": 5,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Cost Reduction"
       }
     ]
   },
@@ -31,15 +47,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Spark"
+        "name": "Overcharged"
       },
       {
         "id": 2,
-        "name": "Flickering Spark"
+        "name": "Electric Blast"
       },
       {
         "id": 3,
-        "name": "Glinting Spark"
+        "name": "Firework"
+      },
+      {
+        "id": 4,
+        "name": "Additional Hits"
+      },
+      {
+        "id": 5,
+        "name": "Crackling Energy"
+      },
+      {
+        "id": 6,
+        "name": "Additional Hits"
+      },
+      {
+        "id": 7,
+        "name": "Critical Strike Chance"
       }
     ]
   },
@@ -53,15 +85,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Hydra"
+        "name": "Bathed in Flame"
       },
       {
         "id": 2,
-        "name": "Roaring Hydra"
+        "name": "Behemoth"
       },
       {
         "id": 3,
-        "name": "Invoked Hydra"
+        "name": "Frigid Hydra"
+      },
+      {
+        "id": 4,
+        "name": "Healing"
+      },
+      {
+        "id": 5,
+        "name": "Overpower"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Cast Speed"
       }
     ]
   },
@@ -75,121 +123,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Fire Bolt"
+        "name": "Twin Flame"
       },
       {
         "id": 2,
-        "name": "Flickering Fire Bolt"
+        "name": "Firefly"
       },
       {
         "id": 3,
-        "name": "Glinting Fire Bolt"
+        "name": "Shiver"
+      },
+      {
+        "id": 4,
+        "name": "Healing"
+      },
+      {
+        "id": 5,
+        "name": "Resource Generation"
+      },
+      {
+        "id": 6,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
-  },
-  {
-    "id": 156208,
-    "name": "Align the Elements",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156211,
-    "name": "Elemental Attunement",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156217,
-    "name": "Soulfire",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156220,
-    "name": "Combustion",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156224,
-    "name": "Glass Cannon",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156225,
-    "name": "Devastation",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156227,
-    "name": "Shocking Impact",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156229,
-    "name": "Convulsions",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156230,
-    "name": "Icy Veil",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156232,
-    "name": "Shatter",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156233,
-    "name": "Potent Warding",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156234,
-    "name": "Vyr's Mastery",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 156235,
-    "name": "Static Discharge",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
   },
   {
     "id": 165023,
@@ -201,25 +161,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Fireball"
+        "name": "Instantaneous Destruction"
       },
       {
         "id": 2,
-        "name": "Destructive Fireball"
+        "name": "Illumination"
       },
       {
         "id": 3,
-        "name": "Greater Fireball"
+        "name": "Frostball"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike Damage"
+      },
+      {
+        "id": 5,
+        "name": "Damage Over Time"
+      },
+      {
+        "id": 6,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Size Bonus"
       }
     ]
-  },
-  {
-    "id": 166341,
-    "name": "Devouring Blaze",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
   },
   {
     "id": 167341,
@@ -231,41 +199,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Flame Shield"
+        "name": "Scorch"
       },
       {
         "id": 2,
-        "name": "Mystical Flame Shield"
+        "name": "Firebird"
       },
       {
         "id": 3,
-        "name": "Shimmering Flame Shield"
+        "name": "Flash"
+      },
+      {
+        "id": 4,
+        "name": "Healing"
+      },
+      {
+        "id": 5,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Duration Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
-  },
-  {
-    "id": 168572,
-    "name": "Endless Pyre",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 169887,
-    "name": "Coursing Currents",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 171610,
-    "name": "Inner Flames",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
   },
   {
     "id": 171937,
@@ -277,41 +237,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Charged Bolts"
+        "name": "Surging Charge"
       },
       {
         "id": 2,
-        "name": "Destructive Charged Bolts"
+        "name": "Overload"
       },
       {
         "id": 3,
-        "name": "Greater Charged Bolts"
+        "name": "Burn Through"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Weaken"
+      },
+      {
+        "id": 6,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 7,
+        "name": "Movement Speed"
       }
     ]
-  },
-  {
-    "id": 172459,
-    "name": "Elemental Dominance",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 172497,
-    "name": "Warmth",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 172509,
-    "name": "Snap Freeze",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
   },
   {
     "id": 184600,
@@ -323,15 +275,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced War Cry"
+        "name": "Mighty Roar"
       },
       {
         "id": 2,
-        "name": "Power War Cry"
+        "name": "Korlic"
       },
       {
         "id": 3,
-        "name": "Mighty War Cry"
+        "name": "The Scream"
+      },
+      {
+        "id": 4,
+        "name": "Ferocity"
+      },
+      {
+        "id": 5,
+        "name": "Slow"
+      },
+      {
+        "id": 6,
+        "name": "Duration Increase"
+      },
+      {
+        "id": 7,
+        "name": "Vulnerable"
       }
     ]
   },
@@ -345,15 +313,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Ground Stomp"
+        "name": "Stomping Grounds"
       },
       {
         "id": 2,
-        "name": "Tactical Ground Stomp"
+        "name": "Seismic"
       },
       {
         "id": 3,
-        "name": "Strategic Ground Stomp"
+        "name": "Breach"
+      },
+      {
+        "id": 4,
+        "name": "Fury Generation"
+      },
+      {
+        "id": 5,
+        "name": "Additional Charges"
+      },
+      {
+        "id": 6,
+        "name": "Size Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Damage Bonus"
       }
     ]
   },
@@ -367,15 +351,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Leap"
+        "name": "Death From Above"
       },
       {
         "id": 2,
-        "name": "Power Leap"
+        "name": "Earthshatter"
       },
       {
         "id": 3,
-        "name": "Mighty Leap"
+        "name": "Mosh"
+      },
+      {
+        "id": 4,
+        "name": "Arsenal Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Fury Generation"
+      },
+      {
+        "id": 6,
+        "name": "Pull"
+      },
+      {
+        "id": 7,
+        "name": "Damage Bonus and Crowd Control"
       }
     ]
   },
@@ -389,15 +389,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Kick"
+        "name": "Power"
       },
       {
         "id": 2,
-        "name": "Power Kick"
+        "name": "Crimson"
       },
       {
         "id": 3,
-        "name": "Mighty Kick"
+        "name": "Madness"
+      },
+      {
+        "id": 4,
+        "name": "Increase Damage"
+      },
+      {
+        "id": 5,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 6,
+        "name": "Collide"
+      },
+      {
+        "id": 7,
+        "name": "Cooldown Reduction"
       }
     ]
   },
@@ -411,15 +427,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Bash"
+        "name": "Heavy Knuckles"
       },
       {
         "id": 2,
-        "name": "Battle Bash"
+        "name": "Violent Swings"
       },
       {
         "id": 3,
-        "name": "Combat Bash"
+        "name": "Atomic Blast"
+      },
+      {
+        "id": 4,
+        "name": "Resolve"
+      },
+      {
+        "id": 5,
+        "name": "Clobbering"
+      },
+      {
+        "id": 6,
+        "name": "Overpower"
+      },
+      {
+        "id": 7,
+        "name": "Fury Generation"
       }
     ]
   },
@@ -433,15 +465,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Upheaval"
+        "name": "Trailblazing"
       },
       {
         "id": 2,
-        "name": "Violent Upheaval"
+        "name": "Iron Burst"
       },
       {
         "id": 3,
-        "name": "Furious Upheaval"
+        "name": "Suppress"
+      },
+      {
+        "id": 4,
+        "name": "Damage Increase"
+      },
+      {
+        "id": 5,
+        "name": "Fury Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Overpower"
+      },
+      {
+        "id": 7,
+        "name": "Free Cast"
       }
     ]
   },
@@ -455,15 +503,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Charge"
+        "name": "Merciless Assault"
       },
       {
         "id": 2,
-        "name": "Power Charge"
+        "name": "Phalanx"
       },
       {
         "id": 3,
-        "name": "Mighty Charge"
+        "name": "Battering Ram"
+      },
+      {
+        "id": 4,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 5,
+        "name": "Distance Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Enemy Damage Bonus"
       }
     ]
   },
@@ -477,15 +541,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Whirlwind"
+        "name": "Tornado"
       },
       {
         "id": 2,
-        "name": "Violent Whirlwind"
+        "name": "Bursting"
       },
       {
         "id": 3,
-        "name": "Furious Whirlwind"
+        "name": "Winding"
+      },
+      {
+        "id": 4,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 5,
+        "name": "Cost Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Channel Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Weaken"
       }
     ]
   },
@@ -499,15 +579,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Lunging Strike"
+        "name": "Skewer"
       },
       {
         "id": 2,
-        "name": "Battle Lunging Strike"
+        "name": "Impaling"
       },
       {
         "id": 3,
-        "name": "Combat Lunging Strike"
+        "name": "Whirling"
+      },
+      {
+        "id": 4,
+        "name": "Range"
+      },
+      {
+        "id": 5,
+        "name": "Fury Generation"
+      },
+      {
+        "id": 6,
+        "name": "Healing"
+      },
+      {
+        "id": 7,
+        "name": "Berserking"
       }
     ]
   },
@@ -521,15 +617,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Double Swing"
+        "name": "Flurry"
       },
       {
         "id": 2,
-        "name": "Violent Double Swing"
+        "name": "Twister"
       },
       {
         "id": 3,
-        "name": "Furious Double Swing"
+        "name": "Slice and Dice"
+      },
+      {
+        "id": 4,
+        "name": "Chance to Hit Twice"
+      },
+      {
+        "id": 5,
+        "name": "Fortify"
+      },
+      {
+        "id": 6,
+        "name": "Damage Increase"
+      },
+      {
+        "id": 7,
+        "name": "Fury Cost Reduction"
       }
     ]
   },
@@ -543,15 +655,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Flay"
+        "name": "Anemia"
       },
       {
         "id": 2,
-        "name": "Battle Flay"
+        "name": "Hemorrhaging"
       },
       {
         "id": 3,
-        "name": "Combat Flay"
+        "name": "The Flayer"
+      },
+      {
+        "id": 4,
+        "name": "Slow"
+      },
+      {
+        "id": 5,
+        "name": "Duration Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Healing"
       }
     ]
   },
@@ -565,15 +693,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Frenzy"
+        "name": "Barrage"
       },
       {
         "id": 2,
-        "name": "Battle Frenzy"
+        "name": "Throwing"
       },
       {
         "id": 3,
-        "name": "Combat Frenzy"
+        "name": "Raging"
+      },
+      {
+        "id": 4,
+        "name": "Ferocity"
+      },
+      {
+        "id": 5,
+        "name": "Unhindered"
+      },
+      {
+        "id": 6,
+        "name": "Frenzy Stacks"
+      },
+      {
+        "id": 7,
+        "name": "Fury Generation"
       }
     ]
   },
@@ -587,11 +731,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Supreme Wrath of the Berserker"
+        "name": "Maximum Carnage"
       },
       {
         "id": 2,
-        "name": "Prime Wrath of the Berserker"
+        "name": "Deep Impact"
+      },
+      {
+        "id": 3,
+        "name": "Full Throttle"
+      },
+      {
+        "id": 4,
+        "name": "Fury Generation"
+      },
+      {
+        "id": 5,
+        "name": "Berserking"
+      },
+      {
+        "id": 6,
+        "name": "Duration Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
   },
@@ -605,73 +769,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Rallying Cry"
+        "name": "Booming"
       },
       {
         "id": 2,
-        "name": "Tactical Rallying Cry"
+        "name": "Madawc"
       },
       {
         "id": 3,
-        "name": "Strategic Rallying Cry"
+        "name": "The World"
+      },
+      {
+        "id": 4,
+        "name": "Fortify"
+      },
+      {
+        "id": 5,
+        "name": "Duration Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Fury Gain"
+      },
+      {
+        "id": 7,
+        "name": "Potency"
       }
     ]
-  },
-  {
-    "id": 212712,
-    "name": "Swiftness",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 212731,
-    "name": "Endless Fury",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 212832,
-    "name": "Expose Vulnerability",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 212867,
-    "name": "Duelist",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 213021,
-    "name": "Hamstring",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 213077,
-    "name": "Quick Impulses",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 213153,
-    "name": "Cut to the Bone",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
   },
   {
     "id": 213673,
@@ -683,65 +807,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Hammer of the Ancients"
+        "name": "Explosive"
       },
       {
         "id": 2,
-        "name": "Violent Hammer of the Ancients"
+        "name": "Fissure"
       },
       {
         "id": 3,
-        "name": "Furious Hammer of the Ancients"
+        "name": "Ancestral"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike"
+      },
+      {
+        "id": 5,
+        "name": "Size and Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Fury Generation"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
-  },
-  {
-    "id": 213811,
-    "name": "Battle Fervor",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 213949,
-    "name": "Slaying Strike",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 213961,
-    "name": "Gushing Wounds",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 213966,
-    "name": "Unconstrained",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 214020,
-    "name": "Martial Vigor",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 214021,
-    "name": "Tough as Nails",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
   },
   {
     "id": 214786,
@@ -753,15 +845,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Rend"
+        "name": "Flailing"
       },
       {
         "id": 2,
-        "name": "Violent Rend"
+        "name": "Blood Sworn"
       },
       {
         "id": 3,
-        "name": "Furious Rend"
+        "name": "Scorching"
+      },
+      {
+        "id": 4,
+        "name": "Moving Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Vulnerable Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 7,
+        "name": "Healing"
       }
     ]
   },
@@ -775,97 +883,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Rupture"
+        "name": "Gore"
       },
       {
         "id": 2,
-        "name": "Fighter's Rupture"
+        "name": "Blood Pool"
       },
       {
         "id": 3,
-        "name": "Warrior's Rupture"
+        "name": "All For One"
+      },
+      {
+        "id": 4,
+        "name": "Size Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Healing"
       }
     ]
-  },
-  {
-    "id": 215518,
-    "name": "Booming Voice",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 215519,
-    "name": "Brute Force",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 216116,
-    "name": "Thick Skin",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 216222,
-    "name": "Guttural Yell",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 216365,
-    "name": "Furious Impulse",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 216535,
-    "name": "Pit Fighter",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 216608,
-    "name": "No Mercy",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 216638,
-    "name": "Walking Arsenal",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 216644,
-    "name": "Unbridled Rage",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 217121,
-    "name": "Invigorating Fury",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
   },
   {
     "id": 217175,
@@ -877,21 +921,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Iron Maelstrom"
+        "name": "Armageddon"
       },
       {
         "id": 2,
-        "name": "Supreme Iron Maelstrom"
+        "name": "Hidden Technique"
+      },
+      {
+        "id": 3,
+        "name": "Mastered Weapon"
+      },
+      {
+        "id": 4,
+        "name": "Weaken"
+      },
+      {
+        "id": 5,
+        "name": "Additional Effect"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Global Cooldown Reduction"
       }
     ]
-  },
-  {
-    "id": 218754,
-    "name": "Prolific Fury",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
   },
   {
     "id": 238345,
@@ -903,15 +959,43 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Boulder"
+        "name": "Crushing Impact"
       },
       {
         "id": 2,
-        "name": "Natural Boulder"
+        "name": "Dolmen's Will"
       },
       {
         "id": 3,
-        "name": "Savage Boulder"
+        "name": "Landslip"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 5,
+        "name": "Additional Boulder"
+      },
+      {
+        "id": 6,
+        "name": "Slow"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
+      },
+      {
+        "id": 8,
+        "name": "Human"
+      },
+      {
+        "id": 9,
+        "name": "Werebear"
+      },
+      {
+        "id": 10,
+        "name": "Werewolf"
       }
     ]
   },
@@ -925,15 +1009,39 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Trample"
+        "name": "Brunt Force"
       },
       {
         "id": 2,
-        "name": "Natural Trample"
+        "name": "Trampled Earth"
       },
       {
         "id": 3,
-        "name": "Savage Trample"
+        "name": "Exsanguination"
+      },
+      {
+        "id": 4,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 5,
+        "name": "Spirit"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Stun"
+      },
+      {
+        "id": 8,
+        "name": "Werebear"
+      },
+      {
+        "id": 9,
+        "name": "Werewolf"
       }
     ]
   },
@@ -947,15 +1055,35 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Hurricane"
+        "name": "Rapid Intensification"
       },
       {
         "id": 2,
-        "name": "Natural Hurricane"
+        "name": "Twin Storms"
       },
       {
         "id": 3,
-        "name": "Savage Hurricane"
+        "name": "Derecho"
+      },
+      {
+        "id": 4,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 5,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Slow"
+      },
+      {
+        "id": 8,
+        "name": "Versatile"
       }
     ]
   },
@@ -969,15 +1097,35 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Wolf Pack"
+        "name": "Thrill of the Hunt"
       },
       {
         "id": 2,
-        "name": "Brutal Wolf Pack"
+        "name": "Werewolf Pack"
       },
       {
         "id": 3,
-        "name": "Ferocious Wolf Pack"
+        "name": "Berserking"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Stun"
+      },
+      {
+        "id": 6,
+        "name": "Additional Wolf"
+      },
+      {
+        "id": 7,
+        "name": "Attack Speed"
+      },
+      {
+        "id": 8,
+        "name": "Versatile"
       }
     ]
   },
@@ -991,11 +1139,43 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Cataclysm"
+        "name": "Severe Storm"
       },
       {
         "id": 2,
-        "name": "Supreme Cataclysm"
+        "name": "Terrible Twisters"
+      },
+      {
+        "id": 3,
+        "name": "Tectonic Spikes"
+      },
+      {
+        "id": 4,
+        "name": "Slow"
+      },
+      {
+        "id": 5,
+        "name": "Duration"
+      },
+      {
+        "id": 6,
+        "name": "Ferocity"
+      },
+      {
+        "id": 7,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 8,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 9,
+        "name": "Werewolf"
+      },
+      {
+        "id": 10,
+        "name": "Human"
       }
     ]
   },
@@ -1009,11 +1189,35 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Grizzly Rage"
+        "name": "Immunity"
       },
       {
         "id": 2,
-        "name": "Supreme Grizzly Rage"
+        "name": "Cornered Beast"
+      },
+      {
+        "id": 3,
+        "name": "Avatar of Nature"
+      },
+      {
+        "id": 4,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Armor Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
+      },
+      {
+        "id": 8,
+        "name": "Werebear"
       }
     ]
   },
@@ -1027,19 +1231,35 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Pulverize"
+        "name": "Greater Pulverize"
       },
       {
         "id": 2,
-        "name": "Primal Pulverize"
+        "name": "Shockwave"
       },
       {
         "id": 3,
-        "name": "Raging Pulverize"
+        "name": "Mega Bear Punch"
       },
       {
         "id": 4,
-        "name": "Rampaging Pulverize"
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Initial Damage Bonus"
+      },
+      {
+        "id": 8,
+        "name": "Werebear"
       }
     ]
   },
@@ -1053,15 +1273,35 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Cyclone Armor"
+        "name": "Greater Cyclone Armor"
       },
       {
         "id": 2,
-        "name": "Preserving Cyclone Armor"
+        "name": "Slipstream"
       },
       {
         "id": 3,
-        "name": "Innate Cyclone Armor"
+        "name": "Reversal"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Increased Radius"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Resistance"
+      },
+      {
+        "id": 8,
+        "name": "Versatile"
       }
     ]
   },
@@ -1075,15 +1315,35 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Ravens"
+        "name": "Raven Flock"
       },
       {
         "id": 2,
-        "name": "Ferocious Ravens"
+        "name": "Stormcrow"
       },
       {
         "id": 3,
-        "name": "Brutal Ravens"
+        "name": "Migration"
+      },
+      {
+        "id": 4,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 5,
+        "name": "Active Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Resolve"
+      },
+      {
+        "id": 7,
+        "name": "Additional Raven"
+      },
+      {
+        "id": 8,
+        "name": "Versatile"
       }
     ]
   },
@@ -1097,15 +1357,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Frost Bolt"
+        "name": "Relentless Bolt"
       },
       {
         "id": 2,
-        "name": "Flickering Frost Bolt"
+        "name": "Shatter"
       },
       {
         "id": 3,
-        "name": "Glinting Frost Bolt"
+        "name": "Static Shock"
+      },
+      {
+        "id": 4,
+        "name": "Barrier"
+      },
+      {
+        "id": 5,
+        "name": "Resource Generation"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Pierce"
       }
     ]
   },
@@ -1119,185 +1395,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Teleport"
+        "name": "Electrobolt"
       },
       {
         "id": 2,
-        "name": "Mystical Teleport"
+        "name": "Wormhole"
       },
       {
         "id": 3,
-        "name": "Shimmering Teleport"
+        "name": "Blaze"
+      },
+      {
+        "id": 4,
+        "name": "Weaken"
+      },
+      {
+        "id": 5,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 6,
+        "name": "Ferocity"
+      },
+      {
+        "id": 7,
+        "name": "Crackling Energy"
       }
     ]
-  },
-  {
-    "id": 288287,
-    "name": "Abundance",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 289512,
-    "name": "Nature's Resolve",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 289513,
-    "name": "Heightened Senses",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 289518,
-    "name": "Circle of Life",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 290420,
-    "name": "Iron Fur",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 290475,
-    "name": "Digitigrade Gait",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 290798,
-    "name": "Crushing Earth",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 290910,
-    "name": "Elemental Exposure",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 290911,
-    "name": "Ancestral Fortitude",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 290951,
-    "name": "Predatory Instinct",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 290954,
-    "name": "Natural Fortitude",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 290969,
-    "name": "Quickshift",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 290971,
-    "name": "Toxic Claws",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 291045,
-    "name": "Resonance",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 291046,
-    "name": "Endless Tempest",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 291047,
-    "name": "Electric Shock",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 291048,
-    "name": "Defiance",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 291078,
-    "name": "Earthen Might",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 291079,
-    "name": "Perfect Storm",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 291084,
-    "name": "Ursine Strength",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 291085,
-    "name": "Lupine Ferocity",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
   },
   {
     "id": 291215,
@@ -1309,15 +1433,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Frost Nova"
+        "name": "Shatter"
       },
       {
         "id": 2,
-        "name": "Mystical Frost Nova"
+        "name": "Cold Front"
       },
       {
         "id": 3,
-        "name": "Shimmering Frost Nova"
+        "name": "Freezing Mist"
+      },
+      {
+        "id": 4,
+        "name": "Size Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Resource Generation"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Charge"
       }
     ]
   },
@@ -1331,15 +1471,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Frozen Orb"
+        "name": "Seeking Orb"
       },
       {
         "id": 2,
-        "name": "Destructive Frozen Orb"
+        "name": "Shattered Path"
       },
       {
         "id": 3,
-        "name": "Greater Frozen Orb"
+        "name": "Great Orb of Fire"
+      },
+      {
+        "id": 4,
+        "name": "Damage Over Time Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Barrier"
+      },
+      {
+        "id": 6,
+        "name": "Explosion Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Duration Bonus"
       }
     ]
   },
@@ -1353,15 +1509,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Blizzard"
+        "name": "Exposure"
       },
       {
         "id": 2,
-        "name": "Mage's Blizzard"
+        "name": "Hailstorm"
       },
       {
         "id": 3,
-        "name": "Wizard's Blizzard"
+        "name": "Static Field"
+      },
+      {
+        "id": 4,
+        "name": "Barrier"
+      },
+      {
+        "id": 5,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Seek and Duration Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Resource Generation"
       }
     ]
   },
@@ -1375,15 +1547,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Ice Blades"
+        "name": "Ice Crack"
       },
       {
         "id": 2,
-        "name": "Roaring Ice Blades"
+        "name": "Frozen Tomb"
       },
       {
         "id": 3,
-        "name": "Invoked Ice Blades"
+        "name": "Blazing Blades"
+      },
+      {
+        "id": 4,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Area Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 7,
+        "name": "Duration Bonus"
       }
     ]
   },
@@ -1397,11 +1585,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Deep Freeze"
+        "name": "Frigid Ward"
       },
       {
         "id": 2,
-        "name": "Supreme Deep Freeze"
+        "name": "Bonechill"
+      },
+      {
+        "id": 3,
+        "name": "Glacier"
+      },
+      {
+        "id": 4,
+        "name": "Duration"
+      },
+      {
+        "id": 5,
+        "name": "Vulnerable and Weakened"
+      },
+      {
+        "id": 6,
+        "name": "Reduce Cooldown"
+      },
+      {
+        "id": 7,
+        "name": "Cooldown with Barrier"
       }
     ]
   },
@@ -1415,15 +1623,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Lightning Spear"
+        "name": "Chain Reaction"
       },
       {
         "id": 2,
-        "name": "Roaring Lightning Spear"
+        "name": "Reverse Polarity"
       },
       {
         "id": 3,
-        "name": "Invoked Lightning Spear"
+        "name": "Flame Spear"
+      },
+      {
+        "id": 4,
+        "name": "Projectile Speed"
+      },
+      {
+        "id": 5,
+        "name": "Duration Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Critical Strike"
       }
     ]
   },
@@ -1437,15 +1661,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Incinerate"
+        "name": "Focused Flame"
       },
       {
         "id": 2,
-        "name": "Destructive Incinerate"
+        "name": "Flamethrower"
       },
       {
         "id": 3,
-        "name": "Greater Incinerate"
+        "name": "Disintegration"
+      },
+      {
+        "id": 4,
+        "name": "Healthy Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Healing"
+      },
+      {
+        "id": 6,
+        "name": "Overpower"
+      },
+      {
+        "id": 7,
+        "name": "Execute"
       }
     ]
   },
@@ -1459,25 +1699,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Chain Lightning"
+        "name": "Chain Whipping"
       },
       {
         "id": 2,
-        "name": "Destructive Chain Lightning"
+        "name": "Power Flux"
       },
       {
         "id": 3,
-        "name": "Greater Chain Lightning"
+        "name": "Chain of Cold"
+      },
+      {
+        "id": 4,
+        "name": "Additional Chains"
+      },
+      {
+        "id": 5,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Critical Strike Chance"
       }
     ]
-  },
-  {
-    "id": 292836,
-    "name": "Cold Front",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
   },
   {
     "id": 293195,
@@ -1489,15 +1737,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Ice Shards"
+        "name": "Piercing Cold"
       },
       {
         "id": 2,
-        "name": "Destructive Ice Shards"
+        "name": "Glacial Spike"
       },
       {
         "id": 3,
-        "name": "Greater Ice Shards"
+        "name": "Thunderbolt"
+      },
+      {
+        "id": 4,
+        "name": "Pierce Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Barrier"
+      },
+      {
+        "id": 7,
+        "name": "Hit Damage Bonus"
       }
     ]
   },
@@ -1511,11 +1775,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Inferno"
+        "name": "Living Bomb"
       },
       {
         "id": 2,
-        "name": "Supreme Inferno"
+        "name": "Meteor Shower"
+      },
+      {
+        "id": 3,
+        "name": "Lifecoil"
+      },
+      {
+        "id": 4,
+        "name": "Pull"
+      },
+      {
+        "id": 5,
+        "name": "Overpower"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Direct Damage Bonus"
       }
     ]
   },
@@ -1529,15 +1813,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Meteor"
+        "name": "Shooting Star"
       },
       {
         "id": 2,
-        "name": "Mage's Meteor"
+        "name": "Air Burst"
       },
       {
         "id": 3,
-        "name": "Wizard's Meteor"
+        "name": "Comet"
+      },
+      {
+        "id": 4,
+        "name": "Resource Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Immobilize"
+      },
+      {
+        "id": 6,
+        "name": "Damage and Size Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
   },
@@ -1551,15 +1851,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Ice Armor"
+        "name": "Permafrost"
       },
       {
         "id": 2,
-        "name": "Mystical Ice Armor"
+        "name": "Razor Ice"
       },
       {
         "id": 3,
-        "name": "Shimmering Ice Armor"
+        "name": "Blast Chill"
+      },
+      {
+        "id": 4,
+        "name": "Duration Bonus and Barrier"
+      },
+      {
+        "id": 5,
+        "name": "Frozen and Chill"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Resource Regeneration"
       }
     ]
   },
@@ -1573,15 +1889,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Arc Lash"
+        "name": "Full Lash"
       },
       {
         "id": 2,
-        "name": "Flickering Arc Lash"
+        "name": "Inescapable Reach"
       },
       {
         "id": 3,
-        "name": "Glinting Arc Lash"
+        "name": "Icy Thrash"
+      },
+      {
+        "id": 4,
+        "name": "Ferocity"
+      },
+      {
+        "id": 5,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Resource Generation"
+      },
+      {
+        "id": 7,
+        "name": "Stun"
       }
     ]
   },
@@ -1595,15 +1927,39 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Tornado"
+        "name": "Swelling Storm"
       },
       {
         "id": 2,
-        "name": "Raging Tornado"
+        "name": "Explosive Tornado"
       },
       {
         "id": 3,
-        "name": "Primal Tornado"
+        "name": "Greater Tornado"
+      },
+      {
+        "id": 4,
+        "name": "Additional Tornado"
+      },
+      {
+        "id": 5,
+        "name": "Increased Duration"
+      },
+      {
+        "id": 6,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 7,
+        "name": "Slow"
+      },
+      {
+        "id": 8,
+        "name": "Werewolf"
+      },
+      {
+        "id": 9,
+        "name": "Human"
       }
     ]
   },
@@ -1621,11 +1977,39 @@
       },
       {
         "id": 2,
-        "name": "Fierce Maul"
+        "name": "Wide Sweeps"
       },
       {
         "id": 3,
-        "name": "Wild Maul"
+        "name": "Reckless Rage"
+      },
+      {
+        "id": 4,
+        "name": "Stone Fists"
+      },
+      {
+        "id": 5,
+        "name": "Berserking"
+      },
+      {
+        "id": 6,
+        "name": "Resolve"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
+      },
+      {
+        "id": 8,
+        "name": "Spirit"
+      },
+      {
+        "id": 9,
+        "name": "Werewolf"
+      },
+      {
+        "id": 10,
+        "name": "Werebear"
       }
     ]
   },
@@ -1639,19 +2023,43 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Storm Strike"
+        "name": "Chain Reaction"
       },
       {
         "id": 2,
-        "name": "Fierce Storm Strike"
+        "name": "Storm Hammer"
       },
       {
         "id": 3,
-        "name": "Wild Storm Strike"
+        "name": "Focused Strike"
       },
       {
         "id": 4,
-        "name": "Empowering Storm Strike"
+        "name": "Armor"
+      },
+      {
+        "id": 5,
+        "name": "Additional Chain"
+      },
+      {
+        "id": 6,
+        "name": "Ferocity"
+      },
+      {
+        "id": 7,
+        "name": "Spirit"
+      },
+      {
+        "id": 8,
+        "name": "Werebear"
+      },
+      {
+        "id": 9,
+        "name": "Werewolf"
+      },
+      {
+        "id": 10,
+        "name": "Human"
       }
     ]
   },
@@ -1665,11 +2073,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Call of the Ancients"
+        "name": "Empowered"
       },
       {
         "id": 2,
-        "name": "Supreme Call of the Ancients"
+        "name": "The Chosen"
+      },
+      {
+        "id": 3,
+        "name": "Highlander"
+      },
+      {
+        "id": 4,
+        "name": "Ancient Attack Speed"
+      },
+      {
+        "id": 5,
+        "name": "Attack Speed and Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Damage Reduction"
       }
     ]
   },
@@ -1683,19 +2111,39 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Landslide"
+        "name": "Continental Shift"
       },
       {
         "id": 2,
-        "name": "Primal Landslide"
+        "name": "Vengeance of Earth"
       },
       {
         "id": 3,
-        "name": "Raging Landslide"
+        "name": "Land Mine"
       },
       {
         "id": 4,
-        "name": "Torrential Landslide"
+        "name": "Initial Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Additional Pillar"
+      },
+      {
+        "id": 6,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
+      },
+      {
+        "id": 8,
+        "name": "Werebear"
+      },
+      {
+        "id": 9,
+        "name": "Human"
       }
     ]
   },
@@ -1709,15 +2157,35 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Poison Creeper"
+        "name": "Germinate"
       },
       {
         "id": 2,
-        "name": "Ferocious Poison Creeper"
+        "name": "Carnivorous"
       },
       {
         "id": 3,
-        "name": "Brutal Poison Creeper"
+        "name": "Toxic Vegetation"
+      },
+      {
+        "id": 4,
+        "name": "Additional Poison Creeper"
+      },
+      {
+        "id": 5,
+        "name": "Active Poisoning Duration"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
+      },
+      {
+        "id": 8,
+        "name": "Versatile"
       }
     ]
   },
@@ -1731,25 +2199,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Death Blow"
+        "name": "Consecutive"
       },
       {
         "id": 2,
-        "name": "Fighter's Death Blow"
+        "name": "Sonic Boom"
       },
       {
         "id": 3,
-        "name": "Warrior's Death Blow"
+        "name": "Blast"
+      },
+      {
+        "id": 4,
+        "name": "Execute"
+      },
+      {
+        "id": 5,
+        "name": "Overpower"
+      },
+      {
+        "id": 6,
+        "name": "Fury Generation"
+      },
+      {
+        "id": 7,
+        "name": "Charges"
       }
     ]
-  },
-  {
-    "id": 333197,
-    "name": "Esu's Ferocity",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
   },
   {
     "id": 333421,
@@ -1761,57 +2237,37 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Earthen Bulwark"
+        "name": "Reconstruction"
       },
       {
         "id": 2,
-        "name": "Innate Earthen Bulwark"
+        "name": "Earthen Shrapnel"
       },
       {
         "id": 3,
-        "name": "Preserving Earthen Bulwark"
+        "name": "Travertine Bulwark"
+      },
+      {
+        "id": 4,
+        "name": "Barrier Duration and Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Fortify and Healing"
+      },
+      {
+        "id": 6,
+        "name": "Overpower"
+      },
+      {
+        "id": 7,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 8,
+        "name": "Versatile"
       }
     ]
-  },
-  {
-    "id": 334217,
-    "name": "Icy Touch",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 334224,
-    "name": "Permafrost",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 334380,
-    "name": "Avalanche",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 334677,
-    "name": "Electrocution",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 334791,
-    "name": "Overflowing Energy",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
   },
   {
     "id": 336238,
@@ -1823,41 +2279,37 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Debilitating Roar"
+        "name": "Booming Roar"
       },
       {
         "id": 2,
-        "name": "Preserving Debilitating Roar"
+        "name": "Survival Instincts"
       },
       {
         "id": 3,
-        "name": "Innate Debilitating Roar"
+        "name": "Roar of Resolve"
+      },
+      {
+        "id": 4,
+        "name": "Increased Duration"
+      },
+      {
+        "id": 5,
+        "name": "Slow"
+      },
+      {
+        "id": 6,
+        "name": "Maximum Life"
+      },
+      {
+        "id": 7,
+        "name": "Cooldown"
+      },
+      {
+        "id": 8,
+        "name": "Werebear"
       }
     ]
-  },
-  {
-    "id": 346247,
-    "name": "Call of the Wild",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 346283,
-    "name": "Neurotoxin",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 350820,
-    "name": "Natural Disaster",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
   },
   {
     "id": 351722,
@@ -1869,11 +2321,39 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Petrify"
+        "name": "Greater Petrify"
       },
       {
         "id": 2,
-        "name": "Supreme Petrify"
+        "name": "Seismic Shift"
+      },
+      {
+        "id": 3,
+        "name": "Enduring Consequences"
+      },
+      {
+        "id": 4,
+        "name": "Duration"
+      },
+      {
+        "id": 5,
+        "name": "Spirit"
+      },
+      {
+        "id": 6,
+        "name": "Resolve"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
+      },
+      {
+        "id": 8,
+        "name": "Human"
+      },
+      {
+        "id": 9,
+        "name": "Werebear"
       }
     ]
   },
@@ -1887,15 +2367,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Shadow Step"
+        "name": "Sight Unseen"
       },
       {
         "id": 2,
-        "name": "Disciplined Shadow Step"
+        "name": "Safe Arrival"
       },
       {
         "id": 3,
-        "name": "Methodical Shadow Step"
+        "name": "Artifice"
+      },
+      {
+        "id": 4,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 5,
+        "name": "Cooldown"
+      },
+      {
+        "id": 6,
+        "name": "Cleave"
+      },
+      {
+        "id": 7,
+        "name": "Unstoppable"
       }
     ]
   },
@@ -1909,15 +2405,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Rapid Fire"
+        "name": "Ruckus"
       },
       {
         "id": 2,
-        "name": "Improved Rapid Fire"
+        "name": "Explosive Shot"
       },
       {
         "id": 3,
-        "name": "Advanced Rapid Fire"
+        "name": "Breakneck Quiver"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike"
+      },
+      {
+        "id": 5,
+        "name": "Energy Gain"
+      },
+      {
+        "id": 6,
+        "name": "Ferocity"
+      },
+      {
+        "id": 7,
+        "name": "Additional Projectiles"
       }
     ]
   },
@@ -1931,15 +2443,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Smoke Grenade"
+        "name": "Silhouette"
       },
       {
         "id": 2,
-        "name": "Countering Smoke Grenade"
+        "name": "Poison Grenade"
       },
       {
         "id": 3,
-        "name": "Subverting Smoke Grenade"
+        "name": "Shade Grenade"
+      },
+      {
+        "id": 4,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 5,
+        "name": "Increased Duration and Damage"
+      },
+      {
+        "id": 6,
+        "name": "Size"
+      },
+      {
+        "id": 7,
+        "name": "Charge or Energy Cost Reduction"
       }
     ]
   },
@@ -1953,19 +2481,43 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Wind Shear"
+        "name": "Boomerang"
       },
       {
         "id": 2,
-        "name": "Fierce Wind Shear"
+        "name": "Wind Swept"
       },
       {
         "id": 3,
-        "name": "Wild Wind Shear"
+        "name": "Solar Wind"
       },
       {
         "id": 4,
-        "name": "Forceful Wind Shear"
+        "name": "Spirit"
+      },
+      {
+        "id": 5,
+        "name": "Barrier"
+      },
+      {
+        "id": 6,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 7,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 8,
+        "name": "Werewolf"
+      },
+      {
+        "id": 9,
+        "name": "Werebear"
+      },
+      {
+        "id": 10,
+        "name": "Human"
       }
     ]
   },
@@ -1979,11 +2531,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Shadow Clone"
+        "name": "Relentless"
       },
       {
         "id": 2,
-        "name": "Supreme Shadow Clone"
+        "name": "Awakening"
+      },
+      {
+        "id": 3,
+        "name": "Sentry"
+      },
+      {
+        "id": 4,
+        "name": "Resolve"
+      },
+      {
+        "id": 5,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 6,
+        "name": "Weaken Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Cooldown"
       }
     ]
   },
@@ -1997,15 +2569,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Flurry"
+        "name": "Encircling Blades"
       },
       {
         "id": 2,
-        "name": "Improved Flurry"
+        "name": "Transporter"
       },
       {
         "id": 3,
-        "name": "Advanced Flurry"
+        "name": "Vehemence"
+      },
+      {
+        "id": 4,
+        "name": "Fortify"
+      },
+      {
+        "id": 5,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 6,
+        "name": "Damage Increase"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
       }
     ]
   },
@@ -2019,15 +2607,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Poison Imbuement"
+        "name": "Toxic Touch"
       },
       {
         "id": 2,
-        "name": "Mixed Poison Imbuement"
+        "name": "Sapper"
       },
       {
         "id": 3,
-        "name": "Blended Poison Imbuement"
+        "name": "Corrosive Ring"
+      },
+      {
+        "id": 4,
+        "name": "Energy"
+      },
+      {
+        "id": 5,
+        "name": "Cooldown"
+      },
+      {
+        "id": 6,
+        "name": "Critical Strike"
+      },
+      {
+        "id": 7,
+        "name": "Duration"
       }
     ]
   },
@@ -2041,15 +2645,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Dash"
+        "name": "Shadow Play"
       },
       {
         "id": 2,
-        "name": "Disciplined Dash"
+        "name": "Detonation"
       },
       {
         "id": 3,
-        "name": "Methodical Dash"
+        "name": "Primer"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 5,
+        "name": "Weaken"
+      },
+      {
+        "id": 6,
+        "name": "Charges and Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
       }
     ]
   },
@@ -2063,15 +2683,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Cold Imbuement"
+        "name": "Frozen Heart"
       },
       {
         "id": 2,
-        "name": "Mixed Cold Imbuement"
+        "name": "Buffered Battery"
       },
       {
         "id": 3,
-        "name": "Blended Cold Imbuement"
+        "name": "Crystal Distillation"
+      },
+      {
+        "id": 4,
+        "name": "Energy"
+      },
+      {
+        "id": 5,
+        "name": "Cooldown"
+      },
+      {
+        "id": 6,
+        "name": "Resolve"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
   },
@@ -2085,15 +2721,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Heartseeker"
+        "name": "Procession"
       },
       {
         "id": 2,
-        "name": "Fundamental Heartseeker"
+        "name": "Devouring Arrow"
       },
       {
         "id": 3,
-        "name": "Primary Heartseeker"
+        "name": "Confluence"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 5,
+        "name": "Energy"
+      },
+      {
+        "id": 6,
+        "name": "Pierce"
+      },
+      {
+        "id": 7,
+        "name": "Weakened"
       }
     ]
   },
@@ -2107,15 +2759,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Puncture"
+        "name": "Propulsion"
       },
       {
         "id": 2,
-        "name": "Fundamental Puncture"
+        "name": "Three of a Kind"
       },
       {
         "id": 3,
-        "name": "Primary Puncture"
+        "name": "Blight Burst"
+      },
+      {
+        "id": 4,
+        "name": "Energy"
+      },
+      {
+        "id": 5,
+        "name": "Crowd Control"
+      },
+      {
+        "id": 6,
+        "name": "Overpower"
+      },
+      {
+        "id": 7,
+        "name": "Pierce"
       }
     ]
   },
@@ -2129,15 +2797,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Challenging Shout"
+        "name": "Bawl"
       },
       {
         "id": 2,
-        "name": "Tactical Challenging Shout"
+        "name": "Talic"
       },
       {
         "id": 3,
-        "name": "Strategic Challenging Shout"
+        "name": "Raging"
+      },
+      {
+        "id": 4,
+        "name": "Weaken"
+      },
+      {
+        "id": 5,
+        "name": "Duration Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Fury Generation"
+      },
+      {
+        "id": 7,
+        "name": "Damage Bonus"
       }
     ]
   },
@@ -2151,15 +2835,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Penetrating Shot"
+        "name": "Trick Shot"
       },
       {
         "id": 2,
-        "name": "Advanced Penetrating Shot"
+        "name": "Shadow Shot"
       },
       {
         "id": 3,
-        "name": "Improved Penetrating Shot"
+        "name": "Ballista"
+      },
+      {
+        "id": 4,
+        "name": "Damage Increase"
+      },
+      {
+        "id": 5,
+        "name": "Slow"
+      },
+      {
+        "id": 6,
+        "name": "Ferocity"
+      },
+      {
+        "id": 7,
+        "name": "Vulnerable"
       }
     ]
   },
@@ -2173,15 +2873,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Shadow Imbuement"
+        "name": "Endemic"
       },
       {
         "id": 2,
-        "name": "Mixed Shadow Imbuement"
+        "name": "Dark Dance"
       },
       {
         "id": 3,
-        "name": "Blended Shadow Imbuement"
+        "name": "Shadow Play"
+      },
+      {
+        "id": 4,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 5,
+        "name": "Duration"
+      },
+      {
+        "id": 6,
+        "name": "Ferocity"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
   },
@@ -2195,153 +2911,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Caltrops"
+        "name": "Catch Cold"
       },
       {
         "id": 2,
-        "name": "Disciplined Caltrops"
+        "name": "Mired Sharpshooter"
       },
       {
         "id": 3,
-        "name": "Methodical Caltrops"
+        "name": "Pernicious Poisons"
+      },
+      {
+        "id": 4,
+        "name": "Ferocity"
+      },
+      {
+        "id": 5,
+        "name": "Size"
+      },
+      {
+        "id": 6,
+        "name": "Critical Strike"
+      },
+      {
+        "id": 7,
+        "name": "Duration"
       }
     ]
-  },
-  {
-    "id": 391629,
-    "name": "Stutter Step",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391662,
-    "name": "Mending Obscurity",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391663,
-    "name": "Weapon Mastery",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391664,
-    "name": "Rugged",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391666,
-    "name": "Impetus",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391667,
-    "name": "Alchemical Advantage",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391669,
-    "name": "Close Quarters Combat",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391671,
-    "name": "Agile",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391673,
-    "name": "Sturdy",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391674,
-    "name": "Alchemist's Fortune",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391675,
-    "name": "Deadly Venom",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391676,
-    "name": "Exploit",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391677,
-    "name": "Consuming Shadows",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391678,
-    "name": "Frigid Finesse",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391679,
-    "name": "Malice",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391680,
-    "name": "Exposure",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 391681,
-    "name": "Momentum",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
   },
   {
     "id": 394251,
@@ -2353,11 +2949,35 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Lacerate"
+        "name": "Hunter Killer"
       },
       {
         "id": 2,
-        "name": "Supreme Lacerate"
+        "name": "Toxin Outburst"
+      },
+      {
+        "id": 3,
+        "name": "Temperance Training"
+      },
+      {
+        "id": 4,
+        "name": "Additional Strikes"
+      },
+      {
+        "id": 5,
+        "name": "Damage Bonus to Target"
+      },
+      {
+        "id": 6,
+        "name": "Damage Bonus to Multiple"
+      },
+      {
+        "id": 7,
+        "name": "Ferocity"
+      },
+      {
+        "id": 8,
+        "name": "Werewolf"
       }
     ]
   },
@@ -2371,15 +2991,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Improved Twisting Blades"
+        "name": "Sleight of Hand"
       },
       {
         "id": 2,
-        "name": "Advanced Twisting Blades"
+        "name": "Bladedancer"
       },
       {
         "id": 3,
-        "name": "Enhanced Twisting Blades"
+        "name": "Twisted Twin"
+      },
+      {
+        "id": 4,
+        "name": "Energy Cost Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Damage Increase and Execute"
+      },
+      {
+        "id": 6,
+        "name": "Crowd Controlled or Weakened"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
       }
     ]
   },
@@ -2393,15 +3029,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Primary Blade Shift"
+        "name": "Range of Motion"
       },
       {
         "id": 2,
-        "name": "Enhanced Blade Shift"
+        "name": "Grenade Shift"
       },
       {
         "id": 3,
-        "name": "Fundamental Blade Shift"
+        "name": "Impossible Escape"
+      },
+      {
+        "id": 4,
+        "name": "Resistance"
+      },
+      {
+        "id": 5,
+        "name": "Energy"
+      },
+      {
+        "id": 6,
+        "name": "Overpower"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
       }
     ]
   },
@@ -2415,21 +3067,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Supreme Rain of Arrows"
+        "name": "Monsoon"
       },
       {
         "id": 2,
-        "name": "Prime Rain of Arrows"
+        "name": "Crashing Waves"
+      },
+      {
+        "id": 3,
+        "name": "Flash Flood"
+      },
+      {
+        "id": 4,
+        "name": "Cooldown"
+      },
+      {
+        "id": 5,
+        "name": "Double Damage"
+      },
+      {
+        "id": 6,
+        "name": "Ferocity"
+      },
+      {
+        "id": 7,
+        "name": "Cast Speed and Lucky Hit"
       }
     ]
-  },
-  {
-    "id": 414638,
-    "name": "Precision Imbuement",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
   },
   {
     "id": 416057,
@@ -2441,15 +3105,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Invigorating Strike"
+        "name": "Accumulating Strike"
       },
       {
         "id": 2,
-        "name": "Fundamental Invigorating Strike"
+        "name": "Quick Strike"
       },
       {
         "id": 3,
-        "name": "Primary Invigorating Strike"
+        "name": "Enervating Strike"
+      },
+      {
+        "id": 4,
+        "name": "Energy"
+      },
+      {
+        "id": 5,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Healing"
       }
     ]
   },
@@ -2463,15 +3143,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Forceful Arrow"
+        "name": "Pin"
       },
       {
         "id": 2,
-        "name": "Fundamental Forceful Arrow"
+        "name": "Ender"
       },
       {
         "id": 3,
-        "name": "Primary Forceful Arrow"
+        "name": "Cloudburst"
+      },
+      {
+        "id": 4,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 5,
+        "name": "Energy"
+      },
+      {
+        "id": 6,
+        "name": "Ferocity"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
   },
@@ -2485,15 +3181,39 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Rabies"
+        "name": "Relapse"
       },
       {
         "id": 2,
-        "name": "Natural Rabies"
+        "name": "Superinfection"
       },
       {
         "id": 3,
-        "name": "Savage Rabies"
+        "name": "Malaise"
+      },
+      {
+        "id": 4,
+        "name": "Spread Distance"
+      },
+      {
+        "id": 5,
+        "name": "Poisoning Speed"
+      },
+      {
+        "id": 6,
+        "name": "Healing"
+      },
+      {
+        "id": 7,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 8,
+        "name": "Werewolf"
+      },
+      {
+        "id": 9,
+        "name": "Werebear"
       }
     ]
   },
@@ -2507,15 +3227,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Subverting Poison Trap"
+        "name": "Contamination"
       },
       {
         "id": 2,
-        "name": "Countering Poison Trap"
+        "name": "Infiltrator"
       },
       {
         "id": 3,
-        "name": "Enhanced Poison Trap"
+        "name": "Frostbite Trap"
+      },
+      {
+        "id": 4,
+        "name": "Knock Down"
+      },
+      {
+        "id": 5,
+        "name": "Resolve"
+      },
+      {
+        "id": 6,
+        "name": "Charges"
+      },
+      {
+        "id": 7,
+        "name": "Vulnerable"
       }
     ]
   },
@@ -2529,29 +3265,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Death Trap"
+        "name": "Sudden Death"
       },
       {
         "id": 2,
-        "name": "Supreme Death Trap"
+        "name": "Death Pit"
+      },
+      {
+        "id": 3,
+        "name": "Explosive Trigger"
+      },
+      {
+        "id": 4,
+        "name": "Cooldown"
+      },
+      {
+        "id": 5,
+        "name": "Dodge"
+      },
+      {
+        "id": 6,
+        "name": "Resolve"
+      },
+      {
+        "id": 7,
+        "name": "Weaken"
       }
     ]
-  },
-  {
-    "id": 423126,
-    "name": "Bestial Rampage",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 423721,
-    "name": "Reactive Defense",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
   },
   {
     "id": 432879,
@@ -2563,15 +3303,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Bone Spear"
+        "name": "Bone Spikes"
       },
       {
         "id": 2,
-        "name": "Supernatural Bone Spear"
+        "name": "Blood Spear"
       },
       {
         "id": 3,
-        "name": "Paranormal Bone Spear"
+        "name": "Shadow Splitter"
+      },
+      {
+        "id": 4,
+        "name": "First Hit Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Pierce Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
       }
     ]
   },
@@ -2585,15 +3341,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Reap"
+        "name": "Harvest"
       },
       {
         "id": 2,
-        "name": "Acolyte's Reap"
+        "name": "Cull The Weak"
       },
       {
         "id": 3,
-        "name": "Initiate's Reap"
+        "name": "Chilled To The Bone"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 5,
+        "name": "Essence Generation"
+      },
+      {
+        "id": 6,
+        "name": "Corpse Generation"
+      },
+      {
+        "id": 7,
+        "name": "Ferocity"
       }
     ]
   },
@@ -2607,15 +3379,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Corpse Explosion"
+        "name": "Bloody Mess"
       },
       {
         "id": 2,
-        "name": "Blighted Corpse Explosion"
+        "name": "Miasma"
       },
       {
         "id": 3,
-        "name": "Plagued Corpse Explosion"
+        "name": "Shrapnel"
+      },
+      {
+        "id": 4,
+        "name": "Multiple Corpses"
+      },
+      {
+        "id": 5,
+        "name": "Corpse Efficiency"
+      },
+      {
+        "id": 6,
+        "name": "Blood Orb"
+      },
+      {
+        "id": 7,
+        "name": "Essence Generation"
       }
     ]
   },
@@ -2629,15 +3417,39 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Claw"
+        "name": "Viper Strikes"
       },
       {
         "id": 2,
-        "name": "Fierce Claw"
+        "name": "Lightning Claw"
       },
       {
         "id": 3,
-        "name": "Wild Claw"
+        "name": "Dash"
+      },
+      {
+        "id": 4,
+        "name": "Spirit"
+      },
+      {
+        "id": 5,
+        "name": "Ferocity"
+      },
+      {
+        "id": 6,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 7,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 8,
+        "name": "Werebear"
+      },
+      {
+        "id": 9,
+        "name": "Werewolf"
       }
     ]
   },
@@ -2651,15 +3463,107 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Barrage"
+        "name": "Multishot"
       },
       {
         "id": 2,
-        "name": "Improved Barrage"
+        "name": "Broadside"
       },
       {
         "id": 3,
-        "name": "Advanced Barrage"
+        "name": "Succession"
+      },
+      {
+        "id": 4,
+        "name": "Energy Cost Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Vulnerable or Weakened"
+      },
+      {
+        "id": 6,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
+      }
+    ]
+  },
+  {
+    "id": 439912,
+    "name": "Skeleton Warrior",
+    "classes": [
+      "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Master of Puppets"
+      },
+      {
+        "id": 2,
+        "name": "Service and Sacrifice"
+      },
+      {
+        "id": 3,
+        "name": "Litany of Death"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Healing"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
+      }
+    ]
+  },
+  {
+    "id": 440313,
+    "name": "Skeleton Mage",
+    "classes": [
+      "Necromancer"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Coven"
+      },
+      {
+        "id": 2,
+        "name": "Gift of Death"
+      },
+      {
+        "id": 3,
+        "name": "Singularity"
+      },
+      {
+        "id": 4,
+        "name": "Duration Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 6,
+        "name": "Crowd Control Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Ferocity, Resolve, or Overpower"
       }
     ]
   },
@@ -2669,7 +3573,37 @@
     "classes": [
       "Necromancer"
     ],
-    "isactive": true
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Gravebloom"
+      },
+      {
+        "id": 2,
+        "name": "Fel Gluttony"
+      },
+      {
+        "id": 3,
+        "name": "Gargantua"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Resolve, Overpower, or Ferocity"
+      }
+    ]
   },
   {
     "id": 463175,
@@ -2681,15 +3615,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Decompose"
+        "name": "Dry Rot"
       },
       {
         "id": 2,
-        "name": "Acolyte's Decompose"
+        "name": "Putrid Burst"
       },
       {
         "id": 3,
-        "name": "Initiate's Decompose"
+        "name": "Rip and Tear"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Barrier"
+      },
+      {
+        "id": 6,
+        "name": "Crowd Control"
+      },
+      {
+        "id": 7,
+        "name": "Lucky Hit Chance"
       }
     ]
   },
@@ -2703,15 +3653,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Corpse Tendrils"
+        "name": "Bitter Harvest"
       },
       {
         "id": 2,
-        "name": "Blighted Corpse Tendrils"
+        "name": "Get Over Here!"
       },
       {
         "id": 3,
-        "name": "Plagued Corpse Tendrils"
+        "name": "Jaws Of Death"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 5,
+        "name": "Essence Generation"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Lucky Hit Chance"
       }
     ]
   },
@@ -2725,15 +3691,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Bone Spirit"
+        "name": "Poltergeists"
       },
       {
         "id": 2,
-        "name": "Ghastly Bone Spirit"
+        "name": "Unfinished Business"
       },
       {
         "id": 3,
-        "name": "Dreadful Bone Spirit"
+        "name": "Astral Projection"
+      },
+      {
+        "id": 4,
+        "name": "Charges"
+      },
+      {
+        "id": 5,
+        "name": "Core Skill"
+      },
+      {
+        "id": 6,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Maximum Essence"
       }
     ]
   },
@@ -2747,15 +3729,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Blight"
+        "name": "Piercing Darkness"
       },
       {
         "id": 2,
-        "name": "Supernatural Blight"
+        "name": "Whirlpool"
       },
       {
         "id": 3,
-        "name": "Paranormal Blight"
+        "name": "Volatile Blood"
+      },
+      {
+        "id": 4,
+        "name": "Area Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Size Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Crowd Control Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Lucky Hit Chance"
       }
     ]
   },
@@ -2769,15 +3767,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Sever"
+        "name": "Reaping Lotus"
       },
       {
         "id": 2,
-        "name": "Supernatural Sever"
+        "name": "Inexorable Reaper"
       },
       {
         "id": 3,
-        "name": "Paranormal Sever"
+        "name": "Cold Pursuit"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Crowd Control and Corpse Generation"
+      },
+      {
+        "id": 7,
+        "name": "Ferocity"
       }
     ]
   },
@@ -2791,15 +3805,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Hemorrhage"
+        "name": "Blood Boil"
       },
       {
         "id": 2,
-        "name": "Acolyte's Hemorrhage"
+        "name": "Blood Runs Cold"
       },
       {
         "id": 3,
-        "name": "Initiate's Hemorrhage"
+        "name": "Soul Rip"
+      },
+      {
+        "id": 4,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 5,
+        "name": "Blood Orb"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
   },
@@ -2813,15 +3843,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Blood Mist"
+        "name": "Blood Transfusion"
       },
       {
         "id": 2,
-        "name": "Ghastly Blood Mist"
+        "name": "Blood Rush"
       },
       {
         "id": 3,
-        "name": "Dreadful Blood Mist"
+        "name": "Devouring Mist"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike"
+      },
+      {
+        "id": 5,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 6,
+        "name": "Overpower"
+      },
+      {
+        "id": 7,
+        "name": "Vulnerable and Slow"
       }
     ]
   },
@@ -2835,177 +3881,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Ghastly Bone Prison"
+        "name": "Bramble"
       },
       {
         "id": 2,
-        "name": "Enhanced Bone Prison"
+        "name": "Plunging Darkness"
       },
       {
         "id": 3,
-        "name": "Dreadful Bone Prison"
+        "name": "Life Imprisonment"
+      },
+      {
+        "id": 4,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Essence Generation"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
       }
     ]
-  },
-  {
-    "id": 495560,
-    "name": "Bonded in Essence",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495561,
-    "name": "Evulsion",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495562,
-    "name": "Hellbent Commander",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495563,
-    "name": "Hewed Flesh",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495564,
-    "name": "Imperfectly Balanced",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495565,
-    "name": "Compound Fracture",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495568,
-    "name": "Reaper's Pursuit",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495569,
-    "name": "Gruesome Mending",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495570,
-    "name": "Rathma's Vigor",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495571,
-    "name": "Kalan's Edict",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495572,
-    "name": "Stand Alone",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495573,
-    "name": "Crippling Darkness",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495574,
-    "name": "Terror",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495575,
-    "name": "Amplify Damage",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495576,
-    "name": "Inspiring Leader",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495577,
-    "name": "Ossified Essence",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495578,
-    "name": "Coalesced Blood",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495579,
-    "name": "Fueled by Death",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495580,
-    "name": "Transfusion",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 495581,
-    "name": "Shadowblight",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
   },
   {
     "id": 497193,
@@ -3017,11 +3919,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Army of the Dead"
+        "name": "Unyielding Commander"
       },
       {
         "id": 2,
-        "name": "Supreme Army of the Dead"
+        "name": "Pile the Bodies"
+      },
+      {
+        "id": 3,
+        "name": "Dead Cold"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Passive Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Corpse Generation"
       }
     ]
   },
@@ -3035,11 +3957,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Bone Storm"
+        "name": "Roll The Bones"
       },
       {
         "id": 2,
-        "name": "Supreme Bone Storm"
+        "name": "Shadow And Bone"
+      },
+      {
+        "id": 3,
+        "name": "Hungry Cyclone"
+      },
+      {
+        "id": 4,
+        "name": "Damage Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Duration Increase"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Barrier"
       }
     ]
   },
@@ -3053,15 +3995,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Bone Splinters"
+        "name": "Bouncing Spines"
       },
       {
         "id": 2,
-        "name": "Acolyte's Bone Splinters"
+        "name": "Bloody Splinter"
       },
       {
         "id": 3,
-        "name": "Initiate's Bone Splinters"
+        "name": "Shadow Seekers"
+      },
+      {
+        "id": 4,
+        "name": "Projectiles"
+      },
+      {
+        "id": 5,
+        "name": "Essence Generation"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
       }
     ]
   },
@@ -3075,41 +4033,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Supernatural Blood Lance"
+        "name": "Blood Seeker"
       },
       {
         "id": 2,
-        "name": "Enhanced Blood Lance"
+        "name": "Gore Quills"
       },
       {
         "id": 3,
-        "name": "Paranormal Blood Lance"
+        "name": "Festering Wound"
+      },
+      {
+        "id": 4,
+        "name": "Ricochet"
+      },
+      {
+        "id": 5,
+        "name": "Fortify"
+      },
+      {
+        "id": 6,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
-  },
-  {
-    "id": 503368,
-    "name": "Drain Vitality",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 503508,
-    "name": "Serration",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 510270,
-    "name": "Siphoning Strikes",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
   },
   {
     "id": 512222,
@@ -3121,15 +4071,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Iron Skin"
+        "name": "Juggernaut"
       },
       {
         "id": 2,
-        "name": "Tactical Iron Skin"
+        "name": "Endure"
       },
       {
         "id": 3,
-        "name": "Strategic Iron Skin"
+        "name": "Retaliation"
+      },
+      {
+        "id": 4,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 5,
+        "name": "Weaken"
+      },
+      {
+        "id": 6,
+        "name": "Resolve"
+      },
+      {
+        "id": 7,
+        "name": "Maximum Life"
       }
     ]
   },
@@ -3143,15 +4109,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Ball Lightning"
+        "name": "Attraction"
       },
       {
         "id": 2,
-        "name": "Mage's Ball Lightning"
+        "name": "Orbital"
       },
       {
         "id": 3,
-        "name": "Wizard's Ball Lightning"
+        "name": "Implosion"
+      },
+      {
+        "id": 4,
+        "name": "Multiple Projectiles"
+      },
+      {
+        "id": 5,
+        "name": "Ferocity"
+      },
+      {
+        "id": 6,
+        "name": "Crackling Energy"
+      },
+      {
+        "id": 7,
+        "name": "Damage Bonus"
       }
     ]
   },
@@ -3165,11 +4147,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Unstable Currents"
+        "name": "Ramping Currents"
       },
       {
         "id": 2,
-        "name": "Supreme Unstable Currents"
+        "name": "Boundless"
+      },
+      {
+        "id": 3,
+        "name": "Thunder God"
+      },
+      {
+        "id": 4,
+        "name": "Ferocity"
+      },
+      {
+        "id": 5,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Cost Reduction"
       }
     ]
   },
@@ -3183,15 +4185,43 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Earth Spike"
+        "name": "Megalith Stone"
       },
       {
         "id": 2,
-        "name": "Fierce Earth Spike"
+        "name": "Seismic Shift"
       },
       {
         "id": 3,
-        "name": "Wild Earth Spike"
+        "name": "Aftershock"
+      },
+      {
+        "id": 4,
+        "name": "Spirit"
+      },
+      {
+        "id": 5,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 6,
+        "name": "Overpower"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
+      },
+      {
+        "id": 8,
+        "name": "Werewolf"
+      },
+      {
+        "id": 9,
+        "name": "Werebear"
+      },
+      {
+        "id": 10,
+        "name": "Human"
       }
     ]
   },
@@ -3205,19 +4235,39 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Lightning Storm"
+        "name": "Supercell"
       },
       {
         "id": 2,
-        "name": "Raging Lightning Storm"
+        "name": "Omnibolt"
       },
       {
         "id": 3,
-        "name": "Primal Lightning Storm"
+        "name": "Hero of the Storm"
       },
       {
         "id": 4,
-        "name": "Enduring Lightning Storm"
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Additional Strikes"
+      },
+      {
+        "id": 6,
+        "name": "Minimum Strikes"
+      },
+      {
+        "id": 7,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 8,
+        "name": "Werewolf"
+      },
+      {
+        "id": 9,
+        "name": "Human"
       }
     ]
   },
@@ -3231,33 +4281,37 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Blood Howl"
+        "name": "Hungering Howl"
       },
       {
         "id": 2,
-        "name": "Innate Blood Howl"
+        "name": "Spirit Howl"
       },
       {
         "id": 3,
-        "name": "Preserving Blood Howl"
+        "name": "Berserking Howl"
+      },
+      {
+        "id": 4,
+        "name": "Healing"
+      },
+      {
+        "id": 5,
+        "name": "Dodge Chance"
+      },
+      {
+        "id": 6,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 7,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 8,
+        "name": "Werewolf"
       }
     ]
-  },
-  {
-    "id": 588207,
-    "name": "Rapid Ossification",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 588208,
-    "name": "Tides of Blood",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
   },
   {
     "id": 592163,
@@ -3269,25 +4323,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Blood Surge"
+        "name": "Bloodbath"
       },
       {
         "id": 2,
-        "name": "Supernatural Blood Surge"
+        "name": "You And What Army?"
       },
       {
         "id": 3,
-        "name": "Paranormal Blood Surge"
+        "name": "Pins and Needles"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Fortify"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
-  },
-  {
-    "id": 603603,
-    "name": "Heavy Handed",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
   },
   {
     "id": 658216,
@@ -3299,37 +4361,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Blood Wave"
+        "name": "Tides of Blood"
       },
       {
         "id": 2,
-        "name": "Supreme Blood Wave"
+        "name": "Path of Darkness"
+      },
+      {
+        "id": 3,
+        "name": "Hematolagnia"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Damage Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Blood Orb"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
-  },
-  {
-    "id": 748825,
-    "name": "Nature's Fury",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 777009,
-    "name": "Aftermath",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 777505,
-    "name": "Unstable Elixirs",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
   },
   {
     "id": 786381,
@@ -3341,25 +4399,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Dark Shroud"
+        "name": "Shadow Dancer"
       },
       {
         "id": 2,
-        "name": "Countering Dark Shroud"
+        "name": "Overflow"
       },
       {
         "id": 3,
-        "name": "Subverting Dark Shroud"
+        "name": "Best Served Cold"
+      },
+      {
+        "id": 4,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 5,
+        "name": "Critical Strike"
+      },
+      {
+        "id": 6,
+        "name": "Consume Chance"
+      },
+      {
+        "id": 7,
+        "name": "Healing"
       }
     ]
-  },
-  {
-    "id": 786834,
-    "name": "Victimize",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
   },
   {
     "id": 794965,
@@ -3371,15 +4437,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Concealment"
+        "name": "Calculation"
       },
       {
         "id": 2,
-        "name": "Countering Concealment"
+        "name": "Recuperate"
       },
       {
         "id": 3,
-        "name": "Subverting Concealment"
+        "name": "Concealing Fate"
+      },
+      {
+        "id": 4,
+        "name": "Energy"
+      },
+      {
+        "id": 5,
+        "name": "Resolve"
+      },
+      {
+        "id": 6,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 7,
+        "name": "Ferocity"
       }
     ]
   },
@@ -3393,15 +4475,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Decrepify"
+        "name": "Dizzying Curse"
       },
       {
         "id": 2,
-        "name": "Abhorrent Decrepify"
+        "name": "Life Tap"
       },
       {
         "id": 3,
-        "name": "Horrid Decrepify"
+        "name": "Unholy Frenzy"
+      },
+      {
+        "id": 4,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 5,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 7,
+        "name": "Resolve"
       }
     ]
   },
@@ -3415,41 +4513,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Iron Maiden"
+        "name": "Schadenfreude"
       },
       {
         "id": 2,
-        "name": "Abhorrent Iron Maiden"
+        "name": "Torture Artist"
       },
       {
         "id": 3,
-        "name": "Horrid Iron Maiden"
+        "name": "Blood Maiden"
+      },
+      {
+        "id": 4,
+        "name": "Essence Generation"
+      },
+      {
+        "id": 5,
+        "name": "Execute and Fortify"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Ferocity and Overpower"
       }
     ]
-  },
-  {
-    "id": 943744,
-    "name": "Skeletal Warrior Mastery",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 943745,
-    "name": "Skeletal Mage Mastery",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 943748,
-    "name": "Golem Mastery",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
   },
   {
     "id": 964631,
@@ -3461,497 +4551,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Steel Grasp"
+        "name": "Chain Whip"
       },
       {
         "id": 2,
-        "name": "Fighter's Steel Grasp"
+        "name": "Devil's Chain"
       },
       {
         "id": 3,
-        "name": "Warrior's Steel Grasp"
+        "name": "Solo Chain"
+      },
+      {
+        "id": 4,
+        "name": "Berserking"
+      },
+      {
+        "id": 5,
+        "name": "Extra Charges"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Weaken"
       }
     ]
-  },
-  {
-    "id": 1000301,
-    "name": "Stone Guard",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000308,
-    "name": "Safeguard",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000309,
-    "name": "Clarity",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000310,
-    "name": "Defensive Posture",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000311,
-    "name": "Heart of the Wild",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000312,
-    "name": "Nature's Reach",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000313,
-    "name": "Thick Hide",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000315,
-    "name": "Unrestrained",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000347,
-    "name": "Wild Impulses",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000349,
-    "name": "Mending",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000350,
-    "name": "Provocation",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1000352,
-    "name": "Vigilance",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003188,
-    "name": "Aggressive Resistance",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003207,
-    "name": "Concussion",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003208,
-    "name": "Counteroffensive",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003209,
-    "name": "Defensive Stance",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003210,
-    "name": "Tempered Fury",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003229,
-    "name": "Imposing Presence",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003230,
-    "name": "Outburst",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003231,
-    "name": "Pressure Point",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003232,
-    "name": "Raid Leader",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003233,
-    "name": "Wallop",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003729,
-    "name": "Hoarfrost",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003731,
-    "name": "Primordial Binding",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003732,
-    "name": "Precision Magic",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003733,
-    "name": "Fiery Surge",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003734,
-    "name": "Frigid Breeze",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003735,
-    "name": "Mana Shield",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003736,
-    "name": "Protection",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003737,
-    "name": "Crippling Flames",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003738,
-    "name": "Invigorating Conduit",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1003739,
-    "name": "Conduction",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1007840,
-    "name": "Gloom",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1007841,
-    "name": "Death's Defense",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1007842,
-    "name": "Unliving Energy",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1007843,
-    "name": "Grim Harvest",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1007844,
-    "name": "Death's Approach",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1007846,
-    "name": "Memento Mori",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1007847,
-    "name": "Necrotic Carapace",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1007849,
-    "name": "Death's Embrace",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1007850,
-    "name": "Spiked Armor",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008671,
-    "name": "Trap Mastery",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008672,
-    "name": "Shadow Crash",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008673,
-    "name": "Chilling Weight",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008674,
-    "name": "Trick Attacks",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008675,
-    "name": "Debilitating Toxins",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008676,
-    "name": "Rapid Gambits",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008677,
-    "name": "Second Wind",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008678,
-    "name": "Haste",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008679,
-    "name": "Adrenaline Rush",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1008680,
-    "name": "Innervation",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1059157,
-    "name": "Raise Skeleton",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1065693,
-    "name": "Charged Atmosphere",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1066757,
-    "name": "Bad Omen",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1098169,
-    "name": "Precision",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1196884,
-    "name": "Attack",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1201192,
-    "name": "Attack",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1201846,
-    "name": "Attack",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1204385,
-    "name": "Attack",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1205333,
-    "name": "Attack",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": true
   },
   {
     "id": 1256958,
@@ -3963,107 +4589,43 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Shred"
+        "name": "Storm Shred"
       },
       {
         "id": 2,
-        "name": "Primal Shred"
+        "name": "Roundhouse"
       },
       {
         "id": 3,
-        "name": "Raging Shred"
+        "name": "Critical Shred"
       },
       {
         "id": 4,
-        "name": "DEPRECATED"
+        "name": "Berserking"
+      },
+      {
+        "id": 5,
+        "name": "Healing"
+      },
+      {
+        "id": 6,
+        "name": "Spirit"
+      },
+      {
+        "id": 7,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 8,
+        "name": "Werewolf"
       }
     ]
-  },
-  {
-    "id": 1294159,
-    "name": "Provoke",
-    "classes": [
-      "Raheir"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1304803,
-    "name": "Envenom",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1389926,
-    "name": "Bastion",
-    "classes": [
-      "Raheir"
-    ],
-    "isactive": true
   },
   {
     "id": 1391558,
     "name": "Valiance",
     "classes": [
       "Raheir"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1401573,
-    "name": "Shield Charge",
-    "classes": [
-      "Raheir"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1404603,
-    "name": "Ground Slam",
-    "classes": [
-      "Raheir"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1408295,
-    "name": "Whirlwind",
-    "classes": [
-      "Varyana"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1439338,
-    "name": "Bloodthirst",
-    "classes": [
-      "Varyana"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1450903,
-    "name": "Crater",
-    "classes": [
-      "Raheir"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1452355,
-    "name": "Shield Throw",
-    "classes": [
-      "Raheir"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1453992,
-    "name": "Alchemical Admixture",
-    "classes": [
-      "Rogue"
     ],
     "isactive": false
   },
@@ -4173,41 +4735,41 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Stone Burst"
+        "name": "Epicenter"
       },
       {
         "id": 2,
-        "name": "Primal Stone Burst"
+        "name": "Rumbling Stones"
       },
       {
         "id": 3,
-        "name": "Raging Stone Burst"
+        "name": "Living Stones"
+      },
+      {
+        "id": 4,
+        "name": "Growth Speed"
+      },
+      {
+        "id": 5,
+        "name": "Spirit Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Armor"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
+      },
+      {
+        "id": 8,
+        "name": "Werebear"
+      },
+      {
+        "id": 9,
+        "name": "Human"
       }
     ]
-  },
-  {
-    "id": 1475284,
-    "name": "Cleave",
-    "classes": [
-      "Varyana"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1475286,
-    "name": "Shockwave",
-    "classes": [
-      "Varyana"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1475288,
-    "name": "Earth Breaker",
-    "classes": [
-      "Varyana"
-    ],
-    "isactive": true
   },
   {
     "id": 1479154,
@@ -4323,33 +4885,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Vortex"
+        "name": "Cooldown Reduction"
       },
       {
         "id": 2,
-        "name": "Replenishing Vortex"
+        "name": "Vigor Generation"
       },
       {
         "id": 3,
-        "name": "Measured Vortex"
+        "name": "Knock Down"
+      },
+      {
+        "id": 4,
+        "name": "Damage Increase"
+      },
+      {
+        "id": 5,
+        "name": "Overcharged"
+      },
+      {
+        "id": 6,
+        "name": "1000 Year Storm"
+      },
+      {
+        "id": 7,
+        "name": "Insect Swarm"
       }
     ]
-  },
-  {
-    "id": 1493968,
-    "name": "Chain of Souls",
-    "classes": [
-      "Aldkin"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1494843,
-    "name": "Storm of Fire",
-    "classes": [
-      "Aldkin"
-    ],
-    "isactive": true
   },
   {
     "id": 1519048,
@@ -4361,19 +4923,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Quill Volley"
+        "name": "Vulnerable Damage"
       },
       {
         "id": 2,
-        "name": "Rampant Quill Volley"
+        "name": "Bonus Feathers"
       },
       {
         "id": 3,
-        "name": "Advantageous Quill Volley"
+        "name": "Returning Feathers"
       },
       {
         "id": 4,
-        "name": "(PH) Sky Spirit"
+        "name": "Evade Damage"
+      },
+      {
+        "id": 5,
+        "name": "Volatile Feathers"
+      },
+      {
+        "id": 6,
+        "name": "Quill Command"
+      },
+      {
+        "id": 7,
+        "name": "Claw Volley"
       }
     ]
   },
@@ -4387,53 +4961,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Crushing Hand"
+        "name": "Block to Damage"
       },
       {
         "id": 2,
-        "name": "Rampant Crushing Hand"
+        "name": "Barrier"
       },
       {
         "id": 3,
-        "name": "Advantageous Crushing Hand"
+        "name": "Increased Cost and Damage"
       },
       {
         "id": 4,
-        "name": "(PH) Forest Spirit"
+        "name": "Resolve"
+      },
+      {
+        "id": 5,
+        "name": "Unrelenting Assault"
+      },
+      {
+        "id": 6,
+        "name": "Heavy Hitter"
+      },
+      {
+        "id": 7,
+        "name": "100 Crushing Hands"
       }
     ]
-  },
-  {
-    "id": 1521907,
-    "name": "Haunt",
-    "classes": [
-      "Aldkin"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1522203,
-    "name": "Field of Languish",
-    "classes": [
-      "Aldkin"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1525668,
-    "name": "Flame Surge",
-    "classes": [
-      "Aldkin"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1525670,
-    "name": "Wave of Flame",
-    "classes": [
-      "Aldkin"
-    ],
-    "isactive": true
   },
   {
     "id": 1529334,
@@ -4636,54 +5190,6 @@
     "isactive": false
   },
   {
-    "id": 1580735,
-    "name": "Wire Trap",
-    "classes": [
-      "Subo"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1580738,
-    "name": "Cover Fire",
-    "classes": [
-      "Subo"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1580744,
-    "name": "Trip Mines",
-    "classes": [
-      "Subo"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1580746,
-    "name": "Molotov",
-    "classes": [
-      "Subo"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1580748,
-    "name": "Snipe",
-    "classes": [
-      "Subo"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1580751,
-    "name": "Explosive Charge",
-    "classes": [
-      "Subo"
-    ],
-    "isactive": true
-  },
-  {
     "id": 1611316,
     "name": "Mighty Throw",
     "classes": [
@@ -4693,33 +5199,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Mighty Throw"
+        "name": "Spares"
       },
       {
         "id": 2,
-        "name": "Fighter's Mighty Throw"
+        "name": "Rapid"
       },
       {
         "id": 3,
-        "name": "Warrior's Mighty Throw"
+        "name": "Mightiest"
+      },
+      {
+        "id": 4,
+        "name": "Barrier"
+      },
+      {
+        "id": 5,
+        "name": "Size Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Ferocity"
+      },
+      {
+        "id": 7,
+        "name": "Overpower"
       }
     ]
-  },
-  {
-    "id": 1619032,
-    "name": "Attack",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": true
-  },
-  {
-    "id": 1619677,
-    "name": "Ancient Harpoons",
-    "classes": [
-      "Varyana"
-    ],
-    "isactive": true
   },
   {
     "id": 1627075,
@@ -4731,15 +5237,35 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Familiar"
+        "name": "Healing Flames"
       },
       {
         "id": 2,
-        "name": "Roaring Familiar"
+        "name": "Fast As Lightning"
       },
       {
         "id": 3,
-        "name": "Invoked Familiar"
+        "name": "Freezing Familiar"
+      },
+      {
+        "id": 4,
+        "name": "Prismatic Familiar"
+      },
+      {
+        "id": 5,
+        "name": "Charge"
+      },
+      {
+        "id": 6,
+        "name": "Size Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Duration Bonus"
+      },
+      {
+        "id": 8,
+        "name": "Bonus Effect"
       }
     ]
   },
@@ -4753,19 +5279,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Rake"
+        "name": "Ferocity"
       },
       {
         "id": 2,
-        "name": "Advantageous Rake"
+        "name": "Cast Speed"
       },
       {
         "id": 3,
-        "name": "Rampant Rake"
+        "name": "Cooldown Reduction"
       },
       {
         "id": 4,
-        "name": "(PH) Plains Spirit"
+        "name": "Cost Reduction and Damage"
+      },
+      {
+        "id": 5,
+        "name": "Spirit Jaguar"
+      },
+      {
+        "id": 6,
+        "name": "Grasping Claw"
+      },
+      {
+        "id": 7,
+        "name": "Simian Swipe"
       }
     ]
   },
@@ -4779,213 +5317,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Prime Soulrift"
+        "name": "Distilled Anima"
       },
       {
         "id": 2,
-        "name": "Supreme Soulrift"
+        "name": "Soul Vortex"
+      },
+      {
+        "id": 3,
+        "name": "Frozen Wasteland"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Barrier"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable and Crowd Control"
+      },
+      {
+        "id": 7,
+        "name": "Ferocity"
       }
     ]
-  },
-  {
-    "id": 1648342,
-    "name": "Patient Guard",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648344,
-    "name": "Diminishment",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648346,
-    "name": "Perseverance",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648348,
-    "name": "Bastion",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648350,
-    "name": "Brilliance",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648352,
-    "name": "Mirage",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648354,
-    "name": "Velocity",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648356,
-    "name": "Fueled",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648358,
-    "name": "Furnace",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648360,
-    "name": "Apex",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648362,
-    "name": "Follow Through",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648364,
-    "name": "Auspicious",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648366,
-    "name": "Antivenom",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648368,
-    "name": "Nourishment",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648370,
-    "name": "Ravenous",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648372,
-    "name": "Unrestrained Power",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648374,
-    "name": "Swift",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648376,
-    "name": "Oppressive",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648378,
-    "name": "Resilient",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648380,
-    "name": "Potent",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648387,
-    "name": "Initiative",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648389,
-    "name": "Spiritual Attunement",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648391,
-    "name": "Resolution",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648393,
-    "name": "Supremacy",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1648395,
-    "name": "Intricacy",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
   },
   {
     "id": 1663204,
@@ -4997,11 +5355,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Harmonious Seeker"
+        "name": "Vulnerable"
       },
       {
         "id": 2,
-        "name": "Exalted Seeker"
+        "name": "Charge Refund"
+      },
+      {
+        "id": 3,
+        "name": "Vigor Generation"
+      },
+      {
+        "id": 4,
+        "name": "Storm Feathers"
+      },
+      {
+        "id": 5,
+        "name": "Stormbringer"
+      },
+      {
+        "id": 6,
+        "name": "Lone Seeker"
+      },
+      {
+        "id": 7,
+        "name": "Tag Team"
       }
     ]
   },
@@ -5015,11 +5393,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Harmonious Hunter"
+        "name": "Execute"
       },
       {
         "id": 2,
-        "name": "Exalted Hunter"
+        "name": "Healing"
+      },
+      {
+        "id": 3,
+        "name": "Size Bonus"
+      },
+      {
+        "id": 4,
+        "name": "Vigor Generation"
+      },
+      {
+        "id": 5,
+        "name": "Relentless Pursuit"
+      },
+      {
+        "id": 6,
+        "name": "Shredder"
+      },
+      {
+        "id": 7,
+        "name": "Push and Pounce"
       }
     ]
   },
@@ -5033,11 +5431,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Harmonious Protector"
+        "name": "Damage Increase"
       },
       {
         "id": 2,
-        "name": "Exalted Protector"
+        "name": "Barrier"
+      },
+      {
+        "id": 3,
+        "name": "Resolve Generation"
+      },
+      {
+        "id": 4,
+        "name": "Thorns Damage"
+      },
+      {
+        "id": 5,
+        "name": "Canopy Shelter"
+      },
+      {
+        "id": 6,
+        "name": "Brutal Barrage"
+      },
+      {
+        "id": 7,
+        "name": "The Infected Forest"
       }
     ]
   },
@@ -5051,11 +5469,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Harmonious Devourer"
+        "name": "Instant Kill"
       },
       {
         "id": 2,
-        "name": "Exalted Devourer"
+        "name": "Poisoning Duration"
+      },
+      {
+        "id": 3,
+        "name": "Healing"
+      },
+      {
+        "id": 4,
+        "name": "Thorns"
+      },
+      {
+        "id": 5,
+        "name": "Spew Putrefaction"
+      },
+      {
+        "id": 6,
+        "name": "Blast of Bile"
+      },
+      {
+        "id": 7,
+        "name": "Sky and Soil"
       }
     ]
   },
@@ -5077,57 +5515,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Disciplined Dance of Knives"
+        "name": "Star Shards"
       },
       {
         "id": 2,
-        "name": "Methodical Dance of Knives"
+        "name": "Fan of Knives"
       },
       {
         "id": 3,
-        "name": "Enhanced Dance of Knives"
+        "name": "Grenade Jumper"
+      },
+      {
+        "id": 4,
+        "name": "Energy Cost Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Lucky Hit"
+      },
+      {
+        "id": 6,
+        "name": "Slow and Movement Speed"
+      },
+      {
+        "id": 7,
+        "name": "Pierce and Size"
       }
     ]
-  },
-  {
-    "id": 1722900,
-    "name": "Sustenance",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1730677,
-    "name": "Acceleration",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1730680,
-    "name": "Endurance",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1730682,
-    "name": "Dominant",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1730684,
-    "name": "Vigorous",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
   },
   {
     "id": 1817045,
@@ -5139,15 +5553,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Rock Splitter"
+        "name": "Block and Vigor"
       },
       {
         "id": 2,
-        "name": "Accelerated Rock Splitter"
+        "name": "Crowd Control Damage"
       },
       {
         "id": 3,
-        "name": "Sharp Rock Splitter"
+        "name": "Free Strike"
+      },
+      {
+        "id": 4,
+        "name": "Resolve"
+      },
+      {
+        "id": 5,
+        "name": "Shattered Stone"
+      },
+      {
+        "id": 6,
+        "name": "Unbreakable"
+      },
+      {
+        "id": 7,
+        "name": "Inner Ferocity"
       }
     ]
   },
@@ -5161,15 +5591,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Withering Fist"
+        "name": "Vigor Generation"
       },
       {
         "id": 2,
-        "name": "Accelerated Withering Fist"
+        "name": "Healing"
       },
       {
         "id": 3,
-        "name": "Sharp Withering Fist"
+        "name": "Weakened"
+      },
+      {
+        "id": 4,
+        "name": "Poisoning Duration"
+      },
+      {
+        "id": 5,
+        "name": "Shared Suffering"
+      },
+      {
+        "id": 6,
+        "name": "Precision Strike"
+      },
+      {
+        "id": 7,
+        "name": "Fist of the Forest"
       }
     ]
   },
@@ -5183,15 +5629,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Thrash"
+        "name": "Vigor Generation"
       },
       {
         "id": 2,
-        "name": "Accelerated Thrash"
+        "name": "Ferocity"
       },
       {
         "id": 3,
-        "name": "Sharp Thrash"
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 4,
+        "name": "Ramping Damage"
+      },
+      {
+        "id": 5,
+        "name": "Wanton Rampage"
+      },
+      {
+        "id": 6,
+        "name": "Crashing and Thrashing"
+      },
+      {
+        "id": 7,
+        "name": "Storm Conjurer"
       }
     ]
   },
@@ -5205,15 +5667,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Thunderspike"
+        "name": "Vigor Generation"
       },
       {
         "id": 2,
-        "name": "Accelerated Thunderspike"
+        "name": "Critical Strike"
       },
       {
         "id": 3,
-        "name": "Sharp Thunderspike"
+        "name": "Damage to Sparking"
+      },
+      {
+        "id": 4,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 5,
+        "name": "Lightning's Grip"
+      },
+      {
+        "id": 6,
+        "name": "Lightning Dancer"
+      },
+      {
+        "id": 7,
+        "name": "Infected Ground"
       }
     ]
   },
@@ -5227,15 +5705,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Stinger"
+        "name": "Healing and Vulnerable"
       },
       {
         "id": 2,
-        "name": "Rampant Stinger"
+        "name": "Damage Bonus"
       },
       {
         "id": 3,
-        "name": "Advantageous Stinger"
+        "name": "Size Bonus"
+      },
+      {
+        "id": 4,
+        "name": "Weakened Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Potent Sting"
+      },
+      {
+        "id": 6,
+        "name": "Unleash the Swarm"
+      },
+      {
+        "id": 7,
+        "name": "Nimbostratal Strike"
       }
     ]
   },
@@ -5249,15 +5743,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Ravager"
+        "name": "Duration Increase"
       },
       {
         "id": 2,
-        "name": "Measured Ravager"
+        "name": "Vigor Generation"
       },
       {
         "id": 3,
-        "name": "Replenishing Ravager"
+        "name": "Ferocity Minimum"
+      },
+      {
+        "id": 4,
+        "name": "Ferocity Maximum"
+      },
+      {
+        "id": 5,
+        "name": "Carnage"
+      },
+      {
+        "id": 6,
+        "name": "Flurry of Claws"
+      },
+      {
+        "id": 7,
+        "name": "Strength of the Forest"
       }
     ]
   },
@@ -5271,15 +5781,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Rushing Claw"
+        "name": "Damage Increase"
       },
       {
         "id": 2,
-        "name": "Poised Rushing Claw"
+        "name": "Charge Refund"
       },
       {
         "id": 3,
-        "name": "Invasive Rushing Claw"
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 4,
+        "name": "Incarnate Duration"
+      },
+      {
+        "id": 5,
+        "name": "Evolving Claws"
+      },
+      {
+        "id": 6,
+        "name": "Colossal Claw"
+      },
+      {
+        "id": 7,
+        "name": "Evasive Swipe"
       }
     ]
   },
@@ -5293,15 +5819,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Armored Hide"
+        "name": "Blocked Damage Reduction"
       },
       {
         "id": 2,
-        "name": "Adaptable Armored Hide"
+        "name": "Thorns"
       },
       {
         "id": 3,
-        "name": "Reinforced Armored Hide"
+        "name": "Barrier"
+      },
+      {
+        "id": 4,
+        "name": "Duration"
+      },
+      {
+        "id": 5,
+        "name": "Force of Nature"
+      },
+      {
+        "id": 6,
+        "name": "Trampled Under Foot"
+      },
+      {
+        "id": 7,
+        "name": "Ferocious Meal"
       }
     ]
   },
@@ -5315,15 +5857,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Scourge"
+        "name": "Weaken"
       },
       {
         "id": 2,
-        "name": "Adaptable Scourge"
+        "name": "Vigor Generation"
       },
       {
         "id": 3,
-        "name": "Reinforced Scourge"
+        "name": "Healing"
+      },
+      {
+        "id": 4,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 5,
+        "name": "Hive Mind"
+      },
+      {
+        "id": 6,
+        "name": "Scourge Commander"
+      },
+      {
+        "id": 7,
+        "name": "The Beast Within"
       }
     ]
   },
@@ -5337,15 +5895,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Razor Wings"
+        "name": "Movement Speed"
       },
       {
         "id": 2,
-        "name": "Poised Razor Wings"
+        "name": "Damage Increase"
       },
       {
         "id": 3,
-        "name": "Invasive Razor Wings"
+        "name": "Refund Charges"
+      },
+      {
+        "id": 4,
+        "name": "Charge Cooldown"
+      },
+      {
+        "id": 5,
+        "name": "Wing Storm"
+      },
+      {
+        "id": 6,
+        "name": "Flock of Feathers"
+      },
+      {
+        "id": 7,
+        "name": "Brutal Blast"
       }
     ]
   },
@@ -5359,15 +5933,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Touch of Death"
+        "name": "Healing"
       },
       {
         "id": 2,
-        "name": "Invasive Touch of Death"
+        "name": "Weakened Damage"
       },
       {
         "id": 3,
-        "name": "Poised Touch of Death"
+        "name": "Vulnerable"
+      },
+      {
+        "id": 4,
+        "name": "Additional Charge"
+      },
+      {
+        "id": 5,
+        "name": "Erupting Swarm"
+      },
+      {
+        "id": 6,
+        "name": "Swarm of Swarms"
+      },
+      {
+        "id": 7,
+        "name": "Touch of Lightning"
       }
     ]
   },
@@ -5381,15 +5971,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Toxic Skin"
+        "name": "Vigor Generation"
       },
       {
         "id": 2,
-        "name": "Replenishing Toxic Skin"
+        "name": "Thorns"
       },
       {
         "id": 3,
-        "name": "Measured Toxic Skin"
+        "name": "Healing"
+      },
+      {
+        "id": 4,
+        "name": "Duration Increase"
+      },
+      {
+        "id": 5,
+        "name": "Erupting Skin"
+      },
+      {
+        "id": 6,
+        "name": "Skuttle Bug"
+      },
+      {
+        "id": 7,
+        "name": "Fiery Soul"
       }
     ]
   },
@@ -5403,15 +6009,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Counterattack Enhancement"
+        "name": "Cooldown Reduction"
       },
       {
         "id": 2,
-        "name": "Adaptable Counterattack"
+        "name": "Damage Over Time Reduction"
       },
       {
         "id": 3,
-        "name": "Reinforced Counterattack"
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 4,
+        "name": "Duration Increase"
+      },
+      {
+        "id": 5,
+        "name": "Controlled Reflection"
+      },
+      {
+        "id": 6,
+        "name": "Asymmetrical Warfare"
+      },
+      {
+        "id": 7,
+        "name": "Counterattack of the Swarm"
       }
     ]
   },
@@ -5425,15 +6047,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Soar"
+        "name": "Size Bonus"
       },
       {
         "id": 2,
-        "name": "Measured Soar"
+        "name": "Cooldown Reduction"
       },
       {
         "id": 3,
-        "name": "Replenishing Soar"
+        "name": "Movement Speed"
+      },
+      {
+        "id": 4,
+        "name": "Damage Increase"
+      },
+      {
+        "id": 5,
+        "name": "Free Bird"
+      },
+      {
+        "id": 6,
+        "name": "Eye of the Storm"
+      },
+      {
+        "id": 7,
+        "name": "Jaguar's Execution"
       }
     ]
   },
@@ -5447,15 +6085,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Payback"
+        "name": "Damage Increase"
       },
       {
         "id": 2,
-        "name": "Invasive Payback"
+        "name": "Resolve Generation"
       },
       {
         "id": 3,
-        "name": "Poised Payback"
+        "name": "Area Increase"
+      },
+      {
+        "id": 4,
+        "name": "Block Chance"
+      },
+      {
+        "id": 5,
+        "name": "Break Free"
+      },
+      {
+        "id": 6,
+        "name": "Wrath of the Gorilla"
+      },
+      {
+        "id": 7,
+        "name": "Insidious Retribution"
       }
     ]
   },
@@ -5469,145 +6123,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Concussive Stomp"
+        "name": "Barrier Generation"
       },
       {
         "id": 2,
-        "name": "Adaptable Concussive Stomp"
+        "name": "Additional Charge"
       },
       {
         "id": 3,
-        "name": "Reinforced Concussive Stomp"
+        "name": "Resolve Generation"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Debilitate"
+      },
+      {
+        "id": 6,
+        "name": "Crushing Blow"
+      },
+      {
+        "id": 7,
+        "name": "Crackling Earth"
       }
     ]
-  },
-  {
-    "id": 1907017,
-    "name": "Barbed Carapace",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1920204,
-    "name": "Vital Strikes",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1920209,
-    "name": "Prodigy's Tempo",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1920211,
-    "name": "Noxious Resonance",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1955450,
-    "name": "Adaptive Stances",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1984422,
-    "name": "One With Nature",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 1993937,
-    "name": "Affliction",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2016157,
-    "name": "Enlightenment",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2074903,
-    "name": "Necrotic Fortitude",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2075107,
-    "name": "Evasive",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2075140,
-    "name": "Unto Dawn",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2075148,
-    "name": "Finality",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2075705,
-    "name": "Catastrophe",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2075710,
-    "name": "Humanity",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2075735,
-    "name": "Belligerence",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2075737,
-    "name": "Heavy Hitter",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
   },
   {
     "id": 2082021,
@@ -5619,19 +6161,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Blessed Shield"
-      },
-      {
-        "id": 2,
         "name": "Shield of Justice"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Shield of the Revenant"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Shield of Retribution"
+      },
+      {
+        "id": 4,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 5,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 6,
+        "name": "Armor and Block Chance Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Faith Generation"
       }
     ]
   },
@@ -5658,104 +6212,24 @@
       {
         "id": 4,
         "name": "Breach"
+      },
+      {
+        "id": 5,
+        "name": "Hits Are Blocks"
+      },
+      {
+        "id": 6,
+        "name": "Size Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Distance"
+      },
+      {
+        "id": 8,
+        "name": "Damage Bonus"
       }
     ]
-  },
-  {
-    "id": 2091156,
-    "name": "Warpath",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2091159,
-    "name": "Irrepressible",
-    "classes": [
-      "Barbarian"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2091164,
-    "name": "Feral Aptitude",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2091166,
-    "name": "Backlash",
-    "classes": [
-      "Druid"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2092223,
-    "name": "Titan's Fall",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2092225,
-    "name": "Precision Decay",
-    "classes": [
-      "Necromancer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2092249,
-    "name": "Target Practice",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2092251,
-    "name": "Balestra",
-    "classes": [
-      "Rogue"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2093631,
-    "name": "Dampen Layer",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2093633,
-    "name": "Elemental Synergies",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2093635,
-    "name": "Evocation",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2093637,
-    "name": "Energy Focus",
-    "classes": [
-      "Sorcerer"
-    ],
-    "isactive": false
   },
   {
     "id": 2097465,
@@ -5780,6 +6254,22 @@
       {
         "id": 4,
         "name": "Seize Them"
+      },
+      {
+        "id": 5,
+        "name": "Resolve"
+      },
+      {
+        "id": 6,
+        "name": "Faith Generation"
+      },
+      {
+        "id": 7,
+        "name": "Damage Increase"
+      },
+      {
+        "id": 8,
+        "name": "Crusader's March Effectiveness"
       }
     ]
   },
@@ -5793,19 +6283,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Spear of the Heavens"
-      },
-      {
-        "id": 2,
         "name": "Pronouncement of Heaven"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Part the Heavens"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Fist of the Heavens"
+      },
+      {
+        "id": 4,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Judgement Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Projectiles"
+      },
+      {
+        "id": 7,
+        "name": "Vulnerable"
       }
     ]
   },
@@ -5823,7 +6325,7 @@
       },
       {
         "id": 2,
-        "name": "Freefall"
+        "name": "Starfall"
       },
       {
         "id": 3,
@@ -5832,6 +6334,22 @@
       {
         "id": 4,
         "name": "Faster Than Light"
+      },
+      {
+        "id": 5,
+        "name": "Additional Charge"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 8,
+        "name": "Damage"
       }
     ]
   },
@@ -5845,45 +6363,33 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Blessed Hammer"
-      },
-      {
-        "id": 2,
         "name": "Shattering Blow"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Disciple's Halo"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Mortar Combat"
+      },
+      {
+        "id": 4,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Slow"
+      },
+      {
+        "id": 7,
+        "name": "Cast Speed"
       }
     ]
-  },
-  {
-    "id": 2110174,
-    "name": "Balanced Exertion",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2110217,
-    "name": "Focal Point",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2110231,
-    "name": "Vehemence",
-    "classes": [
-      "Spiritborn"
-    ],
-    "isactive": false
   },
   {
     "id": 2120228,
@@ -5908,6 +6414,22 @@
       {
         "id": 4,
         "name": "Divine Javelin"
+      },
+      {
+        "id": 5,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 6,
+        "name": "Stacking Damage"
+      },
+      {
+        "id": 7,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 8,
+        "name": "Cost Reduction"
       }
     ]
   },
@@ -5921,29 +6443,71 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Zeal"
-      },
-      {
-        "id": 2,
         "name": "Zealot's Legacy"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Death or Glory"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Cull the Wicked"
+      },
+      {
+        "id": 4,
+        "name": "Additional Strikes"
+      },
+      {
+        "id": 5,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
       }
     ]
   },
   {
-    "id": 2140400,
-    "name": "Deadeye",
+    "id": 2164252,
+    "name": "Hell Fracture",
     "classes": [
-      "Rogue"
+      "Warlock"
     ],
-    "isactive": false
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Lava Fissures"
+      },
+      {
+        "id": 2,
+        "name": "Eruption"
+      },
+      {
+        "id": 3,
+        "name": "Ruptured Abyss"
+      },
+      {
+        "id": 4,
+        "name": "Volatility"
+      },
+      {
+        "id": 5,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Ramp Up"
+      },
+      {
+        "id": 7,
+        "name": "Additional Fracture"
+      }
+    ]
   },
   {
     "id": 2174078,
@@ -5955,19 +6519,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Holy Bolt"
-      },
-      {
-        "id": 2,
         "name": "Ricocheting Bolt"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Divine Bolt"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Storm Bolt"
+      },
+      {
+        "id": 4,
+        "name": "Judgement"
+      },
+      {
+        "id": 5,
+        "name": "Faith Generation"
+      },
+      {
+        "id": 6,
+        "name": "Slow"
+      },
+      {
+        "id": 7,
+        "name": "Cast Speed"
       }
     ]
   },
@@ -5981,19 +6557,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Defiance"
-      },
-      {
-        "id": 2,
         "name": "Rite of Might"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Rite of Prayer"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Rite of Thorns"
+      },
+      {
+        "id": 4,
+        "name": "Maximum Life"
+      },
+      {
+        "id": 5,
+        "name": "Bonus Healing"
+      },
+      {
+        "id": 6,
+        "name": "Potency"
+      },
+      {
+        "id": 7,
+        "name": "Unstoppable"
       }
     ]
   },
@@ -6007,19 +6595,563 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Fanaticism"
-      },
-      {
-        "id": 2,
         "name": "Rite of Vengeance"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Rite of Humility"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Rite of Redemption"
+      },
+      {
+        "id": 4,
+        "name": "Additional Maximum Resource"
+      },
+      {
+        "id": 5,
+        "name": "Extra Passive Stack"
+      },
+      {
+        "id": 6,
+        "name": "Resource Generation"
+      },
+      {
+        "id": 7,
+        "name": "Potency"
+      }
+    ]
+  },
+  {
+    "id": 2212801,
+    "name": "Command Fallen",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Mega Lunatic"
+      },
+      {
+        "id": 2,
+        "name": "Meat Shields"
+      },
+      {
+        "id": 3,
+        "name": "Fallen Rush"
+      },
+      {
+        "id": 4,
+        "name": "Damage Per Demon"
+      },
+      {
+        "id": 5,
+        "name": "Wrath"
+      },
+      {
+        "id": 6,
+        "name": "Lifetime Damage"
+      },
+      {
+        "id": 7,
+        "name": "Dominance"
+      }
+    ]
+  },
+  {
+    "id": 2213860,
+    "name": "Blazing Scream",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Skull Splitter"
+      },
+      {
+        "id": 2,
+        "name": "Orbital Scream"
+      },
+      {
+        "id": 3,
+        "name": "Abyssal Oppression"
+      },
+      {
+        "id": 4,
+        "name": "Impact Velocity"
+      },
+      {
+        "id": 5,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Damage"
+      },
+      {
+        "id": 7,
+        "name": "Brimstone Hunger"
+      }
+    ]
+  },
+  {
+    "id": 2214419,
+    "name": "Infernal Breath",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Explosive Death"
+      },
+      {
+        "id": 2,
+        "name": "Abyssal Torrent"
+      },
+      {
+        "id": 3,
+        "name": "Ramping Damage"
+      },
+      {
+        "id": 4,
+        "name": "Lesser Demon Volatility"
+      },
+      {
+        "id": 5,
+        "name": "Expensive Damage"
+      },
+      {
+        "id": 6,
+        "name": "Heavy Impact Damage"
+      },
+      {
+        "id": 7,
+        "name": "Demonic Breath"
+      }
+    ]
+  },
+  {
+    "id": 2215096,
+    "name": "Metamorphosis",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Sin Demon"
+      },
+      {
+        "id": 2,
+        "name": "Destruction Demon"
+      },
+      {
+        "id": 3,
+        "name": "Terror Demon"
+      },
+      {
+        "id": 4,
+        "name": "Damage Scaling"
+      },
+      {
+        "id": 5,
+        "name": "Maximum Life"
+      },
+      {
+        "id": 6,
+        "name": "Dominance"
+      },
+      {
+        "id": 7,
+        "name": "Stagger Bar"
+      }
+    ]
+  },
+  {
+    "id": 2215258,
+    "name": "Molten Bomb",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Brimstone Mortar"
+      },
+      {
+        "id": 2,
+        "name": "Demon Turret"
+      },
+      {
+        "id": 3,
+        "name": "Cluster Bomb"
+      },
+      {
+        "id": 4,
+        "name": "Ranged Damage"
+      },
+      {
+        "id": 5,
+        "name": "Wrath"
+      },
+      {
+        "id": 6,
+        "name": "Knock Down"
+      },
+      {
+        "id": 7,
+        "name": "Area Bonus"
+      }
+    ]
+  },
+  {
+    "id": 2216334,
+    "name": "Terror Swarm",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Nightmare"
+      },
+      {
+        "id": 2,
+        "name": "Devouring Swarm"
+      },
+      {
+        "id": 3,
+        "name": "Searing Infestation"
+      },
+      {
+        "id": 4,
+        "name": "Extra Bites"
+      },
+      {
+        "id": 5,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 6,
+        "name": "Pull"
+      },
+      {
+        "id": 7,
+        "name": "Lesser Demons"
+      }
+    ]
+  },
+  {
+    "id": 2218200,
+    "name": "Umbral Chains",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Chain Burst"
+      },
+      {
+        "id": 2,
+        "name": "Epicenter"
+      },
+      {
+        "id": 3,
+        "name": "Chain Whips"
+      },
+      {
+        "id": 4,
+        "name": "Capture Damage"
+      },
+      {
+        "id": 5,
+        "name": "Wrath Refund"
+      },
+      {
+        "id": 6,
+        "name": "Long Range Slow"
+      },
+      {
+        "id": 7,
+        "name": "Heavy Harpoon"
+      }
+    ]
+  },
+  {
+    "id": 2218204,
+    "name": "Doom",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Contagion"
+      },
+      {
+        "id": 2,
+        "name": "Jailer"
+      },
+      {
+        "id": 3,
+        "name": "Doomfire Ritual"
+      },
+      {
+        "id": 4,
+        "name": "Damage"
+      },
+      {
+        "id": 5,
+        "name": "Wrath"
+      },
+      {
+        "id": 6,
+        "name": "Assimilation"
+      },
+      {
+        "id": 7,
+        "name": "Echo"
+      }
+    ]
+  },
+  {
+    "id": 2218209,
+    "name": "Sigil of Subversion",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Infiltration Trails"
+      },
+      {
+        "id": 2,
+        "name": "Seekers"
+      },
+      {
+        "id": 3,
+        "name": "Sigil of Lava"
+      },
+      {
+        "id": 4,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 5,
+        "name": "Blood Ritual"
+      },
+      {
+        "id": 6,
+        "name": "Slow"
+      },
+      {
+        "id": 7,
+        "name": "Cast Range"
+      }
+    ]
+  },
+  {
+    "id": 2218211,
+    "name": "Nether Step",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Portals"
+      },
+      {
+        "id": 2,
+        "name": "Gloomwalker"
+      },
+      {
+        "id": 3,
+        "name": "Shadow Recall"
+      },
+      {
+        "id": 4,
+        "name": "Damage Reduction"
+      },
+      {
+        "id": 5,
+        "name": "Extra Charge"
+      },
+      {
+        "id": 6,
+        "name": "Vacuum Swap"
+      },
+      {
+        "id": 7,
+        "name": "Movement Speed"
+      }
+    ]
+  },
+  {
+    "id": 2218213,
+    "name": "Sigil of Chaos",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Diabolic Rebuke"
+      },
+      {
+        "id": 2,
+        "name": "Hellfire Aura"
+      },
+      {
+        "id": 3,
+        "name": "Sigil of Smoke"
+      },
+      {
+        "id": 4,
+        "name": "Volatility Duration"
+      },
+      {
+        "id": 5,
+        "name": "Blood Ritual"
+      },
+      {
+        "id": 6,
+        "name": "Volatility Casts"
+      },
+      {
+        "id": 7,
+        "name": "Chain Reaction"
+      }
+    ]
+  },
+  {
+    "id": 2221240,
+    "name": "Sigil of Summons",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Feeding Frenzy"
+      },
+      {
+        "id": 2,
+        "name": "Summon Succubus"
+      },
+      {
+        "id": 3,
+        "name": "Summon Hellwyrm"
+      },
+      {
+        "id": 4,
+        "name": "Damage"
+      },
+      {
+        "id": 5,
+        "name": "Blood Ritual"
+      },
+      {
+        "id": 6,
+        "name": "Stronger Summons"
+      },
+      {
+        "id": 7,
+        "name": "Cooldown"
+      }
+    ]
+  },
+  {
+    "id": 2221260,
+    "name": "Apocalypse",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Armageddon Ritual"
+      },
+      {
+        "id": 2,
+        "name": "Annihilation"
+      },
+      {
+        "id": 3,
+        "name": "Minefield"
+      },
+      {
+        "id": 4,
+        "name": "Shared Damage"
+      },
+      {
+        "id": 5,
+        "name": "Survivor Damage"
+      },
+      {
+        "id": 6,
+        "name": "Double Blast"
+      },
+      {
+        "id": 7,
+        "name": "Epicenter Damage"
+      }
+    ]
+  },
+  {
+    "id": 2221282,
+    "name": "Rampage",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Shockwave"
+      },
+      {
+        "id": 2,
+        "name": "Abyssal Titan"
+      },
+      {
+        "id": 3,
+        "name": "Killstreak Damage"
+      },
+      {
+        "id": 4,
+        "name": "Lesser Demon Wrath"
+      },
+      {
+        "id": 5,
+        "name": "Elite Hit Chance"
+      },
+      {
+        "id": 6,
+        "name": "Demon Masher"
+      },
+      {
+        "id": 7,
+        "name": "Demonic Smash"
       }
     ]
   },
@@ -6046,6 +7178,174 @@
       {
         "id": 4,
         "name": "Shepherd the Flock"
+      },
+      {
+        "id": 5,
+        "name": "Weaken"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Movement Speed"
+      },
+      {
+        "id": 8,
+        "name": "Size Increase"
+      }
+    ]
+  },
+  {
+    "id": 2228435,
+    "name": "Wall of Agony",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Fallen Army"
+      },
+      {
+        "id": 2,
+        "name": "Waller"
+      },
+      {
+        "id": 3,
+        "name": "Encircle"
+      },
+      {
+        "id": 4,
+        "name": "Knock Down"
+      },
+      {
+        "id": 5,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Damage"
+      },
+      {
+        "id": 7,
+        "name": "Small Walls"
+      }
+    ]
+  },
+  {
+    "id": 2244457,
+    "name": "Fiend of Abaddon",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Spiteful Enrage"
+      },
+      {
+        "id": 2,
+        "name": "Vanguard of Flames"
+      },
+      {
+        "id": 3,
+        "name": "Abyssal Colossus"
+      },
+      {
+        "id": 4,
+        "name": "Crowd Damage"
+      },
+      {
+        "id": 5,
+        "name": "Lesser Demon Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Elite Damage"
+      },
+      {
+        "id": 7,
+        "name": "Dominance"
+      }
+    ]
+  },
+  {
+    "id": 2245719,
+    "name": "Bombardment",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Brutality"
+      },
+      {
+        "id": 2,
+        "name": "Demon Mangler"
+      },
+      {
+        "id": 3,
+        "name": "Endless Barrage"
+      },
+      {
+        "id": 4,
+        "name": "Damage"
+      },
+      {
+        "id": 5,
+        "name": "Additional Demon"
+      },
+      {
+        "id": 6,
+        "name": "Telekinesis"
+      },
+      {
+        "id": 7,
+        "name": "Focused Target"
+      }
+    ]
+  },
+  {
+    "id": 2245730,
+    "name": "Tortured Wretch",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Death Saws"
+      },
+      {
+        "id": 2,
+        "name": "Punching Bag"
+      },
+      {
+        "id": 3,
+        "name": "Domination"
+      },
+      {
+        "id": 4,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 5,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Enrage"
+      },
+      {
+        "id": 7,
+        "name": "Duration"
       }
     ]
   },
@@ -6059,19 +7359,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Purify"
-      },
-      {
-        "id": 2,
         "name": "Sentence"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Surrender"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Absolution"
+      },
+      {
+        "id": 4,
+        "name": "Faith Generation"
+      },
+      {
+        "id": 5,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Echo"
+      },
+      {
+        "id": 7,
+        "name": "Size Bonus"
       }
     ]
   },
@@ -6085,19 +7397,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Brandish"
-      },
-      {
-        "id": 2,
         "name": "Cross Strike"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Sword of Mastery"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Returning Light"
+      },
+      {
+        "id": 4,
+        "name": "Cast Speed"
+      },
+      {
+        "id": 5,
+        "name": "Damage Increase"
+      },
+      {
+        "id": 6,
+        "name": "Vulnerable"
+      },
+      {
+        "id": 7,
+        "name": "Faith Generation"
       }
     ]
   },
@@ -6124,6 +7448,22 @@
       {
         "id": 4,
         "name": "Final Justice"
+      },
+      {
+        "id": 5,
+        "name": "Judgement"
+      },
+      {
+        "id": 6,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Slow"
+      },
+      {
+        "id": 8,
+        "name": "Duration"
       }
     ]
   },
@@ -6137,19 +7477,69 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Consecration"
-      },
-      {
-        "id": 2,
         "name": "Hallowed Ground"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Bastion"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Sanctify"
+      },
+      {
+        "id": 4,
+        "name": "Weaken"
+      },
+      {
+        "id": 5,
+        "name": "Duration"
+      },
+      {
+        "id": 6,
+        "name": "Fortify"
+      },
+      {
+        "id": 7,
+        "name": "Resource Generation"
+      }
+    ]
+  },
+  {
+    "id": 2289261,
+    "name": "Profane Sentinel",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Focused Glare"
+      },
+      {
+        "id": 2,
+        "name": "Sentry"
+      },
+      {
+        "id": 3,
+        "name": "Single Target Damage"
+      },
+      {
+        "id": 4,
+        "name": "Lesser Demon Vulnerable"
+      },
+      {
+        "id": 5,
+        "name": "Narrow Blast"
+      },
+      {
+        "id": 6,
+        "name": "Wide Beam"
+      },
+      {
+        "id": 7,
+        "name": "Demonic Sight"
       }
     ]
   },
@@ -6163,19 +7553,31 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Aegis"
-      },
-      {
-        "id": 2,
         "name": "Stay Resolute"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Faith Is My Shield"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Impunity"
+      },
+      {
+        "id": 4,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 5,
+        "name": "Block Damage Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Duration"
+      },
+      {
+        "id": 7,
+        "name": "Cooldown Reduction"
       }
     ]
   },
@@ -6202,6 +7604,22 @@
       {
         "id": 4,
         "name": "Rite of Submission"
+      },
+      {
+        "id": 5,
+        "name": "Additional Targets"
+      },
+      {
+        "id": 6,
+        "name": "Additional Bounce"
+      },
+      {
+        "id": 7,
+        "name": "Potency"
+      },
+      {
+        "id": 8,
+        "name": "Judgement Damage Bonus"
       }
     ]
   },
@@ -6228,6 +7646,22 @@
       {
         "id": 4,
         "name": "Divine Intervention"
+      },
+      {
+        "id": 5,
+        "name": "Wing Strike Recast"
+      },
+      {
+        "id": 6,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 7,
+        "name": "Duration"
+      },
+      {
+        "id": 8,
+        "name": "Movement Speed"
       }
     ]
   },
@@ -6241,19 +7675,69 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Fortress"
-      },
-      {
-        "id": 2,
         "name": "Entrench"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Barricade"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Rampart of Thorns"
+      },
+      {
+        "id": 4,
+        "name": "Free Cast"
+      },
+      {
+        "id": 5,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 6,
+        "name": "Resolve Damage Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Duration"
+      }
+    ]
+  },
+  {
+    "id": 2301447,
+    "name": "Tyrant's Grasp",
+    "classes": [
+      "Warlock"
+    ],
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Abyssal Pit"
+      },
+      {
+        "id": 2,
+        "name": "Inescapable Grapple"
+      },
+      {
+        "id": 3,
+        "name": "Unstoppable Damage"
+      },
+      {
+        "id": 4,
+        "name": "Lesser Demon Slow"
+      },
+      {
+        "id": 5,
+        "name": "Knock Down"
+      },
+      {
+        "id": 6,
+        "name": "Grasp Area"
+      },
+      {
+        "id": 7,
+        "name": "Demonic Grasp"
       }
     ]
   },
@@ -6280,6 +7764,22 @@
       {
         "id": 4,
         "name": "Sunder"
+      },
+      {
+        "id": 5,
+        "name": "Unstoppable"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 8,
+        "name": "Weaken"
       }
     ]
   },
@@ -6306,6 +7806,22 @@
       {
         "id": 4,
         "name": "Words of Sacrifice"
+      },
+      {
+        "id": 5,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 6,
+        "name": "Duration Bonus"
+      },
+      {
+        "id": 7,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 8,
+        "name": "Unhindered and Movement Speed"
       }
     ]
   },
@@ -6319,213 +7835,147 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Advance"
-      },
-      {
-        "id": 2,
         "name": "Vanguard's Rush"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Wave Dash"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Flash of the Blade"
+      },
+      {
+        "id": 4,
+        "name": "Unhindered"
+      },
+      {
+        "id": 5,
+        "name": "Critical Strike Chance"
+      },
+      {
+        "id": 6,
+        "name": "Weaken"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
       }
     ]
   },
   {
-    "id": 2343774,
-    "name": "Attack",
+    "id": 2385787,
+    "name": "Dread Claws",
     "classes": [
-      "Paladin"
+      "Warlock"
     ],
-    "isactive": true
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Cascading Dread"
+      },
+      {
+        "id": 2,
+        "name": "Enveloping Terror"
+      },
+      {
+        "id": 3,
+        "name": "Ravenous Jaws"
+      },
+      {
+        "id": 4,
+        "name": "Damage"
+      },
+      {
+        "id": 5,
+        "name": "Cost Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Ambush"
+      },
+      {
+        "id": 7,
+        "name": "Vulnerable"
+      }
+    ]
   },
   {
-    "id": 2393351,
-    "name": "Courage",
+    "id": 2418214,
+    "name": "Dark Prison",
     "classes": [
-      "Paladin"
+      "Warlock"
     ],
-    "isactive": false
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Tripwire"
+      },
+      {
+        "id": 2,
+        "name": "Calamity Cage"
+      },
+      {
+        "id": 3,
+        "name": "Chain Aura"
+      },
+      {
+        "id": 4,
+        "name": "Weaken"
+      },
+      {
+        "id": 5,
+        "name": "Cooldown Reduction"
+      },
+      {
+        "id": 6,
+        "name": "Missile Slow"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
+      }
+    ]
   },
   {
-    "id": 2393354,
-    "name": "Parry",
+    "id": 2420679,
+    "name": "Hellion Sting",
     "classes": [
-      "Paladin"
+      "Warlock"
     ],
-    "isactive": false
-  },
-  {
-    "id": 2412609,
-    "name": "En Garde",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2412611,
-    "name": "Piety",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2412710,
-    "name": "Discipline",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2414509,
-    "name": "Riposte",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2418247,
-    "name": "Crack in the Armor",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2418250,
-    "name": "Pacify",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2418745,
-    "name": "Renewal",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2418822,
-    "name": "Anointing",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2419009,
-    "name": "Longevity",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2420825,
-    "name": "Break the Line",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2420827,
-    "name": "Press the Advantage",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2425877,
-    "name": "Coat of Arms",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2425896,
-    "name": "Path of the Penitent",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2425899,
-    "name": "Judgement Day",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2425903,
-    "name": "Exaltation",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2426097,
-    "name": "High Charity",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2426103,
-    "name": "Giant Slayer",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2426105,
-    "name": "Heavyweight",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2426241,
-    "name": "Attenuate",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2426348,
-    "name": "Resolute",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2426377,
-    "name": "Conviction",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
+    "isactive": true,
+    "mods": [
+      {
+        "id": 1,
+        "name": "Multi-Strike"
+      },
+      {
+        "id": 2,
+        "name": "Tail Spikes"
+      },
+      {
+        "id": 3,
+        "name": "Demonic Swipe"
+      },
+      {
+        "id": 4,
+        "name": "Damage"
+      },
+      {
+        "id": 5,
+        "name": "Wrath"
+      },
+      {
+        "id": 6,
+        "name": "Eviscerate"
+      },
+      {
+        "id": 7,
+        "name": "Fortify"
+      }
+    ]
   },
   {
     "id": 2466077,
@@ -6537,116 +7987,32 @@
     "mods": [
       {
         "id": 1,
-        "name": "Enhanced Shield Charge"
-      },
-      {
-        "id": 2,
         "name": "Relentless Charge"
       },
       {
-        "id": 3,
+        "id": 2,
         "name": "Virtuous Charge"
       },
       {
-        "id": 4,
+        "id": 3,
         "name": "Phalanx Charge"
+      },
+      {
+        "id": 4,
+        "name": "Resolve"
+      },
+      {
+        "id": 5,
+        "name": "Damage Bonus"
+      },
+      {
+        "id": 6,
+        "name": "Retribution"
+      },
+      {
+        "id": 7,
+        "name": "Hit Count As Blocking"
       }
     ]
-  },
-  {
-    "id": 2471058,
-    "name": "Dizzying Blow",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2471066,
-    "name": "Iron Sharpens Iron",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2471112,
-    "name": "Thorns and Thistles",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2471115,
-    "name": "Repentance",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2471117,
-    "name": "The Best Offense",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2471122,
-    "name": "Fortitude",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2471232,
-    "name": "Righteousness",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2472127,
-    "name": "Shining Armor",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2472129,
-    "name": "Sacred Arms",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2472131,
-    "name": "Leave Luck to Heaven",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2472133,
-    "name": "Master Craftwork",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
-  },
-  {
-    "id": 2472135,
-    "name": "Shake It Off",
-    "classes": [
-      "Paladin"
-    ],
-    "isactive": false
   }
 ]
