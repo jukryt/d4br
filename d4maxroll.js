@@ -166,8 +166,24 @@ class D4MaxrollProcessor {
     }
 
     getCharClassName() {
-        const classNameTitle = document.querySelector("div.d4t-Paperdoll div.d4t-title");
-        return classNameTitle?.innerText;
+        if (document.querySelector("div.sorcerer_SorcererBar__3WOmc"))
+            return "Sorcerer"
+        if (document.querySelector("div.druid_DruidBar__IDR7X"))
+            return "Druid"
+        if (document.querySelector("div.barbarian_BarbarianBar__3bZZY"))
+            return "Barbarian"
+        if (document.querySelector("div.rogue_RogueBar__7v6WF"))
+            return "Rogue"
+        if (document.querySelector("div.necromancer_NecromancerBar__qdKhV"))
+            return "Necromancer"
+        if (document.querySelector("div.spiritborn_SpiritbornBar__p1Rzi"))
+            return "Spiritborn"
+        if (document.querySelector("div.paladin_PaladinBar__3i4ht"))
+            return "Paladin"
+        if (document.querySelector("div.warlock_WarlockBar__2Tu51"))
+            return "Warlock"
+
+        return undefined;
     }
 
     aspectNameProcess(titleNode, subTitleNode) {

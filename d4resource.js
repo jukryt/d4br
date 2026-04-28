@@ -156,7 +156,7 @@ class SkillBuilder {
             }
         });
 
-        if (sourceItems.length !== 1) {
+        if (sourceItems.length === 0) {
             return null;
         }
 

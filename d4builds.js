@@ -233,7 +233,9 @@ class D4BuildsProcessor {
             .replace("Enhanced Fanaticism Aura", "Enhanced Fanaticism")
             .replace("Enhanced Holy Light Aura", "Enhanced Holy Light")
             .replace("Shepard the Flock", "Shepherd the Flock")
-            .replace("Enhanced Shield Charge-v2", "Enhanced Shield Charge");
+            .replace("Enhanced Shield Charge-v2", "Enhanced Shield Charge")
+            .replace("Brimstone Bomb", "Brimstone Mortar")
+            .replace("Fractured Abyss", "Ruptured Abyss");
 
         const sourceItem = this.skillBuilder.getSourceItem(fixedValue);
         const targetItem = this.skillBuilder.getTargetItem(sourceItem);
