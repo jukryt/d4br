@@ -13,8 +13,6 @@ namespace Importer.Custom.Elixir
             [2073000] = " Seething Opal of Materials",
             [2072998] = " Seething Opal of Socketables",
             [2073002] = " Seething Opal of Torment",
-            [2317520] = "[PH] Dungeon Secret Elixir -Test Only",
-            [2145224] = "[PH] Lost Altar Elixir -Test Only",
             [1804973] = "[PH]Elixir of Hollow-slaying",
             [1593068] = "Charred Demon Heart",
             [413331] = "Elixir of Fortitude",
@@ -26,6 +24,8 @@ namespace Importer.Custom.Elixir
             [1066720] = "Elixir of Poison Resistance",
             [1066730] = "Precision Elixir",
             [1067052] = "Elixir of Shadow Resistance",
+            [1882910] = "Profane Mindcage",
+            [2368336] = "[PH] Mad Honey",
         };
 
         private readonly bool _ignoreName;

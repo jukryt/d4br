@@ -2,32 +2,39 @@
 using Importer.Model;
 using Importer.Report;
 
-namespace Importer.Custom.Rune
+namespace Importer.Custom.Aspect
 {
-    internal class RuneFilter : IItemsFixer<Item>
+    internal class AspectFilter : IItemsFixer<ClassItem>
     {
         private static readonly IReadOnlyDictionary<long, string> IgnoreItems = new Dictionary<long, string>()
         {
-            [2100070] = "Random Legendary Rune",
-            [2099971] = "Random Rare or Legendary Rune",
-            [2062544] = "Random Rune",
+            [578894] = "Trickster's Aspect",
+            [1186574] = "Blast-Trapper's Aspect",
+            [1208172] = "High Velocity Aspect",
+            [1218948] = "Aspect of Explosive Verve",
+            [1338011] = "Aspect (REDESIGN) of Metamorphic Stone",
+            [1761328] = "Aspect of Poisonous Clouds",
+            [1971366] = "Aspect of Iron Rain",
+            [2164685] = "Aspect of Apogeic Furor",
+            [2461692] = "Aspect of Dominance",
+            [2464860] = "Aspect of the Disciple",
         };
 
         private readonly bool _ignoreName;
 
-        public RuneFilter(bool ignoreName)
+        public AspectFilter(bool ignoreName)
         {
             _ignoreName = ignoreName;
         }
 
-        public Task FixItemsAsync(List<Item> items, IMessageReporter reporter)
+        public Task FixItemsAsync(List<ClassItem> items, IMessageReporter reporter)
         {
             RemoveIgnoreItems(items, reporter);
 
             return Task.CompletedTask;
         }
 
-        private void RemoveIgnoreItems(List<Item> items, IMessageReporter reporter)
+        private void RemoveIgnoreItems(List<ClassItem> items, IMessageReporter reporter)
         {
             var ignoreItems = new HashSet<long>();
 
@@ -45,7 +52,7 @@ namespace Importer.Custom.Rune
             {
                 var exceptItems = IgnoreItems.Keys.Except(ignoreItems);
                 var exceptItemsString = string.Join(", ", exceptItems);
-                reporter.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(RuneFilter));
+                reporter.WriteMessage($"{nameof(RemoveIgnoreItems)} not match ({exceptItemsString})", nameof(AspectFilter));
             }
         }
     }

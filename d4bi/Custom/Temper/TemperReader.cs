@@ -6,13 +6,13 @@ using System.Text.RegularExpressions;
 
 namespace Importer.Custom.Temper
 {
-    internal class TemperReader : ResourceReader<TemperItem>
+    internal abstract class TemperReader : ResourceReader<TemperItem>
     {
         public const string ValueMacros = " X ";
 
         private readonly TemperSource _source;
 
-        public TemperReader(TemperSource source, ProgressReporter progressReporter) : base(source, progressReporter)
+        protected TemperReader(TemperSource source, ProgressReporter progressReporter) : base(source, progressReporter)
         {
             _source = source;
         }
@@ -51,11 +51,10 @@ namespace Importer.Custom.Temper
 
         private async Task<TemperProperties> GetPropertiesAsync(IPage page)
         {
-            var propertyes = await page.EvaluateFunctionAsync<List<string>>(_source.PropertiesScript);
-            var details = await GetDetalesAsync(page);
+            var description = await page.EvaluateFunctionAsync<string>(_source.DescriptionScript);
+            var details = await GetDetailsAsync(page);
 
-            var internalName = propertyes.FirstOrDefault(p => p.Contains(".itm"));
-            var temperType = GetTemperType(internalName);
+            var temperType = GetTemperType(description);
 
             return new TemperProperties
             {
@@ -64,7 +63,7 @@ namespace Importer.Custom.Temper
             };
         }
 
-        private async Task<List<TemperDetail>> GetDetalesAsync(IPage page)
+        private async Task<List<TemperDetail>> GetDetailsAsync(IPage page)
         {
             var details = await page.EvaluateFunctionAsync<List<string>>(_source.DetailsScript);
 
@@ -76,31 +75,7 @@ namespace Importer.Custom.Temper
             }).ToList();
         }
 
-        private TemperType GetTemperType(string? internalName)
-        {
-            if (string.IsNullOrEmpty(internalName))
-                return TemperType.None;
-
-            if (internalName.Contains("\u200BWeapon_"))
-                return TemperType.Weapon;
-
-            if (internalName.Contains("\u200BOffensive_"))
-                return TemperType.Offensive;
-
-            if (internalName.Contains("\u200BDefensive_"))
-                return TemperType.Defensive;
-
-            if (internalName.Contains("\u200BUtility_"))
-                return TemperType.Utility;
-
-            if (internalName.Contains("\u200BMobility_"))
-                return TemperType.Mobility;
-
-            if (internalName.Contains("\u200BResource_"))
-                return TemperType.Resource;
-
-            return TemperType.None;
-        }
+        protected abstract TemperType GetTemperType(string? description);
 
         private sealed class TemperProperties
         {

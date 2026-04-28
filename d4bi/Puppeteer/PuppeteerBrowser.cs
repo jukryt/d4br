@@ -32,7 +32,7 @@ namespace Importer.Puppeteer
             return new LaunchOptions
             {
                 Args = args,
-                Headless = true,
+                Headless = true, // if true then hidden window
                 Timeout = requestTimeout,
                 DefaultViewport = new ViewPortOptions { Width = 958, Height = 918 }
             };

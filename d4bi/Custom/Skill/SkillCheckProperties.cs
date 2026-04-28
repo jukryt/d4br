@@ -9,8 +9,9 @@ namespace Importer.Custom.Skill
         {
             foreach (var item in items)
             {
-                if ((!item.IsActive && item.Mods.Any()) ||
-                    (item.IsActive && item.Mods.Any(v => string.IsNullOrEmpty(v.Name) || v.Name.Contains('\n'))))
+                if (string.IsNullOrEmpty(item.Name) ||
+                    (!item.IsActive && item.Mods.Any()) ||
+                    (item.IsActive && (!item.Mods.Any() || item.Mods.Any(v => string.IsNullOrEmpty(v.Name) || v.Name.Contains('\n')))))
                     reporter.WriteMessage($"Id: {item.Id} - invalid", nameof(SkillCheckProperties));
             }
         }

@@ -1,21 +1,10 @@
 [
   {
-    "id": 578699,
-    "name": "Relentless Berserker's Aspect",
-    "classes": [
-      "Barbarian"
-    ]
-  },
-  {
     "id": 578702,
     "name": "Aspect of Bul-Kathos",
     "classes": [
       "Barbarian"
     ]
-  },
-  {
-    "id": 578703,
-    "name": "Smiting Aspect"
   },
   {
     "id": 578706,
@@ -36,17 +25,6 @@
     "name": "Aspect of Might"
   },
   {
-    "id": 578710,
-    "name": "Rapid Aspect"
-  },
-  {
-    "id": 578712,
-    "name": "Battle-Mad Aspect",
-    "classes": [
-      "Barbarian"
-    ]
-  },
-  {
     "id": 578716,
     "name": "Brawler's Aspect",
     "classes": [
@@ -54,22 +32,8 @@
     ]
   },
   {
-    "id": 578723,
-    "name": "Aspect of Numbing Wrath",
-    "classes": [
-      "Barbarian"
-    ]
-  },
-  {
     "id": 578728,
     "name": "Aspect of Grasping Whirlwind",
-    "classes": [
-      "Barbarian"
-    ]
-  },
-  {
-    "id": 578731,
-    "name": "Death Wish Aspect",
     "classes": [
       "Barbarian"
     ]
@@ -174,33 +138,8 @@
     "name": "Accelerating Aspect"
   },
   {
-    "id": 578784,
-    "name": "Aspect of Retribution"
-  },
-  {
     "id": 578786,
     "name": "Lightning Dancer's Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 578787,
-    "name": "Overcharged Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 578788,
-    "name": "Dire Wolf's Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 578791,
-    "name": "Aspect of Cyclonic Force",
     "classes": [
       "Druid"
     ]
@@ -210,15 +149,8 @@
     "name": "Aspect of Disobedience"
   },
   {
-    "id": 578793,
-    "name": "Aspect of the Trampled Earth",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
     "id": 578803,
-    "name": "Runeworker's Conduit Aspect",
+    "name": "Stoneworker's Aspect",
     "classes": [
       "Druid"
     ]
@@ -243,10 +175,6 @@
     "classes": [
       "Druid"
     ]
-  },
-  {
-    "id": 578825,
-    "name": "Aspect of the Crowded Sage"
   },
   {
     "id": 578826,
@@ -279,18 +207,8 @@
     ]
   },
   {
-    "id": 578858,
-    "name": "Icy Alchemist's Aspect",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
     "id": 578860,
-    "name": "Enshrouding Aspect",
-    "classes": [
-      "Rogue"
-    ]
+    "name": "Enshrouding Aspect"
   },
   {
     "id": 578865,
@@ -329,13 +247,6 @@
     ]
   },
   {
-    "id": 578879,
-    "name": "Energizing Aspect",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
     "id": 578880,
     "name": "Aspect of Imitated Imbuement",
     "classes": [
@@ -364,13 +275,6 @@
     ]
   },
   {
-    "id": 578894,
-    "name": "Trickster's Aspect",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
     "id": 578897,
     "name": "Aspect of the Umbral"
   },
@@ -386,36 +290,8 @@
     ]
   },
   {
-    "id": 578919,
-    "name": "Snowguard's Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 578925,
-    "name": "Flash Fire Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 578927,
-    "name": "Aspect of Frozen Orbit",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
     "id": 578933,
     "name": "Aspect of Inner Calm"
-  },
-  {
-    "id": 579639,
-    "name": "Steadfast Berserker's Aspect",
-    "classes": [
-      "Barbarian"
-    ]
   },
   {
     "id": 579641,
@@ -461,48 +337,6 @@
     ]
   },
   {
-    "id": 579683,
-    "name": "Seismic-shift Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 579686,
-    "name": "Aspect of Retaliation",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 579688,
-    "name": "Aspect of Mending Stone",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 579699,
-    "name": "Stormclaw's Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 579700,
-    "name": "Aspect of The Aftershock",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 579701,
-    "name": "Shockwave Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
     "id": 579702,
     "name": "Stormchaser's Aspect",
     "classes": [
@@ -518,51 +352,22 @@
   },
   {
     "id": 579709,
-    "name": "Trickshot Aspect",
+    "name": "Deadeye's Aspect",
     "classes": [
       "Rogue"
     ]
   },
   {
-    "id": 579746,
-    "name": "Aspect of Piercing Static",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 579747,
-    "name": "Frostblitz Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 579749,
-    "name": "Aspect of Binding Embers",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 579752,
-    "name": "Serpentine Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
     "id": 607856,
-    "name": "Aspect of Frenzied Dead",
+    "name": "Aspect of Frenzied Onslaught",
     "classes": [
-      "Necromancer"
-    ]
-  },
-  {
-    "id": 607884,
-    "name": "Flesh-Rending Aspect",
-    "classes": [
-      "Necromancer"
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Spiritborn",
+      "Warlock"
     ]
   },
   {
@@ -574,14 +379,14 @@
   },
   {
     "id": 609903,
-    "name": "Aspect of Plunging Darkness",
+    "name": "Bone Breaker's Aspect",
     "classes": [
       "Necromancer"
     ]
   },
   {
     "id": 610047,
-    "name": "Aspect of Explosive Mist",
+    "name": "Aspect of Transfusion",
     "classes": [
       "Necromancer"
     ]
@@ -601,13 +406,6 @@
     ]
   },
   {
-    "id": 610368,
-    "name": "Aspect of Empowering Reaper",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
     "id": 610372,
     "name": "Coldbringer's Aspect",
     "classes": [
@@ -616,35 +414,35 @@
   },
   {
     "id": 614832,
-    "name": "Blood Seeker's Aspect",
+    "name": "Aspect of Coalesced Blood",
     "classes": [
       "Necromancer"
     ]
   },
   {
     "id": 614914,
-    "name": "Aspect of Hungry Blood",
+    "name": "Aspect of Thickened Blood",
     "classes": [
       "Necromancer"
     ]
   },
   {
     "id": 615173,
-    "name": "Aspect of Occult Dominion",
+    "name": "Necrotic Carapace Aspect",
     "classes": [
       "Necromancer"
     ]
   },
   {
     "id": 615483,
-    "name": "Blood-soaked Aspect",
+    "name": "Shadow-Soaked Aspect",
     "classes": [
       "Necromancer"
     ]
   },
   {
     "id": 616063,
-    "name": "Aspect of Decaying Humerus",
+    "name": "Aspect of Gloom",
     "classes": [
       "Necromancer"
     ]
@@ -658,7 +456,7 @@
   },
   {
     "id": 616122,
-    "name": "Aspect of Bursting Bones",
+    "name": "Aspect of Serration",
     "classes": [
       "Necromancer"
     ]
@@ -666,20 +464,6 @@
   {
     "id": 616486,
     "name": "Unyielding Commander's Aspect",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
-    "id": 616507,
-    "name": "Aspect of Shielding Storm",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
-    "id": 621929,
-    "name": "Aspect of Grasping Veins",
     "classes": [
       "Necromancer"
     ]
@@ -707,49 +491,7 @@
     ]
   },
   {
-    "id": 849401,
-    "name": "Aspect of the Alpha",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 854661,
-    "name": "Nighthowler's Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 872356,
-    "name": "Aspect of Nature's Savagery",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 880500,
-    "name": "Aspect of the Tempest",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 884984,
-    "name": "Aspect of the Ursine Horror",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 988683,
-    "name": "Aspect of Quicksand",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 1040952,
+    "id": 1040973,
     "name": "Aspect of Armageddon",
     "classes": [
       "Sorcerer"
@@ -764,16 +506,11 @@
   },
   {
     "id": 1184010,
-    "name": "Aspect of Cruel Sustenance",
+    "name": "Aspect of Debilitating Toxins",
     "classes": [
-      "Rogue"
-    ]
-  },
-  {
-    "id": 1184418,
-    "name": "Aspect of Uncanny Treachery",
-    "classes": [
-      "Rogue"
+      "Druid",
+      "Rogue",
+      "Spiritborn"
     ]
   },
   {
@@ -805,29 +542,8 @@
     ]
   },
   {
-    "id": 1186378,
-    "name": "Aspect of Siphoned Victuals",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
     "id": 1186380,
     "name": "Aspect of Corruption",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
-    "id": 1186574,
-    "name": "Blast-Trapper's Aspect",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
-    "id": 1186690,
-    "name": "Mangler's Aspect",
     "classes": [
       "Rogue"
     ]
@@ -854,13 +570,6 @@
     ]
   },
   {
-    "id": 1199204,
-    "name": "Earthstriker's Aspect",
-    "classes": [
-      "Barbarian"
-    ]
-  },
-  {
     "id": 1199206,
     "name": "Luckbringer Aspect",
     "classes": [
@@ -882,17 +591,11 @@
     ]
   },
   {
-    "id": 1200309,
-    "name": "Skinwalker's Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
     "id": 1200856,
     "name": "Aspect of Tempering Blows",
     "classes": [
-      "Barbarian"
+      "Barbarian",
+      "Rogue"
     ]
   },
   {
@@ -917,43 +620,8 @@
     ]
   },
   {
-    "id": 1202013,
-    "name": "Slaking Aspect",
-    "classes": [
-      "Barbarian"
-    ]
-  },
-  {
-    "id": 1202439,
-    "name": "Ballistic Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 1202541,
-    "name": "Stormshifter's Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 1205051,
-    "name": "Aspect of the Wildrage",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 1205995,
-    "name": "Aspect of the Rampaging Werebeast",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
     "id": 1206103,
-    "name": "Repeating Aspect",
+    "name": "Ranger's Aspect",
     "classes": [
       "Rogue"
     ]
@@ -973,123 +641,12 @@
     ]
   },
   {
-    "id": 1208172,
-    "name": "Aspect of Branching Volleys",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
-    "id": 1211283,
-    "name": "Snowveiled Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1211552,
-    "name": "Aspect of Frozen Memories",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1211656,
-    "name": "Shattered Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
     "id": 1212246,
-    "name": "Aspect of Efficiency",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212281,
-    "name": "Aspect of the Frozen Tundra",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212316,
-    "name": "Aspect of the Frozen Wake",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212318,
-    "name": "Glacial Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
+    "name": "Aspect of Efficiency"
   },
   {
     "id": 1212462,
-    "name": "Aspect of Fortune",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212469,
-    "name": "Aspect of Engulfing Flames",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212474,
-    "name": "Aspect of Conflagration",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212483,
-    "name": "Incendiary Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212493,
-    "name": "Aspect of Ancient Flame",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212497,
-    "name": "Encased Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212506,
-    "name": "Aspect of Piercing Cold",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212515,
-    "name": "Aspect of Shattered Stars",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1212894,
-    "name": "Symbiotic Aspect",
-    "classes": [
-      "Druid"
-    ]
+    "name": "Aspect of Fortune"
   },
   {
     "id": 1213533,
@@ -1099,36 +656,8 @@
     ]
   },
   {
-    "id": 1213812,
-    "name": "Aspect of Singed Extremities",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
     "id": 1214116,
     "name": "Prodigy's Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1214265,
-    "name": "Flamewalker's Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1214292,
-    "name": "Earthguard Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 1215396,
-    "name": "Everliving Aspect",
     "classes": [
       "Sorcerer"
     ]
@@ -1142,30 +671,15 @@
   },
   {
     "id": 1215769,
-    "name": "Aspect of Control",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1218948,
-    "name": "Aspect of Explosive Verve",
-    "classes": [
-      "Rogue"
-    ]
+    "name": "Vanquishing Aspect"
   },
   {
     "id": 1219216,
     "name": "Snap Frozen Aspect",
     "classes": [
-      "Rogue"
-    ]
-  },
-  {
-    "id": 1220102,
-    "name": "Umbrous Aspect",
-    "classes": [
-      "Rogue"
+      "Necromancer",
+      "Rogue",
+      "Sorcerer"
     ]
   },
   {
@@ -1176,38 +690,26 @@
     ]
   },
   {
-    "id": 1220424,
-    "name": "Aspect of Exposed Flesh",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
     "id": 1220474,
-    "name": "Blighted Aspect",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
-    "id": 1221015,
-    "name": "Aspect of the Damned",
+    "name": "Aspect of Terror",
     "classes": [
       "Necromancer"
     ]
   },
   {
     "id": 1221426,
-    "name": "Aspect of Serration",
+    "name": "Aspect of Bursting Bones",
     "classes": [
       "Necromancer"
     ]
   },
   {
     "id": 1221467,
-    "name": "Torturous Aspect",
+    "name": "Aspect of Crippling Darkness",
     "classes": [
-      "Necromancer"
+      "Necromancer",
+      "Rogue",
+      "Warlock"
     ]
   },
   {
@@ -1233,7 +735,7 @@
   },
   {
     "id": 1221659,
-    "name": "Blood-bathed Aspect",
+    "name": "Tides of Blood Aspect",
     "classes": [
       "Necromancer"
     ]
@@ -1281,13 +783,6 @@
     ]
   },
   {
-    "id": 1222472,
-    "name": "Aspect of the Embalmer",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
     "id": 1222592,
     "name": "Aspect of Hardened Bones",
     "classes": [
@@ -1305,33 +800,29 @@
     "id": 1223323,
     "name": "Aspect of Reanimation",
     "classes": [
-      "Necromancer"
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Spiritborn",
+      "Warlock"
     ]
   },
   {
     "id": 1223790,
     "name": "Tidal Aspect",
     "classes": [
-      "Necromancer"
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Warlock"
     ]
   },
   {
     "id": 1223890,
     "name": "Eluding Aspect"
-  },
-  {
-    "id": 1224521,
-    "name": "Aspect of Biting Cold",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1224681,
-    "name": "Storm Swell Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
   },
   {
     "id": 1224753,
@@ -1341,47 +832,8 @@
     ]
   },
   {
-    "id": 1225181,
-    "name": "Aspect of Overwhelming Currents",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1225191,
-    "name": "Aspect of the Unwavering",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1225218,
-    "name": "Recharging Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1225295,
-    "name": "Aspect of Splintering Energy",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1225298,
-    "name": "Aspect of the Unbroken Tether",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
     "id": 1225423,
     "name": "Ghostwalker Aspect"
-  },
-  {
-    "id": 1225449,
-    "name": "Aspect of the Deflecting Barrier"
   },
   {
     "id": 1225570,
@@ -1395,51 +847,8 @@
     "name": "Exploiter's Aspect"
   },
   {
-    "id": 1226355,
-    "name": "Assimilation Aspect"
-  },
-  {
-    "id": 1227240,
-    "name": "Mage-Lord's Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1227270,
-    "name": "Stable Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1227283,
-    "name": "Aspect of Shared Misery"
-  },
-  {
     "id": 1227651,
     "name": "Needleflare Aspect"
-  },
-  {
-    "id": 1229076,
-    "name": "Aspect of the Bounding Conduit",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1229701,
-    "name": "Gravitational Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1301738,
-    "name": "Aspect of Synergy",
-    "classes": [
-      "Rogue"
-    ]
   },
   {
     "id": 1301761,
@@ -1464,14 +873,7 @@
   },
   {
     "id": 1304554,
-    "name": "Ravager's Aspect",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
-    "id": 1304681,
-    "name": "Aspect of Elusive Menace",
+    "name": "Agile Aspect",
     "classes": [
       "Rogue"
     ]
@@ -1481,20 +883,6 @@
     "name": "Infiltrator's Aspect",
     "classes": [
       "Rogue"
-    ]
-  },
-  {
-    "id": 1338011,
-    "name": "Aspect of Metamorphic Stone",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 1338285,
-    "name": "Aspect of the Blurred Beast",
-    "classes": [
-      "Druid"
     ]
   },
   {
@@ -1534,20 +922,6 @@
     ]
   },
   {
-    "id": 1439762,
-    "name": "Aspect of Searing Wards",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1457950,
-    "name": "Moonrage Aspect",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
     "id": 1485369,
     "name": "Aspect of Elemental Fate"
   },
@@ -1560,13 +934,6 @@
     "name": "Wanton Rupture Aspect",
     "classes": [
       "Barbarian"
-    ]
-  },
-  {
-    "id": 1619483,
-    "name": "Raw Might Aspect",
-    "classes": [
-      "Druid"
     ]
   },
   {
@@ -1584,13 +951,6 @@
     ]
   },
   {
-    "id": 1622932,
-    "name": "Battle Caster's Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
     "id": 1737620,
     "name": "Aspect of Sundered Ground",
     "classes": [
@@ -1605,15 +965,8 @@
     ]
   },
   {
-    "id": 1739655,
-    "name": "Resistant Assailant's Aspect",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
     "id": 1740178,
-    "name": "Shattered Spirit's Aspect",
+    "name": "Aspect of Rapid Ossification",
     "classes": [
       "Necromancer"
     ]
@@ -1623,13 +976,6 @@
     "name": "Aspect of Adaptability"
   },
   {
-    "id": 1743946,
-    "name": "Aspect of Shredding Blades",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
     "id": 1746093,
     "name": "Juggernaut's Aspect"
   },
@@ -1637,21 +983,9 @@
     "id": 1754892,
     "name": "Aphotic Aspect",
     "classes": [
-      "Necromancer"
-    ]
-  },
-  {
-    "id": 1755013,
-    "name": "Flamethrower's Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1761328,
-    "name": "Aspect of Poisonous Clouds",
-    "classes": [
-      "Rogue"
+      "Necromancer",
+      "Rogue",
+      "Warlock"
     ]
   },
   {
@@ -1705,10 +1039,7 @@
   },
   {
     "id": 1822320,
-    "name": "Aspect of Rallying Reversal",
-    "classes": [
-      "Spiritborn"
-    ]
+    "name": "Aspect of Rallying Reversal"
   },
   {
     "id": 1822322,
@@ -1747,24 +1078,11 @@
   },
   {
     "id": 1822339,
-    "name": "Bruiser's Aspect",
-    "classes": [
-      "Spiritborn"
-    ]
+    "name": "Bruiser's Aspect"
   },
   {
     "id": 1822341,
-    "name": "Aspect of Binding Morass",
-    "classes": [
-      "Spiritborn"
-    ]
-  },
-  {
-    "id": 1822343,
-    "name": "Aspect of Falling Feathers",
-    "classes": [
-      "Spiritborn"
-    ]
+    "name": "Aspect of Binding Morass"
   },
   {
     "id": 1822345,
@@ -1781,22 +1099,8 @@
     ]
   },
   {
-    "id": 1822350,
-    "name": "Duelist's Aspect",
-    "classes": [
-      "Spiritborn"
-    ]
-  },
-  {
-    "id": 1841369,
-    "name": "Reaping Lotus' Aspect",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
     "id": 1848038,
-    "name": "Phasing Poltergeist's Aspect",
+    "name": "Aspect of Compound Fracture",
     "classes": [
       "Necromancer"
     ]
@@ -1805,7 +1109,12 @@
     "id": 1858270,
     "name": "Unrelenting Aspect",
     "classes": [
-      "Spiritborn"
+      "Barbarian",
+      "Druid",
+      "Paladin",
+      "Rogue",
+      "Spiritborn",
+      "Warlock"
     ]
   },
   {
@@ -1841,6 +1150,7 @@
     "name": "Bristleback Aspect",
     "classes": [
       "Necromancer",
+      "Paladin",
       "Spiritborn"
     ]
   },
@@ -1856,12 +1166,9 @@
     "name": "Aspect of Redirected Force",
     "classes": [
       "Necromancer",
+      "Paladin",
       "Spiritborn"
     ]
-  },
-  {
-    "id": 1859769,
-    "name": "Hectic Aspect"
   },
   {
     "id": 1859813,
@@ -1880,12 +1187,8 @@
     "name": "Aspect of Accursed Touch"
   },
   {
-    "id": 1868257,
-    "name": "Blood Boiling Aspect"
-  },
-  {
     "id": 1882773,
-    "name": "Aspect of Fel Gluttony",
+    "name": "Aspect of Natural Selection",
     "classes": [
       "Necromancer"
     ]
@@ -1898,18 +1201,6 @@
     ]
   },
   {
-    "id": 1893589,
-    "name": "Aspect of Frosty Strides"
-  },
-  {
-    "id": 1906504,
-    "name": "Aspect of Inevitable Fate"
-  },
-  {
-    "id": 1919349,
-    "name": "Aspect of Concussive Strikes"
-  },
-  {
     "id": 1919997,
     "name": "Wildbolt Aspect"
   },
@@ -1920,20 +1211,10 @@
       "Barbarian",
       "Druid",
       "Necromancer",
-      "Rogue",
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1923692,
-    "name": "Aspect of Sly Steps",
-    "classes": [
-      "Barbarian",
-      "Druid",
-      "Necromancer",
+      "Paladin",
       "Rogue",
       "Sorcerer",
-      "Spiritborn"
+      "Warlock"
     ]
   },
   {
@@ -1941,13 +1222,6 @@
     "name": "Aspect of Fierce Winds",
     "classes": [
       "Barbarian"
-    ]
-  },
-  {
-    "id": 1925377,
-    "name": "Aspect of Charged Flash",
-    "classes": [
-      "Sorcerer"
     ]
   },
   {
@@ -1965,24 +1239,10 @@
     ]
   },
   {
-    "id": 1926782,
-    "name": "Aspect of Anger Management",
-    "classes": [
-      "Barbarian"
-    ]
-  },
-  {
     "id": 1929337,
     "name": "Executioner's Aspect",
     "classes": [
       "Barbarian"
-    ]
-  },
-  {
-    "id": 1933286,
-    "name": "Rejuvenating Aspect",
-    "classes": [
-      "Druid"
     ]
   },
   {
@@ -1993,50 +1253,8 @@
     ]
   },
   {
-    "id": 1934512,
-    "name": "Winter Touch Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1934644,
-    "name": "Aspect of Elemental Constellation",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1935062,
-    "name": "Jolting Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1936204,
-    "name": "Firestarter Aspect",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1937739,
-    "name": "Aspect of Overheating",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
     "id": 1942672,
     "name": "Aspect of True Sight",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
-    "id": 1943568,
-    "name": "Coldclip Aspect",
     "classes": [
       "Rogue"
     ]
@@ -2047,25 +1265,6 @@
     "classes": [
       "Necromancer"
     ]
-  },
-  {
-    "id": 1949276,
-    "name": "Shademist Aspect",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
-    "id": 1950240,
-    "name": "Aspect of the Dark Dance"
-  },
-  {
-    "id": 1950261,
-    "name": "Aspect of Creeping Death"
-  },
-  {
-    "id": 1950266,
-    "name": "Aspect of the Prudent Heart"
   },
   {
     "id": 1950503,
@@ -2082,29 +1281,8 @@
     ]
   },
   {
-    "id": 1963371,
-    "name": "Aspect of the Firebird",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1964483,
-    "name": "Aspect of the Orange Herald",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
     "id": 1965000,
     "name": "Aspect of Elemental Acuity",
-    "classes": [
-      "Sorcerer"
-    ]
-  },
-  {
-    "id": 1965062,
-    "name": "Lightning Rod Aspect",
     "classes": [
       "Sorcerer"
     ]
@@ -2132,10 +1310,7 @@
   },
   {
     "id": 1968381,
-    "name": "Aspect of Nebulous Brews",
-    "classes": [
-      "Rogue"
-    ]
+    "name": "Aspect of Nebulous Brews"
   },
   {
     "id": 1969083,
@@ -2152,17 +1327,16 @@
     ]
   },
   {
-    "id": 1971366,
-    "name": "Aspect of Iron Rain",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
     "id": 1972501,
-    "name": "Aspect of the Unholy Tether",
+    "name": "Aspect of the Unholy Confederate",
     "classes": [
-      "Necromancer"
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Spiritborn",
+      "Warlock"
     ]
   },
   {
@@ -2173,29 +1347,8 @@
     ]
   },
   {
-    "id": 1974257,
-    "name": "Aspect of Avoidance",
-    "classes": [
-      "Spiritborn"
-    ]
-  },
-  {
-    "id": 1974301,
-    "name": "Inexorable Reaper's Aspect",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
     "id": 1975355,
     "name": "Aspect of Apprehension",
-    "classes": [
-      "Spiritborn"
-    ]
-  },
-  {
-    "id": 1976569,
-    "name": "Aspect of Recalling Feathers",
     "classes": [
       "Spiritborn"
     ]
@@ -2216,7 +1369,7 @@
   },
   {
     "id": 1977735,
-    "name": "Imprisoned Spirit's Aspect",
+    "name": "Aspect of Amplified Damage",
     "classes": [
       "Necromancer"
     ]
@@ -2316,6 +1469,7 @@
     "id": 1985480,
     "name": "Aspect of Endurance",
     "classes": [
+      "Rogue",
       "Spiritborn"
     ]
   },
@@ -2324,13 +1478,7 @@
     "name": "Aspect of Layered Wards",
     "classes": [
       "Necromancer",
-      "Spiritborn"
-    ]
-  },
-  {
-    "id": 1987429,
-    "name": "Aspect of Interdiction",
-    "classes": [
+      "Paladin",
       "Spiritborn"
     ]
   },
@@ -2343,10 +1491,7 @@
   },
   {
     "id": 1987448,
-    "name": "Aspect of Alacrity",
-    "classes": [
-      "Spiritborn"
-    ]
+    "name": "Aspect of Alacrity"
   },
   {
     "id": 1987452,
@@ -2356,39 +1501,12 @@
     ]
   },
   {
-    "id": 1989503,
-    "name": "Aspect of Invigorating Will",
-    "classes": [
-      "Spiritborn"
-    ]
-  },
-  {
     "id": 2014186,
-    "name": "Aspect of the Fortress",
-    "classes": [
-      "Barbarian"
-    ]
-  },
-  {
-    "id": 2014637,
-    "name": "Aspect of the Rushing Wilds",
-    "classes": [
-      "Druid"
-    ]
+    "name": "Aspect of the Fortress"
   },
   {
     "id": 2019033,
-    "name": "Aspect of Forward Momentum",
-    "classes": [
-      "Barbarian"
-    ]
-  },
-  {
-    "id": 2040941,
-    "name": "Aspect of Star Shards",
-    "classes": [
-      "Rogue"
-    ]
+    "name": "Aspect of Forward Momentum"
   },
   {
     "id": 2042271,
@@ -2398,40 +1516,8 @@
     ]
   },
   {
-    "id": 2044227,
-    "name": "Clandestine Aspect",
-    "classes": [
-      "Rogue"
-    ]
-  },
-  {
-    "id": 2098752,
-    "name": "Aspect of Shattered Defenses",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
     "id": 2099442,
     "name": "Aspect of Anticline Burst",
-    "classes": [
-      "Druid"
-    ]
-  },
-  {
-    "id": 2107188,
-    "name": "Aspect of Assistance"
-  },
-  {
-    "id": 2117213,
-    "name": "Aspect of Distilled Anima",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
-    "id": 2145128,
-    "name": "Aspect of Electrified Claws",
     "classes": [
       "Druid"
     ]
@@ -2444,15 +1530,8 @@
     ]
   },
   {
-    "id": 2148881,
-    "name": "Bone Duster's Aspect",
-    "classes": [
-      "Necromancer"
-    ]
-  },
-  {
     "id": 2152208,
-    "name": "Slice and Dice Aspect",
+    "name": "Aspect of Siphoning Strikes",
     "classes": [
       "Rogue"
     ]
@@ -2470,10 +1549,6 @@
     "classes": [
       "Barbarian"
     ]
-  },
-  {
-    "id": 2164685,
-    "name": "Aspect of Apogeic Furor"
   },
   {
     "id": 2164939,
@@ -2509,9 +1584,15 @@
   },
   {
     "id": 2239052,
-    "name": "Aspect of Service and Sacrifice",
+    "name": "Hellbent Commander Aspect",
     "classes": [
-      "Necromancer"
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Spiritborn",
+      "Warlock"
     ]
   },
   {
@@ -2532,6 +1613,8 @@
     "id": 2249121,
     "name": "Shivering Aspect",
     "classes": [
+      "Necromancer",
+      "Rogue",
       "Sorcerer"
     ]
   },
@@ -2539,7 +1622,9 @@
     "id": 2416740,
     "name": "Aspect of the Northern Guard",
     "classes": [
-      "Paladin"
+      "Necromancer",
+      "Paladin",
+      "Spiritborn"
     ]
   },
   {
@@ -2564,20 +1649,6 @@
     ]
   },
   {
-    "id": 2420856,
-    "name": "Bulwark's Aspect",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
-    "id": 2420858,
-    "name": "Lord of Blood's Aspect",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
     "id": 2420868,
     "name": "Vanguard's Aspect",
     "classes": [
@@ -2592,31 +1663,33 @@
     ]
   },
   {
-    "id": 2439231,
-    "name": "Aspect of Verdant Restoration",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
     "id": 2439343,
     "name": "Aspect of Akarat's Blessing",
     "classes": [
-      "Paladin"
+      "Necromancer",
+      "Paladin",
+      "Spiritborn"
     ]
   },
   {
     "id": 2439349,
     "name": "Aspect of the Indomitable",
     "classes": [
-      "Paladin"
+      "Necromancer",
+      "Paladin",
+      "Spiritborn"
     ]
   },
   {
     "id": 2445175,
     "name": "Aspect of Glynn's Anvil",
     "classes": [
-      "Paladin"
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Spiritborn"
     ]
   },
   {
@@ -2634,22 +1707,8 @@
     ]
   },
   {
-    "id": 2445852,
-    "name": "Squire's Aspect",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
     "id": 2445856,
     "name": "Aspect of Jacques' Fervor",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
-    "id": 2445862,
-    "name": "Apostle's Aspect",
     "classes": [
       "Paladin"
     ]
@@ -2665,7 +1724,9 @@
     "id": 2447225,
     "name": "Aspect of Lapa's Scripture",
     "classes": [
-      "Paladin"
+      "Necromancer",
+      "Paladin",
+      "Spiritborn"
     ]
   },
   {
@@ -2725,36 +1786,8 @@
     ]
   },
   {
-    "id": 2458224,
-    "name": "Aspect of the Light's Mending",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
-    "id": 2460066,
-    "name": "Aspect of Salvation",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
-    "id": 2461692,
-    "name": "Aspect of Dominance",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
     "id": 2461971,
     "name": "Virtuous Aspect",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
-    "id": 2462321,
-    "name": "Aspect of Unstoppable Force",
     "classes": [
       "Paladin"
     ]
@@ -2769,13 +1802,6 @@
   {
     "id": 2464389,
     "name": "Aspect of Militance",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
-    "id": 2464860,
-    "name": "Aspect of the Disciple",
     "classes": [
       "Paladin"
     ]
@@ -2798,14 +1824,12 @@
     "id": 2466053,
     "name": "Aspect of Swift Spirit",
     "classes": [
-      "Paladin"
-    ]
-  },
-  {
-    "id": 2466880,
-    "name": "Aspect of Hale's Salve",
-    "classes": [
-      "Paladin"
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Spiritborn"
     ]
   },
   {
@@ -2837,20 +1861,6 @@
     ]
   },
   {
-    "id": 2468273,
-    "name": "Aspect of Loyalty",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
-    "id": 2468455,
-    "name": "Aspect of Excellence",
-    "classes": [
-      "Paladin"
-    ]
-  },
-  {
     "id": 2468693,
     "name": "Aspect of Chastisement",
     "classes": [
@@ -2859,10 +1869,7 @@
   },
   {
     "id": 2468717,
-    "name": "Aspect of Exorcism",
-    "classes": [
-      "Paladin"
-    ]
+    "name": "Aspect of Exorcism"
   },
   {
     "id": 2469489,
@@ -2881,6 +1888,1159 @@
   {
     "id": 2484503,
     "name": "Aspect of Heavenly Strength",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Sorcerer",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2533703,
+    "name": "Aspect of the Shapeshifter",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2535903,
+    "name": "Shifter's Aspect",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2536648,
+    "name": "Aspect of Shelter"
+  },
+  {
+    "id": 2537990,
+    "name": "Nature's Reach Aspect",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2540447,
+    "name": "Great Storm Aspect",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2540929,
+    "name": "Aspect of Natural Instincts",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2541048,
+    "name": "Aspect of the Followed Path",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2541132,
+    "name": "Aspect of the Ursine Horror",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2541747,
+    "name": "Neurotoxic Aspect",
+    "classes": [
+      "Druid",
+      "Rogue",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2541850,
+    "name": "Envenomed Aspect",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2542234,
+    "name": "Seismic-shift Aspect",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2542620,
+    "name": "Aspect of Mending Stone",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2542658,
+    "name": "Crushing Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2542976,
+    "name": "Embattled Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2543092,
+    "name": "Powershifting Aspect",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2543598,
+    "name": "Aspect of Human Ingenuity",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2543915,
+    "name": "Archdruid's Aspect",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2547805,
+    "name": "Brutal Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547904,
+    "name": "Malicious Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547906,
+    "name": "Insidious Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547909,
+    "name": "Aspect of Calamity",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547911,
+    "name": "Remorseless Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547913,
+    "name": "Aggressive Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547915,
+    "name": "Ominous Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547917,
+    "name": "Overwhelming Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547920,
+    "name": "Demonic Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547922,
+    "name": "Aspect of Scorching Heat",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547924,
+    "name": "Aspect of Fathomless Dark",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547926,
+    "name": "Aspect of Heresy",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547930,
+    "name": "Aspect of Mutilation",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547932,
+    "name": "Aspect of Ignition",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547934,
+    "name": "Aspect of Peril",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547936,
+    "name": "Aspect of Lava",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547938,
+    "name": "Aspect of Scorn",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547940,
+    "name": "Aspect of Diabolical Armor",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547945,
+    "name": "Aspect of Deeper Shadows",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547950,
+    "name": "Misanthropic Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547953,
+    "name": "Gorefeast Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547961,
+    "name": "Aspect of Cauterization",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547963,
+    "name": "Enfeebling Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547968,
+    "name": "Aspect of Malevolence",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547971,
+    "name": "Aspect of Fiendish Oppression",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547977,
+    "name": "Aspect of Immolation",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547980,
+    "name": "Bane-Link Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547987,
+    "name": "Sadistic Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547989,
+    "name": "Pyroclastic Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547991,
+    "name": "Nefarious Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547995,
+    "name": "Aspect of Misfortune",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2547997,
+    "name": "Methodical Aspect",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2548002,
+    "name": "Aspect of Impetus",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2548006,
+    "name": "Aspect of Authority",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2548008,
+    "name": "Aspect of Ritual Synthesis",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2553921,
+    "name": "Aspect of the Warpath",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2553966,
+    "name": "Aspect of Walloping",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2556906,
+    "name": "Cut to the Bone Aspect",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2557499,
+    "name": "Duelist's Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Sorcerer",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2557986,
+    "name": "Heavy Hitting Aspect",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2558525,
+    "name": "Raid Leader's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2558637,
+    "name": "Irrepressible Aspect",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2567333,
+    "name": "Aspect of Intricacy",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2567355,
+    "name": "Aspect of Supremacy",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2569780,
+    "name": "Aspect of Booming Voice",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2569782,
+    "name": "Battle Fervor's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2571947,
+    "name": "Blood Boiling Aspect"
+  },
+  {
+    "id": 2571959,
+    "name": "Aspect of Furious Impulse",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2574460,
+    "name": "Impairing Aspect",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2574494,
+    "name": "Wyward's Aspect",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2574498,
+    "name": "Conjuration Master's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574502,
+    "name": "Galvanic Aspect",
+    "classes": [
+      "Druid",
+      "Sorcerer",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2574509,
+    "name": "Aspect of Channeling",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Sorcerer",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2574510,
+    "name": "Prepared Assailant's Aspect",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2574530,
+    "name": "Everliving Aspect"
+  },
+  {
+    "id": 2574544,
+    "name": "Scornful Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574550,
+    "name": "Blasting Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574563,
+    "name": "Aspect of Cold Judgement",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574567,
+    "name": "Aspect of Arrogance",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574571,
+    "name": "Storm Splitter's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574575,
+    "name": "Aspect of Merciless Cold",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574579,
+    "name": "Writhing Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Spiritborn",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2574581,
+    "name": "Aspect of Alchemical Advantage",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2574589,
+    "name": "Icy Alchemist's Aspect",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2574604,
+    "name": "Aspect of Arcane Ward",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574608,
+    "name": "Aspect of Piercing Static",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574612,
+    "name": "Aspect of Elemental Constellation",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574616,
+    "name": "Overheating Aspect",
+    "classes": [
+      "Barbarian",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574620,
+    "name": "Aspect of Searing Impact",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574628,
+    "name": "Aspect of the Frozen Wake",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574634,
+    "name": "Aspect of Splintering Energy",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574644,
+    "name": "Aspect of Shredding Blades",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574656,
+    "name": "Aspect of Refutation",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2574909,
+    "name": "Trickster's Aspect",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2574919,
+    "name": "Aspect of Entrapment",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2575085,
+    "name": "Trapper's Aspect",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2575120,
+    "name": "Grenadier's Aspect",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2575135,
+    "name": "Aspect of the Untarnished Blaze",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2575190,
+    "name": "Aspect of Combustion",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2575214,
+    "name": "Snowveiled Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2575266,
+    "name": "Cremator's Aspect",
+    "classes": [
+      "Barbarian",
+      "Sorcerer",
+      "Spiritborn",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2575290,
+    "name": "Aspect of the Enchanter",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2575303,
+    "name": "Lingering Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2575334,
+    "name": "Aspect of Biting Cold",
+    "classes": [
+      "Necromancer",
+      "Rogue",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2575379,
+    "name": "Aspect of Frozen Memories",
+    "classes": [
+      "Necromancer",
+      "Rogue",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2575383,
+    "name": "Recharging Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2575399,
+    "name": "Sunderfrost Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2576064,
+    "name": "Mage-Lord's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2576074,
+    "name": "Aspect of Warmth",
+    "classes": [
+      "Barbarian",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2576122,
+    "name": "Encased Aspect",
+    "classes": [
+      "Necromancer",
+      "Rogue",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2576352,
+    "name": "Battle Caster's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2576770,
+    "name": "Aspect of Concussive Blend",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2576823,
+    "name": "Aspect of Iron Rain",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2577075,
+    "name": "Aspect of Elemental Attunement",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2577234,
+    "name": "Sapping Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Spiritborn",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2577527,
+    "name": "Aspect of Ancient Flame",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2577860,
+    "name": "Aspect of Overwhelming Currents",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2577876,
+    "name": "Aspect of Piercing Cold",
+    "classes": [
+      "Necromancer",
+      "Rogue",
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2577945,
+    "name": "Aspect of Malice",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2577956,
+    "name": "Aspect of Deluge"
+  },
+  {
+    "id": 2579588,
+    "name": "Nightstalker's Aspect",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2580474,
+    "name": "Aspect of Poisonous Clouds",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2580483,
+    "name": "Aspect of Mending Obscurity",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2580577,
+    "name": "Aspect of Explosive Verve",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2580585,
+    "name": "Blast-Trapper's Aspect",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2580591,
+    "name": "Aspect of Aftermath",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2582877,
+    "name": "Earthstriker's Aspect",
+    "classes": [
+      "Barbarian",
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2584046,
+    "name": "Vulpine's Aspect"
+  },
+  {
+    "id": 2584885,
+    "name": "Aspect of the Orange Herald"
+  },
+  {
+    "id": 2585058,
+    "name": "Joltkeeper's Aspect",
+    "classes": [
+      "Sorcerer"
+    ]
+  },
+  {
+    "id": 2585075,
+    "name": "Sickfoot's Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Spiritborn",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2591172,
+    "name": "Aspect of Death's Defense",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2591176,
+    "name": "Aspect of Spiked Armor",
+    "classes": [
+      "Necromancer",
+      "Paladin",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2591186,
+    "name": "Aspect of Coagulation",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Rogue",
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2614304,
+    "name": "Steadfast Berserker's Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid"
+    ]
+  },
+  {
+    "id": 2614308,
+    "name": "Battle-Mad Aspect",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2616408,
+    "name": "Aspect of Retribution"
+  },
+  {
+    "id": 2616416,
+    "name": "Aspect of Apogeic Furor"
+  },
+  {
+    "id": 2617084,
+    "name": "Ferocious Aspect",
+    "classes": [
+      "Barbarian",
+      "Druid",
+      "Necromancer",
+      "Rogue",
+      "Sorcerer",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2617223,
+    "name": "Lord of Blood's Aspect",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2617264,
+    "name": "Bulwark's Aspect",
+    "classes": [
+      "Necromancer",
+      "Paladin",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2618120,
+    "name": "Progenitor's Aspect",
+    "classes": [
+      "Barbarian"
+    ]
+  },
+  {
+    "id": 2620543,
+    "name": "Aspect of the Wildrage",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2620551,
+    "name": "Aspect of Shielding Bones",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2620559,
+    "name": "Aspect of Hewed Flesh",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2620610,
+    "name": "Raw Might Aspect",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2620614,
+    "name": "Overcharged Aspect",
+    "classes": [
+      "Druid"
+    ]
+  },
+  {
+    "id": 2620618,
+    "name": "Aspect of Anger Management",
+    "classes": [
+      "Barbarian",
+      "Druid"
+    ]
+  },
+  {
+    "id": 2620638,
+    "name": "Aspect of Debilitating Darkness",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2620643,
+    "name": "Aspect of Interdiction",
+    "classes": [
+      "Necromancer",
+      "Paladin",
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2620647,
+    "name": "Aspect of Elusive Menace"
+  },
+  {
+    "id": 2620651,
+    "name": "Aspect of Synergy",
+    "classes": [
+      "Rogue"
+    ]
+  },
+  {
+    "id": 2620659,
+    "name": "Aspect of the Embalmer",
+    "classes": [
+      "Necromancer"
+    ]
+  },
+  {
+    "id": 2621643,
+    "name": "Aspect of Recalling Feathers",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2621647,
+    "name": "Aspect of Falling Feathers",
+    "classes": [
+      "Spiritborn"
+    ]
+  },
+  {
+    "id": 2621651,
+    "name": "Aspect of the Light's Mending",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2622371,
+    "name": "Aspect of Excellence",
+    "classes": [
+      "Paladin"
+    ]
+  },
+  {
+    "id": 2622376,
+    "name": "Aspect of Dominance"
+  },
+  {
+    "id": 2622381,
+    "name": "Aspect of the Disciple",
     "classes": [
       "Paladin"
     ]

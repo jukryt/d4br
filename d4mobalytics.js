@@ -122,12 +122,12 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        const affixTargetValue = this.getAffixTargetValue(sourceValue);
-        if (!affixTargetValue) {
+        const targetValue = this.getAffixTargetValue(sourceValue);
+        if (!targetValue) {
             return false;
         }
 
-        return this.addAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
+        return this.addAffixNodeTargetValue(node, "d4br_affix_name", targetValue);
     }
 
     getAffixTargetValue(sourceValue) {
@@ -144,30 +144,30 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        let sourceTemperValue;
+        let sourceValue;
         const temperNameMath = temperName.match(/(.+): (.+) \((.+)\)/);
         if (temperNameMath) {
-            sourceTemperValue = temperNameMath[2];
+            sourceValue = temperNameMath[2];
         }
 
-        if (!sourceTemperValue) {
+        if (!sourceValue) {
             return false;
         }
 
-        const temperTargetValue = this.getTemperTargetValue(sourceTemperValue);
-        if (!temperTargetValue) {
+        const targetValue = this.getTemperTargetValue(sourceValue);
+        if (!targetValue) {
             return false;
         }
 
-        return this.addAffixNodeTargetValue(temperNameNode, "d4br_temper_name", temperTargetValue);
+        return this.addAffixNodeTargetValue(temperNameNode, "d4br_temper_name", targetValue);
     }
 
     getTemperTargetValue(sourceValue) {
-        const fixedTemperValue = sourceValue
+        const fixedValue = sourceValue
             .replace("Movement Speed for X Seconds", "Movement Speed for 4 Seconds")
             .replace("Movement Speed for Seconds", "Movement Speed for 4 Seconds");
 
-        const sourceItem = this.temperBuilder.getSourceItem(fixedTemperValue);
+        const sourceItem = this.temperBuilder.getSourceItem(fixedValue);
         const targetItem = this.temperBuilder.getTargetItem(sourceItem);
         const targetValue = this.temperBuilder.buildValue(targetItem);
 
@@ -184,13 +184,17 @@ class D4MobalyticsProcessor {
             return false;
         }
 
-        const fixedTemperValue = sourceValue
+        const fixedValue = sourceValue
             .replace("En Guarde", "En Garde")
             .replace("Enhanced Defiance Aura", "Enhanced Defiance")
             .replace("Enhanced Fanaticism Aura", "Enhanced Fanaticism")
-            .replace("Enhanced Holy Light Aura", "Enhanced Holy Light");
+            .replace("Enhanced Holy Light Aura", "Enhanced Holy Light")
+            .replace("Zealots' Legacy", "Zealot's Legacy")
+            .replace("Disciples' Halo", "Disciple's Halo")
+            .replace("Shepard the Flock", "Shepherd the Flock")
+            .replace("Seraphs' Wings", "Seraph's Wings");
 
-        const sourceItem = this.skillBuilder.getSourceItem(fixedTemperValue);
+        const sourceItem = this.skillBuilder.getSourceItem(fixedValue);
         const targetItem = this.skillBuilder.getTargetItem(sourceItem);
         const targetValue = this.skillBuilder.buildTargetValue(targetItem);
 

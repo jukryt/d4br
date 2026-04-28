@@ -348,7 +348,7 @@
   },
   {
     "id": 2060357,
-    "name": "Sapping",
+    "name": "Prodigy's Tempo",
     "classes": [
       "Spiritborn"
     ]
@@ -435,6 +435,69 @@
     "name": "Beacon",
     "classes": [
       "Paladin"
+    ]
+  },
+  {
+    "id": 2459120,
+    "name": "Fathomless",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2459122,
+    "name": "Demonic Spicules",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2459124,
+    "name": "Dynamism",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2459126,
+    "name": "Pyrosis",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2459128,
+    "name": "Overmind",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2459134,
+    "name": "Greater Hex",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2459311,
+    "name": "Ritualism",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2459313,
+    "name": "Chaos",
+    "classes": [
+      "Warlock"
+    ]
+  },
+  {
+    "id": 2459459,
+    "name": "Dominion",
+    "classes": [
+      "Warlock"
     ]
   }
 ]

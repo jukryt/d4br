@@ -5,23 +5,11 @@ namespace Importer.Custom.Temper
 {
     internal class TemperFixData : IItemsFixer<TemperItem>
     {
-        private static readonly Dictionary<long, Func<TemperItem, bool>> TemperFixers = new()
+        private readonly Dictionary<long, Func<TemperItem, bool>> TemperFixers = new()
         {
-            [1873425] = (temper) =>
-                UpdateType(temper, TemperType.Resource, TemperType.Utility),
-
-            [1885023] = (temper) =>
-                UpdateType(temper, TemperType.Offensive, TemperType.Weapon),
+            [1861356] = (temper) =>
+                UpdateType(temper, TemperType.Weapon, TemperType.Utility),
         };
-
-        private static bool UpdateType(TemperItem item, TemperType oldType, TemperType newType)
-        {
-            if (item.InternalType != oldType)
-                return false;
-
-            item.InternalType = newType;
-            return true;
-        }
 
         public Task FixItemsAsync(List<TemperItem> items, IMessageReporter reporter)
         {
@@ -35,6 +23,15 @@ namespace Importer.Custom.Temper
             }
 
             return Task.CompletedTask;
+        }
+
+        private static bool UpdateType(TemperItem item, TemperType oldType, TemperType newType)
+        {
+            if (item.InternalType != oldType)
+                return false;
+
+            item.InternalType = newType;
+            return true;
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using Importer.Checker;
+using Importer.Custom.Aspect;
+using Importer.Custom.Charm;
 using Importer.Custom.Elixir;
 using Importer.Custom.Glyph;
 using Importer.Custom.Rune;
@@ -38,6 +40,8 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
+                                    new AspectFilter(false),
+                                    new AspectFixData(),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
                                     new FixName<ClassItem>(),
@@ -214,7 +218,7 @@ namespace Importer.Resource
                         new ResourceInfo<TemperItem>
                         {
                             Name = "temper en",
-                            Source = new TemperSource()
+                            Source = new TemperEnSource
                             {
                                 SourceInfos =
                                 [
@@ -225,7 +229,7 @@ namespace Importer.Resource
                                     },
                                 ],
                                 DetailsUrlTemplate = "https://www.wowhead.com/diablo-4/item/[id]",
-                                PropertiesScript = "() => [...document.querySelectorAll('#infobox-contents-0 div')].map(e => e.innerText)",
+                                DescriptionScript = "() => document.querySelector('div.whtt-scroll div.whtt-description').innerText",
                                 DetailsScript = "() => [...document.querySelectorAll('div.whtt-damage-details li[data-type=\"empty-bullet\"]')].map(e => e.innerText)",
                             },
                             Fix = new ResourceFix<TemperItem>
@@ -266,7 +270,42 @@ namespace Importer.Resource
                                 [
                                     new SourceInfo
                                     {
-                                        Url = "https://www.wowhead.com/diablo-4/items/quality:8:6",
+                                        Url = "https://www.wowhead.com/diablo-4/items/class:0/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/class:1/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/class:2/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/class:3/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/class:4/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/class:5/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/class:6/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/class:7/quality:8:6",
                                         Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
                                     },
                                 ],
@@ -337,6 +376,44 @@ namespace Importer.Resource
                             Target = new ResourceTarget<Item>
                             {
                                 FileName = "elixir.json",
+                            },
+                        },
+                        new ResourceInfo<ClassItem>
+                        {
+                            Name = "charm en",
+                            Source = new ResourceSource<ClassItem>
+                            {
+                                SourceInfos =
+                                [
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/slot:24",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames}))",
+                                    },
+                                ],
+                            },
+                            Fix = new ResourceFix<ClassItem>
+                            {
+                                Fixers =
+                                [
+                                    new CharmFilter(false),
+                                    new FixRemoveEmptyName<ClassItem>(),
+                                    new FixName<ClassItem>(),
+                                ],
+                            },
+                            Check = new ResourceCheck<ClassItem>
+                            {
+                                Checkers =
+                                [
+                                    new CheckUnique<ClassItem>
+                                    {
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
+                                    },
+                                ],
+                            },
+                            Target = new ResourceTarget<ClassItem>
+                            {
+                                FileName = "charm.json",
                             },
                         },
                     ],

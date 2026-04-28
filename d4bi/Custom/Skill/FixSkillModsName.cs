@@ -12,10 +12,12 @@ namespace Importer.Custom.Skill
                 foreach (var mod in item.Mods)
                 {
                     mod.Name = mod.Name
-                        ?.Replace('\u00A0', ' ') // non-breaking space
-                        ?.Replace('\u2014', '-') // Em Dash
-                        ?.Replace("  ", " ")     // double space
-                        ?.Trim();
+                        .Replace('\u00A0', ' ') // non-breaking space
+                        .Replace('\u2014', '-') // Em Dash
+                        .Replace("&quot;", "")  // quot
+                        .Replace("&amp;", "")   // amp
+                        .Replace("  ", " ")     // double space
+                        .Trim();
                 }
             }
 

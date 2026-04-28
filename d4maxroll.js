@@ -53,11 +53,12 @@ class D4MaxrollProcessor {
                                 this.runeWordProcess(runeWordNode);
                             }
                         }
-                        // common: elixir
+                        // common: elixir, charm
                         else if (newNode.querySelector("div.d4t-tip-common")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             for (const titleNode of titleNodes) {
-                                if (this.elixirNameProcess(titleNode)) {
+                                if (this.elixirNameProcess(titleNode) ||
+                                    this.charmNameProcess(titleNode)) {
                                     break;
                                 }
                             }
@@ -166,8 +167,24 @@ class D4MaxrollProcessor {
     }
 
     getCharClassName() {
-        const classNameTitle = document.querySelector("div.d4t-Paperdoll div.d4t-title");
-        return classNameTitle?.innerText;
+        if (document.querySelector("div.sorcerer_SorcererBar__3WOmc"))
+            return "Sorcerer"
+        if (document.querySelector("div.druid_DruidBar__IDR7X"))
+            return "Druid"
+        if (document.querySelector("div.barbarian_BarbarianBar__3bZZY"))
+            return "Barbarian"
+        if (document.querySelector("div.rogue_RogueBar__7v6WF"))
+            return "Rogue"
+        if (document.querySelector("div.necromancer_NecromancerBar__qdKhV"))
+            return "Necromancer"
+        if (document.querySelector("div.spiritborn_SpiritbornBar__p1Rzi"))
+            return "Spiritborn"
+        if (document.querySelector("div.paladin_PaladinBar__3i4ht"))
+            return "Paladin"
+        if (document.querySelector("div.warlock_WarlockBar__2Tu51"))
+            return "Warlock"
+
+        return undefined;
     }
 
     aspectNameProcess(titleNode, subTitleNode) {
@@ -183,10 +200,10 @@ class D4MaxrollProcessor {
         }
         // item node
         else {
-            const titleValue = titleNode.innerText;
+            const sourceValue = titleNode.innerText;
             const self = this;
 
-            const sourceItem = this.sourceLanguage.aspects.find(i => { return self.aspectNameFilter(i, titleValue); });
+            const sourceItem = this.sourceLanguage.aspects.find(i => { return self.aspectNameFilter(i, sourceValue); });
             if (!sourceItem) {
                 return false;
             }
@@ -200,19 +217,19 @@ class D4MaxrollProcessor {
         }
     }
 
-    aspectNameFilter(sourceItem, titleValue) {
+    aspectNameFilter(sourceItem, sourceValue) {
         const aspectIndex = sourceItem.name.indexOf("Aspect");
         // [Aspect of ...] => [Item_Name of Aspect_Name]
         if (aspectIndex === 0) {
             const aspectName = sourceItem.name.substring(6);
-            if (StringExtension.endsWithIgnoreCase(titleValue, aspectName)) {
+            if (StringExtension.endsWithIgnoreCase(sourceValue, aspectName)) {
                 return true;
             }
         }
         // [... Aspect] => [Aspect_Name Item_Name]
         else {
             const aspectName = sourceItem.name.substring(0, aspectIndex);
-            if (StringExtension.startsWithIgnoreCase(titleValue, aspectName)) {
+            if (StringExtension.startsWithIgnoreCase(sourceValue, aspectName)) {
                 return true;
             }
         }
@@ -226,21 +243,21 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const affixTargetValue = this.getAffixTargetValue(sourceValue);
-        if (!affixTargetValue) {
+        const targetValue = this.getAffixTargetValue(sourceValue);
+        if (!targetValue) {
             return false;
         }
 
-        return this.addAffixNodeTargetValue(node, "d4br_affix_name", affixTargetValue);
+        return this.addAffixNodeTargetValue(node, "d4br_affix_name", targetValue);
     }
 
     getAffixTargetValue(sourceValue) {
-        const fixedAffixValue = sourceValue
+        const fixedValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
             .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
-        const sourceItem = this.affixBuilder.getSourceItem(fixedAffixValue);
+        const sourceItem = this.affixBuilder.getSourceItem(fixedValue);
         const targetItem = this.affixBuilder.getTargetItem(sourceItem);
         const targetValue = this.affixBuilder.buildTargetValue(targetItem);
 
@@ -253,21 +270,21 @@ class D4MaxrollProcessor {
             return false;
         }
 
-        const temperTargetValue = this.getTemperTargetValue(sourceValue);
-        if (!temperTargetValue) {
+        const targetValue = this.getTemperTargetValue(sourceValue);
+        if (!targetValue) {
             return false;
         }
 
-        return this.addAffixNodeTargetValue(node, "d4br_temper_name", temperTargetValue);
+        return this.addAffixNodeTargetValue(node, "d4br_temper_name", targetValue);
     }
 
     getTemperTargetValue(sourceValue) {
-        const fixedTemperValue = sourceValue
+        const fixedValue = sourceValue
             .replace(/\([^\)]+\)/, "") // (text)
             .replace(/\[[0-9\., \-]+\]%?/, "") // [values]
             .trim();
 
-        const sourceItem = this.temperBuilder.getSourceItem(fixedTemperValue);
+        const sourceItem = this.temperBuilder.getSourceItem(fixedValue);
         const targetItem = this.temperBuilder.getTargetItem(sourceItem);
         const targetValue = this.temperBuilder.buildValue(targetItem);
 
@@ -333,6 +350,10 @@ class D4MaxrollProcessor {
 
     elixirNameProcess(node) {
         return this.nodeProcess(node, "d4br_elixir_name", Language.elixir);
+    }
+
+    charmNameProcess(node) {
+        return this.nodeProcess(node, "d4br_charm_name", Language.charm);
     }
 
     nodeProcess(node, className, resourceName) {

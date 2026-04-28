@@ -22,7 +22,7 @@
       {
         "id": 3,
         "names": [
-          " X to Concussion"
+          "+100 All Stats"
         ]
       }
     ]
@@ -66,19 +66,19 @@
       {
         "id": 1,
         "names": [
-          " X to Cut to the Bone"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Rend to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Rupture to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -93,18 +93,6 @@
     "details": [
       {
         "id": 1,
-        "names": [
-          " X Lunging Strike Range"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Charge Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 3,
         "names": [
           " X Leap Cooldown Reduction"
         ]
@@ -122,13 +110,13 @@
       {
         "id": 1,
         "names": [
-          " X Double Swing Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Whirlwind Size"
+          "+100 All Stats"
         ]
       },
       {
@@ -212,18 +200,6 @@
       {
         "id": 1,
         "names": [
-          " X Brawling Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Kick Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X War Cry Cooldown Reduction"
         ]
       }
@@ -246,13 +222,13 @@
       {
         "id": 2,
         "names": [
-          " X to Raid Leader"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Invigorating Fury"
+          "+100 All Stats"
         ]
       }
     ]
@@ -274,13 +250,13 @@
       {
         "id": 2,
         "names": [
-          " X Damage while Wrath of the Berserker is Active"
+          " X Damage when Swapping Weapons"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Dust Devil Damage"
+          " X Physical Damage Over Time"
         ]
       }
     ]
@@ -296,19 +272,19 @@
       {
         "id": 1,
         "names": [
-          " X Brawling Damage"
+          " X Damage with Two-Handed Bludgeoning Weapons"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Weapon Mastery Damage"
+          " X Damage with Two-Handed Slashing Weapons"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Damage when Swapping Weapons"
+          " X Damage with Dual-Wielded Weapons"
         ]
       }
     ]
@@ -354,6 +330,18 @@
         "names": [
           " X Armor"
         ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Resistance to All Elements"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Maximum Resolve Stacks"
+        ]
       }
     ]
   },
@@ -377,13 +365,13 @@
       {
         "id": 3,
         "names": [
-          "Casting Ultimate Skills Restores X Primary Resource"
+          "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource"
         ]
       },
       {
         "id": 4,
         "names": [
-          "Lucky Hit: Up to a 15% Chance to Restore X Primary Resource"
+          " X Cooldown Reduction"
         ]
       }
     ]
@@ -486,24 +474,6 @@
       {
         "id": 1,
         "names": [
-          " X Corpse Explosion Size"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Corpse Tendrils Size"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Curse Size"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
           " X Curse Duration"
         ]
       }
@@ -526,19 +496,13 @@
       {
         "id": 2,
         "names": [
-          " X Golem Active Cooldown Reduction"
+          " X Resource Generation with Two-Handed Weapons"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Bone Spirit Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X to Rapid Ossification"
+          " X Resource Generation while Wielding a Shield"
         ]
       }
     ]
@@ -557,20 +521,6 @@
           " X Summon Damage",
           " X Summoning Damage"
         ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Skeleton Mage Damage",
-          " X Skeletal Mages Damage"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Golem Damage",
-          " X Golems Damage"
-        ]
       }
     ]
   },
@@ -585,7 +535,7 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Hemorrhage to Form Blood Orbs"
+          "+100 All Stats"
         ]
       },
       {
@@ -597,7 +547,7 @@
       {
         "id": 3,
         "names": [
-          " X Blood Mist Duration"
+          "+100 All Stats"
         ]
       },
       {
@@ -625,13 +575,13 @@
       {
         "id": 2,
         "names": [
-          " X Corpse Tendrils Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Crippling Darkness"
+          "+100 All Stats"
         ]
       }
     ]
@@ -659,7 +609,7 @@
       {
         "id": 3,
         "names": [
-          " X Blood Overpower Damage"
+          "+100 All Stats"
         ]
       },
       {
@@ -709,19 +659,13 @@
       {
         "id": 1,
         "names": [
-          " X Shadow Damage Over Time"
+          " X Macabre Damage"
         ]
       },
       {
         "id": 2,
         "names": [
           " X Darkness Damage"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Desecrated Ground Damage"
         ]
       }
     ]
@@ -737,19 +681,19 @@
       {
         "id": 1,
         "names": [
-          " X to Chilling Weight"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X to Shadow Crash"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Flurry Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -765,19 +709,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Puncture Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Heartseeker Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Forceful Arrow Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -861,13 +805,13 @@
       {
         "id": 2,
         "names": [
-          " X Concealment Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Aftermath"
+          "+100 All Stats"
         ]
       }
     ]
@@ -883,19 +827,19 @@
       {
         "id": 1,
         "names": [
-          " X Flurry Healing"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X to Siphoning Strikes"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Mending Obscurity"
+          "+100 All Stats"
         ]
       }
     ]
@@ -911,19 +855,19 @@
       {
         "id": 1,
         "names": [
-          " X Movement Speed from Blade Shift"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Movement Speed per Dark Shroud Shadow"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Shadow Step Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -939,19 +883,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Death Trap to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Caltrops to Consume No Charges"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Poison Trap Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -962,27 +906,24 @@
     "classes": [
       "Rogue"
     ],
-    "type": "Utility",
+    "type": "Resource",
     "details": [
       {
         "id": 1,
         "names": [
-          "Shadow Imbue Lasts For X Cast",
-          "Shadow Imbue Lasts For X Casts"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          "Poison Imbue Lasts For X Cast",
-          "Poison Imbue Lasts For X Casts"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          "Cold Imbue Lasts For X Cast",
-          "Cold Imbue Lasts For X Casts"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1054,13 +995,19 @@
       {
         "id": 1,
         "names": [
-          " X Agility Damage"
+          " X Imbuement Potency"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Stun Grenade Damage"
+          " X Imbued Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Shade Damage"
         ]
       }
     ]
@@ -1076,20 +1023,25 @@
       {
         "id": 1,
         "names": [
-          " X Damage to Poisoned Enemies"
+          " X Cutthroat Damage"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Damage to Enemies Affected by Trap Skills",
-          " X Damage to Trapped Enemies"
+          " X Marksman Damage"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Imbued Damage"
+          " X Agility Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Damage per Combo Point Spent"
         ]
       }
     ]
@@ -1105,25 +1057,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Bash to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Frenzy to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Lunging Strike to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Flay Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1139,19 +1091,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Dust Devils to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Earthquakes to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Earthquake Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1167,19 +1119,19 @@
       {
         "id": 1,
         "names": [
-          " X Ground Stomp Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Leap Slam Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Dust Devil Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1197,18 +1149,6 @@
         "names": [
           " X Thorns while Fortified"
         ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X to Outburst"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X to Tough as Nails"
-        ]
       }
     ]
   },
@@ -1223,25 +1163,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Army of the Dead to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Skeletal Mage Attacks to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Skeleton Warriors to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Golem to Hit Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1257,25 +1197,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Blood Surge to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Blood Lance to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Hemorrhage to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Blood Wave to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1291,25 +1231,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Bone Splinters Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Bone Spear Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Bone Spirit to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Bone Storm to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1325,25 +1265,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Decompose to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Blight Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Soulrift to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Affliction to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1359,19 +1299,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Barrage Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Rapid Fire Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Penetrating Shot Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1399,13 +1339,13 @@
       {
         "id": 3,
         "names": [
-          " X to Innervation"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X to Adrenaline Rush"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1433,7 +1373,7 @@
       {
         "id": 3,
         "names": [
-          " X Earthen Bulwark Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1449,25 +1389,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Earth Spike Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Landslide Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Boulder to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Stone Burst to Cast Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1506,24 +1446,24 @@
     "classes": [
       "Druid"
     ],
-    "type": "Weapons",
+    "type": "Offensive",
     "details": [
       {
         "id": 1,
         "names": [
-          " X Chance for Wolves to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Poison Creeper to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Ravens to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1551,13 +1491,13 @@
       {
         "id": 3,
         "names": [
-          " X Debilitating Roar Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X to Nature's Resolve"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1585,13 +1525,13 @@
       {
         "id": 3,
         "names": [
-          " X Poison Creeper Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Ravens Active Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1607,19 +1547,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Wind Shear Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Tornado Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Hurricane to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1635,26 +1575,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Shred to Deal Double Damage",
-          " X Chance for Shred to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Rabies Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Lacerate Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Claw to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1672,24 +1611,6 @@
         "names": [
           " X Companion Cooldown Reduction"
         ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Wolves Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Poison Creeper Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X Ravens Cooldown Reduction"
-        ]
       }
     ]
   },
@@ -1706,18 +1627,12 @@
         "names": [
           "Casting Wrath Skills Restores X Primary Resource"
         ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X to Abundance"
-        ]
       }
     ]
   },
   {
     "id": 1885051,
-    "name": "Earth Finesse",
+    "name": "Druid Finesse",
     "classes": [
       "Druid"
     ],
@@ -1732,13 +1647,19 @@
       {
         "id": 2,
         "names": [
-          " X Earth Lucky Hit Chance"
+          " X Versatile Damage"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Earth Critical Strike Chance"
+          " X Storm Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Companion Damage"
         ]
       }
     ]
@@ -1760,12 +1681,6 @@
       {
         "id": 2,
         "names": [
-          " X Lightning Bolt Damage"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Storm Critical Strike Chance"
         ]
       }
@@ -1782,19 +1697,19 @@
       {
         "id": 1,
         "names": [
-          " X Werebear Overpower Damage"
+          " X Human Damage"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Grizzly Rage Duration"
+          " X Werebear Damage"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Damage while Fortified"
+          " X Werewolf Damage"
         ]
       }
     ]
@@ -1869,19 +1784,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Sever to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Reap to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Corpse Explosion to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1897,26 +1812,20 @@
       {
         "id": 1,
         "names": [
-          " X Damage to Enemies Affected by Curse Skills",
-          " X Damage to Cursed Enemies"
+          " X Blood Damage"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Macabre Damage"
+          " X Bone Damage"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Iron Maiden Damage"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X Corpse Tendrils Damage"
+          " X Summon Damage",
+          " X Summoning Damage"
         ]
       }
     ]
@@ -1932,7 +1841,7 @@
       {
         "id": 1,
         "names": [
-          " X Movement Speed during Blood Mist"
+          "+100 All Stats"
         ]
       }
     ]
@@ -1964,13 +1873,6 @@
       {
         "id": 1,
         "names": [
-          "Blood Orbs Restore X Essence",
-          "Blood Orbs Restores X Essence"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
           "Casting Macabre Skills Restores X Primary Resource",
           "Casting Macabrre Skills Restores X Primary Resource"
         ]
@@ -1996,13 +1898,6 @@
         "names": [
           "Minions Inherit X of Your Thorns"
         ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X to Spiked Armor",
-          " X Spiked Armor"
-        ]
       }
     ]
   },
@@ -2023,13 +1918,7 @@
       {
         "id": 2,
         "names": [
-          " X Shadow Clone Duration"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Inner Sight Duration"
+          "Casting Ultimate Skills Restores X Primary Resource"
         ]
       }
     ]
@@ -2045,19 +1934,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Maul to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Pulverize to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Trample to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2095,20 +1984,20 @@
       {
         "id": 2,
         "names": [
-          " X Flame Shield Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Warmth"
+          "+100 All Stats"
         ]
       }
     ]
   },
   {
     "id": 1927409,
-    "name": "Pyromancy Finesse",
+    "name": "Sorcerer Finesse",
     "classes": [
       "Sorcerer"
     ],
@@ -2117,13 +2006,13 @@
       {
         "id": 1,
         "names": [
-          " X Pyromancy Attack Speed"
+          " X Enchantment Damage"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Pyromancy Critical Strike Damage"
+          " X Damage to Frozen Enemies"
         ]
       },
       {
@@ -2145,19 +2034,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Fire Bolt Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Fireball Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Meteor to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2251,7 +2140,7 @@
       {
         "id": 2,
         "names": [
-          " X Ice Armor Duration"
+          "+100 All Stats"
         ]
       },
       {
@@ -2263,7 +2152,7 @@
       {
         "id": 4,
         "names": [
-          " X to Cold Front"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2292,7 +2181,7 @@
   },
   {
     "id": 1927453,
-    "name": "Shock Finesse",
+    "name": "Elemental Finesse",
     "classes": [
       "Sorcerer"
     ],
@@ -2301,19 +2190,25 @@
       {
         "id": 1,
         "names": [
-          " X Shock Critical Strike Chance"
+          " X Fire Damage Over Time"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Shock Critical Strike Damage"
+          " X Frost Damage"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Crackling Energy Damage"
+          " X Pyromancy Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Shock Damage"
         ]
       }
     ]
@@ -2329,19 +2224,19 @@
       {
         "id": 1,
         "names": [
-          " X to Invigorating Conduit"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X to Frigid Breeze"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Fiery Surge"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2357,19 +2252,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Frost Bolt Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Frozen Orb Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Ice Shards Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2385,19 +2280,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Spark Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Chain Lightning to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Ball Lightning Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2459,7 +2354,7 @@
       {
         "id": 3,
         "names": [
-          " X Familiar Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2481,7 +2376,7 @@
       {
         "id": 2,
         "names": [
-          " X Smoke Grenade Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2522,19 +2417,19 @@
       {
         "id": 1,
         "names": [
-          " X to Snap Freeze"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X to Crippling Flames"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Static Discharge"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2585,20 +2480,19 @@
       {
         "id": 1,
         "names": [
-          "Casted Hydras Have X Head",
-          "Casted Hydras Have X Heads"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Lightning Spear to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Familiars to Hit Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2628,13 +2522,13 @@
       {
         "id": 3,
         "names": [
-          " X to Drain Vitality"
+          "Minions Inherit X of Your Thorns"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X to Necrotic Carapace"
+          " X Block Chance"
         ]
       }
     ]
@@ -2650,8 +2544,7 @@
       {
         "id": 1,
         "names": [
-          " X Damage per Dark Shroud Shadow",
-          " X Damage per Dark Shroud"
+          "+100 All Stats"
         ]
       },
       {
@@ -2663,7 +2556,7 @@
       {
         "id": 3,
         "names": [
-          " X Smoke Grenade Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2679,19 +2572,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Teleport to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Arc Lash to Swipe Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Charged Bolts Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2741,18 +2634,6 @@
       {
         "id": 1,
         "names": [
-          " X Earthquake Size"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Frenzy Duration"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Stun Duration"
         ]
       }
@@ -2769,19 +2650,19 @@
       {
         "id": 1,
         "names": [
-          " X Hurricane Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Hurricane Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Cyclone Armor Active Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2797,7 +2678,7 @@
       {
         "id": 1,
         "names": [
-          " X Invigorating Strike Duration"
+          "+100 All Stats"
         ]
       },
       {
@@ -2809,13 +2690,13 @@
       {
         "id": 3,
         "names": [
-          " X Heartseeker Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Stun Grenade Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2834,13 +2715,13 @@
       {
         "id": 2,
         "names": [
-          " X Vulnerable Damage"
+          " X Damage Over Time"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Overpower Damage"
+          " X Vulnerable Damage"
         ]
       }
     ]
@@ -2856,13 +2737,25 @@
       {
         "id": 1,
         "names": [
-          " X Damage to Injured Enemies"
+          " X Weapon Mastery Damage"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Physical Damage Over Time"
+          " X Brawling Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Ancient Damage"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Earthquake Damage"
         ]
       }
     ]
@@ -2878,25 +2771,25 @@
       {
         "id": 1,
         "names": [
-          " X The Protector Barrier Generation"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Crushing Hand Barrier Generation"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Concussive Stomp Barrier Generation"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X to Auspicious"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2912,19 +2805,19 @@
       {
         "id": 1,
         "names": [
-          " X Rock Splitter Block Chance Bonus"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Armored Hide Active Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Patient Guard"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2940,19 +2833,19 @@
       {
         "id": 1,
         "names": [
-          " X Touch of Death Healing Bonus"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X to Fueled"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Resilient"
+          "+100 All Stats"
         ]
       }
     ]
@@ -2968,7 +2861,7 @@
       {
         "id": 1,
         "names": [
-          " X Armored Hide Resolve Generation Rate"
+          "+100 All Stats"
         ]
       },
       {
@@ -3002,14 +2895,14 @@
       {
         "id": 3,
         "names": [
-          " X to Swift"
+          "+100 All Stats"
         ]
       }
     ]
   },
   {
     "id": 2058730,
-    "name": "Centipede Finesse",
+    "name": "Spirit Hall Finesse",
     "classes": [
       "Spiritborn"
     ],
@@ -3018,32 +2911,32 @@
       {
         "id": 1,
         "names": [
-          " X Potency Damage"
+          " X Centipede Damage"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Pestilent Swarm Damage"
+          " X Eagle Damage"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Centipede Damage"
+          " X Gorilla Damage"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Damage to Slowed Enemies"
+          " X Jaguar Damage"
         ]
       }
     ]
   },
   {
     "id": 2058740,
-    "name": "Eagle Finesse",
+    "name": "Spiritborn Finesse",
     "classes": [
       "Spiritborn"
     ],
@@ -3058,14 +2951,13 @@
       {
         "id": 2,
         "names": [
-          " X Storm Feather Potency",
-          " X Spirit Feather Potency"
+          " X Mobility Damage"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Eagle Damage"
+          " X Potency Damage"
         ]
       }
     ]
@@ -3081,23 +2973,17 @@
       {
         "id": 1,
         "names": [
-          " X to Bastion"
+          " X Defensive Damage"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Defensive Damage"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Gorilla Damage"
         ]
       },
       {
-        "id": 4,
+        "id": 3,
         "names": [
           " X Damage to Knocked-Down Enemies"
         ]
@@ -3171,26 +3057,13 @@
       {
         "id": 1,
         "names": [
-          " X Thunderspike Resource Generation"
+          " X Focus Cooldown Reduction"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X The Seeker Charges"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Focus Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X Razor Wings Charges",
-          " X Razor Wing Charges"
+          "Casting Ultimate Skills Restores X Primary Resource"
         ]
       }
     ]
@@ -3206,19 +3079,19 @@
       {
         "id": 1,
         "names": [
-          " X to Vigorous"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X to Velocity"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Endurance"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3262,25 +3135,7 @@
       {
         "id": 1,
         "names": [
-          " X Thrash Resource Generation"
-        ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X The Hunter Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
           " X Incarnate Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X Counterattack Charges"
         ]
       }
     ]
@@ -3296,19 +3151,19 @@
       {
         "id": 1,
         "names": [
-          " X Withering Fist Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Stinger Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Scourge Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3324,19 +3179,19 @@
       {
         "id": 1,
         "names": [
-          " X Thunderspike Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Vortex Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Soar Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3352,25 +3207,25 @@
       {
         "id": 1,
         "names": [
-          " X Rock Splitter Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Crushing Hand Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Concussive Stomp Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Armored Hide Active Thorns Bonus"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3386,13 +3241,13 @@
       {
         "id": 1,
         "names": [
-          " X Thrash Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Rake Size"
+          "+100 All Stats"
         ]
       },
       {
@@ -3416,24 +3271,6 @@
         "names": [
           " X Chance for Withering Fist to Deal Double Damage"
         ]
-      },
-      {
-        "id": 2,
-        "names": [
-          " X Chance for Stinger to Extra Hit"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Chance for The Devourer to Deal Double Damage"
-        ]
-      },
-      {
-        "id": 4,
-        "names": [
-          " X Primary Centipede Spirit Hall Damage"
-        ]
       }
     ]
   },
@@ -3454,7 +3291,7 @@
       {
         "id": 2,
         "names": [
-          " X Chance for Quill Volley Projectiles to Cast Twice"
+          "+100 All Stats"
         ]
       },
       {
@@ -3488,7 +3325,7 @@
       {
         "id": 2,
         "names": [
-          " X Chance for Crushing Hand to Extra Hit"
+          "+100 All Stats"
         ]
       },
       {
@@ -3522,7 +3359,7 @@
       {
         "id": 2,
         "names": [
-          " X Chance for Rake to Extra Hit"
+          "+100 All Stats"
         ]
       },
       {
@@ -3550,19 +3387,19 @@
       {
         "id": 1,
         "names": [
-          " X Bone Storm Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Bone Spirit Explosion Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Bone Prison Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3578,19 +3415,19 @@
       {
         "id": 1,
         "names": [
-          " X Blood Surge Nova Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Hemorrhage Explosion Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Blood Lance Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3606,19 +3443,19 @@
       {
         "id": 1,
         "names": [
-          " X Blight Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Decompose Explosion Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Soulrift Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3634,19 +3471,19 @@
       {
         "id": 1,
         "names": [
-          " X Sever Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Reap Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Skeleton Priest Effect Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3662,19 +3499,19 @@
       {
         "id": 1,
         "names": [
-          " X Rend Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Enhanced Rupture Explosion Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Hamstring"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3690,19 +3527,19 @@
       {
         "id": 1,
         "names": [
-          " X Kick Vulnerable Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X to Expose Vulnerability"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Pressure Point"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3718,19 +3555,19 @@
       {
         "id": 1,
         "names": [
-          " X Hammer of the Ancients Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Upheaval Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Mighty Throw Pulse Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3746,19 +3583,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Storm Strike to Hit Twice"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Lightning Storm to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Cataclysm to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3774,25 +3611,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Hammer of the Ancients to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Whirlwind to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Upheaval to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Double Swing to Hit Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3808,25 +3645,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Charge to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Kick to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Leap to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Ground Stomp to Hit Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3842,25 +3679,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Mighty Throw to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Steel Grasp to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Death Blow to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Iron Maelstrom to Hit Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3876,19 +3713,19 @@
       {
         "id": 1,
         "names": [
-          "Shadow Step Cleaves for X Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Smoke Grenade to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Rain of Arrows to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3904,26 +3741,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Flurry to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Dance of Knives to Deal Double Damage",
-          " X Chance for Dance of Knives Projectiles to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Dash to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Shadow Clone to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -3934,24 +3770,24 @@
     "classes": [
       "Rogue"
     ],
-    "type": "Offensive",
+    "type": "Utility",
     "details": [
       {
         "id": 1,
         "names": [
-          "Traps Arm X Seconds Faster"
+          " X Trap Damage"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Caltrops Size"
+          "Traps Arm X Seconds Faster"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Caltrops Duration"
+          " X Grenade Damage"
         ]
       }
     ]
@@ -3964,22 +3800,13 @@
       {
         "id": 1,
         "names": [
-          " X Basic Damage",
-          " X Basic Skill Damage"
+          " X Damage when Spending Resolve"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Core Damage",
-          " X Core Skill Damage"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X Ultimate Damage",
-          " X Ultimate Skill Damage"
+          " X Damage Per Overpower Stack"
         ]
       }
     ]
@@ -3995,7 +3822,7 @@
       {
         "id": 1,
         "names": [
-          " X Touch of Death Swarm Duration"
+          "+100 All Stats"
         ]
       },
       {
@@ -4007,7 +3834,7 @@
       {
         "id": 3,
         "names": [
-          " X to Ravenous"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4035,7 +3862,7 @@
       {
         "id": 3,
         "names": [
-          " X Chance for Razor Wings to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4063,7 +3890,7 @@
       {
         "id": 3,
         "names": [
-          " X to Dominant"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4085,13 +3912,13 @@
       {
         "id": 2,
         "names": [
-          " X Chance for Ravager to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Furnace"
+          "+100 All Stats"
         ]
       },
       {
@@ -4113,19 +3940,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Incinerate to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Firewall to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Meteorites to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4141,19 +3968,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Blizzard to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Ice Spike to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Deep Freeze to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4169,19 +3996,19 @@
       {
         "id": 1,
         "names": [
-          " X Frost Nova Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Blizzard Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Teleport Nova Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4222,19 +4049,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Blade Shift to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          "Invigorating Strike Cleaves for X Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Twisting Blades to Hit Twice"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4250,19 +4077,19 @@
       {
         "id": 1,
         "names": [
-          " X Incinerate Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Meteor Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Firewall Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4278,19 +4105,19 @@
       {
         "id": 1,
         "names": [
-          " X to Warpath"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X to Belligerence"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Wallop"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4306,19 +4133,19 @@
       {
         "id": 1,
         "names": [
-          " X to Fueled by Death"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X to Finality"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Titan's Fall"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4362,19 +4189,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Crackling Energy to Zap up to Three Additional Targets"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Inferno to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X to Shocking Impact"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4423,6 +4250,12 @@
         "names": [
           " X Lightning Damage"
         ]
+      },
+      {
+        "id": 4,
+        "names": [
+          " X Holy Damage"
+        ]
       }
     ]
   },
@@ -4462,19 +4295,19 @@
       {
         "id": 1,
         "names": [
-          " X Pulverize Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Maul Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Petrify Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4546,19 +4379,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Brandish to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Divine Lance to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Falling Star to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
@@ -4580,19 +4413,19 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Advance to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Zeal to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Zenith to Deal Double Damage"
+          "+100 All Stats"
         ]
       }
     ]
@@ -4608,25 +4441,25 @@
       {
         "id": 1,
         "names": [
-          " X Chance for Holy Bolt to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Chance for Blessed Hammer to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Chance for Blessed Shield to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Chance for Heaven's Fury to Deal Double Damage"
+          "+100 All Stats"
         ]
       },
       {
@@ -4800,7 +4633,7 @@
       {
         "id": 2,
         "names": [
-          " X Juggernaut Damage"
+          " X Zealot Damage"
         ]
       },
       {
@@ -4812,7 +4645,7 @@
       {
         "id": 4,
         "names": [
-          " X Wing Strike Damage"
+          " X Damage to Judged Enemies"
         ]
       }
     ]
@@ -4828,7 +4661,7 @@
       {
         "id": 1,
         "names": [
-          " X Damage to Judged Enemies"
+          " X Juggernaut Damage"
         ]
       },
       {
@@ -4846,7 +4679,7 @@
       {
         "id": 4,
         "names": [
-          " X Holy Damage"
+          " X Damage to Weakened Enemies"
         ]
       }
     ]
@@ -4868,13 +4701,7 @@
       {
         "id": 2,
         "names": [
-          " X Maximum Resolve Stacks"
-        ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X to Resolute"
+          "+1 Maximum Resolve Stacks"
         ]
       }
     ]
@@ -4890,17 +4717,11 @@
       {
         "id": 1,
         "names": [
-          " X Condemn Cooldown Reduction"
+          " X Block Chance"
         ]
       },
       {
         "id": 2,
-        "names": [
-          " X Purify Cooldown Reduction"
-        ]
-      },
-      {
-        "id": 3,
         "names": [
           " X Armor in Arbiter Form"
         ]
@@ -4926,12 +4747,6 @@
         "names": [
           " X Block Chance"
         ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X to En Garde"
-        ]
       }
     ]
   },
@@ -4954,12 +4769,6 @@
         "names": [
           " X Consecration Cooldown Reduction"
         ]
-      },
-      {
-        "id": 3,
-        "names": [
-          " X to Longevity"
-        ]
       }
     ]
   },
@@ -4980,13 +4789,13 @@
       {
         "id": 2,
         "names": [
-          " X Condemn Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Divine Lance Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -5002,19 +4811,19 @@
       {
         "id": 1,
         "names": [
-          " X Shield Bash Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Retribution Size"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Aegis Duration"
+          "+100 All Stats"
         ]
       }
     ]
@@ -5030,13 +4839,13 @@
       {
         "id": 1,
         "names": [
-          " X Consecration Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Spear of the Heavens Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -5052,19 +4861,19 @@
       {
         "id": 1,
         "names": [
-          " X Rally Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Zenith Crowd Control Duration"
+          "+100 All Stats"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Zeal Size"
+          "+100 All Stats"
         ]
       }
     ]
@@ -5080,25 +4889,285 @@
       {
         "id": 1,
         "names": [
-          " X Aura Cooldown Reduction"
+          " X Defiance Aura Potency"
         ]
       },
       {
         "id": 2,
         "names": [
-          " X Defiance Aura Potency"
+          " X Fanaticism Aura Potency"
         ]
       },
       {
         "id": 3,
         "names": [
-          " X Fanaticism Aura Potency"
+          " X Holy Light Aura Potency"
         ]
       },
       {
         "id": 4,
         "names": [
-          " X Holy Light Aura Potency"
+          " X Arbiter Duration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2529343,
+    "name": "Channeler",
+    "classes": [
+      "Warlock"
+    ],
+    "type": "Offensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Abyss Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Hellfire Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Occult Damage"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2529373,
+    "name": "Metamorph",
+    "classes": [
+      "Warlock"
+    ],
+    "type": "Offensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Sigil Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Damage while Shadowform is Active"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Demonform Damage Bonus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2529403,
+    "name": "Demonologist",
+    "classes": [
+      "Warlock"
+    ],
+    "type": "Offensive",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Demonology Damage"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Archfiend Damage"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          " X Damage to Bleeding Enemies"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2529497,
+    "name": "Sigil Mastery",
+    "classes": [
+      "Warlock"
+    ],
+    "type": "Utility",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Sigil Duration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2614688,
+    "name": "Worldly Destruction",
+    "classes": [
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Sorcerer",
+      "Spiritborn",
+      "Warlock"
+    ],
+    "type": "Weapons",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Attack Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Critical Strike Chance"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Make Enemies Vulnerable for 2 Seconds"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Weaken for 2 Seconds"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2614696,
+    "name": "Worldly Afflictions",
+    "classes": [
+      "Druid",
+      "Necromancer",
+      "Paladin",
+      "Sorcerer",
+      "Spiritborn",
+      "Warlock"
+    ],
+    "type": "Weapons",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Daze for 2 Seconds"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Freeze for 2 Seconds"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Immobilize for 2 Seconds"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Slow for 2 Seconds"
+        ]
+      },
+      {
+        "id": 5,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Stun for 2 Seconds"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2617537,
+    "name": "Worldly Destruction",
+    "classes": [
+      "Barbarian",
+      "Rogue"
+    ],
+    "type": "Weapons",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          " X Attack Speed"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          " X Critical Strike Chance"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Make Enemies Vulnerable for 2 Seconds"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Weaken for 2 Seconds"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2617956,
+    "name": "Worldly Scourge",
+    "classes": [
+      "Barbarian",
+      "Rogue"
+    ],
+    "type": "Weapons",
+    "details": [
+      {
+        "id": 1,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Daze for 2 Seconds"
+        ]
+      },
+      {
+        "id": 2,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Freeze for 2 Seconds"
+        ]
+      },
+      {
+        "id": 3,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Immobilize for 2 Seconds"
+        ]
+      },
+      {
+        "id": 4,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Slow for 2 Seconds"
+        ]
+      },
+      {
+        "id": 5,
+        "names": [
+          "Lucky Hit: Up to a X Chance to Stun for 2 Seconds"
         ]
       }
     ]
