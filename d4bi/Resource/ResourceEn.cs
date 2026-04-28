@@ -1,5 +1,6 @@
 ﻿using Importer.Checker;
 using Importer.Custom.Aspect;
+using Importer.Custom.Charm;
 using Importer.Custom.Elixir;
 using Importer.Custom.Glyph;
 using Importer.Custom.Rune;
@@ -375,6 +376,44 @@ namespace Importer.Resource
                             Target = new ResourceTarget<Item>
                             {
                                 FileName = "elixir.json",
+                            },
+                        },
+                        new ResourceInfo<ClassItem>
+                        {
+                            Name = "charm en",
+                            Source = new ResourceSource<ClassItem>
+                            {
+                                SourceInfos =
+                                [
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/items/slot:24",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name, classes: i.playerClassNames}))",
+                                    },
+                                ],
+                            },
+                            Fix = new ResourceFix<ClassItem>
+                            {
+                                Fixers =
+                                [
+                                    new CharmFilter(false),
+                                    new FixRemoveEmptyName<ClassItem>(),
+                                    new FixName<ClassItem>(),
+                                ],
+                            },
+                            Check = new ResourceCheck<ClassItem>
+                            {
+                                Checkers =
+                                [
+                                    new CheckUnique<ClassItem>
+                                    {
+                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
+                                    },
+                                ],
+                            },
+                            Target = new ResourceTarget<ClassItem>
+                            {
+                                FileName = "charm.json",
                             },
                         },
                     ],

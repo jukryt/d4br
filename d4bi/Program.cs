@@ -24,8 +24,8 @@ namespace Importer
         {
             var filter = Array.Empty<string>();
             //var filter = new[] {
-            //    "aspect en", "glyph en", "leg_node en", "rune en", "unq_item en", "elixir en",
-            //    "aspect ru", "glyph ru", "leg_node ru", "rune ru", "unq_item ru", "elixir ru" };
+            //    "aspect en", "glyph en", "leg_node en", "rune en", "unq_item en", "elixir en", "charm en",
+            //    "aspect ru", "glyph ru", "leg_node ru", "rune ru", "unq_item ru", "elixir ru", "charm ru" };
             //var filter = new[] { "skill en" };
             //var filter = new[] { "temper en" };
             //var filter = new[] { "skill ru" };
