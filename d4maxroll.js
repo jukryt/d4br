@@ -53,11 +53,12 @@ class D4MaxrollProcessor {
                                 this.runeWordProcess(runeWordNode);
                             }
                         }
-                        // common: elixir
+                        // common: elixir, charm
                         else if (newNode.querySelector("div.d4t-tip-common")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             for (const titleNode of titleNodes) {
-                                if (this.elixirNameProcess(titleNode)) {
+                                if (this.elixirNameProcess(titleNode) ||
+                                    this.charmNameProcess(titleNode)) {
                                     break;
                                 }
                             }
@@ -166,8 +167,24 @@ class D4MaxrollProcessor {
     }
 
     getCharClassName() {
-        const classNameTitle = document.querySelector("div.d4t-Paperdoll div.d4t-title");
-        return classNameTitle?.innerText;
+        if (document.querySelector("div.sorcerer_SorcererBar__3WOmc"))
+            return "Sorcerer"
+        if (document.querySelector("div.druid_DruidBar__IDR7X"))
+            return "Druid"
+        if (document.querySelector("div.barbarian_BarbarianBar__3bZZY"))
+            return "Barbarian"
+        if (document.querySelector("div.rogue_RogueBar__7v6WF"))
+            return "Rogue"
+        if (document.querySelector("div.necromancer_NecromancerBar__qdKhV"))
+            return "Necromancer"
+        if (document.querySelector("div.spiritborn_SpiritbornBar__p1Rzi"))
+            return "Spiritborn"
+        if (document.querySelector("div.paladin_PaladinBar__3i4ht"))
+            return "Paladin"
+        if (document.querySelector("div.warlock_WarlockBar__2Tu51"))
+            return "Warlock"
+
+        return undefined;
     }
 
     aspectNameProcess(titleNode, subTitleNode) {
@@ -333,6 +350,10 @@ class D4MaxrollProcessor {
 
     elixirNameProcess(node) {
         return this.nodeProcess(node, "d4br_elixir_name", Language.elixir);
+    }
+
+    charmNameProcess(node) {
+        return this.nodeProcess(node, "d4br_charm_name", Language.charm);
     }
 
     nodeProcess(node, className, resourceName) {

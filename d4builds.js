@@ -86,6 +86,13 @@ class D4BuildsProcessor {
                                     this.elixirNameProcess(elixirNameNode);
                                 }
                             }
+                            // charm
+                            else if (newNode.querySelector("div.charm__tooltip")) {
+                                const charmNameNode = newNode.querySelector("h2.charm__tooltip__name");
+                                if (charmNameNode) {
+                                    this.charmNameProcess(charmNameNode);
+                                }
+                            }
                         }
                     }
                 }
@@ -233,7 +240,9 @@ class D4BuildsProcessor {
             .replace("Enhanced Fanaticism Aura", "Enhanced Fanaticism")
             .replace("Enhanced Holy Light Aura", "Enhanced Holy Light")
             .replace("Shepard the Flock", "Shepherd the Flock")
-            .replace("Enhanced Shield Charge-v2", "Enhanced Shield Charge");
+            .replace("Enhanced Shield Charge-v2", "Enhanced Shield Charge")
+            .replace("Brimstone Bomb", "Brimstone Mortar")
+            .replace("Fractured Abyss", "Ruptured Abyss");
 
         const sourceItem = this.skillBuilder.getSourceItem(fixedValue);
         const targetItem = this.skillBuilder.getTargetItem(sourceItem);
@@ -260,6 +269,10 @@ class D4BuildsProcessor {
 
     elixirNameProcess(node) {
         return this.nodeProcess(node, "d4br_elixir_name", Language.elixir, false);
+    }
+
+    charmNameProcess(node) {
+        return this.nodeProcess(node, "d4br_charm_name", Language.charm, false);
     }
 
     nodeProcess(node, className, resourceName, isIndependent) {
