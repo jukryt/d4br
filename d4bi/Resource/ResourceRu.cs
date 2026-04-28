@@ -1,4 +1,5 @@
 ﻿using Importer.Checker;
+using Importer.Custom.Aspect;
 using Importer.Custom.Elixir;
 using Importer.Custom.Glyph;
 using Importer.Custom.Rune;
@@ -38,19 +39,10 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
+                                    new AspectFilter(true),
                                     new FixRemoveEmptyName<ClassItem>(),
                                     new FixRemoveEmptyClass<ClassItem>(),
                                     new FixName<ClassItem>(),
-                                ],
-                            },
-                            Check = new ResourceCheck<ClassItem>
-                            {
-                                Checkers =
-                                [
-                                    new CheckUnique<ClassItem>
-                                    {
-                                        Comparer = new ClassItemEqualComparer<ClassItem>(),
-                                    },
                                 ],
                             },
                             Target = new ResourceTarget<ClassItem>
@@ -214,7 +206,7 @@ namespace Importer.Resource
                         new ResourceInfo<TemperItem>
                         {
                             Name = "temper ru",
-                            Source = new TemperSource
+                            Source = new TemperRuSource
                             {
                                 SourceInfos =
                                 [
@@ -225,7 +217,7 @@ namespace Importer.Resource
                                     },
                                 ],
                                 DetailsUrlTemplate = "https://www.wowhead.com/diablo-4/ru/item/[id]",
-                                PropertiesScript = "() => [...document.querySelectorAll('#infobox-contents-0 div')].map(e => e.innerText)",
+                                DescriptionScript = "() => document.querySelector('div.whtt-scroll div.whtt-description').innerText",
                                 DetailsScript = "() => [...document.querySelectorAll('div.whtt-damage-details li[data-type=\"empty-bullet\"]')].map(e => e.innerText)",
                             },
                             Fix = new ResourceFix<TemperItem>
@@ -265,7 +257,42 @@ namespace Importer.Resource
                                 [
                                     new SourceInfo
                                     {
-                                        Url = "https://www.wowhead.com/diablo-4/ru/items/quality:8:6",
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/class:0/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/class:1/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/class:2/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/class:3/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/class:4/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/class:5/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/class:6/quality:8:6",
+                                        Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
+                                    },
+                                    new SourceInfo
+                                    {
+                                        Url = "https://www.wowhead.com/diablo-4/ru/items/class:7/quality:8:6",
                                         Script = "() => g_listviews.items.data.map(i => ({id: i.id, name: i.name}))",
                                     },
                                 ],

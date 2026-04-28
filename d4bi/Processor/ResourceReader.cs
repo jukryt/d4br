@@ -24,11 +24,15 @@ namespace Importer.Processor
 
             using (var page = await browser.NewPageAsync())
             {
-                var items = new List<T>();
+                var items = new Dictionary<long, T>();
                 foreach (var sourceInfo in _source.SourceInfos)
-                    items.AddRange(await ReadAsync(page, sourceInfo));
+                {
+                    var partItems = await ReadAsync(page, sourceInfo);
+                    foreach (var item in partItems)
+                        items.TryAdd(item.Id, item);
+                }
 
-                return items.OrderBy(i => i.Id).ToList();
+                return items.Values.OrderBy(i => i.Id).ToList();
             }
         }
 

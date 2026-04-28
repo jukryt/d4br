@@ -12,6 +12,8 @@ namespace Importer.Fixer
                 item.Name = item.Name
                     ?.Replace('\u00A0', ' ') // non-breaking space
                     ?.Replace('\u2014', '-') // Em Dash
+                    ?.Replace("&quot;", "")  // quot
+                    ?.Replace("&amp;", "")   // amp
                     ?.Replace("  ", " ")     // double space
                     ?.Trim();
             }
