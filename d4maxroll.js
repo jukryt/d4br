@@ -53,11 +53,12 @@ class D4MaxrollProcessor {
                                 this.runeWordProcess(runeWordNode);
                             }
                         }
-                        // common: elixir
+                        // common: elixir, charm
                         else if (newNode.querySelector("div.d4t-tip-common")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             for (const titleNode of titleNodes) {
-                                if (this.elixirNameProcess(titleNode)) {
+                                if (this.elixirNameProcess(titleNode) ||
+                                    this.charmNameProcess(titleNode)) {
                                     break;
                                 }
                             }
@@ -349,6 +350,10 @@ class D4MaxrollProcessor {
 
     elixirNameProcess(node) {
         return this.nodeProcess(node, "d4br_elixir_name", Language.elixir);
+    }
+
+    charmNameProcess(node) {
+        return this.nodeProcess(node, "d4br_charm_name", Language.charm);
     }
 
     nodeProcess(node, className, resourceName) {

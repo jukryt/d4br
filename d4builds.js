@@ -86,6 +86,13 @@ class D4BuildsProcessor {
                                     this.elixirNameProcess(elixirNameNode);
                                 }
                             }
+                            // charm
+                            else if (newNode.querySelector("div.charm__tooltip")) {
+                                const charmNameNode = newNode.querySelector("h2.charm__tooltip__name");
+                                if (charmNameNode) {
+                                    this.charmNameProcess(charmNameNode);
+                                }
+                            }
                         }
                     }
                 }
@@ -262,6 +269,10 @@ class D4BuildsProcessor {
 
     elixirNameProcess(node) {
         return this.nodeProcess(node, "d4br_elixir_name", Language.elixir, false);
+    }
+
+    charmNameProcess(node) {
+        return this.nodeProcess(node, "d4br_charm_name", Language.charm, false);
     }
 
     nodeProcess(node, className, resourceName, isIndependent) {
