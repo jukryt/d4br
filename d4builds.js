@@ -50,6 +50,14 @@ class D4BuildsProcessor {
                                 if (unqItemNameNode) {
                                     this.unqItemNameProcess(unqItemNameNode);
                                 }
+
+                                const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
+                                if (tempersNode) {
+                                    const temperValueNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
+                                    for (const temperValueNode of temperValueNodes) {
+                                        this.temperNameProcess(temperValueNode);
+                                    }
+                                }
                             }
                             // skill
                             else if (newNode.querySelector("div.skill__tooltip")) {
