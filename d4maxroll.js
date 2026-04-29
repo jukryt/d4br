@@ -63,32 +63,42 @@ class D4MaxrollProcessor {
                                 }
                             }
                         }
-                        // rare: glyph, rune, elixir
+                        // magic: rune, elixir, charm
+                        else if (newNode.querySelector("div.d4t-tip-magic")) {
+                            const titleNodes = newNode.querySelectorAll("div.d4t-title");
+                            for (const titleNode of titleNodes) {
+                                if (this.runeNameProcess(titleNode) ||
+                                    this.elixirNameProcess(titleNode) ||
+                                    this.charmNameProcess(titleNode)) {
+                                    break;
+                                }
+                            }
+                        }
+                        // rare: glyph, rune, elixir, charm
                         else if (newNode.querySelector("div.d4t-tip-rare")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             for (const titleNode of titleNodes) {
                                 if (this.glyphNameProcess(titleNode) ||
                                     this.runeNameProcess(titleNode) ||
-                                    this.elixirNameProcess(titleNode)) {
+                                    this.elixirNameProcess(titleNode) ||
+                                    this.charmNameProcess(titleNode)) {
                                     break;
                                 }
                             }
                         }
-                        // magic: rune, elixir
-                        else if (newNode.querySelector("div.d4t-tip-magic")) {
+                        // unq: item, charm
+                        else if (newNode.querySelector("div.d4t-tip-unique")) {
                             const titleNodes = newNode.querySelectorAll("div.d4t-title");
                             for (const titleNode of titleNodes) {
-                                if (this.runeNameProcess(titleNode) ||
-                                    this.elixirNameProcess(titleNode)) {
+                                if (this.unqItemNameProcess(titleNode) ||
+                                    this.charmNameProcess(titleNode)) {
                                     break;
                                 }
                             }
-                        }
-                        // unq item
-                        else if (newNode.querySelector("div.d4t-tip-unique")) {
-                            const titleNode = newNode.querySelector("div.d4t-title");
-                            if (titleNode) {
-                                this.unqItemNameProcess(titleNode);
+
+                            const temperNodes = newNode.querySelectorAll("li.d4t-list-tempered");
+                            for (const temperNode of temperNodes) {
+                                this.temperNameProcess(temperNode);
                             }
 
                             const runeWordNode = newNode.querySelector("div.d4t-socket div.d4t-effect div.d4t-name");
@@ -96,23 +106,42 @@ class D4MaxrollProcessor {
                                 this.runeWordProcess(runeWordNode);
                             }
                         }
-                        // mythic item
+                        // mythic: item, charm
                         else if (newNode.querySelector("div.d4t-tip-mythic")) {
-                            const titleNode = newNode.querySelector("div.d4t-title");
-                            if (titleNode) {
-                                this.unqItemNameProcess(titleNode);
+                            const titleNodes = newNode.querySelectorAll("div.d4t-title");
+                            for (const titleNode of titleNodes) {
+                                if (this.unqItemNameProcess(titleNode) ||
+                                    this.charmNameProcess(titleNode)) {
+                                    break;
+                                }
+                            }
+
+                            const temperNodes = newNode.querySelectorAll("li.d4t-list-tempered");
+                            for (const temperNode of temperNodes) {
+                                this.temperNameProcess(temperNode);
                             }
 
                             const runeWordNode = newNode.querySelector("div.d4t-socket div.d4t-effect div.d4t-name");
                             if (runeWordNode) {
                                 this.runeWordProcess(runeWordNode);
+                            }
+                        }
+                        // set: charm
+                        else if (newNode.querySelector("div.d4t-tip-set")) {
+                            const titleNodes = newNode.querySelectorAll("div.d4t-title");
+                            for (const titleNode of titleNodes) {
+                                if (this.charmNameProcess(titleNode)) {
+                                    break;
+                                }
                             }
                         }
                         // skill
                         else if (newNode.querySelector("div.d4t-tip-skill")) {
-                            const skillTitleNode = newNode.querySelector("div.d4t-title");
-                            if (skillTitleNode) {
-                                this.skillNameProcess(skillTitleNode);
+                            const titleNodes = newNode.querySelectorAll("div.d4t-title");
+                            for (const titleNode of titleNodes) {
+                                if (this.skillNameProcess(titleNode)) {
+                                    break;
+                                }
                             }
                         }
                     }
