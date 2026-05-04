@@ -43,6 +43,11 @@ class D4MobalyticsProcessor {
                             this.unqItemNameProcess(unqItemNameNode);
                         }
 
+                        const temperNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(span.xkirm3x)");
+                        for (const temperNameNode of temperNameNodes) {
+                            this.temperNameProcess(temperNameNode);
+                        }
+
                         const runeNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(img[src*='/runes/'])");
                         for (const runeNameNode of runeNameNodes) {
                             this.runeNameInItemProcess(runeNameNode);
@@ -76,9 +81,16 @@ class D4MobalyticsProcessor {
                             this.glyphNameProcess(glyphNameNode);
                         }
                     }
-                    // leg node
+                    // leg node (old)
                     else if (tippyNode.querySelector("div.m-10eb7s2")) {
                         const legNameNode = tippyNode.querySelector("p.m-zrc7tx");
+                        if (legNameNode) {
+                            this.legNodeNameProcess(legNameNode);
+                        }
+                    }
+                    // leg node (new)
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/classes/'")) {
+                        const legNameNode = tippyNode.querySelector("p.x2klb21");
                         if (legNameNode) {
                             this.legNodeNameProcess(legNameNode);
                         }
@@ -95,6 +107,13 @@ class D4MobalyticsProcessor {
                         const elixirNameNode = tippyNode.querySelector("p.x2klb21");
                         if (elixirNameNode) {
                             this.elixirNameProcess(elixirNameNode);
+                        }
+                    }
+                    // charm
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/charms/']")) {
+                        const elixirNameNode = tippyNode.querySelector("p.x2klb21");
+                        if (elixirNameNode) {
+                            this.charmNameProcess(elixirNameNode);
                         }
                     }
                 }
@@ -263,6 +282,10 @@ class D4MobalyticsProcessor {
 
     elixirNameProcess(node) {
         return this.nodeProcess(node, "d4br_elixir_name", Language.elixir);
+    }
+
+    charmNameProcess(node) {
+        return this.nodeProcess(node, "d4br_charm_name", Language.charm);
     }
 
     nodeProcess(node, className, resourceName) {
