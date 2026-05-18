@@ -213,7 +213,7 @@ class D4MobalyticsProcessor {
             .replace("Shepard the Flock", "Shepherd the Flock")
             .replace("Seraphs' Wings", "Seraph's Wings");
 
-        const sourceItem = this.skillBuilder.getSourceItem(fixedValue);
+        const sourceItem = this.skillBuilder.getSourceItem(fixedValue, true);
         const targetItem = this.skillBuilder.getTargetItem(sourceItem);
         const targetValue = this.skillBuilder.buildTargetValue(targetItem);
 
