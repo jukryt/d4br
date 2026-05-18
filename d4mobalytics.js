@@ -26,7 +26,7 @@ class D4MobalyticsProcessor {
                             this.affixNameProcess(affisNameNode);
                         }
 
-                        const temperNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(span.xkirm3x)");
+                        const temperNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(span.x1k4tb9n)");
                         for (const temperNameNode of temperNameNodes) {
                             this.temperNameProcess(temperNameNode);
                         }
@@ -43,7 +43,7 @@ class D4MobalyticsProcessor {
                             this.unqItemNameProcess(unqItemNameNode);
                         }
 
-                        const temperNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(span.xkirm3x)");
+                        const temperNameNodes = tippyNode.querySelectorAll("li.x1fc57z9:has(span.x1k4tb9n)");
                         for (const temperNameNode of temperNameNodes) {
                             this.temperNameProcess(temperNameNode);
                         }
