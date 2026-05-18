@@ -128,7 +128,7 @@ class SkillBuilder {
         this.processor = processor;
     }
 
-    getSourceItem(sourceValue) {
+    getSourceItem(sourceValue, isModIncludeSkillName = false) {
         if (!sourceValue) {
             return null;
         }
@@ -149,11 +149,18 @@ class SkillBuilder {
                 return false;
             }
 
-            const mods = s.mods.filter(m => StringExtension.equelsIgnoreCase(m.name, sourceValue));
+            let fixedSourceValue = sourceValue;
+            if (isModIncludeSkillName && StringExtension.endsWithIgnoreCase(sourceValue, s.name)) {
+                fixedSourceValue = sourceValue.substring(0, sourceValue.length - s.name.length).trim();
+            }
+
+            const mods = s.mods.filter(m => StringExtension.equelsIgnoreCase(m.name, fixedSourceValue));
             if (mods.length === 1) {
                 s.mod = mods[0];
                 return true;
             }
+
+            return false;
         });
 
         if (sourceItems.length === 0) {
