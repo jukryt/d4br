@@ -18,88 +18,91 @@ class D4BuildsProcessor {
                     this.fixPopupStyleBug(tippy);
                 }
             } else if (mutation.type === "childList") {
-                if (mutation.target.localName === "body") {
-                    for (const newNode of mutation.addedNodes) {
-                        if (newNode.id.startsWith("tippy-")) {
-                            // aspect, affix, temper
-                            if (newNode.querySelector("div.codex__tooltip div.codex__tooltip__header:has(img[src*='/Codex/']")) {
-                                const aspectNameNode = newNode.querySelector("div.codex__tooltip__name");
-                                if (aspectNameNode) {
-                                    this.aspectNameProcess(aspectNameNode);
-                                }
+                for (const newNode of mutation.addedNodes) {
+                    if (newNode.id && newNode.id.startsWith("tippy-")) {
+                        const oldElements = newNode.querySelectorAll(this.elementBuilder.getContainerSelector());
+                        for (const oldElement of oldElements) {
+                            oldElement.remove();
+                        }
 
-                                const affixesNode = newNode.querySelector("div.codex__tooltip__stats:not(.codex__tooltip__stats--tempering)");
-                                if (affixesNode) {
-                                    const affixValueNodes = affixesNode.querySelectorAll("div.codex__tooltip__stat");
-                                    for (const affixValueNode of affixValueNodes) {
-                                        this.affixNameProcess(affixValueNode);
-                                    }
-                                }
+                        // aspect, affix, temper
+                        if (newNode.querySelector("div.codex__tooltip div.codex__tooltip__header:has(img[src*='/Codex/']")) {
+                            const aspectNameNode = newNode.querySelector("div.codex__tooltip__name");
+                            if (aspectNameNode) {
+                                this.aspectNameProcess(aspectNameNode);
+                            }
 
-                                const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
-                                if (tempersNode) {
-                                    const temperValueNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
-                                    for (const temperValueNode of temperValueNodes) {
-                                        this.temperNameProcess(temperValueNode);
-                                    }
+                            const affixesNode = newNode.querySelector("div.codex__tooltip__stats:not(.codex__tooltip__stats--tempering)");
+                            if (affixesNode) {
+                                const affixValueNodes = affixesNode.querySelectorAll("div.codex__tooltip__stat");
+                                for (const affixValueNode of affixValueNodes) {
+                                    this.affixNameProcess(affixValueNode);
                                 }
                             }
-                            // unq item
-                            else if (newNode.querySelector("div.unique__tooltip")) {
-                                const unqItemNameNode = newNode.querySelector("h2.unique__tooltip__name");
-                                if (unqItemNameNode) {
-                                    this.unqItemNameProcess(unqItemNameNode);
-                                }
 
-                                const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
-                                if (tempersNode) {
-                                    const temperValueNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
-                                    for (const temperValueNode of temperValueNodes) {
-                                        this.temperNameProcess(temperValueNode);
-                                    }
+                            const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
+                            if (tempersNode) {
+                                const temperValueNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
+                                for (const temperValueNode of temperValueNodes) {
+                                    this.temperNameProcess(temperValueNode);
                                 }
                             }
-                            // skill
-                            else if (newNode.querySelector("div.skill__tooltip")) {
-                                const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
-                                if (skillNameNode) {
-                                    this.skillNameProcess(skillNameNode);
+                        }
+                        // unq item
+                        else if (newNode.querySelector("div.unique__tooltip")) {
+                            const unqItemNameNode = newNode.querySelector("h2.unique__tooltip__name");
+                            if (unqItemNameNode) {
+                                this.unqItemNameProcess(unqItemNameNode);
+                            }
+
+                            const tempersNode = newNode.querySelector("div.codex__tooltip__stats--tempering");
+                            if (tempersNode) {
+                                const temperValueNodes = tempersNode.querySelectorAll("div.codex__tooltip__stat");
+                                for (const temperValueNode of temperValueNodes) {
+                                    this.temperNameProcess(temperValueNode);
                                 }
                             }
-                            // glyph
-                            else if (newNode.querySelector("div.paragon__tile__tooltip__rarity.rare")) {
-                                const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
-                                if (paragonTitleNode) {
-                                    this.glyphNameProcess(paragonTitleNode);
-                                }
+                        }
+                        // skill
+                        else if (newNode.querySelector("div.skill__tooltip")) {
+                            const skillNameNode = newNode.querySelector("div.skill__tooltip__name");
+                            if (skillNameNode) {
+                                this.skillNameProcess(skillNameNode);
                             }
-                            // leg node
-                            else if (newNode.querySelector("div.paragon__tile__tooltip__rarity.legendary")) {
-                                const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
-                                if (paragonTitleNode) {
-                                    this.legNodeNameProcess(paragonTitleNode);
-                                }
+                        }
+                        // glyph
+                        else if (newNode.querySelector("div.paragon__tile__tooltip__rarity.rare")) {
+                            const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
+                            if (paragonTitleNode) {
+                                this.glyphNameProcess(paragonTitleNode);
                             }
-                            // gem
-                            else if (newNode.querySelector("div.gem__tooltip")) {
-                                const gemTitleNode = newNode.querySelector("div.gem__tooltip__name");
-                                if (gemTitleNode) {
-                                    this.gemNameProcess(gemTitleNode);
-                                }
+                        }
+                        // leg node
+                        else if (newNode.querySelector("div.paragon__tile__tooltip__rarity.legendary")) {
+                            const paragonTitleNode = newNode.querySelector("div.paragon__tile__tooltip__title");
+                            if (paragonTitleNode) {
+                                this.legNodeNameProcess(paragonTitleNode);
                             }
-                            // elixir
-                            else if (newNode.querySelector("div.codex__tooltip div.codex__tooltip__header:has(img[src*='/Potions/']")) {
-                                const elixirNameNode = newNode.querySelector("div.codex__tooltip__name");
-                                if (elixirNameNode) {
-                                    this.elixirNameProcess(elixirNameNode);
-                                }
+                        }
+                        // gem
+                        else if (newNode.querySelector("div.gem__tooltip")) {
+                            const gemTitleNode = newNode.querySelector("div.gem__tooltip__name");
+                            if (gemTitleNode) {
+                                this.gemNameProcess(gemTitleNode);
                             }
-                            // charm
-                            else if (newNode.querySelector("div.charm__tooltip")) {
-                                const charmNameNode = newNode.querySelector("h2.charm__tooltip__name");
-                                if (charmNameNode) {
-                                    this.charmNameProcess(charmNameNode);
-                                }
+                        }
+                        // elixir
+                        else if (newNode.querySelector("div.codex__tooltip div.codex__tooltip__header:has(img[src*='/Potions/']")) {
+                            const elixirNameNode = newNode.querySelector("div.codex__tooltip__name");
+                            if (elixirNameNode) {
+                                this.elixirNameProcess(elixirNameNode);
+                            }
+                        }
+                        // charm
+                        else if (newNode.querySelector("div.charm__tooltip")) {
+                            const charmNameNode = newNode.querySelector("h2.charm__tooltip__name");
+                            if (charmNameNode) {
+                                this.charmNameProcess(charmNameNode);
                             }
                         }
                     }
@@ -327,7 +330,7 @@ class D4BuildsProcessor {
         }
 
         if (!isIndependent) {
-            node.innerHTML = `${container.outerHTML} ${node.innerHTML}`;
+            node.innerHTML = `${container.outerHTML}${node.innerHTML}`;
         }
 
         return true;
