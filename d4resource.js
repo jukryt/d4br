@@ -321,6 +321,9 @@ class TemperBulder {
                 t.detail = details[0];
                 return true;
             }
+            else {
+                return false;
+            }
         });
 
         if (sourceItems.length === 0) {
