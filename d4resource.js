@@ -42,6 +42,7 @@ class ElementBuilder {
         const nodeStyle = window.getComputedStyle(sourceNode);
 
         const targetNode = document.createElement(sourceNode.localName);
+        targetNode.style.display = nodeStyle.getPropertyValue("display");
         targetNode.style.fontFamily = nodeStyle.getPropertyValue("font-family");
         targetNode.style.fontSize = nodeStyle.getPropertyValue("font-size");
         targetNode.style.textAlign = nodeStyle.getPropertyValue("text-align");
@@ -319,6 +320,9 @@ class TemperBulder {
             if (details.length === 1) {
                 t.detail = details[0];
                 return true;
+            }
+            else {
+                return false;
             }
         });
 
