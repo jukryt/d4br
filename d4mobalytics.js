@@ -54,7 +54,9 @@ class D4MobalyticsProcessor {
                         }
                     }
                     // skill (old)
-                    else if (tippyNode.querySelector("div.m-1xw5npu img[src*='/skills/'")) {
+                    else if (tippyNode.querySelector("div.m-14vwbim img[src*='/skills/'") ||
+                             tippyNode.querySelector("div.m-1yp2vzf img[src*='/skills/'") ||
+                             tippyNode.querySelector("div.m-15u2tp7 img[src*='/skills/'")) {
                         const skillNameNode = tippyNode.querySelector("p.m-2v1a8e");
                         if (skillNameNode) {
                             this.skillNameProcess(skillNameNode);
