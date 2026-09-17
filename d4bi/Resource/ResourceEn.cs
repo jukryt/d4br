@@ -8,6 +8,7 @@ using Importer.Custom.Skill;
 using Importer.Custom.Temper;
 using Importer.Custom.Temper.En;
 using Importer.Custom.UnqItem;
+using Importer.Custom.UnqItem.En;
 using Importer.Fixer;
 using Importer.Model;
 
@@ -314,6 +315,7 @@ namespace Importer.Resource
                             {
                                 Fixers =
                                 [
+                                    new UnqEnItemExtension(),
                                     new UnqItemFilter(false),
                                     new UniqueNameFilter<Item>(),
                                     new FixRemoveEmptyName<Item>(),
