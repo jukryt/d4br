@@ -150,15 +150,12 @@ class SkillBuilder {
                 return false;
             }
 
-            let fixedSourceValue = sourceValue;
-            if (isModIncludeSkillName && StringExtension.endsWithIgnoreCase(sourceValue, s.name)) {
-                fixedSourceValue = sourceValue.substring(0, sourceValue.length - s.name.length).trim();
-            }
-
-            const mods = s.mods.filter(m => StringExtension.equelsIgnoreCase(m.name, fixedSourceValue));
-            if (mods.length === 1) {
-                s.mod = mods[0];
-                return true;
+            if (isModIncludeSkillName && StringExtension.startsWithIgnoreCase(sourceValue, s.name)) {
+                const mods = s.mods.filter(m => StringExtension.endsWithIgnoreCase(sourceValue, m.name));
+                if (mods.length === 1) {
+                    s.mod = mods[0];
+                    return true;
+                }
             }
 
             return false;

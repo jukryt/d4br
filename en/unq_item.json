@@ -1282,5 +1282,33 @@
   {
     "id": 2623201,
     "name": "Sliver of Hate"
+  },
+  {
+    "id": 33000001,
+    "name": "Leoric's Crown"
+  },
+  {
+    "id": 33000002,
+    "name": "Stone of Jordan"
+  },
+  {
+    "id": 33000003,
+    "name": "Squirt's Blouse"
+  },
+  {
+    "id": 33000004,
+    "name": "Nemesis Bracers"
+  },
+  {
+    "id": 33000005,
+    "name": "The Furnace"
+  },
+  {
+    "id": 33000006,
+    "name": "In-Geom"
+  },
+  {
+    "id": 33000007,
+    "name": "Arioc's Needle"
   }
 ]

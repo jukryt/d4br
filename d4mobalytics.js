@@ -37,7 +37,7 @@ class D4MobalyticsProcessor {
                         }
                     }
                     // unq item
-                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/uniques/']")) {
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/uniqueitems/']")) {
                         const unqItemNameNode = tippyNode.querySelector("p.x2klb21");
                         if (unqItemNameNode) {
                             this.unqItemNameProcess(unqItemNameNode);
@@ -54,7 +54,9 @@ class D4MobalyticsProcessor {
                         }
                     }
                     // skill (old)
-                    else if (tippyNode.querySelector("div.m-1xw5npu img[src*='/skills/'")) {
+                    else if (tippyNode.querySelector("div.m-14vwbim img[src*='/skills/'") ||
+                             tippyNode.querySelector("div.m-1yp2vzf img[src*='/skills/'") ||
+                             tippyNode.querySelector("div.m-15u2tp7 img[src*='/skills/'")) {
                         const skillNameNode = tippyNode.querySelector("p.m-2v1a8e");
                         if (skillNameNode) {
                             this.skillNameProcess(skillNameNode);
