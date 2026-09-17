@@ -37,7 +37,7 @@ class D4MobalyticsProcessor {
                         }
                     }
                     // unq item
-                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/uniques/']")) {
+                    else if (tippyNode.querySelector("div.xb3r6kr img[src*='/uniqueitems/']")) {
                         const unqItemNameNode = tippyNode.querySelector("p.x2klb21");
                         if (unqItemNameNode) {
                             this.unqItemNameProcess(unqItemNameNode);
